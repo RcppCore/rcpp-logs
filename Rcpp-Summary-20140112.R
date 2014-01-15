@@ -83,7 +83,8 @@ bad4set_sexp <- c("Amelia", "apcluster", "inarmix", "IsingSampler", "rotations")
 ## Failing at compile time
 bad4otherAPI <- c("httpuv",             # (Rcpp/exceptions.h:33:56: error: ‘stack_trace’ was not declared in this scope
                   "RcppClassic", 	# redefinition of 'Rcpp::internal::getPosixClasses()’
-                  "Rmixmod",            # overloaded ‘S4_Impl(Rcpp::SlotProxyPolicy<Rcpp::S4_Impl<Rcpp::PreserveStorage> >::SlotProxy)’ is ambiguous              
+                  "Rmixmod",            # overloaded ‘S4_Impl(Rcpp::SlotProxyPolicy<Rcpp::S4_Impl<Rcpp::PreserveStorage> >::SlotProxy)’ is ambiguous
+                  "RQuantLib",	        # 'QLtoJan1970Offset’ is not a member of ‘Rcpp::Date’
                   "tbart",              # tb.cpp:13:24: error: ‘stop’ is not a member of ‘Rcpp’
                   "wsrf")               # error: call of overloaded ‘Vector(Rcpp::Vector<19>::const_Proxy)’ is ambiguous
 
@@ -106,7 +107,6 @@ bad4maybeuser <- c("mvabund",		# 'cannot find Rcpp.h'
                    "RcppEigen",         # object 'SHLIB.maker' not found -- fixed in repo
                    "rmgarch",           # ‘trunc’ is not a member of ‘std::ios_base’
                    "RProtoBuf",         # configure: error: C++ comp. cannot create executables
-                   "RQuantLib",	        # configure: error: cannot run C++ compiled programs.
                    "rugarch",           # ‘trunc’ is not a member of ‘std::ios_base’
                    "WideLm")            # configure: error: cannot run C++ compiled programs.
                    
