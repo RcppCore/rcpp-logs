@@ -84,13 +84,14 @@ bad4set_sexp <- c("Amelia", "apcluster", "inarmix", "IsingSampler", "rotations")
 bad4otherAPI <- c("httpuv",             # (Rcpp/exceptions.h:33:56: error: ‘stack_trace’ was not declared in this scope
                   "RcppClassic", 	# redefinition of 'Rcpp::internal::getPosixClasses()’
                   "Rmixmod",            # overloaded ‘S4_Impl(Rcpp::SlotProxyPolicy<Rcpp::S4_Impl<Rcpp::PreserveStorage> >::SlotProxy)’ is ambiguous
-                  "RQuantLib",	        # 'QLtoJan1970Offset’ is not a member of ‘Rcpp::Date’
                   "tbart",              # tb.cpp:13:24: error: ‘stop’ is not a member of ‘Rcpp’
                   "wsrf")               # error: call of overloaded ‘Vector(Rcpp::Vector<19>::const_Proxy)’ is ambiguous
 
 ## Failing at run-time                  
 ##   function 'dataptr' not provided by package 'Rcpp'
-bad4dataptr <- c("fdaMixed", "gRbase", "gRim", "HLMdiag", "lme4", "SpatialTools")
+bad4dataptr <- c("fdaMixed", "gRbase", "gRim", "HLMdiag", "lme4",
+                 "RQuantLib",	        # even after making other changes to new version
+                 "SpatialTools")
 
 ## Failing at run-time
 ## function 'enterRNGScope' not provided by package 'Rcpp'                 
