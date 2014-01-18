@@ -90,6 +90,7 @@ bad4otherAPI <- c("httpuv",             # (Rcpp/exceptions.h:33:56: error: ‘st
 ## Failing at run-time                  
 ##   function 'dataptr' not provided by package 'Rcpp'
 bad4dataptr <- c("fdaMixed", "gRbase", "gRim", "HLMdiag", "lme4",
+                 "mvabund",             # after 'LinkingTo: Rcpp' added
                  "RQuantLib",	        # even after making other changes to new version
                  "SpatialTools")
 
@@ -98,14 +99,17 @@ bad4dataptr <- c("fdaMixed", "gRbase", "gRim", "HLMdiag", "lme4",
 bad4rngscore <- c("RcppZiggurat", "rgam", "Ruchardet", "SBSA")
 
 
+## Failing at run-time
+## Error: function 'reset_current_error' not provided by package 'Rcpp'
+bad4resetcurrerr <- c("protvix")	# after setting LinkingTo:
+
+
 bad4unclear <- c("maxent",              # weird segfault
                  "ndl",                 # unclear compile error
                  "sglOptim",            # unclear run-time error
                  "wordcloud")		# unclear run-time error
 
-bad4maybeuser <- c("mvabund",		# 'cannot find Rcpp.h' 
-                   "protvix",		# 'cannot find Rcpp.h' 
-                   "RcppEigen",         # object 'SHLIB.maker' not found -- fixed in repo
+bad4maybeuser <- c("RcppEigen",         # object 'SHLIB.maker' not found -- now fixed in repo
                    "rmgarch",           # ‘trunc’ is not a member of ‘std::ios_base’
                    "RProtoBuf",         # configure: error: C++ comp. cannot create executables
                    "rugarch",           # ‘trunc’ is not a member of ‘std::ios_base’
@@ -115,12 +119,13 @@ bad4maybeuser <- c("mvabund",		# 'cannot find Rcpp.h'
 
 ## these fail initially but can all be run with some extra effort
 bad4notrcpp <-   c("KernSmoothIRT")	# rgl failed, needs full x11 session
-
+                   
 good <- length(goodPkg)
 bad  <- (length(bad4missing) + length(bad4set_sexp) +
          length(bad4otherAPI) + length(bad4dataptr) +
          length(bad4rngscore) + length(bad4unclear) +
-         length(bad4maybeuser) + length(bad4notrcpp))
+         length(bad4maybeuser) + length(bad4resetcurrerr) +
+         length(bad4notrcpp))
 
 #stopifnot(all.equal(bad,length(badPkg)))  ## account for GeoBIO
 
@@ -132,6 +137,7 @@ cat("  SetSexp   ", length(bad4set_sexp), "\n")
 cat("  Other     ", length(bad4otherAPI), "\n")
 cat("  Dataptr   ", length(bad4dataptr), "\n")
 cat("  Rngscore  ", length(bad4rngscore), "\n")
+cat("  ResetCErr ", length(bad4resetcurrerr), "\n")
 cat("  Unclear   ", length(bad4unclear), "\n")
 cat("  MaybeUser ", length(bad4maybeuser), "\n") 
 cat("  NotRcpp   ", length(bad4notrcpp), "\n")
