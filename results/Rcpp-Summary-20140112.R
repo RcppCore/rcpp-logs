@@ -85,7 +85,7 @@ bad4otherAPI <- c("httpuv", 		# error: ‘stack_trace’ was not declared in thi
 
 ## Failing at run-time                  
 ##   function 'dataptr' not provided by package 'Rcpp'
-bad4dataptr <- c("fdaMixed", "gRbase", "gRim", "HLMdiag", "lme4",
+bad4dataptr <- c("HLMdiag", "lme4",
                  "mvabund",             # after 'LinkingTo: Rcpp' added
                  "SpatialTools")
 
@@ -100,6 +100,9 @@ bad4maybeuser <- c("rmgarch",           # ‘trunc’ is not a member of ‘std:
 
 goodWithImport <- c("Amelia",		# works with proper Import
                     "apcluster", 	# works with proper Import
+                    "fdaMixed",  	# works with proper Import
+                    "gRbase",   	# works with proper Import
+                    "gRim",  		# works with proper Import
                     "inarmix",  	# works with proper Import
                     "IsingSampler", 	# works with proper Import
                     "protvix", 		# works with proper Import
