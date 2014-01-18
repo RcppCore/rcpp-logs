@@ -74,10 +74,6 @@ bad4missing <- c("ALDqr",		# 'HyperbolicDist’
                  "VideoComparison",	# ‘pracma’
                  "VIMGUI")		# VIM, survey
 
-## Failing at compile-time
-## error: ‘set_sexp’ is not a member of
-## ‘Rcpp::Matrix<14>::VECTOR {aka Rcpp::Vector<14, Rcpp::PreserveStorage>}’
-bad4set_sexp <- c("rotations")
 
 ## Failing at compile time
 bad4otherAPI <- c("httpuv", 		# error: ‘stack_trace’ was not declared in this scope
@@ -95,7 +91,7 @@ bad4dataptr <- c("fdaMixed", "gRbase", "gRim", "HLMdiag", "lme4",
 
 ## Failing at run-time
 ## function 'enterRNGScope' not provided by package 'Rcpp'                 
-bad4rngscore <- c("rgam", "Ruchardet", "SBSA")
+bad4rngscore <- c("Ruchardet", "SBSA")
 
 
 ## Failing at run-time
@@ -116,17 +112,18 @@ goodWithImport <- c("Amelia",		# works with proper Import
                     "inarmix",  	# works with proper Import
                     "IsingSampler", 	# works with proper Import
                     "RcppEigen",        # [next version] after user fix for 'SHLIB.maker' 
-                    "RcppZiggurat",     # works with proper Import                    
+                    "RcppZiggurat",     # works with proper Import
+                    "rgam",             # works with proper Import
+                    "rotations",        # works with proper Import
                     "RQuantLib")	# [next version] with 'importFrom(Rcpp, evalCpp)'
 
 #bad4rcpp <- c()				# Yay!
 
 ## these fail initially but can all be run with some extra effort
 bad4notrcpp <-   c("KernSmoothIRT")	# rgl failed, needs full x11 session
-                   
+                            
 good <- length(goodPkgAsIs) + length(goodWithImport)
-bad  <- (length(bad4missing) + length(bad4set_sexp) +
-         length(bad4otherAPI) + length(bad4dataptr) +
+bad  <- (length(bad4missing) + length(bad4otherAPI) + length(bad4dataptr) +
          length(bad4rngscore) + length(bad4unclear) +
          length(bad4maybeuser) + length(bad4resetcurrerr) +
          length(bad4notrcpp))
