@@ -79,7 +79,6 @@ bad4missing <- c("ALDqr",		# 'HyperbolicDist’
 ## Failing at compile time
 bad4RcppAPI <- c("httpuv", 		# error: ‘stack_trace’ was not declared in this scope
                  "ndl",                 # error: ambiguous overload for ‘operator=’
-                 "RcppClassic", 	# redefinition of 'Rcpp::internal::getPosixClasses()’
                  "Rmixmod",             # overloaded ‘S4_Impl(Rcpp::SlotProxyPolicy<Rcpp::S4_Impl<Rcpp::PreserveStorage> >::SlotProxy)’ is ambiguous
                  "RProtoBuf",           # [rel 0.4.0] still: error: ‘setSEXP’ was not declared in this scope
                  "wsrf")                # error: call of overloaded ‘Vector(Rcpp::Vector<19>::const_Proxy)’ is ambiguous
@@ -113,12 +112,15 @@ goodWithImport <- c("Amelia",		# works with proper Import
                     "SBSA",		# works with proper Import
                     "SpatialTools")	# works with proper Import
 
+goodWithUserChange <- c("RcppClassic") 	# need to hide 'Rcpp::internal::getPosixClasses()’
+
+
 #bad4rcpp <- c()				# Yay!
 
 ## these fail initially but can all be run with some extra effort
 bad4notrcpp <-   c("KernSmoothIRT")	# rgl failed, needs full x11 session
                             
-good <- length(goodPkgAsIs) + length(goodWithImport)
+good <- length(goodPkgAsIs) + length(goodWithImport) + length(goodWithUserChange)
 bad  <- (length(bad4missing) + length(bad4RcppAPI) + 
          length(bad4unclear) + length(bad4maybeuser) + length(bad4notrcpp))
 
@@ -127,6 +129,7 @@ bad  <- (length(bad4missing) + length(bad4RcppAPI) +
 cat("Good        ", good, "\n")
 cat("  AsIs      ", length(goodPkgAsIs), "\n")
 cat("  w/Imports ", length(goodWithImport), "\n")
+cat("  w/Change  ", length(goodWithUserChange), "\n")
 cat("Bad         ", bad, "\n")
 cat("  MissDep   ", length(bad4missing), "\n")
 cat("  RcppApi   ", length(bad4RcppAPI), "\n")
