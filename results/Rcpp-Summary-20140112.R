@@ -78,7 +78,7 @@ bad4missing <- c("ALDqr",		# 'HyperbolicDist’
 ## Failing at compile-time
 ## error: ‘set_sexp’ is not a member of
 ## ‘Rcpp::Matrix<14>::VECTOR {aka Rcpp::Vector<14, Rcpp::PreserveStorage>}’
-bad4set_sexp <- c("Amelia", "inarmix", "IsingSampler", "rotations")
+bad4set_sexp <- c("inarmix", "IsingSampler", "rotations")
 
 ## Failing at compile time
 bad4otherAPI <- c("RcppClassic", 	# redefinition of 'Rcpp::internal::getPosixClasses()’
@@ -90,7 +90,6 @@ bad4otherAPI <- c("RcppClassic", 	# redefinition of 'Rcpp::internal::getPosixCla
 ##   function 'dataptr' not provided by package 'Rcpp'
 bad4dataptr <- c("fdaMixed", "gRbase", "gRim", "HLMdiag", "lme4",
                  "mvabund",             # after 'LinkingTo: Rcpp' added
-                 "RcppEigen",           # after user fix for 'SHLIB.maker' 
                  "SpatialTools")
 
 ## Failing at run-time
@@ -111,8 +110,10 @@ bad4unclear <- c("maxent",              # weird segfault
 bad4maybeuser <- c("rmgarch",           # ‘trunc’ is not a member of ‘std::ios_base’
                    "rugarch")           # ‘trunc’ is not a member of ‘std::ios_base’
 
-fixedWithImport <- c("apcluster", 	# works with proper Import
+fixedWithImport <- c("Amelia",		# works with proper Import
+                     "apcluster", 	# works with proper Import
                      "httpuv",          # works with proper Import
+                     "RcppEigen",       # [next version] after user fix for 'SHLIB.maker' 
                      "RcppZiggurat",    # works with proper Import                    
                      "RProtoBuf",       # [rel 0.4.0] with 'importFrom(Rcpp, evalCpp)'
                      "RQuantLib")	# [next version] with 'importFrom(Rcpp, evalCpp)'
