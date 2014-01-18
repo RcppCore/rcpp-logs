@@ -88,8 +88,6 @@ bad4unclear <- c("maxent",              # passes iff maxent.Rd's example gets \d
                  "sglOptim",            # error crit. changed, passes with 1.0e-7 (was 1.0e-10)
                  "wordcloud")		# passes iff 'tm' not used in examples
 
-bad4maybeuser <- c("rmgarch",           # ‘trunc’ is not a member of ‘std::ios_base’
-                   "rugarch")           # ‘trunc’ is not a member of ‘std::ios_base’
 
 goodWithImport <- c("Amelia",		# works with proper Import
                     "apcluster", 	# works with proper Import
@@ -112,7 +110,9 @@ goodWithImport <- c("Amelia",		# works with proper Import
                     "SpatialTools")	# works with proper Import
 
 goodWithUserChange <- c("httpuv", 	# include <Rcpp.h> -- not Rcpp/exceptions.h
-                        "RcppClassic") 	# need to hide 'Rcpp::internal::getPosixClasses()’
+                        "RcppClassic", 	# need to hide 'Rcpp::internal::getPosixClasses()’
+                        "rmgarch",      # header file order: incl. only RcppArmadillo
+                        "rugarch")      # header file order: incl. only RcppArmadillo
 
 
 #bad4rcpp <- c()				# Yay!
@@ -122,7 +122,7 @@ bad4notrcpp <-   c("KernSmoothIRT")	# rgl failed, needs full x11 session
                             
 good <- length(goodPkgAsIs) + length(goodWithImport) + length(goodWithUserChange)
 bad  <- (length(bad4missing) + length(bad4RcppAPI) + 
-         length(bad4unclear) + length(bad4maybeuser) + length(bad4notrcpp))
+         length(bad4unclear) + length(bad4notrcpp))
 
 #stopifnot(all.equal(bad,length(badPkg)))  ## account for GeoBIO
 
@@ -134,7 +134,6 @@ cat("Bad         ", bad, "\n")
 cat("  MissDep   ", length(bad4missing), "\n")
 cat("  RcppApi   ", length(bad4RcppAPI), "\n")
 cat("  Unclear   ", length(bad4unclear), "\n")
-cat("  MaybeUser ", length(bad4maybeuser), "\n") 
 cat("  NotRcpp   ", length(bad4notrcpp), "\n")
 cat("Total       ", good + bad, "\n")
 cat("Error Pct   ", (bad-length(bad4missing)) / (good + bad), "\n")
