@@ -89,15 +89,6 @@ bad4dataptr <- c("fdaMixed", "gRbase", "gRim", "HLMdiag", "lme4",
                  "mvabund",             # after 'LinkingTo: Rcpp' added
                  "SpatialTools")
 
-## Failing at run-time
-## function 'enterRNGScope' not provided by package 'Rcpp'                 
-bad4rngscore <- c("Ruchardet", "SBSA")
-
-
-## Failing at run-time
-## Error: function 'reset_current_error' not provided by package 'Rcpp'
-bad4resetcurrerr <- c("protvix")	# after setting LinkingTo:
-
 
 bad4unclear <- c("maxent",              # weird segfault
                  "ndl",                 # unclear compile error
@@ -111,22 +102,24 @@ goodWithImport <- c("Amelia",		# works with proper Import
                     "apcluster", 	# works with proper Import
                     "inarmix",  	# works with proper Import
                     "IsingSampler", 	# works with proper Import
+                    "protvix", 		# works with proper Import
                     "RcppEigen",        # [next version] after user fix for 'SHLIB.maker' 
                     "RcppZiggurat",     # works with proper Import
                     "rgam",             # works with proper Import
                     "rotations",        # works with proper Import
-                    "RQuantLib")	# [next version] with 'importFrom(Rcpp, evalCpp)'
+                    "RQuantLib",	# [next version] with 'importFrom(Rcpp, evalCpp)'
+                    "Ruchardet",	# works with proper Import
+                    "SBSA")		# works with proper Import
 
-#bad4rcpp <- c()				# Yay!
+
+##bad4rcpp <- c()				# Yay!
 
 ## these fail initially but can all be run with some extra effort
 bad4notrcpp <-   c("KernSmoothIRT")	# rgl failed, needs full x11 session
                             
 good <- length(goodPkgAsIs) + length(goodWithImport)
 bad  <- (length(bad4missing) + length(bad4otherAPI) + length(bad4dataptr) +
-         length(bad4rngscore) + length(bad4unclear) +
-         length(bad4maybeuser) + length(bad4resetcurrerr) +
-         length(bad4notrcpp))
+         length(bad4unclear) + length(bad4maybeuser) + length(bad4notrcpp))
 
 #stopifnot(all.equal(bad,length(badPkg)))  ## account for GeoBIO
 
@@ -136,11 +129,8 @@ cat("  w/Imports ", length(goodWithImport), "\n")
 cat("Bad         ", bad, "\n")
 #cat("  RcppErr  ", length(bad4rcpp), "\n")
 cat("  MissDep   ", length(bad4missing), "\n")
-cat("  SetSexp   ", length(bad4set_sexp), "\n")
 cat("  Other     ", length(bad4otherAPI), "\n")
 cat("  Dataptr   ", length(bad4dataptr), "\n")
-cat("  Rngscore  ", length(bad4rngscore), "\n")
-cat("  ResetCErr ", length(bad4resetcurrerr), "\n")
 cat("  Unclear   ", length(bad4unclear), "\n")
 cat("  MaybeUser ", length(bad4maybeuser), "\n") 
 cat("  NotRcpp   ", length(bad4notrcpp), "\n")
