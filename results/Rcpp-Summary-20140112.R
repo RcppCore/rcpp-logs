@@ -83,11 +83,6 @@ bad4otherAPI <- c("httpuv", 		# error: ‘stack_trace’ was not declared in thi
                   "tbart",              # tb.cpp:13:24: error: ‘stop’ is not a member of ‘Rcpp’
                   "wsrf")               # error: call of overloaded ‘Vector(Rcpp::Vector<19>::const_Proxy)’ is ambiguous
 
-## Failing at run-time                  
-##   function 'dataptr' not provided by package 'Rcpp'
-bad4dataptr <- c("HLMdiag", "lme4",
-                 "mvabund",             # after 'LinkingTo: Rcpp' added
-                 "SpatialTools")
 
 
 bad4unclear <- c("maxent",              # weird segfault
@@ -103,8 +98,11 @@ goodWithImport <- c("Amelia",		# works with proper Import
                     "fdaMixed",  	# works with proper Import
                     "gRbase",   	# works with proper Import
                     "gRim",  		# works with proper Import
+                    "HLMdiag",  	# works with proper Import
                     "inarmix",  	# works with proper Import
                     "IsingSampler", 	# works with proper Import
+                    "lme4",		# works with proper Import
+                    "mvabund",		# works with proper Import
                     "protvix", 		# works with proper Import
                     "RcppEigen",        # [next version] after user fix for 'SHLIB.maker' 
                     "RcppZiggurat",     # works with proper Import
@@ -112,16 +110,16 @@ goodWithImport <- c("Amelia",		# works with proper Import
                     "rotations",        # works with proper Import
                     "RQuantLib",	# [next version] with 'importFrom(Rcpp, evalCpp)'
                     "Ruchardet",	# works with proper Import
-                    "SBSA")		# works with proper Import
+                    "SBSA",		# works with proper Import
+                    "SpatialTools")	# works with proper Import
 
-
-##bad4rcpp <- c()				# Yay!
+bad4rcpp <- c()				# Yay!
 
 ## these fail initially but can all be run with some extra effort
 bad4notrcpp <-   c("KernSmoothIRT")	# rgl failed, needs full x11 session
                             
 good <- length(goodPkgAsIs) + length(goodWithImport)
-bad  <- (length(bad4missing) + length(bad4otherAPI) + length(bad4dataptr) +
+bad  <- (length(bad4missing) + length(bad4otherAPI) + 
          length(bad4unclear) + length(bad4maybeuser) + length(bad4notrcpp))
 
 #stopifnot(all.equal(bad,length(badPkg)))  ## account for GeoBIO
@@ -130,13 +128,12 @@ cat("Good        ", good, "\n")
 cat("  AsIs      ", length(goodPkgAsIs), "\n")
 cat("  w/Imports ", length(goodWithImport), "\n")
 cat("Bad         ", bad, "\n")
-#cat("  RcppErr  ", length(bad4rcpp), "\n")
 cat("  MissDep   ", length(bad4missing), "\n")
 cat("  Other     ", length(bad4otherAPI), "\n")
-cat("  Dataptr   ", length(bad4dataptr), "\n")
 cat("  Unclear   ", length(bad4unclear), "\n")
 cat("  MaybeUser ", length(bad4maybeuser), "\n") 
 cat("  NotRcpp   ", length(bad4notrcpp), "\n")
+cat("  RcppError ", length(bad4rcpp), "\n")
 cat("Total       ", good + bad, "\n")
 cat("Error Pct   ", (bad-length(bad4missing)) / (good + bad), "\n")
 
