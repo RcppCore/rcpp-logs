@@ -91,12 +91,11 @@ bad4otherAPI <- c("RcppClassic", 	# redefinition of 'Rcpp::internal::getPosixCla
 bad4dataptr <- c("fdaMixed", "gRbase", "gRim", "HLMdiag", "lme4",
                  "mvabund",             # after 'LinkingTo: Rcpp' added
                  "RcppEigen",           # after user fix for 'SHLIB.maker' 
-                 "RQuantLib",	        # even after making other changes to new version
                  "SpatialTools")
 
 ## Failing at run-time
 ## function 'enterRNGScope' not provided by package 'Rcpp'                 
-bad4rngscore <- c("RcppZiggurat", "rgam", "Ruchardet", "SBSA")
+bad4rngscore <- c("rgam", "Ruchardet", "SBSA")
 
 
 ## Failing at run-time
@@ -112,9 +111,11 @@ bad4unclear <- c("maxent",              # weird segfault
 bad4maybeuser <- c("rmgarch",           # ‘trunc’ is not a member of ‘std::ios_base’
                    "rugarch")           # ‘trunc’ is not a member of ‘std::ios_base’
 
-fixedWithImport <- c("apcluster", 	# work  with proper Import
+fixedWithImport <- c("apcluster", 	# works with proper Import
                      "httpuv",          # works with proper Import
-                     "RProtoBuf")       # [rel 0.4.0] with 'importFrom(Rcpp, evalCpp)'
+                     "RcppZiggurat",    # works with proper Import                    
+                     "RProtoBuf",       # [rel 0.4.0] with 'importFrom(Rcpp, evalCpp)'
+                     "RQuantLib")	# [next version] with 'importFrom(Rcpp, evalCpp)'
 
 #bad4rcpp <- c()				# Yay!
 
