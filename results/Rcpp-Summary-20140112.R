@@ -72,13 +72,12 @@ bad4missing <- c("ALDqr",		# 'HyperbolicDist’
                  "surveillance",	# ‘polyCub’ ‘spatstat’
                  "TAM",			# ‘tensor’ ‘sfsmisc’ ‘GPArotation’ ‘psych’
                  "VideoComparison",	# ‘pracma’
-
                  "VIMGUI")		# VIM, survey
 
 ## Failing at compile-time
 ## error: ‘set_sexp’ is not a member of
 ## ‘Rcpp::Matrix<14>::VECTOR {aka Rcpp::Vector<14, Rcpp::PreserveStorage>}’
-bad4set_sexp <- c("inarmix", "IsingSampler", "rotations")
+bad4set_sexp <- c("rotations")
 
 ## Failing at compile time
 bad4otherAPI <- c("httpuv", 		# error: ‘stack_trace’ was not declared in this scope
@@ -114,6 +113,8 @@ bad4maybeuser <- c("rmgarch",           # ‘trunc’ is not a member of ‘std:
 
 goodWithImport <- c("Amelia",		# works with proper Import
                     "apcluster", 	# works with proper Import
+                    "inarmix",  	# works with proper Import
+                    "IsingSampler", 	# works with proper Import
                     "RcppEigen",        # [next version] after user fix for 'SHLIB.maker' 
                     "RcppZiggurat",     # works with proper Import                    
                     "RQuantLib")	# [next version] with 'importFrom(Rcpp, evalCpp)'
