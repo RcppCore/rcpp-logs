@@ -78,11 +78,10 @@ bad4missing <- c("ALDqr",		# 'HyperbolicDist’
 ## Failing at compile-time
 ## error: ‘set_sexp’ is not a member of
 ## ‘Rcpp::Matrix<14>::VECTOR {aka Rcpp::Vector<14, Rcpp::PreserveStorage>}’
-bad4set_sexp <- c("Amelia", "apcluster", "inarmix", "IsingSampler", "rotations")
+bad4set_sexp <- c("Amelia", "inarmix", "IsingSampler", "rotations")
 
 ## Failing at compile time
-bad4otherAPI <- c("httpuv",             # (Rcpp/exceptions.h:33:56: error: ‘stack_trace’ was not declared in this scope
-                  "RcppClassic", 	# redefinition of 'Rcpp::internal::getPosixClasses()’
+bad4otherAPI <- c("RcppClassic", 	# redefinition of 'Rcpp::internal::getPosixClasses()’
                   "Rmixmod",            # overloaded ‘S4_Impl(Rcpp::SlotProxyPolicy<Rcpp::S4_Impl<Rcpp::PreserveStorage> >::SlotProxy)’ is ambiguous
                   "tbart",              # tb.cpp:13:24: error: ‘stop’ is not a member of ‘Rcpp’
                   "wsrf")               # error: call of overloaded ‘Vector(Rcpp::Vector<19>::const_Proxy)’ is ambiguous
@@ -113,7 +112,9 @@ bad4unclear <- c("maxent",              # weird segfault
 bad4maybeuser <- c("rmgarch",           # ‘trunc’ is not a member of ‘std::ios_base’
                    "rugarch")           # ‘trunc’ is not a member of ‘std::ios_base’
 
-fixedWithImport <- c("RProtoBuf")       # [rel 0.4.0] with 'importFrom(Rcpp, evalCpp)'
+fixedWithImport <- c("apcluster", 	# work  with proper Import
+                     "httpuv",          # works with proper Import
+                     "RProtoBuf")       # [rel 0.4.0] with 'importFrom(Rcpp, evalCpp)'
 
 #bad4rcpp <- c()				# Yay!
 
