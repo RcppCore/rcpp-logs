@@ -77,8 +77,7 @@ bad4missing <- c("ALDqr",		# 'HyperbolicDist’
 
 
 ## Failing at compile time
-bad4RcppAPI <- c("httpuv", 		# error: ‘stack_trace’ was not declared in this scope
-                 "ndl",                 # error: ambiguous overload for ‘operator=’
+bad4RcppAPI <- c("ndl",                 # error: ambiguous overload for ‘operator=’
                  "Rmixmod",             # overloaded ‘S4_Impl(Rcpp::SlotProxyPolicy<Rcpp::S4_Impl<Rcpp::PreserveStorage> >::SlotProxy)’ is ambiguous
                  "RProtoBuf",           # [rel 0.4.0] still: error: ‘setSEXP’ was not declared in this scope
                  "wsrf")                # error: call of overloaded ‘Vector(Rcpp::Vector<19>::const_Proxy)’ is ambiguous
@@ -112,7 +111,8 @@ goodWithImport <- c("Amelia",		# works with proper Import
                     "SBSA",		# works with proper Import
                     "SpatialTools")	# works with proper Import
 
-goodWithUserChange <- c("RcppClassic") 	# need to hide 'Rcpp::internal::getPosixClasses()’
+goodWithUserChange <- c("httpuv", 	# include <Rcpp.h> -- not Rcpp/exceptions.h
+                        "RcppClassic") 	# need to hide 'Rcpp::internal::getPosixClasses()’
 
 
 #bad4rcpp <- c()				# Yay!
