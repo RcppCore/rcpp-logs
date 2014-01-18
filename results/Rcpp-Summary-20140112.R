@@ -22,7 +22,7 @@ goodPkg <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "BayesComm",
              "robustHD", "rococo", "RSNNS", "RSofia", "RVowpalWabbit", "sdcMicro", 
              "sequences", "simFrame", "sparseHessianFD", "sparseLTSEigen", 
              "stochvol", "survSNP", "termstrc", "trustOptim", "tvm", "unmarked", 
-             "VIM", "waffect", "XBRL", "zic")
+             "VIM", "waffect", "WideLm", "XBRL", "zic")
  
 
 ## bad <- as.character(subset(res, res==1)[,1])
@@ -84,6 +84,7 @@ bad4set_sexp <- c("Amelia", "apcluster", "inarmix", "IsingSampler", "rotations")
 bad4otherAPI <- c("httpuv",             # (Rcpp/exceptions.h:33:56: error: ‘stack_trace’ was not declared in this scope
                   "RcppClassic", 	# redefinition of 'Rcpp::internal::getPosixClasses()’
                   "Rmixmod",            # overloaded ‘S4_Impl(Rcpp::SlotProxyPolicy<Rcpp::S4_Impl<Rcpp::PreserveStorage> >::SlotProxy)’ is ambiguous
+                  "RProtoBuf",          # 'S4_classes.h:37:25: error: ‘setSEXP’ was not declared in this scope'
                   "tbart",              # tb.cpp:13:24: error: ‘stop’ is not a member of ‘Rcpp’
                   "wsrf")               # error: call of overloaded ‘Vector(Rcpp::Vector<19>::const_Proxy)’ is ambiguous
 
@@ -91,6 +92,7 @@ bad4otherAPI <- c("httpuv",             # (Rcpp/exceptions.h:33:56: error: ‘st
 ##   function 'dataptr' not provided by package 'Rcpp'
 bad4dataptr <- c("fdaMixed", "gRbase", "gRim", "HLMdiag", "lme4",
                  "mvabund",             # after 'LinkingTo: Rcpp' added
+                 "RcppEigen",           # after user fix for 'SHLIB.maker' 
                  "RQuantLib",	        # even after making other changes to new version
                  "SpatialTools")
 
@@ -109,11 +111,8 @@ bad4unclear <- c("maxent",              # weird segfault
                  "sglOptim",            # unclear run-time error
                  "wordcloud")		# unclear run-time error
 
-bad4maybeuser <- c("RcppEigen",         # object 'SHLIB.maker' not found -- now fixed in repo
-                   "rmgarch",           # ‘trunc’ is not a member of ‘std::ios_base’
-                   "RProtoBuf",         # configure: error: C++ comp. cannot create executables
-                   "rugarch",           # ‘trunc’ is not a member of ‘std::ios_base’
-                   "WideLm")            # configure: error: cannot run C++ compiled programs.
+bad4maybeuser <- c("rmgarch",           # ‘trunc’ is not a member of ‘std::ios_base’
+                   "rugarch")           # ‘trunc’ is not a member of ‘std::ios_base’
                    
 #bad4rcpp <- c()				# Yay!
 
