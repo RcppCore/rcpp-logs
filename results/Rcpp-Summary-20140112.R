@@ -7,22 +7,22 @@ load("~/svn/rcpp/testlogs/result-20140112-230103.RData")
 ## g
 ## good <- as.character(subset(res, res==0)[,1])
 ## dput(good)
-goodPkg <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "BayesComm", 
-             "bcp", "bcpa", "bfa", "bfp", "bifactorial", "bilan", "ccaPP", 
-             "cda", "cladoRcpp", "clogitL1", "clusteval", "ClustVarLV", "ConConPiWiFun", 
-             "coneproj", "Delaporte", "ecp", "EpiContactTrace", "fastGHQuad", 
-             "FastPCS", "FastRCS", "FBFsearch", "forecast", "geoCount", "growcurves", 
-             "GSE", "GxM", "hawkes", "jaatha", "Kmisc", "minqa", "MPTinR", 
-             "msgl", "MVB", "NetSim", "oem", "PedCNV", "phylobase", "planar", 
-             "PReMiuM", "prospectr", "psgp", "Rankcluster", "Rclusterpp", 
-             "RcppArmadillo", "RcppBDT", "rcppbugs", "RcppClassicExamples", 
-             "RcppCNPy", "RcppDE", "RcppExamples", "RcppGSL", "RcppOctave", 
-             "RcppProgress", "RcppRoll", "RcppSMC", "RcppXts", "rexpokit", 
-             "rforensicbatwing", "RInside", "Rmalschains", "RMessenger", "robustgam", 
-             "robustHD", "rococo", "RSNNS", "RSofia", "RVowpalWabbit", "sdcMicro", 
-             "sequences", "simFrame", "sparseHessianFD", "sparseLTSEigen", 
-             "stochvol", "survSNP", "termstrc", "trustOptim", "tvm", "unmarked", 
-             "VIM", "waffect", "WideLm", "XBRL", "zic")
+goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "BayesComm", 
+                 "bcp", "bcpa", "bfa", "bfp", "bifactorial", "bilan", "ccaPP", 
+                 "cda", "cladoRcpp", "clogitL1", "clusteval", "ClustVarLV", "ConConPiWiFun", 
+                 "coneproj", "Delaporte", "ecp", "EpiContactTrace", "fastGHQuad", 
+                 "FastPCS", "FastRCS", "FBFsearch", "forecast", "geoCount", "growcurves", 
+                 "GSE", "GxM", "hawkes", "jaatha", "Kmisc", "minqa", "MPTinR", 
+                 "msgl", "MVB", "NetSim", "oem", "PedCNV", "phylobase", "planar", 
+                 "PReMiuM", "prospectr", "psgp", "Rankcluster", "Rclusterpp", 
+                 "RcppArmadillo", "RcppBDT", "rcppbugs", "RcppClassicExamples", 
+                 "RcppCNPy", "RcppDE", "RcppExamples", "RcppGSL", "RcppOctave", 
+                 "RcppProgress", "RcppRoll", "RcppSMC", "RcppXts", "rexpokit", 
+                 "rforensicbatwing", "RInside", "Rmalschains", "RMessenger", "robustgam", 
+                 "robustHD", "rococo", "RSNNS", "RSofia", "RVowpalWabbit", "sdcMicro", 
+                 "sequences", "simFrame", "sparseHessianFD", "sparseLTSEigen", 
+                 "stochvol", "survSNP", "termstrc", "trustOptim", "tvm", "unmarked", 
+                 "VIM", "waffect", "WideLm", "XBRL", "zic")
  
 
 ## bad <- as.character(subset(res, res==1)[,1])
@@ -81,8 +81,10 @@ bad4missing <- c("ALDqr",		# 'HyperbolicDist’
 bad4set_sexp <- c("inarmix", "IsingSampler", "rotations")
 
 ## Failing at compile time
-bad4otherAPI <- c("RcppClassic", 	# redefinition of 'Rcpp::internal::getPosixClasses()’
+bad4otherAPI <- c("httpuv", 		# error: ‘stack_trace’ was not declared in this scope
+                  "RcppClassic", 	# redefinition of 'Rcpp::internal::getPosixClasses()’
                   "Rmixmod",            # overloaded ‘S4_Impl(Rcpp::SlotProxyPolicy<Rcpp::S4_Impl<Rcpp::PreserveStorage> >::SlotProxy)’ is ambiguous
+                  "RProtoBuf",          # [rel 0.4.0] still: error: ‘setSEXP’ was not declared in this scope
                   "tbart",              # tb.cpp:13:24: error: ‘stop’ is not a member of ‘Rcpp’
                   "wsrf")               # error: call of overloaded ‘Vector(Rcpp::Vector<19>::const_Proxy)’ is ambiguous
 
@@ -110,20 +112,18 @@ bad4unclear <- c("maxent",              # weird segfault
 bad4maybeuser <- c("rmgarch",           # ‘trunc’ is not a member of ‘std::ios_base’
                    "rugarch")           # ‘trunc’ is not a member of ‘std::ios_base’
 
-fixedWithImport <- c("Amelia",		# works with proper Import
-                     "apcluster", 	# works with proper Import
-                     "httpuv",          # works with proper Import
-                     "RcppEigen",       # [next version] after user fix for 'SHLIB.maker' 
-                     "RcppZiggurat",    # works with proper Import                    
-                     "RProtoBuf",       # [rel 0.4.0] with 'importFrom(Rcpp, evalCpp)'
-                     "RQuantLib")	# [next version] with 'importFrom(Rcpp, evalCpp)'
+goodWithImport <- c("Amelia",		# works with proper Import
+                    "apcluster", 	# works with proper Import
+                    "RcppEigen",        # [next version] after user fix for 'SHLIB.maker' 
+                    "RcppZiggurat",     # works with proper Import                    
+                    "RQuantLib")	# [next version] with 'importFrom(Rcpp, evalCpp)'
 
 #bad4rcpp <- c()				# Yay!
 
 ## these fail initially but can all be run with some extra effort
 bad4notrcpp <-   c("KernSmoothIRT")	# rgl failed, needs full x11 session
                    
-good <- length(goodPkg) + length(fixedWithImport)
+good <- length(goodPkgAsIs) + length(goodWithImport)
 bad  <- (length(bad4missing) + length(bad4set_sexp) +
          length(bad4otherAPI) + length(bad4dataptr) +
          length(bad4rngscore) + length(bad4unclear) +
@@ -133,6 +133,8 @@ bad  <- (length(bad4missing) + length(bad4set_sexp) +
 #stopifnot(all.equal(bad,length(badPkg)))  ## account for GeoBIO
 
 cat("Good        ", good, "\n")
+cat("  AsIs      ", length(goodPkgAsIs), "\n")
+cat("  w/Imports ", length(goodWithImport), "\n")
 cat("Bad         ", bad, "\n")
 #cat("  RcppErr  ", length(bad4rcpp), "\n")
 cat("  MissDep   ", length(bad4missing), "\n")
