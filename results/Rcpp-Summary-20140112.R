@@ -11,7 +11,7 @@ load("~/svn/rcpp/testlogs/result-20140112-230103.RData")
 
 goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr",
                  "BayesComm", "bcp", "bcpa", "bfa", "bfp", "blockcluster",
-                 "bifactorial", "bilan", "ccaPP", "cda", "cladoRcpp", "clogitL1",
+                 "bifactorial", "bilan", "ccaPP", "cda", "cladoRcpp", "climdex.pcic", "clogitL1",
                  "clusteval", "ClustVarLV", "ConConPiWiFun", "coneproj", "Delaporte",
                  "ecp", "EpiContactTrace", "fastGHQuad", "FastPCS", "FastRCS",
                  "FBFsearch", "forecast", "fugeR", "Funclustering", "geoCount",
@@ -43,11 +43,9 @@ badPkg <- c("ALDqr", "Amelia", "apcluster", "CARBayes", "CDM", "classify",
             "surveillance", "TAM", "tbart", "VideoComparison", "WideLM", 
             "wordcloud", "wsrf")
 
-bad4missing <- c("ALDqr",		# 'HyperbolicDist’
-                 "CARBayes",		# ‘deldir’ ‘maptools’ ‘shapefiles’ ‘spdep’
+bad4missing <- c("CARBayes",		# ‘deldir’ ‘maptools’ ‘shapefiles’ ‘spdep’
                  "CDM",			# ‘psych’ ‘polycor’
                  "classify",		# ‘R2WinBUGS’ ‘R2jags’
-		 "climdex.pcic",	# 'PCIct'
                  "disclapmix",		# disclap
                  "diversitree",		# ‘deSolve’ ‘subplex’
                  "geiger",		# ‘msm’ ‘subplex’ ‘deSolve’ ‘coda’ ‘ncbit’
@@ -117,7 +115,8 @@ goodWithUserChange <- c("httpuv", 	# include <Rcpp.h> -- not Rcpp/exceptions.h
 #bad4rcpp <- c()				# Yay!
 
 ## these fail initially but can all be run with some extra effort
-bad4notrcpp <-   c("KernSmoothIRT")	# rgl failed, needs full x11 session
+bad4notrcpp <-   c("ALDqr",		# needs \dontrun{} in example, comment alone useless
+                   "KernSmoothIRT")	# rgl failed, needs full x11 session
                             
 good <- length(goodPkgAsIs) + length(goodWithImport) + length(goodWithUserChange)
 bad  <- (length(bad4missing) + length(bad4RcppAPI) + 
