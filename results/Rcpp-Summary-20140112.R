@@ -7,30 +7,30 @@ load("~/svn/rcpp/testlogs/result-20140112-230103.RData")
 ## g
 ## good <- as.character(subset(res, res==0)[,1])
 ## dput(good)
-goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "BayesComm", 
-                 "bcp", "bcpa", "bfa", "bfp", "bifactorial", "bilan", "ccaPP", 
-                 "cda", "cladoRcpp", "clogitL1", "clusteval", "ClustVarLV", "ConConPiWiFun", 
-                 "coneproj", "Delaporte", "ecp", "EpiContactTrace", "fastGHQuad", 
-                 "FastPCS", "FastRCS", "FBFsearch", "forecast", "geoCount", "growcurves", 
-                 "GSE", "GxM", "hawkes", "jaatha", "Kmisc", "minqa", "MPTinR", 
-                 "msgl", "MVB", "NetSim", "oem", "PedCNV", "phylobase", "planar", 
-                 "PReMiuM", "prospectr", "psgp", "Rankcluster", "Rclusterpp", 
-                 "RcppArmadillo", "RcppBDT", "rcppbugs", "RcppClassicExamples", 
-                 "RcppCNPy", "RcppDE", "RcppExamples", "RcppGSL", "RcppOctave", 
-                 "RcppProgress", "RcppRoll", "RcppSMC", "RcppXts", "rexpokit", 
-                 "rforensicbatwing", "RInside", "Rmalschains", "RMessenger", "robustgam", 
-                 "robustHD", "rococo", "RSNNS", "RSofia", "RVowpalWabbit", "sdcMicro", 
-                 "sequences", "simFrame", "sparseHessianFD", "sparseLTSEigen", 
-                 "stochvol", "survSNP", "termstrc", "trustOptim", "tvm", "unmarked", 
-                 "VIM", "waffect", "WideLm", "XBRL", "zic")
- 
 
+goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr",
+                 "BayesComm", "bcp", "bcpa", "bfa", "bfp", "bifactorial", "bilan",
+                 "ccaPP", "cda", "cladoRcpp", "clogitL1", "clusteval", "ClustVarLV",
+                 "ConConPiWiFun", "coneproj", "Delaporte", "ecp", "EpiContactTrace",
+                 "fastGHQuad", "FastPCS", "FastRCS", "FBFsearch", "forecast", "fugeR",
+                 "geoCount", "growcurves", "GSE", "GxM", "hawkes", "hsphase", "jaatha",
+                 "Kmisc", "minqa", "MPTinR", "msgl", "MVB", "NetSim", "oem", "PedCNV",
+                 "phylobase", "planar", "PReMiuM", "prospectr", "psgp", "Rankcluster",
+                 "Rclusterpp", "RcppArmadillo", "RcppBDT", "rcppbugs",
+                 "RcppClassicExamples", "RcppCNPy", "RcppDE", "RcppExamples", "RcppGSL",
+                 "RcppOctave", "RcppProgress", "RcppRoll", "RcppSMC", "RcppXts",
+                 "rexpokit", "rforensicbatwing", "RInside", "Rmalschains", "RMessenger",
+                 "robustgam", "robustHD", "rococo", "RSNNS", "RSofia", "RVowpalWabbit",
+                 "sdcMicro", "sequences", "simFrame", "sparseHessianFD", "sparseLTSEigen",
+                 "stochvol", "survSNP", "termstrc", "trustOptim", "tvm", "unmarked",
+                 "VIM", "waffect", "WideLm", "XBRL", "zic") 
+ 
 ## bad <- as.character(subset(res, res==1)[,1])
 ## dput(bad)
 badPkg <- c("ALDqr", "Amelia", "apcluster", "CARBayes", "CDM", "classify", 
             "climdex.pcic", "dils", "disclapmix", "diversitree", "fdaMixed", 
-            "fugeR", "geiger", "GeneticTools", "gMWT", "GOsummaries", "gRbase", 
-            "gRim", "HLMdiag", "hsphase", "httpuv", "hypervolume", "inarmix", 
+            "geiger", "GeneticTools", "gMWT", "GOsummaries", "gRbase", 
+            "gRim", "HLMdiag", "httpuv", "hypervolume", "inarmix", 
             "IsingSampler", "KernSmoothIRT", "kmc", "LaF", "lm.br", "lme4", 
             "marked", "maxent", "mets", "mirt", "miscF", "mvabund", "ndl", 
             "ngspatial", "openair", "orQA", "pROC", "protViz", "RcppClassic", 
@@ -47,12 +47,10 @@ bad4missing <- c("ALDqr",		# 'HyperbolicDist’
 		 "climdex.pcic",	# 'PCIct'
                  "disclapmix",		# disclap
                  "diversitree",		# ‘deSolve’ ‘subplex’
-                 "fugeR",		# snowfall
                  "geiger",		# ‘msm’ ‘subplex’ ‘deSolve’ ‘coda’ ‘ncbit’
                  "GeneticTools",	# ‘gMWT’ ‘snpStats’
                  "gMWT",		# ‘clinfun’
                  "GOsummaries",		# ‘gProfileR’ ‘limma’
-                 "hsphase",		# snowfall
                  "hypervolume",		# raster, maps
                  "kmc",			# ‘rootSolve’ ‘emplik’
                  "LaF",			# 'yaml'
