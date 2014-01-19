@@ -1,19 +1,21 @@
 
-## started with Rcpp (current on GitHub, as well as RcppArmadillo and RcppEigen)
+## -- started with Rcpp (current on GitHub as of 2-14-Jan-12,
+##    as well as current RcppArmadillo and RcppEigen)
+## -- updated throughout the week, see github commit log
 
 ## loads 'res'
 load("~/svn/rcpp/testlogs/result-20140112-230103.RData")
 
-## g
 ## good <- as.character(subset(res, res==0)[,1])
 ## dput(good)
 
 goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr",
-                 "BayesComm", "bcp", "bcpa", "bfa", "bfp", "blockcluster", "bifactorial", "bilan",
-                 "ccaPP", "cda", "cladoRcpp", "clogitL1", "clusteval", "ClustVarLV",
-                 "ConConPiWiFun", "coneproj", "Delaporte", "ecp", "EpiContactTrace",
-                 "fastGHQuad", "FastPCS", "FastRCS", "FBFsearch", "forecast", "fugeR",
-                 "geoCount", "growcurves", "GSE", "GxM", "hawkes", "hsphase", "jaatha",
+                 "BayesComm", "bcp", "bcpa", "bfa", "bfp", "blockcluster",
+                 "bifactorial", "bilan", "ccaPP", "cda", "cladoRcpp", "clogitL1",
+                 "clusteval", "ClustVarLV", "ConConPiWiFun", "coneproj", "Delaporte",
+                 "ecp", "EpiContactTrace", "fastGHQuad", "FastPCS", "FastRCS",
+                 "FBFsearch", "forecast", "fugeR", "Funclustering", "geoCount",
+                 "growcurves", "GSE", "GxM", "hawkes", "hsphase", "IBHM", "jaatha",
                  "Kmisc", "LaF", "minqa", "MPTinR", "msgl", "MVB", "ndl", "NetSim",
                  "oem", "PedCNV", "phylobase", "planar", "PReMiuM", "prospectr",
                  "psgp", "Rankcluster", "Rclusterpp", "RcppArmadillo", "RcppBDT",
@@ -23,8 +25,8 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr",
                  "Rmalschains", "RMessenger", "robustgam", "robustHD", "rococo",
                  "RSNNS", "RSofia", "RVowpalWabbit", "sdcMicro", "sequences",
                  "simFrame", "sparseHessianFD", "sparseLTSEigen", "stochvol",
-                 "survSNP", "TAQMNGR", "termstrc", "trustOptim", "tvm", "unmarked", "VIM",
-                 "waffect", "WideLm", "XBRL", "zic")
+                 "survSNP", "TAQMNGR", "termstrc", "trustOptim", "tvm", "unmarked",
+                 "VIM", "waffect", "WideLm", "XBRL", "zic")
 
 ## bad <- as.character(subset(res, res==1)[,1])
 ## dput(bad)
