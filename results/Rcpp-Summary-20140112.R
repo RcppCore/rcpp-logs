@@ -14,7 +14,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr",
                  "ConConPiWiFun", "coneproj", "Delaporte", "ecp", "EpiContactTrace",
                  "fastGHQuad", "FastPCS", "FastRCS", "FBFsearch", "forecast", "fugeR",
                  "geoCount", "growcurves", "GSE", "GxM", "hawkes", "hsphase", "jaatha",
-                 "Kmisc", "minqa", "MPTinR", "msgl", "MVB", "NetSim", "oem", "PedCNV",
+                 "Kmisc", "LaF", "minqa", "MPTinR", "msgl", "MVB", "NetSim", "oem", "PedCNV",
                  "phylobase", "planar", "PReMiuM", "prospectr", "psgp", "Rankcluster",
                  "Rclusterpp", "RcppArmadillo", "RcppBDT", "rcppbugs",
                  "RcppClassicExamples", "RcppCNPy", "RcppDE", "RcppExamples", "RcppGSL",
@@ -31,7 +31,7 @@ badPkg <- c("ALDqr", "Amelia", "apcluster", "CARBayes", "CDM", "classify",
             "climdex.pcic", "dils", "disclapmix", "diversitree", "fdaMixed", 
             "geiger", "GeneticTools", "gMWT", "GOsummaries", "gRbase", 
             "gRim", "HLMdiag", "httpuv", "hypervolume", "inarmix", 
-            "IsingSampler", "KernSmoothIRT", "kmc", "LaF", "lm.br", "lme4", 
+            "IsingSampler", "KernSmoothIRT", "kmc", "lm.br", "lme4", 
             "marked", "maxent", "mets", "mirt", "miscF", "mvabund", "ndl", 
             "ngspatial", "openair", "orQA", "pROC", "protViz", "RcppClassic", 
             "RcppEigen", "RcppZiggurat", "rgam", "rmgarch", "Rmixmod", "rotations", 
@@ -53,7 +53,6 @@ bad4missing <- c("ALDqr",		# 'HyperbolicDist’
                  "GOsummaries",		# ‘gProfileR’ ‘limma’
                  "hypervolume",		# raster, maps
                  "kmc",			# ‘rootSolve’ ‘emplik’
-                 "LaF",			# 'yaml'
                  "marked",		# ‘R2admb’
                  "mets",		# ‘lava’ ‘timereg’ 
                  "mirt",		# ‘GPArotation’
