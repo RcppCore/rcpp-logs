@@ -33,7 +33,7 @@ badPkg <- c("ALDqr", "Amelia", "apcluster", "CARBayes", "CDM", "classify",
             "gRim", "HLMdiag", "httpuv", "hypervolume", "inarmix", 
             "IsingSampler", "KernSmoothIRT", "kmc", "lm.br", "lme4", 
             "marked", "maxent", "mets", "mirt", "miscF", "mvabund", "ndl", 
-            "ngspatial", "openair", "orQA", "pROC", "protViz", "RcppClassic", 
+            "ngspatial", "orQA", "pROC", "protViz", "RcppClassic", 
             "RcppEigen", "RcppZiggurat", "rgam", "rmgarch", "Rmixmod", "rotations", 
             "RProtoBuf", "RQuantLib", "Ruchardet", "rugarch", "SBSA", "sdcTable", 
             "sglOptim", "sirt", "snplist", "spacodiR", "SpatialTools", "strum", 
@@ -58,7 +58,6 @@ bad4missing <- c("ALDqr",		# 'HyperbolicDist’
                  "mirt",		# ‘GPArotation’
                  "miscF",		# ‘MCMCpack’
                  "ngspatial",		# ‘batchmeans’
-                 "openair",		# ‘latticeExtra’
                  "orQA",		# ‘genefilter’
                  "pROC",		# 'logcondens'
                  "sdcTable",		# ‘lpSolveAPI’
@@ -96,6 +95,7 @@ goodWithImport <- c("Amelia",		# works with proper Import
                     "IsingSampler", 	# works with proper Import
                     "lme4",		# works with proper Import
                     "mvabund",		# works with proper Import
+                    "openair",		# works with proper Import                    
                     "protvix", 		# works with proper Import
                     "RcppEigen",        # [next version] after user fix for 'SHLIB.maker' 
                     "RcppZiggurat",     # works with proper Import
