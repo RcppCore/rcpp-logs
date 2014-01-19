@@ -68,8 +68,8 @@ bad4missing <- c("CARBayes",		# ‘deldir’ ‘maptools’ ‘shapefiles’ ‘
 
 
 ## Failing at compile time
-bad4RcppAPI <- c("dplyr",		# see Rcpp issue #99
-                 "RProtoBuf")           # [rel 0.4.0] still: error: ‘setSEXP’ was not declared in
+bad4RcppAPI <- c("dplyr")		# see Rcpp issue #99
+
 
 bad4unclear <- c("maxent",              # passes iff maxent.Rd's example gets \dontrun{}
                  "sglOptim",            # error crit. changed, passes with 1.0e-7 (was 1.0e-10)
@@ -103,6 +103,7 @@ goodWithImport <- c("Amelia",		# works with proper Import
 goodWithUserChange <- c("httpuv", 	# include <Rcpp.h> -- not Rcpp/exceptions.h
                         "RcppClassic", 	# need to hide 'Rcpp::internal::getPosixClasses()’
                         "rmgarch",      # header file order: incl. only RcppArmadillo
+                        "RProtoBuf",    # rel 0.4.0 with S4 accomodation
                         "rugarch")      # header file order: incl. only RcppArmadillo
 
 
