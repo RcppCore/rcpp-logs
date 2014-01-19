@@ -9,7 +9,7 @@ load("~/svn/rcpp/testlogs/result-20140112-230103.RData")
 ## dput(good)
 
 goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr",
-                 "BayesComm", "bcp", "bcpa", "bfa", "bfp", "bifactorial", "bilan",
+                 "BayesComm", "bcp", "bcpa", "bfa", "bfp", "blockcluster", "bifactorial", "bilan",
                  "ccaPP", "cda", "cladoRcpp", "clogitL1", "clusteval", "ClustVarLV",
                  "ConConPiWiFun", "coneproj", "Delaporte", "ecp", "EpiContactTrace",
                  "fastGHQuad", "FastPCS", "FastRCS", "FBFsearch", "forecast", "fugeR",
@@ -23,7 +23,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr",
                  "Rmalschains", "RMessenger", "robustgam", "robustHD", "rococo",
                  "RSNNS", "RSofia", "RVowpalWabbit", "sdcMicro", "sequences",
                  "simFrame", "sparseHessianFD", "sparseLTSEigen", "stochvol",
-                 "survSNP", "termstrc", "trustOptim", "tvm", "unmarked", "VIM",
+                 "survSNP", "TAQMNGR", "termstrc", "trustOptim", "tvm", "unmarked", "VIM",
                  "waffect", "WideLm", "XBRL", "zic")
 
 ## bad <- as.character(subset(res, res==1)[,1])
@@ -74,7 +74,8 @@ bad4missing <- c("ALDqr",		# 'HyperbolicDist’
 
 
 ## Failing at compile time
-bad4RcppAPI <- c("RProtoBuf",           # [rel 0.4.0] still: error: ‘setSEXP’ was not declared in this scope
+bad4RcppAPI <- c("dplyr",		# see Rcpp issue #99
+                 "RProtoBuf",           # [rel 0.4.0] still: error: ‘setSEXP’ was not declared in this scope
                  "wsrf")                # error: call of overloaded ‘Vector(Rcpp::Vector<19>::const_Proxy)’ is ambiguous
 
 
