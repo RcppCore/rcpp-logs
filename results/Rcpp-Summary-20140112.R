@@ -14,17 +14,18 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr",
                  "ConConPiWiFun", "coneproj", "Delaporte", "ecp", "EpiContactTrace",
                  "fastGHQuad", "FastPCS", "FastRCS", "FBFsearch", "forecast", "fugeR",
                  "geoCount", "growcurves", "GSE", "GxM", "hawkes", "hsphase", "jaatha",
-                 "Kmisc", "LaF", "minqa", "MPTinR", "msgl", "MVB", "NetSim", "oem", "PedCNV",
-                 "phylobase", "planar", "PReMiuM", "prospectr", "psgp", "Rankcluster",
-                 "Rclusterpp", "RcppArmadillo", "RcppBDT", "rcppbugs",
-                 "RcppClassicExamples", "RcppCNPy", "RcppDE", "RcppExamples", "RcppGSL",
-                 "RcppOctave", "RcppProgress", "RcppRoll", "RcppSMC", "RcppXts",
-                 "rexpokit", "rforensicbatwing", "RInside", "Rmalschains", "RMessenger",
-                 "robustgam", "robustHD", "rococo", "RSNNS", "RSofia", "RVowpalWabbit",
-                 "sdcMicro", "sequences", "simFrame", "sparseHessianFD", "sparseLTSEigen",
-                 "stochvol", "survSNP", "termstrc", "trustOptim", "tvm", "unmarked",
-                 "VIM", "waffect", "WideLm", "XBRL", "zic") 
- 
+                 "Kmisc", "LaF", "minqa", "MPTinR", "msgl", "MVB", "ndl", "NetSim",
+                 "oem", "PedCNV", "phylobase", "planar", "PReMiuM", "prospectr",
+                 "psgp", "Rankcluster", "Rclusterpp", "RcppArmadillo", "RcppBDT",
+                 "rcppbugs", "RcppClassicExamples", "RcppCNPy", "RcppDE",
+                 "RcppExamples", "RcppGSL", "RcppOctave", "RcppProgress", "RcppRoll",
+                 "RcppSMC", "RcppXts", "rexpokit", "rforensicbatwing", "RInside",
+                 "Rmalschains", "RMessenger", "robustgam", "robustHD", "rococo",
+                 "RSNNS", "RSofia", "RVowpalWabbit", "sdcMicro", "sequences",
+                 "simFrame", "sparseHessianFD", "sparseLTSEigen", "stochvol",
+                 "survSNP", "termstrc", "trustOptim", "tvm", "unmarked", "VIM",
+                 "waffect", "WideLm", "XBRL", "zic")
+
 ## bad <- as.character(subset(res, res==1)[,1])
 ## dput(bad)
 badPkg <- c("ALDqr", "Amelia", "apcluster", "CARBayes", "CDM", "classify", 
@@ -32,7 +33,7 @@ badPkg <- c("ALDqr", "Amelia", "apcluster", "CARBayes", "CDM", "classify",
             "geiger", "GeneticTools", "gMWT", "GOsummaries", "gRbase", 
             "gRim", "HLMdiag", "httpuv", "hypervolume", "inarmix", 
             "IsingSampler", "KernSmoothIRT", "kmc", "lm.br", "lme4", 
-            "marked", "maxent", "mets", "mirt", "miscF", "mvabund", "ndl", 
+            "marked", "maxent", "mets", "mirt", "miscF", "mvabund", 
             "ngspatial", "orQA", "pROC", "protViz", "RcppClassic", 
             "RcppEigen", "RcppZiggurat", "rgam", "rmgarch", "Rmixmod", "rotations", 
             "RProtoBuf", "RQuantLib", "Ruchardet", "rugarch", "SBSA", "sdcTable", 
@@ -73,11 +74,8 @@ bad4missing <- c("ALDqr",		# 'HyperbolicDist’
 
 
 ## Failing at compile time
-bad4RcppAPI <- c("ndl",                 # error: ambiguous overload for ‘operator=’
-                 "Rmixmod",             # overloaded ‘S4_Impl(Rcpp::SlotProxyPolicy<Rcpp::S4_Impl<Rcpp::PreserveStorage> >::SlotProxy)’ is ambiguous
-                 "RProtoBuf",           # [rel 0.4.0] still: error: ‘setSEXP’ was not declared in this scope
+bad4RcppAPI <- c("RProtoBuf",           # [rel 0.4.0] still: error: ‘setSEXP’ was not declared in this scope
                  "wsrf")                # error: call of overloaded ‘Vector(Rcpp::Vector<19>::const_Proxy)’ is ambiguous
-
 
 
 bad4unclear <- c("maxent",              # passes iff maxent.Rd's example gets \dontrun{}
@@ -101,6 +99,7 @@ goodWithImport <- c("Amelia",		# works with proper Import
                     "RcppZiggurat",     # works with proper Import
                     "rgam",             # works with proper Import
                     "rotations",        # works with proper Import
+                    "Rmixmod",          # works with proper Import (and newest Rcpp)
                     "RQuantLib",	# [next version] with 'importFrom(Rcpp, evalCpp)'
                     "Ruchardet",	# works with proper Import
                     "SBSA",		# works with proper Import
