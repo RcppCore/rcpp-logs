@@ -19,7 +19,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr",
                  "hawkes", "hsphase", "IBHM", "jaatha", "Kmisc", "LaF", "marked",
                  "minqa", "mirt", "miscF", "MPTinR", "msgl", "MVB", "ndl", "NetSim",
                  "ngspatial", "oem", "PedCNV", "phylobase", "planar", "PReMiuM",
-                 "pROC", "prospectr", "psgp", "Rankcluster", "Rclusterpp",
+                 "pROC", "prospectr", "psgp", "Rankcluster", "rARPACK", "Rclusterpp",
                  "RcppArmadillo", "RcppBDT", "rcppbugs", "RcppClassicExamples",
                  "RcppCNPy", "RcppDE", "RcppExamples", "RcppGSL", "RcppOctave",
                  "RcppProgress", "RcppRoll", "RcppSMC", "RcppXts", "rexpokit",
@@ -69,9 +69,7 @@ bad4missing <- c("CARBayes",		# ‘deldir’ ‘maptools’ ‘shapefiles’ ‘
 
 ## Failing at compile time
 bad4RcppAPI <- c("dplyr",		# see Rcpp issue #99
-                 "RProtoBuf",           # [rel 0.4.0] still: error: ‘setSEXP’ was not declared in this scope
-                 "wsrf")                # error: call of overloaded ‘Vector(Rcpp::Vector<19>::const_Proxy)’ is ambiguous
-
+                 "RProtoBuf")           # [rel 0.4.0] still: error: ‘setSEXP’ was not declared in
 
 bad4unclear <- c("maxent",              # passes iff maxent.Rd's example gets \dontrun{}
                  "sglOptim",            # error crit. changed, passes with 1.0e-7 (was 1.0e-10)
@@ -98,7 +96,9 @@ goodWithImport <- c("Amelia",		# works with proper Import
                     "RQuantLib",	# [next version] with 'importFrom(Rcpp, evalCpp)'
                     "Ruchardet",	# works with proper Import
                     "SBSA",		# works with proper Import
-                    "SpatialTools")	# works with proper Import
+                    "SpatialTools",	# works with proper Import
+                    "wsrf")             # [susp. warning] works with proper Import
+
 
 goodWithUserChange <- c("httpuv", 	# include <Rcpp.h> -- not Rcpp/exceptions.h
                         "RcppClassic", 	# need to hide 'Rcpp::internal::getPosixClasses()’
