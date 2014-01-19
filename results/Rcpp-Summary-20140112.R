@@ -11,22 +11,24 @@ load("~/svn/rcpp/testlogs/result-20140112-230103.RData")
 
 goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr",
                  "BayesComm", "bcp", "bcpa", "bfa", "bfp", "blockcluster",
-                 "bifactorial", "bilan", "ccaPP", "cda", "cladoRcpp", "climdex.pcic", "clogitL1",
-                 "clusteval", "ClustVarLV", "ConConPiWiFun", "coneproj", "Delaporte", "disclapmix",
-                 "ecp", "EpiContactTrace", "fastGHQuad", "FastPCS", "FastRCS",
-                 "FBFsearch", "forecast", "fugeR", "Funclustering", "geoCount",
-                 "growcurves", "GSE", "gMWT", "GxM", "hawkes", "hsphase", "IBHM", "jaatha",
-                 "Kmisc", "LaF", "marked", "minqa", "MPTinR", "msgl", "MVB", "ndl", "NetSim",
-                 "oem", "PedCNV", "phylobase", "planar", "PReMiuM", "prospectr",
-                 "psgp", "Rankcluster", "Rclusterpp", "RcppArmadillo", "RcppBDT",
-                 "rcppbugs", "RcppClassicExamples", "RcppCNPy", "RcppDE",
-                 "RcppExamples", "RcppGSL", "RcppOctave", "RcppProgress", "RcppRoll",
-                 "RcppSMC", "RcppXts", "rexpokit", "rforensicbatwing", "RInside",
-                 "Rmalschains", "RMessenger", "robustgam", "robustHD", "rococo",
-                 "RSNNS", "RSofia", "RVowpalWabbit", "sdcMicro", "sequences",
-                 "simFrame", "sparseHessianFD", "sparseLTSEigen", "stochvol",
-                 "survSNP", "TAQMNGR", "termstrc", "trustOptim", "tvm", "unmarked",
-                 "VIM", "waffect", "WideLm", "XBRL", "zic")
+                 "bifactorial", "bilan", "ccaPP", "cda", "cladoRcpp", "climdex.pcic",
+                 "clogitL1", "clusteval", "ClustVarLV", "ConConPiWiFun", "coneproj",
+                 "Delaporte", "disclapmix", "ecp", "EpiContactTrace", "fastGHQuad",
+                 "FastPCS", "FastRCS", "FBFsearch", "forecast", "fugeR",
+                 "Funclustering", "geoCount", "growcurves", "GSE", "gMWT", "GxM",
+                 "hawkes", "hsphase", "IBHM", "jaatha", "Kmisc", "LaF", "marked",
+                 "minqa", "mirt", "miscF", "MPTinR", "msgl", "MVB", "ndl", "NetSim",
+                 "ngspatial", "oem", "PedCNV", "phylobase", "planar", "PReMiuM",
+                 "pROC", "prospectr", "psgp", "Rankcluster", "Rclusterpp",
+                 "RcppArmadillo", "RcppBDT", "rcppbugs", "RcppClassicExamples",
+                 "RcppCNPy", "RcppDE", "RcppExamples", "RcppGSL", "RcppOctave",
+                 "RcppProgress", "RcppRoll", "RcppSMC", "RcppXts", "rexpokit",
+                 "rforensicbatwing", "RInside", "Rmalschains", "RMessenger",
+                 "robustgam", "robustHD", "rococo", "RSNNS", "RSofia", "RVowpalWabbit",
+                 "sdcMicro", "sdcTable", "sequences", "simFrame", "sparseHessianFD",
+                 "sparseLTSEigen", "stochvol", "survSNP", "TAQMNGR", "termstrc",
+                 "trustOptim", "tvm", "unmarked", "VIM", "waffect", "WideLm", "XBRL",
+                 "zic")
 
 ## bad <- as.character(subset(res, res==1)[,1])
 ## dput(bad)
@@ -38,7 +40,7 @@ badPkg <- c("ALDqr", "Amelia", "apcluster", "CARBayes", "CDM", "classify",
             "maxent", "mets", "mirt", "miscF", "mvabund", 
             "ngspatial", "orQA", "pROC", "protViz", "RcppClassic", 
             "RcppEigen", "RcppZiggurat", "rgam", "rmgarch", "Rmixmod", "rotations", 
-            "RProtoBuf", "RQuantLib", "Ruchardet", "rugarch", "SBSA", "sdcTable", 
+            "RProtoBuf", "RQuantLib", "Ruchardet", "rugarch", "SBSA", 
             "sglOptim", "sirt", "snplist", "spacodiR", "SpatialTools", "strum", 
             "surveillance", "TAM", "tbart", "VideoComparison", "WideLM", 
             "wordcloud", "wsrf")
@@ -52,14 +54,8 @@ bad4missing <- c("CARBayes",		# ‘deldir’ ‘maptools’ ‘shapefiles’ ‘
                  "GOsummaries",		# ‘gProfileR’ ‘limma’
                  "hypervolume",		# raster, maps
                  "kmc",			# ‘rootSolve’ ‘emplik’
-                 "marked",		# ‘R2admb’
                  "mets",		# ‘lava’ ‘timereg’ 
-                 "mirt",		# ‘GPArotation’
-                 "miscF",		# ‘MCMCpack’
-                 "ngspatial",		# ‘batchmeans’
-                 "orQA",		# ‘genefilter’
-                 "pROC",		# 'logcondens'
-                 "sdcTable",		# ‘lpSolveAPI’
+                 "orQA",		# ‘genefilter’ [from BioC]
                  "sirt",		# ‘gregmisc’ ‘sfsmisc’ ‘TAM’ ‘CDM’ ‘ic.infer’ ‘psych’ ‘pbivnorm’
                  "snplist",		#" 'biomaRt'
                  "spacodiR",		# ‘picante’
