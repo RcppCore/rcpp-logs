@@ -12,11 +12,11 @@ load("~/svn/rcpp/testlogs/result-20140112-230103.RData")
 goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr",
                  "BayesComm", "bcp", "bcpa", "bfa", "bfp", "blockcluster",
                  "bifactorial", "bilan", "ccaPP", "cda", "cladoRcpp", "climdex.pcic", "clogitL1",
-                 "clusteval", "ClustVarLV", "ConConPiWiFun", "coneproj", "Delaporte",
+                 "clusteval", "ClustVarLV", "ConConPiWiFun", "coneproj", "Delaporte", "disclapmix",
                  "ecp", "EpiContactTrace", "fastGHQuad", "FastPCS", "FastRCS",
                  "FBFsearch", "forecast", "fugeR", "Funclustering", "geoCount",
-                 "growcurves", "GSE", "GxM", "hawkes", "hsphase", "IBHM", "jaatha",
-                 "Kmisc", "LaF", "minqa", "MPTinR", "msgl", "MVB", "ndl", "NetSim",
+                 "growcurves", "GSE", "gMWT", "GxM", "hawkes", "hsphase", "IBHM", "jaatha",
+                 "Kmisc", "LaF", "marked", "minqa", "MPTinR", "msgl", "MVB", "ndl", "NetSim",
                  "oem", "PedCNV", "phylobase", "planar", "PReMiuM", "prospectr",
                  "psgp", "Rankcluster", "Rclusterpp", "RcppArmadillo", "RcppBDT",
                  "rcppbugs", "RcppClassicExamples", "RcppCNPy", "RcppDE",
@@ -35,7 +35,7 @@ badPkg <- c("ALDqr", "Amelia", "apcluster", "CARBayes", "CDM", "classify",
             "geiger", "GeneticTools", "gMWT", "GOsummaries", "gRbase", 
             "gRim", "HLMdiag", "httpuv", "hypervolume", "inarmix", 
             "IsingSampler", "KernSmoothIRT", "kmc", "lm.br", "lme4", 
-            "marked", "maxent", "mets", "mirt", "miscF", "mvabund", 
+            "maxent", "mets", "mirt", "miscF", "mvabund", 
             "ngspatial", "orQA", "pROC", "protViz", "RcppClassic", 
             "RcppEigen", "RcppZiggurat", "rgam", "rmgarch", "Rmixmod", "rotations", 
             "RProtoBuf", "RQuantLib", "Ruchardet", "rugarch", "SBSA", "sdcTable", 
@@ -46,11 +46,9 @@ badPkg <- c("ALDqr", "Amelia", "apcluster", "CARBayes", "CDM", "classify",
 bad4missing <- c("CARBayes",		# ‘deldir’ ‘maptools’ ‘shapefiles’ ‘spdep’
                  "CDM",			# ‘psych’ ‘polycor’
                  "classify",		# ‘R2WinBUGS’ ‘R2jags’
-                 "disclapmix",		# disclap
                  "diversitree",		# ‘deSolve’ ‘subplex’
                  "geiger",		# ‘msm’ ‘subplex’ ‘deSolve’ ‘coda’ ‘ncbit’
                  "GeneticTools",	# ‘gMWT’ ‘snpStats’
-                 "gMWT",		# ‘clinfun’
                  "GOsummaries",		# ‘gProfileR’ ‘limma’
                  "hypervolume",		# raster, maps
                  "kmc",			# ‘rootSolve’ ‘emplik’
@@ -119,22 +117,24 @@ bad4notrcpp <-   c("ALDqr",		# needs \dontrun{} in example, comment alone useles
                    "KernSmoothIRT")	# rgl failed, needs full x11 session
                             
 good <- length(goodPkgAsIs) + length(goodWithImport) + length(goodWithUserChange)
-bad  <- (length(bad4missing) + length(bad4RcppAPI) + 
-         length(bad4unclear) + length(bad4notrcpp))
+badrcpp <- length(bad4RcppAPI) + length(bad4unclear)
+badother <- length(bad4missing) + length(bad4notrcpp)
+bad <- badrcpp + badother
 
 #stopifnot(all.equal(bad,length(badPkg)))  ## account for GeoBIO
 
-cat("Good        ", good, "\n")
-cat("  AsIs      ", length(goodPkgAsIs), "\n")
-cat("  w/Imports ", length(goodWithImport), "\n")
-cat("  w/Change  ", length(goodWithUserChange), "\n")
-cat("Bad         ", bad, "\n")
-cat("  MissDep   ", length(bad4missing), "\n")
-cat("  RcppApi   ", length(bad4RcppAPI), "\n")
-cat("  Unclear   ", length(bad4unclear), "\n")
-cat("  NotRcpp   ", length(bad4notrcpp), "\n")
-cat("Total       ", good + bad, "\n")
-cat("Error Pct   ", (bad-length(bad4missing)) / (good + bad), "\n")
+cat("Good         ", good, "\n")
+cat("  AsIs       ", length(goodPkgAsIs), "\n")
+cat("  w/Imports  ", length(goodWithImport), "\n")
+cat("  w/Change   ", length(goodWithUserChange), "\n")
+cat("Bad Rcpp     ", badrcpp, "\n")
+cat("  RcppApi    ", length(bad4RcppAPI), "\n")
+cat("  Unclear    ", length(bad4unclear), "\n")
+cat("Bad other    ", badother, "\n")
+cat("  MissDep    ", length(bad4missing), "\n")
+cat("  NotRcpp    ", length(bad4notrcpp), "\n")
+cat("Total        ", good + bad, "\n")
+cat("Bad Rcpp Pct ", badrcpp / (good + bad), "\n")
 
 
 
