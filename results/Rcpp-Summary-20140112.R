@@ -97,7 +97,7 @@ goodWithImport <- c("Amelia",		# works with proper Import
                     "Ruchardet",	# works with proper Import
                     "SBSA",		# works with proper Import
                     "SpatialTools",	# works with proper Import
-                    "wsrf")             # [susp. warning] works with proper Import
+                    "wsrf")             # works with proper Import
 
 
 goodWithUserChange <- c("httpuv", 	# include <Rcpp.h> -- not Rcpp/exceptions.h
