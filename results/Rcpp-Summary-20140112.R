@@ -25,7 +25,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr",
                  "RcppProgress", "RcppRoll", "RcppSMC", "RcppXts", "rexpokit",
                  "rforensicbatwing", "RInside", "Rmalschains", "RMessenger",
                  "robustgam", "robustHD", "rococo", "RSNNS", "RSofia", "RVowpalWabbit",
-                 "sdcMicro", "sdcTable", "sequences", "simFrame", "sparseHessianFD",
+                 "sdcMicro", "sdcTable", "sequences", "simFrame", "spacodiR", "sparseHessianFD",
                  "sparseLTSEigen", "stochvol", "survSNP", "TAQMNGR", "termstrc",
                  "trustOptim", "tvm", "unmarked", "VIM", "waffect", "WideLm", "XBRL",
                  "zic")
@@ -57,8 +57,7 @@ bad4missing <- c("CARBayes",		# ‘deldir’ ‘maptools’ ‘shapefiles’ ‘
                  "mets",		# ‘lava’ ‘timereg’ 
                  "orQA",		# ‘genefilter’ [from BioC]
                  "sirt",		# ‘gregmisc’ ‘sfsmisc’ ‘TAM’ ‘CDM’ ‘ic.infer’ ‘psych’ ‘pbivnorm’
-                 "snplist",		#" 'biomaRt'
-                 "spacodiR",		# ‘picante’
+                 "snplist",		#" 'biomaRt' [from BioC]
                  "strum",		# 'pedigree'
                  "surveillance",	# ‘polyCub’ ‘spatstat’
                  "TAM",			# ‘tensor’ ‘sfsmisc’ ‘GPArotation’ ‘psych’
@@ -97,6 +96,7 @@ goodWithImport <- c("Amelia",		# works with proper Import
                     "Ruchardet",	# works with proper Import
                     "SBSA",		# works with proper Import
                     "SpatialTools",	# works with proper Import
+                    "strum", 		# works with proper Import
                     "wsrf")             # works with proper Import
 
 
