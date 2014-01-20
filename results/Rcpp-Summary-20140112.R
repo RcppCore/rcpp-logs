@@ -27,7 +27,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr",
                  "robustgam", "robustHD", "rococo", "RSNNS", "RSofia", "RVowpalWabbit",
                  "sdcMicro", "sdcTable", "sequences", "simFrame", "spacodiR", "sparseHessianFD",
                  "sparseLTSEigen", "stochvol", "survSNP", "TAQMNGR", "termstrc",
-                 "trustOptim", "tvm", "unmarked", "VIM", "waffect", "WideLm", "XBRL",
+                 "trustOptim", "tvm", "unmarked", "VideoComparison", "VIM", "VIMGUI", "waffect", "WideLm", "XBRL",
                  "zic")
 
 ## bad <- as.character(subset(res, res==1)[,1])
@@ -58,12 +58,9 @@ bad4missing <- c("CARBayes",		# ‘deldir’ ‘maptools’ ‘shapefiles’ ‘
                  "orQA",		# ‘genefilter’ [from BioC]
                  "sirt",		# ‘gregmisc’ ‘sfsmisc’ ‘TAM’ ‘CDM’ ‘ic.infer’ ‘psych’ ‘pbivnorm’
                  "snplist",		#" 'biomaRt' [from BioC]
-                 "strum",		# 'pedigree'
                  "surveillance",	# ‘polyCub’ ‘spatstat’
                  "TAM",			# ‘tensor’ ‘sfsmisc’ ‘GPArotation’ ‘psych’
-                 "tbart",               # ‘GISTools’
-                 "VideoComparison",	# ‘pracma’
-                 "VIMGUI")		# VIM, survey
+                 "tbart")               # ‘GISTools’ (and maptools, geos)
 
 
 ## Failing at compile time
