@@ -16,7 +16,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr",
                  "Delaporte", "disclapmix", "ecp", "EpiContactTrace", "fastGHQuad",
                  "FastPCS", "FastRCS", "FBFsearch", "forecast", "fugeR",
                  "Funclustering", "geoCount", "growcurves", "GSE", "gMWT", "GxM",
-                 "hawkes", "hsphase", "IBHM", "jaatha", "Kmisc", "LaF", "marked",
+                 "hawkes", "hsphase", "IBHM", "jaatha", "Kmisc", "LaF", "marked", "mets",
                  "minqa", "mirt", "miscF", "MPTinR", "msgl", "MVB", "ndl", "NetSim",
                  "ngspatial", "oem", "PedCNV", "phylobase", "planar", "PReMiuM",
                  "pROC", "prospectr", "psgp", "Rankcluster", "rARPACK", "Rclusterpp",
@@ -54,7 +54,6 @@ bad4missing <- c("CARBayes",		# ‘deldir’ ‘maptools’ ‘shapefiles’ ‘
                  "GOsummaries",		# ‘gProfileR’ ‘limma’
                  "hypervolume",		# raster, maps
                  "kmc",			# ‘rootSolve’ ‘emplik’
-                 "mets",		# ‘lava’ ‘timereg’ 
                  "orQA",		# ‘genefilter’ [from BioC]
                  "sirt",		# ‘gregmisc’ ‘sfsmisc’ ‘TAM’ ‘CDM’ ‘ic.infer’ ‘psych’ ‘pbivnorm’
                  "snplist",		#" 'biomaRt' [from BioC]
