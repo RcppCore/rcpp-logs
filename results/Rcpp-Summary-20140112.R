@@ -16,19 +16,20 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr",
                  "Delaporte", "disclapmix", "ecp", "EpiContactTrace", "fastGHQuad",
                  "FastPCS", "FastRCS", "FBFsearch", "forecast", "fugeR",
                  "Funclustering", "geoCount", "growcurves", "GSE", "gMWT", "GxM",
-                 "hawkes", "hsphase", "IBHM", "jaatha", "Kmisc", "LaF", "marked", "mets",
-                 "minqa", "mirt", "miscF", "MPTinR", "msgl", "MVB", "ndl", "NetSim",
-                 "ngspatial", "oem", "PedCNV", "phylobase", "planar", "PReMiuM",
-                 "pROC", "prospectr", "psgp", "Rankcluster", "rARPACK", "Rclusterpp",
-                 "RcppArmadillo", "RcppBDT", "rcppbugs", "RcppClassicExamples",
-                 "RcppCNPy", "RcppDE", "RcppExamples", "RcppGSL", "RcppOctave",
-                 "RcppProgress", "RcppRoll", "RcppSMC", "RcppXts", "rexpokit",
-                 "rforensicbatwing", "RInside", "Rmalschains", "RMessenger",
-                 "robustgam", "robustHD", "rococo", "RSNNS", "RSofia", "RVowpalWabbit",
-                 "sdcMicro", "sdcTable", "sequences", "simFrame", "spacodiR", "sparseHessianFD",
-                 "sparseLTSEigen", "stochvol", "survSNP", "TAQMNGR", "termstrc",
-                 "trustOptim", "tvm", "unmarked", "VideoComparison", "VIM", "VIMGUI", "waffect", "WideLm", "XBRL",
-                 "zic")
+                 "hawkes", "hsphase", "IBHM", "jaatha", "Kmisc", "LaF", "marked",
+                 "maxent", "mets", "minqa", "mirt", "miscF", "MPTinR", "msgl", "MVB",
+                 "ndl", "NetSim", "ngspatial", "oem", "PedCNV", "phylobase", "planar",
+                 "PReMiuM", "pROC", "prospectr", "psgp", "Rankcluster", "rARPACK",
+                 "Rclusterpp", "RcppArmadillo", "RcppBDT", "rcppbugs",
+                 "RcppClassicExamples", "RcppCNPy", "RcppDE", "RcppExamples",
+                 "RcppGSL", "RcppOctave", "RcppProgress", "RcppRoll", "RcppSMC",
+                 "RcppXts", "rexpokit", "rforensicbatwing", "RInside", "Rmalschains",
+                 "RMessenger", "robustgam", "robustHD", "rococo", "RSNNS", "RSofia",
+                 "RVowpalWabbit", "sdcMicro", "sdcTable", "sequences", "simFrame",
+                 "spacodiR", "sparseHessianFD", "sparseLTSEigen", "stochvol",
+                 "survSNP", "TAQMNGR", "termstrc", "trustOptim", "tvm", "unmarked",
+                 "VideoComparison", "VIM", "VIMGUI", "waffect", "wordcloud", "WideLm",
+                 "XBRL", "zic")
 
 ## bad <- as.character(subset(res, res==1)[,1])
 ## dput(bad)
@@ -66,9 +67,7 @@ bad4missing <- c("CARBayes",		# ‘deldir’ ‘maptools’ ‘shapefiles’ ‘
 bad4RcppAPI <- c()
 
 
-bad4unclear <- c("maxent",              # passes iff maxent.Rd's example gets \dontrun{}
-                 "sglOptim",            # error crit. changed, passes with 1.0e-7 (was 1.0e-10)
-                 "wordcloud")		# passes iff 'tm' not used in examples
+bad4unclear <- c("sglOptim")            # error crit. changed, passes with 1.0e-7 (was 1.0e-10)
 
 
 goodWithImport <- c("Amelia",		# works with proper Import
