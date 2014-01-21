@@ -16,20 +16,20 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr",
                  "Delaporte", "disclapmix", "ecp", "EpiContactTrace", "fastGHQuad",
                  "FastPCS", "FastRCS", "FBFsearch", "forecast", "fugeR",
                  "Funclustering", "geoCount", "growcurves", "GSE", "gMWT", "GxM",
-                 "hawkes", "hsphase", "IBHM", "jaatha", "Kmisc", "LaF", "marked",
-                 "maxent", "mets", "minqa", "mirt", "miscF", "MPTinR", "msgl", "MVB",
-                 "ndl", "NetSim", "ngspatial", "oem", "PedCNV", "phylobase", "planar",
-                 "PReMiuM", "pROC", "prospectr", "psgp", "Rankcluster", "rARPACK",
-                 "Rclusterpp", "RcppArmadillo", "RcppBDT", "rcppbugs",
-                 "RcppClassicExamples", "RcppCNPy", "RcppDE", "RcppExamples",
-                 "RcppGSL", "RcppOctave", "RcppProgress", "RcppRoll", "RcppSMC",
-                 "RcppXts", "rexpokit", "rforensicbatwing", "RInside", "Rmalschains",
-                 "RMessenger", "robustgam", "robustHD", "rococo", "RSNNS", "RSofia",
-                 "RVowpalWabbit", "sdcMicro", "sdcTable", "sequences", "simFrame",
-                 "spacodiR", "sparseHessianFD", "sparseLTSEigen", "stochvol",
-                 "survSNP", "TAQMNGR", "termstrc", "trustOptim", "tvm", "unmarked",
-                 "VideoComparison", "VIM", "VIMGUI", "waffect", "wordcloud", "WideLm",
-                 "XBRL", "zic")
+                 "hawkes", "hsphase", "HUM", "IBHM", "jaatha", "KernSmoothIRT",
+                 "Kmisc", "LaF", "marked", "maxent", "mets", "minqa", "mirt", "miscF",
+                 "MPTinR", "msgl", "MVB", "ndl", "NetSim", "ngspatial", "oem",
+                 "PedCNV", "phylobase", "planar", "PReMiuM", "pROC", "prospectr",
+                 "psgp", "Rankcluster", "rARPACK", "Rclusterpp", "RcppArmadillo",
+                 "RcppBDT", "rcppbugs", "RcppClassicExamples", "RcppCNPy", "RcppDE",
+                 "RcppExamples", "RcppGSL", "RcppOctave", "RcppProgress", "RcppRoll",
+                 "RcppSMC", "RcppXts", "rexpokit", "rforensicbatwing", "RInside",
+                 "Rmalschains", "RMessenger", "robustgam", "robustHD", "rococo",
+                 "RSNNS", "RSofia", "RVowpalWabbit", "sdcMicro", "sdcTable",
+                 "sequences", "simFrame", "spacodiR", "sparseHessianFD",
+                 "sparseLTSEigen", "stochvol", "survSNP", "TAQMNGR", "termstrc",
+                 "trustOptim", "tvm", "unmarked", "VideoComparison", "VIM", "VIMGUI",
+                 "waffect", "wordcloud", "WideLm", "XBRL", "zic")
 
 ## bad <- as.character(subset(res, res==1)[,1])
 ## dput(bad)
@@ -107,9 +107,7 @@ goodWithUserChange <- c("dplyr",		# see Rcpp issue #99
 #bad4rcpp <- c()				# Yay!
 
 ## these fail initially but can all be run with some extra effort
-bad4notrcpp <-   c("ALDqr",		# needs \dontrun{} in example, comment alone useless
-                   "HUM",		# rgl failed, needs full x11 session
-                   "KernSmoothIRT")	# rgl failed, needs full x11 session
+bad4notrcpp <-   c("ALDqr")		# needs \dontrun{} in example, comment alone useless
                             
 good <- length(goodPkgAsIs) + length(goodWithImport) + length(goodWithUserChange)
 badrcpp <- length(bad4RcppAPI) + length(bad4unclear)
