@@ -84,6 +84,7 @@ goodWithImport <- c("Amelia",		# works with proper Import
                     "protvix", 		# works with proper Import
                     "RcppEigen",        # [next version] after user fix for 'SHLIB.maker' 
                     "RcppZiggurat",     # works with proper Import
+                    "Rcvg",             # works with proper Import
                     "rgam",             # works with proper Import
                     "rotations",        # works with proper Import
                     "Rmixmod",          # works with proper Import (and newest Rcpp)
@@ -107,6 +108,7 @@ goodWithUserChange <- c("dplyr",		# see Rcpp issue #99
 
 ## these fail initially but can all be run with some extra effort
 bad4notrcpp <-   c("ALDqr",		# needs \dontrun{} in example, comment alone useless
+                   "HUM",		# rgl failed, needs full x11 session
                    "KernSmoothIRT")	# rgl failed, needs full x11 session
                             
 good <- length(goodPkgAsIs) + length(goodWithImport) + length(goodWithUserChange)
