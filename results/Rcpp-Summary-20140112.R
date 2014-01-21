@@ -67,7 +67,7 @@ bad4missing <- c("CARBayes",		# ‘deldir’ ‘maptools’ ‘shapefiles’ ‘
 bad4RcppAPI <- c()
 
 
-bad4unclear <- c("sglOptim")            # error crit. changed, passes with 1.0e-7 (was 1.0e-10)
+bad4unclear <- c()   
 
 
 goodWithImport <- c("Amelia",		# works with proper Import
@@ -96,13 +96,13 @@ goodWithImport <- c("Amelia",		# works with proper Import
                     "wsrf")             # works with proper Import
 
 
-goodWithUserChange <- c("dplyr",		# see Rcpp issue #99
+goodWithUserChange <- c("dplyr",	# see Rcpp issue #99
                         "httpuv", 	# include <Rcpp.h> -- not Rcpp/exceptions.h
                         "RcppClassic", 	# need to hide 'Rcpp::internal::getPosixClasses()’
                         "rmgarch",      # header file order: incl. only RcppArmadillo
                         "RProtoBuf",    # rel 0.4.0 with S4 accomodation
-                        "rugarch")      # header file order: incl. only RcppArmadillo
-
+                        "rugarch",      # header file order: incl. only RcppArmadillo
+                        "sglOptim")     # error crit. changed, passes with 1.0e-7 (was 1.0e-10)
 
 #bad4rcpp <- c()				# Yay!
 
