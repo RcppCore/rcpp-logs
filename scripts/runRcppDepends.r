@@ -25,7 +25,7 @@ if (grep("BioGeoBEARS", rcppset)) {     ## indirect match, no need to test
 if (grep("quadrupen", rcppset)) {       ## takes hours, skipping
     rcppset <- rcppset[ ! grepl("quadrupen", rcppset) ]
 }
-if (grep("roxygen2", rcppset)) {       ## seems to hang for reasons that are unclear
+if (grep("roxygen2", rcppset)) {       ## seems to hang for reasons that are unclear on its tests
     rcppset <- rcppset[ ! grepl("roxygen2", rcppset) ]
 }
 

@@ -4,7 +4,7 @@
 ## -- updated throughout the week, see github commit log
 
 ## loads 'res'
-load("~/svn/rcpp/testlogs/result-20140112-230103.RData")
+#load("~/git/rcpp-logs/results/result-20140112-230103.RData")
 
 ## good <- as.character(subset(res, res==0)[,1])
 ## dput(good)
@@ -25,7 +25,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr",
                  "RcppExamples", "RcppGSL", "RcppOctave", "RcppProgress", "RcppRoll",
                  "RcppSMC", "RcppXts", "rexpokit", "rforensicbatwing", "RInside",
                  "Rmalschains", "RMessenger", "robustgam", "robustHD", "rococo",
-                 "RSNNS", "RSofia", "RVowpalWabbit", "sdcMicro", "sdcTable",
+                 "RProtoBuf", "RSNNS", "RSofia", "RVowpalWabbit", "sdcMicro", "sdcTable",
                  "sequences", "simFrame", "spacodiR", "sparseHessianFD",
                  "sparseLTSEigen", "stochvol", "survSNP", "TAQMNGR", "termstrc",
                  "trustOptim", "tvm", "unmarked", "VideoComparison", "VIM", "VIMGUI",
@@ -100,7 +100,6 @@ goodWithUserChange <- c("dplyr",	# see Rcpp issue #99
                         "httpuv", 	# include <Rcpp.h> -- not Rcpp/exceptions.h
                         "RcppClassic", 	# need to hide 'Rcpp::internal::getPosixClasses()’
                         "rmgarch",      # header file order: incl. only RcppArmadillo
-                        "RProtoBuf",    # rel 0.4.0 with S4 accomodation
                         "rugarch",      # header file order: incl. only RcppArmadillo
                         "sglOptim")     # error crit. changed, passes with 1.0e-7 (was 1.0e-10)
 
