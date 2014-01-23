@@ -75,8 +75,7 @@ goodWithImport <- c("fdaMixed",  	# works with proper Import, see patch
                     "gRbase",   	# works with proper Import, see patch
                     "gRim",  		# works with proper Import, see patch
                     "HLMdiag",  	# works with proper Import, see patch
-                    	# works with proper Import
-                    "lme4",		# works with proper Import
+                    "lme4",		# works with proper Import, see patch
                     "mvabund",		# works with proper Import
                     "openair",		# works with proper Import                    
                     "protvix", 		# works with proper Import
