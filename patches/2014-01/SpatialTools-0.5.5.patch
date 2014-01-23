@@ -1,0 +1,22 @@
+diff -ru SpatialTools.orig/DESCRIPTION SpatialTools/DESCRIPTION
+--- SpatialTools.orig/DESCRIPTION	2014-01-07 13:08:20.000000000 -0600
++++ SpatialTools/DESCRIPTION	2014-01-23 06:28:01.731106332 -0600
+@@ -6,7 +6,7 @@
+ Author: Joshua French <joshua.french@ucdenver.edu>
+ Maintainer: Joshua French <joshua.french@ucdenver.edu>
+ Depends: R (>= 3.0.2)
+-Imports: spBayes (>= 0.3.0)
++Imports: spBayes (>= 0.3.0), Rcpp
+ LinkingTo: Rcpp (>= 0.9.10), RcppArmadillo (>= 0.3.0)
+ Description: Tools for spatial data analysis.  Emphasis on kriging.  Provides functions for prediction and simulation.  Intended to be relatively straightforward, fast, and flexible.
+ License: GPL (>= 2)
+diff -ru SpatialTools.orig/NAMESPACE SpatialTools/NAMESPACE
+--- SpatialTools.orig/NAMESPACE	2014-01-07 10:11:02.000000000 -0600
++++ SpatialTools/NAMESPACE	2014-01-23 06:28:18.199105850 -0600
+@@ -1,5 +1,6 @@
+ useDynLib(SpatialTools)
+ import(spBayes)
++importFrom(Rcpp, evalCpp)
+ 
+ export(coincident)
+ export(dist1)

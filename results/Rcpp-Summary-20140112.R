@@ -82,8 +82,8 @@ goodWithImport <- c("fdaMixed",  	# works with proper Import, see patch
                     "Rvcg",             # works with proper Import, see patch
                     "rgam",             # works with proper Import, see patch
                     "Ruchardet",	# works with proper Import, see patch
-                    "SBSA",		# works with proper Import
-                    "SpatialTools",	# works with proper Import
+                    "SBSA",		# works with proper Import, see patch
+                    "SpatialTools",	# works with proper Import, see patch
                     "strum", 		# works with proper Import
                     "wsrf")             # works with proper Import
 
