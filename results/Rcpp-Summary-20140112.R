@@ -69,9 +69,9 @@ bad4RcppAPI <- c()
 
 bad4unclear <- c()   
 
+goodWithQuestion <- c("Amelia")		# works as is '--no-vignettes', but loops in vignette (?0
 
-goodWithImport <- c("Amelia",		# works with proper Import
-                    "apcluster", 	# works with proper Import
+goodWithImport <- c("apcluster", 	# works with proper Import
                     "fdaMixed",  	# works with proper Import
                     "gRbase",   	# works with proper Import
                     "gRim",  		# works with proper Import
@@ -108,7 +108,7 @@ goodWithUserChange <- c("dplyr",	# see Rcpp issue #99
 ## these fail initially but can all be run with some extra effort
 bad4notrcpp <-   c("ALDqr")		# needs \dontrun{} in example, comment alone useless
                             
-good <- length(goodPkgAsIs) + length(goodWithImport) + length(goodWithUserChange)
+good <- length(goodPkgAsIs) + length(goodWithQuestion) + length(goodWithImport) + length(goodWithUserChange)
 badrcpp <- length(bad4RcppAPI) + length(bad4unclear)
 badother <- length(bad4missing) + length(bad4notrcpp)
 bad <- badrcpp + badother
@@ -119,6 +119,7 @@ cat("Good         ", good, "\n")
 cat("  AsIs       ", length(goodPkgAsIs), "\n")
 cat("  w/Imports  ", length(goodWithImport), "\n")
 cat("  w/Change   ", length(goodWithUserChange), "\n")
+cat("  w/Question ", length(goodWithQuestion), "\n")
 cat("Bad Rcpp     ", badrcpp, "\n")
 cat("  RcppApi    ", length(bad4RcppAPI), "\n")
 cat("  Unclear    ", length(bad4unclear), "\n")
