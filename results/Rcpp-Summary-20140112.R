@@ -29,7 +29,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "sequences", "simFrame", "spacodiR", "sparseHessianFD",
                  "sparseLTSEigen", "stochvol", "survSNP", "TAQMNGR", "termstrc",
                  "trustOptim", "tvm", "unmarked", "VideoComparison", "VIM", "VIMGUI",
-                 "waffect", "wordcloud", "WideLm", "XBRL", "zic")
+                 "waffect", "wordcloud", "WideLm", "wsrf", "XBRL", "zic")
 
 ## bad <- as.character(subset(res, res==1)[,1])
 ## dput(bad)
@@ -84,26 +84,26 @@ goodWithImport <- c("fdaMixed",  	# works with proper Import, see patch
                     "Ruchardet",	# works with proper Import, see patch
                     "SBSA",		# works with proper Import, see patch
                     "SpatialTools",	# works with proper Import, see patch
-                    "strum", 		# works with proper Import
-                    "wsrf")             # works with proper Import
+                    "strum") 		# works with proper Import, see patch
 
 
-goodWithUserChange <- c("dplyr",	# see Rcpp issue #99
-                        "httpuv", 	# include <Rcpp.h> -- not Rcpp/exceptions.h
-                        "RcppClassic", 	# need to hide 'Rcpp::internal::getPosixClasses()’
-                        "RcppEigen",    # version in GitHub repo now passes
-                        "RcppZiggurat", # version in GitHub repo now passes
-                        "rmgarch",      # header file order: incl. only RcppArmadillo
-                        "RQuantLib",	# version in R-Forge repo now passes
-                        "rugarch",      # header file order: incl. only RcppArmadillo
-                        "sglOptim")     # error crit. changed, passes with 1.0e-7 (was 1.0e-10)
+
+goodWithOtherChange <- c("dplyr",	# see Rcpp issue #99
+                         "httpuv", 	# include <Rcpp.h> -- not Rcpp/exceptions.h
+                         "RcppClassic", #  need to hide 'Rcpp::internal::getPosixClasses()’
+                         "RcppEigen",   # version in GitHub repo now passes
+                         "RcppZiggurat",# version in GitHub repo now passes
+                         "rmgarch",     # header file order: incl. only RcppArmadillo
+                         "RQuantLib",	# version in R-Forge repo now passes
+                         "rugarch",     # header file order: incl. only RcppArmadillo
+                         "sglOptim")    # error crit. changed, passes with 1.0e-7 (was 1.0e-10)
 
 #bad4rcpp <- c()				# Yay!
 
 ## these fail initially but can all be run with some extra effort
 bad4notrcpp <-   c("ALDqr")		# needs \dontrun{} in example, comment alone useless
                             
-good <- length(goodPkgAsIs) + length(goodWithQuestion) + length(goodWithImport) + length(goodWithUserChange)
+good <- length(goodPkgAsIs) + length(goodWithQuestion) + length(goodWithImport) + length(goodWithOtherChange)
 badrcpp <- length(bad4RcppAPI) + length(bad4unclear)
 badother <- length(bad4missing) + length(bad4notrcpp)
 bad <- badrcpp + badother
@@ -113,7 +113,7 @@ bad <- badrcpp + badother
 cat("Good         ", good, "\n")
 cat("  AsIs       ", length(goodPkgAsIs), "\n")
 cat("  w/Imports  ", length(goodWithImport), "\n")
-cat("  w/Change   ", length(goodWithUserChange), "\n")
+cat("  w/Other    ", length(goodWithOtherChange), "\n")
 cat("  w/Question ", length(goodWithQuestion), "\n")
 cat("Bad Rcpp     ", badrcpp, "\n")
 cat("  RcppApi    ", length(bad4RcppAPI), "\n")

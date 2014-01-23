@@ -1,0 +1,23 @@
+diff -ru strum.orig/DESCRIPTION strum/DESCRIPTION
+--- strum.orig/DESCRIPTION	2013-11-05 15:07:37.000000000 -0600
++++ strum/DESCRIPTION	2014-01-23 06:32:16.047098893 -0600
+@@ -11,7 +11,7 @@
+ Description: This package implements a broad class of latent variable and structural equation models for general pedigree data.
+ License: GPL (>= 2)
+ Depends: R (>= 2.15.1), pedigree, methods
+-Imports: MASS
++Imports: MASS, Rcpp
+ LinkingTo: Rcpp, RcppArmadillo
+ Packaged: 2013-11-05 17:07:06 UTC; yxs30
+ Author: Nathan Morris [aut, cre],
+diff -ru strum.orig/NAMESPACE strum/NAMESPACE
+--- strum.orig/NAMESPACE	2013-11-05 11:05:50.000000000 -0600
++++ strum/NAMESPACE	2014-01-23 06:32:33.763098375 -0600
+@@ -3,6 +3,7 @@
+ 
+ import('pedigree','methods')
+ importFrom(MASS, ginv)
++importFrom(Rcpp, evalCpp)
+ 
+ export(
+     "createStrumData",
