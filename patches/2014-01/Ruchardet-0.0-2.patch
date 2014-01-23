@@ -1,0 +1,19 @@
+diff -ru Ruchardet.orig/DESCRIPTION Ruchardet/DESCRIPTION
+--- Ruchardet.orig/DESCRIPTION	2013-12-19 12:35:23.000000000 -0600
++++ Ruchardet/DESCRIPTION	2014-01-23 06:18:10.089238640 -0600
+@@ -12,6 +12,7 @@
+ Depends: R (>= 3.0.2)
+ Suggests: testthat (>= 0.7.1)
+ LinkingTo: Rcpp (>= 0.10.6)
++Imports: Rcpp
+ SystemRequirements: GNU make
+ Collate: 'RcppExports.R' 'utils.R'
+ Packaged: 2013-12-19 15:25:17 UTC; gogamza
+diff -ru Ruchardet.orig/NAMESPACE Ruchardet/NAMESPACE
+--- Ruchardet.orig/NAMESPACE	2013-12-12 22:24:35.000000000 -0600
++++ Ruchardet/NAMESPACE	2014-01-23 06:18:25.237238197 -0600
+@@ -1,3 +1,4 @@
+ export(detectEncoding)
+ export(detectFileEncoding)
+ useDynLib(Ruchardet)
++importFrom(Rcpp, evalCpp)

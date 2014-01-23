@@ -81,8 +81,7 @@ goodWithImport <- c("fdaMixed",  	# works with proper Import, see patch
                     "openair",		# works with proper Import, see patch                    
                     "Rvcg",             # works with proper Import, see patch
                     "rgam",             # works with proper Import, see patch
-                    "RQuantLib",	# [next version] with 'importFrom(Rcpp, evalCpp)'
-                    "Ruchardet",	# works with proper Import
+                    "Ruchardet",	# works with proper Import, see patch
                     "SBSA",		# works with proper Import
                     "SpatialTools",	# works with proper Import
                     "strum", 		# works with proper Import
@@ -95,6 +94,7 @@ goodWithUserChange <- c("dplyr",	# see Rcpp issue #99
                         "RcppEigen",    # version in GitHub repo now passes
                         "RcppZiggurat", # version in GitHub repo now passes
                         "rmgarch",      # header file order: incl. only RcppArmadillo
+                        "RQuantLib",	# version in R-Forge repo now passes
                         "rugarch",      # header file order: incl. only RcppArmadillo
                         "sglOptim")     # error crit. changed, passes with 1.0e-7 (was 1.0e-10)
 
