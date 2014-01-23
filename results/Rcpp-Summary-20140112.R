@@ -9,7 +9,7 @@
 ## good <- as.character(subset(res, res==0)[,1])
 ## dput(good)
 
-goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr",
+goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster",
                  "BayesComm", "bcp", "bcpa", "bfa", "bfp", "blockcluster",
                  "bifactorial", "bilan", "ccaPP", "cda", "cladoRcpp", "climdex.pcic",
                  "clogitL1", "clusteval", "ClustVarLV", "ConConPiWiFun", "coneproj",
@@ -71,7 +71,7 @@ bad4unclear <- c()
 
 goodWithQuestion <- c("Amelia")		# works as is '--no-vignettes', but loops in vignette (?0
 
-goodWithImport <- c("apcluster", 	# works with proper Import
+goodWithImport <- c(
                     "fdaMixed",  	# works with proper Import
                     "gRbase",   	# works with proper Import
                     "gRim",  		# works with proper Import
