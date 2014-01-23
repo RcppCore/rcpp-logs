@@ -80,7 +80,7 @@ goodWithImport <- c("fdaMixed",  	# works with proper Import, see patch
                     "lme4",		# works with proper Import, see patch
                     "openair",		# works with proper Import, see patch                    
                     "Rvcg",             # works with proper Import, see patch
-                    "rgam",             # works with proper Import
+                    "rgam",             # works with proper Import, see patch
                     "rotations",        # works with proper Import
                     "Rmixmod",          # works with proper Import (and newest Rcpp)
                     "RQuantLib",	# [next version] with 'importFrom(Rcpp, evalCpp)'
