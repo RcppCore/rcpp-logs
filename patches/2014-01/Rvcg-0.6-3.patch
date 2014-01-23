@@ -1,0 +1,19 @@
+diff -ru Rvcg.orig/DESCRIPTION Rvcg/DESCRIPTION
+--- Rvcg.orig/DESCRIPTION	2014-01-21 10:57:37.000000000 -0600
++++ Rvcg/DESCRIPTION	2014-01-23 05:58:58.873265423 -0600
+@@ -22,6 +22,7 @@
+     to work with the header files included by RcppEigen.
+ Depends: R (>= 3.0.0)
+ Suggests: Morpho, rgl
++Imports: Rcpp
+ LinkingTo: Rcpp, RcppEigen
+ License: GPL (>= 2) | file LICENSE
+ Copyright: see files COPYRIGHTS for detailed information
+diff -ru Rvcg.orig/NAMESPACE Rvcg/NAMESPACE
+--- Rvcg.orig/NAMESPACE	2014-01-21 05:16:00.000000000 -0600
++++ Rvcg/NAMESPACE	2014-01-23 05:59:16.093264919 -0600
+@@ -16,3 +16,4 @@
+ export(vcgUpdateNormals)
+ export(vcgVFadj)
+ useDynLib(Rvcg)
++importFrom(Rcpp, evalCpp)

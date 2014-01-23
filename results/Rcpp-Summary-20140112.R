@@ -79,7 +79,7 @@ goodWithImport <- c("fdaMixed",  	# works with proper Import, see patch
                     "HLMdiag",  	# works with proper Import, see patch
                     "lme4",		# works with proper Import, see patch
                     "openair",		# works with proper Import, see patch                    
-                    "Rcvg",             # works with proper Import
+                    "Rvcg",             # works with proper Import, see patch
                     "rgam",             # works with proper Import
                     "rotations",        # works with proper Import
                     "Rmixmod",          # works with proper Import (and newest Rcpp)
