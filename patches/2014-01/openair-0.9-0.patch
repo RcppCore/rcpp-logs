@@ -1,0 +1,21 @@
+diff -ru openair.orig/DESCRIPTION openair/DESCRIPTION
+--- openair.orig/DESCRIPTION	2013-11-12 07:30:56.000000000 -0600
++++ openair/DESCRIPTION	2014-01-22 21:16:17.565323836 -0600
+@@ -10,7 +10,7 @@
+ Author: David Carslaw and Karl Ropkins
+ Depends: R (>= 2.15.1),
+ Imports: utils, grid, plyr, reshape2, mgcv, lattice, latticeExtra,
+-        cluster, RColorBrewer
++        cluster, RColorBrewer, Rcpp
+ Suggests: hexbin, RgoogleMaps, png, mapdata, KernSmooth
+ LinkingTo: Rcpp
+ Maintainer: David Carslaw <david.carslaw@kcl.ac.uk>
+diff -ru openair.orig/NAMESPACE openair/NAMESPACE
+--- openair.orig/NAMESPACE	2013-11-12 07:22:00.000000000 -0600
++++ openair/NAMESPACE	2014-01-22 21:15:55.625324478 -0600
+@@ -66,3 +66,5 @@
+ importFrom(utils,head)
+ importFrom(utils,tail)
+ useDynLib(openair)
++importFrom(Rcpp, evalCpp)
++

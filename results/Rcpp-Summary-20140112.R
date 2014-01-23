@@ -1,4 +1,4 @@
-
+ 
 ## -- started with Rcpp (current on GitHub as of 2-14-Jan-12,
 ##    as well as current RcppArmadillo and RcppEigen)
 ## -- updated throughout the week, see github commit log
@@ -18,7 +18,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "Funclustering", "geoCount", "growcurves", "GSE", "gMWT", "GxM",
                  "hawkes", "hsphase", "HUM", "IBHM", "inarmix", "IsingSampler", "jaatha", "KernSmoothIRT",
                  "Kmisc", "LaF", "marked", "maxent", "mets", "minqa", "mirt", "miscF",
-                 "MPTinR", "msgl", "MVB", "ndl", "NetSim", "ngspatial", "oem",
+                 "MPTinR", "msgl", "mvabund", "MVB", "ndl", "NetSim", "ngspatial", "oem",
                  "PedCNV", "phylobase", "planar", "PReMiuM", "pROC", "prospectr",
                  "psgp", "Rankcluster", "rARPACK", "Rclusterpp", "RcppArmadillo",
                  "RcppBDT", "rcppbugs", "RcppClassicExamples", "RcppCNPy", "RcppDE",
@@ -71,13 +71,14 @@ bad4unclear <- c()
 
 goodWithQuestion <- c("Amelia")		# works as is w. '--no-vignettes', but loops in vignette (?)
 
+## For problems of this variety:
+##     function 'dataptr' not provided by package 'Rcpp'
 goodWithImport <- c("fdaMixed",  	# works with proper Import, see patch
                     "gRbase",   	# works with proper Import, see patch
                     "gRim",  		# works with proper Import, see patch
                     "HLMdiag",  	# works with proper Import, see patch
                     "lme4",		# works with proper Import, see patch
-                    "mvabund",		# works with proper Import
-                    "openair",		# works with proper Import                    
+                    "openair",		# works with proper Import, see patch                    
                     "protvix", 		# works with proper Import
                     "RcppEigen",        # [next version] after user fix for 'SHLIB.maker' 
                     "RcppZiggurat",     # works with proper Import
