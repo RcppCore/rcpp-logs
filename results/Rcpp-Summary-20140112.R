@@ -19,7 +19,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "hawkes", "hsphase", "HUM", "IBHM", "inarmix", "IsingSampler", "jaatha", "KernSmoothIRT",
                  "Kmisc", "LaF", "marked", "maxent", "mets", "minqa", "mirt", "miscF",
                  "MPTinR", "msgl", "mvabund", "MVB", "ndl", "NetSim", "ngspatial", "oem",
-                 "PedCNV", "phylobase", "planar", "PReMiuM", "pROC", "prospectr",
+                 "PedCNV", "phylobase", "planar", "PReMiuM", "pROC", "prospectr", "protViz",
                  "psgp", "Rankcluster", "rARPACK", "Rclusterpp", "RcppArmadillo",
                  "RcppBDT", "rcppbugs", "RcppClassicExamples", "RcppCNPy", "RcppDE",
                  "RcppExamples", "RcppGSL", "RcppOctave", "RcppProgress", "RcppRoll",
@@ -79,7 +79,6 @@ goodWithImport <- c("fdaMixed",  	# works with proper Import, see patch
                     "HLMdiag",  	# works with proper Import, see patch
                     "lme4",		# works with proper Import, see patch
                     "openair",		# works with proper Import, see patch                    
-                    "protvix", 		# works with proper Import
                     "RcppEigen",        # [next version] after user fix for 'SHLIB.maker' 
                     "RcppZiggurat",     # works with proper Import
                     "Rcvg",             # works with proper Import
