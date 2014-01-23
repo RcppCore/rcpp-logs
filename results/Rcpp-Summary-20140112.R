@@ -16,7 +16,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "Delaporte", "disclapmix", "ecp", "EpiContactTrace", "fastGHQuad",
                  "FastPCS", "FastRCS", "FBFsearch", "forecast", "fugeR",
                  "Funclustering", "geoCount", "growcurves", "GSE", "gMWT", "GxM",
-                 "hawkes", "hsphase", "HUM", "IBHM", "jaatha", "KernSmoothIRT",
+                 "hawkes", "hsphase", "HUM", "IBHM", "inarmix", "jaatha", "KernSmoothIRT",
                  "Kmisc", "LaF", "marked", "maxent", "mets", "minqa", "mirt", "miscF",
                  "MPTinR", "msgl", "MVB", "ndl", "NetSim", "ngspatial", "oem",
                  "PedCNV", "phylobase", "planar", "PReMiuM", "pROC", "prospectr",
@@ -75,7 +75,6 @@ goodWithImport <- c("fdaMixed",  	# works with proper Import, see patch
                     "gRbase",   	# works with proper Import, see patch
                     "gRim",  		# works with proper Import, see patch
                     "HLMdiag",  	# works with proper Import, see patch
-                    "inarmix",  	# works with proper Import
                     "IsingSampler", 	# works with proper Import
                     "lme4",		# works with proper Import
                     "mvabund",		# works with proper Import
