@@ -24,7 +24,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "RcppBDT", "rcppbugs", "RcppClassicExamples", "RcppCNPy", "RcppDE",
                  "RcppExamples", "RcppGSL", "RcppOctave", "RcppProgress", "RcppRoll",
                  "RcppSMC", "RcppXts", "rexpokit", "rforensicbatwing", "RInside",
-                 "Rmalschains", "RMessenger", "robustgam", "robustHD", "rococo", "rotations", 
+                 "Rmalschains", "RMessenger", "robustgam", "robustHD", "rococo", "rotations", "Rmixmod",
                  "RProtoBuf", "RSNNS", "RSofia", "RVowpalWabbit", "sdcMicro", "sdcTable",
                  "sequences", "simFrame", "spacodiR", "sparseHessianFD",
                  "sparseLTSEigen", "stochvol", "survSNP", "TAQMNGR", "termstrc",
@@ -81,7 +81,6 @@ goodWithImport <- c("fdaMixed",  	# works with proper Import, see patch
                     "openair",		# works with proper Import, see patch                    
                     "Rvcg",             # works with proper Import, see patch
                     "rgam",             # works with proper Import, see patch
-                    "Rmixmod",          # works with proper Import (and newest Rcpp)
                     "RQuantLib",	# [next version] with 'importFrom(Rcpp, evalCpp)'
                     "Ruchardet",	# works with proper Import
                     "SBSA",		# works with proper Import
