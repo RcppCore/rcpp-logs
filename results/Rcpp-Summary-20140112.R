@@ -79,8 +79,6 @@ goodWithImport <- c("fdaMixed",  	# works with proper Import, see patch
                     "HLMdiag",  	# works with proper Import, see patch
                     "lme4",		# works with proper Import, see patch
                     "openair",		# works with proper Import, see patch                    
-                    "RcppEigen",        # [next version] after user fix for 'SHLIB.maker' 
-                    "RcppZiggurat",     # works with proper Import
                     "Rcvg",             # works with proper Import
                     "rgam",             # works with proper Import
                     "rotations",        # works with proper Import
@@ -96,6 +94,8 @@ goodWithImport <- c("fdaMixed",  	# works with proper Import, see patch
 goodWithUserChange <- c("dplyr",	# see Rcpp issue #99
                         "httpuv", 	# include <Rcpp.h> -- not Rcpp/exceptions.h
                         "RcppClassic", 	# need to hide 'Rcpp::internal::getPosixClasses()’
+                        "RcppEigen",    # version in GitHub repo now passes
+                        "RcppZiggurat", # version in GitHub repo now passes
                         "rmgarch",      # header file order: incl. only RcppArmadillo
                         "rugarch",      # header file order: incl. only RcppArmadillo
                         "sglOptim")     # error crit. changed, passes with 1.0e-7 (was 1.0e-10)
