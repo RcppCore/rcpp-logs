@@ -71,8 +71,7 @@ bad4unclear <- c()
 
 goodWithQuestion <- c("Amelia")		# works as is '--no-vignettes', but loops in vignette (?0
 
-goodWithImport <- c(
-                    "fdaMixed",  	# works with proper Import
+goodWithImport <- c("fdaMixed",  	# works with proper Import, see patch
                     "gRbase",   	# works with proper Import
                     "gRim",  		# works with proper Import
                     "HLMdiag",  	# works with proper Import

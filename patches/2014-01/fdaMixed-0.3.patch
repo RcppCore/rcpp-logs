@@ -1,0 +1,19 @@
+diff -ru fdaMixed.orig/DESCRIPTION fdaMixed/DESCRIPTION
+--- fdaMixed.orig/DESCRIPTION	2014-01-03 08:06:00.000000000 -0600
++++ fdaMixed/DESCRIPTION	2014-01-22 19:57:55.087435392 -0600
+@@ -12,6 +12,7 @@
+ License: GPL-2
+ LazyLoad: yes
+ Depends: R (>= 3.0.2), Formula (>= 1.0-0)
++Imports: Rcpp
+ LinkingTo: Rcpp (>= 0.9.0), RcppArmadillo (>= 0.2.10)
+ Repository: CRAN
+ Packaged: 2014-01-03 14:02:21 UTC; ripley
+diff -ru fdaMixed.orig/NAMESPACE fdaMixed/NAMESPACE
+--- fdaMixed.orig/NAMESPACE	2014-01-03 06:35:47.000000000 -0600
++++ fdaMixed/NAMESPACE	2014-01-22 19:58:15.171434805 -0600
+@@ -1,3 +1,4 @@
+ useDynLib(fdaMixed)
+ export(fdaLm,findRoots,dataTrans)
++importFrom(Rcpp, evalCpp)
+ 
