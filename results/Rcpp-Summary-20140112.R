@@ -69,10 +69,10 @@ bad4RcppAPI <- c()
 
 bad4unclear <- c()   
 
-goodWithQuestion <- c("Amelia")		# works as is '--no-vignettes', but loops in vignette (?0
+goodWithQuestion <- c("Amelia")		# works as is w. '--no-vignettes', but loops in vignette (?)
 
 goodWithImport <- c("fdaMixed",  	# works with proper Import, see patch
-                    "gRbase",   	# works with proper Import
+                    "gRbase",   	# works with proper Import, see patch
                     "gRim",  		# works with proper Import
                     "HLMdiag",  	# works with proper Import
                     "inarmix",  	# works with proper Import

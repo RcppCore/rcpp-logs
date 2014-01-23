@@ -1,0 +1,20 @@
+diff -ru gRbase.orig/DESCRIPTION gRbase/DESCRIPTION
+--- gRbase.orig/DESCRIPTION	2013-08-05 16:47:23.000000000 -0500
++++ gRbase/DESCRIPTION	2014-01-22 20:05:37.154011876 -0600
+@@ -34,7 +34,7 @@
+ License: GPL (>= 2)
+ URL: http://people.math.aau.dk/~sorenh/software/gR/
+ Depends: R (>= 2.15.2),methods,graph
+-Imports: Matrix,RBGL,igraph
++Imports: Matrix,RBGL,igraph,Rcpp
+ Encoding: latin1
+ LinkingTo: Rcpp,RcppArmadillo,RcppEigen
+ ByteCompile: No
+diff -ru gRbase.orig/NAMESPACE gRbase/NAMESPACE
+--- gRbase.orig/NAMESPACE	2013-08-05 15:58:17.000000000 -0500
++++ gRbase/NAMESPACE	2014-01-22 20:05:57.122011292 -0600
+@@ -16,3 +16,4 @@
+            V, "V<-", E, is.directed, "E<-", layout.lgl, plot.igraph,
+            graph.adjacency, is.dag)
+ 
++importFrom(Rcpp, evalCpp)
