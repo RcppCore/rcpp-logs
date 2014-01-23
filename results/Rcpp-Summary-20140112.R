@@ -73,8 +73,8 @@ goodWithQuestion <- c("Amelia")		# works as is w. '--no-vignettes', but loops in
 
 goodWithImport <- c("fdaMixed",  	# works with proper Import, see patch
                     "gRbase",   	# works with proper Import, see patch
-                    "gRim",  		# works with proper Import
-                    "HLMdiag",  	# works with proper Import
+                    "gRim",  		# works with proper Import, see patch
+                    "HLMdiag",  	# works with proper Import, see patch
                     "inarmix",  	# works with proper Import
                     "IsingSampler", 	# works with proper Import
                     "lme4",		# works with proper Import

@@ -1,0 +1,30 @@
+diff -ru HLMdiag.orig/DESCRIPTION HLMdiag/DESCRIPTION
+--- HLMdiag.orig/DESCRIPTION	2013-10-17 11:24:57.000000000 -0500
++++ HLMdiag/DESCRIPTION	2014-01-22 20:35:19.731904732 -0600
+@@ -13,7 +13,7 @@
+     assumes that models were fit using the lme4 package.
+ Depends: R (>= 2.15.0), lme4 (>= 1.0)
+ Imports: ggplot2 (>= 0.9.2), stats, stats4, methods, plyr, reshape2,
+-        MASS, Matrix
++        MASS, Matrix, Rcpp
+ LinkingTo: Rcpp, RcppArmadillo
+ Suggests: mlmRev, WWGbook
+ License: GPL-2
+diff -ru HLMdiag.orig/NAMESPACE HLMdiag/NAMESPACE
+--- HLMdiag.orig/NAMESPACE	2013-10-10 16:17:11.000000000 -0500
++++ HLMdiag/NAMESPACE	2014-01-22 20:34:34.063906068 -0600
+@@ -11,6 +11,7 @@
+ importFrom(stats, cooks.distance, covratio)
+ importFrom(stats4, coef, confint, plot)
+ importFrom(MASS, rlm)
++importFrom(Rcpp, evalCpp)
+ 
+ export(adjust_lmList)
+ export(compare_eb_ls)
+@@ -65,4 +66,4 @@
+ S3method(mdffits, lmerMod)
+ S3method(rvc, case_delete)
+ S3method(rvc, mer)
+-S3method(rvc, lmerMod)
+\ No newline at end of file
++S3method(rvc, lmerMod)
