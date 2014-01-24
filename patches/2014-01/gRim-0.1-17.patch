@@ -1,0 +1,21 @@
+diff -ru gRim.orig/DESCRIPTION gRim/DESCRIPTION
+--- gRim.orig/DESCRIPTION	2013-08-08 10:26:03.000000000 -0500
++++ gRim/DESCRIPTION	2014-01-22 20:18:38.673989016 -0600
+@@ -14,7 +14,7 @@
+ License: GPL (>= 2)
+ URL: http://people.math.aau.dk/~sorenh/software/gR/
+ Depends: R (>= 2.15.2),methods,gRbase,gRain
+-Imports: igraph
++Imports: igraph, Rcpp
+ Encoding: latin1
+ Suggests: Rgraphviz
+ ByteCompile: yes
+diff -ru gRim.orig/NAMESPACE gRim/NAMESPACE
+--- gRim.orig/NAMESPACE	2013-08-08 06:53:54.000000000 -0500
++++ gRim/NAMESPACE	2014-01-22 20:16:11.305993327 -0600
+@@ -5,3 +5,5 @@
+            V, "V<-", E, is.directed, "E<-", layout.lgl, plot.igraph,
+            graph.adjacency, is.dag)
+ 
++importFrom(Rcpp, evalCpp)
++
