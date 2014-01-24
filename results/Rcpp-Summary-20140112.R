@@ -95,7 +95,7 @@ goodWithOtherChange <- c("dplyr",	# works with https://github.com/hadley/dplyr/p
                          "RcppZiggurat",# version in GitHub repo now passes
                          "rmgarch",     # works with patch [which also adds importFrom()]
                          "RQuantLib",	# version in R-Forge repo now passes
-                         "rugarch",     # header file order: incl. only RcppArmadillo
+                         "rugarch",     # works with patch [which also adds importFrom()]
                          "sglOptim")    # works with changed error crit. changed, passes with 1.0e-7 (was 1.0e-10)
 
 #bad4rcpp <- c()				# Yay!
