@@ -26,7 +26,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "RcppSMC", "RcppXts", "rexpokit", "rforensicbatwing", "RInside",
                  "Rmalschains", "RMessenger", "robustgam", "robustHD", "rococo", "rotations", "Rmixmod",
                  "RProtoBuf", "RSNNS", "RSofia", "RVowpalWabbit", "sdcMicro", "sdcTable",
-                 "sequences", "simFrame", "spacodiR", "sparseHessianFD",
+                 "sequences", "sglOptim", "simFrame", "spacodiR", "sparseHessianFD",
                  "sparseLTSEigen", "stochvol", "survSNP", "TAQMNGR", "termstrc",
                  "trustOptim", "tvm", "unmarked", "VideoComparison", "VIM", "VIMGUI",
                  "waffect", "wordcloud", "WideLm", "wsrf", "XBRL", "zic")
@@ -95,8 +95,7 @@ goodWithOtherChange <- c("dplyr",	# works with https://github.com/hadley/dplyr/p
                          "RcppZiggurat",# version in GitHub repo now passes
                          "rmgarch",     # works with patch [which also adds importFrom()]
                          "RQuantLib",	# version in R-Forge repo now passes
-                         "rugarch",     # works with patch [which also adds importFrom()]
-                         "sglOptim")    # works with changed error crit. changed, passes with 1.0e-7 (was 1.0e-10)
+                         "rugarch")     # works with patch [which also adds importFrom()]
 
 #bad4rcpp <- c()				# Yay!
 
