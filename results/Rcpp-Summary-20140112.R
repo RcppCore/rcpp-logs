@@ -88,9 +88,9 @@ goodWithImport <- c("fdaMixed",  	# works with proper Import, see patch
 
 
 
-goodWithOtherChange <- c("dplyr",	# see Rcpp issue #99
-                         "httpuv", 	# include <Rcpp.h> -- not Rcpp/exceptions.h
-                         "RcppClassic", #  need to hide 'Rcpp::internal::getPosixClasses()’
+goodWithOtherChange <- c("dplyr",	# works with https://github.com/hadley/dplyr/pull/190, see Rcpp issue #99
+                         "httpuv", 	# works with patch
+                         "RcppClassic", # works with version in R-Forge repo
                          "RcppEigen",   # version in GitHub repo now passes
                          "RcppZiggurat",# version in GitHub repo now passes
                          "rmgarch",     # header file order: incl. only RcppArmadillo
@@ -101,8 +101,9 @@ goodWithOtherChange <- c("dplyr",	# see Rcpp issue #99
 #bad4rcpp <- c()				# Yay!
 
 ## these fail initially but can all be run with some extra effort
-bad4notrcpp <-   c("ALDqr")		# needs \dontrun{} in example, comment alone useless
-                            
+bad4notrcpp <-   c("ALDqr",		# needs \dontrun{} in example, comment alone useless
+                   "roxygen2")		# loops forever in wgen running regression test
+                   
 good <- length(goodPkgAsIs) + length(goodWithQuestion) + length(goodWithImport) + length(goodWithOtherChange)
 badrcpp <- length(bad4RcppAPI) + length(bad4unclear)
 badother <- length(bad4missing) + length(bad4notrcpp)

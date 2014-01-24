@@ -1,0 +1,45 @@
+diff -ru httpuv.orig/DESCRIPTION httpuv/DESCRIPTION
+--- httpuv.orig/DESCRIPTION	2013-12-07 02:55:35.000000000 -0600
++++ httpuv/DESCRIPTION	2014-01-17 22:50:42.774666959 -0600
+@@ -15,8 +15,9 @@
+   by Joyent, Inc. (See LICENSE file for libuv and http-parser license
+   information.)
+ License: GPL-3 | file LICENSE
+-Depends: R (>= 2.15.1), Rcpp (>= 0.10.2), methods
++Depends: R (>= 2.15.1), methods
+ LinkingTo: Rcpp
++Imports: Rcpp
+ URL: https://github.com/rstudio/httpuv
+ SystemRequirements: GNU make
+ Packaged: 2013-12-07 08:52:20 UTC; ripley
+diff -ru httpuv.orig/NAMESPACE httpuv/NAMESPACE
+--- httpuv.orig/NAMESPACE	2013-08-12 13:52:54.000000000 -0500
++++ httpuv/NAMESPACE	2014-01-17 22:50:23.298667529 -0600
+@@ -6,3 +6,4 @@
+ export(startServer)
+ export(stopServer)
+ useDynLib(httpuv)
++importFrom(Rcpp, evalCpp)
+diff -ru httpuv.orig/src/filedatasource-unix.cpp httpuv/src/filedatasource-unix.cpp
+--- httpuv.orig/src/filedatasource-unix.cpp	2013-12-07 02:52:20.000000000 -0600
++++ httpuv/src/filedatasource-unix.cpp	2014-01-18 15:25:02.842427656 -0600
+@@ -4,7 +4,7 @@
+ #include <stdlib.h>
+ #include <unistd.h>
+ #include <errno.h>
+-#include <Rcpp/exceptions.h>
++#include <Rcpp.h>
+ #include <Rinternals.h>
+ 
+ int FileDataSource::initialize(const std::string& path, bool owned) {
+diff -ru httpuv.orig/src/uvutil.cpp httpuv/src/uvutil.cpp
+--- httpuv.orig/src/uvutil.cpp	2013-12-07 02:52:20.000000000 -0600
++++ httpuv/src/uvutil.cpp	2014-01-18 15:25:17.238427235 -0600
+@@ -1,6 +1,6 @@
+ #include "uvutil.h"
+ #include <string.h>
+-#include <Rcpp/exceptions.h>
++#include <Rcpp.h>
+ 
+ void throwLastError(uv_loop_t* pLoop,
+   const std::string& prefix,
