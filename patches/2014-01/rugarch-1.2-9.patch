@@ -1,0 +1,43 @@
+diff -ru rugarch.orig/DESCRIPTION rugarch/DESCRIPTION
+--- rugarch.orig/DESCRIPTION	2013-12-14 03:37:09.000000000 -0600
++++ rugarch/DESCRIPTION	2014-01-23 18:56:24.162099843 -0600
+@@ -8,7 +8,7 @@
+ Depends: R (>= 2.10), methods
+ LinkingTo: Rcpp, RcppArmadillo
+ Imports: Rsolnp, nloptr, ks, numDeriv, spd, xts, zoo, chron,
+-        SkewHyperbolic
++        SkewHyperbolic, Rcpp
+ Description: ARFIMA, in-mean, external regressors and various GARCH flavours, with methods for fit, forecast, simulation, inference and plotting.
+ Collate: rugarch-imports.R rugarch-cwrappers.R rugarch-solvers.R
+         rugarch-lossfn.R rugarch-distributions.R rugarch-kappa.R
+diff -ru rugarch.orig/NAMESPACE rugarch/NAMESPACE
+--- rugarch.orig/NAMESPACE	2013-09-05 08:01:45.000000000 -0500
++++ rugarch/NAMESPACE	2014-01-23 18:56:42.030099320 -0600
+@@ -11,6 +11,7 @@
+ importFrom(ks, kde, rkde, hpi)
+ importFrom(nloptr, nloptr)
+ importFrom(SkewHyperbolic, qskewhyp, pskewhyp)
++importFrom(Rcpp, evalCpp)
+ exportClasses("rGARCH")
+ exportClasses("GARCHspec", "uGARCHspec")
+ exportClasses("GARCHfit", "uGARCHfit")
+@@ -42,4 +43,4 @@
+ export("autoarfima")
+ export("ddist", "pdist", "qdist", "rdist", "fitdist", "ghyptransform", "dskewness", "dkurtosis", "distplot", "skdomain")
+ export("BerkowitzTest", "DACTest", "VaRTest", "ESTest", "VaRDurTest","GMMTest","HLTest","VaRplot", "VaRloss")
+-export("move", "generatefwd", "ftseq")
+\ No newline at end of file
++export("move", "generatefwd", "ftseq")
+diff -ru rugarch.orig/src/garchsim.h rugarch/src/garchsim.h
+--- rugarch.orig/src/garchsim.h	2013-12-13 17:16:27.000000000 -0600
++++ rugarch/src/garchsim.h	2014-01-18 16:03:26.477441758 -0600
+@@ -16,9 +16,6 @@
+ #################################################################################*/
+ #ifndef _GARCHSIM_H
+ #define _GARCHSIM_H
+-#include <R.h>
+-#include <Rmath.h>
+-#include <math.h>
+ #include <RcppArmadillo.h>
+ RcppExport SEXP marmaxsim(SEXP , SEXP , SEXP , SEXP , SEXP , SEXP , SEXP );
+ RcppExport SEXP msgarchsim(SEXP , SEXP , SEXP , SEXP , SEXP , SEXP , SEXP , SEXP , SEXP );
