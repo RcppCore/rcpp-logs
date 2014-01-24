@@ -15,7 +15,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "clogitL1", "clusteval", "ClustVarLV", "ConConPiWiFun", "coneproj",
                  "Delaporte", "disclapmix", "ecp", "EpiContactTrace", "fastGHQuad",
                  "FastPCS", "FastRCS", "FBFsearch", "forecast", "fugeR",
-                 "Funclustering", "geoCount", "growcurves", "GSE", "gMWT", "GxM",
+                 "Funclustering", "geiger", "geoCount", "growcurves", "GSE", "gMWT", "GxM",
                  "hawkes", "hsphase", "HUM", "IBHM", "inarmix", "IsingSampler", "jaatha", "KernSmoothIRT",
                  "Kmisc", "LaF", "marked", "maxent", "mets", "minqa", "mirt", "miscF",
                  "MPTinR", "msgl", "mvabund", "MVB", "ndl", "NetSim", "ngspatial", "oem",
@@ -50,7 +50,6 @@ bad4missing <- c("CARBayes",		# ‘deldir’ ‘maptools’ ‘shapefiles’ ‘
                  "CDM",			# ‘psych’ ‘polycor’
                  "classify",		# ‘R2WinBUGS’ ‘R2jags’
                  "diversitree",		# ‘deSolve’ ‘subplex’
-                 "geiger",		# ‘msm’ ‘subplex’ ‘deSolve’ ‘coda’ ‘ncbit’
                  "GeneticTools",	# ‘gMWT’ ‘snpStats’
                  "GOsummaries",		# ‘gProfileR’ ‘limma’
                  "hypervolume",		# raster, maps
