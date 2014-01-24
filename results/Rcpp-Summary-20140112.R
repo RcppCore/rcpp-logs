@@ -24,8 +24,8 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "RcppBDT", "rcppbugs", "RcppClassicExamples", "RcppCNPy", "RcppDE",
                  "RcppExamples", "RcppGSL", "RcppOctave", "RcppProgress", "RcppRoll",
                  "RcppSMC", "RcppXts", "rexpokit", "rforensicbatwing", "RInside",
-                 "Rmalschains", "RMessenger", "robustgam", "robustHD", "rococo", "rotations", "Rmixmod",
-                 "RProtoBuf", "RSNNS", "RSofia", "RVowpalWabbit", "sdcMicro", "sdcTable",
+                 "Rmalschains", "RMessenger", "rmgarch", "robustgam", "robustHD", "rococo", "rotations", "Rmixmod",
+                 "RProtoBuf", "RSNNS", "RSofia", "rugarch", "RVowpalWabbit", "sdcMicro", "sdcTable",
                  "sequences", "sglOptim", "simFrame", "spacodiR", "sparseHessianFD",
                  "sparseLTSEigen", "stochvol", "survSNP", "TAQMNGR", "termstrc",
                  "trustOptim", "tvm", "unmarked", "VideoComparison", "VIM", "VIMGUI",
@@ -93,9 +93,7 @@ goodWithOtherChange <- c("dplyr",	# works with https://github.com/hadley/dplyr/p
                          "RcppClassic", # works with version in R-Forge repo
                          "RcppEigen",   # version in GitHub repo now passes
                          "RcppZiggurat",# version in GitHub repo now passes
-                         "rmgarch",     # works with patch [which also adds importFrom()]
-                         "RQuantLib",	# version in R-Forge repo now passes
-                         "rugarch")     # works with patch [which also adds importFrom()]
+                         "RQuantLib")	# version in R-Forge repo now passes
 
 #bad4rcpp <- c()				# Yay!
 
