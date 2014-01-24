@@ -1,0 +1,90 @@
+diff -ru rmgarch.orig/DESCRIPTION rmgarch/DESCRIPTION
+--- rmgarch.orig/DESCRIPTION	2013-04-10 01:55:51.000000000 -0500
++++ rmgarch/DESCRIPTION	2014-01-23 18:52:13.526107174 -0600
+@@ -5,10 +5,10 @@
+ Date: 2013-04-10
+ Author: Alexios Ghalanos <alexios@4dscape.com>
+ Maintainer: Alexios Ghalanos <alexios@4dscape.com>
+-Depends: R (>= 3.0.0), methods, Rcpp, RcppArmadillo, rugarch
++Depends: R (>= 3.0.0), methods, rugarch
+ LinkingTo: Rcpp, RcppArmadillo
+ Imports: Rsolnp, MASS, parallel, Matrix, zoo, xts, Bessel, ff, fftw,
+-        shape, Kendall, spd
++        shape, Kendall, spd, Rcpp
+ Description: Feasible multivariate GARCH models including DCC, GO-GARCH
+         and Copula-GARCH.
+ Collate: rmgarch-var.R rmgarch-functions.R rmgarch-classes.R
+diff -ru rmgarch.orig/NAMESPACE rmgarch/NAMESPACE
+--- rmgarch.orig/NAMESPACE	2013-04-09 17:56:10.000000000 -0500
++++ rmgarch/NAMESPACE	2014-01-23 18:45:03.890119741 -0600
+@@ -12,6 +12,7 @@
+ importFrom(ff, ff)
+ importFrom(Rsolnp, solnp, gosolnp, startpars)
+ importFrom(Kendall, Kendall)
++importFrom(Rcpp, evalCpp)
+ import(rugarch)
+ exportClasses("mGARCHspec", "mGARCHfit", "mGARCHfilter", "mGARCHforecast", "mGARCHsim", "mGARCHroll")
+ exportClasses("goGARCHspec", "goGARCHfit", "goGARCHfilter", "goGARCHforecast", "goGARCHsim", "goGARCHroll")
+diff -ru rmgarch.orig/src/copulas.h rmgarch/src/copulas.h
+--- rmgarch.orig/src/copulas.h	2013-04-09 17:56:50.000000000 -0500
++++ rmgarch/src/copulas.h	2014-01-18 15:54:45.394198994 -0600
+@@ -16,9 +16,6 @@
+ #################################################################################*/
+ #ifndef _copulas_H
+ #define _copulas_H
+-#include <R.h>
+-#include <Rmath.h>
+-#include <math.h>
+ #include <RcppArmadillo.h>
+ #include "rmdist.h"
+ RcppExport SEXP copulaNormalC1(SEXP , SEXP);
+diff -ru rmgarch.orig/src/gogarch.h rmgarch/src/gogarch.h
+--- rmgarch.orig/src/gogarch.h	2013-04-09 17:56:50.000000000 -0500
++++ rmgarch/src/gogarch.h	2014-01-18 15:55:28.542197732 -0600
+@@ -16,9 +16,6 @@
+ #################################################################################*/
+ #ifndef _gogarch_H
+ #define _gogarch_H
+-#include <R.h>
+-#include <Rmath.h>
+-#include <math.h>
+ #include <RcppArmadillo.h>
+ RcppExport SEXP gogarchSigma(SEXP S, SEXP A);
+ RcppExport SEXP gogarchCov(SEXP S, SEXP A);
+diff -ru rmgarch.orig/src/ica.h rmgarch/src/ica.h
+--- rmgarch.orig/src/ica.h	2013-04-09 17:56:50.000000000 -0500
++++ rmgarch/src/ica.h	2014-01-18 15:55:49.282197125 -0600
+@@ -16,9 +16,6 @@
+ #################################################################################*/
+ #ifndef _ica_H
+ #define _ica_H
+-#include <R.h>
+-#include <Rmath.h>
+-#include <math.h>
+ #include <RcppArmadillo.h>
+ RcppExport SEXP radicalrot(SEXP , SEXP);
+ arma::mat fs10(arma::mat X, arma::mat B, const double nsamples);
+diff -ru rmgarch.orig/src/rdcc.h rmgarch/src/rdcc.h
+--- rmgarch.orig/src/rdcc.h	2013-04-09 17:56:50.000000000 -0500
++++ rmgarch/src/rdcc.h	2014-01-18 15:55:56.522196914 -0600
+@@ -16,9 +16,6 @@
+ #################################################################################*/
+ #ifndef _rdcc_H
+ #define _rdcc_H
+-#include <R.h>
+-#include <Rmath.h>
+-#include <math.h>
+ #include <RcppArmadillo.h>
+ #include "rmdist.h"
+ RcppExport SEXP dccnormC1(SEXP , SEXP , SEXP , SEXP , SEXP , SEXP , SEXP , SEXP );
+diff -ru rmgarch.orig/src/rmdist.h rmgarch/src/rmdist.h
+--- rmgarch.orig/src/rmdist.h	2013-04-09 17:56:50.000000000 -0500
++++ rmgarch/src/rmdist.h	2014-01-18 15:57:02.030194997 -0600
+@@ -18,7 +18,6 @@
+ #define _rmdist_H
+ #undef trunc
+ #undef ftrunc
+-#include <R.h>
+ #include <RcppArmadillo.h>
+ using namespace Rcpp;
+ arma::rowvec rmvnormx(arma::mat , arma::rowvec );
