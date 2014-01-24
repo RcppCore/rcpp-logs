@@ -1,0 +1,163 @@
+
+
+Release status of Rcpp as of 2014-01-22
+=======================================
+
+
+Summary
+-------
+
+Running the script summarizing results straight out of (this) repo:
+
+    edd@max:~/git/rcpp-logs$ r results/Rcpp-Summary-20140112.R 
+    Good          145 
+      AsIs        123 
+      w/Imports   12 
+      w/Other     9 
+      w/Question  1 
+    Bad Rcpp      0 
+      RcppApi     0 
+      Unclear     0 
+    Bad other     17 
+      MissDep     15 
+      NotRcpp     2 
+    Total         162 
+    Bad Rcpp Pct  0 
+    edd@max:~/git/rcpp-logs$ 
+
+The scripts contains more details and comments. It reflect ten days of
+testing, patching and refinements following an initial batch test on Jan 12.
+
+
+Current state:
+--------------
+
+Rcpp development sources are in the GitHub repo 
+
+    https://github.com/RcppCore/Rcpp
+
+and build and test fine.  The rest of this post is about how this version
+fares relative to existing CRAN releases.
+
+
+Good packages: Works "As Is"
+----------------------------
+
+The vast majority of packages builds as-is under the upcoming Rcpp releease,
+including 'R CMD check' which is very satisfying.
+
+
+Good packages: Need an Imports / importFrom update
+--------------------------------------------------
+
+Twelve packages need to 
+
+    i)  add   Imports: Rcpp               to DESCRIPTION
+
+    ii) add   importFrom(Rcpp, evalCpp)   to NAMESPACE
+
+Note that just adding import(Rcpp) does not suffice.
+
+We have provided patches in this Github repo / directory:
+
+    https://github.com/RcppCore/rcpp-logs/tree/master/patches/2014-01
+
+for the following packages
+
+    fdaMixed-0.3.patch
+    gRbase-1.6-12.patch
+    gRim-0.1-17.patch
+    HLMdiag-0.2.3.patch
+    lme4-1.05.patch
+    openair-0.9-0.patch
+    rgam-0.6.2.patch
+    Ruchardet-0.0-2.patch
+    Rvcg-0.6-3.patch
+    SBSA-0.2.2.patch
+    SpatialTools-0.5.5.patch
+    strum-0.1.patch
+
+
+Good packages: Need another update / fix
+----------------------------------------
+
+Three packages need to apply a minimal change to their include files and
+order (in essence: include just Rcpp.h, or RcppArmadillo.h, and no other
+Rcpp* headers as this can often derail some internal interdependencies).
+
+We have provided patches in this Github repo / directory:
+
+    https://github.com/RcppCore/rcpp-logs/tree/master/patches/2014-01
+
+for the following packages
+
+    httpuv-1.2.1.patch
+    rmgarch-1.2-0.patch
+    rugarch-1.2-9.patch
+
+A few of our packages needed fixes as well, we have updated them in their
+respective R-Forge or GitHub repos:
+
+    RcppClassic
+    RcppEigen   
+    RcppZiggurat
+    RQuantLib
+
+and plan to make new releases in the next few days.
+
+The sglOptim packages passes just fine, but balks at one unit test with a
+rather tight test criterion.  The maintainer intends to upload a new version
+with a relaxed test.
+
+
+Good packages: Open question
+----------------------------
+
+Amelia builds, and tests file -- but loops forever in one segment in the
+vignette.  This may or may not be related to Rcpp. We have contacted the
+maintainer, but not yet heard back.
+
+
+Bad/unknown packages: Missing Depends
+-------------------------------------
+
+Fifteen packages were not tested as their Depends were not installed here:
+
+     CARBayes CDM classify diversitree geiger GeneticTools GOsummaries
+     hypervolume kmc orQA sirt snplist surveillance TAM tbart
+
+We would welcome if it their maintainers, or other volunteers, could test
+them.
+
+
+Bad/unknown: Not Rcpp
+---------------------
+
+Two packages had other issues:
+
+     ALDqr     needs a \dontrun{} in one example
+     roxygen2  does not terminate its unit test
+
+
+Not tested
+----------
+
+We excluded the quadrupen package as its test appears to run for hours on
+end.
+
+
+BioConductor
+------------
+
+Kevin also tested the sixteen or so BioConductor packages, see 
+
+     https://github.com/kevinushey/RcppBiocChecks
+
+One package needs one of our fixed packages, another fails with an include
+issue similar to the one reported above -- and the rest passes.
+
+
+Summary
+=======
+
+We consider Rcpp ready for release.
