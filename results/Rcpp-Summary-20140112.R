@@ -17,7 +17,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "FastPCS", "FastRCS", "FBFsearch", "forecast", "fugeR",
                  "Funclustering", "geiger", "geoCount", "growcurves", "GSE", "gMWT", "GxM",
                  "hawkes", "hsphase", "HUM", "hypervolume", "IBHM", "inarmix", "IsingSampler", "jaatha", "KernSmoothIRT",
-                 "kmc", "Kmisc", "LaF", "marked", "maxent", "mets", "minqa", "mirt", "miscF",
+                 "kmc", "Kmisc", "LaF", "lm.br", "marked", "maxent", "mets", "minqa", "mirt", "miscF",
                  "MPTinR", "msgl", "mvabund", "MVB", "ndl", "NetSim", "ngspatial", "oem",
                  "PedCNV", "phylobase", "planar", "PReMiuM", "pROC", "prospectr", "protViz",
                  "psgp", "Rankcluster", "rARPACK", "Rclusterpp", "RcppArmadillo",
@@ -28,7 +28,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "RProtoBuf", "RSNNS", "RSofia", "rugarch", "RVowpalWabbit", "sdcMicro", "sdcTable",
                  "sequences", "sglOptim", "simFrame", "spacodiR", "sparseHessianFD",
                  "sparseLTSEigen", "stochvol", "surveillance", "survSNP", "TAQMNGR", "tbart", "termstrc",
-                 "trustOptim", "tvm", "unmarked", "VideoComparison", "VIM", "VIMGUI",
+                 "trustOptim", "tvm", "unmarked", "VideoComparison", "VIM", 
                  "waffect", "wordcloud", "WideLM", "wsrf", "XBRL", "zic")
 
 ## bad <- as.character(subset(res, res==1)[,1])
