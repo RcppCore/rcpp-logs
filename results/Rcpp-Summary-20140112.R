@@ -49,7 +49,6 @@ badPkg <- c("ALDqr", "Amelia", "apcluster", "CARBayes", "CDM", "classify",
 bad4missing <- c("GeneticTools",	# ‘snpStats’ [BioC ?]
                  "GOsummaries",		# ‘limma’ [BioC ?]
                  "orQA",		# ‘genefilter’ [from BioC]
-                 "sirt",		# ‘gregmisc’ ‘sfsmisc’ ‘TAM’ ‘CDM’ ‘ic.infer’ ‘psych’ ‘pbivnorm’
                  "snplist",		#" 'biomaRt' [from BioC]
                  "surveillance",	# ‘polyCub’ ‘spatstat’
                  "TAM",			# ‘tensor’ ‘sfsmisc’ ‘GPArotation’ ‘psych’
@@ -77,6 +76,7 @@ goodWithImport <- c("CDM",		# works with proper Import, see patch
                     "rgam",             # works with proper Import, see patch
                     "Ruchardet",	# works with proper Import, see patch
                     "SBSA",		# works with proper Import, see patch
+                    "sirt",		# works with proper Import, see patch
                     "SpatialTools",	# works with proper Import, see patch
                     "strum") 		# works with proper Import, see patch
 

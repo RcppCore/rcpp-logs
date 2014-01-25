@@ -1,0 +1,23 @@
+diff -ru sirt.orig/DESCRIPTION sirt/DESCRIPTION
+--- sirt.orig/DESCRIPTION	2014-01-07 14:12:09.000000000 -0600
++++ sirt/DESCRIPTION	2014-01-25 08:14:00.308289311 -0600
+@@ -9,7 +9,7 @@
+     Supplementary item response theory models 
+     to complement existing functions in R. 
+ Depends: R (>= 2.15.0), MASS, coda, mvtnorm, gregmisc
+-Imports: sfsmisc, TAM, CDM, combinat, ic.infer, sm, psych, pbivnorm
++Imports: sfsmisc, TAM, CDM, combinat, ic.infer, sm, psych, pbivnorm, Rcpp
+ Suggests: eRm, ltm, MCMCglmm, mirt, mokken, mRm, plink, GPArotation,
+         fdrtool, lme4, difR, lavaan, semTools
+ LinkingTo: Rcpp, RcppArmadillo
+diff -ru sirt.orig/NAMESPACE sirt/NAMESPACE
+--- sirt.orig/NAMESPACE	2014-01-07 12:34:15.000000000 -0600
++++ sirt/NAMESPACE	2014-01-25 08:14:19.320288755 -0600
+@@ -153,4 +153,5 @@
+ import(sm)
+ import(psych)
+ importFrom(pbivnorm,pbivnorm)
+-import(gregmisc)
+\ No newline at end of file
++import(gregmisc)
++importFrom(Rcpp, evalCpp)
