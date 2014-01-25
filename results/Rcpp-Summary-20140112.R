@@ -117,3 +117,41 @@ cat("  Skipped    ", length(bad4skipped), "\n")
 cat("Total        ", good + bad, "\n")
 cat("Bad Rcpp Pct ", badrcpp / (good + bad), "\n")
 
+
+## Checking: packages as of Jan 25
+allPkg <- c("accelerometry", "acer", "AdaptiveSparsity", "ALDqr", "ALKr", 
+            "Amelia", "apcluster", "BayesComm", "bcp", "bcpa", "bfa", "bfp", 
+            "bifactorial", "bilan", "blockcluster", "CARBayes", "ccaPP", 
+            "cda", "CDM", "cladoRcpp", "classify", "climdex.pcic", "clogitL1", 
+            "clusteval", "ClustVarLV", "ConConPiWiFun", "coneproj", "Delaporte", 
+            "dils", "disclapmix", "diversitree", "dplyr", "ecp", "EpiContactTrace", 
+            "fastGHQuad", "FastPCS", "FastRCS", "FBFsearch", "fdaMixed", 
+            "forecast", "fugeR", "Funclustering", "geiger", "GeneticTools", 
+            "geoCount", "gMWT", "GOsummaries", "gRbase", "gRim", "growcurves", 
+            "GSE", "GxM", "hawkes", "HLMdiag", "hsphase", "httpuv", "HUM", 
+            "hypervolume", "IBHM", "inarmix", "IsingSampler", "jaatha", "KernSmoothIRT", 
+            "kmc", "Kmisc", "LaF", "lm.br", "lme4", "marked", "maxent", "mets", 
+            "minqa", "mirt", "miscF", "MPTinR", "msgl", "mvabund", "MVB", 
+            "ndl", "NetSim", "ngspatial", "oem", "openair", "orQA", "PedCNV", 
+            "phylobase", "planar", "PReMiuM", "pROC", "prospectr", "protViz", 
+            "psgp", "quadrupen", "Rankcluster", "rARPACK", "Rclusterpp", 
+            "RcppArmadillo", "RcppBDT", "rcppbugs", "RcppClassic", "RcppClassicExamples", 
+            "RcppCNPy", "RcppDE", "RcppEigen", "RcppExamples", "RcppGSL", 
+            "RcppOctave", "RcppProgress", "RcppRoll", "RcppSMC", "RcppXts", 
+            "RcppZiggurat", "rexpokit", "rforensicbatwing", "rgam", "RInside", 
+            "Rmalschains", "RMessenger", "rmgarch", "Rmixmod", "robustgam", 
+            "robustHD", "rococo", "rotations", "roxygen2", "RProtoBuf", "RQuantLib", 
+            "RSNNS", "RSofia", "Ruchardet", "rugarch", "Rvcg", "RVowpalWabbit", 
+            "SBSA", "sdcMicro", "sdcTable", "sequences", "sglOptim", "simFrame", 
+            "sirt", "snplist", "spacodiR", "sparseHessianFD", "sparseLTSEigen", 
+            "SpatialTools", "stochvol", "strum", "surveillance", "survSNP", 
+            "TAM", "TAQMNGR", "tbart", "termstrc", "trustOptim", "tvm", "unmarked", 
+            "VideoComparison", "VIM", "waffect", "WideLM", "wordcloud", "wsrf", 
+            "XBRL", "zic")
+
+checkPkg <- c(goodPkgAsIs, goodWithImport, goodWithOtherChange, goodWithQuestion, bad4BioCdep, bad4notrcpp, bad4skipped)
+stopifnot(length(setdiff(checkPkg, allPkg))==0)
+stopifnot(length(setdiff(allPkg, checkPkg))==0)
+
+
+
