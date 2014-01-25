@@ -16,7 +16,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "Delaporte", "disclapmix", "diversitree", "ecp", "EpiContactTrace", "fastGHQuad",
                  "FastPCS", "FastRCS", "FBFsearch", "forecast", "fugeR",
                  "Funclustering", "geiger", "geoCount", "growcurves", "GSE", "gMWT", "GxM",
-                 "hawkes", "hsphase", "HUM", "IBHM", "inarmix", "IsingSampler", "jaatha", "KernSmoothIRT",
+                 "hawkes", "hsphase", "HUM", "hypervolume", "IBHM", "inarmix", "IsingSampler", "jaatha", "KernSmoothIRT",
                  "Kmisc", "LaF", "marked", "maxent", "mets", "minqa", "mirt", "miscF",
                  "MPTinR", "msgl", "mvabund", "MVB", "ndl", "NetSim", "ngspatial", "oem",
                  "PedCNV", "phylobase", "planar", "PReMiuM", "pROC", "prospectr", "protViz",
@@ -46,9 +46,8 @@ badPkg <- c("ALDqr", "Amelia", "apcluster", "CARBayes", "CDM", "classify",
             "surveillance", "TAM", "tbart", "VideoComparison", "WideLM", 
             "wordcloud", "wsrf")
 
-bad4missing <- c("GeneticTools",	# ‘snpStats’ (BioC ?)
-                 "GOsummaries",		# ‘gProfileR’ ‘limma’
-                 "hypervolume",		# raster, maps
+bad4missing <- c("GeneticTools",	# ‘snpStats’ [BioC ?]
+                 "GOsummaries",		# ‘limma’ [BioC ?]
                  "kmc",			# ‘rootSolve’ ‘emplik’
                  "orQA",		# ‘genefilter’ [from BioC]
                  "sirt",		# ‘gregmisc’ ‘sfsmisc’ ‘TAM’ ‘CDM’ ‘ic.infer’ ‘psych’ ‘pbivnorm’
