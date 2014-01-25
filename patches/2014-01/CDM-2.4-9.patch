@@ -1,0 +1,30 @@
+diff -ru CDM.orig/DESCRIPTION CDM/DESCRIPTION
+--- CDM.orig/DESCRIPTION	2013-10-24 13:48:58.000000000 -0500
++++ CDM/DESCRIPTION	2014-01-25 07:45:32.949409254 -0600
+@@ -19,7 +19,7 @@
+     multidimensional linear compensatory item response model as a 
+     special case.
+ Depends: R (>= 2.15.0), mvtnorm
+-Imports: MASS, psych, polycor
++Imports: MASS, psych, polycor, Rcpp
+ Suggests: sirt, TAM
+ LinkingTo: Rcpp, RcppArmadillo
+ LazyLoad: yes
+diff -ru CDM.orig/NAMESPACE CDM/NAMESPACE
+--- CDM.orig/NAMESPACE	2013-10-24 13:24:01.000000000 -0500
++++ CDM/NAMESPACE	2014-01-25 07:45:49.317408775 -0600
+@@ -19,6 +19,7 @@
+ import(graphics, stats)
+ 
+ importFrom(utils,packageDescription)
++importFrom(Rcpp, evalCpp)
+ 
+ 
+ S3method(plot, din)
+@@ -40,4 +41,4 @@
+ import(MASS)
+ importFrom(polycor,polychor)
+ import(psych)
+-import(mvtnorm)
+\ No newline at end of file
++import(mvtnorm)

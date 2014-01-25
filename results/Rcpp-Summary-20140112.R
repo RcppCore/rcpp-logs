@@ -46,8 +46,7 @@ badPkg <- c("ALDqr", "Amelia", "apcluster", "CARBayes", "CDM", "classify",
             "surveillance", "TAM", "tbart", "VideoComparison", "WideLM", 
             "wordcloud", "wsrf")
 
-bad4missing <- c("CDM",			# ‘psych’ ‘polycor’
-                 "classify",		# ‘R2WinBUGS’ ‘R2jags’
+bad4missing <- c("classify",		# ‘R2WinBUGS’ ‘R2jags’
                  "diversitree",		# ‘deSolve’ ‘subplex’
                  "GeneticTools",	# ‘gMWT’ ‘snpStats’
                  "GOsummaries",		# ‘gProfileR’ ‘limma’
@@ -71,7 +70,8 @@ goodWithQuestion <- c("Amelia")		# works as is w. '--no-vignettes', but loops in
 
 ## For problems of this variety:
 ##     function 'dataptr' not provided by package 'Rcpp'
-goodWithImport <- c("fdaMixed",  	# works with proper Import, see patch
+goodWithImport <- c("CDM",		# works with proper Import, see patch
+                    "fdaMixed",  	# works with proper Import, see patch
                     "gRbase",   	# works with proper Import, see patch
                     "gRim",  		# works with proper Import, see patch
                     "HLMdiag",  	# works with proper Import, see patch
