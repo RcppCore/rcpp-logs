@@ -13,7 +13,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "BayesComm", "bcp", "bcpa", "bfa", "bfp", "blockcluster",
                  "bifactorial", "bilan", "CARBayes", "ccaPP", "cda", "cladoRcpp", "classify", "climdex.pcic",
                  "clogitL1", "clusteval", "ClustVarLV", "ConConPiWiFun", "coneproj",
-                 "Delaporte", "disclapmix", "diversitree", "ecp", "EpiContactTrace", "fastGHQuad",
+                 "Delaporte", "dils", "disclapmix", "diversitree", "ecp", "EpiContactTrace", "fastGHQuad",
                  "FastPCS", "FastRCS", "FBFsearch", "forecast", "fugeR",
                  "Funclustering", "geiger", "geoCount", "growcurves", "GSE", "gMWT", "GxM",
                  "hawkes", "hsphase", "HUM", "hypervolume", "IBHM", "inarmix", "IsingSampler", "jaatha", "KernSmoothIRT",
@@ -29,7 +29,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "sequences", "sglOptim", "simFrame", "spacodiR", "sparseHessianFD",
                  "sparseLTSEigen", "stochvol", "surveillance", "survSNP", "TAQMNGR", "tbart", "termstrc",
                  "trustOptim", "tvm", "unmarked", "VideoComparison", "VIM", "VIMGUI",
-                 "waffect", "wordcloud", "WideLm", "wsrf", "XBRL", "zic")
+                 "waffect", "wordcloud", "WideLM", "wsrf", "XBRL", "zic")
 
 ## bad <- as.character(subset(res, res==1)[,1])
 ## dput(bad)
@@ -91,10 +91,13 @@ goodWithOtherChange <- c("dplyr",	# works with https://github.com/hadley/dplyr/p
 ## these fail initially but can all be run with some extra effort
 bad4notrcpp <-   c("ALDqr",		# needs \dontrun{} in example, comment alone useless
                    "roxygen2")		# loops forever in wgen running regression test
-                   
+
+bad4skipped <-   c("quadrupen")         # tests runs for hours, skipped
+
+
 good <- length(goodPkgAsIs) + length(goodWithQuestion) + length(goodWithImport) + length(goodWithOtherChange)
 badrcpp <- length(bad4RcppAPI) + length(bad4unclear)
-badother <- length(bad4BioCdep) + length(bad4notrcpp)
+badother <- length(bad4BioCdep) + length(bad4notrcpp) + length(bad4skipped)
 bad <- badrcpp + badother
 
 #stopifnot(all.equal(bad,length(badPkg)))  ## account for GeoBIO
@@ -110,8 +113,7 @@ cat("  Unclear    ", length(bad4unclear), "\n")
 cat("Bad other    ", badother, "\n")
 cat("  BioCDep    ", length(bad4BioCdep), "\n")
 cat("  NotRcpp    ", length(bad4notrcpp), "\n")
+cat("  Skipped    ", length(bad4skipped), "\n")
 cat("Total        ", good + bad, "\n")
 cat("Bad Rcpp Pct ", badrcpp / (good + bad), "\n")
-
-
 
