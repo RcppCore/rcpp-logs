@@ -11,7 +11,7 @@
 
 goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster",
                  "BayesComm", "bcp", "bcpa", "bfa", "bfp", "blockcluster",
-                 "bifactorial", "bilan", "ccaPP", "cda", "cladoRcpp", "climdex.pcic",
+                 "bifactorial", "bilan", "CARBayes", "ccaPP", "cda", "cladoRcpp", "climdex.pcic",
                  "clogitL1", "clusteval", "ClustVarLV", "ConConPiWiFun", "coneproj",
                  "Delaporte", "disclapmix", "ecp", "EpiContactTrace", "fastGHQuad",
                  "FastPCS", "FastRCS", "FBFsearch", "forecast", "fugeR",
@@ -46,8 +46,7 @@ badPkg <- c("ALDqr", "Amelia", "apcluster", "CARBayes", "CDM", "classify",
             "surveillance", "TAM", "tbart", "VideoComparison", "WideLM", 
             "wordcloud", "wsrf")
 
-bad4missing <- c("CARBayes",		# ‘deldir’ ‘maptools’ ‘shapefiles’ ‘spdep’
-                 "CDM",			# ‘psych’ ‘polycor’
+bad4missing <- c("CDM",			# ‘psych’ ‘polycor’
                  "classify",		# ‘R2WinBUGS’ ‘R2jags’
                  "diversitree",		# ‘deSolve’ ‘subplex’
                  "GeneticTools",	# ‘gMWT’ ‘snpStats’
