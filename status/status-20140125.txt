@@ -39,8 +39,10 @@ Rcpp development sources are in the GitHub repo
 
     https://github.com/RcppCore/Rcpp
 
-and build and test fine.  The rest of this post is about how this version
-fares relative to existing CRAN releases.
+and build and test fine.  
+
+The rest of this post is about how this version fares relative to existing
+CRAN packages with a reverse dependency on Rcpp.
 
 
 Good packages: Works "As Is"
@@ -162,3 +164,16 @@ Summary
 =======
 
 We consider Rcpp ready for release.
+
+
+
+Appendix
+--------
+
+There is also a run-time issue.  We recommend to reinstall all packages that
+use Rcpp.  A helper script is provided at 
+
+   https://github.com/RcppCore/rcpp-logs/blob/master/scripts/showReverseRcppDepends.r
+
+which lists installed package that use Rcpp, and for which current sources
+are (or are not) currently available on CRAN and its mirrors.
