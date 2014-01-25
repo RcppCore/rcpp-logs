@@ -1,0 +1,23 @@
+diff -ru TAM.orig/DESCRIPTION TAM/DESCRIPTION
+--- TAM.orig/DESCRIPTION	2014-01-01 13:02:20.000000000 -0600
++++ TAM/DESCRIPTION	2014-01-25 08:31:31.566150560 -0600
+@@ -17,7 +17,7 @@
+   well as plausible value imputation and weighted likelihood
+   estimation of ability. 
+ Depends: R (>= 2.15.1), MASS
+-Imports: mvtnorm, tensor, sfsmisc, GPArotation, psych
++Imports: mvtnorm, tensor, sfsmisc, GPArotation, psych, Rcpp
+ Suggests: CDM, sirt
+ LinkingTo: Rcpp, RcppArmadillo
+ LazyLoad: yes
+diff -ru TAM.orig/NAMESPACE TAM/NAMESPACE
+--- TAM.orig/NAMESPACE	2014-01-01 12:19:58.000000000 -0600
++++ TAM/NAMESPACE	2014-01-25 08:31:53.174149928 -0600
+@@ -44,4 +44,5 @@
+ # importFrom(sirt,reliability.nonlinearSEM)
+ # import(sfsmisc)
+ importFrom( sfsmisc , QUnif  )
+-importFrom( psych , schmid)
+\ No newline at end of file
++importFrom( psych , schmid)
++importFrom(Rcpp, evalCpp)

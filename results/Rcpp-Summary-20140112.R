@@ -51,7 +51,7 @@ bad4missing <- c("GeneticTools",	# ‘snpStats’ [BioC ?]
                  "orQA",		# ‘genefilter’ [from BioC]
                  "snplist",		#" 'biomaRt' [from BioC]
                  "surveillance",	# ‘polyCub’ ‘spatstat’
-                 "TAM",			# ‘tensor’ ‘sfsmisc’ ‘GPArotation’ ‘psych’
+                 			# ‘tensor’ ‘sfsmisc’ ‘GPArotation’ ‘psych’
                  "tbart")               # ‘GISTools’ (and maptools, geos)
 
 
@@ -78,8 +78,8 @@ goodWithImport <- c("CDM",		# works with proper Import, see patch
                     "SBSA",		# works with proper Import, see patch
                     "sirt",		# works with proper Import, see patch
                     "SpatialTools",	# works with proper Import, see patch
-                    "strum") 		# works with proper Import, see patch
-
+                    "strum", 		# works with proper Import, see patch
+                    "TAM") 		# works with proper Import, see patch
 
 
 goodWithOtherChange <- c("dplyr",	# works with https://github.com/hadley/dplyr/pull/190, see Rcpp issue #99
