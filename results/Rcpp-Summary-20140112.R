@@ -27,7 +27,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "Rmalschains", "RMessenger", "rmgarch", "robustgam", "robustHD", "rococo", "rotations", "Rmixmod",
                  "RProtoBuf", "RSNNS", "RSofia", "rugarch", "RVowpalWabbit", "sdcMicro", "sdcTable",
                  "sequences", "sglOptim", "simFrame", "spacodiR", "sparseHessianFD",
-                 "sparseLTSEigen", "stochvol", "survSNP", "TAQMNGR", "termstrc",
+                 "sparseLTSEigen", "stochvol", "survSNP", "TAQMNGR", "tbart", "termstrc",
                  "trustOptim", "tvm", "unmarked", "VideoComparison", "VIM", "VIMGUI",
                  "waffect", "wordcloud", "WideLm", "wsrf", "XBRL", "zic")
 
@@ -50,9 +50,7 @@ bad4missing <- c("GeneticTools",	# ‘snpStats’ [BioC ?]
                  "GOsummaries",		# ‘limma’ [BioC ?]
                  "orQA",		# ‘genefilter’ [from BioC]
                  "snplist",		#" 'biomaRt' [from BioC]
-                 "surveillance",	# ‘polyCub’ ‘spatstat’
-                 			# ‘tensor’ ‘sfsmisc’ ‘GPArotation’ ‘psych’
-                 "tbart")               # ‘GISTools’ (and maptools, geos)
+                 "surveillance")	# ‘polyCub’ ‘spatstat’
 
 
 ## Failing at compile time
