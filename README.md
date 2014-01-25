@@ -1,6 +1,6 @@
 
 Rcpp Release status as of 2014-01-25
-====================================
+------------------------------------
 
 Running the script summarizing results straight out of its repo:
 
@@ -20,3 +20,4 @@ Running the script summarizing results straight out of its repo:
     Total         164 
     Bad Rcpp Pct  0 
 
+See the `status` directory for more details.
