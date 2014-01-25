@@ -27,7 +27,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "Rmalschains", "RMessenger", "rmgarch", "robustgam", "robustHD", "rococo", "rotations", "Rmixmod",
                  "RProtoBuf", "RSNNS", "RSofia", "rugarch", "RVowpalWabbit", "sdcMicro", "sdcTable",
                  "sequences", "sglOptim", "simFrame", "spacodiR", "sparseHessianFD",
-                 "sparseLTSEigen", "stochvol", "survSNP", "TAQMNGR", "tbart", "termstrc",
+                 "sparseLTSEigen", "stochvol", "surveillance", "survSNP", "TAQMNGR", "tbart", "termstrc",
                  "trustOptim", "tvm", "unmarked", "VideoComparison", "VIM", "VIMGUI",
                  "waffect", "wordcloud", "WideLm", "wsrf", "XBRL", "zic")
 
@@ -46,11 +46,10 @@ badPkg <- c("ALDqr", "Amelia", "apcluster", "CARBayes", "CDM", "classify",
             "surveillance", "TAM", "tbart", "VideoComparison", "WideLM", 
             "wordcloud", "wsrf")
 
-bad4missing <- c("GeneticTools",	# ‘snpStats’ [BioC ?]
+bad4BioCdep <- c("GeneticTools",	# ‘snpStats’ [BioC ?]
                  "GOsummaries",		# ‘limma’ [BioC ?]
                  "orQA",		# ‘genefilter’ [from BioC]
-                 "snplist",		#" 'biomaRt' [from BioC]
-                 "surveillance")	# ‘polyCub’ ‘spatstat’
+                 "snplist")		#" 'biomaRt' [from BioC]
 
 
 ## Failing at compile time
@@ -95,7 +94,7 @@ bad4notrcpp <-   c("ALDqr",		# needs \dontrun{} in example, comment alone useles
                    
 good <- length(goodPkgAsIs) + length(goodWithQuestion) + length(goodWithImport) + length(goodWithOtherChange)
 badrcpp <- length(bad4RcppAPI) + length(bad4unclear)
-badother <- length(bad4missing) + length(bad4notrcpp)
+badother <- length(bad4BioCdep) + length(bad4notrcpp)
 bad <- badrcpp + badother
 
 #stopifnot(all.equal(bad,length(badPkg)))  ## account for GeoBIO
@@ -109,7 +108,7 @@ cat("Bad Rcpp     ", badrcpp, "\n")
 cat("  RcppApi    ", length(bad4RcppAPI), "\n")
 cat("  Unclear    ", length(bad4unclear), "\n")
 cat("Bad other    ", badother, "\n")
-cat("  MissDep    ", length(bad4missing), "\n")
+cat("  BioCDep    ", length(bad4BioCdep), "\n")
 cat("  NotRcpp    ", length(bad4notrcpp), "\n")
 cat("Total        ", good + bad, "\n")
 cat("Bad Rcpp Pct ", badrcpp / (good + bad), "\n")
