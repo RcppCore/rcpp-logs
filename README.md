@@ -6,9 +6,9 @@ Running the script summarizing results straight out of its repo:
 
     edd@max:~/git/rcpp-logs$ Rscript results/Rcpp-Summary-20140112.R 
     Good          157 
-      AsIs        137
+      AsIs        138
       w/Imports   15 
-      w/Other     4
+      w/Other     3
       w/Question  1 
     Bad Rcpp      0 
       RcppApi     0 

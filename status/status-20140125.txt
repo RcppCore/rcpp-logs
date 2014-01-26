@@ -1,6 +1,6 @@
 
 
-Release status of Rcpp as of 2014-01-25
+Release status of Rcpp as of 2014-01-26
 =======================================
 
 
@@ -11,9 +11,9 @@ Running the script summarizing results straight out of its repo:
 
     edd@max:~/git/rcpp-logs$ Rscript results/Rcpp-Summary-20140112.R 
     Good          157 
-      AsIs        135 
+      AsIs        138
       w/Imports   15 
-      w/Other     6 
+      w/Other     3
       w/Question  1 
     Bad Rcpp      0 
       RcppApi     0 
@@ -102,14 +102,17 @@ for the following package
     httpuv-1.2.1.patch
 
 A few of our packages needed fixes as well, we have updated them in their
-respective R-Forge or GitHub repos:
+respective R-Forge or GitHub repos. 
+
+    RQuantLib
+
+remains to be fixed, and
 
     RcppClassic
     RcppEigen   
     RcppZiggurat
-    RQuantLib
 
-and plan to make new releases in the next few days.
+have already had new releases in the next few days.
 
 The dplyr package is already fixed in its repo as well.
 

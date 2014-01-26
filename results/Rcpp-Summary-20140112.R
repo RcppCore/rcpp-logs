@@ -21,7 +21,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "MPTinR", "msgl", "mvabund", "MVB", "ndl", "NetSim", "ngspatial", "oem",
                  "PedCNV", "phylobase", "planar", "PReMiuM", "pROC", "prospectr", "protViz",
                  "psgp", "Rankcluster", "rARPACK", "Rclusterpp", "RcppArmadillo",
-                 "RcppBDT", "rcppbugs", "RcppClassic", "RcppClassicExamples", "RcppCNPy", "RcppDE",
+                 "RcppBDT", "rcppbugs", "RcppClassic", "RcppClassicExamples", "RcppCNPy", "RcppDE", "RcppEigen", 
                  "RcppExamples", "RcppGSL", "RcppOctave", "RcppProgress", "RcppRoll",
                  "RcppSMC", "RcppXts", "RcppZiggurat", "rexpokit", "rforensicbatwing", "RInside",
                  "Rmalschains", "RMessenger", "rmgarch", "robustgam", "robustHD", "rococo", "rotations", "Rmixmod",
@@ -81,7 +81,6 @@ goodWithImport <- c("CDM",		# works with proper Import, see patch
 
 goodWithOtherChange <- c("dplyr",	# works with https://github.com/hadley/dplyr/pull/190, see Rcpp issue #99
                          "httpuv", 	# works with patch
-                         "RcppEigen",   # version in GitHub repo now passes
                          "RQuantLib")	# version in R-Forge repo now passes
 
 #bad4rcpp <- c()				# Yay!
