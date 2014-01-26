@@ -23,7 +23,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "psgp", "Rankcluster", "rARPACK", "Rclusterpp", "RcppArmadillo",
                  "RcppBDT", "rcppbugs", "RcppClassic", "RcppClassicExamples", "RcppCNPy", "RcppDE",
                  "RcppExamples", "RcppGSL", "RcppOctave", "RcppProgress", "RcppRoll",
-                 "RcppSMC", "RcppXts", "rexpokit", "rforensicbatwing", "RInside",
+                 "RcppSMC", "RcppXts", "RcppZiggurat", "rexpokit", "rforensicbatwing", "RInside",
                  "Rmalschains", "RMessenger", "rmgarch", "robustgam", "robustHD", "rococo", "rotations", "Rmixmod",
                  "RProtoBuf", "RSNNS", "RSofia", "rugarch", "RVowpalWabbit", "sdcMicro", "sdcTable",
                  "sequences", "sglOptim", "simFrame", "spacodiR", "sparseHessianFD",
@@ -58,7 +58,7 @@ bad4RcppAPI <- c()
 
 bad4unclear <- c()   
 
-goodWithQuestion <- c("Amelia")		# works as is w. '--no-vignettes', but loops in vignette (?)
+goodWithQuestion <- c("Amelia")		# works as is w. '--no-vignettes', but loops in vignette -- upstream says likely them ("bad bootstrap")
 
 ## For problems of this variety:
 ##     function 'dataptr' not provided by package 'Rcpp'
@@ -82,7 +82,6 @@ goodWithImport <- c("CDM",		# works with proper Import, see patch
 goodWithOtherChange <- c("dplyr",	# works with https://github.com/hadley/dplyr/pull/190, see Rcpp issue #99
                          "httpuv", 	# works with patch
                          "RcppEigen",   # version in GitHub repo now passes
-                         "RcppZiggurat",# version in GitHub repo now passes
                          "RQuantLib")	# version in R-Forge repo now passes
 
 #bad4rcpp <- c()				# Yay!
