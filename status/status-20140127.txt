@@ -1,6 +1,6 @@
 
 
-Release status of Rcpp as of 2014-01-26
+Release status of Rcpp as of 2014-01-27
 =======================================
 
 
@@ -11,18 +11,18 @@ Running the script summarizing results straight out of its repo:
 
     edd@max:~/git/rcpp-logs$ Rscript results/Rcpp-Summary-20140112.R 
     Good          157 
-      AsIs        138
+      AsIs        139
       w/Imports   15 
-      w/Other     3
+      w/Other     2
       w/Question  1 
     Bad Rcpp      0 
       RcppApi     0 
       Unclear     0 
-    Bad other     7 
+    Bad other     6 
       BioCDep     4 
-      NotRcpp     2 
+      NotRcpp     1 
       Skipped     1 
-    Total         164 
+    Total         163 
     Bad Rcpp Pct  0 
 
 The scripts contains more details and comments. It reflect twelve days of
@@ -101,20 +101,12 @@ for the following package
 
     httpuv-1.2.1.patch
 
-A few of our packages needed fixes as well, we have updated them in their
-respective R-Forge or GitHub repos. 
+The dplyr package is already fixed in its repo as well but needs an update on
+CRAN.
 
-    RQuantLib
-
-remains to be fixed, and
-
-    RcppClassic
-    RcppEigen   
-    RcppZiggurat
-
-have already had new releases in the next few days.
-
-The dplyr package is already fixed in its repo as well.
+A few of our packages neededed fixes as well, we first updated them in their
+respective R-Forge or GitHub repos, and have now uploaded them to CRAN:
+RQuantLib, RcppClassic, RcppEigen, RcppZiggurat.
 
 Special thanks to Alexios who already applied patches to rugarch and rmgarch,
 and uploaded those new versions to CRAN.
@@ -139,9 +131,8 @@ Four packages were not tested as their Depends included BioConductor packages:
 Bad/unknown: Not Rcpp
 ---------------------
 
-Two packages had other issues:
+One packages has other issues:
 
-     ALDqr     needs a \dontrun{} in one example
      roxygen2  does not terminate its unit test
 
 
