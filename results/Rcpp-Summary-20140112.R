@@ -25,7 +25,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "RcppExamples", "RcppGSL", "RcppOctave", "RcppProgress", "RcppRoll",
                  "RcppSMC", "RcppXts", "RcppZiggurat", "rexpokit", "rforensicbatwing", "RInside",
                  "Rmalschains", "RMessenger", "rmgarch", "robustgam", "robustHD", "rococo", "rotations", "Rmixmod",
-                 "RProtoBuf", "RSNNS", "RSofia", "rugarch", "RVowpalWabbit", "sdcMicro", "sdcTable",
+                 "RProtoBuf", "RSNNS", "RSofia", "RQuantLib", "rugarch", "RVowpalWabbit", "sdcMicro", "sdcTable",
                  "sequences", "sglOptim", "simFrame", "spacodiR", "sparseHessianFD",
                  "sparseLTSEigen", "stochvol", "surveillance", "survSNP", "TAQMNGR", "tbart", "termstrc",
                  "trustOptim", "tvm", "unmarked", "VideoComparison", "VIM", 
@@ -80,13 +80,12 @@ goodWithImport <- c("CDM",		# works with proper Import, see patch
 
 
 goodWithOtherChange <- c("dplyr",	# works with https://github.com/hadley/dplyr/pull/190, see Rcpp issue #99
-                         "httpuv", 	# works with patch
-                         "RQuantLib")	# version in R-Forge repo now passes
+                         "httpuv") 	# works with patch
 
 #bad4rcpp <- c()				# Yay!
 
 ## these fail initially but can all be run with some extra effort
-bad4notrcpp <-   c("ALDqr",		# needs \dontrun{} in example, comment alone useless
+bad4notrcpp <-   c(#"ALDqr",		# needs \dontrun{} in example, comment alone useless -- now off CRAN
                    "roxygen2")		# loops forever in wgen running regression test
 
 bad4skipped <-   c("quadrupen")         # tests runs for hours, skipped
@@ -116,8 +115,8 @@ cat("Bad Rcpp Pct ", badrcpp / (good + bad), "\n")
 
 
 ## Checking: packages as of Jan 25
-allPkg <- c("accelerometry", "acer", "AdaptiveSparsity", "ALDqr", "ALKr", 
-            "Amelia", "apcluster", "BayesComm", "bcp", "bcpa", "bfa", "bfp", 
+allPkg <- c("accelerometry", "acer", "AdaptiveSparsity", #"ALDqr",
+            "ALKr", "Amelia", "apcluster", "BayesComm", "bcp", "bcpa", "bfa", "bfp", 
             "bifactorial", "bilan", "blockcluster", "CARBayes", "ccaPP", 
             "cda", "CDM", "cladoRcpp", "classify", "climdex.pcic", "clogitL1", 
             "clusteval", "ClustVarLV", "ConConPiWiFun", "coneproj", "Delaporte", 
