@@ -48,7 +48,7 @@ CRAN packages with a reverse dependency on Rcpp.
 Good packages: Works "As Is"
 ----------------------------
 
-The vast majority of packages -- 135 in total -- build as-is under the
+The vast majority of packages -- 139 in total -- build as-is under the
 upcoming Rcpp releease, including 'R CMD check' which is very satisfying.
 
 
@@ -85,12 +85,14 @@ for the following packages
     strum-0.1.patch
     TAM-1.0-0.patch
 
+I will also contact each of these maintainers by email.
+
 
 Good packages: Need another update / fix
 ----------------------------------------
 
-Six packages need to apply a minimal change to their include files and
-order (in essence: include just Rcpp.h, or RcppArmadillo.h, and no other
+Two remaining package needs to apply a minimal change to their include files
+and order (in essence: include just Rcpp.h, or RcppArmadillo.h, and no other
 Rcpp* headers as this can often derail some internal interdependencies).
 
 We have provided patches in this Github repo / directory:
@@ -101,23 +103,26 @@ for the following package
 
     httpuv-1.2.1.patch
 
-The dplyr package is already fixed in its repo as well but needs an update on
-CRAN.
+The dplyr package is already fixed in its repo as well and builds, but needs
+an update on CRAN. I also suggested a minor update to the examples (which do
+not always check if packages from a Suggests: are installed as it should).
 
 A few of our packages neededed fixes as well, we first updated them in their
-respective R-Forge or GitHub repos, and have now uploaded them to CRAN:
-RQuantLib, RcppClassic, RcppEigen, RcppZiggurat.
+respective R-Forge or GitHub repos, and have since uploaded them to CRAN:
+RQuantLib, RcppClassic, RcppEigen, RcppZiggurat as well as an earlier change
+in RProtoBuf
 
 Special thanks to Alexios who already applied patches to rugarch and rmgarch,
-and uploaded those new versions to CRAN.
+and uploaded those new versions to CRAN, and to Martin Vincent who relaxed a
+test condition in his sglOptim and uploaded it to CRAN.
 
 
 Good packages: Open question
 ----------------------------
 
 Amelia builds, and tests fine -- but loops forever in one segment in the
-vignette.  This may or may not be related to Rcpp. We have contacted the
-maintainer, but not yet heard back.
+vignette.  After discussing this with Matt it was concluded that this is
+probably an Amelia issue.
 
 
 Bad/unknown packages: Missing Depends on BioConductor
@@ -127,11 +132,13 @@ Four packages were not tested as their Depends included BioConductor packages:
 
      GeneticTools GOsummaries orQA snplist 
 
+It would be nice if someone with BioC installs could test these.
+
 
 Bad/unknown: Not Rcpp
 ---------------------
 
-One packages has other issues:
+One packages has anoother issues:
 
      roxygen2  does not terminate its unit test
 
@@ -139,8 +146,8 @@ One packages has other issues:
 Bad/skipped: Not tested
 -----------------------
 
-We excluded the quadrupen package as its test appears to run for hours on
-end.
+As before, we have excluded the quadrupen package as its test appears to run
+for hours on end.
 
 
 BioConductor
@@ -157,7 +164,10 @@ issue similar to the one reported above -- and the rest passes.
 Summary
 =======
 
-We consider Rcpp ready for release.
+We consider Rcpp ready for release.  
+
+Per discussion with CRAN, we plan to upload Rcpp in a week from giving
+maintainers time to apply the patches we prepared.
 
 
 
