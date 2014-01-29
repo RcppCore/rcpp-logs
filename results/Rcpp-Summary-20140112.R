@@ -18,7 +18,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "Funclustering", "geiger", "geoCount", "growcurves", "GSE", "gMWT", "GxM",
                  "hawkes", "hsphase", "HUM", "hypervolume", "IBHM", "inarmix", "IsingSampler", "jaatha", "KernSmoothIRT",
                  "kmc", "Kmisc", "LaF", "lm.br", "marked", "maxent", "mets", "minqa", "mirt", "miscF",
-                 "MPTinR", "msgl", "mvabund", "MVB", "ndl", "NetSim", "ngspatial", "oem",
+                 "MPTinR", "msgl", "mvabund", "MVB", "ndl", "NetSim", "ngspatial", "oem", "openair",
                  "PedCNV", "phylobase", "planar", "PReMiuM", "pROC", "prospectr", "protViz",
                  "psgp", "Rankcluster", "rARPACK", "Rclusterpp", "RcppArmadillo",
                  "RcppBDT", "rcppbugs", "RcppClassic", "RcppClassicExamples", "RcppCNPy", "RcppDE", "RcppEigen", 
@@ -68,7 +68,6 @@ goodWithImport <- c("CDM",		# works with proper Import, see patch
                     "gRim",  		# works with proper Import, see patch
                     "HLMdiag",  	# works with proper Import, see patch
                     "lme4",		# works with proper Import, see patch
-                    "openair",		# works with proper Import, see patch                    
                     "Rvcg",             # works with proper Import, see patch
                     "rgam",             # works with proper Import, see patch
                     "Ruchardet",	# works with proper Import, see patch
