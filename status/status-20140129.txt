@@ -10,18 +10,18 @@ Summary
 Running the script summarizing results straight out of its repo:
 
     edd@max:~/git/rcpp-logs$ Rscript results/Rcpp-Summary-20140112.R 
-    Good          157 
-      AsIs        141
-      w/Imports   13
-      w/Other     2
+    Good          161
+      AsIs        147
+      w/Imports   12
+      w/Other     1
       w/Question  1 
     Bad Rcpp      0 
       RcppApi     0 
       Unclear     0 
-    Bad other     6 
-      BioCDep     4 
-      NotRcpp     1 
-      Skipped     1 
+    Bad other     2 
+      BioCDep     0 
+      NotRcpp     0 
+      Skipped     2 
     Total         163 
     Bad Rcpp Pct  0 
 
@@ -48,7 +48,7 @@ CRAN packages with a reverse dependency on Rcpp.
 Good packages: Works "As Is"
 ----------------------------
 
-The vast majority of packages -- 139 in total -- build as-is under the
+The vast majority of packages -- 147 in total -- build as-is under the
 upcoming Rcpp releease, including 'R CMD check' which is very satisfying.
 
 
@@ -102,10 +102,6 @@ for the following package
 
     httpuv-1.2.1.patch
 
-The dplyr package is already fixed in its repo as well and builds, but needs
-an update on CRAN. I also suggested a minor update to the examples (which do
-not always check if packages from a Suggests: are installed as it should).
-
 A few of our packages neededed fixes as well, we first updated them in their
 respective R-Forge or GitHub repos, and have since uploaded them to CRAN:
 RQuantLib, RcppClassic, RcppEigen, RcppZiggurat as well as an earlier change
@@ -127,11 +123,13 @@ probably an Amelia issue.
 Bad/unknown packages: Missing Depends on BioConductor
 -----------------------------------------------------
 
-Four packages were not tested as their Depends included BioConductor packages:
+Four packages were not tested initially as their Depends included
+BioConductor packages:
 
      GeneticTools GOsummaries orQA snplist 
 
-It would be nice if someone with BioC installs could test these.
+However, Kevin tested these as part of his test against all of BioConductor.
+As they passed, we added them to 'works as-is' as well.
 
 
 Bad/unknown: Not Rcpp
@@ -144,7 +142,9 @@ Bad/skipped: Not tested
 -----------------------
 
 As before, we have excluded the quadrupen package as its test appears to run
-for hours on end.
+for hours on end.  We also skip the dplyr packages which builds, but fails in
+tests, examples and vignette unless all of its Suggests are installed. To us,
+that is a violation of the suggestion in Section 1.1.3 of Writing R Extensions.
 
 
 BioConductor
