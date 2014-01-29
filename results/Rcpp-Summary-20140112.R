@@ -29,7 +29,11 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "sequences", "sglOptim", "simFrame", "spacodiR", "sparseHessianFD",
                  "sparseLTSEigen", "SpatialTools", "stochvol", "surveillance", "survSNP", "TAQMNGR", "tbart", "termstrc",
                  "trustOptim", "tvm", "unmarked", "VideoComparison", "VIM", 
-                 "waffect", "wordcloud", "WideLM", "wsrf", "XBRL", "zic")
+                 "waffect", "wordcloud", "WideLM", "wsrf", "XBRL", "zic",
+
+                 # tested by Kevin in his BioC tests, all have BioC depends
+                 "GeneticTools","GOsummaries","orQA","snplist"
+                 )
 
 ## bad <- as.character(subset(res, res==1)[,1])
 ## dput(bad)
@@ -46,10 +50,10 @@ badPkg <- c("ALDqr", "Amelia", "apcluster", "CARBayes", "CDM", "classify",
             "surveillance", "TAM", "tbart", "VideoComparison", "WideLM", 
             "wordcloud", "wsrf")
 
-bad4BioCdep <- c("GeneticTools",	# ‘snpStats’ [BioC ?]
-                 "GOsummaries",		# ‘limma’ [BioC ?]
-                 "orQA",		# ‘genefilter’ [from BioC]
-                 "snplist")		#" 'biomaRt' [from BioC]
+bad4BioCdep <- c()#"GeneticTools",	# ‘snpStats’ [BioC ?]
+#                 "GOsummaries",		# ‘limma’ [BioC ?]
+#                 "orQA",		# ‘genefilter’ [from BioC]
+#                 "snplist")		#" 'biomaRt' [from BioC]
 
 
 ## Failing at compile time
@@ -76,15 +80,15 @@ goodWithImport <- c("CDM",		# works with proper Import, see patch
                     "TAM") 		# works with proper Import, see patch
 
 
-goodWithOtherChange <- c("dplyr",	# works with https://github.com/hadley/dplyr/pull/190, see Rcpp issue #99
-                         "httpuv") 	# works with patch
+goodWithOtherChange <- c("httpuv") 	# works with patch
 
 #bad4rcpp <- c()				# Yay!
 
 ## these fail initially but can all be run with some extra effort
 bad4notrcpp <-   c()##"ALDqr",		# needs \dontrun{} in example, comment alone useless -- now off CRAN
 
-bad4skipped <-   c("quadrupen")         # tests runs for hours, skipped
+bad4skipped <-   c("quadrupen",         # tests runs for hours, skipped
+		   "dplyr")		# treats Suggests as Depends, fails when not all installed
 
 
 good <- length(goodPkgAsIs) + length(goodWithQuestion) + length(goodWithImport) + length(goodWithOtherChange)
