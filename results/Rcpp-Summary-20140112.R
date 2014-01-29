@@ -24,8 +24,8 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "RcppBDT", "rcppbugs", "RcppClassic", "RcppClassicExamples", "RcppCNPy", "RcppDE", "RcppEigen", 
                  "RcppExamples", "RcppGSL", "RcppOctave", "RcppProgress", "RcppRoll",
                  "RcppSMC", "RcppXts", "RcppZiggurat", "rexpokit", "rforensicbatwing", "RInside",
-                 "Rmalschains", "RMessenger", "rmgarch", "robustgam", "robustHD", "rococo", "rotations", "Rmixmod",
-                 "RProtoBuf", "RSNNS", "RSofia", "RQuantLib", "rugarch", "RVowpalWabbit", "sdcMicro", "sdcTable",
+                 "Rmalschains", "RMessenger", "rmgarch", "robustgam", "robustHD", "rococo", "rotations", "roxygen2", "Rmixmod",
+                 "RProtoBuf", "RSNNS", "RSofia", "RQuantLib", "rugarch", "Rvcg", "RVowpalWabbit", "sdcMicro", "sdcTable",
                  "sequences", "sglOptim", "simFrame", "spacodiR", "sparseHessianFD",
                  "sparseLTSEigen", "SpatialTools", "stochvol", "surveillance", "survSNP", "TAQMNGR", "tbart", "termstrc",
                  "trustOptim", "tvm", "unmarked", "VideoComparison", "VIM", 
@@ -68,7 +68,6 @@ goodWithImport <- c("CDM",		# works with proper Import, see patch
                     "gRim",  		# works with proper Import, see patch
                     "HLMdiag",  	# works with proper Import, see patch
                     "lme4",		# works with proper Import, see patch
-                    "Rvcg",             # works with proper Import, see patch
                     "rgam",             # works with proper Import, see patch
                     "Ruchardet",	# works with proper Import, see patch
                     "SBSA",		# works with proper Import, see patch
@@ -83,8 +82,7 @@ goodWithOtherChange <- c("dplyr",	# works with https://github.com/hadley/dplyr/p
 #bad4rcpp <- c()				# Yay!
 
 ## these fail initially but can all be run with some extra effort
-bad4notrcpp <-   c(#"ALDqr",		# needs \dontrun{} in example, comment alone useless -- now off CRAN
-                   "roxygen2")		# loops forever in wgen running regression test
+bad4notrcpp <-   c()##"ALDqr",		# needs \dontrun{} in example, comment alone useless -- now off CRAN
 
 bad4skipped <-   c("quadrupen")         # tests runs for hours, skipped
 
