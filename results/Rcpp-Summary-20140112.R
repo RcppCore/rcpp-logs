@@ -27,7 +27,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "Rmalschains", "RMessenger", "rmgarch", "robustgam", "robustHD", "rococo", "rotations", "Rmixmod",
                  "RProtoBuf", "RSNNS", "RSofia", "RQuantLib", "rugarch", "RVowpalWabbit", "sdcMicro", "sdcTable",
                  "sequences", "sglOptim", "simFrame", "spacodiR", "sparseHessianFD",
-                 "sparseLTSEigen", "stochvol", "surveillance", "survSNP", "TAQMNGR", "tbart", "termstrc",
+                 "sparseLTSEigen", "SpatialTools", "stochvol", "surveillance", "survSNP", "TAQMNGR", "tbart", "termstrc",
                  "trustOptim", "tvm", "unmarked", "VideoComparison", "VIM", 
                  "waffect", "wordcloud", "WideLM", "wsrf", "XBRL", "zic")
 
@@ -74,7 +74,6 @@ goodWithImport <- c("CDM",		# works with proper Import, see patch
                     "Ruchardet",	# works with proper Import, see patch
                     "SBSA",		# works with proper Import, see patch
                     "sirt",		# works with proper Import, see patch
-                    "SpatialTools",	# works with proper Import, see patch
                     "strum", 		# works with proper Import, see patch
                     "TAM") 		# works with proper Import, see patch
 
