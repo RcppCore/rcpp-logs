@@ -1,6 +1,6 @@
 
 
-Release status of Rcpp as of 2014-01-29
+Release status of Rcpp as of 2014-01-30
 =======================================
 
 
@@ -11,8 +11,8 @@ Running the script summarizing results straight out of its repo:
 
     edd@max:~/git/rcpp-logs$ Rscript results/Rcpp-Summary-20140112.R 
     Good          161
-      AsIs        147
-      w/Imports   12
+      AsIs        148
+      w/Imports   11
       w/Other     1
       w/Question  1 
     Bad Rcpp      0 
@@ -69,7 +69,6 @@ We have provided patches in this Github repo / directory:
 
 for the following packages
 
-    CDM-2.4-9.patch
     fdaMixed-0.3.patch
     gRbase-1.6-12.patch
     gRim-0.1-17.patch
@@ -120,8 +119,8 @@ vignette.  After discussing this with Matt it was concluded that this is
 probably an Amelia issue.
 
 
-Bad/unknown packages: Missing Depends on BioConductor
------------------------------------------------------
+Gut but initially skipped packages: Depends on BioConductor
+-----------------------------------------------------------
 
 Four packages were not tested initially as their Depends included
 BioConductor packages:
@@ -138,13 +137,15 @@ Bad/unknown: Not Rcpp
 N/A
 
 
-Bad/skipped: Not tested
------------------------
+Bad: Cannot complete test
+-------------------------
 
 As before, we have excluded the quadrupen package as its test appears to run
-for hours on end.  We also skip the dplyr packages which builds, but fails in
-tests, examples and vignette unless all of its Suggests are installed. To us,
-that is a violation of the suggestion in Section 1.1.3 of Writing R Extensions.
+for hours on end.  
+
+We also skip the dplyr packages which builds, but fails in tests, examples
+and vignette unless all of its Suggests are installed. To us, that is a
+violation of the suggestion in Section 1.1.3 of Writing R Extensions. 
 
 
 BioConductor

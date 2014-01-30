@@ -11,7 +11,7 @@
 
 goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster",
                  "BayesComm", "bcp", "bcpa", "bfa", "bfp", "blockcluster",
-                 "bifactorial", "bilan", "CARBayes", "ccaPP", "cda", "cladoRcpp", "classify", "climdex.pcic",
+                 "bifactorial", "bilan", "CARBayes", "ccaPP", "cda", "CDM", "cladoRcpp", "classify", "climdex.pcic",
                  "clogitL1", "clusteval", "ClustVarLV", "ConConPiWiFun", "coneproj",
                  "Delaporte", "dils", "disclapmix", "diversitree", "ecp", "EpiContactTrace", "fastGHQuad",
                  "FastPCS", "FastRCS", "FBFsearch", "forecast", "fugeR",
@@ -66,8 +66,7 @@ goodWithQuestion <- c("Amelia")		# works as is w. '--no-vignettes', but loops in
 
 ## For problems of this variety:
 ##     function 'dataptr' not provided by package 'Rcpp'
-goodWithImport <- c("CDM",		# works with proper Import, see patch
-                    "fdaMixed",  	# works with proper Import, see patch
+goodWithImport <- c("fdaMixed",  	# works with proper Import, see patch
                     "gRbase",   	# works with proper Import, see patch
                     "gRim",  		# works with proper Import, see patch
                     "HLMdiag",  	# works with proper Import, see patch
