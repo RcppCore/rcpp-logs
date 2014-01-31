@@ -1,6 +1,6 @@
 
 
-Release status of Rcpp as of 2014-01-30
+Release status of Rcpp as of 2014-01-31
 =======================================
 
 
@@ -11,9 +11,9 @@ Running the script summarizing results straight out of its repo:
 
     edd@max:~/git/rcpp-logs$ Rscript results/Rcpp-Summary-20140112.R 
     Good          161
-      AsIs        149
-      w/Imports   10
-      w/Other     1
+      AsIs        152
+      w/Imports   8
+      w/Other     0
       w/Question  1 
     Bad Rcpp      0 
       RcppApi     0 
@@ -48,8 +48,10 @@ CRAN packages with a reverse dependency on Rcpp.
 Good packages: Works "As Is"
 ----------------------------
 
-The vast majority of packages -- 147 in total -- build as-is under the
-upcoming Rcpp releease, including 'R CMD check' which is very satisfying.
+The vast majority of packages -- 152 in total as of today -- build as-is
+under the upcoming Rcpp releease, including 'R CMD check' which is very
+satisfying.  A big thank you to everybody who patched or otherwise updated
+their package.
 
 
 Good packages: Need an Imports / importFrom update
@@ -69,14 +71,12 @@ We have provided patches in this Github repo / directory:
 
 for the following packages
 
-    fdaMixed-0.3.patch
     gRbase-1.6-12.patch
     gRim-0.1-17.patch
     lme4-1.05.patch
     rgam-0.6.2.patch
     Ruchardet-0.0-2.patch
     SBSA-0.2.2.patch
-    sirt-0.41-21.patch
     strum-0.1.patch
     TAM-1.0-0.patch
 
@@ -88,17 +88,12 @@ Special thanks to maintainers who patched their packages already.
 Good packages: Need another update / fix
 ----------------------------------------
 
-Two remaining package needs to apply a minimal change to their include files
-and order (in essence: include just Rcpp.h, or RcppArmadillo.h, and no other
-Rcpp* headers as this can often derail some internal interdependencies).
+N/A.
 
-We have provided patches in this Github repo / directory:
-
-    https://github.com/RcppCore/rcpp-logs/tree/master/patches/2014-01
-
-for the following package
-
-    httpuv-1.2.1.patch
+When we started, a few packages needed to apply a minimal change to their
+include files and order (in essence: include just Rcpp.h, or
+RcppArmadillo.h, and no other Rcpp* headers as this can often derail some
+internal interdependencies).
 
 A few of our packages neededed fixes as well, we first updated them in their
 respective R-Forge or GitHub repos, and have since uploaded them to CRAN:
@@ -106,8 +101,9 @@ RQuantLib, RcppClassic, RcppEigen, RcppZiggurat as well as an earlier change
 in RProtoBuf
 
 Special thanks to Alexios who already applied patches to rugarch and rmgarch,
-and uploaded those new versions to CRAN, and to Martin Vincent who relaxed a
-test condition in his sglOptim and uploaded it to CRAN.
+and uploaded those new versions to CRAN, to Martin Vincent who relaxed a
+test condition in his sglOptim and uploaded it to CRAN, and to Joe Cheng for
+an update to httpuv.
 
 
 Good packages: Open question

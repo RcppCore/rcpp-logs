@@ -14,9 +14,10 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "bifactorial", "bilan", "CARBayes", "ccaPP", "cda", "CDM", "cladoRcpp", "classify", "climdex.pcic",
                  "clogitL1", "clusteval", "ClustVarLV", "ConConPiWiFun", "coneproj",
                  "Delaporte", "dils", "disclapmix", "diversitree", "ecp", "EpiContactTrace", "fastGHQuad",
-                 "FastPCS", "FastRCS", "FBFsearch", "forecast", "fugeR",
+                 "FastPCS", "FastRCS", "FBFsearch", "fdaMixed", "forecast", "fugeR",
                  "Funclustering", "geiger", "geoCount", "growcurves", "GSE", "gMWT", "GxM",
-                 "hawkes", "HLMdiag", "hsphase", "HUM", "hypervolume", "IBHM", "inarmix", "IsingSampler", "jaatha", "KernSmoothIRT",
+                 "hawkes", "HLMdiag", "hsphase", "httpuv",
+                 "HUM", "hypervolume", "IBHM", "inarmix", "IsingSampler", "jaatha", "KernSmoothIRT",
                  "kmc", "Kmisc", "LaF", "lm.br", "marked", "maxent", "mets", "minqa", "mirt", "miscF",
                  "MPTinR", "msgl", "mvabund", "MVB", "ndl", "NetSim", "ngspatial", "oem", "openair",
                  "PedCNV", "phylobase", "planar", "PReMiuM", "pROC", "prospectr", "protViz",
@@ -26,7 +27,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "RcppSMC", "RcppXts", "RcppZiggurat", "rexpokit", "rforensicbatwing", "RInside",
                  "Rmalschains", "RMessenger", "rmgarch", "robustgam", "robustHD", "rococo", "rotations", "roxygen2", "Rmixmod",
                  "RProtoBuf", "RSNNS", "RSofia", "RQuantLib", "rugarch", "Rvcg", "RVowpalWabbit", "sdcMicro", "sdcTable",
-                 "sequences", "sglOptim", "simFrame", "spacodiR", "sparseHessianFD",
+                 "sequences", "sglOptim", "simFrame", "sirt", "spacodiR", "sparseHessianFD",
                  "sparseLTSEigen", "SpatialTools", "stochvol", "surveillance", "survSNP", "TAQMNGR", "tbart", "termstrc",
                  "trustOptim", "tvm", "unmarked", "VideoComparison", "VIM", 
                  "waffect", "wordcloud", "WideLM", "wsrf", "XBRL", "zic",
@@ -66,19 +67,17 @@ goodWithQuestion <- c("Amelia")		# works as is w. '--no-vignettes', but loops in
 
 ## For problems of this variety:
 ##     function 'dataptr' not provided by package 'Rcpp'
-goodWithImport <- c("fdaMixed",  	# works with proper Import, see patch
-                    "gRbase",   	# works with proper Import, see patch
+goodWithImport <- c("gRbase",   	# works with proper Import, see patch
                     "gRim",  		# works with proper Import, see patch
                     "lme4",		# works with proper Import, see patch
                     "rgam",             # works with proper Import, see patch
                     "Ruchardet",	# works with proper Import, see patch
                     "SBSA",		# works with proper Import, see patch
-                    "sirt",		# works with proper Import, see patch
                     "strum", 		# works with proper Import, see patch
                     "TAM") 		# works with proper Import, see patch
 
 
-goodWithOtherChange <- c("httpuv") 	# works with patch
+goodWithOtherChange <- c()
 
 #bad4rcpp <- c()				# Yay!
 
