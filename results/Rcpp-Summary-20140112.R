@@ -24,9 +24,9 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "psgp", "RadOnc", "Rankcluster", "rARPACK", "Rclusterpp", "RcppArmadillo",
                  "RcppBDT", "rcppbugs", "RcppClassic", "RcppClassicExamples", "RcppCNPy", "RcppDE", "RcppEigen", 
                  "RcppExamples", "RcppGSL", "RcppOctave", "RcppProgress", "RcppRoll",
-                 "RcppSMC", "RcppXts", "RcppZiggurat", "rexpokit", "rforensicbatwing", "RInside",
+                 "RcppSMC", "RcppXts", "RcppZiggurat", "rexpokit", "rforensicbatwing", "rgam", "RInside",
                  "Rmalschains", "RMessenger", "rmgarch", "robustgam", "robustHD", "rococo", "rotations", "roxygen2", "Rmixmod",
-                 "RProtoBuf", "RSNNS", "RSofia", "RQuantLib", "rugarch", "Rvcg", "RVowpalWabbit", "sdcMicro", "sdcTable",
+                 "RProtoBuf", "RSNNS", "RSofia", "RQuantLib", "rugarch", "Rvcg", "RVowpalWabbit", "SBSA", "sdcMicro", "sdcTable",
                  "sequences", "sglOptim", "simFrame", "sirt", "spacodiR", "sparseHessianFD",
                  "sparseLTSEigen", "SpatialTools", "stochvol", "surveillance", "survSNP", "TAQMNGR", "tbart", "termstrc",
                  "trustOptim", "tvm", "unmarked", "VideoComparison", "VIM", 
@@ -70,9 +70,7 @@ goodWithQuestion <- c("Amelia")		# works as is w. '--no-vignettes', but loops in
 goodWithImport <- c("gRbase",   	# works with proper Import, see patch
                     "gRim",  		# works with proper Import, see patch
                     "lme4",		# works with proper Import, see patch
-                    "rgam",             # works with proper Import, see patch
                     "Ruchardet",	# works with proper Import, see patch
-                    "SBSA",		# works with proper Import, see patch
                     "strum", 		# works with proper Import, see patch
                     "TAM") 		# works with proper Import, see patch
 
