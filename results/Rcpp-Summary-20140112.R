@@ -18,7 +18,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "Funclustering", "geiger", "geoCount", "GMCM", "GPvam", "growcurves", "GSE", "gMWT", "GxM",
                  "hawkes", "HLMdiag", "hsphase", "httpuv",
                  "HUM", "hypervolume", "IBHM", "inarmix", "IsingSampler", "jaatha", "KernSmoothIRT",
-                 "kmc", "Kmisc", "LaF", "lm.br", "marked", "maxent", "mets", "minqa", "mirt", "miscF",
+                 "kmc", "Kmisc", "LaF", "lm.br", "lme4", "marked", "maxent", "mets", "minqa", "mirt", "miscF",
                  "MPTinR", "msgl", "mvabund", "MVB", "ndl", "NetSim", "ngspatial", "oem", "openair",
                  "PedCNV", "phylobase", "planar", "PReMiuM", "pROC", "prospectr", "protViz",
                  "psgp", "RadOnc", "Rankcluster", "rARPACK", "Rclusterpp", "RcppArmadillo",
@@ -28,7 +28,7 @@ goodPkgAsIs <- c("accelerometry", "acer", "AdaptiveSparsity", "ALKr", "apcluster
                  "Rmalschains", "RMessenger", "rmgarch", "robustgam", "robustHD", "rococo", "rotations", "roxygen2", "Rmixmod",
                  "RProtoBuf", "RSNNS", "RSofia", "RQuantLib", "rugarch", "Rvcg", "RVowpalWabbit", "SBSA", "sdcMicro", "sdcTable",
                  "sequences", "sglOptim", "simFrame", "sirt", "spacodiR", "sparseHessianFD",
-                 "sparseLTSEigen", "SpatialTools", "stochvol", "surveillance", "survSNP", "TAQMNGR", "tbart", "termstrc",
+                 "sparseLTSEigen", "SpatialTools", "stochvol", "surveillance", "survSNP", "TAM", "TAQMNGR", "tbart", "termstrc",
                  "trustOptim", "tvm", "unmarked", "VideoComparison", "VIM", 
                  "waffect", "wordcloud", "WideLM", "wsrf", "XBRL", "zic",
 
@@ -42,7 +42,7 @@ badPkg <- c("ALDqr", "Amelia", "apcluster", "CARBayes", "CDM", "classify",
             "climdex.pcic", "dils", "disclapmix", "diversitree", "fdaMixed", 
             "geiger", "GeneticTools", "gMWT", "GOsummaries", "gRbase", 
             "gRim", "HLMdiag", "httpuv", "hypervolume", "inarmix", 
-            "IsingSampler", "KernSmoothIRT", "kmc", "lm.br", "lme4", 
+            "IsingSampler", "KernSmoothIRT", "kmc", "lm.br", 
             "maxent", "mets", "mirt", "miscF", "mvabund", 
             "ngspatial", "orQA", "pROC", "protViz", "RcppClassic", 
             "RcppEigen", "RcppZiggurat", "rgam", "rmgarch", "Rmixmod", "rotations", 
@@ -69,11 +69,8 @@ goodWithQuestion <- c("Amelia")		# works as is w. '--no-vignettes', but loops in
 ##     function 'dataptr' not provided by package 'Rcpp'
 goodWithImport <- c("gRbase",   	# works with proper Import, see patch
                     "gRim",  		# works with proper Import, see patch
-                    "lme4",		# works with proper Import, see patch
                     "Ruchardet",	# works with proper Import, see patch
-                    "strum", 		# works with proper Import, see patch
-                    "TAM") 		# works with proper Import, see patch
-
+                    "strum")
 
 goodWithOtherChange <- c()
 

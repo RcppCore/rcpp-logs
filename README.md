@@ -1,13 +1,13 @@
 
-Rcpp Release status as of 2014-01-31
+Rcpp Release status as of 2014-02-02
 ------------------------------------
 
 Running the script summarizing results straight out of its repo:
 
     edd@max:~/git/rcpp-logs$ Rscript results/Rcpp-Summary-20140112.R 
     Good          164 
-      AsIs        157
-      w/Imports   6
+      AsIs        159 
+      w/Imports   4 
       w/Other     0 
       w/Question  1 
     Bad Rcpp      0 
@@ -18,6 +18,6 @@ Running the script summarizing results straight out of its repo:
       NotRcpp     0 
       Skipped     2 
     Total         166 
-    Bad Rcpp Pct  0
+    Bad Rcpp Pct  0 
 
 See the `status` directory for more details.
