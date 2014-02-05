@@ -1,5 +1,5 @@
 
-_Update:  Rcpp 0.11.0 was release on 2014-02-03 and appeared in CRAN on
+_Update:  Rcpp 0.11.0 was released on 2014-02-03 and appeared in CRAN on
 2014-03-02. We are keeping this information here for now as a reference, and
 may replace it prior to the next release._
 
