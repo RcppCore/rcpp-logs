@@ -33,12 +33,19 @@ if (grep("BioGeoBEARS", rcppset)) {     ## indirect match, no need to test
 if (grep("quadrupen", rcppset)) {       ## takes hours, skipping
     rcppset <- rcppset[ ! grepl("quadrupen", rcppset) ]
 }
-if (grep("roxygen2", rcppset)) {       ## seems to hang for reasons that are unclear on its tests
+if (grep("roxygen2", rcppset)) {        ## seems to hang for reasons that are unclear on its tests
     rcppset <- rcppset[ ! grepl("roxygen2", rcppset) ]
 }
+if (grep("dplyr", rcppset)) {           ## confuses Suggests: and Depends:
+    rcppset <- rcppset[ ! grepl("dplyr", rcppset) ]
+}
+if (grep("WideLM", rcppset)) {          ## needs working NVidia support
+    rcppset <- rcppset[ ! grepl("WideLM", rcppset) ]
+}
+
 
 print(rcppset)
-
+      
 res <- data.frame(pkg=rcppset, res=NA)
 
 #for (pi in 1:nrow(res)) {
