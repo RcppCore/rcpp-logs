@@ -9,15 +9,17 @@ cat("Rcpp version is ", packageDescription("Rcpp")$Version, "\n")
 loclib <- "/tmp/RcppDepends/lib"
 Sys.setenv("R_LIBS_USER"="/tmp/RcppDepends/lib")
 
-## Repo
-repo <- "http://cran.rstudio.com"
+r <- getOption("repos")
+r["CRAN"] <- "http://cran.rstudio.com"
+r["BioCsoft"] <- "http://www.bioconductor.org/packages/2.13/bioc"
+options(repos = r)
 
 ## for the borked src/Makevars of ExactNumCI
 Sys.setenv("BOOSTLIB"="/usr/include")
 
 setwd("/tmp/RcppDepends")
 
-AP <- available.packages(contrib.url(repo),filter=list())	# available package at CRAN
+AP <- available.packages(contrib.url(r["CRAN"]),filter=list())	# available package at CRAN
 rcppset <- sort(unname(AP[unique(c(grep("Rcpp", as.character(AP[,"Depends"])),
                                    grep("Rcpp", as.character(AP[,"LinkingTo"])),
                                    grep("Rcpp", as.character(AP[,"Imports"])))),"Package"]))
@@ -47,7 +49,7 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     pkg <- paste(AP[i,"Package"], "_", AP[i,"Version"], ".tar.gz", sep="")
     pathpkg <- paste(AP[i,"Repository"], "/", pkg, sep="")
 
-    install.packages(p, lib=loclib, repo=repo, destdir=".")  # should deal with Depends
+    install.packages(p, lib=loclib, destdir=".")  
     
     if (!file.exists(pkg)) download.file(pathpkg, pkg, quiet=TRUE)
     
