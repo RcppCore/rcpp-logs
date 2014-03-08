@@ -2,20 +2,26 @@
 
 cat("Started at ", format(Sys.time()), "\n")
 #library(parallel)
+cat("Rcpp version is ", packageDescription("Rcpp")$Version, "\n")
 
 ## use a test-local directory, install Rcpp, RcppArmadillo, ... there
 ## this will work for sub-shells such as the ones started by system() below
+loclib <- "/tmp/RcppDepends/lib"
 Sys.setenv("R_LIBS_USER"="/tmp/RcppDepends/lib")
+
+## Repo
+repo <- "http://cran.rstudio.com"
 
 ## for the borked src/Makevars of ExactNumCI
 Sys.setenv("BOOSTLIB"="/usr/include")
 
 setwd("/tmp/RcppDepends")
 
-AP <- available.packages(contrib.url("http://cran.r-project.org"),filter=list())	# available package at CRAN
+AP <- available.packages(contrib.url(repo),filter=list())	# available package at CRAN
 rcppset <- sort(unname(AP[unique(c(grep("Rcpp", as.character(AP[,"Depends"])),
                                    grep("Rcpp", as.character(AP[,"LinkingTo"])),
                                    grep("Rcpp", as.character(AP[,"Imports"])))),"Package"]))
+
 #if (grep("transnet", rcppset)) {        ## not really an Rcpp user
 #    rcppset <- rcppset[ ! grepl("transnet", rcppset) ]
 #}
@@ -29,7 +35,7 @@ if (grep("roxygen2", rcppset)) {       ## seems to hang for reasons that are unc
     rcppset <- rcppset[ ! grepl("roxygen2", rcppset) ]
 }
 
-print( rcppset )
+print(rcppset)
 
 res <- data.frame(pkg=rcppset, res=NA)
 
@@ -40,12 +46,15 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     i <- which(AP[,"Package"]==p)
     pkg <- paste(AP[i,"Package"], "_", AP[i,"Version"], ".tar.gz", sep="")
     pathpkg <- paste(AP[i,"Repository"], "/", pkg, sep="")
-    #print(pathpkg)
+
+    install.packages(p, lib=loclib, repo=repo, destdir=".")  # should deal with Depends
+    
     if (!file.exists(pkg)) download.file(pathpkg, pkg, quiet=TRUE)
+    
     rc <- system(paste("xvfb-run --server-args=\"-screen 0 1024x768x24\" ",
                        "R CMD check --no-manual --no-vignettes ", pkg, " > ", pkg, ".log", sep=""))
     res[pi, "res"] <- rc
-    cat(rc, ":", pkg, "\n")
+    cat("\n\nRESULT for", pkg, ":", ifelse(rc==0, "success", "failure"), "\n\n\n")
     res[pi, ]
 })
 
