@@ -1,0 +1,93 @@
+
+
+Release status of Rcpp as of 2014-03-11
+=======================================
+
+
+Summary
+-------
+
+Rcpp 0.11.1 looks to be ready. Running the script summarizing results
+straight out of its repo: 
+
+    edd@max:~/git/rcpp-logs/results$ Rscript Rcpp-Summary-20140311.R
+    Good          177 
+      AsIs        177 
+    Bad           3 
+      RcppApi     0 
+      Unclear     2 
+      NotRcpp     1 
+    Skipped       3 
+    Total         183 
+    Bad Percent   0.0111111 
+    edd@max:~/git/rcpp-logs/results$ 
+
+The scripts contains more details and comments. It reflects a complete test
+over all CRAN packages (modulo just four skipped ones, see below).
+
+The script, patches, summary (as well as old release checks) are in the
+repository at https://github.com/RcppCore/rcpp-logs
+
+
+Current state:
+--------------
+
+Rcpp development sources for the upcoming release 0.11.1 are in the GitHub
+repo
+
+    https://github.com/RcppCore/Rcpp
+
+and build and test fine.  
+
+The rest of this post is about how this version fares relative to existing
+CRAN packages with a reverse dependency on Rcpp.
+
+
+Good packages: Works "As Is"
+----------------------------
+
+The vast majority of packages -- 177 in total as of today, up from 152 for
+the previous release -- build as-is under the upcoming Rcpp releease,
+including 'R CMD check' which is very satisfying.  
+
+
+Good packages: Open question
+----------------------------
+
+The msgl package stops under tests / example since Rcpp 0.11.0.  The
+maintainer has been contacted; we have not heard back.
+
+
+Bad/unknown: Not Rcpp
+---------------------
+
+N/A
+
+
+Bad: Cannot complete test
+-------------------------
+
+As before, we have excluded the quadrupen package as its test appears to run
+for hours on end.  
+
+We skip the dplyr packages which builds, but fails in tests, examples and
+vignette unless all of its Suggests are installed. That is a violation of the
+suggestion in Section 1.1.3 of Writing R Extensions: as 'Suggests' are not
+'Depends'. We install the latter; and hundreds of packages work with just
+Depends. The dplyr should too.
+
+We skip the roxygen2 package which exhibited some problems last time
+around. Running it manually appears to work fine.
+
+We skip the WideLM package as we do not have a working CUDA setup.
+
+
+
+Summary
+=======
+
+We consider Rcpp ready for release.  
+
+
+
+
