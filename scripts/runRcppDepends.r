@@ -23,7 +23,7 @@ Sys.setenv("BOOSTLIB"="/usr/include")
 setwd("/tmp/RcppDepends")
 
 ## clean old lib or repo files in /tmp
-invisible(sapply(list.files("/tmp", "(repos|lib).*rds", full.names=TRUE), unlink))
+invisible(sapply(list.files("/tmp", "(repos|lib).*rds$", full.names=TRUE), unlink))
 
 IP <- installed.packages(lib.loc=loclib) 
 AP <- available.packages(contrib.url(r["CRAN"]),filter=list())	# available package at CRAN
