@@ -22,7 +22,8 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     pathpkg <- paste(AP[i,"Repository"], "/", pkg, sep="")
     #print(pathpkg)
     if (!file.exists(pkg)) download.file(pathpkg, pkg, quiet=TRUE)
-    rc <- system(paste("R CMD check --no-manual --no-vignettes ", pkg, " > ", pkg, ".log", sep=""))
+    rc <- system(paste("xvfb-run --server-args=\"-screen 0 1024x768x24\" ",
+                       "R CMD check --no-manual --no-vignettes ", pkg, " > ", pkg, ".log", sep=""))
     res[pi, "res"] <- rc
     cat(rc, ":", pkg, "\n")
     res[pi, ]
