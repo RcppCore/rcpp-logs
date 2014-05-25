@@ -9,12 +9,12 @@ cat("Rcpp version is ", packageDescription("Rcpp")$Version, "\n")
 ## this will work for sub-shells such as the ones started by system() below
 loclib <- "/tmp/RcppDepends/lib"
 Sys.setenv("R_LIBS_USER"="/tmp/RcppDepends/lib")
-Sys.setenv("CC"="gcc")   ## needed for a bad interaction between autoconf and llvm on Ubuntu
+Sys.setenv("CC"="gcc")   ## needed for a bad interaction between autoconf and llvm on Ubuntu 13.10
 Sys.setenv("CXX"="g++")  ## idem
 
 r <- getOption("repos")
 r["CRAN"] <- "http://cran.rstudio.com"
-r["BioCsoft"] <- "http://www.bioconductor.org/packages/2.13/bioc"
+r["BioCsoft"] <- "http://www.bioconductor.org/packages/release/bioc"
 options(repos = r)
 
 ## for the borked src/Makevars of ExactNumCI
@@ -43,9 +43,9 @@ if (grep("quadrupen", rcppset)) {       ## takes hours, skipping
 #if (grep("roxygen2", rcppset)) {        ## seems to hang for reasons that are unclear on its tests
 #    rcppset <- rcppset[ ! grepl("roxygen2", rcppset) ]
 #}
-if (grep("dplyr", rcppset)) {           ## confuses Suggests: and Depends:
-    rcppset <- rcppset[ ! grepl("dplyr", rcppset) ]
-}
+#if (grep("dplyr", rcppset)) {           ## confuses Suggests: and Depends:
+#    rcppset <- rcppset[ ! grepl("dplyr", rcppset) ]
+#}
 if (grep("WideLM", rcppset)) {          ## needs working NVidia support
     rcppset <- rcppset[ ! grepl("WideLM", rcppset) ]
 }
