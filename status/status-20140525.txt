@@ -1,0 +1,107 @@
+
+
+Release status of Rcpp as of 2014-05-25
+=======================================
+
+
+Summary
+-------
+
+Rcpp 0.11.2 looks to be ready. Running the script summarizing results
+straight out of its repo: 
+
+   edd@max:~/git/rcpp-logs/results$ Rscript Rcpp-Summary-20140525.R
+   Good          191 
+     AsIs        191 
+   Bad           20 
+     RcppApi     0 
+     Unclear     2 
+     NotRcpp     18 
+   Skipped       2 
+   Total         213 
+   Bad Percent   0.00947867 
+   edd@max:~/git/rcpp-logs/results$ 
+
+The scripts contains more details and comments. It reflects a complete test
+over all CRAN packages (modulo just three skipped ones, see below).
+
+The script, patches, summary (as well as old release checks) are in the
+repository at https://github.com/RcppCore/rcpp-logs
+
+
+Current state:
+--------------
+
+Rcpp development sources for the upcoming release 0.11.2 are in the GitHub
+repo
+
+    https://github.com/RcppCore/Rcpp
+
+and build and test fine.  
+
+The rest of this post is about how this version fares relative to existing
+CRAN packages with a reverse dependency on Rcpp.
+
+
+Good packages: Works "As Is"
+----------------------------
+
+The vast majority of packages -- 191 in total as of today, up from 152 and
+177 for the previous releases -- build as-is under the upcoming Rcpp releease,
+including 'R CMD check' which is very satisfying.
+
+
+Good packages: Open question
+----------------------------
+
+As before, the msgl package stops under tests / example since Rcpp 0.11.0.  The
+maintainer has been contacted; we have not heard back.
+
+RQuantLib had a weird interaction on 64-bit Linux when the -std=c++11 flags
+(which it doesn't use) was set. I suspect an interaction with Boost. As this
+is my own package, I'll keep an eye on it.
+
+Bad/unknown: Not Rcpp
+---------------------
+
+Eighteen package failed because not all required Depends were loaded:
+
+CARBayes:       builds, bombs in examples on "Error in library(shapes) : there is no package called ‘shapes’"
+climdex.pcic:   Package required but not available: ‘PCICt’
+diveRsity:      Package required but not available: ‘qgraph’
+DNAprofiles:    builds, bombs in examples on "there is no package called ‘DNAtools’"
+dplyr:          builds, bombs in examples on "there is no package called 'RSQLite.extfuns'"
+FisHiCal:       builds, bombs in examples on lack of rgl device
+glcm:           builds, bombs with "there is no package called ‘raster’"
+HUM:		builds, bombs in examples on lack of rgl device
+KernSmoothIRT:  builds, bombs in examples on lack of rgl device
+mice:           builds, bombs in examples on "there is no package called ‘pan’"
+miceadds:	Package required but not available: ‘sirt’
+Morpho:         builds, bombs in examples on "Error in library(shapes) : there is no package called ‘shapes’"
+pROC:           builds, bombs in examples on "there is no package called ‘logcondens’"
+Reot:           builds, bombs in examples on "Error in library(gridExtra) : there is no package called ‘gridExtra’"
+sirt:           Package required but not available: ‘qgraph’
+surveillance:   builds, bombs in examples:  ‘there is no package called ‘spc’’
+tbart:          builds, bombs in examples:  there is no package called ‘GISTools’
+wsrf:           builds, bombs in examples:  there is no package called ‘rattle’ 
+
+
+
+Bad: Cannot complete test
+-------------------------
+
+As before, we have excluded the quadrupen package as its test appears to run
+for hours on end.  
+
+We skip the WideLM package as we do not have a working CUDA setup right now.
+
+
+
+Summary
+=======
+
+We consider Rcpp ready for release.  
+
+
+
+
