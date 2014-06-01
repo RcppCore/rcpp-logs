@@ -1,5 +1,5 @@
 
-Rcpp 0.11.2 release status as of 2014-05-25
+Rcpp 0.11.2 release status as of 2014-05-27
 -------------------------------------------
 
 Running the script summarizing results straight out of its repo:
