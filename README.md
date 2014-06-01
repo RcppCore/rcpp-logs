@@ -4,7 +4,6 @@ Rcpp 0.11.2 release status as of 2014-05-27
 
 Running the script summarizing results straight out of its repo:
 
-
     edd@max:~/git/rcpp-logs/results$ Rscript Rcpp-Summary-20140527.R 
     Good          195 
       AsIs        195 
@@ -19,3 +18,10 @@ Running the script summarizing results straight out of its repo:
 
 The 16 'NotRcpp' cases are detailed in the corresponding file in the `status`
 directory.
+
+
+RcppArmadillo 0.4.300.7.0 release status as of 2014-05-31
+---------------------------------------------------------
+
+The script `runRcppArmadilloDepends` was run over all 67 current `Depends:`
+of RcppArmadillo.  All but three passed; see the `status` directory for more.
