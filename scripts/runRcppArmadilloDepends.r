@@ -3,8 +3,22 @@
 cat("Started at ", format(Sys.time()), "\n")
 pkg <- "RcppArmadillo"
 
+loclib <- "/tmp/RcppDepends/lib"
+Sys.setenv("R_LIBS_USER"="/tmp/RcppDepends/lib")
+Sys.setenv("CC"="gcc")   ## needed for a bad interaction between autoconf and llvm on Ubuntu 13.10
+Sys.setenv("CXX"="g++")  ## idem
+
+r <- getOption("repos")
+r["CRAN"] <- "http://cran.rstudio.com"
+r["BioCsoft"] <- "http://www.bioconductor.org/packages/release/bioc"
+options(repos = r)
+
 setwd("/tmp/RcppDepends")
 
+## clean old lib or repo files in /tmp
+invisible(sapply(list.files("/tmp", "(repos|lib).*rds$", full.names=TRUE), unlink))
+
+IP <- installed.packages(lib.loc=loclib) 
 AP <- available.packages(contrib.url("http://cran.r-project.org"), filter=list())	# available package at CRAN
 rcpparmaset <- sort(unname(AP[unique(c(grep(pkg, as.character(AP[,"Depends"])),
                                        grep(pkg, as.character(AP[,"LinkingTo"])),
@@ -21,7 +35,23 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     pkg <- paste(AP[i,"Package"], "_", AP[i,"Version"], ".tar.gz", sep="")
     pathpkg <- paste(AP[i,"Repository"], "/", pkg, sep="")
     #print(pathpkg)
-    if (!file.exists(pkg)) download.file(pathpkg, pkg, quiet=TRUE)
+
+    ipidx <- which(IP[,"Package"] == p)
+    if ((length(ipidx) == 0) || (IP[ipidx,"Version"] != AP[i,"Version"])) {
+        install.packages(p, lib=loclib)
+    }
+
+    if (!file.exists(pkg)) {
+        ## we got random download failures once in a while, so if running locally, use CRANberries-created mirror
+        localPath <- paste("/home/edd/cranberries/sources/", pkg, sep="")
+        if (file.exists(localPath)) {
+            file.copy(localPath, ".")
+        } else {
+            download.file(pathpkg, pkg, quiet=TRUE)
+        }
+    }
+    
+    #if (!file.exists(pkg)) download.file(pathpkg, pkg, quiet=TRUE)
     rc <- system(paste("xvfb-run --server-args=\"-screen 0 1024x768x24\" ",
                        "R CMD check --no-manual --no-vignettes ", pkg, " > ", pkg, ".log", sep=""))
     res[pi, "res"] <- rc
