@@ -1,0 +1,100 @@
+
+
+Release status of Rcpp as of 2014-06-06
+=======================================
+
+
+Summary
+-------
+
+Rcpp 0.11.2 looks to be ready. Running the script summarizing results
+straight out of its repo: 
+
+    edd@max:~/git/rcpp-logs/results$ Rscript Rcpp-Summary-20140606.txt
+    Good          202 
+      AsIs        202 
+    Bad           16 
+      RcppApi     0 
+      Unclear     2 
+      NotRcpp     14 
+    Skipped       1 
+    Total         219 
+    Bad Percent   0.00917431 
+    edd@max:~/git/rcpp-logs/results$ 
+
+The scripts contains more details and comments. It reflects a complete test
+over all CRAN packages (modulo just three skipped ones, see below).
+
+The script, patches, summary (as well as old release checks) are in the
+repository at https://github.com/RcppCore/rcpp-logs
+
+
+Current state:
+--------------
+
+Rcpp development sources for the upcoming release 0.11.2 are in the GitHub
+repo
+
+    https://github.com/RcppCore/Rcpp
+
+and build and test fine.  
+
+The rest of this post is about how this version fares relative to existing
+CRAN packages with a reverse dependency on Rcpp.
+
+
+Good packages: Works "As Is"
+----------------------------
+
+The vast majority of packages -- 202 in total as of today, up from 152 and
+177 for the previous releases -- build as-is under the upcoming Rcpp releease,
+including 'R CMD check' which is very satisfying.
+
+
+Good packages: Open question
+----------------------------
+
+As before, the msgl package stops under tests / example since Rcpp 0.11.0.  The
+maintainer has been contacted; we have not heard back.
+
+The very new package rlme fails in one of its regression tests. At this point
+it is not clear if this is a side-effect of changes between Rcpp 0.11.1 and
+0.11.2, or something in the rlme package.
+
+Bad/unknown: Not Rcpp
+---------------------
+
+Fourteen packages failed because not all required Depends were loaded:
+
+CARBayes:       builds, bombs in examples on "Error in library(shapes) : there is no package called ‘shapes’"
+DNAprofiles:    builds, bombs in examples on "there is no package called ‘DNAtools’"
+dplyr:          builds, bombs in examples on "there is no package called 'RSQLite.extfuns'"
+FisHiCal:       builds, bombs in examples on lack of rgl device
+HUM:		builds, bombs in examples on lack of rgl device
+KernSmoothIRT:  builds, bombs in examples on lack of rgl device
+Morpho:         builds, bombs in examples on "Error in library(shapes) : there is no package called ‘shapes’"
+pROC:           builds, bombs in examples on "there is no package called ‘logcondens’"
+rARPACK:	possibly transient error in static library from ARPACK code not recognised
+Reot:           builds, bombs in examples on "Error in library(gridExtra) : there is no package called ‘gridExtra’"
+SpatialEpi:     lack spdep which may have failed for another reason
+surveillance:   builds, bombs in examples:  ‘there is no package called ‘spc’’
+tbart:          builds, bombs in examples:  there is no package called ‘GISTools’
+wsrf:           builds, bombs in examples:  there is no package called ‘rattle’ 
+
+
+
+Bad: Cannot complete test
+-------------------------
+
+We skip the WideLM package as we do not have a working CUDA setup right now.
+
+
+
+Summary
+=======
+
+We consider Rcpp ready for release.  
+
+
+
+
