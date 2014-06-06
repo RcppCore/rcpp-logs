@@ -37,9 +37,9 @@ rcppset <- sort(unname(AP[unique(c(grep("Rcpp", as.character(AP[,"Depends"])),
 if (grep("BioGeoBEARS", rcppset)) {     ## indirect match, no need to test
     rcppset <- rcppset[ ! grepl("BioGeoBEARS", rcppset) ]
 }
-if (grep("quadrupen", rcppset)) {       ## takes hours, skipping
-    rcppset <- rcppset[ ! grepl("quadrupen", rcppset) ]
-}
+#if (grep("quadrupen", rcppset)) {       ## takes hours, skipping
+#    rcppset <- rcppset[ ! grepl("quadrupen", rcppset) ]
+#}
 #if (grep("roxygen2", rcppset)) {        ## seems to hang for reasons that are unclear on its tests
 #    rcppset <- rcppset[ ! grepl("roxygen2", rcppset) ]
 #}
