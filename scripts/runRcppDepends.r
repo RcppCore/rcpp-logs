@@ -7,6 +7,8 @@ cat("Rcpp version is ", packageDescription("Rcpp")$Version, "\n")
 
 ## use a test-local directory, install Rcpp, RcppArmadillo, ... there
 ## this will work for sub-shells such as the ones started by system() below
+if (!file.exists("/tmp/RcppDepends")) dir.create("/tmp/RcppDepends")
+if (!file.exists("/tmp/RcppDepends/lib")) dir.create("/tmp/RcppDepends/lib")
 loclib <- "/tmp/RcppDepends/lib"
 Sys.setenv("R_LIBS_USER"="/tmp/RcppDepends/lib")
 Sys.setenv("CC"="gcc")   ## needed for a bad interaction between autoconf and llvm on Ubuntu 13.10
