@@ -1,0 +1,50 @@
+
+## start with Rcpp 0.11.2.1 and RcppArmadillo 0.4.400.0
+
+#load("~/git/rcpp-logs/results/result-20140819-085232.RData")
+
+#good <- as.character(subset(res, res==0)[,1]); dput(good)
+
+goodPkg <- c("AdaptiveSparsity", "Amelia", "BayesComm", "bayou", "bfa", 
+             "BIFIEsurvey", "BIPOD", "ccaPP", "cda", "CDM", "cladoRcpp", "coneproj", 
+             "fastM", "FBFsearch", "fdaMixed", "FDRreg", "flip", "forecast", 
+             "GeneticTools", "geoCount", "GMCM", "gMWT", "GPvam", "gRbase", 
+             "gRim", "growcurves", "growfunctions", "GSE", "hawkes", "HLMdiag", 
+             "hsphase", "lsgl", "mcIRT", "metafolio", "mets", "miceadds", 
+             "miscF", "mmand", "Mposterior", "MVB", "mvnfast", "ngspatial", 
+             "oem", "pcalg", "PedCNV", "planar", "prospectr", "psgp", "quadrupen", 
+             "rcppbugs", "RcppDE", "RcppMLPACK", "RcppRoll", "resemble", "revealedPrefs", 
+             "rgam", "rmgarch", "robustgam", "robustHD", "rotations", "rugarch", 
+             "SBSA", "sglOptim", "slfm", "SpatialEpi", "SpatialTools", "spBayesSurv", 
+             "strum", "synlik", "TAM", "TED", "treeclim", "unmarked", "zic"
+             )
+
+#bad <- as.character(subset(res, res==1)[,1]); dput(bad)
+
+badPkg <- c("FisHiCal", "glcm", "icamix", "Morpho", "msgl", "sirt")
+
+
+bad4notrcpp <- c(
+    "FisHiCal",       # builds, bombs in examples on lack of rgl device
+    "glcm",           # builds, bombs in examples on "there is no package called ‘raster’"
+    "icamix",         # builds, bombs in examples on "there is no package called ‘mixtools’"
+    "Morpho",         # builds, bombs in examples on "there is no package called ‘shapes’"
+    "msgl",	      # as CRAN had notified us, msgl fails on stop() in one of its tests
+    "sirt"            # builds, bombs in examples on "there is no package called ‘fdrtool’"
+    )
+
+good <- length(goodPkg)
+badrcpp <- 0
+badother <- length(bad4notrcpp) 
+bad <- badrcpp + badother
+skipped <- 0
+
+
+cat("Good         ", good, "\n")
+cat("  AsIs       ", length(goodPkg), "\n")
+cat("Bad          ", bad, "\n")
+cat("  NotRcpp    ", length(bad4notrcpp), "\n")
+cat("Skipped      ", skipped, "\n")
+cat("Total        ", good + bad + skipped, "\n")
+cat("Bad Percent  ", badrcpp / (good + bad), "\n")
+
