@@ -1,0 +1,41 @@
+
+# start with Rcpp 0.11.2.1 and RcppEigen 0.3.2.2.0
+
+load("~/git/rcpp-logs/results/result-20140820-204252.RData")
+
+good <- as.character(subset(res, res==0)[,1]); dput(good)
+
+goodPkg <- c("blockcluster", "btf", "clere", "CorReg", "FastHCS", "FastPCS", 
+             "FastRCS", "Funclustering", "gRbase", "MPTinR", "PReMiuM", "Rankcluster", 
+             "rARPACK", "Rclusterpp", "RSNPset", "Rvcg", "spaMM", "sparseHessianFD", 
+             "sparseLTSEigen", "trustOptim")
+
+
+bad <- as.character(subset(res, res==1)[,1]); dput(bad)
+
+badPkg <- c("lme4", "rpf")
+
+bad4notrcpp <- c(
+    "rpf"             # builds, bombs in examples on "there is no package called 'mirt'"
+    )
+
+badother <- c(
+    "lme4"	      # as CRAN had notified us, msgl fails on stop() in one of its tests
+    )
+
+good <- length(goodPkg)
+badrcpp <- length(badother)
+badother <- length(bad4notrcpp) 
+bad <- badrcpp + badother
+skipped <- 0
+
+
+cat("Good         ", good, "\n")
+cat("  AsIs       ", length(goodPkg), "\n")
+cat("Bad          ", bad, "\n")
+cat("  NotRcpp    ", length(bad4notrcpp), "\n")
+cat("  Other      ", length(badother), "\n")
+cat("Skipped      ", skipped, "\n")
+cat("Total        ", good + bad + skipped, "\n")
+cat("Bad Percent  ", bad / (good + bad), "\n")
+
