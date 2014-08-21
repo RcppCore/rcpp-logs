@@ -1,0 +1,604 @@
+Started at  2014-08-20 20:02:01 
+ [1] "blockcluster"    "btf"             "clere"           "CorReg"         
+ [5] "FastHCS"         "FastPCS"         "FastRCS"         "Funclustering"  
+ [9] "gRbase"          "lme4"            "MPTinR"          "PReMiuM"        
+[13] "Rankcluster"     "rARPACK"         "Rclusterpp"      "rpf"            
+[17] "RSNPset"         "Rvcg"            "spaMM"           "sparseHessianFD"
+[21] "sparseLTSEigen"  "trustOptim"     
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -DRPACKAGE -fopenmp  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c BinaryDataExchange.cpp -o BinaryDataExchange.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -DRPACKAGE -fopenmp  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c CategoricalDataExchange.cpp -o CategoricalDataExchange.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -DRPACKAGE -fopenmp  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c ContingencyDataExchange.cpp -o ContingencyDataExchange.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -DRPACKAGE -fopenmp  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c ContinuousDataExchange.cpp -o ContinuousDataExchange.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -DRPACKAGE -fopenmp  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c IDataExchange.cpp -o IDataExchange.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -DRPACKAGE -fopenmp  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c Rcoclustmain.cpp -o Rcoclustmain.o
+(cd ./coclust/ && make -j8)
+make[1]: Entering directory `/tmp/Rtmpe5YYuj/R.INSTALL577f7b4efd47/blockcluster/src/coclust'
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -DNDEBUG -DRPACKAGE -I"/usr/local/lib/R/site-library/RcppEigen/include" src/Algorithms/CEMAlgo.cpp -c -o src/Algorithms/CEMAlgo.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -DNDEBUG -DRPACKAGE -I"/usr/local/lib/R/site-library/RcppEigen/include" src/Algorithms/EMAlgo.cpp -c -o src/Algorithms/EMAlgo.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -DNDEBUG -DRPACKAGE -I"/usr/local/lib/R/site-library/RcppEigen/include" src/Algorithms/SEMAlgo.cpp -c -o src/Algorithms/SEMAlgo.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -DNDEBUG -DRPACKAGE -I"/usr/local/lib/R/site-library/RcppEigen/include" src/CoClustFacade/CoCluster.cpp -c -o src/CoClustFacade/CoCluster.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -DNDEBUG -DRPACKAGE -I"/usr/local/lib/R/site-library/RcppEigen/include" src/Strategy/XStrategyAlgo.cpp -c -o src/Strategy/XStrategyAlgo.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -DNDEBUG -DRPACKAGE -I"/usr/local/lib/R/site-library/RcppEigen/include" src/Strategy/XStrategyforSEMAlgo.cpp -c -o src/Strategy/XStrategyforSEMAlgo.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -DNDEBUG -DRPACKAGE -I"/usr/local/lib/R/site-library/RcppEigen/include" src/InputParameters/InputParameters.cpp -c -o src/InputParameters/InputParameters.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -DNDEBUG -DRPACKAGE -I"/usr/local/lib/R/site-library/RcppEigen/include" src/Models/BinaryLBModel.cpp -c -o src/Models/BinaryLBModel.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -DNDEBUG -DRPACKAGE -I"/usr/local/lib/R/site-library/RcppEigen/include" src/Models/BinaryLBModelequalepsilon.cpp -c -o src/Models/BinaryLBModelequalepsilon.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -DNDEBUG -DRPACKAGE -I"/usr/local/lib/R/site-library/RcppEigen/include" src/Models/CategoricalLBModel.cpp -c -o src/Models/CategoricalLBModel.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -DNDEBUG -DRPACKAGE -I"/usr/local/lib/R/site-library/RcppEigen/include" src/Models/ContingencyLBModel.cpp -c -o src/Models/ContingencyLBModel.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -DNDEBUG -DRPACKAGE -I"/usr/local/lib/R/site-library/RcppEigen/include" src/Models/ContingencyLBModel_mu_i_nu_j.cpp -c -o src/Models/ContingencyLBModel_mu_i_nu_j.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -DNDEBUG -DRPACKAGE -I"/usr/local/lib/R/site-library/RcppEigen/include" src/Models/ContinuousLBModel.cpp -c -o src/Models/ContinuousLBModel.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -DNDEBUG -DRPACKAGE -I"/usr/local/lib/R/site-library/RcppEigen/include" src/Models/ContinuousLBModelequalsigma.cpp -c -o src/Models/ContinuousLBModelequalsigma.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -DNDEBUG -DRPACKAGE -I"/usr/local/lib/R/site-library/RcppEigen/include" src/Models/ICoClustModel.cpp -c -o src/Models/ICoClustModel.o
+ar -rc libcoclust.a src/Algorithms/CEMAlgo.o src/Algorithms/EMAlgo.o src/Algorithms/SEMAlgo.o src/CoClustFacade/CoCluster.o src/Strategy/XStrategyAlgo.o src/Strategy/XStrategyforSEMAlgo.o src/InputParameters/InputParameters.o src/Models/BinaryLBModel.o src/Models/BinaryLBModelequalepsilon.o src/Models/CategoricalLBModel.o src/Models/ContingencyLBModel.o src/Models/ContingencyLBModel_mu_i_nu_j.o src/Models/ContinuousLBModel.o src/Models/ContinuousLBModelequalsigma.o src/Models/ICoClustModel.o
+make[1]: Leaving directory `/tmp/Rtmpe5YYuj/R.INSTALL577f7b4efd47/blockcluster/src/coclust'
+ranlib ./coclust/libcoclust.a
+g++-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o blockcluster.so BinaryDataExchange.o CategoricalDataExchange.o ContingencyDataExchange.o ContinuousDataExchange.o IDataExchange.o Rcoclustmain.o -fopenmp -L./coclust/ -lcoclust -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+0 : blockcluster_3.0.1.tar.gz 
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c dexpBTF.cpp -o dexpBTF.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c gdPBTF.cpp -o gdPBTF.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c individual.cpp -o individual.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c tf_approx.cpp -o tf_approx.o
+ccache g++-4.8 -std=c++11 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o btf.so RcppExports.o dexpBTF.o gdPBTF.o individual.o tf_approx.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+0 : btf_1.1.tar.gz 
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c Fit.cpp -o Fit.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c IO.cpp -o IO.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c Model.cpp -o Model.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c ModelSelect.cpp -o ModelSelect.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c clere.cpp -o clere.o
+g++-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o clere.so Fit.o IO.o Model.o ModelSelect.o clere.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+0 : clere_1.1.tar.gz 
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c isomean.c -o isomean.o
+ccache gcc-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o fdrtool.so isomean.o -L/usr/lib/R/lib -lR
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c chinv2.c -o chinv2.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c cholesky2.c -o cholesky2.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c chsolve2.c -o chsolve2.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c clogit.c -o clogit.o
+ccache gcc-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o Epi.so chinv2.o cholesky2.o chsolve2.o clogit.o -L/usr/lib/R/lib -lR
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c bayesian.c -o bayesian.o
+ccache gcc-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o spikeslab.so bayesian.o -L/usr/lib/R/lib -lR
+ccache gfortran-4.8   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c mclust.f -o mclust.o
+ccache gcc-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o mclust.so mclust.o -llapack -lblas -lgfortran -lm -lquadmath -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -I./NEWMAT/  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c ClusteringInputHandling.cpp -o ClusteringInputHandling.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -I./NEWMAT/  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c ClusteringOutputHandling.cpp -o ClusteringOutputHandling.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -I./NEWMAT/  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c Conversion.cpp -o Conversion.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -I./NEWMAT/  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c InputHandling.cpp -o InputHandling.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -I./NEWMAT/  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c LearnOutputHandling.cpp -o LearnOutputHandling.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -I./NEWMAT/  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c OutputHandling.cpp -o OutputHandling.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -I./NEWMAT/  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c clusteringMain.cpp -o clusteringMain.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -I./NEWMAT/  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c learnMain.cpp -o learnMain.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -I./NEWMAT/  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c predictMain.cpp -o predictMain.o
+(cd ./NEWMAT && make -j8 -f newmat_r.mk)
+make[1]: Entering directory `/tmp/RtmpBFfLbx/R.INSTALL7ad911567f5c/Rmixmod/src/NEWMAT'
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic bandmat.cpp -c -o bandmat.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic cholesky.cpp -c -o cholesky.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic evalue.cpp -c -o evalue.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic fft.cpp -c -o fft.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic hholder.cpp -c -o hholder.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic jacobi.cpp -c -o jacobi.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic myexcept.cpp -c -o myexcept.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic newfft.cpp -c -o newfft.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic newmat1.cpp -c -o newmat1.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic newmat2.cpp -c -o newmat2.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic newmat3.cpp -c -o newmat3.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic newmat4.cpp -c -o newmat4.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic newmat5.cpp -c -o newmat5.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic newmat6.cpp -c -o newmat6.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic newmat7.cpp -c -o newmat7.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic newmat8.cpp -c -o newmat8.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic newmat9.cpp -c -o newmat9.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic newmatex.cpp -c -o newmatex.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic newmatnl.cpp -c -o newmatnl.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic newmatrm.cpp -c -o newmatrm.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic solution.cpp -c -o solution.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic sort.cpp -c -o sort.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic submat.cpp -c -o submat.o
+g++  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic svd.cpp -c -o svd.o
+ar -rc ../mixmod.a bandmat.o cholesky.o evalue.o fft.o hholder.o jacobi.o myexcept.o newfft.o newmat1.o newmat2.o newmat3.o newmat4.o newmat5.o newmat6.o newmat7.o newmat8.o newmat9.o newmatex.o newmatnl.o newmatrm.o solution.o sort.o submat.o svd.o
+make[1]: Leaving directory `/tmp/RtmpBFfLbx/R.INSTALL7ad911567f5c/Rmixmod/src/NEWMAT'
+(cd ./mixmod && make -j8 -f mixmod_r.mk)
+make[1]: Entering directory `/tmp/RtmpBFfLbx/R.INSTALL7ad911567f5c/Rmixmod/src/mixmod'
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Clustering/ClusteringInput.cpp -c -o Clustering/ClusteringInput.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Clustering/ClusteringMain.cpp -c -o Clustering/ClusteringMain.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Clustering/ClusteringModelOutput.cpp -c -o Clustering/ClusteringModelOutput.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Clustering/ClusteringOutput.cpp -c -o Clustering/ClusteringOutput.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Clustering/ClusteringStrategy.cpp -c -o Clustering/ClusteringStrategy.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Clustering/ClusteringStrategyInit.cpp -c -o Clustering/ClusteringStrategyInit.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Matrix/DiagMatrix.cpp -c -o Matrix/DiagMatrix.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Matrix/GeneralMatrix.cpp -c -o Matrix/GeneralMatrix.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Matrix/Matrix.cpp -c -o Matrix/Matrix.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Matrix/SphericalMatrix.cpp -c -o Matrix/SphericalMatrix.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Matrix/SymmetricMatrix.cpp -c -o Matrix/SymmetricMatrix.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Utilities/Error.cpp -c -o Utilities/Error.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Utilities/ExampleDataUtil.cpp -c -o Utilities/ExampleDataUtil.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Utilities/Random.cpp -c -o Utilities/Random.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Utilities/Util.cpp -c -o Utilities/Util.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ DiscriminantAnalysis/Learn/LearnInput.cpp -c -o DiscriminantAnalysis/Learn/LearnInput.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ DiscriminantAnalysis/Learn/LearnMain.cpp -c -o DiscriminantAnalysis/Learn/LearnMain.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ DiscriminantAnalysis/Learn/LearnModelOutput.cpp -c -o DiscriminantAnalysis/Learn/LearnModelOutput.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ DiscriminantAnalysis/Learn/LearnOutput.cpp -c -o DiscriminantAnalysis/Learn/LearnOutput.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ DiscriminantAnalysis/Learn/LearnStrategy.cpp -c -o DiscriminantAnalysis/Learn/LearnStrategy.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ DiscriminantAnalysis/Predict/PredictInput.cpp -c -o DiscriminantAnalysis/Predict/PredictInput.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ DiscriminantAnalysis/Predict/PredictMain.cpp -c -o DiscriminantAnalysis/Predict/PredictMain.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ DiscriminantAnalysis/Predict/PredictModelOutput.cpp -c -o DiscriminantAnalysis/Predict/PredictModelOutput.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ DiscriminantAnalysis/Predict/PredictOutput.cpp -c -o DiscriminantAnalysis/Predict/PredictOutput.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ DiscriminantAnalysis/Predict/PredictStrategy.cpp -c -o DiscriminantAnalysis/Predict/PredictStrategy.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Algo/Algo.cpp -c -o Kernel/Algo/Algo.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Algo/CEMAlgo.cpp -c -o Kernel/Algo/CEMAlgo.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Algo/EMAlgo.cpp -c -o Kernel/Algo/EMAlgo.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Algo/MAPAlgo.cpp -c -o Kernel/Algo/MAPAlgo.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Algo/MAlgo.cpp -c -o Kernel/Algo/MAlgo.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Algo/SEMAlgo.cpp -c -o Kernel/Algo/SEMAlgo.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Criterion/BICCriterion.cpp -c -o Kernel/Criterion/BICCriterion.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Criterion/CVCriterion.cpp -c -o Kernel/Criterion/CVCriterion.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Criterion/Criterion.cpp -c -o Kernel/Criterion/Criterion.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Criterion/CriterionOutput.cpp -c -o Kernel/Criterion/CriterionOutput.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Criterion/ICLCriterion.cpp -c -o Kernel/Criterion/ICLCriterion.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Criterion/NECCriterion.cpp -c -o Kernel/Criterion/NECCriterion.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/BinaryData.cpp -c -o Kernel/IO/BinaryData.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/BinarySample.cpp -c -o Kernel/IO/BinarySample.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/ColumnDescription.cpp -c -o Kernel/IO/ColumnDescription.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/CompositeData.cpp -c -o Kernel/IO/CompositeData.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/CompositeSample.cpp -c -o Kernel/IO/CompositeSample.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/Data.cpp -c -o Kernel/IO/Data.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/DataDescription.cpp -c -o Kernel/IO/DataDescription.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/Description.cpp -c -o Kernel/IO/Description.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/GaussianData.cpp -c -o Kernel/IO/GaussianData.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/GaussianSample.cpp -c -o Kernel/IO/GaussianSample.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/IndividualColumnDescription.cpp -c -o Kernel/IO/IndividualColumnDescription.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/Input.cpp -c -o Kernel/IO/Input.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/Label.cpp -c -o Kernel/IO/Label.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/LabelDescription.cpp -c -o Kernel/IO/LabelDescription.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/LikelihoodOutput.cpp -c -o Kernel/IO/LikelihoodOutput.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/ModelOutput.cpp -c -o Kernel/IO/ModelOutput.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/ParameterDescription.cpp -c -o Kernel/IO/ParameterDescription.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/Partition.cpp -c -o Kernel/IO/Partition.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/Proba.cpp -c -o Kernel/IO/Proba.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/ProbaDescription.cpp -c -o Kernel/IO/ProbaDescription.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/ProbaOutput.cpp -c -o Kernel/IO/ProbaOutput.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/QualitativeColumnDescription.cpp -c -o Kernel/IO/QualitativeColumnDescription.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/QuantitativeColumnDescription.cpp -c -o Kernel/IO/QuantitativeColumnDescription.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/Sample.cpp -c -o Kernel/IO/Sample.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/UnusedColumnDescription.cpp -c -o Kernel/IO/UnusedColumnDescription.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/IO/WeightColumnDescription.cpp -c -o Kernel/IO/WeightColumnDescription.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Model/BinaryModel.cpp -c -o Kernel/Model/BinaryModel.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Model/Model.cpp -c -o Kernel/Model/Model.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Model/ModelType.cpp -c -o Kernel/Model/ModelType.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Parameter/BinaryEParameter.cpp -c -o Kernel/Parameter/BinaryEParameter.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Parameter/BinaryEjParameter.cpp -c -o Kernel/Parameter/BinaryEjParameter.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Parameter/BinaryEkParameter.cpp -c -o Kernel/Parameter/BinaryEkParameter.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Parameter/BinaryEkjParameter.cpp -c -o Kernel/Parameter/BinaryEkjParameter.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Parameter/BinaryEkjhParameter.cpp -c -o Kernel/Parameter/BinaryEkjhParameter.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Parameter/BinaryParameter.cpp -c -o Kernel/Parameter/BinaryParameter.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Parameter/CompositeParameter.cpp -c -o Kernel/Parameter/CompositeParameter.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Parameter/GaussianDiagParameter.cpp -c -o Kernel/Parameter/GaussianDiagParameter.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Parameter/GaussianEDDAParameter.cpp -c -o Kernel/Parameter/GaussianEDDAParameter.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Parameter/GaussianGeneralParameter.cpp -c -o Kernel/Parameter/GaussianGeneralParameter.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Parameter/GaussianHDDAParameter.cpp -c -o Kernel/Parameter/GaussianHDDAParameter.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Parameter/GaussianParameter.cpp -c -o Kernel/Parameter/GaussianParameter.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Parameter/GaussianSphericalParameter.cpp -c -o Kernel/Parameter/GaussianSphericalParameter.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Kernel/Parameter/Parameter.cpp -c -o Kernel/Parameter/Parameter.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Utilities/exceptions/DCVException.cpp -c -o Utilities/exceptions/DCVException.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Utilities/exceptions/DCVonlyInGaussianCaseException.cpp -c -o Utilities/exceptions/DCVonlyInGaussianCaseException.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Utilities/exceptions/Exception.cpp -c -o Utilities/exceptions/Exception.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Utilities/exceptions/InputException.cpp -c -o Utilities/exceptions/InputException.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Utilities/exceptions/NumericException.cpp -c -o Utilities/exceptions/NumericException.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -I.. -I../NEWMAT/ Utilities/exceptions/OtherException.cpp -c -o Utilities/exceptions/OtherException.o
+ar -rc ../mixmod.a Clustering/ClusteringInput.o Clustering/ClusteringMain.o Clustering/ClusteringModelOutput.o Clustering/ClusteringOutput.o Clustering/ClusteringStrategy.o Clustering/ClusteringStrategyInit.o Matrix/DiagMatrix.o Matrix/GeneralMatrix.o Matrix/Matrix.o Matrix/SphericalMatrix.o Matrix/SymmetricMatrix.o Utilities/Error.o Utilities/ExampleDataUtil.o Utilities/Random.o Utilities/Util.o DiscriminantAnalysis/Learn/LearnInput.o DiscriminantAnalysis/Learn/LearnMain.o DiscriminantAnalysis/Learn/LearnModelOutput.o DiscriminantAnalysis/Learn/LearnOutput.o DiscriminantAnalysis/Learn/LearnStrategy.o DiscriminantAnalysis/Predict/PredictInput.o DiscriminantAnalysis/Predict/PredictMain.o DiscriminantAnalysis/Predict/PredictModelOutput.o DiscriminantAnalysis/Predict/PredictOutput.o DiscriminantAnalysis/Predict/PredictStrategy.o Kernel/Algo/Algo.o Kernel/Algo/CEMAlgo.o Kernel/Algo/EMAlgo.o Kernel/Algo/MAPAlgo.o Kernel/Algo/MAlgo.o Kernel/Algo/SEMAlgo.o Kernel/Criterion/BICCriterion.o Kernel/Criterion/CVCriterion.o Kernel/Criterion/Criterion.o Kernel/Criterion/CriterionOutput.o Kernel/Criterion/ICLCriterion.o Kernel/Criterion/NECCriterion.o Kernel/IO/BinaryData.o Kernel/IO/BinarySample.o Kernel/IO/ColumnDescription.o Kernel/IO/CompositeData.o Kernel/IO/CompositeSample.o Kernel/IO/Data.o Kernel/IO/DataDescription.o Kernel/IO/Description.o Kernel/IO/GaussianData.o Kernel/IO/GaussianSample.o Kernel/IO/IndividualColumnDescription.o Kernel/IO/Input.o Kernel/IO/Label.o Kernel/IO/LabelDescription.o Kernel/IO/LikelihoodOutput.o Kernel/IO/ModelOutput.o Kernel/IO/ParameterDescription.o Kernel/IO/Partition.o Kernel/IO/Proba.o Kernel/IO/ProbaDescription.o Kernel/IO/ProbaOutput.o Kernel/IO/QualitativeColumnDescription.o Kernel/IO/QuantitativeColumnDescription.o Kernel/IO/Sample.o Kernel/IO/UnusedColumnDescription.o Kernel/IO/WeightColumnDescription.o Kernel/Model/BinaryModel.o Kernel/Model/Model.o Kernel/Model/ModelType.o Kernel/Parameter/BinaryEParameter.o Kernel/Parameter/BinaryEjParameter.o Kernel/Parameter/BinaryEkParameter.o Kernel/Parameter/BinaryEkjParameter.o Kernel/Parameter/BinaryEkjhParameter.o Kernel/Parameter/BinaryParameter.o Kernel/Parameter/CompositeParameter.o Kernel/Parameter/GaussianDiagParameter.o Kernel/Parameter/GaussianEDDAParameter.o Kernel/Parameter/GaussianGeneralParameter.o Kernel/Parameter/GaussianHDDAParameter.o Kernel/Parameter/GaussianParameter.o Kernel/Parameter/GaussianSphericalParameter.o Kernel/Parameter/Parameter.o Utilities/exceptions/DCVException.o Utilities/exceptions/DCVonlyInGaussianCaseException.o Utilities/exceptions/Exception.o Utilities/exceptions/InputException.o Utilities/exceptions/NumericException.o Utilities/exceptions/OtherException.o
+make[1]: Leaving directory `/tmp/RtmpBFfLbx/R.INSTALL7ad911567f5c/Rmixmod/src/mixmod'
+ranlib mixmod.a
+g++-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o Rmixmod.so ClusteringInputHandling.o ClusteringOutputHandling.o Conversion.o InputHandling.o LearnOutputHandling.o OutputHandling.o clusteringMain.o learnMain.o predictMain.o -L./mixmod mixmod.a -L/usr/lib/R/lib -lR
+checking for gsl-config... /usr/bin/gsl-config
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking gsl/gsl_version.h usability... yes
+checking gsl/gsl_version.h presence... yes
+checking for gsl/gsl_version.h... yes
+checking if GSL version >= 1.14... yes
+configure: creating ./config.status
+config.status: creating R/linearRidgeGenotypes.R
+config.status: creating R/linearRidgeGenotypesPredict.R
+config.status: creating R/logisticRidgeGenotypes.R
+config.status: creating R/logisticRidgeGenotypesPredict.R
+config.status: creating src/config.h
+checking for gettimeofday in -lopenblas... no
+configure: creating ./config.status
+config.status: creating R/linearRidgeGenotypes.R
+config.status: creating R/linearRidgeGenotypesPredict.R
+config.status: creating R/logisticRidgeGenotypes.R
+config.status: creating R/logisticRidgeGenotypesPredict.R
+config.status: creating src/Makevars
+config.status: creating src/config.h
+config.status: src/config.h is unchanged
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -I/usr/include -I.     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c ReadInData.c -o ReadInData.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -I/usr/include -I.     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c commonFunctions.c -o commonFunctions.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -I/usr/include -I.     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c computeLinearRidge.c -o computeLinearRidge.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -I/usr/include -I.     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c computePvals.c -o computePvals.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -I/usr/include -I.     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c coordinateDescent.c -o coordinateDescent.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -I/usr/include -I.     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c linear.c -o linear.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -I/usr/include -I.     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c linearFunctions.c -o linearFunctions.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -I/usr/include -I.     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c logistic.c -o logistic.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -I/usr/include -I.     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c logisticFunctions.c -o logisticFunctions.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -I/usr/include -I.     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c regression_wrapper_function.c -o regression_wrapper_function.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -I/usr/include -I.     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c ridgeRegressionFunctions.c -o ridgeRegressionFunctions.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -I/usr/include -I.     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c thin.c -o thin.o
+ccache gcc-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o ridge.so ReadInData.o commonFunctions.o computeLinearRidge.o computePvals.o coordinateDescent.o linear.o linearFunctions.o logistic.o logisticFunctions.o regression_wrapper_function.o ridgeRegressionFunctions.o thin.o -L/usr/lib -lgsl -lgslcblas -lm -L/usr/lib/R/lib -lR
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c BICZsparse.cpp -o BICZsparse.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c BICZsparse2_cpp.cpp -o BICZsparse2_cpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c BICZsparse_cpp.cpp -o BICZsparse_cpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c BICZsparse_j_cpp.cpp -o BICZsparse_j_cpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c BicLoc_cpp.cpp -o BicLoc_cpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c BicTheta.cpp -o BicTheta.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c BicZ.cpp -o BicZ.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c BicZ_cpp.cpp -o BicZ_cpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c BicZ_cpp2.cpp -o BicZ_cpp2.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c BicZ_j_cpp.cpp -o BicZ_j_cpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c BicZmissRcpp.cpp -o BicZmissRcpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c CVMSE.cpp -o CVMSE.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c GM_likelihood.cpp -o GM_likelihood.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c OLS.cpp -o OLS.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c OLS_cpp.cpp -o OLS_cpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c ProbaZ_cpp.cpp -o ProbaZ_cpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c cleanZ.cpp -o cleanZ.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c cleancolZ.cpp -o cleancolZ.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c kronecker_prod_cpp.cpp -o kronecker_prod_cpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c kronecker_sum_cpp.cpp -o kronecker_sum_cpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c modsparse_cpp.cpp -o modsparse_cpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c rechercheZ.cpp -o rechercheZ.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c rechercheZ_rejet.cpp -o rechercheZ_rejet.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c rechercheZ_relax.cpp -o rechercheZ_relax.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c rechercheZ_sparse_rejet.cpp -o rechercheZ_sparse_rejet.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c rechercheZ_sparse_relax.cpp -o rechercheZ_sparse_relax.o
+g++-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o CorReg.so BICZsparse.o BICZsparse2_cpp.o BICZsparse_cpp.o BICZsparse_j_cpp.o BicLoc_cpp.o BicTheta.o BicZ.o BicZ_cpp.o BicZ_cpp2.o BicZ_j_cpp.o BicZmissRcpp.o CVMSE.o GM_likelihood.o OLS.o OLS_cpp.o ProbaZ_cpp.o cleanZ.o cleancolZ.o kronecker_prod_cpp.o kronecker_sum_cpp.o modsparse_cpp.o rechercheZ.o rechercheZ_rejet.o rechercheZ_relax.o rechercheZ_sparse_rejet.o rechercheZ_sparse_relax.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+0 : CorReg_0.15.0.tar.gz 
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"  -DEIGEN_DONT_PARALLELIZE -fopenmp -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c FastHCS.cpp -o FastHCS.o
+ccache g++-4.8 -std=c++11 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o FastHCS.so FastHCS.o -fopenmp -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+0 : FastHCS_0.0.2.tar.gz 
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"  -DEIGEN_DONT_PARALLELIZE -fopenmp -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c FastPCS.cpp -o FastPCS.o
+ccache g++-4.8 -std=c++11 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o FastPCS.so FastPCS.o -fopenmp -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+0 : FastPCS_0.0.9.tar.gz 
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"  -DEIGEN_DONT_PARALLELIZE -fopenmp -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c FastRCS.cpp -o FastRCS.o
+ccache g++-4.8 -std=c++11 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o FastRCS.so FastRCS.o -fopenmp -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+0 : FastRCS_0.0.3.tar.gz 
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -DRPACKAGE -fopenmp  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RfunclustMain.cpp -o RfunclustMain.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -DRPACKAGE -fopenmp  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c mfpca.cpp -o mfpca.o
+(cd ./Funclustering/ && make -j8)
+make[1]: Entering directory `/tmp/RtmpVBSeTv/R.INSTALL29a56127add/Funclustering/src/Funclustering'
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -DNDEBUG -DRPACKAGE -I"/usr/local/lib/R/site-library/RcppEigen/include" src/IAlgo/EMAlgo.cpp -c -o src/IAlgo/EMAlgo.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -DNDEBUG -DRPACKAGE -I"/usr/local/lib/R/site-library/RcppEigen/include" src/IAlgo/IAlgo.cpp -c -o src/IAlgo/IAlgo.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -DNDEBUG -DRPACKAGE -I"/usr/local/lib/R/site-library/RcppEigen/include" src/IModel/IModel.cpp -c -o src/IModel/IModel.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -DNDEBUG -DRPACKAGE -I"/usr/local/lib/R/site-library/RcppEigen/include" src/IModel/Model.cpp -c -o src/IModel/Model.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -DNDEBUG -DRPACKAGE -I"/usr/local/lib/R/site-library/RcppEigen/include" src/IStrategy/IStrategy.cpp -c -o src/IStrategy/IStrategy.o
+g++ -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -fpic -DNDEBUG -DRPACKAGE -I"/usr/local/lib/R/site-library/RcppEigen/include" src/IStrategy/SimpleStrategy.cpp -c -o src/IStrategy/SimpleStrategy.o
+ar -rc libFunclustering.a src/IAlgo/EMAlgo.o src/IAlgo/IAlgo.o src/IModel/IModel.o src/IModel/Model.o src/IStrategy/IStrategy.o src/IStrategy/SimpleStrategy.o
+make[1]: Leaving directory `/tmp/RtmpVBSeTv/R.INSTALL29a56127add/Funclustering/src/Funclustering'
+ranlib ./Funclustering/libFunclustering.a
+g++-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o Funclustering.so RfunclustMain.o mfpca.o -fopenmp -L./Funclustering/ -lFunclustering -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+0 : Funclustering_1.0.1.tar.gz 
+0 : gRbase_1.7-0.1.tar.gz 
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"  -DNDEBUG -DEIGEN_DONT_VECTORIZE -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c external.cpp -o external.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"  -DNDEBUG -DEIGEN_DONT_VECTORIZE -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c glmFamily.cpp -o glmFamily.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"  -DNDEBUG -DEIGEN_DONT_VECTORIZE -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c mcmcsamp.cpp -o mcmcsamp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"  -DNDEBUG -DEIGEN_DONT_VECTORIZE -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c optimizer.cpp -o optimizer.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"  -DNDEBUG -DEIGEN_DONT_VECTORIZE -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c predModule.cpp -o predModule.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"  -DNDEBUG -DEIGEN_DONT_VECTORIZE -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c respModule.cpp -o respModule.o
+g++-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o lme4.so external.o glmFamily.o mcmcsamp.o optimizer.o predModule.o respModule.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+1 : lme4_1.1-7.tar.gz 
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -I../inst/include   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c determinant.cpp -o determinant.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -I../inst/include   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c determinant_c.cpp -o determinant_c.o
+g++-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o MPTinR.so determinant.o determinant_c.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+0 : MPTinR_1.5.1.tar.gz 
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I./include   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c PReMiuM.cpp -o PReMiuM.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I./include   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c postProcess.cpp -o postProcess.o
+g++-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o PReMiuM.so PReMiuM.o postProcess.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+0 : PReMiuM_3.0.28.tar.gz 
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RankCluster.cpp -o RankCluster.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c functions.cpp -o functions.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c run.cpp -o run.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c runFunctions.cpp -o runFunctions.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c runTest.cpp -o runTest.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c test.cpp -o test.o
+g++-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o Rankcluster.so RankCluster.o functions.o run.o runFunctions.o runTest.o test.o -fopenmp -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+0 : Rankcluster_0.92.9.tar.gz 
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c do_eigs_nonsym.cpp -o do_eigs_nonsym.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c do_eigs_sym.cpp -o do_eigs_sym.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c do_svds_nonsym.cpp -o do_svds_nonsym.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c do_svds_sym.cpp -o do_svds_sym.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c eigs_den_real_nonsym.cpp -o eigs_den_real_nonsym.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c eigs_den_real_sym.cpp -o eigs_den_real_sym.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c eigs_sparse_real_nonsym.cpp -o eigs_sparse_real_nonsym.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c message.cpp -o message.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c svds_den_real_nonsym.cpp -o svds_den_real_nonsym.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c svds_den_real_sym.cpp -o svds_den_real_sym.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c svds_sparse_real_nonsym.cpp -o svds_sparse_real_nonsym.o
+ccache gfortran-4.8   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c wrapper.f -o wrapper.o
+cd ARPACK && make -j8 all F77="ccache gfortran-4.8" FFLAGS="  -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe" AR="ar" RM="rm -f"
+make[1]: Entering directory `/tmp/Rtmp261ZKU/R.INSTALL6fca7350cc29/rARPACK/src/ARPACK'
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c sgetv0.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c slaqrb.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c sstqrb.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c ssortc.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c ssortr.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c sstatn.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c sstats.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c snaitr.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c snapps.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c snaup2.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c snaupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c snconv.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c sneigh.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c sngets.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c ssaitr.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c ssapps.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c ssaup2.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c ssaupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c ssconv.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c sseigt.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c ssgets.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c sneupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c sseupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c ssesrt.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c svout.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c smout.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c icnteq.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c icopy.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c iset.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c iswap.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c ivout.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c second_NONE.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dgetv0.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dlaqrb.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dstqrb.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dsortc.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dsortr.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dstatn.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dstats.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dnaitr.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dnapps.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dnaup2.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dnaupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dnconv.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dneigh.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dngets.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dsaitr.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dsapps.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dsaup2.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dsaupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dsconv.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dseigt.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dsgets.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dneupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dseupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dsesrt.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dvout.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dmout.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cnaitr.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cnapps.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cnaup2.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cnaupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cneigh.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cneupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cngets.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cgetv0.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c csortc.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cstatn.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cvout.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cmout.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c znaitr.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c znapps.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c znaup2.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c znaupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c zneigh.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c zneupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c zngets.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c zgetv0.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c zsortc.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c zstatn.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c zvout.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c zmout.f
+ar rcs libarpack.a sgetv0.o slaqrb.o sstqrb.o ssortc.o ssortr.o sstatn.o sstats.o snaitr.o snapps.o snaup2.o snaupd.o snconv.o sneigh.o sngets.o ssaitr.o ssapps.o ssaup2.o ssaupd.o ssconv.o sseigt.o ssgets.o sneupd.o sseupd.o ssesrt.o svout.o smout.o icnteq.o icopy.o iset.o iswap.o ivout.o second_NONE.o
+ar rcs libarpack.a dgetv0.o dlaqrb.o dstqrb.o dsortc.o dsortr.o dstatn.o dstats.o dnaitr.o dnapps.o dnaup2.o dnaupd.o dnconv.o dneigh.o dngets.o dsaitr.o dsapps.o dsaup2.o dsaupd.o dsconv.o dseigt.o dsgets.o dneupd.o dseupd.o dsesrt.o dvout.o dmout.o icnteq.o icopy.o iset.o iswap.o ivout.o second_NONE.o
+ar rcs libarpack.a cnaitr.o cnapps.o cnaup2.o cnaupd.o cneigh.o cneupd.o cngets.o cgetv0.o csortc.o cstatn.o cvout.o cmout.o icnteq.o icopy.o iset.o iswap.o ivout.o second_NONE.o
+ar rcs libarpack.a znaitr.o znapps.o znaup2.o znaupd.o zneigh.o zneupd.o zngets.o zgetv0.o zsortc.o zstatn.o zvout.o zmout.o icnteq.o icopy.o iset.o iswap.o ivout.o second_NONE.o
+make[1]: Leaving directory `/tmp/Rtmp261ZKU/R.INSTALL6fca7350cc29/rARPACK/src/ARPACK'
+g++-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o rARPACK.so do_eigs_nonsym.o do_eigs_sym.o do_svds_nonsym.o do_svds_sym.o eigs_den_real_nonsym.o eigs_den_real_sym.o eigs_sparse_real_nonsym.o message.o svds_den_real_nonsym.o svds_den_real_sym.o svds_sparse_real_nonsym.o wrapper.o -L./ARPACK -larpack -llapack -lblas -lgfortran -lm -lquadmath -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+0 : rARPACK_0.5-0.tar.gz 
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"  -I../inst/include -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c hclust.cpp -o hclust.o
+g++-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o Rclusterpp.so hclust.o -fopenmp -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+0 : Rclusterpp_0.2.3.tar.gz 
+Change default C/C++ compiler and default compile flags by editing /usr/lib/R/etc/Makeconf
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/RcppEigen/include"      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c ba81quad.cpp -o ba81quad.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/RcppEigen/include"      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c dataframe.cpp -o dataframe.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/RcppEigen/include"      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c diagnose.cpp -o diagnose.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/RcppEigen/include"      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c dmvnorm.cpp -o dmvnorm.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/RcppEigen/include"      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c eap.cpp -o eap.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/RcppEigen/include"      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c glue.cpp -o glue.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/RcppEigen/include"      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c libifa-rpf.cpp -o libifa-rpf.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/RcppEigen/include"      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c m2.cpp -o m2.o
+g++-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o rpf.so ba81quad.o dataframe.o diagnose.o dmvnorm.o eap.o glue.o libifa-rpf.o m2.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+1 : rpf_0.36.tar.gz 
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c rsnpset.cpp -o rsnpset.o
+g++-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o RSNPset.so rsnpset.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+0 : RSNPset_0.2.tar.gz 
+0 : Rvcg_0.8.tar.gz 
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -I../inst/include     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c RlpSolve.c -o RlpSolve.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -I../inst/include     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c RlpSolveLink.c -o RlpSolveLink.o
+make[1]: Entering directory `/tmp/Rtmp4UepgP/R.INSTALL2af97ffc2f87/lpSolveAPI/src/lp_solve'
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c colamd.c -o colamd.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c lp_MDO.c -o lp_MDO.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c lp_mipbb.c -o lp_mipbb.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c lp_rlp.c -o lp_rlp.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c mmio.c -o mmio.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c commonlib.c -o commonlib.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c lp_MPS.c -o lp_MPS.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c lp_params.c -o lp_params.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c lp_scale.c -o lp_scale.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c myblas.c -o myblas.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c lp_SOS.c -o lp_SOS.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c lp_presolve.c -o lp_presolve.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c lp_simplex.c -o lp_simplex.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c yacc_read.c -o yacc_read.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c ini.c -o ini.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c lp_crash.c -o lp_crash.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c lp_price.c -o lp_price.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c lp_utils.c -o lp_utils.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c lp_Hash.c -o lp_Hash.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c lp_lib.c -o lp_lib.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c lp_pricePSE.c -o lp_pricePSE.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c lp_wlp.c -o lp_wlp.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c lp_LUSOL.c -o lp_LUSOL.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c lp_matrix.c -o lp_matrix.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c lp_report.c -o lp_report.o
+ccache gcc-4.8 -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -fpic  -I../../inst/include -DYY_NEVER_INTERACTIVE -DPARSER_LP -DINVERSE_ACTIVE=INVERSE_LUSOL -DRoleIsExternalInvEngine -c lusol.c -o lusol.o
+ar rc liblp_solve.a colamd.o lp_MDO.o lp_mipbb.o lp_rlp.o mmio.o commonlib.o lp_MPS.o lp_params.o lp_scale.o myblas.o lp_SOS.o lp_presolve.o lp_simplex.o yacc_read.o ini.o lp_crash.o lp_price.o lp_utils.o lp_Hash.o lp_lib.o lp_pricePSE.o lp_wlp.o lp_LUSOL.o lp_matrix.o lp_report.o lusol.o && ranlib liblp_solve.a
+make[1]: Leaving directory `/tmp/Rtmp4UepgP/R.INSTALL2af97ffc2f87/lpSolveAPI/src/lp_solve'
+ccache gcc-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o lpSolveAPI.so RlpSolve.o RlpSolveLink.o -Llp_solve -llp_solve -L/usr/lib/R/lib -lR
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c apply.c -o apply.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c arrayIndex.c -o arrayIndex.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c distance.c -o distance.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c util.c -o util.o
+ccache gcc-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o proxy.so apply.o arrayIndex.o distance.o util.o -L/usr/lib/R/lib -lR
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -include Rgeometry.h     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c Rconvhulln.c -o Rconvhulln.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -include Rgeometry.h     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c Rdelaunayn.c -o Rdelaunayn.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -include Rgeometry.h     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c Rtsearch.c -o Rtsearch.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -include Rgeometry.h     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c geom.c -o geom.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -include Rgeometry.h     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c geom2.c -o geom2.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -include Rgeometry.h     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c global.c -o global.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -include Rgeometry.h     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c io.c -o io.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -include Rgeometry.h     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c libqhull.c -o libqhull.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -include Rgeometry.h     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c mem.c -o mem.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -include Rgeometry.h     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c merge.c -o merge.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -include Rgeometry.h     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c poly.c -o poly.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -include Rgeometry.h     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c poly2.c -o poly2.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -include Rgeometry.h     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c qset.c -o qset.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -include Rgeometry.h     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c random.c -o random.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -include Rgeometry.h     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c rboxlib.c -o rboxlib.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -include Rgeometry.h     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c stat.c -o stat.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -include Rgeometry.h     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c user.c -o user.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -include Rgeometry.h     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c usermem.c -o usermem.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -include Rgeometry.h     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c userprintf.c -o userprintf.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -include Rgeometry.h     -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c userprintf_rbox.c -o userprintf_rbox.o
+ccache gcc-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o geometry.so Rconvhulln.o Rdelaunayn.o Rtsearch.o geom.o geom2.o global.o io.o libqhull.o mem.o merge.o poly.o poly2.o qset.o random.o rboxlib.o stat.o user.o usermem.o userprintf.o userprintf_rbox.o -L/usr/lib/R/lib -lR
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c chol.cpp -o chol.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c corMatern.cpp -o corMatern.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c gsl_bessel.cpp -o gsl_bessel.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c spaMM_linear.cpp -o spaMM_linear.o
+g++-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o spaMM.so RcppExports.o chol.o corMatern.o gsl_bessel.o spaMM_linear.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+0 : spaMM_1.2.0.tar.gz 
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -I. -I../inst/include   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c FDHS-DSSM.c -o FDHS-DSSM.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -I../inst/include   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c Rinterface.cpp -o Rinterface.o
+g++-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o sparseHessianFD.so FDHS-DSSM.o Rinterface.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+0 : sparseHessianFD_0.1.1.tar.gz 
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I../inst/include  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"  -DEIGEN_DONT_PARALLELIZE -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c fastLasso.cpp -o fastLasso.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I../inst/include  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"  -DEIGEN_DONT_PARALLELIZE -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c fastSparseLTS.cpp -o fastSparseLTS.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I../inst/include  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"  -DEIGEN_DONT_PARALLELIZE -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c initialSubsets.cpp -o initialSubsets.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I../inst/include  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"  -DEIGEN_DONT_PARALLELIZE -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c utils.cpp -o utils.o
+g++-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o sparseLTSEigen.so fastLasso.o fastSparseLTS.o initialSubsets.o utils.o -fopenmp -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+0 : sparseLTSEigen_0.2.0.tar.gz 
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -I../inst/include   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c Rinterface.cpp -o Rinterface.o
+g++-4.8 -shared -Wl,-Bsymbolic-functions -Wl,-z,relro -o trustOptim.so Rinterface.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+0 : trustOptim_0.8.3.tar.gz 
+               pkg res
+1     blockcluster   0
+2              btf   0
+3            clere   0
+4           CorReg   0
+5          FastHCS   0
+6          FastPCS   0
+7          FastRCS   0
+8    Funclustering   0
+9           gRbase   0
+10            lme4   1
+11          MPTinR   0
+12         PReMiuM   0
+13     Rankcluster   0
+14         rARPACK   0
+15      Rclusterpp   0
+16             rpf   1
+17         RSNPset   0
+18            Rvcg   0
+19           spaMM   0
+20 sparseHessianFD   0
+21  sparseLTSEigen   0
+22      trustOptim   0
+Ended at  2014-08-20 20:42:52 
