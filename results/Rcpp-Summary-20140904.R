@@ -1,3 +1,4 @@
+#!/usr/bin/Rscript
  
 ## -- started with Rcpp 0.11.2.3 (current on GitHub as of 2014-Sep-03)
 ##    as well as current RcppArmadillo and RcppEigen)
