@@ -55,7 +55,7 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     rc <- system(paste("xvfb-run --server-args=\"-screen 0 1024x768x24\" ",
                        "R CMD check --no-manual --no-vignettes ", pkg, " > ", pkg, ".log", sep=""))
     res[pi, "res"] <- rc
-    cat(rc, ":", pkg, "\n")
+    cat("\n\nRESULT for", pkg, ":", ifelse(rc==0, "success", "failure"), "\n\n\n")
     res[pi, ]
 })
 
