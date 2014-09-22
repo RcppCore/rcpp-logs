@@ -1,27 +1,41 @@
 
-Rcpp 0.11.2 release status as of 2014-06-06
--------------------------------------------
+Rcpp 0.11.2.4 as of 2014-09-04
+------------------------------
 
 Running the script summarizing results straight out of its repo:
 
-    edd@max:~/git/rcpp-logs/results$ Rscript Rcpp-Summary-20140606.txt
-    Good          202 
-      AsIs        202 
-    Bad           16 
-      RcppApi     0 
-      Unclear     2 
-      NotRcpp     14 
-    Skipped       1 
-    Total         219 
-    Bad Percent   0.00917431 
-    edd@max:~/git/rcpp-logs/results$ 
+```{sh}
+edd@don:~/git/rcpp-logs/results$ ./Rcpp-Summary-20140904.R 
+Good          249 
+  AsIs        249 
+Bad           18 
+  RcppApi     0 
+  Unclear     3 
+  NotRcpp     15 
+Skipped       0 
+Total         267 
+Bad Percent   0.011236 
+edd@don:~/git/rcpp-logs/results$ 
+```
 
-The 14 'NotRcpp' cases are detailed in the corresponding file in the `status`
+The "bad" cases are detailed in the corresponding file in the `status`
 directory.
 
 
-RcppArmadillo 0.4.300.7.0 release status as of 2014-05-31
----------------------------------------------------------
+RcppArmadillo 0.4.419.3.0 as of 2014-09-16
+------------------------------------------
 
-The script `runRcppArmadilloDepends` was run over all 67 current `Depends:`
-of RcppArmadillo.  All but three passed; see the `status` directory for more.
+The script `runRcppArmadilloDepends` was run over all 87 current `Depends:`
+of RcppArmadillo.  All but four passed; see the `status` directory for more.
+
+```{sh}
+edd@don:~/git/rcpp-logs/results$ ./RcppArmadillo-Summary-20140916.R 
+Good          83 
+  AsIs        83 
+Bad           4 
+  NotRcpp     4 
+Skipped       0 
+Total         87 
+Bad Percent   0 
+edd@don:~/git/rcpp-logs/results$ 
+```
