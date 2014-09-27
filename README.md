@@ -1,21 +1,21 @@
 
-Rcpp 0.11.2.4 as of 2014-09-04
+Rcpp 0.11.2.6 as of 2014-09-22
 ------------------------------
 
 Running the script summarizing results straight out of its repo:
 
 ```{sh}
-edd@don:~/git/rcpp-logs/results$ ./Rcpp-Summary-20140904.R 
-Good          249 
-  AsIs        249 
-Bad           18 
+edd@max:~/git/rcpp-logs/results(master)$ ./Rcpp-Summary-20140922.R
+Good          254 
+  AsIs        254 
+Bad           16 
   RcppApi     0 
-  Unclear     3 
+  Unclear     1 
   NotRcpp     15 
 Skipped       0 
-Total         267 
-Bad Percent   0.011236 
-edd@don:~/git/rcpp-logs/results$ 
+Total         270 
+Bad Percent   0.0037037 
+edd@max:~/git/rcpp-logs/results(master)$ 
 ```
 
 The "bad" cases are detailed in the corresponding file in the `status`
