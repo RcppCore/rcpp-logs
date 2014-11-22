@@ -22,20 +22,20 @@ The "bad" cases are detailed in the corresponding file in the `status`
 directory.
 
 
-RcppArmadillo 0.4.449.1.0 as of 2014-10-26
+RcppArmadillo 0.4.549.2.0 as of 2014-11-20
 ------------------------------------------
 
-The script `runRcppArmadilloDepends` was run over all 90 current `Depends:`
-of RcppArmadillo.  All but four passed; see the `status` directory for more.
+The script `runRcppArmadilloDepends` was run over all 96 current `Depends:`
+of RcppArmadillo.  All but five passed; see the `status` directory for more.
 
 ```{sh}
-edd@max:~/git/rcpp-logs/results(master)$ ./RcppArmadillo-Summary-20141026.R 
-Good          86 
-  AsIs        86 
-Bad           4 
-  NotRcpp     4 
+edd@max:~/git/rcpp-logs/results(master)$ ./RcppArmadillo-Summary-20141120.R 
+Good          91 
+  AsIs        91 
+Bad           5 
+  NotRcpp     5 
 Skipped       0 
-Total         90 
+Total         96 
 Bad Percent   0 
 edd@max:~/git/rcpp-logs/results(master)$
 ```
