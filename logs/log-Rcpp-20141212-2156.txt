@@ -1,0 +1,2592 @@
+Started at  2014-12-12 21:57:00 
+Rcpp version is  0.11.3.3 
+  [1] "accelerometry"        "AdaptiveSparsity"     "algstat"             
+  [4] "ALKr"                 "Amelia"               "apcluster"           
+  [7] "ASPBay"               "BalancedSampling"     "BayesComm"           
+ [10] "BayesFactor"          "bayou"                "bcp"                 
+ [13] "bcpa"                 "bfa"                  "bfp"                 
+ [16] "bifactorial"          "BIFIEsurvey"          "BIPOD"               
+ [19] "blockcluster"         "btf"                  "bvarsv"              
+ [22] "CARBayes"             "CARBayesST"           "ccaPP"               
+ [25] "cda"                  "CDM"                  "cgAUC"               
+ [28] "CIDnetworks"          "cladoRcpp"            "classify"            
+ [31] "clere"                "climdex.pcic"         "clogitL1"            
+ [34] "clusteval"            "ClustVarLV"           "CMF"                 
+ [37] "CompGLM"              "ConConPiWiFun"        "coneproj"            
+ [40] "copCAR"               "CorReg"               "cqrReg"              
+ [43] "Crossover"            "dbmss"                "Delaporte"           
+ [46] "dendextendRcpp"       "DepthProc"            "DetMCD"              
+ [49] "dfcomb"               "dfmta"                "dils"                
+ [52] "disclapmix"           "diversitree"          "diveRsity"           
+ [55] "DNAprofiles"          "DNAtools"             "dplyr"               
+ [58] "dslice"               "DStree"               "ecp"                 
+ [61] "eive"                 "EpiContactTrace"      "ESGtoolkit"          
+ [64] "EWGoF"                "fastGHQuad"           "FastHCS"             
+ [67] "fastM"                "FastPCS"              "FastRCS"             
+ [70] "FBFsearch"            "fdaMixed"             "FDGcopulas"          
+ [73] "FDRreg"               "fICA"                 "FisHiCal"            
+ [76] "flip"                 "FLSSS"                "forecast"            
+ [79] "fugeR"                "Funclustering"        "fwsim"               
+ [82] "GCPM"                 "geiger"               "GeneticTools"        
+ [85] "GENLIB"               "geoCount"             "glcm"                
+ [88] "GMCM"                 "gMWT"                 "GPvam"               
+ [91] "gRbase"               "gRim"                 "growcurves"          
+ [94] "growfunctions"        "GSE"                  "GUILDS"              
+ [97] "GUTS"                 "GxM"                  "hawkes"              
+[100] "HDPenReg"             "HLMdiag"              "hsphase"             
+[103] "httpuv"               "HUM"                  "hypervolume"         
+[106] "iBATCGH"              "IBHM"                 "icamix"              
+[109] "iccbeta"              "icensmis"             "inarmix"             
+[112] "IsingSampler"         "iterpc"               "jaatha"              
+[115] "JAGUAR"               "jiebaR"               "KernSmoothIRT"       
+[118] "kmc"                  "Kmisc"                "LaF"                 
+[121] "lbfgs"                "lm.br"                "lme4"                
+[124] "lpme"                 "lsgl"                 "marked"              
+[127] "MAT"                  "matchingMarkets"      "maxent"              
+[130] "mcIRT"                "metafolio"            "mets"                
+[133] "mice"                 "miceadds"             "minqa"               
+[136] "mirt"                 "miscF"                "miscset"             
+[139] "mkde"                 "mmand"                "Morpho"              
+[142] "mp"                   "Mposterior"           "MPTinR"              
+[145] "msgl"                 "MTS"                  "mvabund"             
+[148] "MVB"                  "mvnfast"              "mwaved"              
+[151] "myTAI"                "nabor"                "ndl"                 
+[154] "NetSim"               "ngspatial"            "NHMM"                
+[157] "NPBayesImpute"        "oem"                  "OneArmPhaseTwoStudy" 
+[160] "openair"              "openxlsx"             "orQA"                
+[163] "pander"               "PBC"                  "pcalg"               
+[166] "PedCNV"               "pedometrics"          "PerMallows"          
+[169] "phom"                 "phylobase"            "planar"              
+[172] "plotSEMM"             "plyr"                 "polywog"             
+[175] "PoweR"                "powerr"               "PP"                  
+[178] "PReMiuM"              "pROC"                 "propagate"           
+[181] "prospectr"            "protViz"              "pryr"                
+[184] "psgp"                 "pvar"                 "QRM"                 
+[187] "quadrupen"            "quantspec"            "qVarSel"             
+[190] "randomUniformForest"  "Rankcluster"          "rARPACK"             
+[193] "Rclusterpp"           "RcppAnnoy"            "RcppArmadillo"       
+[196] "RcppBDT"              "rcppbugs"             "RcppClassic"         
+[199] "RcppClassicExamples"  "RcppCNPy"             "RcppDE"              
+[202] "RcppEigen"            "RcppExamples"         "RcppGSL"             
+[205] "RcppMLPACK"           "RcppOctave"           "RcppProgress"        
+[208] "RcppRedis"            "RcppRoll"             "RcppSMC"             
+[211] "RcppXts"              "RcppZiggurat"         "RealVAMS"            
+[214] "recosystem"           "remote"               "ReorderCluster"      
+[217] "repra"                "resemble"             "reshape2"            
+[220] "revealedPrefs"        "rexpokit"             "rforensicbatwing"    
+[223] "rgam"                 "RInside"              "ripa"                
+[226] "rkvo"                 "rlme"                 "RLRsim"              
+[229] "Rmalschains"          "rmgarch"              "Rmixmod"             
+[232] "RmixmodCombi"         "rncl"                 "robustgam"           
+[235] "robustHD"             "robustreg"            "rococo"              
+[238] "rotations"            "roxygen2"             "rpf"                 
+[241] "rpg"                  "rplexos"              "rPref"               
+[244] "RProtoBuf"            "RQuantLib"            "RSNNS"               
+[247] "RSofia"               "Rsomoclu"             "rtkpp"               
+[250] "Rtsne"                "Ruchardet"            "rugarch"             
+[253] "Rvcg"                 "RVowpalWabbit"        "SBSA"                
+[256] "scrm"                 "scrypt"               "sdcMicro"            
+[259] "sdcTable"             "segmag"               "SelvarMix"           
+[262] "sequences"            "sglOptim"             "simFrame"            
+[265] "simPop"               "sirt"                 "slfm"                
+[268] "snipEM"               "snplist"              "SocialNetworks"      
+[271] "SOD"                  "spacodiR"             "spaMM"               
+[274] "sparseHessianFD"      "sparseLTSEigen"       "SpatialEpi"          
+[277] "SpatialTools"         "spBayesSurv"          "StereoMorph"         
+[280] "StMoSim"              "stochvol"             "stosim"              
+[283] "strum"                "survAccuracyMeasures" "surveillance"        
+[286] "survSNP"              "synlik"               "tagcloud"            
+[289] "TAM"                  "tbart"                "tcR"                 
+[292] "TED"                  "termstrc"             "textreg"             
+[295] "TFMPvalue"            "timma"                "treeclim"            
+[298] "trustOptim"           "tvd"                  "unmarked"            
+[301] "urltools"             "V8"                   "VideoComparison"     
+[304] "VIM"                  "waffect"              "wordcloud"           
+[307] "wsrf"                 "XBRL"                 "zic"                 
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c artifacts.cpp -o artifacts.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c blockaves.cpp -o blockaves.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c bouts.cpp -o bouts.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c intensities.cpp -o intensities.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c movingaves.cpp -o movingaves.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c movingaves_max.cpp -o movingaves_max.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c personvars.cpp -o personvars.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c rle2_char.cpp -o rle2_char.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c rle2_num.cpp -o rle2_num.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c sedbreaks.cpp -o sedbreaks.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c sedbreaks_flags.cpp -o sedbreaks_flags.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c weartime.cpp -o weartime.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o accelerometry.so RcppExports.o artifacts.o blockaves.o bouts.o intensities.o movingaves.o movingaves_max.o personvars.o rle2_char.o rle2_num.o sedbreaks.o sedbreaks_flags.o weartime.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for accelerometry_2.2.4.tar.gz : success 
+
+
+
+
+RESULT for AdaptiveSparsity_1.4.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c computeCRsCpp.cpp -o computeCRsCpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c computeG2sCpp.cpp -o computeG2sCpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c computeNMsCpp.cpp -o computeNMsCpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c computeUProbsCpp.cpp -o computeUProbsCpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c computeX2sCpp.cpp -o computeX2sCpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c metropolisCpp.cpp -o metropolisCpp.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o algstat.so RcppExports.o computeCRsCpp.o computeG2sCpp.o computeNMsCpp.o computeUProbsCpp.o computeX2sCpp.o metropolisCpp.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for algstat_0.0.2.tar.gz : success 
+
+
+
+
+RESULT for ALKr_0.5.3.1.tar.gz : success 
+
+
+
+
+RESULT for Amelia_1.7.3.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c apclusterC.cpp -o apclusterC.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c apclusterLeveragedC.cpp -o apclusterLeveragedC.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c apclusterSparseC.cpp -o apclusterSparseC.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c distanceL.c -o distanceL.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c preferenceRangeC.cpp -o preferenceRangeC.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c preferenceRangeSparseC.cpp -o preferenceRangeSparseC.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o apcluster.so apclusterC.o apclusterLeveragedC.o apclusterSparseC.o distanceL.o preferenceRangeC.o preferenceRangeSparseC.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for apcluster_1.4.1.tar.gz : success 
+
+
+ccache gfortran-4.8   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c hbin.f -o hbin.o
+ccache gfortran-4.8   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c hcell.f -o hcell.o
+ccache gfortran-4.8   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c herode.f -o herode.o
+ccache gfortran-4.8   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c hsm.f -o hsm.o
+ccache gcc-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o hexbin.so hbin.o hcell.o herode.o hsm.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c MH.cpp -o MH.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o ASPBay.so MH.o RcppExports.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for ASPBay_1.1.tar.gz : success 
+
+
+
+
+RESULT for BalancedSampling_1.4.tar.gz : success 
+
+
+
+
+RESULT for BayesComm_0.1-0.tar.gz : success 
+
+
+
+
+RESULT for BayesFactor_0.9.9.tar.gz : success 
+
+
+
+
+RESULT for bayou_1.0.1.tar.gz : success 
+
+
+
+
+RESULT for bcp_3.0.1.tar.gz : success 
+
+
+
+
+RESULT for bcpa_1.1.tar.gz : failure 
+
+
+
+
+RESULT for bfa_0.3.1.tar.gz : success 
+
+
+
+
+RESULT for bfp_0.0-27.tar.gz : success 
+
+
+
+
+RESULT for bifactorial_1.4.7.tar.gz : success 
+
+
+
+
+RESULT for BIFIEsurvey_1.1.tar.gz : success 
+
+
+
+
+RESULT for BIPOD_0.2.1.tar.gz : success 
+
+
+
+
+RESULT for blockcluster_3.0.1.tar.gz : success 
+
+
+
+
+RESULT for btf_1.1.tar.gz : success 
+
+
+
+
+RESULT for bvarsv_1.0.tar.gz : success 
+
+
+
+
+RESULT for CARBayes_3.0.tar.gz : failure 
+
+
+
+
+RESULT for CARBayesST_1.1.tar.gz : success 
+
+
+
+
+RESULT for ccaPP_0.3.0.tar.gz : success 
+
+
+
+
+RESULT for cda_1.5.1.tar.gz : success 
+
+
+
+
+RESULT for CDM_4.0.tar.gz : success 
+
+
+
+
+RESULT for cgAUC_1.2.1.tar.gz : success 
+
+
+
+
+RESULT for CIDnetworks_0.6.0.tar.gz : success 
+
+
+
+
+RESULT for cladoRcpp_0.14.4.tar.gz : success 
+
+
+
+
+RESULT for classify_1.3.tar.gz : success 
+
+
+
+
+RESULT for clere_1.1.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG     `/usr/lib/R/bin/Rscript -e "Rcpp:::CxxFlags()"` -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c zhang_running_quantile.cc -o zhang_running_quantile.o
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for climdex.pcic_1.1-4.tar.gz : failure 
+
+
+
+
+RESULT for clogitL1_1.4.tar.gz : success 
+
+
+
+
+RESULT for clusteval_0.1.tar.gz : success 
+
+
+
+
+RESULT for ClustVarLV_1.3.1.tar.gz : success 
+
+
+
+
+RESULT for CMF_1.0.tar.gz : success 
+
+
+
+
+RESULT for CompGLM_1.0.tar.gz : success 
+
+
+
+
+RESULT for ConConPiWiFun_0.4.4.tar.gz : success 
+
+
+
+
+RESULT for coneproj_1.5.tar.gz : success 
+
+
+
+
+RESULT for copCAR_1.0.tar.gz : success 
+
+
+
+
+RESULT for CorReg_0.15.8.tar.gz : success 
+
+
+Configuring for a UNIX-alike platform (sub-architecture: "")
+Found package 'Matrix' version 1.1.4
+Found variable definitions in ./src/setup/Localsys.txt file
+*** Variable 'PKG_MOSEKHOME' is not a directory: "/data/gannet/ripley/Sources/mosek/6/tools/platform/linux64x86" ***
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for cqrReg_1.0.tar.gz : failure 
+
+
+
+
+RESULT for Crossover_0.1-13.tar.gz : success 
+
+
+
+
+RESULT for dbmss_2.1.2.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c Delaporte.cpp -o Delaporte.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o Delaporte.so Delaporte.o RcppExports.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for Delaporte_2.2-2.tar.gz : success 
+
+
+
+
+RESULT for dendextendRcpp_0.5.1.tar.gz : success 
+
+
+
+
+RESULT for DepthProc_1.0.3.tar.gz : success 
+
+
+
+
+RESULT for DetMCD_0.0.1.tar.gz : success 
+
+
+
+
+RESULT for dfcomb_1.0-1.tar.gz : success 
+
+
+
+
+RESULT for dfmta_1.0-3.tar.gz : success 
+
+
+
+
+RESULT for dils_0.8.1.tar.gz : success 
+
+
+
+
+RESULT for disclapmix_1.5.tar.gz : success 
+
+
+
+
+RESULT for diversitree_0.9-7.tar.gz : success 
+
+
+
+
+RESULT for diveRsity_1.9.5.tar.gz : success 
+
+
+
+
+RESULT for DNAprofiles_0.2.tar.gz : success 
+
+
+
+
+RESULT for DNAtools_0.1-21.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for dplyr_0.3.0.2.tar.gz : failure 
+
+
+
+
+RESULT for dslice_1.1.4.tar.gz : success 
+
+
+
+
+RESULT for DStree_1.0.tar.gz : success 
+
+
+
+
+RESULT for ecp_1.6.0.tar.gz : success 
+
+
+
+
+RESULT for eive_2.1.tar.gz : success 
+
+
+
+
+RESULT for EpiContactTrace_0.8.8.tar.gz : success 
+
+
+
+
+RESULT for ESGtoolkit_0.1.tar.gz : success 
+
+
+
+
+RESULT for EWGoF_2.0.tar.gz : success 
+
+
+
+
+RESULT for fastGHQuad_0.2.tar.gz : success 
+
+
+
+
+RESULT for FastHCS_0.0.3.tar.gz : success 
+
+
+
+
+RESULT for fastM_0.0-2.tar.gz : success 
+
+
+
+
+RESULT for FastPCS_0.1.1.tar.gz : success 
+
+
+
+
+RESULT for FastRCS_0.0.5.tar.gz : success 
+
+
+
+
+RESULT for FBFsearch_1.0.tar.gz : success 
+
+
+
+
+RESULT for fdaMixed_0.4.tar.gz : success 
+
+
+
+
+RESULT for FDGcopulas_1.0.tar.gz : success 
+
+
+
+
+RESULT for FDRreg_0.1.tar.gz : success 
+
+
+
+
+RESULT for fICA_1.0-2.tar.gz : success 
+
+
+
+
+RESULT for FisHiCal_1.1.tar.gz : failure 
+
+
+
+
+RESULT for flip_2.4.3.tar.gz : success 
+
+
+
+
+RESULT for FLSSS_3.1.tar.gz : success 
+
+
+
+
+RESULT for forecast_5.6.tar.gz : success 
+
+
+
+
+RESULT for fugeR_0.1.2.tar.gz : success 
+
+
+
+
+RESULT for Funclustering_1.0.1.tar.gz : success 
+
+
+
+
+RESULT for fwsim_0.3.2.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppProgress/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c cpploss.cpp -o cpploss.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o GCPM.so cpploss.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for GCPM_1.1.1.tar.gz : success 
+
+
+
+
+RESULT for geiger_2.0.3.tar.gz : success 
+
+
+
+
+RESULT for GeneticTools_0.3.tar.gz : success 
+
+
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c apparentement.cpp -o apparentement.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c congen.cpp -o congen.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c consanguinite.cpp -o consanguinite.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c exception.cpp -o exception.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c fondateur.cpp -o fondateur.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c genphi.cpp -o genphi.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c hal.cpp -o hal.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c interface.cpp -o interface.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c md5.cpp -o md5.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c mpajout.c -o mpajout.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c mpi.c -o mpi.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c mplogic.c -o mplogic.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c outilanal.cpp -o outilanal.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c outils.cpp -o outils.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c probsimul.cpp -o probsimul.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c statanal.cpp -o statanal.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c userInterface.cpp -o userInterface.o
+ccache g++-4.8 -std=c++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o GENLIB.so apparentement.o congen.o consanguinite.o exception.o fondateur.o genphi.o hal.o interface.o md5.o mpajout.o mpi.o mplogic.o outilanal.o outils.o probsimul.o statanal.o userInterface.o -rdynamic -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for GENLIB_1.0.2.tar.gz : success 
+
+
+
+
+RESULT for geoCount_1.131209.tar.gz : success 
+
+
+
+
+RESULT for glcm_1.0.tar.gz : success 
+
+
+
+
+RESULT for GMCM_1.1.1.tar.gz : success 
+
+
+
+
+RESULT for gMWT_0.9.tar.gz : success 
+
+
+
+
+RESULT for GPvam_3.0-2.tar.gz : success 
+
+
+
+
+RESULT for gRbase_1.7-0.1.tar.gz : success 
+
+
+
+
+RESULT for gRim_0.1-17.tar.gz : success 
+
+
+
+
+RESULT for growcurves_0.2.3.9.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c dpmix.cpp -o dpmix.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c dpmix_moves.cpp -o dpmix_moves.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c gen_bb.cpp -o gen_bb.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c gp.cpp -o gp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c gpbfix.cpp -o gpbfix.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c gpdpbmix.cpp -o gpdpbmix.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c gpdpmix.cpp -o gpdpmix.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c gpdpmix_moves.cpp -o gpdpmix_moves.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c gpfix.cpp -o gpfix.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c lsqcluster_cpp.cpp -o lsqcluster_cpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c utility.cpp -o utility.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o growfunctions.so dpmix.o dpmix_moves.o gen_bb.o gp.o gpbfix.o gpdpbmix.o gpdpmix.o gpdpmix_moves.o gpfix.o lsqcluster_cpp.o utility.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for growfunctions_0.11.tar.gz : success 
+
+
+
+
+RESULT for GSE_3.1.tar.gz : success 
+
+
+
+
+RESULT for GUILDS_1.2.tar.gz : success 
+
+
+
+
+RESULT for GUTS_0.3.5.tar.gz : success 
+
+
+
+
+RESULT for GxM_1.1.tar.gz : success 
+
+
+
+
+RESULT for hawkes_0.0-4.tar.gz : success 
+
+
+
+
+RESULT for HDPenReg_0.90.tar.gz : success 
+
+
+
+
+RESULT for HLMdiag_0.2.5.tar.gz : success 
+
+
+
+
+RESULT for hsphase_2.0.0.tar.gz : success 
+
+
+
+
+RESULT for httpuv_1.3.2.tar.gz : success 
+
+
+
+
+RESULT for HUM_1.0.tar.gz : failure 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c convert.cpp -o convert.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o hypervolume.so RcppExports.o convert.o -L/usr/lib/R/lib -lR
+Warning in rgl.init(initValue, onlyNULL) :
+  RGL: unable to open X11 display
+Warning in fun(libname, pkgname) : error in rgl_init
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for hypervolume_1.1.tar.gz : success 
+
+
+
+
+RESULT for iBATCGH_1.1.tar.gz : success 
+
+
+
+
+RESULT for IBHM_1.1-11.tar.gz : success 
+
+
+
+
+RESULT for icamix_1.0.1.tar.gz : failure 
+
+
+
+
+RESULT for iccbeta_1.0.tar.gz : success 
+
+
+
+
+RESULT for icensmis_1.2.1.tar.gz : success 
+
+
+
+
+RESULT for inarmix_0.4.tar.gz : success 
+
+
+
+
+RESULT for IsingSampler_0.1.1.tar.gz : success 
+
+
+
+
+RESULT for iterpc_0.2.6.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c parse_ms_output.cpp -o parse_ms_output.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c parse_seqgen_output.cpp -o parse_seqgen_output.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c parse_trees.cpp -o parse_trees.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c sum_stat_fpc.cpp -o sum_stat_fpc.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c sum_stat_jsfs.cpp -o sum_stat_jsfs.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c sum_stat_pmc.cpp -o sum_stat_pmc.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o jaatha.so RcppExports.o parse_ms_output.o parse_seqgen_output.o parse_trees.o sum_stat_fpc.o sum_stat_jsfs.o sum_stat_pmc.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for jaatha_2.7.0.tar.gz : success 
+
+
+
+
+RESULT for JAGUAR_1.1.tar.gz : success 
+
+
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include -DLOGGER_LEVEL=LL_WARN  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include -DLOGGER_LEVEL=LL_WARN  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c detect.cpp -o detect.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include -DLOGGER_LEVEL=LL_WARN  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c segtype.cpp -o segtype.o
+ccache g++-4.8 -std=c++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o jiebaR.so RcppExports.o detect.o segtype.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for jiebaR_0.3.tar.gz : success 
+
+
+
+
+RESULT for KernSmoothIRT_6.1.tar.gz : failure 
+
+
+
+
+RESULT for kmc_0.1-2.tar.gz : success 
+
+
+
+
+RESULT for Kmisc_0.5.0.tar.gz : success 
+
+
+
+
+RESULT for LaF_0.6.1.tar.gz : success 
+
+
+
+
+RESULT for lbfgs_1.2.1.tar.gz : success 
+
+
+
+
+RESULT for lm.br_2.6.tar.gz : success 
+
+
+
+
+RESULT for lme4_1.1-7.tar.gz : failure 
+
+
+
+
+RESULT for lpme_1.0.0.tar.gz : failure 
+
+
+
+
+RESULT for lsgl_1.0.123.1.tar.gz : success 
+
+
+
+
+RESULT for marked_1.1.6.tar.gz : success 
+
+
+
+
+RESULT for MAT_2.2.tar.gz : success 
+
+
+
+
+RESULT for matchingMarkets_0.1-2.tar.gz : success 
+
+
+
+
+RESULT for maxent_1.3.3.1.tar.gz : success 
+
+
+
+
+RESULT for mcIRT_0.41.tar.gz : success 
+
+
+
+
+RESULT for metafolio_0.1.0.tar.gz : success 
+
+
+
+
+RESULT for mets_1.0.tar.gz : success 
+
+
+
+
+RESULT for mice_2.22.tar.gz : success 
+
+
+
+
+RESULT for miceadds_1.0.tar.gz : success 
+
+
+
+
+RESULT for minqa_1.2.4.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c Estep.cpp -o Estep.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c Misc.cpp -o Misc.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c dgroup.c -o dgroup.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c dpars.cpp -o dpars.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c traceLinePts.cpp -o traceLinePts.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o mirt.so Estep.o Misc.o dgroup.o dpars.o traceLinePts.o -llapack -lblas -lgfortran -lm -lquadmath -fopenmp -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for mirt_1.6.1.tar.gz : success 
+
+
+
+
+RESULT for miscF_0.1-2.tar.gz : success 
+
+
+
+
+RESULT for miscset_0.4.tar.gz : success 
+
+
+
+
+RESULT for mkde_0.1.tar.gz : success 
+
+
+
+
+RESULT for mmand_1.1.0.tar.gz : success 
+
+
+
+
+RESULT for Morpho_2.1.tar.gz : failure 
+
+
+
+
+RESULT for mp_0.2.0.tar.gz : success 
+
+
+
+
+RESULT for Mposterior_0.1.2.tar.gz : success 
+
+
+
+
+RESULT for MPTinR_1.6.3.tar.gz : success 
+
+
+
+
+RESULT for msgl_2.0.125.1.tar.gz : failure 
+
+
+
+
+RESULT for MTS_0.32.tar.gz : success 
+
+
+
+
+RESULT for mvabund_3.9.3.tar.gz : success 
+
+
+
+
+RESULT for MVB_1.1.tar.gz : success 
+
+
+
+
+RESULT for mvnfast_0.1.3.tar.gz : success 
+
+
+
+
+RESULT for mwaved_1.1.0.tar.gz : success 
+
+
+
+
+RESULT for myTAI_0.0.1.tar.gz : success 
+
+
+
+
+RESULT for nabor_0.4.3.tar.gz : failure 
+
+
+
+
+RESULT for ndl_0.2.16.tar.gz : success 
+
+
+
+
+RESULT for NetSim_0.9.tar.gz : success 
+
+
+
+
+RESULT for ngspatial_1.0-4.tar.gz : success 
+
+
+
+
+RESULT for NHMM_3.5.tar.gz : success 
+
+
+
+
+RESULT for NPBayesImpute_0.4.tar.gz : success 
+
+
+
+
+RESULT for oem_1.02.1.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c design.cpp -o design.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c result.cpp -o result.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c resultsub1.cpp -o resultsub1.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c simon.cpp -o simon.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c sub1.cpp -o sub1.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o OneArmPhaseTwoStudy.so design.o result.o resultsub1.o simon.o sub1.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for OneArmPhaseTwoStudy_0.1.tar.gz : success 
+
+
+
+
+RESULT for openair_1.0.tar.gz : success 
+
+
+
+
+RESULT for openxlsx_2.2.1.tar.gz : success 
+
+
+
+
+RESULT for orQA_0.2.1.tar.gz : success 
+
+
+
+
+RESULT for pander_0.5.1.tar.gz : success 
+
+
+
+
+RESULT for PBC_1.2.tar.gz : success 
+
+
+
+
+RESULT for pcalg_2.0-3.tar.gz : success 
+
+
+
+
+RESULT for PedCNV_0.1.tar.gz : success 
+
+
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c dbfFileParser.c -o dbfFileParser.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c grts.c -o grts.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c grtsarea.c -o grtsarea.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c grtslin.c -o grtslin.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c grtspts.c -o grtspts.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c init.c -o init.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c insideAreaGridCell.c -o insideAreaGridCell.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c insideLinearGridCell.c -o insideLinearGridCell.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c irsarea.c -o irsarea.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c irslin.c -o irslin.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c pickAreaSamplePoints.c -o pickAreaSamplePoints.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c pickGridCells.c -o pickGridCells.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c pickLinearSamplePoints.c -o pickLinearSamplePoints.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c ranho.c -o ranho.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c shapeParser.c -o shapeParser.o
+ccache gcc-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o spsurvey.so dbfFileParser.o grts.o grtsarea.o grtslin.o grtspts.o init.o insideAreaGridCell.o insideLinearGridCell.o irsarea.o irslin.o pickAreaSamplePoints.o pickGridCells.o pickLinearSamplePoints.o ranho.o shapeParser.o -L/usr/lib/R/lib -lR
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c calcMSSDCpp.cpp -o calcMSSDCpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c rowMinCpp.cpp -o rowMinCpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c spJitterCpp.cpp -o spJitterCpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c updateMSSDCpp.cpp -o updateMSSDCpp.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c updatePPLCpp.cpp -o updatePPLCpp.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o pedometrics.so RcppExports.o calcMSSDCpp.o rowMinCpp.o spJitterCpp.o updateMSSDCpp.o updatePPLCpp.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for pedometrics_0.4-1.tar.gz : success 
+
+
+
+
+RESULT for PerMallows_1.7.tar.gz : success 
+
+
+
+
+RESULT for phom_1.0.3.tar.gz : success 
+
+
+
+
+RESULT for phylobase_0.6.8.tar.gz : success 
+
+
+
+
+RESULT for planar_1.5.2.tar.gz : success 
+
+
+
+
+RESULT for plotSEMM_2.0.tar.gz : success 
+
+
+
+
+RESULT for plyr_1.8.1.tar.gz : success 
+
+
+
+
+RESULT for polywog_0.4-0.tar.gz : success 
+
+
+
+
+RESULT for PoweR_1.0.4.tar.gz : success 
+
+
+
+
+RESULT for powerr_0.1-3.tar.gz : success 
+
+
+
+
+RESULT for PP_0.5.3.tar.gz : success 
+
+
+
+
+RESULT for PReMiuM_3.0.30.tar.gz : success 
+
+
+
+
+RESULT for pROC_1.7.3.tar.gz : failure 
+
+
+
+
+RESULT for propagate_1.0-4.tar.gz : success 
+
+
+
+
+RESULT for prospectr_0.1.3.tar.gz : success 
+
+
+
+
+RESULT for protViz_0.2.9.tar.gz : success 
+
+
+
+
+RESULT for pryr_0.1.tar.gz : success 
+
+
+
+
+RESULT for psgp_0.3-6.tar.gz : success 
+
+
+
+
+RESULT for pvar_2.0.tar.gz : success 
+
+
+
+
+RESULT for QRM_0.4-10.tar.gz : success 
+
+
+
+
+RESULT for quadrupen_0.2-4.tar.gz : success 
+
+
+
+
+RESULT for quantspec_1.0-2.tar.gz : success 
+
+
+
+
+RESULT for qVarSel_1.0.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c cppFunctions.cpp -o cppFunctions.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o randomUniformForest.so cppFunctions.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for randomUniformForest_1.1.1.tar.gz : failure 
+
+
+
+
+RESULT for Rankcluster_0.92.9.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c Eigs.cpp -o Eigs.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c EigsGen.cpp -o EigsGen.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c EigsSym.cpp -o EigsSym.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c MatOp_function.cpp -o MatOp_function.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c MatOp_matrix.cpp -o MatOp_matrix.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c MatOp_symmatrix.cpp -o MatOp_symmatrix.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c SVDsGen.cpp -o SVDsGen.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c SVDsSym.cpp -o SVDsSym.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c eigs_funs.cpp -o eigs_funs.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c message.cpp -o message.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c svds_funs.cpp -o svds_funs.o
+ccache gfortran-4.8   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c wrapper.f -o wrapper.o
+cd ARPACK && make -j8 all F77="ccache gfortran-4.8" FFLAGS="  -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe" AR="ar" RM="rm -f"
+make[1]: Entering directory `/tmp/RtmpOcy0Oc/R.INSTALL5dfe4196db3c/rARPACK/src/ARPACK'
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c sgetv0.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c slaqrb.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c sstqrb.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c ssortc.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c ssortr.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c sstatn.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c sstats.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c snaitr.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c snapps.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c snaup2.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c snaupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c snconv.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c sneigh.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c sngets.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c ssaitr.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c ssapps.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c ssaup2.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c ssaupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c ssconv.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c sseigt.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c ssgets.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c sneupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c sseupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c ssesrt.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c svout.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c smout.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c icnteq.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c icopy.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c iset.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c iswap.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c ivout.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c second_NONE.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dgetv0.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dlaqrb.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dstqrb.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dsortc.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dsortr.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dstatn.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dstats.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dnaitr.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dnapps.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dnaup2.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dnaupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dnconv.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dneigh.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dngets.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dsaitr.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dsapps.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dsaup2.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dsaupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dsconv.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dseigt.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dsgets.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dneupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dseupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dsesrt.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dvout.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c dmout.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cnaitr.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cnapps.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cnaup2.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cnaupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cneigh.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cneupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cngets.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cgetv0.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c csortc.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cstatn.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cvout.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c cmout.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c znaitr.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c znapps.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c znaup2.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c znaupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c zneigh.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c zneupd.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c zngets.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c zgetv0.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c zsortc.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c zstatn.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c zvout.f
+ccache gfortran-4.8 -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4  -O3 -g0 -Wall -pipe -c zmout.f
+ar rcs libarpack.a sgetv0.o slaqrb.o sstqrb.o ssortc.o ssortr.o sstatn.o sstats.o snaitr.o snapps.o snaup2.o snaupd.o snconv.o sneigh.o sngets.o ssaitr.o ssapps.o ssaup2.o ssaupd.o ssconv.o sseigt.o ssgets.o sneupd.o sseupd.o ssesrt.o svout.o smout.o icnteq.o icopy.o iset.o iswap.o ivout.o second_NONE.o
+ar rcs libarpack.a dgetv0.o dlaqrb.o dstqrb.o dsortc.o dsortr.o dstatn.o dstats.o dnaitr.o dnapps.o dnaup2.o dnaupd.o dnconv.o dneigh.o dngets.o dsaitr.o dsapps.o dsaup2.o dsaupd.o dsconv.o dseigt.o dsgets.o dneupd.o dseupd.o dsesrt.o dvout.o dmout.o icnteq.o icopy.o iset.o iswap.o ivout.o second_NONE.o
+ar rcs libarpack.a cnaitr.o cnapps.o cnaup2.o cnaupd.o cneigh.o cneupd.o cngets.o cgetv0.o csortc.o cstatn.o cvout.o cmout.o icnteq.o icopy.o iset.o iswap.o ivout.o second_NONE.o
+ar rcs libarpack.a znaitr.o znapps.o znaup2.o znaupd.o zneigh.o zneupd.o zngets.o zgetv0.o zsortc.o zstatn.o zvout.o zmout.o icnteq.o icopy.o iset.o iswap.o ivout.o second_NONE.o
+make[1]: Leaving directory `/tmp/RtmpOcy0Oc/R.INSTALL5dfe4196db3c/rARPACK/src/ARPACK'
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o rARPACK.so Eigs.o EigsGen.o EigsSym.o MatOp_function.o MatOp_matrix.o MatOp_symmatrix.o SVDsGen.o SVDsSym.o eigs_funs.o message.o svds_funs.o wrapper.o -L./ARPACK -larpack -llapack -lblas -lgfortran -lm -lquadmath -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for rARPACK_0.7-0.tar.gz : success 
+
+
+
+
+RESULT for Rclusterpp_0.2.3.tar.gz : success 
+
+
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c annoy.cpp -o annoy.o
+ccache g++-4.8 -std=c++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o RcppAnnoy.so annoy.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for RcppAnnoy_0.0.4.tar.gz : success 
+
+
+
+
+RESULT for RcppArmadillo_0.4.550.1.0.tar.gz : success 
+
+
+
+
+RESULT for RcppBDT_0.2.3.tar.gz : success 
+
+
+
+
+RESULT for rcppbugs_0.1.4.1.tar.gz : success 
+
+
+
+
+RESULT for RcppClassic_0.9.5.tar.gz : success 
+
+
+
+
+RESULT for RcppClassicExamples_0.1.1.tar.gz : success 
+
+
+
+
+RESULT for RcppCNPy_0.2.3.tar.gz : failure 
+
+
+
+
+RESULT for RcppDE_0.1.2.tar.gz : success 
+
+
+
+
+RESULT for RcppEigen_0.3.2.2.0.tar.gz : success 
+
+
+
+
+RESULT for RcppExamples_0.1.6.tar.gz : success 
+
+
+
+
+RESULT for RcppGSL_0.2.2.tar.gz : success 
+
+
+
+
+RESULT for RcppMLPACK_1.0.9-3.tar.gz : success 
+
+
+
+
+RESULT for RcppOctave_0.14.5.tar.gz : success 
+
+
+
+
+RESULT for RcppProgress_0.1.tar.gz : success 
+
+
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C++ preprocessor... g++ -E
+checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether g++ accepts -g... (cached) yes
+checking for pkg-config... yes
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking hiredis/hiredis.h usability... yes
+checking hiredis/hiredis.h presence... yes
+checking for hiredis/hiredis.h... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+Completed configuration and ready to build.
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RApiSerialize/include"  -D_FILE_OFFSET_BITS=64   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RApiSerialize/include"  -D_FILE_OFFSET_BITS=64   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c Redis.cpp -o Redis.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o RcppRedis.so RcppExports.o Redis.o -lhiredis -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for RcppRedis_0.1.3.tar.gz : success 
+
+
+
+
+RESULT for RcppRoll_0.1.0.tar.gz : success 
+
+
+
+
+RESULT for RcppSMC_0.1.4.tar.gz : success 
+
+
+
+
+RESULT for RcppXts_0.0.4.tar.gz : success 
+
+
+
+
+RESULT for RcppZiggurat_0.1.2.tar.gz : success 
+
+
+
+
+RESULT for RealVAMS_0.3-1.tar.gz : success 
+
+
+
+
+RESULT for recosystem_0.2.4.tar.gz : success 
+
+
+
+
+RESULT for remote_0.3.0.tar.gz : success 
+
+
+
+
+RESULT for ReorderCluster_1.0.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c convolution.cpp -o convolution.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o repra.so RcppExports.o convolution.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for repra_0.4.2.tar.gz : failure 
+
+
+
+
+RESULT for resemble_1.1.1.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c melt.cpp -o melt.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o reshape2.so RcppExports.o melt.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for reshape2_1.4.1.tar.gz : success 
+
+
+
+
+RESULT for revealedPrefs_0.2.tar.gz : failure 
+
+
+
+
+RESULT for rexpokit_0.24.1.tar.gz : success 
+
+
+
+
+RESULT for rforensicbatwing_1.3.tar.gz : success 
+
+
+
+
+RESULT for rgam_0.6.3.tar.gz : success 
+
+
+
+
+RESULT for RInside_0.2.11.tar.gz : success 
+
+
+
+
+RESULT for ripa_2.0-2.tar.gz : success 
+
+
+
+
+RESULT for rkvo_0.1.tar.gz : success 
+
+
+
+
+RESULT for rlme_0.4.tar.gz : success 
+
+
+
+
+RESULT for RLRsim_3.0.tar.gz : success 
+
+
+
+
+RESULT for Rmalschains_0.2-2.tar.gz : success 
+
+
+
+
+RESULT for rmgarch_1.2-8.tar.gz : success 
+
+
+
+
+RESULT for Rmixmod_2.0.2.tar.gz : success 
+
+
+
+
+RESULT for RmixmodCombi_1.0.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c GetNCL.cpp -o GetNCL.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c ancestors.c -o ancestors.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c checkPhylo4.cpp -o checkPhylo4.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c descendants.c -o descendants.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c nxsassumptionsblock.cpp -o nxsassumptionsblock.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c nxsblock.cpp -o nxsblock.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c nxscharactersblock.cpp -o nxscharactersblock.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c nxscxxdiscretematrix.cpp -o nxscxxdiscretematrix.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c nxsdatablock.cpp -o nxsdatablock.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c nxsdistancedatum.cpp -o nxsdistancedatum.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c nxsdistancesblock.cpp -o nxsdistancesblock.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c nxsemptyblock.cpp -o nxsemptyblock.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c nxsexception.cpp -o nxsexception.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c nxsmultiformat.cpp -o nxsmultiformat.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c nxspublicblocks.cpp -o nxspublicblocks.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c nxsreader.cpp -o nxsreader.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c nxssetreader.cpp -o nxssetreader.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c nxsstring.cpp -o nxsstring.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c nxstaxaassociationblock.cpp -o nxstaxaassociationblock.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c nxstaxablock.cpp -o nxstaxablock.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c nxstoken.cpp -o nxstoken.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c nxstreesblock.cpp -o nxstreesblock.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c nxsunalignedblock.cpp -o nxsunalignedblock.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c phyloXX.c -o phyloXX.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c reorderBinary.c -o reorderBinary.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c reorderRobust.c -o reorderRobust.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o rncl.so GetNCL.o RcppExports.o ancestors.o checkPhylo4.o descendants.o nxsassumptionsblock.o nxsblock.o nxscharactersblock.o nxscxxdiscretematrix.o nxsdatablock.o nxsdistancedatum.o nxsdistancesblock.o nxsemptyblock.o nxsexception.o nxsmultiformat.o nxspublicblocks.o nxsreader.o nxssetreader.o nxsstring.o nxstaxaassociationblock.o nxstaxablock.o nxstoken.o nxstreesblock.o nxsunalignedblock.o phyloXX.o reorderBinary.o reorderRobust.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for rncl_0.2.0.tar.gz : success 
+
+
+
+
+RESULT for robustgam_0.1.7.tar.gz : success 
+
+
+
+
+RESULT for robustHD_0.5.0.tar.gz : success 
+
+
+
+
+RESULT for robustreg_0.1-7.tar.gz : success 
+
+
+
+
+RESULT for rococo_1.1.2.tar.gz : success 
+
+
+
+
+RESULT for rotations_1.2.tar.gz : success 
+
+
+
+
+RESULT for roxygen2_4.0.2.tar.gz : success 
+
+
+Change default C/C++ compiler and default compile flags by editing /usr/lib/R/etc/Makeconf
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include"      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c ba81quad.cpp -o ba81quad.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include"      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c dataframe.cpp -o dataframe.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include"      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c diagnose.cpp -o diagnose.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include"      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c dmvnorm.cpp -o dmvnorm.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include"      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c eap.cpp -o eap.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include"      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c glue.cpp -o glue.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include"      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c libifa-rpf.cpp -o libifa-rpf.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include"      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c m2.cpp -o m2.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o rpf.so ba81quad.o dataframe.o diagnose.o dmvnorm.o eap.o glue.o libifa-rpf.o m2.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for rpf_0.44.tar.gz : success 
+
+
+
+
+RESULT for rpg_1.2.tar.gz : success 
+
+
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c expand_tkey.cpp -o expand_tkey.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c process_xml.cpp -o process_xml.o
+ccache g++-4.8 -std=c++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o rplexos.so RcppExports.o expand_tkey.o process_xml.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for rplexos_0.10.0.1.tar.gz : failure 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppParallel/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppParallel/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c bnl.cpp -o bnl.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppParallel/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c hasse.cpp -o hasse.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppParallel/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c pref-classes.cpp -o pref-classes.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppParallel/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c psel-par-top.cpp -o psel-par-top.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppParallel/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c psel-par.cpp -o psel-par.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppParallel/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c scalagon.cpp -o scalagon.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o rPref.so RcppExports.o bnl.o hasse.o pref-classes.o psel-par-top.o psel-par.o scalagon.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for rPref_0.3.tar.gz : failure 
+
+
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C++ preprocessor... g++ -E
+checking for gcc... gcc
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether g++ accepts -g... (cached) yes
+checking if g++ supports C++0x features without additional flags... no
+checking if g++ supports C++0x features with -std=c++0x... yes
+checking if g++ supports C++0x features with -std=gnu++0x... yes
+checking for pkg-config... yes
+checking for protoc... yes
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking google/protobuf/stubs/common.h usability... yes
+checking google/protobuf/stubs/common.h presence... yes
+checking for google/protobuf/stubs/common.h... yes
+checking google/protobuf/compiler/code_generator.h usability... yes
+checking google/protobuf/compiler/code_generator.h presence... yes
+checking for google/protobuf/compiler/code_generator.h... yes
+checking if ProtoBuf version >= 2.2.0... yes
+checking for R... yes
+checking for Rscript... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+Completed configuration and ready to build.
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c ConnectionCopyingInputStream.cpp -o ConnectionCopyingInputStream.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c ConnectionCopyingOutputStream.cpp -o ConnectionCopyingOutputStream.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c ConnectionInputStream.cpp -o ConnectionInputStream.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c ConnectionOutputStream.cpp -o ConnectionOutputStream.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c DescriptorPoolLookup.cpp -o DescriptorPoolLookup.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RSourceTree.cpp -o RSourceTree.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RWarningErrorCollector.cpp -o RWarningErrorCollector.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RconnectionCopyingInputStream.cpp -o RconnectionCopyingInputStream.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c ZeroCopyInputStreamWrapper.cpp -o ZeroCopyInputStreamWrapper.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c ZeroCopyOutputStreamWrapper.cpp -o ZeroCopyOutputStreamWrapper.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c extensions.cpp -o extensions.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c extractors.cpp -o extractors.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c lookup.cpp -o lookup.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c mutators.cpp -o mutators.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c rprotobuf.cpp -o rprotobuf.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c streams.cpp -o streams.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c wrapper_ArrayInputStream.cpp -o wrapper_ArrayInputStream.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c wrapper_ArrayOutputStream.cpp -o wrapper_ArrayOutputStream.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c wrapper_Descriptor.cpp -o wrapper_Descriptor.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c wrapper_EnumDescriptor.cpp -o wrapper_EnumDescriptor.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c wrapper_EnumValueDescriptor.cpp -o wrapper_EnumValueDescriptor.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c wrapper_FieldDescriptor.cpp -o wrapper_FieldDescriptor.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c wrapper_FileDescriptor.cpp -o wrapper_FileDescriptor.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c wrapper_Message.cpp -o wrapper_Message.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c wrapper_MethodDescriptor.cpp -o wrapper_MethodDescriptor.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c wrapper_ServiceDescriptor.cpp -o wrapper_ServiceDescriptor.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -std=c++0x -pthread    -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c wrapper_ZeroCopyInputStream.cpp -o wrapper_ZeroCopyInputStream.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o RProtoBuf.so ConnectionCopyingInputStream.o ConnectionCopyingOutputStream.o ConnectionInputStream.o ConnectionOutputStream.o DescriptorPoolLookup.o RSourceTree.o RWarningErrorCollector.o RconnectionCopyingInputStream.o ZeroCopyInputStreamWrapper.o ZeroCopyOutputStreamWrapper.o extensions.o extractors.o lookup.o mutators.o rprotobuf.o streams.o wrapper_ArrayInputStream.o wrapper_ArrayOutputStream.o wrapper_Descriptor.o wrapper_EnumDescriptor.o wrapper_EnumValueDescriptor.o wrapper_FieldDescriptor.o wrapper_FileDescriptor.o wrapper_Message.o wrapper_MethodDescriptor.o wrapper_ServiceDescriptor.o wrapper_ZeroCopyInputStream.o -pthread -lprotobuf -lpthread -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for RProtoBuf_0.4.2.tar.gz : success 
+
+
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C++ preprocessor... g++ -E
+checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether g++ accepts -g... (cached) yes
+checking for R... yes
+checking for quantlib-config... yes
+checking for Boost development files... yes
+checking for minimal Boost version... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+Completed configuration and ready to build.
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic  -I/usr/include -fpermissive -I../inst/include -I. -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic  -I/usr/include -fpermissive -I../inst/include -I. -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c asian.cpp -o asian.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic  -I/usr/include -fpermissive -I../inst/include -I. -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c barrier_binary.cpp -o barrier_binary.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic  -I/usr/include -fpermissive -I../inst/include -I. -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c bermudan.cpp -o bermudan.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic  -I/usr/include -fpermissive -I../inst/include -I. -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c bonds.cpp -o bonds.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic  -I/usr/include -fpermissive -I../inst/include -I. -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c calendars.cpp -o calendars.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic  -I/usr/include -fpermissive -I../inst/include -I. -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c curves.cpp -o curves.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic  -I/usr/include -fpermissive -I../inst/include -I. -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c dates.cpp -o dates.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic  -I/usr/include -fpermissive -I../inst/include -I. -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c daycounter.cpp -o daycounter.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic  -I/usr/include -fpermissive -I../inst/include -I. -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c discount.cpp -o discount.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic  -I/usr/include -fpermissive -I../inst/include -I. -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c hullwhite.cpp -o hullwhite.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic  -I/usr/include -fpermissive -I../inst/include -I. -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c implieds.cpp -o implieds.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic  -I/usr/include -fpermissive -I../inst/include -I. -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c modules.cpp -o modules.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic  -I/usr/include -fpermissive -I../inst/include -I. -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c schedule.cpp -o schedule.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic  -I/usr/include -fpermissive -I../inst/include -I. -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c utils.cpp -o utils.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic  -I/usr/include -fpermissive -I../inst/include -I. -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c vanilla.cpp -o vanilla.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic  -I/usr/include -fpermissive -I../inst/include -I. -fopenmp -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c zero.cpp -o zero.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o RQuantLib.so RcppExports.o asian.o barrier_binary.o bermudan.o bonds.o calendars.o curves.o dates.o daycounter.o discount.o hullwhite.o implieds.o modules.o schedule.o utils.o vanilla.o zero.o -L/usr/lib -lQuantLib -fopenmp -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for RQuantLib_0.4.0.tar.gz : success 
+
+
+
+
+RESULT for RSNNS_0.4-5.tar.gz : success 
+
+
+
+
+RESULT for RSofia_1.1.tar.gz : success 
+
+
+
+
+RESULT for Rsomoclu_1.4.1.tar.gz : success 
+
+
+
+
+RESULT for rtkpp_0.8.4.tar.gz : success 
+
+
+
+
+RESULT for Rtsne_0.9.tar.gz : success 
+
+
+
+
+RESULT for Ruchardet_0.0-3.tar.gz : success 
+
+
+
+
+RESULT for rugarch_1.3-4.tar.gz : success 
+
+
+
+
+RESULT for Rvcg_0.9.tar.gz : success 
+
+
+
+
+RESULT for RVowpalWabbit_0.0.6.tar.gz : success 
+
+
+
+
+RESULT for SBSA_0.2.3.tar.gz : success 
+
+
+
+
+RESULT for scrm_1.3-3.tar.gz : success 
+
+
+
+
+RESULT for scrypt_0.1.0.tar.gz : success 
+
+
+
+
+RESULT for sdcMicro_4.4.0.tar.gz : success 
+
+
+
+
+RESULT for sdcTable_0.17.1.tar.gz : success 
+
+
+
+
+RESULT for segmag_1.2.2.tar.gz : success 
+
+
+
+
+RESULT for SelvarMix_1.0.tar.gz : success 
+
+
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c gccount.c -o gccount.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c gccount2.cpp -o gccount2.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o sequences.so gccount.o gccount2.o -L/tmp/RcppDepends/lib/RcppClassic/lib -lRcppClassic -Wl,-rpath,/tmp/RcppDepends/lib/RcppClassic/lib -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for sequences_0.5.9.tar.gz : success 
+
+
+
+
+RESULT for sglOptim_1.0.122.1.tar.gz : success 
+
+
+
+
+RESULT for simFrame_0.5.3.tar.gz : success 
+
+
+
+
+RESULT for simPop_0.2.6.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c prior_normal_density_c.cpp -o prior_normal_density_c.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c rowcumsums_source.cpp -o rowcumsums_source.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tam_calcexp.cpp -o tam_calcexp.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c tam_caux.c -o tam_caux.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tam_ctt_c.cpp -o tam_ctt_c.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tam_fit_simul.cpp -o tam_fit_simul.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tam_helper_ccode.cpp -o tam_helper_ccode.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tam_mml_3pl_helper_functions.cpp -o tam_mml_3pl_helper_functions.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tam_mml_mfr_helper.cpp -o tam_mml_mfr_helper.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tam_modelfit_aux.cpp -o tam_modelfit_aux.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tamwle_helper_ccode.cpp -o tamwle_helper_ccode.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o TAM.so prior_normal_density_c.o rowcumsums_source.o tam_calcexp.o tam_caux.o tam_ctt_c.o tam_fit_simul.o tam_helper_ccode.o tam_mml_3pl_helper_functions.o tam_mml_mfr_helper.o tam_modelfit_aux.o tamwle_helper_ccode.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c eigenvaluessirt.cpp -o eigenvaluessirt.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c evm_comp_matrix_poly.cpp -o evm_comp_matrix_poly.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c gooijer_isop.cpp -o gooijer_isop.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c invariance_alignment.cpp -o invariance_alignment.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c matrixfunctions_sirt.cpp -o matrixfunctions_sirt.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c mle_pcm_group_c.cpp -o mle_pcm_group_c.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c noharm_sirt_auxfunctions.cpp -o noharm_sirt_auxfunctions.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c polychoric2_tetrachoric2_rcpp_aux.cpp -o polychoric2_tetrachoric2_rcpp_aux.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c probs_multcat_items_counts_csirt.cpp -o probs_multcat_items_counts_csirt.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c rm_smirt_mml2_code.cpp -o rm_smirt_mml2_code.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o sirt.so eigenvaluessirt.o evm_comp_matrix_poly.o gooijer_isop.o invariance_alignment.o matrixfunctions_sirt.o mle_pcm_group_c.o noharm_sirt_auxfunctions.o polychoric2_tetrachoric2_rcpp_aux.o probs_multcat_items_counts_csirt.o rm_smirt_mml2_code.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for sirt_1.2.tar.gz : success 
+
+
+
+
+RESULT for slfm_0.1.tar.gz : success 
+
+
+
+
+RESULT for snipEM_1.0.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c exportPLINKSet.cpp -o exportPLINKSet.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o snplist.so exportPLINKSet.o -L/usr/lib/R/lib -lR
+Warning: replacing previous import by ‘BiocGenerics::conditions’ when loading ‘AnnotationDbi’
+Warning: replacing previous import by ‘BiocGenerics::conditions<-’ when loading ‘AnnotationDbi’
+Warning: replacing previous import by ‘BiocGenerics::counts’ when loading ‘AnnotationDbi’
+Warning: replacing previous import by ‘BiocGenerics::counts<-’ when loading ‘AnnotationDbi’
+Warning: replacing previous import by ‘BiocGenerics::design’ when loading ‘AnnotationDbi’
+Warning: replacing previous import by ‘BiocGenerics::design<-’ when loading ‘AnnotationDbi’
+Warning: replacing previous import by ‘BiocGenerics::dispTable’ when loading ‘AnnotationDbi’
+Warning: replacing previous import by ‘BiocGenerics::dispTable<-’ when loading ‘AnnotationDbi’
+Warning: replacing previous import by ‘BiocGenerics::estimateDispersions’ when loading ‘AnnotationDbi’
+Warning: replacing previous import by ‘BiocGenerics::estimateSizeFactors’ when loading ‘AnnotationDbi’
+Warning: replacing previous import by ‘BiocGenerics::sizeFactors’ when loading ‘AnnotationDbi’
+Warning: replacing previous import by ‘BiocGenerics::sizeFactors<-’ when loading ‘AnnotationDbi’
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for snplist_0.13.tar.gz : success 
+
+
+
+
+RESULT for SocialNetworks_1.1.tar.gz : success 
+
+
+
+
+RESULT for SOD_1.0.tar.gz : success 
+
+
+
+
+RESULT for spacodiR_0.13.0115.tar.gz : success 
+
+
+
+
+RESULT for spaMM_1.4.1.tar.gz : success 
+
+
+
+
+RESULT for sparseHessianFD_0.1.1.tar.gz : success 
+
+
+
+
+RESULT for sparseLTSEigen_0.2.0.tar.gz : success 
+
+
+
+
+RESULT for SpatialEpi_1.2.1.tar.gz : success 
+
+
+
+
+RESULT for SpatialTools_0.5.8.tar.gz : success 
+
+
+
+
+RESULT for spBayesSurv_1.0.1.tar.gz : failure 
+
+
+
+
+RESULT for StereoMorph_1.2.1.tar.gz : success 
+
+
+
+
+RESULT for StMoSim_3.0.tar.gz : success 
+
+
+
+
+RESULT for stochvol_0.9-0.tar.gz : success 
+
+
+
+
+RESULT for stosim_0.0.12.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"  -I../inst/include -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c computeInterval.cpp -o computeInterval.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"  -I../inst/include -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c computeLLDeriv.cpp -o computeLLDeriv.o
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for strum_0.5.tar.gz : failure 
+
+
+
+
+RESULT for survAccuracyMeasures_1.2.tar.gz : success 
+
+
+
+
+RESULT for surveillance_1.8-1.tar.gz : success 
+
+
+
+
+RESULT for survSNP_0.21-7.tar.gz : success 
+
+
+
+
+RESULT for synlik_0.1.1.tar.gz : success 
+
+
+
+
+RESULT for tagcloud_0.5.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c prior_normal_density_c.cpp -o prior_normal_density_c.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c rowcumsums_source.cpp -o rowcumsums_source.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tam_calcexp.cpp -o tam_calcexp.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c tam_caux.c -o tam_caux.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tam_ctt_c.cpp -o tam_ctt_c.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tam_fit_simul.cpp -o tam_fit_simul.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tam_helper_ccode.cpp -o tam_helper_ccode.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tam_mml_3pl_helper_functions.cpp -o tam_mml_3pl_helper_functions.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tam_mml_mfr_helper.cpp -o tam_mml_mfr_helper.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tam_modelfit_aux.cpp -o tam_modelfit_aux.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tamwle_helper_ccode.cpp -o tamwle_helper_ccode.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o TAM.so prior_normal_density_c.o rowcumsums_source.o tam_calcexp.o tam_caux.o tam_ctt_c.o tam_fit_simul.o tam_helper_ccode.o tam_mml_3pl_helper_functions.o tam_mml_mfr_helper.o tam_modelfit_aux.o tamwle_helper_ccode.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for TAM_1.2.tar.gz : success 
+
+
+
+
+RESULT for tbart_0.9.1.tar.gz : failure 
+
+
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c dl.c -o dl.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c hamming.c -o hamming.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c jaro.c -o jaro.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c lcs.c -o lcs.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c lv.c -o lv.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c osa.c -o osa.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c qgram.c -o qgram.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c soundex.c -o soundex.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c utils.c -o utils.o
+ccache gcc-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o stringdist.so dl.o hamming.o jaro.o lcs.o lv.o osa.o qgram.o soundex.o utils.o -L/usr/lib/R/lib -lR
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c neighbour.search.cpp -o neighbour.search.o
+ccache g++-4.8 -std=c++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o tcR.so RcppExports.o neighbour.search.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for tcR_1.0.tar.gz : success 
+
+
+
+
+RESULT for TED_1.1.1.tar.gz : success 
+
+
+
+
+RESULT for termstrc_1.3.7.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c textreg.cpp -o textreg.o
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for textreg_0.1.tar.gz : failure 
+
+
+
+
+RESULT for TFMPvalue_0.0.5.tar.gz : success 
+
+
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c allSol.c -o allSol.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c findSubsets.c -o findSubsets.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c m2.c -o m2.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c removeRedundants.c -o removeRedundants.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c solveChart.c -o solveChart.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c superSubset.c -o superSubset.o
+ccache gcc-4.8 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c truthTable.c -o truthTable.o
+ccache gcc-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o QCA.so allSol.o findSubsets.o m2.o removeRedundants.o solveChart.o superSubset.o truthTable.o -L/usr/lib/R/lib -lR
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c max_min.cpp -o max_min.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o timma.so RcppExports.o max_min.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for timma_0.99.0.tar.gz : success 
+
+
+
+
+RESULT for treeclim_1.0.7.tar.gz : success 
+
+
+
+
+RESULT for trustOptim_0.8.4.1.tar.gz : success 
+
+
+
+
+RESULT for tvd_0.1.0.tar.gz : success 
+
+
+
+
+RESULT for unmarked_0.10-4.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c urltools.cpp -o urltools.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o urltools.so RcppExports.o urltools.o -lz -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for urltools_0.5.tar.gz : success 
+
+
+libv8 not found. Make sure the V8 development library is installed, e.g. libv8-dev (deb) or v8-devel (rpm).
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for V8_0.1.tar.gz : failure 
+
+
+
+
+RESULT for VideoComparison_0.11.tar.gz : success 
+
+
+
+
+RESULT for VIM_4.1.0.tar.gz : success 
+
+
+
+
+RESULT for waffect_1.2.tar.gz : success 
+
+
+
+
+RESULT for wordcloud_2.5.tar.gz : success 
+
+
+
+
+RESULT for wsrf_1.4.0.tar.gz : failure 
+
+
+
+
+RESULT for XBRL_0.99.13.tar.gz : success 
+
+
+
+
+RESULT for zic_0.8.1.tar.gz : success 
+
+
+                     pkg res
+1          accelerometry   0
+2       AdaptiveSparsity   0
+3                algstat   0
+4                   ALKr   0
+5                 Amelia   0
+6              apcluster   0
+7                 ASPBay   0
+8       BalancedSampling   0
+9              BayesComm   0
+10           BayesFactor   0
+11                 bayou   0
+12                   bcp   0
+13                  bcpa   1
+14                   bfa   0
+15                   bfp   0
+16           bifactorial   0
+17           BIFIEsurvey   0
+18                 BIPOD   0
+19          blockcluster   0
+20                   btf   0
+21                bvarsv   0
+22              CARBayes   1
+23            CARBayesST   0
+24                 ccaPP   0
+25                   cda   0
+26                   CDM   0
+27                 cgAUC   0
+28           CIDnetworks   0
+29             cladoRcpp   0
+30              classify   0
+31                 clere   0
+32          climdex.pcic   1
+33              clogitL1   0
+34             clusteval   0
+35            ClustVarLV   0
+36                   CMF   0
+37               CompGLM   0
+38         ConConPiWiFun   0
+39              coneproj   0
+40                copCAR   0
+41                CorReg   0
+42                cqrReg   1
+43             Crossover   0
+44                 dbmss   0
+45             Delaporte   0
+46        dendextendRcpp   0
+47             DepthProc   0
+48                DetMCD   0
+49                dfcomb   0
+50                 dfmta   0
+51                  dils   0
+52            disclapmix   0
+53           diversitree   0
+54             diveRsity   0
+55           DNAprofiles   0
+56              DNAtools   0
+57                 dplyr   1
+58                dslice   0
+59                DStree   0
+60                   ecp   0
+61                  eive   0
+62       EpiContactTrace   0
+63            ESGtoolkit   0
+64                 EWGoF   0
+65            fastGHQuad   0
+66               FastHCS   0
+67                 fastM   0
+68               FastPCS   0
+69               FastRCS   0
+70             FBFsearch   0
+71              fdaMixed   0
+72            FDGcopulas   0
+73                FDRreg   0
+74                  fICA   0
+75              FisHiCal   1
+76                  flip   0
+77                 FLSSS   0
+78              forecast   0
+79                 fugeR   0
+80         Funclustering   0
+81                 fwsim   0
+82                  GCPM   0
+83                geiger   0
+84          GeneticTools   0
+85                GENLIB   0
+86              geoCount   0
+87                  glcm   0
+88                  GMCM   0
+89                  gMWT   0
+90                 GPvam   0
+91                gRbase   0
+92                  gRim   0
+93            growcurves   0
+94         growfunctions   0
+95                   GSE   0
+96                GUILDS   0
+97                  GUTS   0
+98                   GxM   0
+99                hawkes   0
+100             HDPenReg   0
+101              HLMdiag   0
+102              hsphase   0
+103               httpuv   0
+104                  HUM   1
+105          hypervolume   0
+106              iBATCGH   0
+107                 IBHM   0
+108               icamix   1
+109              iccbeta   0
+110             icensmis   0
+111              inarmix   0
+112         IsingSampler   0
+113               iterpc   0
+114               jaatha   0
+115               JAGUAR   0
+116               jiebaR   0
+117        KernSmoothIRT   1
+118                  kmc   0
+119                Kmisc   0
+120                  LaF   0
+121                lbfgs   0
+122                lm.br   0
+123                 lme4   1
+124                 lpme   1
+125                 lsgl   0
+126               marked   0
+127                  MAT   0
+128      matchingMarkets   0
+129               maxent   0
+130                mcIRT   0
+131            metafolio   0
+132                 mets   0
+133                 mice   0
+134             miceadds   0
+135                minqa   0
+136                 mirt   0
+137                miscF   0
+138              miscset   0
+139                 mkde   0
+140                mmand   0
+141               Morpho   1
+142                   mp   0
+143           Mposterior   0
+144               MPTinR   0
+145                 msgl   1
+146                  MTS   0
+147              mvabund   0
+148                  MVB   0
+149              mvnfast   0
+150               mwaved   0
+151                myTAI   0
+152                nabor   1
+153                  ndl   0
+154               NetSim   0
+155            ngspatial   0
+156                 NHMM   0
+157        NPBayesImpute   0
+158                  oem   0
+159  OneArmPhaseTwoStudy   0
+160              openair   0
+161             openxlsx   0
+162                 orQA   0
+163               pander   0
+164                  PBC   0
+165                pcalg   0
+166               PedCNV   0
+167          pedometrics   0
+168           PerMallows   0
+169                 phom   0
+170            phylobase   0
+171               planar   0
+172             plotSEMM   0
+173                 plyr   0
+174              polywog   0
+175                PoweR   0
+176               powerr   0
+177                   PP   0
+178              PReMiuM   0
+179                 pROC   1
+180            propagate   0
+181            prospectr   0
+182              protViz   0
+183                 pryr   0
+184                 psgp   0
+185                 pvar   0
+186                  QRM   0
+187            quadrupen   0
+188            quantspec   0
+189              qVarSel   0
+190  randomUniformForest   1
+191          Rankcluster   0
+192              rARPACK   0
+193           Rclusterpp   0
+194            RcppAnnoy   0
+195        RcppArmadillo   0
+196              RcppBDT   0
+197             rcppbugs   0
+198          RcppClassic   0
+199  RcppClassicExamples   0
+200             RcppCNPy   1
+201               RcppDE   0
+202            RcppEigen   0
+203         RcppExamples   0
+204              RcppGSL   0
+205           RcppMLPACK   0
+206           RcppOctave   0
+207         RcppProgress   0
+208            RcppRedis   0
+209             RcppRoll   0
+210              RcppSMC   0
+211              RcppXts   0
+212         RcppZiggurat   0
+213             RealVAMS   0
+214           recosystem   0
+215               remote   0
+216       ReorderCluster   0
+217                repra   1
+218             resemble   0
+219             reshape2   0
+220        revealedPrefs   1
+221             rexpokit   0
+222     rforensicbatwing   0
+223                 rgam   0
+224              RInside   0
+225                 ripa   0
+226                 rkvo   0
+227                 rlme   0
+228               RLRsim   0
+229          Rmalschains   0
+230              rmgarch   0
+231              Rmixmod   0
+232         RmixmodCombi   0
+233                 rncl   0
+234            robustgam   0
+235             robustHD   0
+236            robustreg   0
+237               rococo   0
+238            rotations   0
+239             roxygen2   0
+240                  rpf   0
+241                  rpg   0
+242              rplexos   1
+243                rPref   1
+244            RProtoBuf   0
+245            RQuantLib   0
+246                RSNNS   0
+247               RSofia   0
+248             Rsomoclu   0
+249                rtkpp   0
+250                Rtsne   0
+251            Ruchardet   0
+252              rugarch   0
+253                 Rvcg   0
+254        RVowpalWabbit   0
+255                 SBSA   0
+256                 scrm   0
+257               scrypt   0
+258             sdcMicro   0
+259             sdcTable   0
+260               segmag   0
+261            SelvarMix   0
+262            sequences   0
+263             sglOptim   0
+264             simFrame   0
+265               simPop   0
+266                 sirt   0
+267                 slfm   0
+268               snipEM   0
+269              snplist   0
+270       SocialNetworks   0
+271                  SOD   0
+272             spacodiR   0
+273                spaMM   0
+274      sparseHessianFD   0
+275       sparseLTSEigen   0
+276           SpatialEpi   0
+277         SpatialTools   0
+278          spBayesSurv   1
+279          StereoMorph   0
+280              StMoSim   0
+281             stochvol   0
+282               stosim   0
+283                strum   1
+284 survAccuracyMeasures   0
+285         surveillance   0
+286              survSNP   0
+287               synlik   0
+288             tagcloud   0
+289                  TAM   0
+290                tbart   1
+291                  tcR   0
+292                  TED   0
+293             termstrc   0
+294              textreg   1
+295            TFMPvalue   0
+296                timma   0
+297             treeclim   0
+298           trustOptim   0
+299                  tvd   0
+300             unmarked   0
+301             urltools   0
+302                   V8   1
+303      VideoComparison   0
+304                  VIM   0
+305              waffect   0
+306            wordcloud   0
+307                 wsrf   1
+308                 XBRL   0
+309                  zic   0
+Ended at  2014-12-13 04:01:45 
