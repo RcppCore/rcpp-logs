@@ -1,0 +1,21 @@
+diff -ru spBayesSurv.orig/src/spSurv_indeptCoxph.cpp spBayesSurv/src/spSurv_indeptCoxph.cpp
+--- spBayesSurv.orig/src/spSurv_indeptCoxph.cpp	2014-10-24 18:27:19.000000000 -0500
++++ spBayesSurv/src/spSurv_indeptCoxph.cpp	2014-12-13 15:54:28.767276124 -0600
+@@ -58,7 +58,7 @@
+   int rejbeta = 0;
+ 
+   // Make arma objects
+-  arma::mat X(Xr.begin(), p, n, false);
++  arma::mat X(const_cast<NumericMatrix&>(Xr).begin(), p, n, false);
+   arma::vec beta(beta_r.begin(), p, false);
+   
+   // things to save;
+@@ -210,7 +210,7 @@
+   int rejbeta = 0;
+ 
+   // Make arma objects
+-  arma::mat X(Xr.begin(), p, n, false);
++  arma::mat X(const_cast<NumericMatrix&>(Xr).begin(), p, n, false);
+   arma::vec beta(beta_r.begin(), p, false);
+   
+   // things to save;

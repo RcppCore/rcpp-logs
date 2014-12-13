@@ -1,0 +1,12 @@
+diff -ru climdex.pcic.orig/src/zhang_running_quantile.cc climdex.pcic/src/zhang_running_quantile.cc
+--- climdex.pcic.orig/src/zhang_running_quantile.cc	2014-11-18 16:00:59.000000000 -0600
++++ climdex.pcic/src/zhang_running_quantile.cc	2014-12-13 15:52:11.171280149 -0600
+@@ -188,7 +188,7 @@
+   NumericVector res(nq);
+   
+   for(int i = 0; i < nq; ++i)
+-    res[i] = c_quantile(data.begin(), n, q[i]);
++    res[i] = c_quantile(const_cast<NumericVector&>(data).begin(), n, q[i]);
+   
+   return res;
+ }
