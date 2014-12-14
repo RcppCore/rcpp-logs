@@ -88,6 +88,7 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
 
 res <- do.call(rbind, lres)
 print(res)
+print(table(res[,"res"]))
 write.table(res, file=paste("result-", strftime(Sys.time(), "%Y%m%d-%H%M%S"), ".txt", sep=""), sep=",")
 save(res, file=paste("result-", strftime(Sys.time(), "%Y%m%d-%H%M%S"), ".RData", sep=""))
 cat("Ended at ", format(Sys.time()), "\n")
