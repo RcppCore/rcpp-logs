@@ -135,7 +135,7 @@ cat("Bad          ", bad, "\n")
 #cat("  BioCDep    ", length(bad4BioCdep), "\n")
 cat("  NotRcpp    ", bad4notrcpp, "\n")
 cat("Skipped      ", skipped, "\n")
-cat("Total        ", good + bad, "\n")
+cat("Total        ", good + bad - length(goodAfterPatch), "\n")
 #cat("Bad Percent  ", badrcpp / (good + bad), "\n")
 cat("Bad Percent  ", badremain / (good + bad), "\n")
 

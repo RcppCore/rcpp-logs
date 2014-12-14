@@ -12,8 +12,9 @@ Good          299
 Bad           17 
   NotRcpp     10 
 Skipped       0 
-Total         316 
+Total         310 
 Bad Percent   0.0221519 
+edd@max:~/git/rcpp-logs/results(master)$ 
 edd@max:~/git/rcpp-logs/results(master)$ 
 ```
 
