@@ -1,0 +1,14 @@
+diff -ru strum.orig/src/computeLLDeriv.cpp strum/src/computeLLDeriv.cpp
+--- strum.orig/src/computeLLDeriv.cpp	2014-12-10 10:31:58.000000000 -0600
++++ strum/src/computeLLDeriv.cpp	2014-12-14 13:11:53.802683736 -0600
+@@ -3,8 +3,8 @@
+ void process_rk(const NumericVector& yk, const NumericMatrix& xk,
+                 const mat& ba, mat& rka, int t)
+ {
+-  mat yka(yk.begin(), xk.rows(), 1, false);
+-  mat xka(xk.begin(), xk.rows(), ba.n_rows, false);
++  mat yka(const_cast<NumericVector&>(yk).begin(), xk.rows(), 1, false);
++  mat xka(const_cast<NumericMatrix&>(xk).begin(), xk.rows(), ba.n_rows, false);
+ 
+   rka = yka - (xka * ba.col(t));
+ 
