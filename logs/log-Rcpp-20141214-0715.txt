@@ -1,0 +1,2043 @@
+Started at  2014-12-14 07:15:16 
+Rcpp version is  0.11.3.3 
+  [1] "accelerometry"        "AdaptiveSparsity"     "algstat"             
+  [4] "ALKr"                 "Amelia"               "apcluster"           
+  [7] "ASPBay"               "BalancedSampling"     "BayesComm"           
+ [10] "BayesFactor"          "bayou"                "bcp"                 
+ [13] "bcpa"                 "bfa"                  "bfp"                 
+ [16] "bifactorial"          "BIFIEsurvey"          "BIPOD"               
+ [19] "blockcluster"         "btf"                  "bvarsv"              
+ [22] "CARBayes"             "CARBayesST"           "ccaPP"               
+ [25] "cda"                  "CDM"                  "cgAUC"               
+ [28] "CIDnetworks"          "cladoRcpp"            "classify"            
+ [31] "clere"                "climdex.pcic"         "clogitL1"            
+ [34] "clusteval"            "ClustVarLV"           "CMF"                 
+ [37] "CompGLM"              "ConConPiWiFun"        "coneproj"            
+ [40] "copCAR"               "CorReg"               "cqrReg"              
+ [43] "Crossover"            "dbmss"                "Delaporte"           
+ [46] "dendextendRcpp"       "DepthProc"            "DetMCD"              
+ [49] "dfcomb"               "dfmta"                "dils"                
+ [52] "disclapmix"           "diversitree"          "diveRsity"           
+ [55] "DNAprofiles"          "DNAtools"             "dplyr"               
+ [58] "dslice"               "DStree"               "ecp"                 
+ [61] "eive"                 "EpiContactTrace"      "ESGtoolkit"          
+ [64] "EWGoF"                "fastGHQuad"           "FastHCS"             
+ [67] "fastM"                "FastPCS"              "FastRCS"             
+ [70] "FBFsearch"            "fdaMixed"             "FDGcopulas"          
+ [73] "FDRreg"               "fICA"                 "FisHiCal"            
+ [76] "flip"                 "FLSSS"                "forecast"            
+ [79] "fugeR"                "Funclustering"        "fwsim"               
+ [82] "GCPM"                 "geiger"               "gemmR"               
+ [85] "GeneticTools"         "GENLIB"               "geoCount"            
+ [88] "glcm"                 "GMCM"                 "gMWT"                
+ [91] "GPvam"                "gRbase"               "gRim"                
+ [94] "growcurves"           "growfunctions"        "GSE"                 
+ [97] "GUILDS"               "GUTS"                 "GxM"                 
+[100] "hawkes"               "HDPenReg"             "HLMdiag"             
+[103] "hsphase"              "httpuv"               "HUM"                 
+[106] "hypervolume"          "iBATCGH"              "IBHM"                
+[109] "icamix"               "iccbeta"              "icensmis"            
+[112] "inarmix"              "IsingSampler"         "iterpc"              
+[115] "jaatha"               "JAGUAR"               "jiebaR"              
+[118] "KernSmoothIRT"        "kmc"                  "Kmisc"               
+[121] "LaF"                  "lbfgs"                "lm.br"               
+[124] "lme4"                 "lpme"                 "lsgl"                
+[127] "marked"               "MAT"                  "matchingMarkets"     
+[130] "maxent"               "mcIRT"                "metafolio"           
+[133] "mets"                 "mice"                 "miceadds"            
+[136] "minqa"                "mirt"                 "miscF"               
+[139] "miscset"              "mkde"                 "mmand"               
+[142] "Morpho"               "mp"                   "Mposterior"          
+[145] "MPTinR"               "msgl"                 "MTS"                 
+[148] "mvabund"              "MVB"                  "mvnfast"             
+[151] "mwaved"               "myTAI"                "nabor"               
+[154] "ndl"                  "NetSim"               "ngspatial"           
+[157] "NHMM"                 "NPBayesImpute"        "oem"                 
+[160] "OneArmPhaseTwoStudy"  "openair"              "openxlsx"            
+[163] "orQA"                 "pander"               "PBC"                 
+[166] "pcalg"                "PedCNV"               "pedometrics"         
+[169] "PerMallows"           "phom"                 "phylobase"           
+[172] "planar"               "plotSEMM"             "plyr"                
+[175] "polywog"              "PoweR"                "powerr"              
+[178] "PP"                   "PReMiuM"              "pROC"                
+[181] "propagate"            "prospectr"            "protViz"             
+[184] "pryr"                 "psgp"                 "pvar"                
+[187] "QRM"                  "quadrupen"            "quantspec"           
+[190] "qVarSel"              "randomUniformForest"  "Rankcluster"         
+[193] "rARPACK"              "Rclusterpp"           "RcppAnnoy"           
+[196] "RcppArmadillo"        "RcppBDT"              "rcppbugs"            
+[199] "RcppClassic"          "RcppClassicExamples"  "RcppCNPy"            
+[202] "RcppDE"               "RcppEigen"            "RcppExamples"        
+[205] "RcppGSL"              "RcppMLPACK"           "RcppOctave"          
+[208] "RcppProgress"         "RcppRedis"            "RcppRoll"            
+[211] "RcppSMC"              "RcppXts"              "RcppZiggurat"        
+[214] "RealVAMS"             "recosystem"           "remote"              
+[217] "ReorderCluster"       "repra"                "resemble"            
+[220] "reshape2"             "revealedPrefs"        "rexpokit"            
+[223] "rforensicbatwing"     "rgam"                 "RInside"             
+[226] "ripa"                 "rkvo"                 "rlme"                
+[229] "RLRsim"               "Rmalschains"          "rmgarch"             
+[232] "Rmixmod"              "RmixmodCombi"         "rncl"                
+[235] "robustgam"            "robustHD"             "robustreg"           
+[238] "rococo"               "rotations"            "roxygen2"            
+[241] "rpf"                  "rpg"                  "rplexos"             
+[244] "rPref"                "RProtoBuf"            "RQuantLib"           
+[247] "RSNNS"                "RSofia"               "Rsomoclu"            
+[250] "rtkpp"                "Rtsne"                "Ruchardet"           
+[253] "rugarch"              "Rvcg"                 "RVowpalWabbit"       
+[256] "SBSA"                 "scrm"                 "scrypt"              
+[259] "sdcMicro"             "sdcTable"             "segmag"              
+[262] "SelvarMix"            "sequences"            "sglOptim"            
+[265] "simFrame"             "simPop"               "sirt"                
+[268] "slfm"                 "snipEM"               "snplist"             
+[271] "SocialNetworks"       "SOD"                  "spacodiR"            
+[274] "spaMM"                "sparseHessianFD"      "sparseLTSEigen"      
+[277] "SpatialEpi"           "SpatialTools"         "spBayesSurv"         
+[280] "StereoMorph"          "StMoSim"              "stochvol"            
+[283] "stosim"               "strum"                "survAccuracyMeasures"
+[286] "surveillance"         "survSNP"              "synlik"              
+[289] "tagcloud"             "TAM"                  "tbart"               
+[292] "tcR"                  "TED"                  "termstrc"            
+[295] "textreg"              "TFMPvalue"            "timma"               
+[298] "treeclim"             "trustOptim"           "tvd"                 
+[301] "unmarked"             "urltools"             "V8"                  
+[304] "VideoComparison"      "VIM"                  "waffect"             
+[307] "wordcloud"            "wsrf"                 "XBRL"                
+[310] "zic"                 
+
+
+RESULT for accelerometry_2.2.4.tar.gz : success 
+
+
+
+
+RESULT for AdaptiveSparsity_1.4.tar.gz : success 
+
+
+
+
+RESULT for algstat_0.0.2.tar.gz : success 
+
+
+
+
+RESULT for ALKr_0.5.3.1.tar.gz : success 
+
+
+
+
+RESULT for Amelia_1.7.3.tar.gz : success 
+
+
+
+
+RESULT for apcluster_1.4.1.tar.gz : success 
+
+
+
+
+RESULT for ASPBay_1.1.tar.gz : success 
+
+
+
+
+RESULT for BalancedSampling_1.4.tar.gz : success 
+
+
+
+
+RESULT for BayesComm_0.1-0.tar.gz : success 
+
+
+
+
+RESULT for BayesFactor_0.9.9.tar.gz : success 
+
+
+
+
+RESULT for bayou_1.0.1.tar.gz : success 
+
+
+
+
+RESULT for bcp_3.0.1.tar.gz : success 
+
+
+
+
+RESULT for bcpa_1.1.tar.gz : success 
+
+
+
+
+RESULT for bfa_0.3.1.tar.gz : success 
+
+
+
+
+RESULT for bfp_0.0-27.tar.gz : success 
+
+
+
+
+RESULT for bifactorial_1.4.7.tar.gz : success 
+
+
+
+
+RESULT for BIFIEsurvey_1.1.tar.gz : success 
+
+
+
+
+RESULT for BIPOD_0.2.1.tar.gz : success 
+
+
+
+
+RESULT for blockcluster_3.0.1.tar.gz : success 
+
+
+
+
+RESULT for btf_1.1.tar.gz : success 
+
+
+
+
+RESULT for bvarsv_1.0.tar.gz : success 
+
+
+
+
+RESULT for CARBayes_3.0.tar.gz : success 
+
+
+
+
+RESULT for CARBayesST_1.1.tar.gz : success 
+
+
+
+
+RESULT for ccaPP_0.3.0.tar.gz : success 
+
+
+
+
+RESULT for cda_1.5.1.tar.gz : success 
+
+
+
+
+RESULT for CDM_4.0.tar.gz : success 
+
+
+
+
+RESULT for cgAUC_1.2.1.tar.gz : success 
+
+
+
+
+RESULT for CIDnetworks_0.6.0.tar.gz : success 
+
+
+
+
+RESULT for cladoRcpp_0.14.4.tar.gz : success 
+
+
+
+
+RESULT for classify_1.3.tar.gz : success 
+
+
+
+
+RESULT for clere_1.1.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG     `/usr/lib/R/bin/Rscript -e "Rcpp:::CxxFlags()"` -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c zhang_running_quantile.cc -o zhang_running_quantile.o
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for climdex.pcic_1.1-4.tar.gz : failure 
+
+
+
+
+RESULT for clogitL1_1.4.tar.gz : success 
+
+
+
+
+RESULT for clusteval_0.1.tar.gz : success 
+
+
+
+
+RESULT for ClustVarLV_1.3.1.tar.gz : success 
+
+
+
+
+RESULT for CMF_1.0.tar.gz : success 
+
+
+
+
+RESULT for CompGLM_1.0.tar.gz : success 
+
+
+
+
+RESULT for ConConPiWiFun_0.4.4.tar.gz : success 
+
+
+
+
+RESULT for coneproj_1.5.tar.gz : success 
+
+
+
+
+RESULT for copCAR_1.0.tar.gz : success 
+
+
+
+
+RESULT for CorReg_0.15.8.tar.gz : success 
+
+
+Configuring for a UNIX-alike platform (sub-architecture: "")
+Found package 'Matrix' version 1.1.4
+*** No variable 'PKG_MOSEKHOME' in environment - see configure-vars (configure.vars) argument ***
+*** No variable 'PKG_MOSEKHOME' in ./src/setup/Localsys.txt file ***
+*** Shell command 'mosek' was not recognized - please validate your installation of MOSEK ***
+***   >> PATH = /home/edd/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games  ***
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for cqrReg_1.0.tar.gz : failure 
+
+
+
+
+RESULT for Crossover_0.1-13.tar.gz : success 
+
+
+
+
+RESULT for dbmss_2.1.2.tar.gz : success 
+
+
+
+
+RESULT for Delaporte_2.2-2.tar.gz : success 
+
+
+
+
+RESULT for dendextendRcpp_0.5.1.tar.gz : success 
+
+
+
+
+RESULT for DepthProc_1.0.3.tar.gz : success 
+
+
+
+
+RESULT for DetMCD_0.0.1.tar.gz : success 
+
+
+
+
+RESULT for dfcomb_1.0-1.tar.gz : success 
+
+
+
+
+RESULT for dfmta_1.0-3.tar.gz : success 
+
+
+
+
+RESULT for dils_0.8.1.tar.gz : success 
+
+
+
+
+RESULT for disclapmix_1.5.tar.gz : success 
+
+
+
+
+RESULT for diversitree_0.9-7.tar.gz : success 
+
+
+
+
+RESULT for diveRsity_1.9.5.tar.gz : success 
+
+
+
+
+RESULT for DNAprofiles_0.2.tar.gz : success 
+
+
+
+
+RESULT for DNAtools_0.1-21.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG -I../inst/include -DCOMPILING_DPLYR  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for dplyr_0.3.0.2.tar.gz : failure 
+
+
+
+
+RESULT for dslice_1.1.4.tar.gz : success 
+
+
+
+
+RESULT for DStree_1.0.tar.gz : success 
+
+
+
+
+RESULT for ecp_1.6.0.tar.gz : success 
+
+
+
+
+RESULT for eive_2.1.tar.gz : success 
+
+
+
+
+RESULT for EpiContactTrace_0.8.8.tar.gz : success 
+
+
+
+
+RESULT for ESGtoolkit_0.1.tar.gz : success 
+
+
+
+
+RESULT for EWGoF_2.0.tar.gz : success 
+
+
+
+
+RESULT for fastGHQuad_0.2.tar.gz : success 
+
+
+
+
+RESULT for FastHCS_0.0.3.tar.gz : success 
+
+
+
+
+RESULT for fastM_0.0-2.tar.gz : success 
+
+
+
+
+RESULT for FastPCS_0.1.1.tar.gz : success 
+
+
+
+
+RESULT for FastRCS_0.0.5.tar.gz : success 
+
+
+
+
+RESULT for FBFsearch_1.0.tar.gz : success 
+
+
+
+
+RESULT for fdaMixed_0.4.tar.gz : success 
+
+
+
+
+RESULT for FDGcopulas_1.0.tar.gz : success 
+
+
+
+
+RESULT for FDRreg_0.1.tar.gz : success 
+
+
+
+
+RESULT for fICA_1.0-2.tar.gz : success 
+
+
+
+
+RESULT for FisHiCal_1.1.tar.gz : failure 
+
+
+
+
+RESULT for flip_2.4.3.tar.gz : success 
+
+
+
+
+RESULT for FLSSS_3.1.tar.gz : success 
+
+
+
+
+RESULT for forecast_5.6.tar.gz : success 
+
+
+
+
+RESULT for fugeR_0.1.2.tar.gz : success 
+
+
+
+
+RESULT for Funclustering_1.0.1.tar.gz : success 
+
+
+
+
+RESULT for fwsim_0.3.2.tar.gz : success 
+
+
+
+
+RESULT for GCPM_1.1.1.tar.gz : success 
+
+
+
+
+RESULT for geiger_2.0.3.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c kt_gemmR.cpp -o kt_gemmR.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c new_ga.cpp -o new_ga.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o gemmR.so RcppExports.o kt_gemmR.o new_ga.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for gemmR_1.3-2.tar.gz : success 
+
+
+
+
+RESULT for GeneticTools_0.3.tar.gz : success 
+
+
+
+
+RESULT for GENLIB_1.0.2.tar.gz : success 
+
+
+
+
+RESULT for geoCount_1.131209.tar.gz : success 
+
+
+
+
+RESULT for glcm_1.0.tar.gz : success 
+
+
+
+
+RESULT for GMCM_1.1.1.tar.gz : success 
+
+
+
+
+RESULT for gMWT_0.9.tar.gz : success 
+
+
+
+
+RESULT for GPvam_3.0-2.tar.gz : success 
+
+
+
+
+RESULT for gRbase_1.7-0.1.tar.gz : success 
+
+
+
+
+RESULT for gRim_0.1-17.tar.gz : success 
+
+
+
+
+RESULT for growcurves_0.2.3.9.tar.gz : success 
+
+
+
+
+RESULT for growfunctions_0.11.tar.gz : success 
+
+
+
+
+RESULT for GSE_3.1.tar.gz : success 
+
+
+
+
+RESULT for GUILDS_1.2.tar.gz : success 
+
+
+
+
+RESULT for GUTS_0.3.5.tar.gz : success 
+
+
+
+
+RESULT for GxM_1.1.tar.gz : success 
+
+
+
+
+RESULT for hawkes_0.0-4.tar.gz : success 
+
+
+
+
+RESULT for HDPenReg_0.90.tar.gz : success 
+
+
+
+
+RESULT for HLMdiag_0.2.5.tar.gz : success 
+
+
+
+
+RESULT for hsphase_2.0.0.tar.gz : success 
+
+
+
+
+RESULT for httpuv_1.3.2.tar.gz : success 
+
+
+
+
+RESULT for HUM_1.0.tar.gz : failure 
+
+
+
+
+RESULT for hypervolume_1.1.tar.gz : success 
+
+
+
+
+RESULT for iBATCGH_1.1.tar.gz : success 
+
+
+
+
+RESULT for IBHM_1.1-11.tar.gz : success 
+
+
+
+
+RESULT for icamix_1.0.1.tar.gz : success 
+
+
+
+
+RESULT for iccbeta_1.0.tar.gz : success 
+
+
+
+
+RESULT for icensmis_1.2.1.tar.gz : success 
+
+
+
+
+RESULT for inarmix_0.4.tar.gz : success 
+
+
+
+
+RESULT for IsingSampler_0.1.1.tar.gz : success 
+
+
+
+
+RESULT for iterpc_0.2.6.tar.gz : success 
+
+
+
+
+RESULT for jaatha_2.7.0.tar.gz : success 
+
+
+
+
+RESULT for JAGUAR_1.1.tar.gz : success 
+
+
+
+
+RESULT for jiebaR_0.3.tar.gz : success 
+
+
+
+
+RESULT for KernSmoothIRT_6.1.tar.gz : failure 
+
+
+
+
+RESULT for kmc_0.1-2.tar.gz : success 
+
+
+
+
+RESULT for Kmisc_0.5.0.tar.gz : success 
+
+
+
+
+RESULT for LaF_0.6.1.tar.gz : success 
+
+
+
+
+RESULT for lbfgs_1.2.1.tar.gz : success 
+
+
+
+
+RESULT for lm.br_2.6.tar.gz : success 
+
+
+
+
+RESULT for lme4_1.1-7.tar.gz : failure 
+
+
+
+
+RESULT for lpme_1.0.0.tar.gz : failure 
+
+
+
+
+RESULT for lsgl_1.0.123.1.tar.gz : success 
+
+
+
+
+RESULT for marked_1.1.6.tar.gz : success 
+
+
+
+
+RESULT for MAT_2.2.tar.gz : success 
+
+
+
+
+RESULT for matchingMarkets_0.1-2.tar.gz : success 
+
+
+
+
+RESULT for maxent_1.3.3.1.tar.gz : success 
+
+
+
+
+RESULT for mcIRT_0.41.tar.gz : success 
+
+
+
+
+RESULT for metafolio_0.1.0.tar.gz : success 
+
+
+
+
+RESULT for mets_1.0.tar.gz : success 
+
+
+
+
+RESULT for mice_2.22.tar.gz : success 
+
+
+
+
+RESULT for miceadds_1.0.tar.gz : success 
+
+
+
+
+RESULT for minqa_1.2.4.tar.gz : success 
+
+
+
+
+RESULT for mirt_1.6.1.tar.gz : success 
+
+
+
+
+RESULT for miscF_0.1-2.tar.gz : success 
+
+
+
+
+RESULT for miscset_0.4.tar.gz : success 
+
+
+
+
+RESULT for mkde_0.1.tar.gz : success 
+
+
+
+
+RESULT for mmand_1.1.0.tar.gz : success 
+
+
+
+
+RESULT for Morpho_2.1.tar.gz : success 
+
+
+
+
+RESULT for mp_0.2.0.tar.gz : success 
+
+
+
+
+RESULT for Mposterior_0.1.2.tar.gz : success 
+
+
+
+
+RESULT for MPTinR_1.6.3.tar.gz : success 
+
+
+
+
+RESULT for msgl_2.0.125.1.tar.gz : failure 
+
+
+
+
+RESULT for MTS_0.32.tar.gz : success 
+
+
+
+
+RESULT for mvabund_3.9.3.tar.gz : success 
+
+
+
+
+RESULT for MVB_1.1.tar.gz : success 
+
+
+
+
+RESULT for mvnfast_0.1.3.tar.gz : success 
+
+
+
+
+RESULT for mwaved_1.1.0.tar.gz : success 
+
+
+
+
+RESULT for myTAI_0.0.1.tar.gz : success 
+
+
+
+
+RESULT for nabor_0.4.3.tar.gz : success 
+
+
+
+
+RESULT for ndl_0.2.16.tar.gz : success 
+
+
+
+
+RESULT for NetSim_0.9.tar.gz : success 
+
+
+
+
+RESULT for ngspatial_1.0-4.tar.gz : success 
+
+
+
+
+RESULT for NHMM_3.5.tar.gz : success 
+
+
+
+
+RESULT for NPBayesImpute_0.4.tar.gz : success 
+
+
+
+
+RESULT for oem_1.02.1.tar.gz : success 
+
+
+
+
+RESULT for OneArmPhaseTwoStudy_0.1.tar.gz : success 
+
+
+
+
+RESULT for openair_1.0.tar.gz : success 
+
+
+
+
+RESULT for openxlsx_2.2.1.tar.gz : success 
+
+
+
+
+RESULT for orQA_0.2.1.tar.gz : success 
+
+
+
+
+RESULT for pander_0.5.1.tar.gz : success 
+
+
+
+
+RESULT for PBC_1.2.tar.gz : success 
+
+
+
+
+RESULT for pcalg_2.0-3.tar.gz : success 
+
+
+
+
+RESULT for PedCNV_0.1.tar.gz : success 
+
+
+
+
+RESULT for pedometrics_0.4-1.tar.gz : success 
+
+
+
+
+RESULT for PerMallows_1.7.tar.gz : success 
+
+
+
+
+RESULT for phom_1.0.3.tar.gz : success 
+
+
+
+
+RESULT for phylobase_0.6.8.tar.gz : success 
+
+
+
+
+RESULT for planar_1.5.2.tar.gz : success 
+
+
+
+
+RESULT for plotSEMM_2.0.tar.gz : success 
+
+
+
+
+RESULT for plyr_1.8.1.tar.gz : success 
+
+
+
+
+RESULT for polywog_0.4-0.tar.gz : success 
+
+
+
+
+RESULT for PoweR_1.0.4.tar.gz : success 
+
+
+
+
+RESULT for powerr_0.1-3.tar.gz : success 
+
+
+
+
+RESULT for PP_0.5.3.tar.gz : success 
+
+
+
+
+RESULT for PReMiuM_3.0.30.tar.gz : success 
+
+
+
+
+RESULT for pROC_1.7.3.tar.gz : success 
+
+
+
+
+RESULT for propagate_1.0-4.tar.gz : success 
+
+
+
+
+RESULT for prospectr_0.1.3.tar.gz : success 
+
+
+
+
+RESULT for protViz_0.2.9.tar.gz : success 
+
+
+
+
+RESULT for pryr_0.1.tar.gz : success 
+
+
+
+
+RESULT for psgp_0.3-6.tar.gz : success 
+
+
+
+
+RESULT for pvar_2.0.tar.gz : success 
+
+
+
+
+RESULT for QRM_0.4-10.tar.gz : success 
+
+
+
+
+RESULT for quadrupen_0.2-4.tar.gz : success 
+
+
+
+
+RESULT for quantspec_1.0-2.tar.gz : success 
+
+
+
+
+RESULT for qVarSel_1.0.tar.gz : success 
+
+
+
+
+RESULT for randomUniformForest_1.1.1.tar.gz : failure 
+
+
+
+
+RESULT for Rankcluster_0.92.9.tar.gz : success 
+
+
+
+
+RESULT for rARPACK_0.7-0.tar.gz : failure 
+
+
+
+
+RESULT for Rclusterpp_0.2.3.tar.gz : success 
+
+
+
+
+RESULT for RcppAnnoy_0.0.4.tar.gz : success 
+
+
+
+
+RESULT for RcppArmadillo_0.4.550.1.0.tar.gz : success 
+
+
+
+
+RESULT for RcppBDT_0.2.3.tar.gz : success 
+
+
+
+
+RESULT for rcppbugs_0.1.4.1.tar.gz : success 
+
+
+
+
+RESULT for RcppClassic_0.9.5.tar.gz : success 
+
+
+
+
+RESULT for RcppClassicExamples_0.1.1.tar.gz : success 
+
+
+
+
+RESULT for RcppCNPy_0.2.3.tar.gz : failure 
+
+
+
+
+RESULT for RcppDE_0.1.2.tar.gz : success 
+
+
+
+
+RESULT for RcppEigen_0.3.2.2.0.tar.gz : success 
+
+
+
+
+RESULT for RcppExamples_0.1.6.tar.gz : success 
+
+
+
+
+RESULT for RcppGSL_0.2.2.tar.gz : success 
+
+
+
+
+RESULT for RcppMLPACK_1.0.9-3.tar.gz : success 
+
+
+
+
+RESULT for RcppOctave_0.14.5.tar.gz : success 
+
+
+
+
+RESULT for RcppProgress_0.1.tar.gz : success 
+
+
+
+
+RESULT for RcppRedis_0.1.3.tar.gz : success 
+
+
+
+
+RESULT for RcppRoll_0.1.0.tar.gz : success 
+
+
+
+
+RESULT for RcppSMC_0.1.4.tar.gz : success 
+
+
+
+
+RESULT for RcppXts_0.0.4.tar.gz : success 
+
+
+
+
+RESULT for RcppZiggurat_0.1.2.tar.gz : success 
+
+
+
+
+RESULT for RealVAMS_0.3-1.tar.gz : success 
+
+
+
+
+RESULT for recosystem_0.2.4.tar.gz : success 
+
+
+
+
+RESULT for remote_0.3.0.tar.gz : success 
+
+
+
+
+RESULT for ReorderCluster_1.0.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c convolution.cpp -o convolution.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o repra.so RcppExports.o convolution.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for repra_0.4.2.tar.gz : success 
+
+
+
+
+RESULT for resemble_1.1.1.tar.gz : success 
+
+
+
+
+RESULT for reshape2_1.4.1.tar.gz : success 
+
+
+
+
+RESULT for revealedPrefs_0.2.tar.gz : success 
+
+
+
+
+RESULT for rexpokit_0.24.1.tar.gz : success 
+
+
+
+
+RESULT for rforensicbatwing_1.3.tar.gz : success 
+
+
+
+
+RESULT for rgam_0.6.3.tar.gz : success 
+
+
+
+
+RESULT for RInside_0.2.11.tar.gz : success 
+
+
+
+
+RESULT for ripa_2.0-2.tar.gz : success 
+
+
+
+
+RESULT for rkvo_0.1.tar.gz : success 
+
+
+
+
+RESULT for rlme_0.4.tar.gz : success 
+
+
+
+
+RESULT for RLRsim_3.0.tar.gz : success 
+
+
+
+
+RESULT for Rmalschains_0.2-2.tar.gz : success 
+
+
+
+
+RESULT for rmgarch_1.2-8.tar.gz : success 
+
+
+
+
+RESULT for Rmixmod_2.0.2.tar.gz : success 
+
+
+
+
+RESULT for RmixmodCombi_1.0.tar.gz : success 
+
+
+
+
+RESULT for rncl_0.2.0.tar.gz : success 
+
+
+
+
+RESULT for robustgam_0.1.7.tar.gz : success 
+
+
+
+
+RESULT for robustHD_0.5.0.tar.gz : success 
+
+
+
+
+RESULT for robustreg_0.1-7.tar.gz : success 
+
+
+
+
+RESULT for rococo_1.1.2.tar.gz : success 
+
+
+
+
+RESULT for rotations_1.2.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c isComplete.cpp -o isComplete.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c leadingSpaces.cpp -o leadingSpaces.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c parser.cpp -o parser.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c wrapString.cpp -o wrapString.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o roxygen2.so RcppExports.o isComplete.o leadingSpaces.o parser.o wrapString.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for roxygen2_4.1.0.tar.gz : success 
+
+
+
+
+RESULT for rpf_0.44.tar.gz : success 
+
+
+
+
+RESULT for rpg_1.2.tar.gz : success 
+
+
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c expand_tkey.cpp -o expand_tkey.o
+ccache g++-4.8 -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c process_xml.cpp -o process_xml.o
+ccache g++-4.8 -std=c++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o rplexos.so RcppExports.o expand_tkey.o process_xml.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for rplexos_0.10.0.1.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppParallel/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppParallel/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c bnl.cpp -o bnl.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppParallel/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c hasse.cpp -o hasse.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppParallel/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c pref-classes.cpp -o pref-classes.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppParallel/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c psel-par-top.cpp -o psel-par-top.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppParallel/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c psel-par.cpp -o psel-par.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppParallel/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c scalagon.cpp -o scalagon.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o rPref.so RcppExports.o bnl.o hasse.o pref-classes.o psel-par-top.o psel-par.o scalagon.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for rPref_0.3.tar.gz : success 
+
+
+
+
+RESULT for RProtoBuf_0.4.2.tar.gz : success 
+
+
+
+
+RESULT for RQuantLib_0.4.0.tar.gz : success 
+
+
+
+
+RESULT for RSNNS_0.4-5.tar.gz : success 
+
+
+
+
+RESULT for RSofia_1.1.tar.gz : success 
+
+
+
+
+RESULT for Rsomoclu_1.4.1.tar.gz : success 
+
+
+
+
+RESULT for rtkpp_0.8.4.tar.gz : success 
+
+
+
+
+RESULT for Rtsne_0.9.tar.gz : success 
+
+
+
+
+RESULT for Ruchardet_0.0-3.tar.gz : success 
+
+
+
+
+RESULT for rugarch_1.3-4.tar.gz : success 
+
+
+
+
+RESULT for Rvcg_0.9.tar.gz : success 
+
+
+
+
+RESULT for RVowpalWabbit_0.0.6.tar.gz : success 
+
+
+
+
+RESULT for SBSA_0.2.3.tar.gz : success 
+
+
+
+
+RESULT for scrm_1.3-3.tar.gz : success 
+
+
+
+
+RESULT for scrypt_0.1.0.tar.gz : success 
+
+
+
+
+RESULT for sdcMicro_4.4.0.tar.gz : success 
+
+
+
+
+RESULT for sdcTable_0.17.1.tar.gz : success 
+
+
+
+
+RESULT for segmag_1.2.2.tar.gz : success 
+
+
+
+
+RESULT for SelvarMix_1.0.tar.gz : success 
+
+
+
+
+RESULT for sequences_0.5.9.tar.gz : success 
+
+
+
+
+RESULT for sglOptim_1.0.122.1.tar.gz : success 
+
+
+
+
+RESULT for simFrame_0.5.3.tar.gz : success 
+
+
+
+
+RESULT for simPop_0.2.6.tar.gz : success 
+
+
+
+
+RESULT for sirt_1.2.tar.gz : success 
+
+
+
+
+RESULT for slfm_0.1.tar.gz : success 
+
+
+
+
+RESULT for snipEM_1.0.tar.gz : success 
+
+
+
+
+RESULT for snplist_0.13.tar.gz : success 
+
+
+
+
+RESULT for SocialNetworks_1.1.tar.gz : success 
+
+
+
+
+RESULT for SOD_1.0.tar.gz : success 
+
+
+
+
+RESULT for spacodiR_0.13.0115.tar.gz : success 
+
+
+
+
+RESULT for spaMM_1.4.1.tar.gz : success 
+
+
+
+
+RESULT for sparseHessianFD_0.1.1.tar.gz : success 
+
+
+
+
+RESULT for sparseLTSEigen_0.2.0.tar.gz : success 
+
+
+
+
+RESULT for SpatialEpi_1.2.1.tar.gz : success 
+
+
+
+
+RESULT for SpatialTools_0.5.8.tar.gz : success 
+
+
+
+
+RESULT for spBayesSurv_1.0.1.tar.gz : failure 
+
+
+
+
+RESULT for StereoMorph_1.2.1.tar.gz : success 
+
+
+
+
+RESULT for StMoSim_3.0.tar.gz : success 
+
+
+
+
+RESULT for stochvol_0.9-0.tar.gz : success 
+
+
+
+
+RESULT for stosim_0.0.12.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"  -I../inst/include -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c computeInterval.cpp -o computeInterval.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"  -I../inst/include -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c computeLLDeriv.cpp -o computeLLDeriv.o
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for strum_0.5.tar.gz : failure 
+
+
+
+
+RESULT for survAccuracyMeasures_1.2.tar.gz : success 
+
+
+
+
+RESULT for surveillance_1.8-1.tar.gz : success 
+
+
+
+
+RESULT for survSNP_0.21-7.tar.gz : success 
+
+
+
+
+RESULT for synlik_0.1.1.tar.gz : success 
+
+
+
+
+RESULT for tagcloud_0.5.tar.gz : success 
+
+
+
+
+RESULT for TAM_1.2.tar.gz : success 
+
+
+
+
+RESULT for tbart_0.9.1.tar.gz : failure 
+
+
+
+
+RESULT for tcR_1.0.tar.gz : success 
+
+
+
+
+RESULT for TED_1.1.1.tar.gz : success 
+
+
+
+
+RESULT for termstrc_1.3.7.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c textreg.cpp -o textreg.o
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for textreg_0.1.tar.gz : failure 
+
+
+
+
+RESULT for TFMPvalue_0.0.5.tar.gz : success 
+
+
+
+
+RESULT for timma_0.99.0.tar.gz : success 
+
+
+
+
+RESULT for treeclim_1.0.7.tar.gz : success 
+
+
+
+
+RESULT for trustOptim_0.8.4.1.tar.gz : success 
+
+
+
+
+RESULT for tvd_0.1.0.tar.gz : success 
+
+
+
+
+RESULT for unmarked_0.10-4.tar.gz : success 
+
+
+
+
+RESULT for urltools_0.5.tar.gz : success 
+
+
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++-4.8 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c V8.cpp -o V8.o
+g++-4.8 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o V8.so RcppExports.o V8.o -lv8 -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+
+RESULT for V8_0.1.tar.gz : success 
+
+
+
+
+RESULT for VideoComparison_0.11.tar.gz : success 
+
+
+
+
+RESULT for VIM_4.1.0.tar.gz : success 
+
+
+
+
+RESULT for waffect_1.2.tar.gz : success 
+
+
+
+
+RESULT for wordcloud_2.5.tar.gz : success 
+
+
+
+
+RESULT for wsrf_1.4.0.tar.gz : failure 
+
+
+
+
+RESULT for XBRL_0.99.13.tar.gz : success 
+
+
+
+
+RESULT for zic_0.8.1.tar.gz : success 
+
+
+                     pkg res
+1          accelerometry   0
+2       AdaptiveSparsity   0
+3                algstat   0
+4                   ALKr   0
+5                 Amelia   0
+6              apcluster   0
+7                 ASPBay   0
+8       BalancedSampling   0
+9              BayesComm   0
+10           BayesFactor   0
+11                 bayou   0
+12                   bcp   0
+13                  bcpa   0
+14                   bfa   0
+15                   bfp   0
+16           bifactorial   0
+17           BIFIEsurvey   0
+18                 BIPOD   0
+19          blockcluster   0
+20                   btf   0
+21                bvarsv   0
+22              CARBayes   0
+23            CARBayesST   0
+24                 ccaPP   0
+25                   cda   0
+26                   CDM   0
+27                 cgAUC   0
+28           CIDnetworks   0
+29             cladoRcpp   0
+30              classify   0
+31                 clere   0
+32          climdex.pcic   1
+33              clogitL1   0
+34             clusteval   0
+35            ClustVarLV   0
+36                   CMF   0
+37               CompGLM   0
+38         ConConPiWiFun   0
+39              coneproj   0
+40                copCAR   0
+41                CorReg   0
+42                cqrReg   1
+43             Crossover   0
+44                 dbmss   0
+45             Delaporte   0
+46        dendextendRcpp   0
+47             DepthProc   0
+48                DetMCD   0
+49                dfcomb   0
+50                 dfmta   0
+51                  dils   0
+52            disclapmix   0
+53           diversitree   0
+54             diveRsity   0
+55           DNAprofiles   0
+56              DNAtools   0
+57                 dplyr   1
+58                dslice   0
+59                DStree   0
+60                   ecp   0
+61                  eive   0
+62       EpiContactTrace   0
+63            ESGtoolkit   0
+64                 EWGoF   0
+65            fastGHQuad   0
+66               FastHCS   0
+67                 fastM   0
+68               FastPCS   0
+69               FastRCS   0
+70             FBFsearch   0
+71              fdaMixed   0
+72            FDGcopulas   0
+73                FDRreg   0
+74                  fICA   0
+75              FisHiCal   1
+76                  flip   0
+77                 FLSSS   0
+78              forecast   0
+79                 fugeR   0
+80         Funclustering   0
+81                 fwsim   0
+82                  GCPM   0
+83                geiger   0
+84                 gemmR   0
+85          GeneticTools   0
+86                GENLIB   0
+87              geoCount   0
+88                  glcm   0
+89                  GMCM   0
+90                  gMWT   0
+91                 GPvam   0
+92                gRbase   0
+93                  gRim   0
+94            growcurves   0
+95         growfunctions   0
+96                   GSE   0
+97                GUILDS   0
+98                  GUTS   0
+99                   GxM   0
+100               hawkes   0
+101             HDPenReg   0
+102              HLMdiag   0
+103              hsphase   0
+104               httpuv   0
+105                  HUM   1
+106          hypervolume   0
+107              iBATCGH   0
+108                 IBHM   0
+109               icamix   0
+110              iccbeta   0
+111             icensmis   0
+112              inarmix   0
+113         IsingSampler   0
+114               iterpc   0
+115               jaatha   0
+116               JAGUAR   0
+117               jiebaR   0
+118        KernSmoothIRT   1
+119                  kmc   0
+120                Kmisc   0
+121                  LaF   0
+122                lbfgs   0
+123                lm.br   0
+124                 lme4   1
+125                 lpme   1
+126                 lsgl   0
+127               marked   0
+128                  MAT   0
+129      matchingMarkets   0
+130               maxent   0
+131                mcIRT   0
+132            metafolio   0
+133                 mets   0
+134                 mice   0
+135             miceadds   0
+136                minqa   0
+137                 mirt   0
+138                miscF   0
+139              miscset   0
+140                 mkde   0
+141                mmand   0
+142               Morpho   0
+143                   mp   0
+144           Mposterior   0
+145               MPTinR   0
+146                 msgl   1
+147                  MTS   0
+148              mvabund   0
+149                  MVB   0
+150              mvnfast   0
+151               mwaved   0
+152                myTAI   0
+153                nabor   0
+154                  ndl   0
+155               NetSim   0
+156            ngspatial   0
+157                 NHMM   0
+158        NPBayesImpute   0
+159                  oem   0
+160  OneArmPhaseTwoStudy   0
+161              openair   0
+162             openxlsx   0
+163                 orQA   0
+164               pander   0
+165                  PBC   0
+166                pcalg   0
+167               PedCNV   0
+168          pedometrics   0
+169           PerMallows   0
+170                 phom   0
+171            phylobase   0
+172               planar   0
+173             plotSEMM   0
+174                 plyr   0
+175              polywog   0
+176                PoweR   0
+177               powerr   0
+178                   PP   0
+179              PReMiuM   0
+180                 pROC   0
+181            propagate   0
+182            prospectr   0
+183              protViz   0
+184                 pryr   0
+185                 psgp   0
+186                 pvar   0
+187                  QRM   0
+188            quadrupen   0
+189            quantspec   0
+190              qVarSel   0
+191  randomUniformForest   1
+192          Rankcluster   0
+193              rARPACK   1
+194           Rclusterpp   0
+195            RcppAnnoy   0
+196        RcppArmadillo   0
+197              RcppBDT   0
+198             rcppbugs   0
+199          RcppClassic   0
+200  RcppClassicExamples   0
+201             RcppCNPy   1
+202               RcppDE   0
+203            RcppEigen   0
+204         RcppExamples   0
+205              RcppGSL   0
+206           RcppMLPACK   0
+207           RcppOctave   0
+208         RcppProgress   0
+209            RcppRedis   0
+210             RcppRoll   0
+211              RcppSMC   0
+212              RcppXts   0
+213         RcppZiggurat   0
+214             RealVAMS   0
+215           recosystem   0
+216               remote   0
+217       ReorderCluster   0
+218                repra   0
+219             resemble   0
+220             reshape2   0
+221        revealedPrefs   0
+222             rexpokit   0
+223     rforensicbatwing   0
+224                 rgam   0
+225              RInside   0
+226                 ripa   0
+227                 rkvo   0
+228                 rlme   0
+229               RLRsim   0
+230          Rmalschains   0
+231              rmgarch   0
+232              Rmixmod   0
+233         RmixmodCombi   0
+234                 rncl   0
+235            robustgam   0
+236             robustHD   0
+237            robustreg   0
+238               rococo   0
+239            rotations   0
+240             roxygen2   0
+241                  rpf   0
+242                  rpg   0
+243              rplexos   0
+244                rPref   0
+245            RProtoBuf   0
+246            RQuantLib   0
+247                RSNNS   0
+248               RSofia   0
+249             Rsomoclu   0
+250                rtkpp   0
+251                Rtsne   0
+252            Ruchardet   0
+253              rugarch   0
+254                 Rvcg   0
+255        RVowpalWabbit   0
+256                 SBSA   0
+257                 scrm   0
+258               scrypt   0
+259             sdcMicro   0
+260             sdcTable   0
+261               segmag   0
+262            SelvarMix   0
+263            sequences   0
+264             sglOptim   0
+265             simFrame   0
+266               simPop   0
+267                 sirt   0
+268                 slfm   0
+269               snipEM   0
+270              snplist   0
+271       SocialNetworks   0
+272                  SOD   0
+273             spacodiR   0
+274                spaMM   0
+275      sparseHessianFD   0
+276       sparseLTSEigen   0
+277           SpatialEpi   0
+278         SpatialTools   0
+279          spBayesSurv   1
+280          StereoMorph   0
+281              StMoSim   0
+282             stochvol   0
+283               stosim   0
+284                strum   1
+285 survAccuracyMeasures   0
+286         surveillance   0
+287              survSNP   0
+288               synlik   0
+289             tagcloud   0
+290                  TAM   0
+291                tbart   1
+292                  tcR   0
+293                  TED   0
+294             termstrc   0
+295              textreg   1
+296            TFMPvalue   0
+297                timma   0
+298             treeclim   0
+299           trustOptim   0
+300                  tvd   0
+301             unmarked   0
+302             urltools   0
+303                   V8   0
+304      VideoComparison   0
+305                  VIM   0
+306              waffect   0
+307            wordcloud   0
+308                 wsrf   1
+309                 XBRL   0
+310                  zic   0
+
+  0   1 
+293  17 
+Ended at  2014-12-14 13:18:36 
