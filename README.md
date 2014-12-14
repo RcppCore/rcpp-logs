@@ -1,20 +1,19 @@
 
-Rcpp 0.11.2.6 as of 2014-09-22
+Rcpp 0.11.3.3 as of 2014-12-14
 ------------------------------
 
 Running the script summarizing results straight out of its repo:
 
 ```{sh}
-edd@max:~/git/rcpp-logs/results(master)$ ./Rcpp-Summary-20140922.R
-Good          254 
-  AsIs        254 
-Bad           16 
-  RcppApi     0 
-  Unclear     1 
-  NotRcpp     15 
+edd@max:~/git/rcpp-logs/results(master)$ ./Rcpp-Summary-20141214.R
+Good          299 
+  AsIs        293 
+  w/Patches   6 
+Bad           17 
+  NotRcpp     10 
 Skipped       0 
-Total         270 
-Bad Percent   0.0037037 
+Total         316 
+Bad Percent   0.0221519 
 edd@max:~/git/rcpp-logs/results(master)$ 
 ```
 
