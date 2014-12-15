@@ -80,7 +80,7 @@ installedManually <- c("circular",      # CRAN
                        "RcppCNPy")	# dev version from GitHub
 
 goodAfterPatch <- c(   # four need simple const_cast patches which we prepared
-    "climdex.pcic",    # needs const_cast patch
+    "climdex.pcic",    # -- already patched upstream, release pending
     "dplyr",           # -- already patched upstream, release pending
     "lpme",            # needs const_cast patch
     "RcppCNPy",        # -- already patched upstream, release pending
