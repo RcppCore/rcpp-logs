@@ -2,7 +2,12 @@
 
 cat("Started at ", format(Sys.time()), "\n")
 pkg <- "RcppArmadillo"
+cat(pkg, " version is ", packageDescription(pkg)$Version, "\n")
 
+## use a test-local directory, install Rcpp, RcppArmadillo, ... there
+## this will work for sub-shells such as the ones started by system() below
+if (!file.exists("/tmp/RcppDepends")) dir.create("/tmp/RcppDepends")
+if (!file.exists("/tmp/RcppDepends/lib")) dir.create("/tmp/RcppDepends/lib")
 loclib <- "/tmp/RcppDepends/lib"
 Sys.setenv("R_LIBS_USER"="/tmp/RcppDepends/lib")
 #Sys.setenv("CC"="gcc")   ## needed for a bad interaction between autoconf and llvm on Ubuntu 13.10
@@ -61,6 +66,7 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
 
 res <- do.call(rbind, lres)
 print(res)
+print(table(res[,"res"]))
 write.table(res, file=paste("result-", strftime(Sys.time(), "%Y%m%d-%H%M%S"), ".txt", sep=""), sep=",")
 save(res, file=paste("result-", strftime(Sys.time(), "%Y%m%d-%H%M%S"), ".RData", sep=""))
 cat("Ended at ", format(Sys.time()), "\n")
