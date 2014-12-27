@@ -18,24 +18,24 @@ edd@max:~/git/rcpp-logs/results(master)$
 edd@max:~/git/rcpp-logs/results(master)$ 
 ```
 
-The "bad" cases are detailed in the corresponding file in the `status`
+The "bad" cases are detailed in the corresponding file in the `results`
 directory.
 
 
-RcppArmadillo 0.4.549.2.0 as of 2014-11-20
-------------------------------------------
+RcppArmadillo 0.4.600.0 as of 2014-12-27
+----------------------------------------
 
-The script `runRcppArmadilloDepends` was run over all 96 current `Depends:`
-of RcppArmadillo.  All but five passed; see the `status` directory for more.
+The script `runRcppArmadilloDepends` was run over all 102 current `Depends:`
+of RcppArmadillo.  All but four passed; see the `results/rcpparmadillo` directory for more.
 
 ```{sh}
-edd@max:~/git/rcpp-logs/results(master)$ ./RcppArmadillo-Summary-20141120.R 
-Good          91 
-  AsIs        91 
-Bad           5 
-  NotRcpp     5 
+edd@max:~/git/rcpp-logs/results/rcpparmadillo(master)$ ./RcppArmadillo-Summary-20141227.R
+Good          98 
+  AsIs        98 
+Bad           4 
+  NotRcpp     4 
 Skipped       0 
-Total         96 
+Total         102 
 Bad Percent   0 
-edd@max:~/git/rcpp-logs/results(master)$
+edd@max:~/git/rcpp-logs/results/rcpparmadillo(master)$ 
 ```
