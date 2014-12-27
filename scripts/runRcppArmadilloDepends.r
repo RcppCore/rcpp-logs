@@ -28,7 +28,12 @@ AP <- available.packages(contrib.url("http://cran.r-project.org"), filter=list()
 rcpparmaset <- sort(unname(AP[unique(c(grep(pkg, as.character(AP[,"Depends"])),
                                        grep(pkg, as.character(AP[,"LinkingTo"])),
                                        grep(pkg, as.character(AP[,"Imports"])))),"Package"]))
-print( rcpparmaset )
+
+exclset <- c("cqrReg")                  # requires Rmosek which require Mosek which is commercial
+
+rcpparmaset <- rcpparmaset[ ! rcpparmaset %in% exclset ]
+
+print(rcpparmaset)
 
 res <- data.frame(pkg=rcpparmaset, res=NA)
 
