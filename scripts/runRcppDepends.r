@@ -1,9 +1,8 @@
 #!/usr/bin/r
-# -*- mode: R; -*-
 
 cat("Started at ", format(Sys.time()), "\n")
-#library(parallel)
-cat("Rcpp version is ", packageDescription("Rcpp")$Version, "\n")
+pkg <- "Rcpp"
+cat(pkg, " version is ", packageDescription(pkg)$Version, "\n")
 
 ## use a test-local directory, install Rcpp, RcppArmadillo, ... there
 ## this will work for sub-shells such as the ones started by system() below
@@ -11,8 +10,8 @@ if (!file.exists("/tmp/RcppDepends")) dir.create("/tmp/RcppDepends")
 if (!file.exists("/tmp/RcppDepends/lib")) dir.create("/tmp/RcppDepends/lib")
 loclib <- "/tmp/RcppDepends/lib"
 Sys.setenv("R_LIBS_USER"="/tmp/RcppDepends/lib")
-Sys.setenv("CC"="gcc")   ## needed for a bad interaction between autoconf and llvm on Ubuntu 13.10
-Sys.setenv("CXX"="g++")  ## idem
+#Sys.setenv("CC"="gcc")   ## needed for a bad interaction between autoconf and llvm on Ubuntu 13.10
+#Sys.setenv("CXX"="g++")  ## idem
 
 r <- getOption("repos")
 r["CRAN"] <- "http://cran.rstudio.com"
@@ -33,6 +32,11 @@ rcppset <- sort(unname(AP[unique(c(grep("Rcpp", as.character(AP[,"Depends"])),
                                    grep("Rcpp", as.character(AP[,"LinkingTo"])),
                                    grep("Rcpp", as.character(AP[,"Imports"])))),"Package"]))
 
+exclset <- c("cqrReg",          # requires Rmosek which require Mosek which is commercial
+             "WideLM")
+
+rcppset <- rcppset[ ! rcppset %in% exclset ]
+
 #if (grep("transnet", rcppset)) {        ## not really an Rcpp user
 #    rcppset <- rcppset[ ! grepl("transnet", rcppset) ]
 #}
@@ -48,9 +52,9 @@ if (grep("BioGeoBEARS", rcppset)) {     ## indirect match, no need to test
 #if (grep("dplyr", rcppset)) {           ## confuses Suggests: and Depends:
 #    rcppset <- rcppset[ ! grepl("dplyr", rcppset) ]
 #}
-if (grep("WideLM", rcppset)) {          ## needs working NVidia support
-    rcppset <- rcppset[ ! grepl("WideLM", rcppset) ]
-}
+#if (grep("WideLM", rcppset)) {          ## needs working NVidia support
+#    rcppset <- rcppset[ ! grepl("WideLM", rcppset) ]
+#}
 
 print(rcppset)
 
