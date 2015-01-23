@@ -1,12 +1,12 @@
 diff -ru mirtCAT.orig/src/CAT_functions.cpp mirtCAT/src/CAT_functions.cpp
 --- mirtCAT.orig/src/CAT_functions.cpp	2015-01-22 13:26:17.000000000 -0600
-+++ mirtCAT/src/CAT_functions.cpp	2015-01-23 06:54:46.346579157 -0600
-@@ -38,7 +38,7 @@
-     const List pars(Rpars);
-     const vector<double> Theta = as< vector<double> >(RTheta);
-     const vector<int> which_not_answered = as< vector<int> >(Rwhich_not_answered);
--    const NumericVector rw(Rw);
-+    /*const*/ NumericVector rw(Rw);
-     const int criteria = as<int>(Rcriteria);
++++ mirtCAT/src/CAT_functions.cpp	2015-01-23 07:10:23.470986350 -0600
+@@ -43,7 +43,7 @@
      const int len = which_not_answered.size();
      const int nfact = Theta.size();
+     NumericMatrix rinv_priorvar(Rinv_priorvar);
+-    arma::colvec w(rw.begin(), rw.size(), false);
++    arma::colvec w(const_cast<Rcpp::NumericVector&>(rw).begin(), rw.size(), false);
+     arma::mat inv_priorvar(rinv_priorvar.begin(), nfact, nfact, false);
+     vector<double> crit(len);
+ 
