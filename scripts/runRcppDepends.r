@@ -59,6 +59,8 @@ if (grep("BioGeoBEARS", rcppset)) {     ## indirect match, no need to test
 print(rcppset)
 
 res <- data.frame(pkg=rcppset, res=NA)
+good <- bad <- 0
+n <- nrow(res)
 
 #for (pi in 1:nrow(res)) {
 #lres <- mclapply(1:nrow(res), mc.cores = 4, FUN=function(pi) {
@@ -86,7 +88,13 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     rc <- system(paste("xvfb-run --server-args=\"-screen 0 1024x768x24\" ",
                        "R CMD check --no-manual --no-vignettes ", pkg, " > ", pkg, ".log", sep=""))
     res[pi, "res"] <- rc
-    cat("\n\nRESULT for", pkg, ":", ifelse(rc==0, "success", "failure"), "\n\n\n")
+    if (rc == 0) {
+        good <<- good + 1
+    } else {
+        bad <<- bad + 1
+    }
+    cat(sprintf("\nRESULT for %s : %s (%d of %d, %d good, %d bad)\n",
+                pkg, if (rc==0) "success" else "failure", pi, n, good, bad))
     res[pi, ]
 })
 
