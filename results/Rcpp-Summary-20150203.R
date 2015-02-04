@@ -2,7 +2,7 @@
  
 ## -- started with Rcpp 0.11.4.1 (current on GitHub as of 2015-01-31 -- and JJ's new branch
 
-#load("~/git/rcpp-logs/results/result-20150203-033845.RData")
+#load("~/git/rcpp-logs/results/result-20150203-180752.RData")
 #goodPkgs <- as.character(subset(res, res==0)[,1])
 #dput(goodPkgs)
 
@@ -38,21 +38,21 @@ goodPkgs <- c("accelerometry", "AdaptiveSparsity", "algstat", "ALKr", "Amelia",
               "poisDoubleSamp", "polywog", "PoweR", "powerr", "PP", "PReMiuM", 
               "pROC", "propagate", "prospectr", "protViz", "pryr", "psgp", 
               "pvar", "QRM", "quadrupen", "quantspec", "qVarSel", "randomUniformForest", 
-              "Rankcluster", "Rclusterpp", "RcppAnnoy", "RcppArmadillo", "RcppBDT", 
-              "rcppbugs", "RcppClassic", "RcppClassicExamples", "RcppCNPy", 
-              "RcppDE", "RcppDL", "RcppEigen", "RcppExamples", "RcppGSL", "RcppMLPACK", 
-              "RcppOctave", "RcppProgress", "RcppRedis", "RcppRoll", "RcppSMC", 
-              "RcppStreams", "RcppXts", "RcppZiggurat", "RealVAMS", "reconstructr", 
-              "recosystem", "remote", "ReorderCluster", "repra", "resemble", 
-              "reshape2", "revealedPrefs", "rexpokit", "rforensicbatwing", 
-              "rgam", "RInside", "ripa", "rkvo", "rlme", "RLRsim", "Rmalschains", 
-              "rmgarch", "Rmixmod", "RmixmodCombi", "rncl", "robustgam", "robustHD", 
-              "robustreg", "rococo", "rotations", "roxygen2", "rpf", "rpg", 
-              "rplexos", "rPref", "RProtoBuf", "RQuantLib", "RSNNS", "RSNPset", 
-              "RSofia", "Rsomoclu", "rtkpp", "Rtsne", "Ruchardet", "rugarch", 
-              "Rvcg", "RVowpalWabbit", "SBSA", "scrm", "scrypt", "sdcMicro", 
-              "sdcTable", "segmag", "SelvarMix", "sequences", "sglOptim", "simFrame", 
-              "simPop", "sirt", "slfm", "snipEM", "snplist", "SocialNetworks", 
+              "Rankcluster", "rARPACK", "Rclusterpp", "RcppAnnoy", "RcppArmadillo", 
+              "RcppBDT", "rcppbugs", "RcppClassic", "RcppClassicExamples", 
+              "RcppCNPy", "RcppDE", "RcppDL", "RcppEigen", "RcppExamples", 
+              "RcppGSL", "RcppMLPACK", "RcppOctave", "RcppProgress", "RcppRedis", 
+              "RcppRoll", "RcppSMC", "RcppStreams", "RcppXts", "RcppZiggurat", 
+              "RealVAMS", "reconstructr", "recosystem", "remote", "ReorderCluster", 
+              "repra", "resemble", "reshape2", "revealedPrefs", "rexpokit", 
+              "rforensicbatwing", "rgam", "RInside", "ripa", "rkvo", "rlme", 
+              "RLRsim", "Rmalschains", "rmgarch", "Rmixmod", "RmixmodCombi", 
+              "rncl", "robustgam", "robustHD", "robustreg", "rococo", "rotations", 
+              "roxygen2", "rpf", "rpg", "rplexos", "rPref", "RProtoBuf", "RQuantLib", 
+              "RSNNS", "RSNPset", "RSofia", "Rsomoclu", "rtkpp", "Rtsne", "Ruchardet", 
+              "rugarch", "Rvcg", "RVowpalWabbit", "SBSA", "scrm", "scrypt", 
+              "sdcMicro", "sdcTable", "segmag", "SelvarMix", "sequences", "sglOptim", 
+              "simFrame", "simPop", "sirt", "slfm", "snipEM", "snplist", "SocialNetworks", 
               "SOD", "spacodiR", "spaMM", "sparseHessianFD", "sparseLTSEigen", 
               "SpatialEpi", "SpatialTools", "SpatPCA", "spBayesSurv", "StereoMorph", 
               "StMoSim", "StochKit2R", "stochvol", "stosim", "strataG", "strum", 
@@ -67,12 +67,11 @@ goodPkgs <- c("accelerometry", "AdaptiveSparsity", "algstat", "ALKr", "Amelia",
 #dput(bad)
 
 
-prevprevbadPkg <- c("climdex.pcic", "FisHiCal", "HUM", "KernSmoothIRT", "lme4", 
-                    "msgl", "strataG", "strum", "textreg")
+prevprevPkg <- c("dplyr", "FisHiCal", "HUM", "KernSmoothIRT", "lme4", "msgl", "scrm", "strum")
 
-prevPkg <- c("dplyr", "FisHiCal", "HUM", "KernSmoothIRT", "lme4", "msgl", "scrm", "strum")
+prevbadPkg <- c("FisHiCal", "HUM", "KernSmoothIRT", "lme4", "msgl", "rARPACK")
 
-badPkg <- c("FisHiCal", "HUM", "KernSmoothIRT", "lme4", "msgl", "rARPACK")
+badPkg <- c("FisHiCal", "HUM", "KernSmoothIRT", "lme4", "msgl")
 
 skippedPkgs <- c("cqrReg", # package required by not avilable: ‘Rmosek’ (which needs Mosek)
                  "wideLM") # needs working cuda
@@ -94,9 +93,7 @@ badnotrcpp <- c(
 ## ## Failing at compile time due to Rcpp issues
 ## bad4RcppAPI <- c()
 
-bad4unclear <- c(
-    "rARPACK") 	      # link error with dseupd_ ?
-            
+bad4unclear <- c()
 
 good <- length(goodPkgs) + length(goodAfterPatch)
 #badrcpp <- length(bad4RcppAPI) + length(bad4unclear) + length
@@ -120,7 +117,7 @@ cat("  Unclear    ", length(bad4unclear), "\n")
 #cat("  BioCDep    ", length(bad4BioCdep), "\n")
 cat("  NotRcpp    ", bad4notrcpp, "\n")
 cat("Skipped      ", skipped, "\n")
-cat("Total        ", good + bad + skipped, "\n")
+cat("Total        ", good + bad, "\n")
 cat("Bad Percent  ", badremain / (good + bad), "\n")
 
 
