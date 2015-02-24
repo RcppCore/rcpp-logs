@@ -2,11 +2,16 @@
 
 cat("Started at ", format(Sys.time()), "\n")
 pkg <- "RcppEigen"
+cat(pkg, " version is ", packageDescription(pkg)$Version, "\n")
 
+## use a test-local directory, install Rcpp, RcppArmadillo, ... there
+## this will work for sub-shells such as the ones started by system() below
+if (!file.exists("/tmp/RcppDepends")) dir.create("/tmp/RcppDepends")
+if (!file.exists("/tmp/RcppDepends/lib")) dir.create("/tmp/RcppDepends/lib")
 loclib <- "/tmp/RcppDepends/lib"
 Sys.setenv("R_LIBS_USER"="/tmp/RcppDepends/lib")
-Sys.setenv("CC"="gcc")   ## needed for a bad interaction between autoconf and llvm on Ubuntu 13.10
-Sys.setenv("CXX"="g++")  ## idem
+#Sys.setenv("CC"="gcc")   ## needed for a bad interaction between autoconf and llvm on Ubuntu 13.10
+#Sys.setenv("CXX"="g++")  ## idem
 
 r <- getOption("repos")
 r["CRAN"] <- "http://cran.rstudio.com"
@@ -55,12 +60,13 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     rc <- system(paste("xvfb-run --server-args=\"-screen 0 1024x768x24\" ",
                        "R CMD check --no-manual --no-vignettes ", pkg, " > ", pkg, ".log", sep=""))
     res[pi, "res"] <- rc
-    cat(rc, ":", pkg, "\n")
+    cat("\n\nRESULT for", pkg, ":", ifelse(rc==0, "success", "failure"), "\n\n\n")
     res[pi, ]
 })
 
 res <- do.call(rbind, lres)
 print(res)
+print(table(res[,"res"]))
 write.table(res, file=paste("result-", strftime(Sys.time(), "%Y%m%d-%H%M%S"), ".txt", sep=""), sep=",")
 save(res, file=paste("result-", strftime(Sys.time(), "%Y%m%d-%H%M%S"), ".RData", sep=""))
 cat("Ended at ", format(Sys.time()), "\n")
