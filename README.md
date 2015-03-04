@@ -1,11 +1,11 @@
 
-Rcpp 0.11.4.10 as of 2015-03-03
--------------------------------
+Rcpp 0.11.5 as of 2015-03-04
+----------------------------
 
 Running the script summarizing results straight out of its repo:
 
 ```{sh}
-edd@max:~/git/rcpp-logs/results(master)$ ./Rcpp-Summary-20150303.R
+edd@max:~/git/rcpp-logs/results(master)$ ./Rcpp-Summary-20150304.R 
 Good          339 
   AsIs        339 
   w/Patches   0 
