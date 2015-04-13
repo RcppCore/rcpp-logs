@@ -23,6 +23,9 @@ setwd("/tmp/RcppDepends")
 ## clean old lib or repo files in /tmp
 invisible(sapply(list.files("/tmp", "(repos|lib).*rds$", full.names=TRUE), unlink))
 
+## update local lib/
+update.packages(lib.loc=".", ask=FALSE)
+
 IP <- installed.packages(lib.loc=loclib) 
 AP <- available.packages(contrib.url("http://cran.r-project.org"), filter=list())	# available package at CRAN
 rcpparmaset <- sort(unname(AP[unique(c(grep(pkg, as.character(AP[,"Depends"])),
