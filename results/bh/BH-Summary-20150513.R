@@ -14,14 +14,19 @@ goodPkg <- c("bigalgebra", "biganalytics", "bigmemory", "bigpca", "bigrf",
 
 #dput(badPkg <- as.character(subset(res, res==1)[,1]))
 badPkg <- c("ddalpha", "dplyr", "FunChisq", "mixedMem", "msgl", "nabor", 
-            "pcalg", "PReMiuM", "rcppbugs")
+            "pcalg", "PReMiuM", "rcppbugs",
 
-bad4bh <- c("FunChisq",		# fatal error: boost/atomic/detail/caps_gcc_atomic.hpp: No such file or directory
-            "mixedMem",		# idem
-            "pcalg",		# idem
-            "PReMiuM",		# idem
-            "rcppbugs"
+            ## after change to BH fixing atomic
+            "FunChisq", "mixedMem", "pcalg", "PReMiuM", "rcppbugs"
             )
+
+bad4bh <- c()
+##             "FunChisq",		# fatal error: boost/atomic/detail/caps_gcc_atomic.hpp: No such file or directory
+##             "mixedMem",		# idem
+##             "pcalg",		# idem
+##             "PReMiuM",		# idem
+##             "rcppbugs"		# idem
+##            )
 
 bad4notbh <- c("ddalph",	# missing boost::math header ?
                "dplyr",		# there is no package called 'Lahman'
