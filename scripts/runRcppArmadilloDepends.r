@@ -1,6 +1,8 @@
 #!/usr/bin/r
 
 cat("Started at ", format(Sys.time()), "\n")
+pkg <- "Rcpp"
+cat(pkg, " version is ", packageDescription(pkg)$Version, "\n")
 pkg <- "RcppArmadillo"
 cat(pkg, " version is ", packageDescription(pkg)$Version, "\n")
 
