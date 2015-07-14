@@ -1,0 +1,126 @@
+Started at  2015-07-13 20:11:38 
+Rcpp  version is  0.11.6.2.2 
+RcppEigen  version is  0.3.2.5.0 
+ [1] "BayesFactor"     "blockcluster"    "btf"             "clere"          
+ [5] "CorReg"          "Coxnet"          "DetMCD"          "FastHCS"        
+ [9] "FastPCS"         "FastRCS"         "Funclustering"   "gRbase"         
+[13] "hts"             "ISOpureR"        "lme4"            "MPTinR"         
+[17] "nabor"           "oapackage"       "OpenMx"          "PReMiuM"        
+[21] "Rankcluster"     "rARPACK"         "Rclusterpp"      "rpf"            
+[25] "RSNPset"         "Rvcg"            "spaMM"           "sparseHessianFD"
+[29] "sparseLTSEigen"  "tmg"             "trustOptim"     
+
+RESULT for BayesFactor_0.9.11-1.tar.gz : success (1 of 31, 1 good, 0 bad)
+
+RESULT for blockcluster_3.0.2.tar.gz : success (2 of 31, 2 good, 0 bad)
+
+RESULT for btf_1.1.tar.gz : success (3 of 31, 3 good, 0 bad)
+
+RESULT for clere_1.1.tar.gz : success (4 of 31, 4 good, 0 bad)
+
+RESULT for CorReg_1.0.5.tar.gz : success (5 of 31, 5 good, 0 bad)
+
+RESULT for Coxnet_0.1-1.tar.gz : success (6 of 31, 6 good, 0 bad)
+
+RESULT for DetMCD_0.0.2.tar.gz : success (7 of 31, 7 good, 0 bad)
+
+RESULT for FastHCS_0.0.5.tar.gz : success (8 of 31, 8 good, 0 bad)
+
+RESULT for FastPCS_0.1.2.tar.gz : success (9 of 31, 9 good, 0 bad)
+
+RESULT for FastRCS_0.0.6.tar.gz : success (10 of 31, 10 good, 0 bad)
+
+RESULT for Funclustering_1.0.1.tar.gz : success (11 of 31, 11 good, 0 bad)
+
+RESULT for gRbase_1.7-0.1.tar.gz : success (12 of 31, 12 good, 0 bad)
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c cgm_RcppEigen.cpp -o cgm_RcppEigen.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o hts.so RcppExports.o cgm_RcppEigen.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for hts_4.5.tar.gz : success (13 of 31, 13 good, 0 bad)
+
+RESULT for ISOpureR_1.0.8.tar.gz : success (14 of 31, 14 good, 0 bad)
+
+RESULT for lme4_1.1-8.tar.gz : failure (15 of 31, 14 good, 1 bad)
+
+RESULT for MPTinR_1.9.2.tar.gz : success (16 of 31, 15 good, 1 bad)
+
+RESULT for nabor_0.4.6.tar.gz : failure (17 of 31, 15 good, 2 bad)
+ccache g++ -I/usr/share/R/include -DNDEBUG -I. -Ibitarray/ -I../ -DRPACKAGE   -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c Deff.cpp -o Deff.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I. -Ibitarray/ -I../ -DRPACKAGE   -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c arrayproperties.cpp -o arrayproperties.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I. -Ibitarray/ -I../ -DRPACKAGE   -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c arraytools.cpp -o arraytools.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I. -Ibitarray/ -I../ -DRPACKAGE   -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c mathtools.cpp -o mathtools.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I. -Ibitarray/ -I../ -DRPACKAGE   -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c oaoptions.cpp -o oaoptions.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I. -Ibitarray/ -I../ -DRPACKAGE   -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c strength.cpp -o strength.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I. -Ibitarray/ -I../ -DRPACKAGE   -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c tools.cpp -o tools.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o oapackage.so Deff.o arrayproperties.o arraytools.o mathtools.o oaoptions.o strength.o tools.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for oapackage_2.0.23.tar.gz : success (18 of 31, 16 good, 2 bad)
+
+RESULT for OpenMx_2.2.4.tar.gz : success (19 of 31, 17 good, 2 bad)
+
+RESULT for PReMiuM_3.1.1.tar.gz : success (20 of 31, 18 good, 2 bad)
+
+RESULT for Rankcluster_0.92.9.tar.gz : success (21 of 31, 19 good, 2 bad)
+
+RESULT for rARPACK_0.7-0.tar.gz : success (22 of 31, 20 good, 2 bad)
+
+RESULT for Rclusterpp_0.2.3.tar.gz : success (23 of 31, 21 good, 2 bad)
+
+RESULT for rpf_0.45.tar.gz : success (24 of 31, 22 good, 2 bad)
+
+RESULT for RSNPset_0.4.tar.gz : success (25 of 31, 23 good, 2 bad)
+
+RESULT for Rvcg_0.12.2.tar.gz : success (26 of 31, 24 good, 2 bad)
+
+RESULT for spaMM_1.5.1.tar.gz : success (27 of 31, 25 good, 2 bad)
+
+RESULT for sparseHessianFD_0.2.0.tar.gz : success (28 of 31, 26 good, 2 bad)
+
+RESULT for sparseLTSEigen_0.2.0.tar.gz : success (29 of 31, 27 good, 2 bad)
+
+RESULT for tmg_0.3.tar.gz : success (30 of 31, 28 good, 2 bad)
+
+RESULT for trustOptim_0.8.5.tar.gz : success (31 of 31, 29 good, 2 bad)
+               pkg res
+1      BayesFactor   0
+2     blockcluster   0
+3              btf   0
+4            clere   0
+5           CorReg   0
+6           Coxnet   0
+7           DetMCD   0
+8          FastHCS   0
+9          FastPCS   0
+10         FastRCS   0
+11   Funclustering   0
+12          gRbase   0
+13             hts   0
+14        ISOpureR   0
+15            lme4   1
+16          MPTinR   0
+17           nabor   1
+18       oapackage   0
+19          OpenMx   0
+20         PReMiuM   0
+21     Rankcluster   0
+22         rARPACK   0
+23      Rclusterpp   0
+24             rpf   0
+25         RSNPset   0
+26            Rvcg   0
+27           spaMM   0
+28 sparseHessianFD   0
+29  sparseLTSEigen   0
+30             tmg   0
+31      trustOptim   0
+
+ 0  1 
+29  2 
+Ended at  2015-07-13 21:00:06 
