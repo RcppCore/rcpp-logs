@@ -1,6 +1,8 @@
 #!/usr/bin/r
 
 cat("Started at ", format(Sys.time()), "\n")
+pkg <- "Rcpp"
+cat(pkg, " version is ", packageDescription(pkg)$Version, "\n")
 pkg <- "RcppEigen"
 cat(pkg, " version is ", packageDescription(pkg)$Version, "\n")
 
@@ -22,6 +24,9 @@ setwd("/tmp/RcppDepends")
 
 ## clean old lib or repo files in /tmp
 invisible(sapply(list.files("/tmp", "(repos|lib).*rds$", full.names=TRUE), unlink))
+
+## update local lib/
+update.packages(lib.loc=".", ask=FALSE)
 
 IP <- installed.packages(lib.loc=loclib) 
 AP <- available.packages(contrib.url("http://cran.r-project.org"), filter=list())	# available package at CRAN
