@@ -1,0 +1,1550 @@
+Started at  2015-07-19 22:05:12 
+Rcpp  version is  0.11.6.3.1 
+  [1] "accelerometry"        "AdaptiveSparsity"     "AHR"                 
+  [4] "algstat"              "ALKr"                 "Amelia"              
+  [7] "apcluster"            "ASPBay"               "autovarCore"         
+ [10] "BaBooN"               "BalancedSampling"     "BayesFactor"         
+ [13] "bayesm"               "bayou"                "bcp"                 
+ [16] "bcpa"                 "bfa"                  "bfp"                 
+ [19] "bifactorial"          "BIFIEsurvey"          "BIPOD"               
+ [22] "blockcluster"         "blockmodels"          "brms"                
+ [25] "btf"                  "bvarsv"               "CARBayes"            
+ [28] "CARBayesST"           "ccaPP"                "cccp"                
+ [31] "cda"                  "CDM"                  "cgAUC"               
+ [34] "chopthin"             "CIDnetworks"          "cladoRcpp"           
+ [37] "classify"             "clere"                "climdex.pcic"        
+ [40] "clogitL1"             "clusteval"            "ClustMMDD"           
+ [43] "ClustVarLV"           "CMF"                  "coala"               
+ [46] "CompGLM"              "ConConPiWiFun"        "coneproj"            
+ [49] "copCAR"               "CorReg"               "Coxnet"              
+ [52] "Crossover"            "dbmss"                "dbscan"              
+ [55] "ddalpha"              "Delaporte"            "dendextendRcpp"      
+ [58] "DepthProc"            "DetMCD"               "dfcomb"              
+ [61] "dfmta"                "dils"                 "disclapmix"          
+ [64] "diversitree"          "diveRsity"            "divo"                
+ [67] "DNAprofiles"          "DNAtools"             "dplyr"               
+ [70] "dslice"               "DStree"               "ecp"                 
+ [73] "EditImputeCont"       "eive"                 "emIRT"               
+ [76] "ESGtoolkit"           "evolqg"               "EWGoF"               
+ [79] "fastGHQuad"           "FastHCS"              "fastM"               
+ [82] "FastPCS"              "FastRCS"              "FBFsearch"           
+ [85] "fbroc"                "FCNN4R"               "fdaMixed"            
+ [88] "FDGcopulas"           "FDRreg"               "FeatureHashing"      
+ [91] "fICA"                 "FisHiCal"             "flam"                
+ [94] "flip"                 "FLSSS"                "forecast"            
+ [97] "forestFloor"          "FRESA.CAD"            "FSInteract"          
+[100] "fugeR"                "FunChisq"             "Funclustering"       
+[103] "fwsim"                "gaselect"             "GCPM"                
+[106] "gdm"                  "geiger"               "GeneticTools"        
+[109] "GENLIB"               "geoCount"             "gkmSVM"              
+[112] "glcm"                 "glmgraph"             "GMCM"                
+[115] "Gmisc"                "gMWT"                 "GPareto"             
+[118] "GPvam"                "graphicalVAR"         "gRbase"              
+[121] "gRim"                 "growcurves"           "growfunctions"       
+[124] "GSE"                  "GUILDS"               "GUTS"                
+[127] "GxM"                  "h5"                   "haven"               
+[130] "hawkes"               "HLMdiag"              "hsphase"             
+[133] "hts"                  "httpuv"               "HUM"                 
+[136] "hypervolume"          "iBATCGH"              "IBHM"                
+[139] "icamix"               "iccbeta"              "icd9"                
+[142] "icensmis"             "inarmix"              "iptools"             
+[145] "IsingSampler"         "ISOpureR"             "iterpc"              
+[148] "jaatha"               "JAGUAR"               "jiebaR"              
+[151] "kdecopula"            "kergp"                "KernSmoothIRT"       
+[154] "kmc"                  "Kmisc"                "LaF"                 
+[157] "lamW"                 "lbfgs"                "lfl"                 
+[160] "lifecontingencies"    "lm.br"                "lme4"                
+[163] "lpme"                 "lsbclust"             "lsgl"                
+[166] "Luminescence"         "marked"               "markophylo"          
+[169] "markovchain"          "MAT"                  "matchingMarkets"     
+[172] "matchingR"            "maxent"               "mbbefd"              
+[175] "mcIRT"                "metafolio"            "mets"                
+[178] "mice"                 "miceadds"             "minqa"               
+[181] "mirt"                 "mirtCAT"              "miscF"               
+[184] "miscset"              "missDeaths"           "MixAll"              
+[187] "mixedMem"             "mkde"                 "mlxR"                
+[190] "mmand"                "Morpho"               "mp"                  
+[193] "Mposterior"           "MPTinR"               "MRIaggr"             
+[196] "msgl"                 "MTS"                  "multicool"           
+[199] "mvabund"              "MVB"                  "mvnfast"             
+[202] "mwaved"               "myTAI"                "nabor"               
+[205] "NAM"                  "ndl"                  "NetSim"              
+[208] "neuroim"              "ngspatial"            "NHMM"                
+[211] "nonlinearTseries"     "NPBayesImpute"        "oapackage"           
+[214] "odeintr"              "oem"                  "OneArmPhaseTwoStudy" 
+[217] "onlinePCA"            "openair"              "OpenMx"              
+[220] "openxlsx"             "orQA"                 "PAFit"               
+[223] "pander"               "partialAR"            "PBC"                 
+[226] "pcalg"                "pcIRT"                "PedCNV"              
+[229] "pedometrics"          "penMSM"               "PerMallows"          
+[232] "phylobase"            "planar"               "plotSEMM"            
+[235] "plyr"                 "poisDoubleSamp"       "polywog"             
+[238] "PoweR"                "PP"                   "PPtreeViz"           
+[241] "PReMiuM"              "primes"               "pROC"                
+[244] "propagate"            "prospectr"            "protViz"             
+[247] "pryr"                 "psd"                  "psgp"                
+[250] "pvar"                 "QRM"                  "quadrupen"           
+[253] "quanteda"             "quantspec"            "qVarSel"             
+[256] "randomUniformForest"  "Rankcluster"          "rankdist"            
+[259] "rARPACK"              "raster"               "Rborist"             
+[262] "Rclusterpp"           "RcppAnnoy"            "RcppAPT"             
+[265] "RcppArmadillo"        "RcppBDT"              "rcppbugs"            
+[268] "RcppClassic"          "RcppClassicExamples"  "RcppCNPy"            
+[271] "RcppDE"               "RcppDL"               "RcppEigen"           
+[274] "RcppExamples"         "RcppFaddeeva"         "RcppGSL"             
+[277] "RcppMLPACK"           "RcppOctave"           "RcppProgress"        
+[280] "RcppRedis"            "RcppRoll"             "RcppSMC"             
+[283] "RcppStreams"          "RcppTOML"             "RcppXts"             
+[286] "RcppZiggurat"         "readr"                "readstata13"         
+[289] "readxl"               "RealVAMS"             "reconstructr"        
+[292] "recosystem"           "redist"               "relSim"              
+[295] "remote"               "ReorderCluster"       "repra"               
+[298] "resemble"             "reshape2"             "revealedPrefs"       
+[301] "rexpokit"             "rforensicbatwing"     "rgam"                
+[304] "RInside"              "ripa"                 "rivr"                
+[307] "rkvo"                 "Rlibeemd"             "rlme"                
+[310] "RLRsim"               "Rmalschains"          "rmgarch"             
+[313] "Rmixmod"              "RmixmodCombi"         "rncl"                
+[316] "robustgam"            "robustHD"             "robustreg"           
+[319] "rococo"               "rotations"            "RoughSets"           
+[322] "roxygen2"             "rpf"                  "rpg"                 
+[325] "Rphylopars"           "rplexos"              "rPref"               
+[328] "RProtoBuf"            "RQuantLib"            "RSNNS"               
+[331] "RSNPset"              "RSofia"               "Rsomoclu"            
+[334] "rstan"                "rtkpp"                "Rtsne"               
+[337] "Ruchardet"            "rugarch"              "Rvcg"                
+[340] "RVowpalWabbit"        "sbmSDP"               "SBSA"                
+[343] "scales"               "scrm"                 "scrypt"              
+[346] "sdcMicro"             "sdcTable"             "SEERaBomb"           
+[349] "segmag"               "seismicRoll"          "SelvarMix"           
+[352] "sequences"            "sgd"                  "sglOptim"            
+[355] "signalHsmm"           "simFrame"             "simPop"              
+[358] "sirt"                 "slfm"                 "SLOPE"               
+[361] "snipEM"               "snplist"              "SocialNetworks"      
+[364] "SOD"                  "spacodiR"             "spaMM"               
+[367] "sparseHessianFD"      "sparseLTSEigen"       "SpatialEpi"          
+[370] "SpatialTools"         "SpatPCA"              "spBayesSurv"         
+[373] "spduration"           "spsann"               "staTools"            
+[376] "StereoMorph"          "StMoSim"              "stochvol"            
+[379] "stocks"               "stosim"               "strataG"             
+[382] "stream"               "strum"                "survAccuracyMeasures"
+[385] "surveillance"         "survSNP"              "SVMMatch"            
+[388] "synlik"               "systemicrisk"         "tagcloud"            
+[391] "TAM"                  "TAQMNGR"              "tbart"               
+[394] "tcR"                  "TED"                  "termstrc"            
+[397] "TESS"                 "textreg"              "TFMPvalue"           
+[400] "timma"                "tmg"                  "treeclim"            
+[403] "trustOptim"           "tvd"                  "unmarked"            
+[406] "urltools"             "V8"                   "VarSelLCM"           
+[409] "VideoComparison"      "VIM"                  "waffect"             
+[412] "webreadr"             "wordcloud"            "wsrf"                
+[415] "XBRL"                 "xergm"                "xml2"                
+[418] "zic"                 
+
+RESULT for accelerometry_2.2.5.tar.gz : success (1 of 418, 1 good, 0 bad)
+
+RESULT for AdaptiveSparsity_1.4.tar.gz : success (2 of 418, 2 good, 0 bad)
+
+RESULT for AHR_1.2.tar.gz : success (3 of 418, 3 good, 0 bad)
+
+RESULT for algstat_0.0.2.tar.gz : success (4 of 418, 4 good, 0 bad)
+
+RESULT for ALKr_0.5.3.1.tar.gz : success (5 of 418, 5 good, 0 bad)
+
+RESULT for Amelia_1.7.3.tar.gz : success (6 of 418, 6 good, 0 bad)
+
+RESULT for apcluster_1.4.1.tar.gz : success (7 of 418, 7 good, 0 bad)
+
+RESULT for ASPBay_1.2.tar.gz : success (8 of 418, 8 good, 0 bad)
+
+RESULT for autovarCore_1.0-0.tar.gz : success (9 of 418, 9 good, 0 bad)
+
+RESULT for BaBooN_0.2-0.tar.gz : failure (10 of 418, 9 good, 1 bad)
+
+RESULT for BalancedSampling_1.4.tar.gz : success (11 of 418, 10 good, 1 bad)
+
+RESULT for BayesFactor_0.9.11-1.tar.gz : success (12 of 418, 11 good, 1 bad)
+
+RESULT for bayesm_3.0-2.tar.gz : success (13 of 418, 12 good, 1 bad)
+
+RESULT for bayou_1.0.1.tar.gz : success (14 of 418, 13 good, 1 bad)
+
+RESULT for bcp_4.0.0.tar.gz : success (15 of 418, 14 good, 1 bad)
+
+RESULT for bcpa_1.1.tar.gz : failure (16 of 418, 14 good, 2 bad)
+
+RESULT for bfa_0.3.1.tar.gz : success (17 of 418, 15 good, 2 bad)
+
+RESULT for bfp_0.0-27.tar.gz : success (18 of 418, 16 good, 2 bad)
+
+RESULT for bifactorial_1.4.7.tar.gz : success (19 of 418, 17 good, 2 bad)
+
+RESULT for BIFIEsurvey_1.3-0.tar.gz : success (20 of 418, 18 good, 2 bad)
+
+RESULT for BIPOD_0.2.1.tar.gz : success (21 of 418, 19 good, 2 bad)
+
+RESULT for blockcluster_3.0.2.tar.gz : success (22 of 418, 20 good, 2 bad)
+
+RESULT for blockmodels_1.1.1.tar.gz : success (23 of 418, 21 good, 2 bad)
+
+RESULT for brms_0.3.0.tar.gz : success (24 of 418, 22 good, 2 bad)
+
+RESULT for btf_1.1.tar.gz : success (25 of 418, 23 good, 2 bad)
+
+RESULT for bvarsv_1.0.tar.gz : success (26 of 418, 24 good, 2 bad)
+
+RESULT for CARBayes_4.2.tar.gz : success (27 of 418, 25 good, 2 bad)
+
+RESULT for CARBayesST_2.0.tar.gz : success (28 of 418, 26 good, 2 bad)
+
+RESULT for ccaPP_0.3.0.tar.gz : success (29 of 418, 27 good, 2 bad)
+
+RESULT for cccp_0.2-4.tar.gz : failure (30 of 418, 27 good, 3 bad)
+
+RESULT for cda_1.5.1.tar.gz : success (31 of 418, 28 good, 3 bad)
+
+RESULT for CDM_4.4-1.tar.gz : success (32 of 418, 29 good, 3 bad)
+
+RESULT for cgAUC_1.2.1.tar.gz : success (33 of 418, 30 good, 3 bad)
+
+RESULT for chopthin_0.1.tar.gz : success (34 of 418, 31 good, 3 bad)
+
+RESULT for CIDnetworks_0.8.1.tar.gz : success (35 of 418, 32 good, 3 bad)
+
+RESULT for cladoRcpp_0.14.4.tar.gz : success (36 of 418, 33 good, 3 bad)
+
+RESULT for classify_1.3.tar.gz : success (37 of 418, 34 good, 3 bad)
+
+RESULT for clere_1.1.tar.gz : success (38 of 418, 35 good, 3 bad)
+
+RESULT for climdex.pcic_1.1-6.tar.gz : success (39 of 418, 36 good, 3 bad)
+
+RESULT for clogitL1_1.4.tar.gz : success (40 of 418, 37 good, 3 bad)
+
+RESULT for clusteval_0.1.tar.gz : success (41 of 418, 38 good, 3 bad)
+
+RESULT for ClustMMDD_1.0.1.tar.gz : success (42 of 418, 39 good, 3 bad)
+
+RESULT for ClustVarLV_1.4.0.tar.gz : success (43 of 418, 40 good, 3 bad)
+
+RESULT for CMF_1.0.tar.gz : success (44 of 418, 41 good, 3 bad)
+
+RESULT for coala_0.1.1.tar.gz : success (45 of 418, 42 good, 3 bad)
+
+RESULT for CompGLM_1.0.tar.gz : success (46 of 418, 43 good, 3 bad)
+
+RESULT for ConConPiWiFun_0.4.4.tar.gz : success (47 of 418, 44 good, 3 bad)
+
+RESULT for coneproj_1.6.tar.gz : success (48 of 418, 45 good, 3 bad)
+
+RESULT for copCAR_1.0-1.tar.gz : success (49 of 418, 46 good, 3 bad)
+
+RESULT for CorReg_1.0.5.tar.gz : success (50 of 418, 47 good, 3 bad)
+
+RESULT for Coxnet_0.1-1.tar.gz : success (51 of 418, 48 good, 3 bad)
+
+RESULT for Crossover_0.1-14.tar.gz : success (52 of 418, 49 good, 3 bad)
+
+RESULT for dbmss_2.2.1.tar.gz : success (53 of 418, 50 good, 3 bad)
+
+RESULT for dbscan_0.9-0.tar.gz : success (54 of 418, 51 good, 3 bad)
+
+RESULT for ddalpha_1.1.2.3.tar.gz : success (55 of 418, 52 good, 3 bad)
+
+RESULT for Delaporte_2.2-3.tar.gz : success (56 of 418, 53 good, 3 bad)
+
+RESULT for dendextendRcpp_0.6.1.tar.gz : success (57 of 418, 54 good, 3 bad)
+
+RESULT for DepthProc_1.0.3.tar.gz : success (58 of 418, 55 good, 3 bad)
+
+RESULT for DetMCD_0.0.2.tar.gz : success (59 of 418, 56 good, 3 bad)
+
+RESULT for dfcomb_2.1-3.tar.gz : success (60 of 418, 57 good, 3 bad)
+
+RESULT for dfmta_1.3-2.tar.gz : success (61 of 418, 58 good, 3 bad)
+
+RESULT for dils_0.8.1.tar.gz : success (62 of 418, 59 good, 3 bad)
+
+RESULT for disclapmix_1.6.1.tar.gz : success (63 of 418, 60 good, 3 bad)
+
+RESULT for diversitree_0.9-7.tar.gz : success (64 of 418, 61 good, 3 bad)
+
+RESULT for diveRsity_1.9.73.tar.gz : success (65 of 418, 62 good, 3 bad)
+
+RESULT for divo_0.1.1.tar.gz : success (66 of 418, 63 good, 3 bad)
+
+RESULT for DNAprofiles_0.3.1.tar.gz : success (67 of 418, 64 good, 3 bad)
+
+RESULT for DNAtools_0.1-21.tar.gz : success (68 of 418, 65 good, 3 bad)
+
+RESULT for dplyr_0.4.2.tar.gz : failure (69 of 418, 65 good, 4 bad)
+
+RESULT for dslice_1.1.4.tar.gz : success (70 of 418, 66 good, 4 bad)
+
+RESULT for DStree_1.0.tar.gz : success (71 of 418, 67 good, 4 bad)
+
+RESULT for ecp_2.0.0.tar.gz : success (72 of 418, 68 good, 4 bad)
+
+RESULT for EditImputeCont_1.0.0.tar.gz : success (73 of 418, 69 good, 4 bad)
+
+RESULT for eive_2.1.tar.gz : success (74 of 418, 70 good, 4 bad)
+
+RESULT for emIRT_0.0.5.tar.gz : success (75 of 418, 71 good, 4 bad)
+
+RESULT for ESGtoolkit_0.1.tar.gz : success (76 of 418, 72 good, 4 bad)
+
+RESULT for evolqg_0.1-5.tar.gz : success (77 of 418, 73 good, 4 bad)
+
+RESULT for EWGoF_2.1.tar.gz : success (78 of 418, 74 good, 4 bad)
+
+RESULT for fastGHQuad_0.2.tar.gz : success (79 of 418, 75 good, 4 bad)
+
+RESULT for FastHCS_0.0.5.tar.gz : success (80 of 418, 76 good, 4 bad)
+
+RESULT for fastM_0.0-2.tar.gz : success (81 of 418, 77 good, 4 bad)
+
+RESULT for FastPCS_0.1.2.tar.gz : success (82 of 418, 78 good, 4 bad)
+
+RESULT for FastRCS_0.0.6.tar.gz : success (83 of 418, 79 good, 4 bad)
+
+RESULT for FBFsearch_1.0.tar.gz : success (84 of 418, 80 good, 4 bad)
+
+RESULT for fbroc_0.2.1.tar.gz : success (85 of 418, 81 good, 4 bad)
+
+RESULT for FCNN4R_0.3.2.tar.gz : success (86 of 418, 82 good, 4 bad)
+
+RESULT for fdaMixed_0.4.tar.gz : success (87 of 418, 83 good, 4 bad)
+
+RESULT for FDGcopulas_1.0.tar.gz : success (88 of 418, 84 good, 4 bad)
+
+RESULT for FDRreg_0.1.tar.gz : success (89 of 418, 85 good, 4 bad)
+
+RESULT for FeatureHashing_0.9.tar.gz : success (90 of 418, 86 good, 4 bad)
+
+RESULT for fICA_1.0-2.tar.gz : success (91 of 418, 87 good, 4 bad)
+
+RESULT for FisHiCal_1.1.tar.gz : failure (92 of 418, 87 good, 5 bad)
+
+RESULT for flam_2.0.tar.gz : success (93 of 418, 88 good, 5 bad)
+
+RESULT for flip_2.4.3.tar.gz : success (94 of 418, 89 good, 5 bad)
+
+RESULT for FLSSS_3.1.tar.gz : success (95 of 418, 90 good, 5 bad)
+
+RESULT for forecast_6.1.tar.gz : success (96 of 418, 91 good, 5 bad)
+
+RESULT for forestFloor_1.5.tar.gz : failure (97 of 418, 91 good, 6 bad)
+
+RESULT for FRESA.CAD_2.0.2.tar.gz : success (98 of 418, 92 good, 6 bad)
+
+RESULT for FSInteract_0.1.1.tar.gz : success (99 of 418, 93 good, 6 bad)
+
+RESULT for fugeR_0.1.2.tar.gz : success (100 of 418, 94 good, 6 bad)
+
+RESULT for FunChisq_2.1.0.tar.gz : success (101 of 418, 95 good, 6 bad)
+
+RESULT for Funclustering_1.0.1.tar.gz : success (102 of 418, 96 good, 6 bad)
+
+RESULT for fwsim_0.3.3.tar.gz : success (103 of 418, 97 good, 6 bad)
+
+RESULT for gaselect_1.0.5.tar.gz : success (104 of 418, 98 good, 6 bad)
+
+RESULT for GCPM_1.2.tar.gz : success (105 of 418, 99 good, 6 bad)
+
+RESULT for gdm_1.0.tar.gz : success (106 of 418, 100 good, 6 bad)
+
+RESULT for geiger_2.0.3.tar.gz : success (107 of 418, 101 good, 6 bad)
+
+RESULT for GeneticTools_0.3.1.tar.gz : success (108 of 418, 102 good, 6 bad)
+
+RESULT for GENLIB_1.0.4.tar.gz : success (109 of 418, 103 good, 6 bad)
+
+RESULT for geoCount_1.150120.tar.gz : success (110 of 418, 104 good, 6 bad)
+
+RESULT for gkmSVM_0.55.tar.gz : success (111 of 418, 105 good, 6 bad)
+
+RESULT for glcm_1.2.tar.gz : success (112 of 418, 106 good, 6 bad)
+
+RESULT for glmgraph_1.0.3.tar.gz : success (113 of 418, 107 good, 6 bad)
+
+RESULT for GMCM_1.2.1.tar.gz : success (114 of 418, 108 good, 6 bad)
+
+RESULT for Gmisc_1.1.tar.gz : success (115 of 418, 109 good, 6 bad)
+
+RESULT for gMWT_1.0.tar.gz : success (116 of 418, 110 good, 6 bad)
+
+RESULT for GPareto_1.0.1.tar.gz : failure (117 of 418, 110 good, 7 bad)
+
+RESULT for GPvam_3.0-2.tar.gz : success (118 of 418, 111 good, 7 bad)
+
+RESULT for graphicalVAR_0.1.3.tar.gz : success (119 of 418, 112 good, 7 bad)
+
+RESULT for gRbase_1.7-0.1.tar.gz : success (120 of 418, 113 good, 7 bad)
+
+RESULT for gRim_0.1-17.tar.gz : success (121 of 418, 114 good, 7 bad)
+
+RESULT for growcurves_0.2.3.9.tar.gz : success (122 of 418, 115 good, 7 bad)
+
+RESULT for growfunctions_0.11.tar.gz : success (123 of 418, 116 good, 7 bad)
+
+RESULT for GSE_3.2.1.tar.gz : success (124 of 418, 117 good, 7 bad)
+
+RESULT for GUILDS_1.2.1.tar.gz : success (125 of 418, 118 good, 7 bad)
+
+RESULT for GUTS_1.0.0.tar.gz : success (126 of 418, 119 good, 7 bad)
+
+RESULT for GxM_1.1.tar.gz : success (127 of 418, 120 good, 7 bad)
+
+RESULT for h5_0.9.1.tar.gz : success (128 of 418, 121 good, 7 bad)
+
+RESULT for haven_0.2.0.tar.gz : success (129 of 418, 122 good, 7 bad)
+
+RESULT for hawkes_0.0-4.tar.gz : success (130 of 418, 123 good, 7 bad)
+
+RESULT for HLMdiag_0.3.0.tar.gz : success (131 of 418, 124 good, 7 bad)
+
+RESULT for hsphase_2.0.1.tar.gz : success (132 of 418, 125 good, 7 bad)
+
+RESULT for hts_4.5.tar.gz : success (133 of 418, 126 good, 7 bad)
+
+RESULT for httpuv_1.3.2.tar.gz : success (134 of 418, 127 good, 7 bad)
+
+RESULT for HUM_1.0.tar.gz : failure (135 of 418, 127 good, 8 bad)
+
+RESULT for hypervolume_1.3.0.tar.gz : success (136 of 418, 128 good, 8 bad)
+
+RESULT for iBATCGH_1.3.tar.gz : success (137 of 418, 129 good, 8 bad)
+
+RESULT for IBHM_1.1-11.tar.gz : success (138 of 418, 130 good, 8 bad)
+
+RESULT for icamix_1.0.2.tar.gz : failure (139 of 418, 130 good, 9 bad)
+
+RESULT for iccbeta_1.0.tar.gz : success (140 of 418, 131 good, 9 bad)
+
+RESULT for icd9_1.2.tar.gz : success (141 of 418, 132 good, 9 bad)
+
+RESULT for icensmis_1.2.1.tar.gz : success (142 of 418, 133 good, 9 bad)
+
+RESULT for inarmix_0.4.tar.gz : success (143 of 418, 134 good, 9 bad)
+
+RESULT for iptools_0.2.0.tar.gz : success (144 of 418, 135 good, 9 bad)
+
+RESULT for IsingSampler_0.2.tar.gz : success (145 of 418, 136 good, 9 bad)
+
+RESULT for ISOpureR_1.0.8.tar.gz : success (146 of 418, 137 good, 9 bad)
+
+RESULT for iterpc_0.2.7.tar.gz : success (147 of 418, 138 good, 9 bad)
+
+RESULT for jaatha_2.7.0.tar.gz : success (148 of 418, 139 good, 9 bad)
+
+RESULT for JAGUAR_2.0.tar.gz : success (149 of 418, 140 good, 9 bad)
+
+RESULT for jiebaR_0.5.tar.gz : success (150 of 418, 141 good, 9 bad)
+
+RESULT for kdecopula_0.0.2.tar.gz : success (151 of 418, 142 good, 9 bad)
+
+RESULT for kergp_0.1.0.tar.gz : success (152 of 418, 143 good, 9 bad)
+
+RESULT for KernSmoothIRT_6.1.tar.gz : failure (153 of 418, 143 good, 10 bad)
+
+RESULT for kmc_0.1-2.tar.gz : success (154 of 418, 144 good, 10 bad)
+
+RESULT for Kmisc_0.5.0.tar.gz : success (155 of 418, 145 good, 10 bad)
+
+RESULT for LaF_0.6.2.tar.gz : success (156 of 418, 146 good, 10 bad)
+
+RESULT for lamW_0.1-1.tar.gz : success (157 of 418, 147 good, 10 bad)
+
+RESULT for lbfgs_1.2.1.tar.gz : success (158 of 418, 148 good, 10 bad)
+
+RESULT for lfl_1.2.tar.gz : success (159 of 418, 149 good, 10 bad)
+
+RESULT for lifecontingencies_1.1.9.tar.gz : success (160 of 418, 150 good, 10 bad)
+
+RESULT for lm.br_2.7.tar.gz : success (161 of 418, 151 good, 10 bad)
+
+RESULT for lme4_1.1-8.tar.gz : failure (162 of 418, 151 good, 11 bad)
+
+RESULT for lpme_1.0.1.tar.gz : success (163 of 418, 152 good, 11 bad)
+
+RESULT for lsbclust_1.0.2.tar.gz : success (164 of 418, 153 good, 11 bad)
+
+RESULT for lsgl_1.0.123.1.tar.gz : success (165 of 418, 154 good, 11 bad)
+
+RESULT for Luminescence_0.4.4.tar.gz : success (166 of 418, 155 good, 11 bad)
+
+RESULT for marked_1.1.8.tar.gz : success (167 of 418, 156 good, 11 bad)
+
+RESULT for markophylo_1.0.1.tar.gz : success (168 of 418, 157 good, 11 bad)
+
+RESULT for markovchain_0.3.1.tar.gz : success (169 of 418, 158 good, 11 bad)
+
+RESULT for MAT_2.2.tar.gz : success (170 of 418, 159 good, 11 bad)
+
+RESULT for matchingMarkets_0.1-5.tar.gz : success (171 of 418, 160 good, 11 bad)
+
+RESULT for matchingR_1.0.1.tar.gz : success (172 of 418, 161 good, 11 bad)
+
+RESULT for maxent_1.3.3.1.tar.gz : success (173 of 418, 162 good, 11 bad)
+
+RESULT for mbbefd_0.7.tar.gz : success (174 of 418, 163 good, 11 bad)
+
+RESULT for mcIRT_0.41.tar.gz : success (175 of 418, 164 good, 11 bad)
+
+RESULT for metafolio_0.1.0.tar.gz : success (176 of 418, 165 good, 11 bad)
+
+RESULT for mets_1.1.1.tar.gz : success (177 of 418, 166 good, 11 bad)
+
+RESULT for mice_2.22.tar.gz : success (178 of 418, 167 good, 11 bad)
+
+RESULT for miceadds_1.3-0.tar.gz : failure (179 of 418, 167 good, 12 bad)
+
+RESULT for minqa_1.2.4.tar.gz : success (180 of 418, 168 good, 12 bad)
+
+RESULT for mirt_1.10.tar.gz : success (181 of 418, 169 good, 12 bad)
+
+RESULT for mirtCAT_0.5.tar.gz : success (182 of 418, 170 good, 12 bad)
+
+RESULT for miscF_0.1-2.tar.gz : success (183 of 418, 171 good, 12 bad)
+
+RESULT for miscset_0.4.tar.gz : success (184 of 418, 172 good, 12 bad)
+
+RESULT for missDeaths_1.0.tar.gz : failure (185 of 418, 172 good, 13 bad)
+
+RESULT for MixAll_1.0.2.tar.gz : success (186 of 418, 173 good, 13 bad)
+
+RESULT for mixedMem_1.0.2.tar.gz : success (187 of 418, 174 good, 13 bad)
+
+RESULT for mkde_0.1.tar.gz : success (188 of 418, 175 good, 13 bad)
+
+RESULT for mlxR_2.2.0.tar.gz : success (189 of 418, 176 good, 13 bad)
+
+RESULT for mmand_1.1.0.tar.gz : success (190 of 418, 177 good, 13 bad)
+
+RESULT for Morpho_2.3.0.tar.gz : failure (191 of 418, 177 good, 14 bad)
+
+RESULT for mp_0.2.0.tar.gz : success (192 of 418, 178 good, 14 bad)
+
+RESULT for Mposterior_0.1.2.tar.gz : success (193 of 418, 179 good, 14 bad)
+
+RESULT for MPTinR_1.9.2.tar.gz : success (194 of 418, 180 good, 14 bad)
+
+RESULT for MRIaggr_1.1.2.tar.gz : failure (195 of 418, 180 good, 15 bad)
+
+RESULT for msgl_2.0.125.1.tar.gz : failure (196 of 418, 180 good, 16 bad)
+
+RESULT for MTS_0.33.tar.gz : success (197 of 418, 181 good, 16 bad)
+
+RESULT for multicool_0.1-6.tar.gz : success (198 of 418, 182 good, 16 bad)
+
+RESULT for mvabund_3.10.4.tar.gz : success (199 of 418, 183 good, 16 bad)
+
+RESULT for MVB_1.1.tar.gz : success (200 of 418, 184 good, 16 bad)
+
+RESULT for mvnfast_0.1.3.tar.gz : success (201 of 418, 185 good, 16 bad)
+
+RESULT for mwaved_1.1.1.tar.gz : success (202 of 418, 186 good, 16 bad)
+
+RESULT for myTAI_0.2.0.tar.gz : success (203 of 418, 187 good, 16 bad)
+
+RESULT for nabor_0.4.6.tar.gz : failure (204 of 418, 187 good, 17 bad)
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c SAMP.cpp -o SAMP.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c SAMP2.cpp -o SAMP2.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c calcSize.cpp -o calcSize.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c funI.cpp -o funI.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c funX.cpp -o funX.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c inputRow.cpp -o inputRow.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c timesMatrix.cpp -o timesMatrix.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c timesVec.cpp -o timesVec.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o NAM.so RcppExports.o SAMP.o SAMP2.o calcSize.o funI.o funX.o inputRow.o timesMatrix.o timesVec.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for NAM_1.3.3.tar.gz : success (205 of 418, 188 good, 17 bad)
+
+RESULT for ndl_0.2.16.tar.gz : success (206 of 418, 189 good, 17 bad)
+
+RESULT for NetSim_0.9.tar.gz : success (207 of 418, 190 good, 17 bad)
+
+RESULT for neuroim_0.0.4.tar.gz : success (208 of 418, 191 good, 17 bad)
+
+RESULT for ngspatial_1.0-5.tar.gz : success (209 of 418, 192 good, 17 bad)
+
+RESULT for NHMM_3.5.tar.gz : success (210 of 418, 193 good, 17 bad)
+
+RESULT for nonlinearTseries_0.2.2.tar.gz : success (211 of 418, 194 good, 17 bad)
+
+RESULT for NPBayesImpute_0.5.tar.gz : success (212 of 418, 195 good, 17 bad)
+
+RESULT for oapackage_2.0.23.tar.gz : success (213 of 418, 196 good, 17 bad)
+
+RESULT for odeintr_1.3.tar.gz : success (214 of 418, 197 good, 17 bad)
+
+RESULT for oem_1.02.1.tar.gz : success (215 of 418, 198 good, 17 bad)
+
+RESULT for OneArmPhaseTwoStudy_0.1.3.tar.gz : success (216 of 418, 199 good, 17 bad)
+
+RESULT for onlinePCA_1.0-1.tar.gz : success (217 of 418, 200 good, 17 bad)
+
+RESULT for openair_1.5.tar.gz : success (218 of 418, 201 good, 17 bad)
+Change default C/C++ compiler and default compile flags by editing ~/.R/Makevars
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c Compute.cpp -o Compute.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c ComputeGD.cpp -o ComputeGD.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c ComputeNR.cpp -o ComputeNR.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c ComputeSD.cpp -o ComputeSD.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c ba81quad.cpp -o ba81quad.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c dmvnorm.cpp -o dmvnorm.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c fitMultigroup.cpp -o fitMultigroup.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c general.c -o general.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c glue.cpp -o glue.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c libifa-rpf.cpp -o libifa-rpf.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c matrix.cpp -o matrix.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c merge.cpp -o merge.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c nloptcpp.cpp -o nloptcpp.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxAlgebra.cpp -o omxAlgebra.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxAlgebraFitFunction.cpp -o omxAlgebraFitFunction.o
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c omxBLAS.f -o omxBLAS.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxCsolnp.cpp -o omxCsolnp.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxData.cpp -o omxData.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxExpectation.cpp -o omxExpectation.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxExpectationBA81.cpp -o omxExpectationBA81.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxExportBackendState.cpp -o omxExportBackendState.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxFIMLFitFunction.cpp -o omxFIMLFitFunction.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxFIMLSingleIteration.cpp -o omxFIMLSingleIteration.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxFitFunction.cpp -o omxFitFunction.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxFitFunctionBA81.cpp -o omxFitFunctionBA81.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxGREMLExpectation.cpp -o omxGREMLExpectation.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxGREMLfitfunction.cpp -o omxGREMLfitfunction.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxHessianCalculation.cpp -o omxHessianCalculation.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxImportFrontendState.cpp -o omxImportFrontendState.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxLISRELExpectation.cpp -o omxLISRELExpectation.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxMLFitFunction.cpp -o omxMLFitFunction.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxMatrix.cpp -o omxMatrix.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxNPSOLSpecific.cpp -o omxNPSOLSpecific.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxNormalExpectation.cpp -o omxNormalExpectation.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxRAMExpectation.cpp -o omxRAMExpectation.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxRFitFunction.cpp -o omxRFitFunction.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxRowFitFunction.cpp -o omxRowFitFunction.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxSadmvnWrapper.cpp -o omxSadmvnWrapper.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxState.cpp -o omxState.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxStateSpaceExpectation.cpp -o omxStateSpaceExpectation.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxSymbolTable.cpp -o omxSymbolTable.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c omxWLSFitFunction.cpp -o omxWLSFitFunction.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c optimize.c -o optimize.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c options.c -o options.o
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c sadmvn.f -o sadmvn.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c slsqp.c -o slsqp.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c stop.c -o stop.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c subnp.cpp -o subnp.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o OpenMx.so Compute.o ComputeGD.o ComputeNR.o ComputeSD.o ba81quad.o dmvnorm.o fitMultigroup.o general.o glue.o libifa-rpf.o matrix.o merge.o nloptcpp.o omxAlgebra.o omxAlgebraFitFunction.o omxBLAS.o omxCsolnp.o omxData.o omxExpectation.o omxExpectationBA81.o omxExportBackendState.o omxFIMLFitFunction.o omxFIMLSingleIteration.o omxFitFunction.o omxFitFunctionBA81.o omxGREMLExpectation.o omxGREMLfitfunction.o omxHessianCalculation.o omxImportFrontendState.o omxLISRELExpectation.o omxMLFitFunction.o omxMatrix.o omxNPSOLSpecific.o omxNormalExpectation.o omxRAMExpectation.o omxRFitFunction.o omxRowFitFunction.o omxSadmvnWrapper.o omxState.o omxStateSpaceExpectation.o omxSymbolTable.o omxWLSFitFunction.o optimize.o options.o sadmvn.o slsqp.o stop.o subnp.o -fopenmp -lgfortran -lm -lquadmath -lblas -llapack -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+mkdir -p ../inst/debug
+cp *.gcno ../inst/debug/
+Makevars:39: recipe for target 'save-gcno' failed
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for OpenMx_2.2.6.tar.gz : success (219 of 418, 202 good, 17 bad)
+
+RESULT for openxlsx_3.0.0.tar.gz : success (220 of 418, 203 good, 17 bad)
+
+RESULT for orQA_0.2.1.tar.gz : success (221 of 418, 204 good, 17 bad)
+
+RESULT for PAFit_0.7.2.tar.gz : success (222 of 418, 205 good, 17 bad)
+
+RESULT for pander_0.5.2.tar.gz : success (223 of 418, 206 good, 17 bad)
+
+RESULT for partialAR_1.0.5.tar.gz : success (224 of 418, 207 good, 17 bad)
+
+RESULT for PBC_1.2.tar.gz : failure (225 of 418, 207 good, 18 bad)
+
+RESULT for pcalg_2.2-3.tar.gz : success (226 of 418, 208 good, 18 bad)
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c gamfunk.cpp -o gamfunk.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o pcIRT.so RcppExports.o gamfunk.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for pcIRT_0.2.tar.gz : success (227 of 418, 209 good, 18 bad)
+
+RESULT for PedCNV_0.1.tar.gz : success (228 of 418, 210 good, 18 bad)
+
+RESULT for pedometrics_0.6-2.tar.gz : success (229 of 418, 211 good, 18 bad)
+
+RESULT for penMSM_0.99.tar.gz : success (230 of 418, 212 good, 18 bad)
+
+RESULT for PerMallows_1.8.tar.gz : success (231 of 418, 213 good, 18 bad)
+
+RESULT for phylobase_0.6.8.tar.gz : success (232 of 418, 214 good, 18 bad)
+
+RESULT for planar_1.5.2.tar.gz : success (233 of 418, 215 good, 18 bad)
+
+RESULT for plotSEMM_2.0.tar.gz : success (234 of 418, 216 good, 18 bad)
+
+RESULT for plyr_1.8.3.tar.gz : failure (235 of 418, 216 good, 19 bad)
+
+RESULT for poisDoubleSamp_1.1.tar.gz : success (236 of 418, 217 good, 19 bad)
+
+RESULT for polywog_0.4-0.tar.gz : success (237 of 418, 218 good, 19 bad)
+
+RESULT for PoweR_1.0.4.tar.gz : success (238 of 418, 219 good, 19 bad)
+
+RESULT for PP_0.5.3.tar.gz : success (239 of 418, 220 good, 19 bad)
+
+RESULT for PPtreeViz_1.1.0.tar.gz : success (240 of 418, 221 good, 19 bad)
+
+RESULT for PReMiuM_3.1.1.tar.gz : success (241 of 418, 222 good, 19 bad)
+
+RESULT for primes_0.1.0.tar.gz : success (242 of 418, 223 good, 19 bad)
+
+RESULT for pROC_1.8.tar.gz : failure (243 of 418, 223 good, 20 bad)
+
+RESULT for propagate_1.0-4.tar.gz : success (244 of 418, 224 good, 20 bad)
+
+RESULT for prospectr_0.1.3.tar.gz : success (245 of 418, 225 good, 20 bad)
+
+RESULT for protViz_0.2.9.tar.gz : success (246 of 418, 226 good, 20 bad)
+
+RESULT for pryr_0.1.2.tar.gz : success (247 of 418, 227 good, 20 bad)
+
+RESULT for psd_1.0-1.tar.gz : success (248 of 418, 228 good, 20 bad)
+
+RESULT for psgp_0.3-6.tar.gz : success (249 of 418, 229 good, 20 bad)
+
+RESULT for pvar_2.2.tar.gz : success (250 of 418, 230 good, 20 bad)
+
+RESULT for QRM_0.4-10.tar.gz : success (251 of 418, 231 good, 20 bad)
+
+RESULT for quadrupen_0.2-4.tar.gz : success (252 of 418, 232 good, 20 bad)
+
+RESULT for quanteda_0.8.0-4.tar.gz : success (253 of 418, 233 good, 20 bad)
+
+RESULT for quantspec_1.0-3.tar.gz : success (254 of 418, 234 good, 20 bad)
+
+RESULT for qVarSel_1.0.tar.gz : success (255 of 418, 235 good, 20 bad)
+
+RESULT for randomUniformForest_1.1.5.tar.gz : success (256 of 418, 236 good, 20 bad)
+
+RESULT for Rankcluster_0.92.9.tar.gz : success (257 of 418, 237 good, 20 bad)
+
+RESULT for rankdist_1.0.0.tar.gz : success (258 of 418, 238 good, 20 bad)
+
+RESULT for rARPACK_0.7-0.tar.gz : success (259 of 418, 239 good, 20 bad)
+
+RESULT for raster_2.4-15.tar.gz : success (260 of 418, 240 good, 20 bad)
+
+RESULT for Rborist_0.1-0.tar.gz : success (261 of 418, 241 good, 20 bad)
+
+RESULT for Rclusterpp_0.2.3.tar.gz : success (262 of 418, 242 good, 20 bad)
+
+RESULT for RcppAnnoy_0.0.6.tar.gz : success (263 of 418, 243 good, 20 bad)
+
+RESULT for RcppAPT_0.0.1.tar.gz : success (264 of 418, 244 good, 20 bad)
+
+RESULT for RcppArmadillo_0.5.200.1.0.tar.gz : success (265 of 418, 245 good, 20 bad)
+
+RESULT for RcppBDT_0.2.3.tar.gz : success (266 of 418, 246 good, 20 bad)
+
+RESULT for rcppbugs_0.1.4.1.tar.gz : success (267 of 418, 247 good, 20 bad)
+
+RESULT for RcppClassic_0.9.6.tar.gz : success (268 of 418, 248 good, 20 bad)
+
+RESULT for RcppClassicExamples_0.1.1.tar.gz : success (269 of 418, 249 good, 20 bad)
+
+RESULT for RcppCNPy_0.2.4.tar.gz : success (270 of 418, 250 good, 20 bad)
+
+RESULT for RcppDE_0.1.2.tar.gz : failure (271 of 418, 250 good, 21 bad)
+
+RESULT for RcppDL_0.0.5.tar.gz : success (272 of 418, 251 good, 21 bad)
+
+RESULT for RcppEigen_0.3.2.5.0.tar.gz : success (273 of 418, 252 good, 21 bad)
+
+RESULT for RcppExamples_0.1.6.tar.gz : success (274 of 418, 253 good, 21 bad)
+
+RESULT for RcppFaddeeva_0.1.0.tar.gz : success (275 of 418, 254 good, 21 bad)
+
+RESULT for RcppGSL_0.2.5.tar.gz : success (276 of 418, 255 good, 21 bad)
+
+RESULT for RcppMLPACK_1.0.10-2.tar.gz : success (277 of 418, 256 good, 21 bad)
+
+RESULT for RcppOctave_0.14.5.tar.gz : success (278 of 418, 257 good, 21 bad)
+
+RESULT for RcppProgress_0.2.1.tar.gz : success (279 of 418, 258 good, 21 bad)
+checking for g++... g++
+checking whether the C++ compiler works... yes
+checking for C++ compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C++ compiler... yes
+checking whether g++ accepts -g... yes
+checking how to run the C++ preprocessor... g++ -E
+checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether g++ accepts -g... (cached) yes
+checking for pkg-config... yes
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking hiredis/hiredis.h usability... yes
+checking hiredis/hiredis.h presence... yes
+checking for hiredis/hiredis.h... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+Completed configuration and ready to build.
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RApiSerialize/include"  -D_FILE_OFFSET_BITS=64 -I/usr/include/hiredis  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RApiSerialize/include"  -D_FILE_OFFSET_BITS=64 -I/usr/include/hiredis  -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c Redis.cpp -o Redis.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o RcppRedis.so RcppExports.o Redis.o -lhiredis -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for RcppRedis_0.1.5.tar.gz : success (280 of 418, 259 good, 21 bad)
+
+RESULT for RcppRoll_0.2.2.tar.gz : success (281 of 418, 260 good, 21 bad)
+
+RESULT for RcppSMC_0.1.4.tar.gz : success (282 of 418, 261 good, 21 bad)
+
+RESULT for RcppStreams_0.1.0.tar.gz : success (283 of 418, 262 good, 21 bad)
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/ -DCPPTOML_USE_MAP  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/ -DCPPTOML_USE_MAP  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -Wall -pipe -Wno-unused -pedantic  -c parse.cpp -o parse.o
+ccache g++ -std=c++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o RcppTOML.so RcppExports.o parse.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for RcppTOML_0.0.4.tar.gz : success (284 of 418, 263 good, 21 bad)
+
+RESULT for RcppXts_0.0.4.tar.gz : success (285 of 418, 264 good, 21 bad)
+
+RESULT for RcppZiggurat_0.1.2.tar.gz : success (286 of 418, 265 good, 21 bad)
+
+RESULT for readr_0.1.1.tar.gz : success (287 of 418, 266 good, 21 bad)
+
+RESULT for readstata13_0.7.tar.gz : success (288 of 418, 267 good, 21 bad)
+
+RESULT for readxl_0.1.0.tar.gz : success (289 of 418, 268 good, 21 bad)
+
+RESULT for RealVAMS_0.3-1.tar.gz : success (290 of 418, 269 good, 21 bad)
+
+RESULT for reconstructr_1.1.0.tar.gz : success (291 of 418, 270 good, 21 bad)
+
+RESULT for recosystem_0.3.tar.gz : success (292 of 418, 271 good, 21 bad)
+
+RESULT for redist_1.1.tar.gz : success (293 of 418, 272 good, 21 bad)
+
+RESULT for relSim_0.2-0.tar.gz : success (294 of 418, 273 good, 21 bad)
+
+RESULT for remote_1.0.0.tar.gz : success (295 of 418, 274 good, 21 bad)
+
+RESULT for ReorderCluster_1.0.tar.gz : success (296 of 418, 275 good, 21 bad)
+
+RESULT for repra_0.4.2.tar.gz : success (297 of 418, 276 good, 21 bad)
+
+RESULT for resemble_1.1.1.tar.gz : success (298 of 418, 277 good, 21 bad)
+
+RESULT for reshape2_1.4.1.tar.gz : success (299 of 418, 278 good, 21 bad)
+
+RESULT for revealedPrefs_0.2.tar.gz : success (300 of 418, 279 good, 21 bad)
+
+RESULT for rexpokit_0.24.1.tar.gz : success (301 of 418, 280 good, 21 bad)
+
+RESULT for rforensicbatwing_1.3.tar.gz : success (302 of 418, 281 good, 21 bad)
+
+RESULT for rgam_0.6.3.tar.gz : success (303 of 418, 282 good, 21 bad)
+
+RESULT for RInside_0.2.13.tar.gz : success (304 of 418, 283 good, 21 bad)
+
+RESULT for ripa_2.0-2.tar.gz : success (305 of 418, 284 good, 21 bad)
+
+RESULT for rivr_0.9.2.tar.gz : success (306 of 418, 285 good, 21 bad)
+
+RESULT for rkvo_0.1.tar.gz : success (307 of 418, 286 good, 21 bad)
+
+RESULT for Rlibeemd_1.3.5.tar.gz : success (308 of 418, 287 good, 21 bad)
+
+RESULT for rlme_0.4.tar.gz : failure (309 of 418, 287 good, 22 bad)
+
+RESULT for RLRsim_3.0.tar.gz : success (310 of 418, 288 good, 22 bad)
+
+RESULT for Rmalschains_0.2-2.tar.gz : success (311 of 418, 289 good, 22 bad)
+
+RESULT for rmgarch_1.2-9.tar.gz : success (312 of 418, 290 good, 22 bad)
+
+RESULT for Rmixmod_2.0.2.tar.gz : success (313 of 418, 291 good, 22 bad)
+
+RESULT for RmixmodCombi_1.0.tar.gz : success (314 of 418, 292 good, 22 bad)
+
+RESULT for rncl_0.4.0.tar.gz : success (315 of 418, 293 good, 22 bad)
+
+RESULT for robustgam_0.1.7.tar.gz : success (316 of 418, 294 good, 22 bad)
+
+RESULT for robustHD_0.5.0.tar.gz : success (317 of 418, 295 good, 22 bad)
+
+RESULT for robustreg_0.1-7.tar.gz : success (318 of 418, 296 good, 22 bad)
+
+RESULT for rococo_1.1.2.tar.gz : success (319 of 418, 297 good, 22 bad)
+
+RESULT for rotations_1.3.tar.gz : success (320 of 418, 298 good, 22 bad)
+
+RESULT for RoughSets_1.2-1.tar.gz : success (321 of 418, 299 good, 22 bad)
+
+RESULT for roxygen2_4.1.1.tar.gz : success (322 of 418, 300 good, 22 bad)
+
+RESULT for rpf_0.45.tar.gz : success (323 of 418, 301 good, 22 bad)
+
+RESULT for rpg_1.4.tar.gz : success (324 of 418, 302 good, 22 bad)
+
+RESULT for Rphylopars_0.1.1.tar.gz : success (325 of 418, 303 good, 22 bad)
+
+RESULT for rplexos_1.1.1.tar.gz : success (326 of 418, 304 good, 22 bad)
+
+RESULT for rPref_0.5.tar.gz : success (327 of 418, 305 good, 22 bad)
+
+RESULT for RProtoBuf_0.4.2.tar.gz : success (328 of 418, 306 good, 22 bad)
+
+RESULT for RQuantLib_0.4.0.tar.gz : success (329 of 418, 307 good, 22 bad)
+
+RESULT for RSNNS_0.4-7.tar.gz : success (330 of 418, 308 good, 22 bad)
+
+RESULT for RSNPset_0.4.tar.gz : success (331 of 418, 309 good, 22 bad)
+
+RESULT for RSofia_1.1.tar.gz : success (332 of 418, 310 good, 22 bad)
+
+RESULT for Rsomoclu_1.4.1.tar.gz : success (333 of 418, 311 good, 22 bad)
+ccache g++ -I/usr/share/R/include -DNDEBUG -I"../inst/include" -I"../inst/include/boost_not_in_BH" -I"`"/usr/lib/R/bin/Rscript" -e "cat(system.file('include', 'src', package = 'StanHeaders'))"`" -DBOOST_RESULT_OF_USE_TR1 -DBOOST_NO_DECLTYPE -DBOOST_DISABLE_ASSERTS  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/StanHeaders/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c chains.cpp -o chains.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I"../inst/include" -I"../inst/include/boost_not_in_BH" -I"`"/usr/lib/R/bin/Rscript" -e "cat(system.file('include', 'src', package = 'StanHeaders'))"`" -DBOOST_RESULT_OF_USE_TR1 -DBOOST_NO_DECLTYPE -DBOOST_DISABLE_ASSERTS  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/StanHeaders/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c init.cpp -o init.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I"../inst/include" -I"../inst/include/boost_not_in_BH" -I"`"/usr/lib/R/bin/Rscript" -e "cat(system.file('include', 'src', package = 'StanHeaders'))"`" -DBOOST_RESULT_OF_USE_TR1 -DBOOST_NO_DECLTYPE -DBOOST_DISABLE_ASSERTS  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/StanHeaders/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c lang__ast_def.cpp -o lang__ast_def.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I"../inst/include" -I"../inst/include/boost_not_in_BH" -I"`"/usr/lib/R/bin/Rscript" -e "cat(system.file('include', 'src', package = 'StanHeaders'))"`" -DBOOST_RESULT_OF_USE_TR1 -DBOOST_NO_DECLTYPE -DBOOST_DISABLE_ASSERTS  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/StanHeaders/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c lang__grammars__bare_type_grammar_inst.cpp -o lang__grammars__bare_type_grammar_inst.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I"../inst/include" -I"../inst/include/boost_not_in_BH" -I"`"/usr/lib/R/bin/Rscript" -e "cat(system.file('include', 'src', package = 'StanHeaders'))"`" -DBOOST_RESULT_OF_USE_TR1 -DBOOST_NO_DECLTYPE -DBOOST_DISABLE_ASSERTS  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/StanHeaders/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c lang__grammars__expression07_grammar_inst.cpp -o lang__grammars__expression07_grammar_inst.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I"../inst/include" -I"../inst/include/boost_not_in_BH" -I"`"/usr/lib/R/bin/Rscript" -e "cat(system.file('include', 'src', package = 'StanHeaders'))"`" -DBOOST_RESULT_OF_USE_TR1 -DBOOST_NO_DECLTYPE -DBOOST_DISABLE_ASSERTS  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/StanHeaders/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c lang__grammars__expression_grammar_inst.cpp -o lang__grammars__expression_grammar_inst.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I"../inst/include" -I"../inst/include/boost_not_in_BH" -I"`"/usr/lib/R/bin/Rscript" -e "cat(system.file('include', 'src', package = 'StanHeaders'))"`" -DBOOST_RESULT_OF_USE_TR1 -DBOOST_NO_DECLTYPE -DBOOST_DISABLE_ASSERTS  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/StanHeaders/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c lang__grammars__functions_grammar_inst.cpp -o lang__grammars__functions_grammar_inst.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I"../inst/include" -I"../inst/include/boost_not_in_BH" -I"`"/usr/lib/R/bin/Rscript" -e "cat(system.file('include', 'src', package = 'StanHeaders'))"`" -DBOOST_RESULT_OF_USE_TR1 -DBOOST_NO_DECLTYPE -DBOOST_DISABLE_ASSERTS  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/StanHeaders/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c lang__grammars__program_grammar_inst.cpp -o lang__grammars__program_grammar_inst.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I"../inst/include" -I"../inst/include/boost_not_in_BH" -I"`"/usr/lib/R/bin/Rscript" -e "cat(system.file('include', 'src', package = 'StanHeaders'))"`" -DBOOST_RESULT_OF_USE_TR1 -DBOOST_NO_DECLTYPE -DBOOST_DISABLE_ASSERTS  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/StanHeaders/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c lang__grammars__statement_2_grammar_inst.cpp -o lang__grammars__statement_2_grammar_inst.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I"../inst/include" -I"../inst/include/boost_not_in_BH" -I"`"/usr/lib/R/bin/Rscript" -e "cat(system.file('include', 'src', package = 'StanHeaders'))"`" -DBOOST_RESULT_OF_USE_TR1 -DBOOST_NO_DECLTYPE -DBOOST_DISABLE_ASSERTS  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/StanHeaders/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c lang__grammars__statement_grammar_inst.cpp -o lang__grammars__statement_grammar_inst.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I"../inst/include" -I"../inst/include/boost_not_in_BH" -I"`"/usr/lib/R/bin/Rscript" -e "cat(system.file('include', 'src', package = 'StanHeaders'))"`" -DBOOST_RESULT_OF_USE_TR1 -DBOOST_NO_DECLTYPE -DBOOST_DISABLE_ASSERTS  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/StanHeaders/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c lang__grammars__term_grammar_inst.cpp -o lang__grammars__term_grammar_inst.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I"../inst/include" -I"../inst/include/boost_not_in_BH" -I"`"/usr/lib/R/bin/Rscript" -e "cat(system.file('include', 'src', package = 'StanHeaders'))"`" -DBOOST_RESULT_OF_USE_TR1 -DBOOST_NO_DECLTYPE -DBOOST_DISABLE_ASSERTS  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/StanHeaders/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c lang__grammars__var_deccls_grammar_inst.cpp -o lang__grammars__var_deccls_grammar_inst.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I"../inst/include" -I"../inst/include/boost_not_in_BH" -I"`"/usr/lib/R/bin/Rscript" -e "cat(system.file('include', 'src', package = 'StanHeaders'))"`" -DBOOST_RESULT_OF_USE_TR1 -DBOOST_NO_DECLTYPE -DBOOST_DISABLE_ASSERTS  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/StanHeaders/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c lang__grammars__whitespace_grammar_inst.cpp -o lang__grammars__whitespace_grammar_inst.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I"../inst/include" -I"../inst/include/boost_not_in_BH" -I"`"/usr/lib/R/bin/Rscript" -e "cat(system.file('include', 'src', package = 'StanHeaders'))"`" -DBOOST_RESULT_OF_USE_TR1 -DBOOST_NO_DECLTYPE -DBOOST_DISABLE_ASSERTS  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/StanHeaders/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c misc.cpp -o misc.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I"../inst/include" -I"../inst/include/boost_not_in_BH" -I"`"/usr/lib/R/bin/Rscript" -e "cat(system.file('include', 'src', package = 'StanHeaders'))"`" -DBOOST_RESULT_OF_USE_TR1 -DBOOST_NO_DECLTYPE -DBOOST_DISABLE_ASSERTS  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/StanHeaders/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c stanc.cpp -o stanc.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o rstan.so chains.o init.o lang__ast_def.o lang__grammars__bare_type_grammar_inst.o lang__grammars__expression07_grammar_inst.o lang__grammars__expression_grammar_inst.o lang__grammars__functions_grammar_inst.o lang__grammars__program_grammar_inst.o lang__grammars__statement_2_grammar_inst.o lang__grammars__statement_grammar_inst.o lang__grammars__term_grammar_inst.o lang__grammars__var_deccls_grammar_inst.o lang__grammars__whitespace_grammar_inst.o misc.o stanc.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for rstan_2.7.0-1.tar.gz : success (334 of 418, 312 good, 22 bad)
+
+RESULT for rtkpp_0.8.6.tar.gz : success (335 of 418, 313 good, 22 bad)
+
+RESULT for Rtsne_0.10.tar.gz : success (336 of 418, 314 good, 22 bad)
+
+RESULT for Ruchardet_0.0-3.tar.gz : success (337 of 418, 315 good, 22 bad)
+
+RESULT for rugarch_1.3-4.tar.gz : success (338 of 418, 316 good, 22 bad)
+
+RESULT for Rvcg_0.12.2.tar.gz : success (339 of 418, 317 good, 22 bad)
+
+RESULT for RVowpalWabbit_0.0.6.tar.gz : success (340 of 418, 318 good, 22 bad)
+
+RESULT for sbmSDP_0.2.tar.gz : success (341 of 418, 319 good, 22 bad)
+
+RESULT for SBSA_0.2.3.tar.gz : success (342 of 418, 320 good, 22 bad)
+
+RESULT for scales_0.2.5.tar.gz : success (343 of 418, 321 good, 22 bad)
+
+RESULT for scrm_1.6.0-2.tar.gz : success (344 of 418, 322 good, 22 bad)
+
+RESULT for scrypt_0.1.0.tar.gz : success (345 of 418, 323 good, 22 bad)
+
+RESULT for sdcMicro_4.5.0.tar.gz : success (346 of 418, 324 good, 22 bad)
+
+RESULT for sdcTable_0.18.1.tar.gz : success (347 of 418, 325 good, 22 bad)
+
+RESULT for SEERaBomb_2015.1.tar.gz : success (348 of 418, 326 good, 22 bad)
+
+RESULT for segmag_1.2.2.tar.gz : success (349 of 418, 327 good, 22 bad)
+
+RESULT for seismicRoll_1.0.1.tar.gz : success (350 of 418, 328 good, 22 bad)
+
+RESULT for SelvarMix_1.0.tar.gz : success (351 of 418, 329 good, 22 bad)
+
+RESULT for sequences_0.5.9.tar.gz : success (352 of 418, 330 good, 22 bad)
+
+RESULT for sgd_0.1.tar.gz : success (353 of 418, 331 good, 22 bad)
+
+RESULT for sglOptim_1.0.122.1.tar.gz : success (354 of 418, 332 good, 22 bad)
+
+RESULT for signalHsmm_1.3.tar.gz : success (355 of 418, 333 good, 22 bad)
+
+RESULT for simFrame_0.5.3.tar.gz : success (356 of 418, 334 good, 22 bad)
+
+RESULT for simPop_0.2.9.tar.gz : success (357 of 418, 335 good, 22 bad)
+
+RESULT for sirt_1.8-9.tar.gz : success (358 of 418, 336 good, 22 bad)
+
+RESULT for slfm_0.1.tar.gz : success (359 of 418, 337 good, 22 bad)
+
+RESULT for SLOPE_0.1.1.tar.gz : success (360 of 418, 338 good, 22 bad)
+
+RESULT for snipEM_1.0.tar.gz : success (361 of 418, 339 good, 22 bad)
+
+RESULT for snplist_0.13.tar.gz : success (362 of 418, 340 good, 22 bad)
+
+RESULT for SocialNetworks_1.1.tar.gz : success (363 of 418, 341 good, 22 bad)
+
+RESULT for SOD_1.0.tar.gz : success (364 of 418, 342 good, 22 bad)
+
+RESULT for spacodiR_0.13.0115.tar.gz : success (365 of 418, 343 good, 22 bad)
+
+RESULT for spaMM_1.5.1.tar.gz : success (366 of 418, 344 good, 22 bad)
+
+RESULT for sparseHessianFD_0.2.0.tar.gz : success (367 of 418, 345 good, 22 bad)
+
+RESULT for sparseLTSEigen_0.2.0.tar.gz : success (368 of 418, 346 good, 22 bad)
+
+RESULT for SpatialEpi_1.2.1.tar.gz : success (369 of 418, 347 good, 22 bad)
+
+RESULT for SpatialTools_0.5.8.tar.gz : success (370 of 418, 348 good, 22 bad)
+
+RESULT for SpatPCA_1.0.0.2.tar.gz : success (371 of 418, 349 good, 22 bad)
+
+RESULT for spBayesSurv_1.0.2.tar.gz : success (372 of 418, 350 good, 22 bad)
+
+RESULT for spduration_0.13.1.tar.gz : success (373 of 418, 351 good, 22 bad)
+
+RESULT for spsann_1.0.0.tar.gz : success (374 of 418, 352 good, 22 bad)
+
+RESULT for staTools_0.1.0.tar.gz : success (375 of 418, 353 good, 22 bad)
+
+RESULT for StereoMorph_1.4.tar.gz : success (376 of 418, 354 good, 22 bad)
+
+RESULT for StMoSim_3.0.tar.gz : success (377 of 418, 355 good, 22 bad)
+
+RESULT for stochvol_1.2.0.tar.gz : success (378 of 418, 356 good, 22 bad)
+
+RESULT for stocks_1.1.1.tar.gz : success (379 of 418, 357 good, 22 bad)
+
+RESULT for stosim_0.0.12.tar.gz : success (380 of 418, 358 good, 22 bad)
+
+RESULT for strataG_0.9.4.tar.gz : failure (381 of 418, 358 good, 23 bad)
+
+RESULT for stream_1.1-5.tar.gz : success (382 of 418, 359 good, 23 bad)
+
+RESULT for strum_0.6.2.tar.gz : success (383 of 418, 360 good, 23 bad)
+
+RESULT for survAccuracyMeasures_1.2.tar.gz : success (384 of 418, 361 good, 23 bad)
+
+RESULT for surveillance_1.9-1.tar.gz : success (385 of 418, 362 good, 23 bad)
+
+RESULT for survSNP_0.23.2.tar.gz : success (386 of 418, 363 good, 23 bad)
+
+RESULT for SVMMatch_1.1.tar.gz : success (387 of 418, 364 good, 23 bad)
+
+RESULT for synlik_0.1.1.tar.gz : success (388 of 418, 365 good, 23 bad)
+
+RESULT for systemicrisk_0.2.tar.gz : success (389 of 418, 366 good, 23 bad)
+
+RESULT for tagcloud_0.6.tar.gz : success (390 of 418, 367 good, 23 bad)
+
+RESULT for TAM_1.9-0.tar.gz : success (391 of 418, 368 good, 23 bad)
+
+RESULT for TAQMNGR_2015.2-1.tar.gz : success (392 of 418, 369 good, 23 bad)
+
+RESULT for tbart_1.0.tar.gz : failure (393 of 418, 369 good, 24 bad)
+
+RESULT for tcR_2.0.tar.gz : success (394 of 418, 370 good, 24 bad)
+
+RESULT for TED_1.1.1.tar.gz : success (395 of 418, 371 good, 24 bad)
+
+RESULT for termstrc_1.3.7.tar.gz : success (396 of 418, 372 good, 24 bad)
+
+RESULT for TESS_2.0.0.tar.gz : success (397 of 418, 373 good, 24 bad)
+
+RESULT for textreg_0.1.2.tar.gz : success (398 of 418, 374 good, 24 bad)
+
+RESULT for TFMPvalue_0.0.5.tar.gz : success (399 of 418, 375 good, 24 bad)
+
+RESULT for timma_1.2.1.tar.gz : success (400 of 418, 376 good, 24 bad)
+
+RESULT for tmg_0.3.tar.gz : success (401 of 418, 377 good, 24 bad)
+
+RESULT for treeclim_1.0.11.tar.gz : success (402 of 418, 378 good, 24 bad)
+
+RESULT for trustOptim_0.8.5.tar.gz : success (403 of 418, 379 good, 24 bad)
+
+RESULT for tvd_0.1.0.tar.gz : success (404 of 418, 380 good, 24 bad)
+
+RESULT for unmarked_0.10-6.tar.gz : success (405 of 418, 381 good, 24 bad)
+
+RESULT for urltools_1.2.0.tar.gz : success (406 of 418, 382 good, 24 bad)
+
+RESULT for V8_0.6.tar.gz : success (407 of 418, 383 good, 24 bad)
+
+RESULT for VarSelLCM_1.2.tar.gz : success (408 of 418, 384 good, 24 bad)
+
+RESULT for VideoComparison_0.11.tar.gz : success (409 of 418, 385 good, 24 bad)
+
+RESULT for VIM_4.3.0.tar.gz : success (410 of 418, 386 good, 24 bad)
+
+RESULT for waffect_1.2.tar.gz : success (411 of 418, 387 good, 24 bad)
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c splitters.cpp -o splitters.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o webreadr.so RcppExports.o splitters.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for webreadr_0.3.0.tar.gz : success (412 of 418, 388 good, 24 bad)
+
+RESULT for wordcloud_2.5.tar.gz : success (413 of 418, 389 good, 24 bad)
+
+RESULT for wsrf_1.5.24.tar.gz : failure (414 of 418, 389 good, 25 bad)
+
+RESULT for XBRL_0.99.16.tar.gz : success (415 of 418, 390 good, 25 bad)
+
+RESULT for xergm_1.5.tar.gz : success (416 of 418, 391 good, 25 bad)
+
+RESULT for xml2_0.1.1.tar.gz : success (417 of 418, 392 good, 25 bad)
+
+RESULT for zic_0.8.1.tar.gz : success (418 of 418, 393 good, 25 bad)
+                     pkg res
+1          accelerometry   0
+2       AdaptiveSparsity   0
+3                    AHR   0
+4                algstat   0
+5                   ALKr   0
+6                 Amelia   0
+7              apcluster   0
+8                 ASPBay   0
+9            autovarCore   0
+10                BaBooN   1
+11      BalancedSampling   0
+12           BayesFactor   0
+13                bayesm   0
+14                 bayou   0
+15                   bcp   0
+16                  bcpa   1
+17                   bfa   0
+18                   bfp   0
+19           bifactorial   0
+20           BIFIEsurvey   0
+21                 BIPOD   0
+22          blockcluster   0
+23           blockmodels   0
+24                  brms   0
+25                   btf   0
+26                bvarsv   0
+27              CARBayes   0
+28            CARBayesST   0
+29                 ccaPP   0
+30                  cccp   1
+31                   cda   0
+32                   CDM   0
+33                 cgAUC   0
+34              chopthin   0
+35           CIDnetworks   0
+36             cladoRcpp   0
+37              classify   0
+38                 clere   0
+39          climdex.pcic   0
+40              clogitL1   0
+41             clusteval   0
+42             ClustMMDD   0
+43            ClustVarLV   0
+44                   CMF   0
+45                 coala   0
+46               CompGLM   0
+47         ConConPiWiFun   0
+48              coneproj   0
+49                copCAR   0
+50                CorReg   0
+51                Coxnet   0
+52             Crossover   0
+53                 dbmss   0
+54                dbscan   0
+55               ddalpha   0
+56             Delaporte   0
+57        dendextendRcpp   0
+58             DepthProc   0
+59                DetMCD   0
+60                dfcomb   0
+61                 dfmta   0
+62                  dils   0
+63            disclapmix   0
+64           diversitree   0
+65             diveRsity   0
+66                  divo   0
+67           DNAprofiles   0
+68              DNAtools   0
+69                 dplyr   1
+70                dslice   0
+71                DStree   0
+72                   ecp   0
+73        EditImputeCont   0
+74                  eive   0
+75                 emIRT   0
+76            ESGtoolkit   0
+77                evolqg   0
+78                 EWGoF   0
+79            fastGHQuad   0
+80               FastHCS   0
+81                 fastM   0
+82               FastPCS   0
+83               FastRCS   0
+84             FBFsearch   0
+85                 fbroc   0
+86                FCNN4R   0
+87              fdaMixed   0
+88            FDGcopulas   0
+89                FDRreg   0
+90        FeatureHashing   0
+91                  fICA   0
+92              FisHiCal   1
+93                  flam   0
+94                  flip   0
+95                 FLSSS   0
+96              forecast   0
+97           forestFloor   1
+98             FRESA.CAD   0
+99            FSInteract   0
+100                fugeR   0
+101             FunChisq   0
+102        Funclustering   0
+103                fwsim   0
+104             gaselect   0
+105                 GCPM   0
+106                  gdm   0
+107               geiger   0
+108         GeneticTools   0
+109               GENLIB   0
+110             geoCount   0
+111               gkmSVM   0
+112                 glcm   0
+113             glmgraph   0
+114                 GMCM   0
+115                Gmisc   0
+116                 gMWT   0
+117              GPareto   1
+118                GPvam   0
+119         graphicalVAR   0
+120               gRbase   0
+121                 gRim   0
+122           growcurves   0
+123        growfunctions   0
+124                  GSE   0
+125               GUILDS   0
+126                 GUTS   0
+127                  GxM   0
+128                   h5   0
+129                haven   0
+130               hawkes   0
+131              HLMdiag   0
+132              hsphase   0
+133                  hts   0
+134               httpuv   0
+135                  HUM   1
+136          hypervolume   0
+137              iBATCGH   0
+138                 IBHM   0
+139               icamix   1
+140              iccbeta   0
+141                 icd9   0
+142             icensmis   0
+143              inarmix   0
+144              iptools   0
+145         IsingSampler   0
+146             ISOpureR   0
+147               iterpc   0
+148               jaatha   0
+149               JAGUAR   0
+150               jiebaR   0
+151            kdecopula   0
+152                kergp   0
+153        KernSmoothIRT   1
+154                  kmc   0
+155                Kmisc   0
+156                  LaF   0
+157                 lamW   0
+158                lbfgs   0
+159                  lfl   0
+160    lifecontingencies   0
+161                lm.br   0
+162                 lme4   1
+163                 lpme   0
+164             lsbclust   0
+165                 lsgl   0
+166         Luminescence   0
+167               marked   0
+168           markophylo   0
+169          markovchain   0
+170                  MAT   0
+171      matchingMarkets   0
+172            matchingR   0
+173               maxent   0
+174               mbbefd   0
+175                mcIRT   0
+176            metafolio   0
+177                 mets   0
+178                 mice   0
+179             miceadds   1
+180                minqa   0
+181                 mirt   0
+182              mirtCAT   0
+183                miscF   0
+184              miscset   0
+185           missDeaths   1
+186               MixAll   0
+187             mixedMem   0
+188                 mkde   0
+189                 mlxR   0
+190                mmand   0
+191               Morpho   1
+192                   mp   0
+193           Mposterior   0
+194               MPTinR   0
+195              MRIaggr   1
+196                 msgl   1
+197                  MTS   0
+198            multicool   0
+199              mvabund   0
+200                  MVB   0
+201              mvnfast   0
+202               mwaved   0
+203                myTAI   0
+204                nabor   1
+205                  NAM   0
+206                  ndl   0
+207               NetSim   0
+208              neuroim   0
+209            ngspatial   0
+210                 NHMM   0
+211     nonlinearTseries   0
+212        NPBayesImpute   0
+213            oapackage   0
+214              odeintr   0
+215                  oem   0
+216  OneArmPhaseTwoStudy   0
+217            onlinePCA   0
+218              openair   0
+219               OpenMx   0
+220             openxlsx   0
+221                 orQA   0
+222                PAFit   0
+223               pander   0
+224            partialAR   0
+225                  PBC   1
+226                pcalg   0
+227                pcIRT   0
+228               PedCNV   0
+229          pedometrics   0
+230               penMSM   0
+231           PerMallows   0
+232            phylobase   0
+233               planar   0
+234             plotSEMM   0
+235                 plyr   1
+236       poisDoubleSamp   0
+237              polywog   0
+238                PoweR   0
+239                   PP   0
+240            PPtreeViz   0
+241              PReMiuM   0
+242               primes   0
+243                 pROC   1
+244            propagate   0
+245            prospectr   0
+246              protViz   0
+247                 pryr   0
+248                  psd   0
+249                 psgp   0
+250                 pvar   0
+251                  QRM   0
+252            quadrupen   0
+253             quanteda   0
+254            quantspec   0
+255              qVarSel   0
+256  randomUniformForest   0
+257          Rankcluster   0
+258             rankdist   0
+259              rARPACK   0
+260               raster   0
+261              Rborist   0
+262           Rclusterpp   0
+263            RcppAnnoy   0
+264              RcppAPT   0
+265        RcppArmadillo   0
+266              RcppBDT   0
+267             rcppbugs   0
+268          RcppClassic   0
+269  RcppClassicExamples   0
+270             RcppCNPy   0
+271               RcppDE   1
+272               RcppDL   0
+273            RcppEigen   0
+274         RcppExamples   0
+275         RcppFaddeeva   0
+276              RcppGSL   0
+277           RcppMLPACK   0
+278           RcppOctave   0
+279         RcppProgress   0
+280            RcppRedis   0
+281             RcppRoll   0
+282              RcppSMC   0
+283          RcppStreams   0
+284             RcppTOML   0
+285              RcppXts   0
+286         RcppZiggurat   0
+287                readr   0
+288          readstata13   0
+289               readxl   0
+290             RealVAMS   0
+291         reconstructr   0
+292           recosystem   0
+293               redist   0
+294               relSim   0
+295               remote   0
+296       ReorderCluster   0
+297                repra   0
+298             resemble   0
+299             reshape2   0
+300        revealedPrefs   0
+301             rexpokit   0
+302     rforensicbatwing   0
+303                 rgam   0
+304              RInside   0
+305                 ripa   0
+306                 rivr   0
+307                 rkvo   0
+308             Rlibeemd   0
+309                 rlme   1
+310               RLRsim   0
+311          Rmalschains   0
+312              rmgarch   0
+313              Rmixmod   0
+314         RmixmodCombi   0
+315                 rncl   0
+316            robustgam   0
+317             robustHD   0
+318            robustreg   0
+319               rococo   0
+320            rotations   0
+321            RoughSets   0
+322             roxygen2   0
+323                  rpf   0
+324                  rpg   0
+325           Rphylopars   0
+326              rplexos   0
+327                rPref   0
+328            RProtoBuf   0
+329            RQuantLib   0
+330                RSNNS   0
+331              RSNPset   0
+332               RSofia   0
+333             Rsomoclu   0
+334                rstan   0
+335                rtkpp   0
+336                Rtsne   0
+337            Ruchardet   0
+338              rugarch   0
+339                 Rvcg   0
+340        RVowpalWabbit   0
+341               sbmSDP   0
+342                 SBSA   0
+343               scales   0
+344                 scrm   0
+345               scrypt   0
+346             sdcMicro   0
+347             sdcTable   0
+348            SEERaBomb   0
+349               segmag   0
+350          seismicRoll   0
+351            SelvarMix   0
+352            sequences   0
+353                  sgd   0
+354             sglOptim   0
+355           signalHsmm   0
+356             simFrame   0
+357               simPop   0
+358                 sirt   0
+359                 slfm   0
+360                SLOPE   0
+361               snipEM   0
+362              snplist   0
+363       SocialNetworks   0
+364                  SOD   0
+365             spacodiR   0
+366                spaMM   0
+367      sparseHessianFD   0
+368       sparseLTSEigen   0
+369           SpatialEpi   0
+370         SpatialTools   0
+371              SpatPCA   0
+372          spBayesSurv   0
+373           spduration   0
+374               spsann   0
+375             staTools   0
+376          StereoMorph   0
+377              StMoSim   0
+378             stochvol   0
+379               stocks   0
+380               stosim   0
+381              strataG   1
+382               stream   0
+383                strum   0
+384 survAccuracyMeasures   0
+385         surveillance   0
+386              survSNP   0
+387             SVMMatch   0
+388               synlik   0
+389         systemicrisk   0
+390             tagcloud   0
+391                  TAM   0
+392              TAQMNGR   0
+393                tbart   1
+394                  tcR   0
+395                  TED   0
+396             termstrc   0
+397                 TESS   0
+398              textreg   0
+399            TFMPvalue   0
+400                timma   0
+401                  tmg   0
+402             treeclim   0
+403           trustOptim   0
+404                  tvd   0
+405             unmarked   0
+406             urltools   0
+407                   V8   0
+408            VarSelLCM   0
+409      VideoComparison   0
+410                  VIM   0
+411              waffect   0
+412             webreadr   0
+413            wordcloud   0
+414                 wsrf   1
+415                 XBRL   0
+416                xergm   0
+417                 xml2   0
+418                  zic   0
+
+  0   1 
+393  25 
+ [1] "BaBooN"        "bcpa"          "cccp"          "dplyr"        
+ [5] "FisHiCal"      "forestFloor"   "GPareto"       "HUM"          
+ [9] "icamix"        "KernSmoothIRT" "lme4"          "miceadds"     
+[13] "missDeaths"    "Morpho"        "MRIaggr"       "msgl"         
+[17] "nabor"         "PBC"           "plyr"          "pROC"         
+[21] "RcppDE"        "rlme"          "strataG"       "tbart"        
+[25] "wsrf"         
+Ended at  2015-07-20 08:13:15 
