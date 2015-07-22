@@ -5,37 +5,22 @@ Rcpp 0.11.5.4 as of 2015-04-25
 Running the script summarizing results straight out of its repo:
 
 ```{sh}
-edd@max:~/git/rcpp-logs/results(master)$ ./Rcpp-Summary-20150425.R 
-Good          361 
-  AsIs        361 
+edd@max:~/git/rcpp-logs/results$ ./Rcpp-Summary-20150722.txt
+Good          398 
+  AsIs        398 
   w/Patches   0 
-Bad           5 
+Bad           21 
+  RcppApi     0 
   Unclear     0 
-  NotRcpp     5 
+  NotRcpp     21 
 Skipped       2 
-Total         366 
+Total         419 
 Bad Percent   0 
-edd@max:~/git/rcpp-logs/results(master)$ 
+edd@max:~/git/rcpp-logs/results$ 
 ```
 
 The "bad" cases are detailed in the corresponding file in the `results`
 directory.
 
 
-RcppArmadillo 0.4.600.0 as of 2014-12-27
-----------------------------------------
-
-The script `runRcppArmadilloDepends` was run over all 102 current `Depends:`
-of RcppArmadillo.  All but four passed; see the `results/rcpparmadillo` directory for more.
-
-```{sh}
-edd@max:~/git/rcpp-logs/results/rcpparmadillo(master)$ ./RcppArmadillo-Summary-20141227.R
-Good          98 
-  AsIs        98 
-Bad           4 
-  NotRcpp     4 
-Skipped       0 
-Total         102 
-Bad Percent   0 
-edd@max:~/git/rcpp-logs/results/rcpparmadillo(master)$ 
-```
+RcppArmadillo and RcppEigen have similar summary scripts in the repo.
