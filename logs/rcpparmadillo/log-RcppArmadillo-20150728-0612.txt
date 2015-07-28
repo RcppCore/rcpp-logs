@@ -1,0 +1,623 @@
+Started at  2015-07-28 06:13:01 
+Rcpp  version is  0.12.0 
+RcppArmadillo  version is  0.5.300.1 
+  [1] "AdaptiveSparsity"     "AHR"                  "Amelia"              
+  [4] "ASPBay"               "BaBooN"               "BayesComm"           
+  [7] "bayesm"               "bayou"                "bcp"                 
+ [10] "bfa"                  "BIFIEsurvey"          "BIPOD"               
+ [13] "blockmodels"          "bvarsv"               "ccaPP"               
+ [16] "cccp"                 "cda"                  "CDM"                 
+ [19] "cladoRcpp"            "coala"                "coneproj"            
+ [22] "copCAR"               "Crossover"            "DepthProc"           
+ [25] "dfcomb"               "dfmta"                "emIRT"               
+ [28] "EstHer"               "fastM"                "FBFsearch"           
+ [31] "fdaMixed"             "FDRreg"               "fICA"                
+ [34] "FisHiCal"             "flip"                 "forecast"            
+ [37] "FRESA.CAD"            "gaselect"             "GeneticTools"        
+ [40] "geoCount"             "glcm"                 "glmgraph"            
+ [43] "GMCM"                 "gMWT"                 "GPvam"               
+ [46] "graphicalVAR"         "gRbase"               "gRim"                
+ [49] "growcurves"           "growfunctions"        "GSE"                 
+ [52] "hawkes"               "HLMdiag"              "hsphase"             
+ [55] "hypervolume"          "iBATCGH"              "icamix"              
+ [58] "iccbeta"              "kdecopula"            "lpme"                
+ [61] "lsgl"                 "markophylo"           "markovchain"         
+ [64] "MAT"                  "matchingMarkets"      "matchingR"           
+ [67] "mcIRT"                "metafolio"            "mets"                
+ [70] "miceadds"             "mirtCAT"              "miscF"               
+ [73] "mixedMem"             "mmand"                "Morpho"              
+ [76] "mp"                   "Mposterior"           "MRIaggr"             
+ [79] "msgl"                 "MVB"                  "mvnfast"             
+ [82] "ngspatial"            "oem"                  "onlinePCA"           
+ [85] "pcalg"                "PedCNV"               "planar"              
+ [88] "PoweR"                "PPtreeViz"            "prospectr"           
+ [91] "psd"                  "psgp"                 "quadrupen"           
+ [94] "quanteda"             "Rborist"              "rcppbugs"            
+ [97] "RcppDE"               "RcppMLPACK"           "RealVAMS"            
+[100] "redist"               "resemble"             "revealedPrefs"       
+[103] "rgam"                 "rmgarch"              "robustgam"           
+[106] "robustHD"             "robustreg"            "rotations"           
+[109] "Rphylopars"           "rstpm2"               "rugarch"             
+[112] "sbmSDP"               "SBSA"                 "SelvarMix"           
+[115] "sgd"                  "sglOptim"             "sirt"                
+[118] "slfm"                 "snipEM"               "SparseFactorAnalysis"
+[121] "sparsereg"            "SpatialEpi"           "SpatialTools"        
+[124] "SpatPCA"              "spBayesSurv"          "spduration"          
+[127] "stm"                  "stochvol"             "strum"               
+[130] "survAccuracyMeasures" "SVMMatch"             "synlik"              
+[133] "TAM"                  "TED"                  "timma"               
+[136] "treeclim"             "unmarked"             "VarSelLCM"           
+[139] "zic"                 
+
+RESULT for AdaptiveSparsity_1.4.tar.gz : success (1 of 139, 1 good, 0 bad)
+
+RESULT for AHR_1.2.tar.gz : success (2 of 139, 2 good, 0 bad)
+
+RESULT for Amelia_1.7.3.tar.gz : success (3 of 139, 3 good, 0 bad)
+
+RESULT for ASPBay_1.2.tar.gz : success (4 of 139, 4 good, 0 bad)
+
+RESULT for BaBooN_0.2-0.tar.gz : failure (5 of 139, 4 good, 1 bad)
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c rtnorm.cpp -o rtnorm.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c rwish.cpp -o rwish.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c sample_B.cpp -o sample_B.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o BayesComm.so rtnorm.o rwish.o sample_B.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for BayesComm_0.1-2.tar.gz : success (6 of 139, 5 good, 1 bad)
+
+RESULT for bayesm_3.0-2.tar.gz : success (7 of 139, 6 good, 1 bad)
+
+RESULT for bayou_1.0.1.tar.gz : success (8 of 139, 7 good, 1 bad)
+
+RESULT for bcp_4.0.0.tar.gz : success (9 of 139, 8 good, 1 bad)
+
+RESULT for bfa_0.3.1.tar.gz : success (10 of 139, 9 good, 1 bad)
+
+RESULT for BIFIEsurvey_1.3-0.tar.gz : success (11 of 139, 10 good, 1 bad)
+
+RESULT for BIPOD_0.2.1.tar.gz : success (12 of 139, 11 good, 1 bad)
+
+RESULT for blockmodels_1.1.1.tar.gz : success (13 of 139, 12 good, 1 bad)
+
+RESULT for bvarsv_1.0.tar.gz : success (14 of 139, 13 good, 1 bad)
+
+RESULT for ccaPP_0.3.0.tar.gz : success (15 of 139, 14 good, 1 bad)
+
+RESULT for cccp_0.2-4.tar.gz : success (16 of 139, 15 good, 1 bad)
+
+RESULT for cda_1.5.1.tar.gz : success (17 of 139, 16 good, 1 bad)
+
+RESULT for CDM_4.4-1.tar.gz : success (18 of 139, 17 good, 1 bad)
+
+RESULT for cladoRcpp_0.14.4.tar.gz : success (19 of 139, 18 good, 1 bad)
+
+RESULT for coala_0.1.1.tar.gz : success (20 of 139, 19 good, 1 bad)
+
+RESULT for coneproj_1.6.tar.gz : success (21 of 139, 20 good, 1 bad)
+
+RESULT for copCAR_1.0-1.tar.gz : success (22 of 139, 21 good, 1 bad)
+
+RESULT for Crossover_0.1-14.tar.gz : success (23 of 139, 22 good, 1 bad)
+
+RESULT for DepthProc_1.0.3.tar.gz : success (24 of 139, 23 good, 1 bad)
+
+RESULT for dfcomb_2.1-3.tar.gz : success (25 of 139, 24 good, 1 bad)
+
+RESULT for dfmta_1.3-2.tar.gz : success (26 of 139, 25 good, 1 bad)
+
+RESULT for emIRT_0.0.5.tar.gz : success (27 of 139, 26 good, 1 bad)
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c prod_cpp.cpp -o prod_cpp.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o EstHer.so RcppExports.o prod_cpp.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for EstHer_1.0.tar.gz : success (28 of 139, 27 good, 1 bad)
+
+RESULT for fastM_0.0-2.tar.gz : success (29 of 139, 28 good, 1 bad)
+
+RESULT for FBFsearch_1.0.tar.gz : success (30 of 139, 29 good, 1 bad)
+
+RESULT for fdaMixed_0.4.tar.gz : success (31 of 139, 30 good, 1 bad)
+
+RESULT for FDRreg_0.1.tar.gz : success (32 of 139, 31 good, 1 bad)
+
+RESULT for fICA_1.0-2.tar.gz : success (33 of 139, 32 good, 1 bad)
+
+RESULT for FisHiCal_1.1.tar.gz : failure (34 of 139, 32 good, 2 bad)
+
+RESULT for flip_2.4.3.tar.gz : success (35 of 139, 33 good, 2 bad)
+
+RESULT for forecast_6.1.tar.gz : success (36 of 139, 34 good, 2 bad)
+
+RESULT for FRESA.CAD_2.0.2.tar.gz : success (37 of 139, 35 good, 2 bad)
+
+RESULT for gaselect_1.0.5.tar.gz : success (38 of 139, 36 good, 2 bad)
+
+RESULT for GeneticTools_0.3.1.tar.gz : success (39 of 139, 37 good, 2 bad)
+
+RESULT for geoCount_1.150120.tar.gz : success (40 of 139, 38 good, 2 bad)
+
+RESULT for glcm_1.2.tar.gz : success (41 of 139, 39 good, 2 bad)
+
+RESULT for glmgraph_1.0.3.tar.gz : success (42 of 139, 40 good, 2 bad)
+
+RESULT for GMCM_1.2.1.tar.gz : success (43 of 139, 41 good, 2 bad)
+
+RESULT for gMWT_1.0.tar.gz : success (44 of 139, 42 good, 2 bad)
+
+RESULT for GPvam_3.0-3.tar.gz : success (45 of 139, 43 good, 2 bad)
+
+RESULT for graphicalVAR_0.1.3.tar.gz : success (46 of 139, 44 good, 2 bad)
+
+RESULT for gRbase_1.7-0.1.tar.gz : success (47 of 139, 45 good, 2 bad)
+
+RESULT for gRim_0.1-17.tar.gz : success (48 of 139, 46 good, 2 bad)
+
+RESULT for growcurves_0.2.3.9.tar.gz : success (49 of 139, 47 good, 2 bad)
+
+RESULT for growfunctions_0.11.tar.gz : success (50 of 139, 48 good, 2 bad)
+
+RESULT for GSE_3.2.1.tar.gz : success (51 of 139, 49 good, 2 bad)
+
+RESULT for hawkes_0.0-4.tar.gz : success (52 of 139, 50 good, 2 bad)
+
+RESULT for HLMdiag_0.3.0.tar.gz : success (53 of 139, 51 good, 2 bad)
+
+RESULT for hsphase_2.0.1.tar.gz : success (54 of 139, 52 good, 2 bad)
+
+RESULT for hypervolume_1.3.0.tar.gz : success (55 of 139, 53 good, 2 bad)
+
+RESULT for iBATCGH_1.3.tar.gz : success (56 of 139, 54 good, 2 bad)
+
+RESULT for icamix_1.0.2.tar.gz : failure (57 of 139, 54 good, 3 bad)
+
+RESULT for iccbeta_1.0.tar.gz : success (58 of 139, 55 good, 3 bad)
+
+RESULT for kdecopula_0.0.3.tar.gz : success (59 of 139, 56 good, 3 bad)
+
+RESULT for lpme_1.0.1.tar.gz : success (60 of 139, 57 good, 3 bad)
+
+RESULT for lsgl_1.0.123.1.tar.gz : success (61 of 139, 58 good, 3 bad)
+
+RESULT for markophylo_1.0.1.tar.gz : success (62 of 139, 59 good, 3 bad)
+
+RESULT for markovchain_0.3.1.tar.gz : success (63 of 139, 60 good, 3 bad)
+
+RESULT for MAT_2.2.tar.gz : success (64 of 139, 61 good, 3 bad)
+
+RESULT for matchingMarkets_0.1-5.tar.gz : success (65 of 139, 62 good, 3 bad)
+
+RESULT for matchingR_1.0.1.tar.gz : success (66 of 139, 63 good, 3 bad)
+
+RESULT for mcIRT_0.41.tar.gz : success (67 of 139, 64 good, 3 bad)
+
+RESULT for metafolio_0.1.0.tar.gz : success (68 of 139, 65 good, 3 bad)
+
+RESULT for mets_1.1.1.tar.gz : success (69 of 139, 66 good, 3 bad)
+
+RESULT for miceadds_1.3-0.tar.gz : failure (70 of 139, 66 good, 4 bad)
+
+RESULT for mirtCAT_0.5.tar.gz : success (71 of 139, 67 good, 4 bad)
+
+RESULT for miscF_0.1-2.tar.gz : success (72 of 139, 68 good, 4 bad)
+
+RESULT for mixedMem_1.0.2.tar.gz : success (73 of 139, 69 good, 4 bad)
+
+RESULT for mmand_1.1.0.tar.gz : success (74 of 139, 70 good, 4 bad)
+
+RESULT for Morpho_2.3.0.tar.gz : failure (75 of 139, 70 good, 5 bad)
+
+RESULT for mp_0.2.0.tar.gz : success (76 of 139, 71 good, 5 bad)
+
+RESULT for Mposterior_0.1.2.tar.gz : success (77 of 139, 72 good, 5 bad)
+
+RESULT for MRIaggr_1.1.2.tar.gz : failure (78 of 139, 72 good, 6 bad)
+
+RESULT for msgl_2.0.125.1.tar.gz : failure (79 of 139, 72 good, 7 bad)
+
+RESULT for MVB_1.1.tar.gz : success (80 of 139, 73 good, 7 bad)
+
+RESULT for mvnfast_0.1.3.tar.gz : success (81 of 139, 74 good, 7 bad)
+
+RESULT for ngspatial_1.0-5.tar.gz : success (82 of 139, 75 good, 7 bad)
+
+RESULT for oem_1.02.1.tar.gz : success (83 of 139, 76 good, 7 bad)
+
+RESULT for onlinePCA_1.0-1.tar.gz : success (84 of 139, 77 good, 7 bad)
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include" -I"/usr/local/lib/R/site-library/BH/include"  -I"../inst/include" -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c constraint.cpp -o constraint.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include" -I"/usr/local/lib/R/site-library/BH/include"  -I"../inst/include" -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c gies.cpp -o gies.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include" -I"/usr/local/lib/R/site-library/BH/include"  -I"../inst/include" -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c greedy.cpp -o greedy.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include" -I"/usr/local/lib/R/site-library/BH/include"  -I"../inst/include" -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c score.cpp -o score.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o pcalg.so constraint.o gies.o greedy.o score.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+Note: no visible binding for '<<-' assignment to '.in.edges' 
+Note: no visible binding for '<<-' assignment to '.in.edges' 
+Note: no visible binding for '<<-' assignment to '.in.edges' 
+Note: no visible binding for '<<-' assignment to '.in.edges' 
+Note: no visible binding for '<<-' assignment to '.in.edges' 
+Note: no visible binding for '<<-' assignment to '.in.edges' 
+Note: no visible binding for '<<-' assignment to '.nodes' 
+Note: no visible binding for '<<-' assignment to '.in.edges' 
+Note: no visible binding for '<<-' assignment to '.in.edges' 
+Note: no visible binding for '<<-' assignment to '.score' 
+Note: no visible binding for '<<-' assignment to '.targets' 
+Note: no visible binding for '<<-' assignment to 'decomp' 
+Note: no visible binding for '<<-' assignment to '.pardag.class' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to '.format' 
+Note: no visible binding for '<<-' assignment to '.format' 
+Note: no visible binding for '<<-' assignment to '.format' 
+Note: no visible binding for '<<-' assignment to 'c.fcn' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'decomp' 
+Note: no visible binding for '<<-' assignment to 'c.fcn' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'decomp' 
+Note: no visible binding for '<<-' assignment to '.pardag.class' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to '.format' 
+Note: no visible binding for '<<-' assignment to '.format' 
+Note: no visible binding for '<<-' assignment to '.format' 
+Note: no visible binding for '<<-' assignment to 'c.fcn' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'decomp' 
+Note: no visible binding for '<<-' assignment to 'c.fcn' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to '.nodes' 
+Note: no visible binding for '<<-' assignment to '.in.edges' 
+Note: no visible binding for '<<-' assignment to '.in.edges' 
+Note: no visible binding for '<<-' assignment to '.in.edges' 
+Note: no visible binding for '<<-' assignment to '.params' 
+Note: no visible binding for '<<-' assignment to '.params' 
+Note: no visible binding for '<<-' assignment to '.params' 
+Note: no visible binding for '<<-' assignment to '.params' 
+Note: no visible binding for '<<-' assignment to '.nodes' 
+Note: no visible binding for '<<-' assignment to '.in.edges' 
+Note: no visible binding for '<<-' assignment to '.in.edges' 
+Note: no visible binding for '<<-' assignment to '.in.edges' 
+Note: no visible binding for '<<-' assignment to '.params' 
+Note: no visible binding for '<<-' assignment to '.params' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'decomp' 
+Note: no visible binding for '<<-' assignment to 'c.fcn' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+Note: no visible binding for '<<-' assignment to 'pp.dat' 
+   ‘pcalgDoc.Rnw’ using ‘UTF-8’ 
+Note: the specification for S3 class “dist” in package ‘graph’ seems equivalent to one from package ‘BiocGenerics’: not turning on duplicate class definitions for this class.
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for pcalg_2.2-4.tar.gz : success (85 of 139, 78 good, 7 bad)
+
+RESULT for PedCNV_0.1.tar.gz : success (86 of 139, 79 good, 7 bad)
+
+RESULT for planar_1.5.2.tar.gz : success (87 of 139, 80 good, 7 bad)
+
+RESULT for PoweR_1.0.4.tar.gz : success (88 of 139, 81 good, 7 bad)
+
+RESULT for PPtreeViz_1.1.0.tar.gz : success (89 of 139, 82 good, 7 bad)
+
+RESULT for prospectr_0.1.3.tar.gz : success (90 of 139, 83 good, 7 bad)
+
+RESULT for psd_1.0-1.tar.gz : success (91 of 139, 84 good, 7 bad)
+
+RESULT for psgp_0.3-6.tar.gz : success (92 of 139, 85 good, 7 bad)
+
+RESULT for quadrupen_0.2-4.tar.gz : success (93 of 139, 86 good, 7 bad)
+
+RESULT for quanteda_0.8.0-4.tar.gz : success (94 of 139, 87 good, 7 bad)
+
+RESULT for Rborist_0.1-0.tar.gz : success (95 of 139, 88 good, 7 bad)
+
+RESULT for rcppbugs_0.1.4.1.tar.gz : success (96 of 139, 89 good, 7 bad)
+
+RESULT for RcppDE_0.1.2.tar.gz : success (97 of 139, 90 good, 7 bad)
+
+RESULT for RcppMLPACK_1.0.10-2.tar.gz : success (98 of 139, 91 good, 7 bad)
+
+RESULT for RealVAMS_0.3-2.tar.gz : success (99 of 139, 92 good, 7 bad)
+
+RESULT for redist_1.1.tar.gz : success (100 of 139, 93 good, 7 bad)
+
+RESULT for resemble_1.1.1.tar.gz : success (101 of 139, 94 good, 7 bad)
+
+RESULT for revealedPrefs_0.2.tar.gz : success (102 of 139, 95 good, 7 bad)
+
+RESULT for rgam_0.6.3.tar.gz : success (103 of 139, 96 good, 7 bad)
+
+RESULT for rmgarch_1.2-9.tar.gz : success (104 of 139, 97 good, 7 bad)
+
+RESULT for robustgam_0.1.7.tar.gz : success (105 of 139, 98 good, 7 bad)
+
+RESULT for robustHD_0.5.0.tar.gz : success (106 of 139, 99 good, 7 bad)
+
+RESULT for robustreg_0.1-7.tar.gz : success (107 of 139, 100 good, 7 bad)
+
+RESULT for rotations_1.3.tar.gz : success (108 of 139, 101 good, 7 bad)
+
+RESULT for Rphylopars_0.1.1.tar.gz : success (109 of 139, 102 good, 7 bad)
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c c_optim.cpp -o c_optim.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c test-nmmin.cpp -o test-nmmin.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o rstpm2.so c_optim.o test-nmmin.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for rstpm2_1.2.2.tar.gz : success (110 of 139, 103 good, 7 bad)
+
+RESULT for rugarch_1.3-4.tar.gz : success (111 of 139, 104 good, 7 bad)
+
+RESULT for sbmSDP_0.2.tar.gz : success (112 of 139, 105 good, 7 bad)
+
+RESULT for SBSA_0.2.3.tar.gz : success (113 of 139, 106 good, 7 bad)
+
+RESULT for SelvarMix_1.0.tar.gz : success (114 of 139, 107 good, 7 bad)
+
+RESULT for sgd_0.1.tar.gz : success (115 of 139, 108 good, 7 bad)
+
+RESULT for sglOptim_1.0.122.1.tar.gz : success (116 of 139, 109 good, 7 bad)
+
+RESULT for sirt_1.8-9.tar.gz : success (117 of 139, 110 good, 7 bad)
+
+RESULT for slfm_0.1.tar.gz : success (118 of 139, 111 good, 7 bad)
+
+RESULT for snipEM_1.0.tar.gz : success (119 of 139, 112 good, 7 bad)
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c grad_est.cpp -o grad_est.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c hmc4sfa.cpp -o hmc4sfa.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c test_gamma_pois.cpp -o test_gamma_pois.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o SparseFactorAnalysis.so RcppExports.o grad_est.o hmc4sfa.o test_gamma_pois.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for SparseFactorAnalysis_1.0.tar.gz : success (120 of 139, 113 good, 7 bad)
+
+RESULT for sparsereg_1.0.tar.gz : success (121 of 139, 114 good, 7 bad)
+
+RESULT for SpatialEpi_1.2.1.tar.gz : success (122 of 139, 115 good, 7 bad)
+
+RESULT for SpatialTools_0.5.8.tar.gz : success (123 of 139, 116 good, 7 bad)
+
+RESULT for SpatPCA_1.0.0.2.tar.gz : success (124 of 139, 117 good, 7 bad)
+
+RESULT for spBayesSurv_1.0.2.tar.gz : success (125 of 139, 118 good, 7 bad)
+
+RESULT for spduration_0.13.1.tar.gz : success (126 of 139, 119 good, 7 bad)
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c gibbs.c -o gibbs.o
+ccache gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o lda.so gibbs.o -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c STMCfuns.cpp -o STMCfuns.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o stm.so RcppExports.o STMCfuns.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for stm_1.1.0.tar.gz : success (127 of 139, 120 good, 7 bad)
+
+RESULT for stochvol_1.2.0.tar.gz : success (128 of 139, 121 good, 7 bad)
+
+RESULT for strum_0.6.2.tar.gz : success (129 of 139, 122 good, 7 bad)
+
+RESULT for survAccuracyMeasures_1.2.tar.gz : success (130 of 139, 123 good, 7 bad)
+
+RESULT for SVMMatch_1.1.tar.gz : success (131 of 139, 124 good, 7 bad)
+
+RESULT for synlik_0.1.1.tar.gz : success (132 of 139, 125 good, 7 bad)
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c irt_likelihood_cfa2.cpp -o irt_likelihood_cfa2.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c msq_itemfit.cpp -o msq_itemfit.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c prior_normal_density_c.cpp -o prior_normal_density_c.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c rowcumsums_source.cpp -o rowcumsums_source.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c tam_calcexp.cpp -o tam_calcexp.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c tam_caux.c -o tam_caux.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c tam_ctt_c.cpp -o tam_ctt_c.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c tam_fit_simul.cpp -o tam_fit_simul.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c tam_helper_ccode.cpp -o tam_helper_ccode.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c tam_mml_3pl_helper_functions.cpp -o tam_mml_3pl_helper_functions.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c tam_mml_mfr_helper.cpp -o tam_mml_mfr_helper.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c tam_modelfit_aux.cpp -o tam_modelfit_aux.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c tamwle_helper_ccode.cpp -o tamwle_helper_ccode.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o TAM.so irt_likelihood_cfa2.o msq_itemfit.o prior_normal_density_c.o rowcumsums_source.o tam_calcexp.o tam_caux.o tam_ctt_c.o tam_fit_simul.o tam_helper_ccode.o tam_mml_3pl_helper_functions.o tam_mml_mfr_helper.o tam_modelfit_aux.o tamwle_helper_ccode.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for TAM_1.10-0.tar.gz : success (133 of 139, 126 good, 7 bad)
+
+RESULT for TED_1.1.1.tar.gz : success (134 of 139, 127 good, 7 bad)
+
+RESULT for timma_1.2.1.tar.gz : failure (135 of 139, 127 good, 8 bad)
+
+RESULT for treeclim_1.0.11.tar.gz : success (136 of 139, 128 good, 8 bad)
+
+RESULT for unmarked_0.10-6.tar.gz : success (137 of 139, 129 good, 8 bad)
+
+RESULT for VarSelLCM_1.2.tar.gz : success (138 of 139, 130 good, 8 bad)
+
+RESULT for zic_0.8.1.tar.gz : success (139 of 139, 131 good, 8 bad)
+                     pkg res
+1       AdaptiveSparsity   0
+2                    AHR   0
+3                 Amelia   0
+4                 ASPBay   0
+5                 BaBooN   1
+6              BayesComm   0
+7                 bayesm   0
+8                  bayou   0
+9                    bcp   0
+10                   bfa   0
+11           BIFIEsurvey   0
+12                 BIPOD   0
+13           blockmodels   0
+14                bvarsv   0
+15                 ccaPP   0
+16                  cccp   0
+17                   cda   0
+18                   CDM   0
+19             cladoRcpp   0
+20                 coala   0
+21              coneproj   0
+22                copCAR   0
+23             Crossover   0
+24             DepthProc   0
+25                dfcomb   0
+26                 dfmta   0
+27                 emIRT   0
+28                EstHer   0
+29                 fastM   0
+30             FBFsearch   0
+31              fdaMixed   0
+32                FDRreg   0
+33                  fICA   0
+34              FisHiCal   1
+35                  flip   0
+36              forecast   0
+37             FRESA.CAD   0
+38              gaselect   0
+39          GeneticTools   0
+40              geoCount   0
+41                  glcm   0
+42              glmgraph   0
+43                  GMCM   0
+44                  gMWT   0
+45                 GPvam   0
+46          graphicalVAR   0
+47                gRbase   0
+48                  gRim   0
+49            growcurves   0
+50         growfunctions   0
+51                   GSE   0
+52                hawkes   0
+53               HLMdiag   0
+54               hsphase   0
+55           hypervolume   0
+56               iBATCGH   0
+57                icamix   1
+58               iccbeta   0
+59             kdecopula   0
+60                  lpme   0
+61                  lsgl   0
+62            markophylo   0
+63           markovchain   0
+64                   MAT   0
+65       matchingMarkets   0
+66             matchingR   0
+67                 mcIRT   0
+68             metafolio   0
+69                  mets   0
+70              miceadds   1
+71               mirtCAT   0
+72                 miscF   0
+73              mixedMem   0
+74                 mmand   0
+75                Morpho   1
+76                    mp   0
+77            Mposterior   0
+78               MRIaggr   1
+79                  msgl   1
+80                   MVB   0
+81               mvnfast   0
+82             ngspatial   0
+83                   oem   0
+84             onlinePCA   0
+85                 pcalg   0
+86                PedCNV   0
+87                planar   0
+88                 PoweR   0
+89             PPtreeViz   0
+90             prospectr   0
+91                   psd   0
+92                  psgp   0
+93             quadrupen   0
+94              quanteda   0
+95               Rborist   0
+96              rcppbugs   0
+97                RcppDE   0
+98            RcppMLPACK   0
+99              RealVAMS   0
+100               redist   0
+101             resemble   0
+102        revealedPrefs   0
+103                 rgam   0
+104              rmgarch   0
+105            robustgam   0
+106             robustHD   0
+107            robustreg   0
+108            rotations   0
+109           Rphylopars   0
+110               rstpm2   0
+111              rugarch   0
+112               sbmSDP   0
+113                 SBSA   0
+114            SelvarMix   0
+115                  sgd   0
+116             sglOptim   0
+117                 sirt   0
+118                 slfm   0
+119               snipEM   0
+120 SparseFactorAnalysis   0
+121            sparsereg   0
+122           SpatialEpi   0
+123         SpatialTools   0
+124              SpatPCA   0
+125          spBayesSurv   0
+126           spduration   0
+127                  stm   0
+128             stochvol   0
+129                strum   0
+130 survAccuracyMeasures   0
+131             SVMMatch   0
+132               synlik   0
+133                  TAM   0
+134                  TED   0
+135                timma   1
+136             treeclim   0
+137             unmarked   0
+138            VarSelLCM   0
+139                  zic   0
+
+  0   1 
+131   8 
+Ended at  2015-07-28 09:24:21 
