@@ -18,8 +18,8 @@ r["CRAN"] <- "http://cran.rstudio.com"
 r["BioCsoft"] <- "http://www.bioconductor.org/packages/release/bioc"
 options(repos = r)
 
-## for the borked src/Makevars of ExactNumCI
-Sys.setenv("BOOSTLIB"="/usr/include")
+Sys.setenv("BOOSTLIB"="/usr/include")   # for the borked src/Makevars of ExactNumCI
+Sys.setenv("RGL_USE_NULL"="TRUE")       # Duncan Murdoch on r-package-devel on 12 Aug 2015
 
 setwd("/tmp/RcppDepends")
 

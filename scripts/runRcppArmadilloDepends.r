@@ -15,6 +15,8 @@ Sys.setenv("R_LIBS_USER"="/tmp/RcppDepends/lib")
 #Sys.setenv("CC"="gcc")   ## needed for a bad interaction between autoconf and llvm on Ubuntu 13.10
 #Sys.setenv("CXX"="g++")  ## idem
 
+Sys.setenv("RGL_USE_NULL"="TRUE")       # Duncan Murdoch on r-package-devel on 12 Aug 2015
+
 r <- getOption("repos")
 r["CRAN"] <- "http://cran.rstudio.com"
 r["BioCsoft"] <- "http://www.bioconductor.org/packages/release/bioc"
