@@ -1,6 +1,7 @@
 #!/usr/bin/r
 
-cat("Started at ", format(Sys.time()), "\n")
+starttime <- Sys.time()
+cat("Started at ", format(starttime), "\n")
 pkg <- "Rcpp"
 cat(pkg, " version is ", packageDescription(pkg)$Version, "\n")
 
@@ -65,6 +66,15 @@ res <- data.frame(pkg=rcppset, res=NA, stringsAsFactors=FALSE)
 good <- bad <- 0
 n <- nrow(res)
 
+remtime <- function(ndone, ntotal, starttime) {
+    now <- Sys.time()
+    running <- as.numeric(difftime(now, starttime, unit="min"))
+    avgtime <- ndone/running
+    remaining <- (ntotal-ndone)*avgtime
+    cat("Expected finish in", remaining, "minutes at", format(now+remaining*60), "\n")
+}
+
+
 #for (pi in 1:nrow(res)) {
 #lres <- mclapply(1:nrow(res), mc.cores = 4, FUN=function(pi) {
 lres <- lapply(1:nrow(res), FUN=function(pi) {
@@ -96,8 +106,9 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     } else {
         bad <<- bad + 1
     }
-    cat(sprintf("\nRESULT for %s : %s (%d of %d, %d good, %d bad)\n",
-                pkg, if (rc==0) "success" else "failure", pi, n, good, bad))
+    cat(sprintf("\nRESULT for %s : %s (%d of %d, %d good, %d bad) -- %s\n",
+                pkg, if (rc==0) "success" else "failure", pi, n, good, bad,
+                remtime(good+bad, n, starttime))
     res[pi, ]
 })
 
