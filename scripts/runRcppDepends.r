@@ -1,7 +1,6 @@
 #!/usr/bin/r
 
-starttime <- Sys.time()
-cat("Started at ", format(starttime), "\n")
+cat("Started at ", format(Sys.time()), "\n")
 pkg <- "Rcpp"
 cat(pkg, " version is ", packageDescription(pkg)$Version, "\n")
 
@@ -65,15 +64,21 @@ print(rcppset)
 res <- data.frame(pkg=rcppset, res=NA, stringsAsFactors=FALSE)
 good <- bad <- 0
 n <- nrow(res)
+starttime <- Sys.time()
 
 remtime <- function(ndone, ntotal, starttime) {
     now <- Sys.time()
-    running <- as.numeric(difftime(now, starttime, unit="min"))
-    avgtime <- ndone/running
+    running <- as.numeric(difftime(now, starttime, unit="secs"))
+    #print(running)
+    avgtime <- ndone/(running/60)
+    #print(avgtime)
     remaining <- (ntotal-ndone)*avgtime
-    cat("Expected finish in", remaining, "minutes at", format(now+remaining*60), "\n")
+    #print(remaining)
+    #cat(format(now),"--",format(starttime), "--", running, "--", avgtime, "--", remaining,"\n")
+    paste("Avg runtime is", round(avgtime*60, digits=1), "sec,",
+          "exp. finish in", round(remaining, digits=1),
+          "min at", strftime(now+remaining*60, "%H:%M:%S on %d-%b-%Y"))
 }
-
 
 #for (pi in 1:nrow(res)) {
 #lres <- mclapply(1:nrow(res), mc.cores = 4, FUN=function(pi) {
@@ -108,7 +113,7 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     }
     cat(sprintf("\nRESULT for %s : %s (%d of %d, %d good, %d bad) -- %s\n",
                 pkg, if (rc==0) "success" else "failure", pi, n, good, bad,
-                remtime(good+bad, n, starttime))
+                remtime(good+bad, n, starttime)))
     res[pi, ]
 })
 
