@@ -2,7 +2,12 @@
 
 cat("Started at ", format(Sys.time()), "\n")
 pkg <- "Rcpp"
-cat(pkg, " version is ", packageDescription(pkg)$Version, "\n")
+cat(pkg, "version is", packageDescription(pkg)$Version, "\n")
+
+rbinary <- "RD"
+rversion <- system(paste(rbinary, "--version | head -1"), intern=TRUE)
+cat(rversion, "\n")
+
 
 ## use a test-local directory, install Rcpp, RcppArmadillo, ... there
 ## this will work for sub-shells such as the ones started by system() below
@@ -12,6 +17,7 @@ loclib <- "/tmp/RcppDepends/lib"
 Sys.setenv("R_LIBS_USER"="/tmp/RcppDepends/lib")
 #Sys.setenv("CC"="gcc")   ## needed for a bad interaction between autoconf and llvm on Ubuntu 13.10
 #Sys.setenv("CXX"="g++")  ## idem
+Sys.setenv("MAKE"="make -j 4 -O")
 
 r <- getOption("repos")
 r["CRAN"] <- "http://cran.rstudio.com"
@@ -104,7 +110,8 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     }
 
     rc <- system(paste("xvfb-run --server-args=\"-screen 0 1024x768x24\" ",
-                       "R CMD check --no-manual --no-vignettes ", pkg, " > ", pkg, ".log", sep=""))
+                       rbinary,         # R or RD
+                       " CMD check --no-manual --no-vignettes ", pkg, " > ", pkg, ".log", sep=""))
     res[pi, "res"] <- rc
     if (rc == 0) {
         good <<- good + 1
