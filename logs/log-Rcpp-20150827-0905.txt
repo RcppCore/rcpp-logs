@@ -1,0 +1,1775 @@
+Started at  2015-08-27 09:05:06 
+Rcpp  version is  0.12.0.4 
+  [1] "accelerometry"        "AdaptiveSparsity"     "AHR"                 
+  [4] "algstat"              "ALKr"                 "Amelia"              
+  [7] "apcluster"            "ASPBay"               "autovarCore"         
+ [10] "BaBooN"               "BalancedSampling"     "BayesComm"           
+ [13] "BayesFactor"          "bayesm"               "bayou"               
+ [16] "bcp"                  "bcpa"                 "bfa"                 
+ [19] "bfp"                  "bifactorial"          "BIFIEsurvey"         
+ [22] "BIPOD"                "blockcluster"         "blockmodels"         
+ [25] "brms"                 "btf"                  "bvarsv"              
+ [28] "CARBayes"             "CARBayesST"           "ccaPP"               
+ [31] "cccp"                 "cda"                  "CDM"                 
+ [34] "cgAUC"                "chopthin"             "CIDnetworks"         
+ [37] "cladoRcpp"            "classify"             "clere"               
+ [40] "climdex.pcic"         "clogitL1"             "clusteval"           
+ [43] "ClustMMDD"            "ClustVarLV"           "CMF"                 
+ [46] "coala"                "CompGLM"              "ConConPiWiFun"       
+ [49] "coneproj"             "contoureR"            "copCAR"              
+ [52] "CorReg"               "Coxnet"               "creditr"             
+ [55] "Crossover"            "D3M"                  "dbmss"               
+ [58] "dbscan"               "ddalpha"              "Delaporte"           
+ [61] "dendextendRcpp"       "DepthProc"            "DescTools"           
+ [64] "DetMCD"               "dfcomb"               "dfmta"               
+ [67] "dils"                 "disclapmix"           "diversitree"         
+ [70] "diveRsity"            "divo"                 "DNAprofiles"         
+ [73] "DNAtools"             "dplyr"                "dslice"              
+ [76] "DStree"               "ecp"                  "EditImputeCont"      
+ [79] "eive"                 "emIRT"                "EPGLM"               
+ [82] "ESGtoolkit"           "EstHer"               "evolqg"              
+ [85] "EWGoF"                "FastBandChol"         "fastGHQuad"          
+ [88] "FastGP"               "FastHCS"              "fastM"               
+ [91] "FastPCS"              "FastRCS"              "FBFsearch"           
+ [94] "fbroc"                "FCNN4R"               "fdaMixed"            
+ [97] "FDGcopulas"           "FDRreg"               "FeatureHashing"      
+[100] "fICA"                 "FisHiCal"             "flam"                
+[103] "flip"                 "FLSSS"                "forecast"            
+[106] "forestFloor"          "FRESA.CAD"            "FSInteract"          
+[109] "fugeR"                "FunChisq"             "Funclustering"       
+[112] "fwsim"                "gaselect"             "GCPM"                
+[115] "gdm"                  "geiger"               "GeneticTools"        
+[118] "GENLIB"               "geoCount"             "GERGM"               
+[121] "gkmSVM"               "glcm"                 "glmgraph"            
+[124] "GMCM"                 "Gmisc"                "gMWT"                
+[127] "GPareto"              "GPvam"                "graphicalVAR"        
+[130] "gRbase"               "gRim"                 "growcurves"          
+[133] "growfunctions"        "GSE"                  "GUILDS"              
+[136] "GUTS"                 "GxM"                  "h5"                  
+[139] "haven"                "hawkes"               "HLMdiag"             
+[142] "hsphase"              "hts"                  "httpuv"              
+[145] "HUM"                  "hypervolume"          "iBATCGH"             
+[148] "IBHM"                 "icamix"               "iccbeta"             
+[151] "icd9"                 "icensmis"             "imager"              
+[154] "inarmix"              "iptools"              "IsingSampler"        
+[157] "ISOpureR"             "iterpc"               "jaatha"              
+[160] "JacobiEigen"          "JAGUAR"               "jiebaR"              
+[163] "kdecopula"            "kergp"                "KernSmoothIRT"       
+[166] "kmc"                  "Kmisc"                "LaF"                 
+[169] "lamW"                 "Langevin"             "lasvmR"              
+[172] "lbfgs"                "lcopula"              "lfl"                 
+[175] "lifecontingencies"    "lm.br"                "lme4"                
+[178] "lpme"                 "lsbclust"             "lsgl"                
+[181] "Luminescence"         "marked"               "markophylo"          
+[184] "markovchain"          "MAT"                  "matchingMarkets"     
+[187] "matchingR"            "maxent"               "mbbefd"              
+[190] "mcemGLM"              "mcIRT"                "mcmcse"              
+[193] "metafolio"            "mets"                 "mev"                 
+[196] "mice"                 "miceadds"             "minqa"               
+[199] "mirt"                 "mirtCAT"              "miscF"               
+[202] "miscset"              "missDeaths"           "MixAll"              
+[205] "mixedMem"             "mkde"                 "mlxR"                
+[208] "mmand"                "Morpho"               "mp"                  
+[211] "Mposterior"           "MPTinR"               "MRIaggr"             
+[214] "msgl"                 "MTS"                  "multicool"           
+[217] "mvabund"              "MVB"                  "mvnfast"             
+[220] "mwaved"               "myTAI"                "nabor"               
+[223] "NAM"                  "ndl"                  "NetSim"              
+[226] "neuroim"              "ngspatial"            "NHMM"                
+[229] "nonlinearTseries"     "NPBayesImpute"        "oapackage"           
+[232] "odeintr"              "oem"                  "olctools"            
+[235] "OneArmPhaseTwoStudy"  "onlinePCA"            "openair"             
+[238] "OpenMx"               "openxlsx"             "optmatch"            
+[241] "orQA"                 "packcircles"          "PAFit"               
+[244] "pander"               "partialAR"            "pcalg"               
+[247] "pcIRT"                "PedCNV"               "pedometrics"         
+[250] "penMSM"               "PerMallows"           "phylobase"           
+[253] "planar"               "plotSEMM"             "plyr"                
+[256] "poisDoubleSamp"       "polywog"              "PoweR"               
+[259] "PP"                   "PPtreeViz"            "PReMiuM"             
+[262] "primes"               "pROC"                 "propagate"           
+[265] "prospectr"            "protViz"              "pryr"                
+[268] "psd"                  "psgp"                 "pvar"                
+[271] "QRM"                  "quadrupen"            "quanteda"            
+[274] "quantspec"            "qVarSel"              "randomUniformForest" 
+[277] "ranger"               "Rankcluster"          "rankdist"            
+[280] "rARPACK"              "raster"               "Rblpapi"             
+[283] "Rborist"              "Rclusterpp"           "RcppAnnoy"           
+[286] "RcppAPT"              "RcppArmadillo"        "RcppBDT"             
+[289] "rcppbugs"             "RcppClassic"          "RcppClassicExamples" 
+[292] "RcppCNPy"             "RcppDE"               "RcppDL"              
+[295] "RcppEigen"            "RcppExamples"         "RcppFaddeeva"        
+[298] "RcppGSL"              "RcppMLPACK"           "RcppOctave"          
+[301] "RcppProgress"         "RcppRedis"            "RcppRoll"            
+[304] "RcppShark"            "RcppSMC"              "RcppStreams"         
+[307] "RcppTOML"             "RcppXts"              "RcppZiggurat"        
+[310] "readr"                "readstata13"          "readxl"              
+[313] "RealVAMS"             "reconstructr"         "recosystem"          
+[316] "redist"               "relSim"               "remote"              
+[319] "ReorderCluster"       "repra"                "resemble"            
+[322] "reshape2"             "revealedPrefs"        "rexpokit"            
+[325] "rforensicbatwing"     "rgam"                 "rgeolocate"          
+[328] "RInside"              "ripa"                 "rivr"                
+[331] "rkvo"                 "Rlibeemd"             "rlme"                
+[334] "RLRsim"               "Rmalschains"          "rmgarch"             
+[337] "Rmixmod"              "RmixmodCombi"         "rncl"                
+[340] "robustgam"            "robustHD"             "robustreg"           
+[343] "rococo"               "rotations"            "RoughSets"           
+[346] "roxygen2"             "rpf"                  "rpg"                 
+[349] "Rphylopars"           "rplexos"              "rPref"               
+[352] "RProtoBuf"            "RQuantLib"            "RSNNS"               
+[355] "RSNPset"              "RSofia"               "Rsomoclu"            
+[358] "rstan"                "rstpm2"               "rtkpp"               
+[361] "Rtsne"                "Ruchardet"            "rugarch"             
+[364] "Rvcg"                 "RVowpalWabbit"        "satellite"           
+[367] "saturnin"             "sbmSDP"               "SBSA"                
+[370] "scales"               "scrm"                 "scrypt"              
+[373] "sdcMicro"             "sdcTable"             "SEERaBomb"           
+[376] "segmag"               "seismicRoll"          "SelvarMix"           
+[379] "sequences"            "sgd"                  "sglOptim"            
+[382] "signalHsmm"           "simFrame"             "simPop"              
+[385] "SimReg"               "sirt"                 "slfm"                
+[388] "SLOPE"                "snipEM"               "snplist"             
+[391] "SocialNetworks"       "SOD"                  "spacodiR"            
+[394] "spaMM"                "SparseFactorAnalysis" "sparseHessianFD"     
+[397] "sparseLTSEigen"       "sparsereg"            "SpatialEpi"          
+[400] "SpatialTools"         "SpatPCA"              "spBayesSurv"         
+[403] "spduration"           "spsann"               "StatMethRank"        
+[406] "staTools"             "StereoMorph"          "stm"                 
+[409] "StMoSim"              "stochvol"             "stocks"              
+[412] "stosim"               "strataG"              "stream"              
+[415] "strum"                "survAccuracyMeasures" "surveillance"        
+[418] "survSNP"              "SVMMatch"             "synlik"              
+[421] "systemicrisk"         "tagcloud"             "TAM"                 
+[424] "TAQMNGR"              "tbart"                "tcR"                 
+[427] "TED"                  "termstrc"             "TESS"                
+[430] "textreg"              "TFMPvalue"            "timma"               
+[433] "tmg"                  "treeclim"             "trustOptim"          
+[436] "tvd"                  "unmarked"             "urltools"            
+[439] "V8"                   "VarSelLCM"            "VideoComparison"     
+[442] "VIM"                  "waffect"              "walkr"               
+[445] "webreadr"             "wordcloud"            "wsrf"                
+[448] "XBRL"                 "xergm"                "xml2"                
+[451] "yakmoR"               "zic"                 
+
+RESULT for accelerometry_2.2.5.tar.gz : success (1 of 452, 1 good, 0 bad) -- Avg runtime is 62.3 sec, exp. finish in 468.2 min at 16:54:27 on 27-Aug-2015
+
+RESULT for AdaptiveSparsity_1.4.tar.gz : success (2 of 452, 2 good, 0 bad) -- Avg runtime is 91.5 sec, exp. finish in 686.5 min at 20:33:01 on 27-Aug-2015
+
+RESULT for AHR_1.2.tar.gz : success (3 of 452, 3 good, 0 bad) -- Avg runtime is 111.5 sec, exp. finish in 834.6 min at 23:01:24 on 27-Aug-2015
+
+RESULT for algstat_0.0.2.tar.gz : success (4 of 452, 4 good, 0 bad) -- Avg runtime is 103.5 sec, exp. finish in 773.1 min at 22:00:40 on 27-Aug-2015
+
+RESULT for ALKr_0.5.3.1.tar.gz : success (5 of 452, 5 good, 0 bad) -- Avg runtime is 100.8 sec, exp. finish in 750.7 min at 21:38:52 on 27-Aug-2015
+
+RESULT for Amelia_1.7.3.tar.gz : success (6 of 452, 6 good, 0 bad) -- Avg runtime is 95.6 sec, exp. finish in 710.3 min at 20:59:20 on 27-Aug-2015
+
+RESULT for apcluster_1.4.1.tar.gz : success (7 of 452, 7 good, 0 bad) -- Avg runtime is 79.1 sec, exp. finish in 586.8 min at 18:57:19 on 27-Aug-2015
+
+RESULT for ASPBay_1.2.tar.gz : success (8 of 452, 8 good, 0 bad) -- Avg runtime is 83 sec, exp. finish in 614.5 min at 19:25:31 on 27-Aug-2015
+
+RESULT for autovarCore_1.0-0.tar.gz : success (9 of 452, 9 good, 0 bad) -- Avg runtime is 87.2 sec, exp. finish in 643.7 min at 19:55:11 on 27-Aug-2015
+
+RESULT for BaBooN_0.2-0.tar.gz : success (10 of 452, 10 good, 0 bad) -- Avg runtime is 88.7 sec, exp. finish in 653.2 min at 20:05:13 on 27-Aug-2015
+
+RESULT for BalancedSampling_1.4.tar.gz : success (11 of 452, 11 good, 0 bad) -- Avg runtime is 89 sec, exp. finish in 654.3 min at 20:06:54 on 27-Aug-2015
+
+RESULT for BayesComm_0.1-2.tar.gz : success (12 of 452, 12 good, 0 bad) -- Avg runtime is 91 sec, exp. finish in 667.4 min at 20:20:33 on 27-Aug-2015
+
+RESULT for BayesFactor_0.9.11-1.tar.gz : success (13 of 452, 13 good, 0 bad) -- Avg runtime is 72.9 sec, exp. finish in 533.4 min at 18:09:22 on 27-Aug-2015
+
+RESULT for bayesm_3.0-2.tar.gz : success (14 of 452, 14 good, 0 bad) -- Avg runtime is 54.6 sec, exp. finish in 398.4 min at 15:58:59 on 27-Aug-2015
+
+RESULT for bayou_1.0.1.tar.gz : success (15 of 452, 15 good, 0 bad) -- Avg runtime is 53.3 sec, exp. finish in 388.4 min at 15:50:32 on 27-Aug-2015
+
+RESULT for bcp_4.0.0.tar.gz : success (16 of 452, 16 good, 0 bad) -- Avg runtime is 53.2 sec, exp. finish in 386.4 min at 15:49:40 on 27-Aug-2015
+
+RESULT for bcpa_1.1.tar.gz : failure (17 of 452, 16 good, 1 bad) -- Avg runtime is 55.2 sec, exp. finish in 400 min at 16:03:46 on 27-Aug-2015
+
+RESULT for bfa_0.3.1.tar.gz : success (18 of 452, 17 good, 1 bad) -- Avg runtime is 56.4 sec, exp. finish in 407.9 min at 16:12:19 on 27-Aug-2015
+
+RESULT for bfp_0.0-27.tar.gz : success (19 of 452, 18 good, 1 bad) -- Avg runtime is 55.6 sec, exp. finish in 401.3 min at 16:07:02 on 27-Aug-2015
+
+RESULT for bifactorial_1.4.7.tar.gz : success (20 of 452, 19 good, 1 bad) -- Avg runtime is 56.8 sec, exp. finish in 408.7 min at 16:15:06 on 27-Aug-2015
+
+RESULT for BIFIEsurvey_1.3-0.tar.gz : success (21 of 452, 20 good, 1 bad) -- Avg runtime is 54.4 sec, exp. finish in 391.1 min at 15:59:26 on 27-Aug-2015
+
+RESULT for BIPOD_0.2.1.tar.gz : success (22 of 452, 21 good, 1 bad) -- Avg runtime is 55.3 sec, exp. finish in 396.1 min at 16:05:13 on 27-Aug-2015
+
+RESULT for blockcluster_3.0.2.tar.gz : success (23 of 452, 22 good, 1 bad) -- Avg runtime is 52.2 sec, exp. finish in 373.5 min at 15:45:10 on 27-Aug-2015
+
+RESULT for blockmodels_1.1.1.tar.gz : success (24 of 452, 23 good, 1 bad) -- Avg runtime is 52.1 sec, exp. finish in 371.8 min at 15:44:41 on 27-Aug-2015
+
+RESULT for brms_0.4.1.tar.gz : success (25 of 452, 24 good, 1 bad) -- Avg runtime is 53.4 sec, exp. finish in 379.8 min at 15:53:07 on 27-Aug-2015
+
+RESULT for btf_1.1.tar.gz : success (26 of 452, 25 good, 1 bad) -- Avg runtime is 53.2 sec, exp. finish in 377.9 min at 15:52:28 on 27-Aug-2015
+
+RESULT for bvarsv_1.0.tar.gz : success (27 of 452, 26 good, 1 bad) -- Avg runtime is 54.3 sec, exp. finish in 384.4 min at 15:59:27 on 27-Aug-2015
+
+RESULT for CARBayes_4.2.tar.gz : success (28 of 452, 27 good, 1 bad) -- Avg runtime is 53.7 sec, exp. finish in 379.3 min at 15:55:50 on 27-Aug-2015
+
+RESULT for CARBayesST_2.1.tar.gz : success (29 of 452, 28 good, 1 bad) -- Avg runtime is 53.8 sec, exp. finish in 379.6 min at 15:57:10 on 27-Aug-2015
+
+RESULT for ccaPP_0.3.0.tar.gz : success (30 of 452, 29 good, 1 bad) -- Avg runtime is 54 sec, exp. finish in 380 min at 15:58:36 on 27-Aug-2015
+
+RESULT for cccp_0.2-4.tar.gz : success (31 of 452, 30 good, 1 bad) -- Avg runtime is 52.9 sec, exp. finish in 371 min at 15:51:26 on 27-Aug-2015
+
+RESULT for cda_1.5.1.tar.gz : success (32 of 452, 31 good, 1 bad) -- Avg runtime is 53.1 sec, exp. finish in 372 min at 15:53:24 on 27-Aug-2015
+
+RESULT for CDM_4.4-1.tar.gz : success (33 of 452, 32 good, 1 bad) -- Avg runtime is 52.5 sec, exp. finish in 366.6 min at 15:49:33 on 27-Aug-2015
+
+RESULT for cgAUC_1.2.1.tar.gz : success (34 of 452, 33 good, 1 bad) -- Avg runtime is 53.7 sec, exp. finish in 374.4 min at 15:57:33 on 27-Aug-2015
+
+RESULT for chopthin_0.1.tar.gz : success (35 of 452, 34 good, 1 bad) -- Avg runtime is 54.9 sec, exp. finish in 381.8 min at 16:05:17 on 27-Aug-2015
+
+RESULT for CIDnetworks_0.8.1.tar.gz : success (36 of 452, 35 good, 1 bad) -- Avg runtime is 55.1 sec, exp. finish in 381.7 min at 16:06:11 on 27-Aug-2015
+
+RESULT for cladoRcpp_0.14.4.tar.gz : success (37 of 452, 36 good, 1 bad) -- Avg runtime is 55.9 sec, exp. finish in 386.9 min at 16:11:51 on 27-Aug-2015
+
+RESULT for classify_1.3.tar.gz : success (38 of 452, 37 good, 1 bad) -- Avg runtime is 56.8 sec, exp. finish in 391.7 min at 16:17:07 on 27-Aug-2015
+
+RESULT for clere_1.1.tar.gz : success (39 of 452, 38 good, 1 bad) -- Avg runtime is 57 sec, exp. finish in 392.3 min at 16:18:35 on 27-Aug-2015
+
+RESULT for climdex.pcic_1.1-6.tar.gz : success (40 of 452, 39 good, 1 bad) -- Avg runtime is 57 sec, exp. finish in 391.2 min at 16:18:34 on 27-Aug-2015
+
+RESULT for clogitL1_1.4.tar.gz : success (41 of 452, 40 good, 1 bad) -- Avg runtime is 57.9 sec, exp. finish in 396.5 min at 16:24:15 on 27-Aug-2015
+
+RESULT for clusteval_0.1.tar.gz : success (42 of 452, 41 good, 1 bad) -- Avg runtime is 58.7 sec, exp. finish in 401.2 min at 16:29:21 on 27-Aug-2015
+
+RESULT for ClustMMDD_1.0.1.tar.gz : success (43 of 452, 42 good, 1 bad) -- Avg runtime is 59 sec, exp. finish in 402.5 min at 16:31:25 on 27-Aug-2015
+
+RESULT for ClustVarLV_1.4.0.tar.gz : success (44 of 452, 43 good, 1 bad) -- Avg runtime is 59.8 sec, exp. finish in 406.8 min at 16:36:08 on 27-Aug-2015
+
+RESULT for CMF_1.0.tar.gz : success (45 of 452, 44 good, 1 bad) -- Avg runtime is 60.8 sec, exp. finish in 412.2 min at 16:41:54 on 27-Aug-2015
+
+RESULT for coala_0.1.1.tar.gz : success (46 of 452, 45 good, 1 bad) -- Avg runtime is 60.8 sec, exp. finish in 411.1 min at 16:41:49 on 27-Aug-2015
+
+RESULT for CompGLM_1.0.tar.gz : success (47 of 452, 46 good, 1 bad) -- Avg runtime is 61.4 sec, exp. finish in 414.6 min at 16:45:43 on 27-Aug-2015
+
+RESULT for ConConPiWiFun_0.4.4.tar.gz : success (48 of 452, 47 good, 1 bad) -- Avg runtime is 61.9 sec, exp. finish in 416.7 min at 16:48:27 on 27-Aug-2015
+
+RESULT for coneproj_1.6.tar.gz : success (49 of 452, 48 good, 1 bad) -- Avg runtime is 62.6 sec, exp. finish in 420.2 min at 16:52:26 on 27-Aug-2015
+
+RESULT for contoureR_1.0.5.tar.gz : success (50 of 452, 49 good, 1 bad) -- Avg runtime is 63.2 sec, exp. finish in 423.7 min at 16:56:24 on 27-Aug-2015
+
+RESULT for copCAR_1.0-1.tar.gz : success (51 of 452, 50 good, 1 bad) -- Avg runtime is 63.9 sec, exp. finish in 427.4 min at 17:00:29 on 27-Aug-2015
+
+RESULT for CorReg_1.0.5.tar.gz : success (52 of 452, 51 good, 1 bad) -- Avg runtime is 61.8 sec, exp. finish in 411.8 min at 16:47:31 on 27-Aug-2015
+
+RESULT for Coxnet_0.1-1.tar.gz : success (53 of 452, 52 good, 1 bad) -- Avg runtime is 61.8 sec, exp. finish in 410.9 min at 16:47:35 on 27-Aug-2015
+
+RESULT for creditr_0.6.1.tar.gz : success (54 of 452, 53 good, 1 bad) -- Avg runtime is 62 sec, exp. finish in 411.1 min at 16:48:35 on 27-Aug-2015
+
+RESULT for Crossover_0.1-15.tar.gz : success (55 of 452, 54 good, 1 bad) -- Avg runtime is 61 sec, exp. finish in 403.4 min at 16:42:46 on 27-Aug-2015
+
+RESULT for D3M_0.41.tar.gz : success (56 of 452, 55 good, 1 bad) -- Avg runtime is 61.8 sec, exp. finish in 408.1 min at 16:47:40 on 27-Aug-2015
+
+RESULT for dbmss_2.2.1.tar.gz : success (57 of 452, 56 good, 1 bad) -- Avg runtime is 61.4 sec, exp. finish in 403.9 min at 16:44:54 on 27-Aug-2015
+
+RESULT for dbscan_0.9-2.tar.gz : success (58 of 452, 57 good, 1 bad) -- Avg runtime is 61.9 sec, exp. finish in 406.4 min at 16:47:51 on 27-Aug-2015
+
+RESULT for ddalpha_1.1.3.1.tar.gz : success (59 of 452, 58 good, 1 bad) -- Avg runtime is 61.7 sec, exp. finish in 403.9 min at 16:46:30 on 27-Aug-2015
+
+RESULT for Delaporte_2.2-3.tar.gz : success (60 of 452, 59 good, 1 bad) -- Avg runtime is 62.3 sec, exp. finish in 407.2 min at 16:50:12 on 27-Aug-2015
+
+RESULT for dendextendRcpp_0.6.1.tar.gz : success (61 of 452, 60 good, 1 bad) -- Avg runtime is 62.8 sec, exp. finish in 409.4 min at 16:52:56 on 27-Aug-2015
+
+RESULT for DepthProc_1.0.3.tar.gz : success (62 of 452, 61 good, 1 bad) -- Avg runtime is 62.4 sec, exp. finish in 405.9 min at 16:50:44 on 27-Aug-2015
+
+RESULT for DescTools_0.99.13.tar.gz : success (63 of 452, 62 good, 1 bad) -- Avg runtime is 60.8 sec, exp. finish in 393.9 min at 16:41:22 on 27-Aug-2015
+
+RESULT for DetMCD_0.0.2.tar.gz : success (64 of 452, 63 good, 1 bad) -- Avg runtime is 61.5 sec, exp. finish in 397.8 min at 16:45:25 on 27-Aug-2015
+
+RESULT for dfcomb_2.1-3.tar.gz : success (65 of 452, 64 good, 1 bad) -- Avg runtime is 61.9 sec, exp. finish in 399.4 min at 16:47:35 on 27-Aug-2015
+
+RESULT for dfmta_1.3-2.tar.gz : success (66 of 452, 65 good, 1 bad) -- Avg runtime is 62.7 sec, exp. finish in 403.3 min at 16:51:45 on 27-Aug-2015
+
+RESULT for dils_0.8.1.tar.gz : success (67 of 452, 66 good, 1 bad) -- Avg runtime is 63.1 sec, exp. finish in 404.8 min at 16:53:48 on 27-Aug-2015
+
+RESULT for disclapmix_1.6.1.tar.gz : success (68 of 452, 67 good, 1 bad) -- Avg runtime is 63.6 sec, exp. finish in 407.1 min at 16:56:27 on 27-Aug-2015
+
+RESULT for diversitree_0.9-7.tar.gz : success (69 of 452, 68 good, 1 bad) -- Avg runtime is 62.9 sec, exp. finish in 401.6 min at 16:52:40 on 27-Aug-2015
+
+RESULT for diveRsity_1.9.73.tar.gz : success (70 of 452, 69 good, 1 bad) -- Avg runtime is 62.5 sec, exp. finish in 397.8 min at 16:50:18 on 27-Aug-2015
+
+RESULT for divo_0.1.1.tar.gz : success (71 of 452, 70 good, 1 bad) -- Avg runtime is 62.7 sec, exp. finish in 398.4 min at 16:51:34 on 27-Aug-2015
+
+RESULT for DNAprofiles_0.3.1.tar.gz : success (72 of 452, 71 good, 1 bad) -- Avg runtime is 62.5 sec, exp. finish in 396 min at 16:50:19 on 27-Aug-2015
+
+RESULT for DNAtools_0.1-21.tar.gz : success (73 of 452, 72 good, 1 bad) -- Avg runtime is 62.6 sec, exp. finish in 395.6 min at 16:50:47 on 27-Aug-2015
+
+RESULT for dplyr_0.4.2.tar.gz : failure (74 of 452, 72 good, 2 bad) -- Avg runtime is 61.1 sec, exp. finish in 385 min at 16:42:56 on 27-Aug-2015
+
+RESULT for dslice_1.1.4.tar.gz : failure (75 of 452, 72 good, 3 bad) -- Avg runtime is 61.6 sec, exp. finish in 387.1 min at 16:45:21 on 27-Aug-2015
+
+RESULT for DStree_1.0.tar.gz : success (76 of 452, 73 good, 3 bad) -- Avg runtime is 61.3 sec, exp. finish in 384 min at 16:43:38 on 27-Aug-2015
+
+RESULT for ecp_2.0.0.tar.gz : success (77 of 452, 74 good, 3 bad) -- Avg runtime is 61.6 sec, exp. finish in 385.3 min at 16:45:28 on 27-Aug-2015
+
+RESULT for EditImputeCont_1.0.0.tar.gz : success (78 of 452, 75 good, 3 bad) -- Avg runtime is 61.9 sec, exp. finish in 386 min at 16:46:48 on 27-Aug-2015
+
+RESULT for eive_2.1.tar.gz : success (79 of 452, 76 good, 3 bad) -- Avg runtime is 62.5 sec, exp. finish in 388.3 min at 16:49:25 on 27-Aug-2015
+
+RESULT for emIRT_0.0.5.tar.gz : success (80 of 452, 77 good, 3 bad) -- Avg runtime is 60 sec, exp. finish in 372.2 min at 16:37:22 on 27-Aug-2015
+
+RESULT for EPGLM_1.0.tar.gz : success (81 of 452, 78 good, 3 bad) -- Avg runtime is 60.4 sec, exp. finish in 373.6 min at 16:39:19 on 27-Aug-2015
+
+RESULT for ESGtoolkit_0.1.tar.gz : success (82 of 452, 79 good, 3 bad) -- Avg runtime is 60.8 sec, exp. finish in 375 min at 16:41:08 on 27-Aug-2015
+
+RESULT for EstHer_1.0.tar.gz : success (83 of 452, 80 good, 3 bad) -- Avg runtime is 60.9 sec, exp. finish in 374.2 min at 16:41:19 on 27-Aug-2015
+
+RESULT for evolqg_0.1-7.tar.gz : success (84 of 452, 81 good, 3 bad) -- Avg runtime is 59.5 sec, exp. finish in 364.8 min at 16:34:46 on 27-Aug-2015
+
+RESULT for EWGoF_2.1.tar.gz : success (85 of 452, 82 good, 3 bad) -- Avg runtime is 59.6 sec, exp. finish in 364.7 min at 16:35:28 on 27-Aug-2015
+
+RESULT for FastBandChol_0.1.1.tar.gz : success (86 of 452, 83 good, 3 bad) -- Avg runtime is 60 sec, exp. finish in 366.2 min at 16:37:23 on 27-Aug-2015
+
+RESULT for fastGHQuad_0.2.tar.gz : success (87 of 452, 84 good, 3 bad) -- Avg runtime is 60.5 sec, exp. finish in 368.1 min at 16:39:37 on 27-Aug-2015
+
+RESULT for FastGP_1.1.tar.gz : success (88 of 452, 85 good, 3 bad) -- Avg runtime is 60.8 sec, exp. finish in 369.1 min at 16:41:07 on 27-Aug-2015
+
+RESULT for FastHCS_0.0.5.tar.gz : success (89 of 452, 86 good, 3 bad) -- Avg runtime is 61.3 sec, exp. finish in 370.6 min at 16:43:03 on 27-Aug-2015
+
+RESULT for fastM_0.0-2.tar.gz : success (90 of 452, 87 good, 3 bad) -- Avg runtime is 61.8 sec, exp. finish in 372.6 min at 16:45:16 on 27-Aug-2015
+
+RESULT for FastPCS_0.1.2.tar.gz : success (91 of 452, 88 good, 3 bad) -- Avg runtime is 62.2 sec, exp. finish in 374.5 min at 16:47:26 on 27-Aug-2015
+
+RESULT for FastRCS_0.0.6.tar.gz : success (92 of 452, 89 good, 3 bad) -- Avg runtime is 62.6 sec, exp. finish in 375.9 min at 16:49:14 on 27-Aug-2015
+
+RESULT for FBFsearch_1.0.tar.gz : success (93 of 452, 90 good, 3 bad) -- Avg runtime is 63.1 sec, exp. finish in 377.6 min at 16:51:17 on 27-Aug-2015
+
+RESULT for fbroc_0.2.1.tar.gz : success (94 of 452, 91 good, 3 bad) -- Avg runtime is 63.3 sec, exp. finish in 377.4 min at 16:51:48 on 27-Aug-2015
+
+RESULT for FCNN4R_0.4.1.tar.gz : success (95 of 452, 92 good, 3 bad) -- Avg runtime is 63.6 sec, exp. finish in 378.4 min at 16:53:15 on 27-Aug-2015
+
+RESULT for fdaMixed_0.4.tar.gz : success (96 of 452, 93 good, 3 bad) -- Avg runtime is 63.4 sec, exp. finish in 376.2 min at 16:52:15 on 27-Aug-2015
+
+RESULT for FDGcopulas_1.0.tar.gz : success (97 of 452, 94 good, 3 bad) -- Avg runtime is 63.8 sec, exp. finish in 377.3 min at 16:53:47 on 27-Aug-2015
+
+RESULT for FDRreg_0.1.tar.gz : success (98 of 452, 95 good, 3 bad) -- Avg runtime is 63.7 sec, exp. finish in 375.7 min at 16:53:15 on 27-Aug-2015
+
+RESULT for FeatureHashing_0.9.tar.gz : success (99 of 452, 96 good, 3 bad) -- Avg runtime is 63.4 sec, exp. finish in 373.2 min at 16:52:05 on 27-Aug-2015
+
+RESULT for fICA_1.0-3.tar.gz : success (100 of 452, 97 good, 3 bad) -- Avg runtime is 63.9 sec, exp. finish in 374.9 min at 16:54:03 on 27-Aug-2015
+
+RESULT for FisHiCal_1.1.tar.gz : success (101 of 452, 98 good, 3 bad) -- Avg runtime is 64.3 sec, exp. finish in 376.3 min at 16:55:46 on 27-Aug-2015
+
+RESULT for flam_3.0.tar.gz : success (102 of 452, 99 good, 3 bad) -- Avg runtime is 64.7 sec, exp. finish in 377.2 min at 16:57:04 on 27-Aug-2015
+
+RESULT for flip_2.4.3.tar.gz : success (103 of 452, 100 good, 3 bad) -- Avg runtime is 64.6 sec, exp. finish in 375.6 min at 16:56:32 on 27-Aug-2015
+
+RESULT for FLSSS_3.1.tar.gz : success (104 of 452, 101 good, 3 bad) -- Avg runtime is 65 sec, exp. finish in 376.9 min at 16:58:11 on 27-Aug-2015
+
+RESULT for forecast_6.1.tar.gz : success (105 of 452, 102 good, 3 bad) -- Avg runtime is 64.6 sec, exp. finish in 373.8 min at 16:56:31 on 27-Aug-2015
+
+RESULT for forestFloor_1.8.5.tar.gz : success (106 of 452, 103 good, 3 bad) -- Avg runtime is 64.4 sec, exp. finish in 371.2 min at 16:55:16 on 27-Aug-2015
+
+RESULT for FRESA.CAD_2.0.2.tar.gz : success (107 of 452, 104 good, 3 bad) -- Avg runtime is 64.5 sec, exp. finish in 371.1 min at 16:55:47 on 27-Aug-2015
+
+RESULT for FSInteract_0.1.1.tar.gz : success (108 of 452, 105 good, 3 bad) -- Avg runtime is 64.6 sec, exp. finish in 370.5 min at 16:56:01 on 27-Aug-2015
+
+RESULT for fugeR_0.1.2.tar.gz : success (109 of 452, 106 good, 3 bad) -- Avg runtime is 64.9 sec, exp. finish in 371.2 min at 16:57:11 on 27-Aug-2015
+
+RESULT for FunChisq_2.1.0.tar.gz : success (110 of 452, 107 good, 3 bad) -- Avg runtime is 65.3 sec, exp. finish in 372 min at 16:58:23 on 27-Aug-2015
+
+RESULT for Funclustering_1.0.1.tar.gz : success (111 of 452, 108 good, 3 bad) -- Avg runtime is 64.9 sec, exp. finish in 368.6 min at 16:56:33 on 27-Aug-2015
+
+RESULT for fwsim_0.3.3.tar.gz : success (112 of 452, 109 good, 3 bad) -- Avg runtime is 65 sec, exp. finish in 368.5 min at 16:57:04 on 27-Aug-2015
+
+RESULT for gaselect_1.0.5.tar.gz : success (113 of 452, 110 good, 3 bad) -- Avg runtime is 64.2 sec, exp. finish in 362.7 min at 16:53:31 on 27-Aug-2015
+
+RESULT for GCPM_1.2.tar.gz : success (114 of 452, 111 good, 3 bad) -- Avg runtime is 64.5 sec, exp. finish in 363.1 min at 16:54:26 on 27-Aug-2015
+
+RESULT for gdm_1.0.tar.gz : success (115 of 452, 112 good, 3 bad) -- Avg runtime is 64.2 sec, exp. finish in 360.5 min at 16:53:15 on 27-Aug-2015
+
+RESULT for geiger_2.0.3.tar.gz : success (116 of 452, 113 good, 3 bad) -- Avg runtime is 63.9 sec, exp. finish in 357.8 min at 16:51:59 on 27-Aug-2015
+
+RESULT for GeneticTools_0.3.1.tar.gz : success (117 of 452, 114 good, 3 bad) -- Avg runtime is 63.8 sec, exp. finish in 356 min at 16:51:19 on 27-Aug-2015
+
+RESULT for GENLIB_1.0.4.tar.gz : success (118 of 452, 115 good, 3 bad) -- Avg runtime is 62.9 sec, exp. finish in 350.3 min at 16:48:02 on 27-Aug-2015
+
+RESULT for geoCount_1.150120.tar.gz : success (119 of 452, 116 good, 3 bad) -- Avg runtime is 62.8 sec, exp. finish in 348.7 min at 16:47:34 on 27-Aug-2015
+
+RESULT for GERGM_0.3.2.tar.gz : success (120 of 452, 117 good, 3 bad) -- Avg runtime is 63.1 sec, exp. finish in 349 min at 16:48:24 on 27-Aug-2015
+
+RESULT for gkmSVM_0.55.tar.gz : success (121 of 452, 118 good, 3 bad) -- Avg runtime is 63.2 sec, exp. finish in 348.6 min at 16:48:45 on 27-Aug-2015
+
+RESULT for glcm_1.2.tar.gz : success (122 of 452, 119 good, 3 bad) -- Avg runtime is 63.4 sec, exp. finish in 348.7 min at 16:49:25 on 27-Aug-2015
+
+RESULT for glmgraph_1.0.3.tar.gz : success (123 of 452, 120 good, 3 bad) -- Avg runtime is 63.2 sec, exp. finish in 346.6 min at 16:48:34 on 27-Aug-2015
+
+RESULT for GMCM_1.2.2.tar.gz : success (124 of 452, 121 good, 3 bad) -- Avg runtime is 63.1 sec, exp. finish in 345.1 min at 16:48:10 on 27-Aug-2015
+
+RESULT for Gmisc_1.1.tar.gz : success (125 of 452, 122 good, 3 bad) -- Avg runtime is 63.2 sec, exp. finish in 344.2 min at 16:48:13 on 27-Aug-2015
+
+RESULT for gMWT_1.0.tar.gz : success (126 of 452, 123 good, 3 bad) -- Avg runtime is 63.3 sec, exp. finish in 343.8 min at 16:48:33 on 27-Aug-2015
+
+RESULT for GPareto_1.0.1.tar.gz : failure (127 of 452, 123 good, 4 bad) -- Avg runtime is 63.4 sec, exp. finish in 343.2 min at 16:48:42 on 27-Aug-2015
+
+RESULT for GPvam_3.0-3.tar.gz : success (128 of 452, 124 good, 4 bad) -- Avg runtime is 63.3 sec, exp. finish in 341.8 min at 16:48:22 on 27-Aug-2015
+
+RESULT for graphicalVAR_0.1.3.tar.gz : success (129 of 452, 125 good, 4 bad) -- Avg runtime is 63.2 sec, exp. finish in 340.4 min at 16:48:03 on 27-Aug-2015
+
+RESULT for gRbase_1.7-1.tar.gz : success (130 of 452, 126 good, 4 bad) -- Avg runtime is 62 sec, exp. finish in 332.8 min at 16:43:49 on 27-Aug-2015
+
+RESULT for gRim_0.1-17.tar.gz : success (131 of 452, 127 good, 4 bad) -- Avg runtime is 61.9 sec, exp. finish in 331.2 min at 16:43:23 on 27-Aug-2015
+
+RESULT for growcurves_0.2.3.9.tar.gz : success (132 of 452, 128 good, 4 bad) -- Avg runtime is 60.5 sec, exp. finish in 322.5 min at 16:38:43 on 27-Aug-2015
+
+RESULT for growfunctions_0.11.tar.gz : success (133 of 452, 129 good, 4 bad) -- Avg runtime is 59.4 sec, exp. finish in 315.6 min at 16:35:15 on 27-Aug-2015
+
+RESULT for GSE_3.2.1.tar.gz : success (134 of 452, 130 good, 4 bad) -- Avg runtime is 59.4 sec, exp. finish in 314.9 min at 16:35:27 on 27-Aug-2015
+
+RESULT for GUILDS_1.2.1.tar.gz : success (135 of 452, 131 good, 4 bad) -- Avg runtime is 59.6 sec, exp. finish in 315.1 min at 16:36:09 on 27-Aug-2015
+
+RESULT for GUTS_1.0.0.tar.gz : success (136 of 452, 132 good, 4 bad) -- Avg runtime is 59.9 sec, exp. finish in 315.3 min at 16:36:52 on 27-Aug-2015
+
+RESULT for GxM_1.1.tar.gz : success (137 of 452, 133 good, 4 bad) -- Avg runtime is 60.1 sec, exp. finish in 315.7 min at 16:37:38 on 27-Aug-2015
+
+RESULT for h5_0.9.3.tar.gz : success (138 of 452, 134 good, 4 bad) -- Avg runtime is 60.2 sec, exp. finish in 314.8 min at 16:37:42 on 27-Aug-2015
+
+RESULT for haven_0.2.0.tar.gz : success (139 of 452, 135 good, 4 bad) -- Avg runtime is 60.3 sec, exp. finish in 314.7 min at 16:38:13 on 27-Aug-2015
+
+RESULT for hawkes_0.0-4.tar.gz : success (140 of 452, 136 good, 4 bad) -- Avg runtime is 60.6 sec, exp. finish in 315 min at 16:38:53 on 27-Aug-2015
+
+RESULT for HLMdiag_0.3.0.tar.gz : success (141 of 452, 137 good, 4 bad) -- Avg runtime is 60.2 sec, exp. finish in 312.3 min at 16:37:56 on 27-Aug-2015
+
+RESULT for hsphase_2.0.1.tar.gz : success (142 of 452, 138 good, 4 bad) -- Avg runtime is 60.2 sec, exp. finish in 311.3 min at 16:37:55 on 27-Aug-2015
+
+RESULT for hts_4.5.tar.gz : success (143 of 452, 139 good, 4 bad) -- Avg runtime is 60.2 sec, exp. finish in 310.1 min at 16:37:50 on 27-Aug-2015
+
+RESULT for httpuv_1.3.3.tar.gz : success (144 of 452, 140 good, 4 bad) -- Avg runtime is 60.3 sec, exp. finish in 309.4 min at 16:38:00 on 27-Aug-2015
+
+RESULT for HUM_1.0.tar.gz : success (145 of 452, 141 good, 4 bad) -- Avg runtime is 60.5 sec, exp. finish in 309.7 min at 16:38:41 on 27-Aug-2015
+
+RESULT for hypervolume_1.3.0.tar.gz : success (146 of 452, 142 good, 4 bad) -- Avg runtime is 60.6 sec, exp. finish in 308.8 min at 16:38:44 on 27-Aug-2015
+
+RESULT for iBATCGH_1.3.tar.gz : success (147 of 452, 143 good, 4 bad) -- Avg runtime is 59.5 sec, exp. finish in 302.6 min at 16:36:00 on 27-Aug-2015
+
+RESULT for IBHM_1.1-11.tar.gz : success (148 of 452, 144 good, 4 bad) -- Avg runtime is 59.2 sec, exp. finish in 299.9 min at 16:35:10 on 27-Aug-2015
+
+RESULT for icamix_1.0.2.tar.gz : success (149 of 452, 145 good, 4 bad) -- Avg runtime is 59.3 sec, exp. finish in 299.5 min at 16:35:30 on 27-Aug-2015
+
+RESULT for iccbeta_1.0.tar.gz : success (150 of 452, 146 good, 4 bad) -- Avg runtime is 59.4 sec, exp. finish in 298.7 min at 16:35:37 on 27-Aug-2015
+
+RESULT for icd9_1.2.tar.gz : success (151 of 452, 147 good, 4 bad) -- Avg runtime is 59 sec, exp. finish in 296.1 min at 16:34:51 on 27-Aug-2015
+
+RESULT for icensmis_1.2.1.tar.gz : success (152 of 452, 148 good, 4 bad) -- Avg runtime is 59.1 sec, exp. finish in 295.5 min at 16:35:04 on 27-Aug-2015
+ccache g++ -I/usr/share/R/include -DNDEBUG -I/opt/X11/lib -I/usr/X11R6/include -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_rmode -DSTRICT_R_HEADERS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I/opt/X11/lib -I/usr/X11R6/include -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_rmode -DSTRICT_R_HEADERS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c colourspace.cpp -o colourspace.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I/opt/X11/lib -I/usr/X11R6/include -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_rmode -DSTRICT_R_HEADERS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c display.cpp -o display.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I/opt/X11/lib -I/usr/X11R6/include -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_rmode -DSTRICT_R_HEADERS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c drawing.cpp -o drawing.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I/opt/X11/lib -I/usr/X11R6/include -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_rmode -DSTRICT_R_HEADERS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c filtering.cpp -o filtering.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I/opt/X11/lib -I/usr/X11R6/include -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_rmode -DSTRICT_R_HEADERS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c interpolation.cpp -o interpolation.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I/opt/X11/lib -I/usr/X11R6/include -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_rmode -DSTRICT_R_HEADERS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c morphology.cpp -o morphology.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I/opt/X11/lib -I/usr/X11R6/include -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_rmode -DSTRICT_R_HEADERS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c transformations.cpp -o transformations.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I/opt/X11/lib -I/usr/X11R6/include -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_rmode -DSTRICT_R_HEADERS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c utils.cpp -o utils.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I/opt/X11/lib -I/usr/X11R6/include -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_rmode -DSTRICT_R_HEADERS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c wrappers.cpp -o wrappers.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o imager.so RcppExports.o colourspace.o display.o drawing.o filtering.o interpolation.o morphology.o transformations.o utils.o wrappers.o -L/opt/X11/lib -L/usr/X11R6/include -lX11 -lfftw3 -lfftw3_threads -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for imager_0.13.tar.gz : success (153 of 452, 149 good, 4 bad) -- Avg runtime is 56.1 sec, exp. finish in 279.8 min at 16:28:32 on 27-Aug-2015
+
+RESULT for inarmix_0.4.tar.gz : success (154 of 452, 150 good, 4 bad) -- Avg runtime is 56.1 sec, exp. finish in 278.6 min at 16:28:34 on 27-Aug-2015
+
+RESULT for iptools_0.2.1.tar.gz : success (155 of 452, 151 good, 4 bad) -- Avg runtime is 56.2 sec, exp. finish in 278.4 min at 16:28:58 on 27-Aug-2015
+
+RESULT for IsingSampler_0.2.tar.gz : success (156 of 452, 152 good, 4 bad) -- Avg runtime is 56.4 sec, exp. finish in 278.3 min at 16:29:28 on 27-Aug-2015
+
+RESULT for ISOpureR_1.0.18.tar.gz : success (157 of 452, 153 good, 4 bad) -- Avg runtime is 56.6 sec, exp. finish in 278.3 min at 16:29:57 on 27-Aug-2015
+
+RESULT for iterpc_0.2.7.tar.gz : success (158 of 452, 154 good, 4 bad) -- Avg runtime is 56.8 sec, exp. finish in 278.4 min at 16:30:29 on 27-Aug-2015
+
+RESULT for jaatha_2.7.0.tar.gz : success (159 of 452, 155 good, 4 bad) -- Avg runtime is 56.8 sec, exp. finish in 277.5 min at 16:30:37 on 27-Aug-2015
+
+RESULT for JacobiEigen_0.1.tar.gz : success (160 of 452, 156 good, 4 bad) -- Avg runtime is 57.1 sec, exp. finish in 277.7 min at 16:31:11 on 27-Aug-2015
+
+RESULT for JAGUAR_2.0.tar.gz : success (161 of 452, 157 good, 4 bad) -- Avg runtime is 57.1 sec, exp. finish in 276.9 min at 16:31:21 on 27-Aug-2015
+
+RESULT for jiebaR_0.5.tar.gz : success (162 of 452, 158 good, 4 bad) -- Avg runtime is 57.3 sec, exp. finish in 276.7 min at 16:31:44 on 27-Aug-2015
+
+RESULT for kdecopula_0.0.4.tar.gz : success (163 of 452, 159 good, 4 bad) -- Avg runtime is 57 sec, exp. finish in 274.7 min at 16:31:25 on 27-Aug-2015
+
+RESULT for kergp_0.1.0.tar.gz : success (164 of 452, 160 good, 4 bad) -- Avg runtime is 57.2 sec, exp. finish in 274.6 min at 16:31:51 on 27-Aug-2015
+
+RESULT for KernSmoothIRT_6.1.tar.gz : success (165 of 452, 161 good, 4 bad) -- Avg runtime is 57.4 sec, exp. finish in 274.5 min at 16:32:16 on 27-Aug-2015
+
+RESULT for kmc_0.1-2.tar.gz : success (166 of 452, 162 good, 4 bad) -- Avg runtime is 57.5 sec, exp. finish in 274 min at 16:32:31 on 27-Aug-2015
+
+RESULT for Kmisc_0.5.0.tar.gz : success (167 of 452, 163 good, 4 bad) -- Avg runtime is 57.6 sec, exp. finish in 273.5 min at 16:32:45 on 27-Aug-2015
+
+RESULT for LaF_0.6.2.tar.gz : success (168 of 452, 164 good, 4 bad) -- Avg runtime is 57.5 sec, exp. finish in 272.3 min at 16:32:46 on 27-Aug-2015
+
+RESULT for lamW_0.1-1.tar.gz : success (169 of 452, 165 good, 4 bad) -- Avg runtime is 57.7 sec, exp. finish in 272 min at 16:33:05 on 27-Aug-2015
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"  `/usr/lib/R/bin/Rscript -e "Rcpp:::CxxFlags()"` -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c Langevin1D.cpp -o Langevin1D.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"  `/usr/lib/R/bin/Rscript -e "Rcpp:::CxxFlags()"` -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c Langevin2D.cpp -o Langevin2D.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"  `/usr/lib/R/bin/Rscript -e "Rcpp:::CxxFlags()"` -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"  `/usr/lib/R/bin/Rscript -e "Rcpp:::CxxFlags()"` -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c timeseries1D.cpp -o timeseries1D.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"  `/usr/lib/R/bin/Rscript -e "Rcpp:::CxxFlags()"` -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c timeseries2D.cpp -o timeseries2D.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o Langevin.so Langevin1D.o Langevin2D.o RcppExports.o timeseries1D.o timeseries2D.o -llapack -lblas -lgfortran -lm -lquadmath -fopenmp -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for Langevin_1.0.3.tar.gz : success (170 of 452, 166 good, 4 bad) -- Avg runtime is 57.7 sec, exp. finish in 271.1 min at 16:33:10 on 27-Aug-2015
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c kcache.cpp -o kcache.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c kernel.cpp -o kernel.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c la_svm.cpp -o la_svm.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c la_test.cpp -o la_test.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c lasvm.cpp -o lasvm.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c lasvm_wrapper.cpp -o lasvm_wrapper.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c messages.cpp -o messages.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c vector.cpp -o vector.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o lasvmR.so RcppExports.o kcache.o kernel.o la_svm.o la_test.o lasvm.o lasvm_wrapper.o messages.o vector.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for lasvmR_0.1.2.tar.gz : success (171 of 452, 167 good, 4 bad) -- Avg runtime is 57.8 sec, exp. finish in 270.6 min at 16:33:24 on 27-Aug-2015
+
+RESULT for lbfgs_1.2.1.tar.gz : success (172 of 452, 168 good, 4 bad) -- Avg runtime is 58 sec, exp. finish in 270.6 min at 16:33:49 on 27-Aug-2015
+
+RESULT for lcopula_0.205.tar.gz : success (173 of 452, 169 good, 4 bad) -- Avg runtime is 57.9 sec, exp. finish in 269.2 min at 16:33:45 on 27-Aug-2015
+
+RESULT for lfl_1.2.tar.gz : success (174 of 452, 170 good, 4 bad) -- Avg runtime is 57.8 sec, exp. finish in 267.8 min at 16:33:40 on 27-Aug-2015
+
+RESULT for lifecontingencies_1.1.9.tar.gz : success (175 of 452, 171 good, 4 bad) -- Avg runtime is 57.7 sec, exp. finish in 266.4 min at 16:33:35 on 27-Aug-2015
+
+RESULT for lm.br_2.7.tar.gz : success (176 of 452, 172 good, 4 bad) -- Avg runtime is 57.3 sec, exp. finish in 263.5 min at 16:33:05 on 27-Aug-2015
+
+RESULT for lme4_1.1-9.tar.gz : failure (177 of 452, 172 good, 5 bad) -- Avg runtime is 56.5 sec, exp. finish in 258.9 min at 16:32:08 on 27-Aug-2015
+
+RESULT for lpme_1.0.1.tar.gz : success (178 of 452, 173 good, 5 bad) -- Avg runtime is 56.6 sec, exp. finish in 258.5 min at 16:32:24 on 27-Aug-2015
+
+RESULT for lsbclust_1.0.3.tar.gz : success (179 of 452, 174 good, 5 bad) -- Avg runtime is 56.6 sec, exp. finish in 257.7 min at 16:32:35 on 27-Aug-2015
+
+RESULT for lsgl_1.0.123.1.tar.gz : success (180 of 452, 175 good, 5 bad) -- Avg runtime is 56.6 sec, exp. finish in 256.6 min at 16:32:39 on 27-Aug-2015
+
+RESULT for Luminescence_0.4.5.tar.gz : success (181 of 452, 176 good, 5 bad) -- Avg runtime is 56.4 sec, exp. finish in 254.5 min at 16:32:29 on 27-Aug-2015
+
+RESULT for marked_1.1.10.tar.gz : success (182 of 452, 177 good, 5 bad) -- Avg runtime is 56.3 sec, exp. finish in 253.3 min at 16:32:32 on 27-Aug-2015
+
+RESULT for markophylo_1.0.1.tar.gz : success (183 of 452, 178 good, 5 bad) -- Avg runtime is 56.5 sec, exp. finish in 253.1 min at 16:32:50 on 27-Aug-2015
+
+RESULT for markovchain_0.4.2.tar.gz : failure (184 of 452, 178 good, 6 bad) -- Avg runtime is 56.2 sec, exp. finish in 251 min at 16:32:42 on 27-Aug-2015
+
+RESULT for MAT_2.2.tar.gz : success (185 of 452, 179 good, 6 bad) -- Avg runtime is 56.3 sec, exp. finish in 250.4 min at 16:32:54 on 27-Aug-2015
+
+RESULT for matchingMarkets_0.1-5.tar.gz : success (186 of 452, 180 good, 6 bad) -- Avg runtime is 56.4 sec, exp. finish in 250 min at 16:33:08 on 27-Aug-2015
+
+RESULT for matchingR_1.0.1.tar.gz : success (187 of 452, 181 good, 6 bad) -- Avg runtime is 56.6 sec, exp. finish in 249.8 min at 16:33:26 on 27-Aug-2015
+
+RESULT for maxent_1.3.3.1.tar.gz : success (188 of 452, 182 good, 6 bad) -- Avg runtime is 56.6 sec, exp. finish in 249.2 min at 16:33:37 on 27-Aug-2015
+
+RESULT for mbbefd_0.7.tar.gz : success (189 of 452, 183 good, 6 bad) -- Avg runtime is 56.8 sec, exp. finish in 249 min at 16:33:52 on 27-Aug-2015
+
+RESULT for mcemGLM_1.0.tar.gz : success (190 of 452, 184 good, 6 bad) -- Avg runtime is 55.7 sec, exp. finish in 243.1 min at 16:33:07 on 27-Aug-2015
+
+RESULT for mcIRT_0.41.tar.gz : success (191 of 452, 185 good, 6 bad) -- Avg runtime is 55.6 sec, exp. finish in 241.8 min at 16:33:12 on 27-Aug-2015
+
+RESULT for mcmcse_1.1-2.tar.gz : failure (192 of 452, 185 good, 7 bad) -- Avg runtime is 55.7 sec, exp. finish in 241.4 min at 16:33:26 on 27-Aug-2015
+
+RESULT for metafolio_0.1.0.tar.gz : success (193 of 452, 186 good, 7 bad) -- Avg runtime is 55.8 sec, exp. finish in 241.1 min at 16:33:40 on 27-Aug-2015
+
+RESULT for mets_1.1.1.tar.gz : success (194 of 452, 187 good, 7 bad) -- Avg runtime is 55.3 sec, exp. finish in 237.8 min at 16:33:31 on 27-Aug-2015
+
+RESULT for mev_1.2.tar.gz : success (195 of 452, 188 good, 7 bad) -- Avg runtime is 55.5 sec, exp. finish in 237.5 min at 16:33:45 on 27-Aug-2015
+
+RESULT for mice_2.22.tar.gz : success (196 of 452, 189 good, 7 bad) -- Avg runtime is 55.4 sec, exp. finish in 236.4 min at 16:33:53 on 27-Aug-2015
+
+RESULT for miceadds_1.3-0.tar.gz : failure (197 of 452, 189 good, 8 bad) -- Avg runtime is 55.1 sec, exp. finish in 234.1 min at 16:33:55 on 27-Aug-2015
+
+RESULT for minqa_1.2.4.tar.gz : success (198 of 452, 190 good, 8 bad) -- Avg runtime is 55.3 sec, exp. finish in 233.9 min at 16:34:09 on 27-Aug-2015
+
+RESULT for mirt_1.10.tar.gz : success (199 of 452, 191 good, 8 bad) -- Avg runtime is 55 sec, exp. finish in 232 min at 16:34:15 on 27-Aug-2015
+
+RESULT for mirtCAT_0.5.tar.gz : success (200 of 452, 192 good, 8 bad) -- Avg runtime is 55 sec, exp. finish in 231.1 min at 16:34:26 on 27-Aug-2015
+
+RESULT for miscF_0.1-2.tar.gz : success (201 of 452, 193 good, 8 bad) -- Avg runtime is 55.2 sec, exp. finish in 230.8 min at 16:34:38 on 27-Aug-2015
+
+RESULT for miscset_0.4.tar.gz : success (202 of 452, 194 good, 8 bad) -- Avg runtime is 55.3 sec, exp. finish in 230.6 min at 16:34:50 on 27-Aug-2015
+
+RESULT for missDeaths_1.2.tar.gz : success (203 of 452, 195 good, 8 bad) -- Avg runtime is 55.2 sec, exp. finish in 229.3 min at 16:34:59 on 27-Aug-2015
+
+RESULT for MixAll_1.0.2.tar.gz : success (204 of 452, 196 good, 8 bad) -- Avg runtime is 55.1 sec, exp. finish in 227.9 min at 16:35:08 on 27-Aug-2015
+
+RESULT for mixedMem_1.1.0.tar.gz : success (205 of 452, 197 good, 8 bad) -- Avg runtime is 54.8 sec, exp. finish in 225.7 min at 16:35:17 on 27-Aug-2015
+
+RESULT for mkde_0.1.tar.gz : success (206 of 452, 198 good, 8 bad) -- Avg runtime is 54.9 sec, exp. finish in 224.9 min at 16:35:28 on 27-Aug-2015
+
+RESULT for mlxR_2.2.0.tar.gz : success (207 of 452, 199 good, 8 bad) -- Avg runtime is 55 sec, exp. finish in 224.6 min at 16:35:38 on 27-Aug-2015
+
+RESULT for mmand_1.2.0.tar.gz : failure (208 of 452, 199 good, 9 bad) -- Avg runtime is 55.3 sec, exp. finish in 224.7 min at 16:35:48 on 27-Aug-2015
+
+RESULT for Morpho_2.3.0.tar.gz : success (209 of 452, 200 good, 9 bad) -- Avg runtime is 54.7 sec, exp. finish in 221.5 min at 16:36:02 on 27-Aug-2015
+
+RESULT for mp_0.3.tar.gz : success (210 of 452, 201 good, 9 bad) -- Avg runtime is 54.8 sec, exp. finish in 221 min at 16:36:12 on 27-Aug-2015
+
+RESULT for Mposterior_0.1.2.tar.gz : success (211 of 452, 202 good, 9 bad) -- Avg runtime is 54.8 sec, exp. finish in 220.3 min at 16:36:22 on 27-Aug-2015
+
+RESULT for MPTinR_1.10.3.tar.gz : success (212 of 452, 203 good, 9 bad) -- Avg runtime is 54.8 sec, exp. finish in 219.3 min at 16:36:33 on 27-Aug-2015
+
+RESULT for MRIaggr_1.1.2.tar.gz : failure (213 of 452, 203 good, 10 bad) -- Avg runtime is 54.9 sec, exp. finish in 218.7 min at 16:36:43 on 27-Aug-2015
+
+RESULT for msgl_2.0.125.1.tar.gz : failure (214 of 452, 203 good, 11 bad) -- Avg runtime is 54.8 sec, exp. finish in 217.6 min at 16:36:54 on 27-Aug-2015
+
+RESULT for MTS_0.33.tar.gz : success (215 of 452, 204 good, 11 bad) -- Avg runtime is 54.8 sec, exp. finish in 216.3 min at 16:37:07 on 27-Aug-2015
+
+RESULT for multicool_0.1-7.tar.gz : success (216 of 452, 205 good, 11 bad) -- Avg runtime is 54.9 sec, exp. finish in 216.1 min at 16:37:14 on 27-Aug-2015
+
+RESULT for mvabund_3.10.4.tar.gz : success (217 of 452, 206 good, 11 bad) -- Avg runtime is 54.7 sec, exp. finish in 214.4 min at 16:37:29 on 27-Aug-2015
+
+RESULT for MVB_1.1.tar.gz : success (218 of 452, 207 good, 11 bad) -- Avg runtime is 54.7 sec, exp. finish in 213.2 min at 16:37:43 on 27-Aug-2015
+
+RESULT for mvnfast_0.1.3.tar.gz : success (219 of 452, 208 good, 11 bad) -- Avg runtime is 54.8 sec, exp. finish in 212.6 min at 16:37:51 on 27-Aug-2015
+
+RESULT for mwaved_1.1.1.tar.gz : success (220 of 452, 209 good, 11 bad) -- Avg runtime is 54.9 sec, exp. finish in 212.1 min at 16:37:58 on 27-Aug-2015
+
+RESULT for myTAI_0.3.0.tar.gz : success (221 of 452, 210 good, 11 bad) -- Avg runtime is 54.8 sec, exp. finish in 211.1 min at 16:38:10 on 27-Aug-2015
+
+RESULT for nabor_0.4.6.tar.gz : failure (222 of 452, 210 good, 12 bad) -- Avg runtime is 54.9 sec, exp. finish in 210.4 min at 16:38:19 on 27-Aug-2015
+
+RESULT for NAM_1.3.4.tar.gz : success (223 of 452, 211 good, 12 bad) -- Avg runtime is 54.9 sec, exp. finish in 209.5 min at 16:38:29 on 27-Aug-2015
+
+RESULT for ndl_0.2.16.tar.gz : success (224 of 452, 212 good, 12 bad) -- Avg runtime is 54.9 sec, exp. finish in 208.8 min at 16:38:38 on 27-Aug-2015
+
+RESULT for NetSim_0.9.tar.gz : success (225 of 452, 213 good, 12 bad) -- Avg runtime is 54.7 sec, exp. finish in 207.1 min at 16:38:57 on 27-Aug-2015
+
+RESULT for neuroim_0.0.4.tar.gz : success (226 of 452, 214 good, 12 bad) -- Avg runtime is 54.7 sec, exp. finish in 206 min at 16:39:10 on 27-Aug-2015
+
+RESULT for ngspatial_1.0-5.tar.gz : success (227 of 452, 215 good, 12 bad) -- Avg runtime is 54.8 sec, exp. finish in 205.4 min at 16:39:18 on 27-Aug-2015
+
+RESULT for NHMM_3.5.tar.gz : success (228 of 452, 216 good, 12 bad) -- Avg runtime is 54.4 sec, exp. finish in 203 min at 16:39:50 on 27-Aug-2015
+
+RESULT for nonlinearTseries_0.2.3.tar.gz : success (229 of 452, 217 good, 12 bad) -- Avg runtime is 54.4 sec, exp. finish in 202 min at 16:40:02 on 27-Aug-2015
+
+RESULT for NPBayesImpute_0.5.tar.gz : success (230 of 452, 218 good, 12 bad) -- Avg runtime is 54.5 sec, exp. finish in 201.5 min at 16:40:08 on 27-Aug-2015
+
+RESULT for oapackage_2.0.23.tar.gz : success (231 of 452, 219 good, 12 bad) -- Avg runtime is 54.5 sec, exp. finish in 200.6 min at 16:40:19 on 27-Aug-2015
+
+RESULT for odeintr_1.3.tar.gz : success (232 of 452, 220 good, 12 bad) -- Avg runtime is 54.6 sec, exp. finish in 200.1 min at 16:40:25 on 27-Aug-2015
+
+RESULT for oem_1.02.1.tar.gz : success (233 of 452, 221 good, 12 bad) -- Avg runtime is 54.7 sec, exp. finish in 199.7 min at 16:40:27 on 27-Aug-2015
+
+RESULT for olctools_0.2.1.tar.gz : success (234 of 452, 222 good, 12 bad) -- Avg runtime is 54.8 sec, exp. finish in 199.2 min at 16:40:31 on 27-Aug-2015
+
+RESULT for OneArmPhaseTwoStudy_0.1.3.tar.gz : success (235 of 452, 223 good, 12 bad) -- Avg runtime is 54.9 sec, exp. finish in 198.5 min at 16:40:39 on 27-Aug-2015
+
+RESULT for onlinePCA_1.2.tar.gz : success (236 of 452, 224 good, 12 bad) -- Avg runtime is 54.8 sec, exp. finish in 197.4 min at 16:40:53 on 27-Aug-2015
+
+RESULT for openair_1.6.tar.gz : success (237 of 452, 225 good, 12 bad) -- Avg runtime is 54.5 sec, exp. finish in 195.5 min at 16:41:24 on 27-Aug-2015
+
+RESULT for OpenMx_2.2.6.tar.gz : success (238 of 452, 226 good, 12 bad) -- Avg runtime is 53.8 sec, exp. finish in 191.9 min at 16:42:34 on 27-Aug-2015
+
+RESULT for openxlsx_3.0.0.tar.gz : success (239 of 452, 227 good, 12 bad) -- Avg runtime is 53.8 sec, exp. finish in 190.9 min at 16:42:49 on 27-Aug-2015
+
+RESULT for optmatch_0.9-5.tar.gz : failure (240 of 452, 227 good, 13 bad) -- Avg runtime is 53.8 sec, exp. finish in 190 min at 16:43:02 on 27-Aug-2015
+
+RESULT for orQA_0.2.1.tar.gz : success (241 of 452, 228 good, 13 bad) -- Avg runtime is 53.7 sec, exp. finish in 188.8 min at 16:43:22 on 27-Aug-2015
+
+RESULT for packcircles_0.1.1.tar.gz : success (242 of 452, 229 good, 13 bad) -- Avg runtime is 53.8 sec, exp. finish in 188.4 min at 16:43:23 on 27-Aug-2015
+
+RESULT for PAFit_0.7.2.tar.gz : success (243 of 452, 230 good, 13 bad) -- Avg runtime is 53.9 sec, exp. finish in 187.6 min at 16:43:33 on 27-Aug-2015
+
+RESULT for pander_0.5.2.tar.gz : success (244 of 452, 231 good, 13 bad) -- Avg runtime is 54 sec, exp. finish in 187 min at 16:43:38 on 27-Aug-2015
+
+RESULT for partialAR_1.0.5.tar.gz : success (245 of 452, 232 good, 13 bad) -- Avg runtime is 53.2 sec, exp. finish in 183.4 min at 16:45:09 on 27-Aug-2015
+
+RESULT for pcalg_2.2-4.tar.gz : success (246 of 452, 233 good, 13 bad) -- Avg runtime is 52.5 sec, exp. finish in 180.3 min at 16:46:36 on 27-Aug-2015
+
+RESULT for pcIRT_0.2.tar.gz : success (247 of 452, 234 good, 13 bad) -- Avg runtime is 52.6 sec, exp. finish in 179.7 min at 16:46:42 on 27-Aug-2015
+
+RESULT for PedCNV_0.1.tar.gz : success (248 of 452, 235 good, 13 bad) -- Avg runtime is 52.6 sec, exp. finish in 179 min at 16:46:52 on 27-Aug-2015
+
+RESULT for pedometrics_0.6-3.tar.gz : success (249 of 452, 236 good, 13 bad) -- Avg runtime is 52.7 sec, exp. finish in 178.4 min at 16:46:57 on 27-Aug-2015
+
+RESULT for penMSM_0.99.tar.gz : success (250 of 452, 237 good, 13 bad) -- Avg runtime is 52.9 sec, exp. finish in 178.1 min at 16:46:54 on 27-Aug-2015
+
+RESULT for PerMallows_1.8.tar.gz : success (251 of 452, 238 good, 13 bad) -- Avg runtime is 53 sec, exp. finish in 177.7 min at 16:46:52 on 27-Aug-2015
+ccache g++ -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c ancestors.c -o ancestors.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c checkPhylo4.cpp -o checkPhylo4.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c descendants.c -o descendants.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c phyloXX.c -o phyloXX.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c reorderBinary.c -o reorderBinary.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I. -DHAVE_INTTYPES_H -DASSERTS_TO_EXCEPTIONS  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c reorderRobust.c -o reorderRobust.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o phylobase.so RcppExports.o ancestors.o checkPhylo4.o descendants.o phyloXX.o reorderBinary.o reorderRobust.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for phylobase_0.8.0.tar.gz : success (252 of 452, 239 good, 13 bad) -- Avg runtime is 53 sec, exp. finish in 176.5 min at 16:47:16 on 27-Aug-2015
+
+RESULT for planar_1.5.2.tar.gz : success (253 of 452, 240 good, 13 bad) -- Avg runtime is 53 sec, exp. finish in 175.8 min at 16:47:27 on 27-Aug-2015
+
+RESULT for plotSEMM_2.0.tar.gz : success (254 of 452, 241 good, 13 bad) -- Avg runtime is 53.1 sec, exp. finish in 175.3 min at 16:47:26 on 27-Aug-2015
+
+RESULT for plyr_1.8.3.tar.gz : success (255 of 452, 242 good, 13 bad) -- Avg runtime is 53.2 sec, exp. finish in 174.6 min at 16:47:33 on 27-Aug-2015
+
+RESULT for poisDoubleSamp_1.1.tar.gz : success (256 of 452, 243 good, 13 bad) -- Avg runtime is 53.3 sec, exp. finish in 174.2 min at 16:47:30 on 27-Aug-2015
+
+RESULT for polywog_0.4-0.tar.gz : success (257 of 452, 244 good, 13 bad) -- Avg runtime is 53.3 sec, exp. finish in 173.2 min at 16:47:48 on 27-Aug-2015
+
+RESULT for PoweR_1.0.4.tar.gz : success (258 of 452, 245 good, 13 bad) -- Avg runtime is 53.3 sec, exp. finish in 172.4 min at 16:47:56 on 27-Aug-2015
+
+RESULT for PP_0.5.3.tar.gz : success (259 of 452, 246 good, 13 bad) -- Avg runtime is 53.4 sec, exp. finish in 171.9 min at 16:47:58 on 27-Aug-2015
+
+RESULT for PPtreeViz_1.1.0.tar.gz : success (260 of 452, 247 good, 13 bad) -- Avg runtime is 53.5 sec, exp. finish in 171.3 min at 16:47:59 on 27-Aug-2015
+ccache g++ -I/usr/share/R/include -DNDEBUG -I./include     -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c PReMiuM.cpp -o PReMiuM.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I./include     -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c postProcess.cpp -o postProcess.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o PReMiuM.so PReMiuM.o postProcess.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for PReMiuM_3.1.2.tar.gz : success (261 of 452, 248 good, 13 bad) -- Avg runtime is 53.5 sec, exp. finish in 170.2 min at 16:48:22 on 27-Aug-2015
+
+RESULT for primes_0.1.0.tar.gz : success (262 of 452, 249 good, 13 bad) -- Avg runtime is 53.6 sec, exp. finish in 169.7 min at 16:48:15 on 27-Aug-2015
+
+RESULT for pROC_1.8.tar.gz : failure (263 of 452, 249 good, 14 bad) -- Avg runtime is 53.7 sec, exp. finish in 169 min at 16:48:21 on 27-Aug-2015
+
+RESULT for propagate_1.0-4.tar.gz : success (264 of 452, 250 good, 14 bad) -- Avg runtime is 53.7 sec, exp. finish in 168.2 min at 16:48:33 on 27-Aug-2015
+
+RESULT for prospectr_0.1.3.tar.gz : success (265 of 452, 251 good, 14 bad) -- Avg runtime is 53.7 sec, exp. finish in 167.2 min at 16:48:47 on 27-Aug-2015
+
+RESULT for protViz_0.2.9.tar.gz : success (266 of 452, 252 good, 14 bad) -- Avg runtime is 53.7 sec, exp. finish in 166.5 min at 16:48:52 on 27-Aug-2015
+
+RESULT for pryr_0.1.2.tar.gz : success (267 of 452, 253 good, 14 bad) -- Avg runtime is 53.8 sec, exp. finish in 165.8 min at 16:48:58 on 27-Aug-2015
+
+RESULT for psd_1.0-1.tar.gz : success (268 of 452, 254 good, 14 bad) -- Avg runtime is 53.8 sec, exp. finish in 165.1 min at 16:49:00 on 27-Aug-2015
+
+RESULT for psgp_0.3-6.tar.gz : success (269 of 452, 255 good, 14 bad) -- Avg runtime is 53.5 sec, exp. finish in 163.1 min at 16:50:11 on 27-Aug-2015
+
+RESULT for pvar_2.2.tar.gz : success (270 of 452, 256 good, 14 bad) -- Avg runtime is 53.6 sec, exp. finish in 162.5 min at 16:50:08 on 27-Aug-2015
+
+RESULT for QRM_0.4-10.tar.gz : success (271 of 452, 257 good, 14 bad) -- Avg runtime is 53.5 sec, exp. finish in 161.5 min at 16:50:27 on 27-Aug-2015
+
+RESULT for quadrupen_0.2-4.tar.gz : success (272 of 452, 258 good, 14 bad) -- Avg runtime is 53.4 sec, exp. finish in 160.3 min at 16:50:58 on 27-Aug-2015
+
+RESULT for quanteda_0.8.2-1.tar.gz : success (273 of 452, 259 good, 14 bad) -- Avg runtime is 53.3 sec, exp. finish in 159.1 min at 16:51:27 on 27-Aug-2015
+
+RESULT for quantspec_1.0-3.tar.gz : success (274 of 452, 260 good, 14 bad) -- Avg runtime is 53.3 sec, exp. finish in 158.2 min at 16:51:47 on 27-Aug-2015
+
+RESULT for qVarSel_1.0.tar.gz : success (275 of 452, 261 good, 14 bad) -- Avg runtime is 53.4 sec, exp. finish in 157.7 min at 16:51:38 on 27-Aug-2015
+
+RESULT for randomUniformForest_1.1.5.tar.gz : success (276 of 452, 262 good, 14 bad) -- Avg runtime is 53.4 sec, exp. finish in 156.7 min at 16:51:56 on 27-Aug-2015
+
+RESULT for ranger_0.2.7.tar.gz : success (277 of 452, 263 good, 14 bad) -- Avg runtime is 53.5 sec, exp. finish in 155.9 min at 16:52:03 on 27-Aug-2015
+
+RESULT for Rankcluster_0.92.9.tar.gz : success (278 of 452, 264 good, 14 bad) -- Avg runtime is 53.5 sec, exp. finish in 155.2 min at 16:52:10 on 27-Aug-2015
+
+RESULT for rankdist_1.1.0.tar.gz : success (279 of 452, 265 good, 14 bad) -- Avg runtime is 53.6 sec, exp. finish in 154.6 min at 16:52:02 on 27-Aug-2015
+
+RESULT for rARPACK_0.7-0.tar.gz : success (280 of 452, 266 good, 14 bad) -- Avg runtime is 53.3 sec, exp. finish in 152.9 min at 16:53:09 on 27-Aug-2015
+
+RESULT for raster_2.4-18.tar.gz : success (281 of 452, 267 good, 14 bad) -- Avg runtime is 53 sec, exp. finish in 151.1 min at 16:54:19 on 27-Aug-2015
+
+RESULT for Rblpapi_0.3.0.tar.gz : success (282 of 452, 268 good, 14 bad) -- Avg runtime is 53 sec, exp. finish in 150.1 min at 16:54:47 on 27-Aug-2015
+
+RESULT for Rborist_0.1-0.tar.gz : success (283 of 452, 269 good, 14 bad) -- Avg runtime is 53 sec, exp. finish in 149.3 min at 16:54:51 on 27-Aug-2015
+
+RESULT for Rclusterpp_0.2.3.tar.gz : success (284 of 452, 270 good, 14 bad) -- Avg runtime is 53.1 sec, exp. finish in 148.6 min at 16:54:54 on 27-Aug-2015
+
+RESULT for RcppAnnoy_0.0.6.tar.gz : success (285 of 452, 271 good, 14 bad) -- Avg runtime is 53.2 sec, exp. finish in 148 min at 16:54:50 on 27-Aug-2015
+
+RESULT for RcppAPT_0.0.1.tar.gz : success (286 of 452, 272 good, 14 bad) -- Avg runtime is 53.3 sec, exp. finish in 147.4 min at 16:54:43 on 27-Aug-2015
+
+RESULT for RcppArmadillo_0.5.400.2.0.tar.gz : success (287 of 452, 273 good, 14 bad) -- Avg runtime is 53.2 sec, exp. finish in 146.4 min at 16:55:06 on 27-Aug-2015
+
+RESULT for RcppBDT_0.2.3.tar.gz : success (288 of 452, 274 good, 14 bad) -- Avg runtime is 53.2 sec, exp. finish in 145.4 min at 16:55:31 on 27-Aug-2015
+
+RESULT for rcppbugs_0.1.4.1.tar.gz : success (289 of 452, 275 good, 14 bad) -- Avg runtime is 53.2 sec, exp. finish in 144.6 min at 16:55:37 on 27-Aug-2015
+
+RESULT for RcppClassic_0.9.6.tar.gz : success (290 of 452, 276 good, 14 bad) -- Avg runtime is 53.2 sec, exp. finish in 143.5 min at 16:56:05 on 27-Aug-2015
+
+RESULT for RcppClassicExamples_0.1.1.tar.gz : success (291 of 452, 277 good, 14 bad) -- Avg runtime is 53.2 sec, exp. finish in 142.9 min at 16:56:02 on 27-Aug-2015
+
+RESULT for RcppCNPy_0.2.4.tar.gz : success (292 of 452, 278 good, 14 bad) -- Avg runtime is 53.4 sec, exp. finish in 142.3 min at 16:55:51 on 27-Aug-2015
+
+RESULT for RcppDE_0.1.3.tar.gz : failure (293 of 452, 278 good, 15 bad) -- Avg runtime is 53.4 sec, exp. finish in 141.5 min at 16:55:56 on 27-Aug-2015
+
+RESULT for RcppDL_0.0.5.tar.gz : success (294 of 452, 279 good, 15 bad) -- Avg runtime is 53.4 sec, exp. finish in 140.7 min at 16:56:02 on 27-Aug-2015
+
+RESULT for RcppEigen_0.3.2.5.0.tar.gz : success (295 of 452, 280 good, 15 bad) -- Avg runtime is 53.1 sec, exp. finish in 138.9 min at 16:57:33 on 27-Aug-2015
+
+RESULT for RcppExamples_0.1.6.tar.gz : success (296 of 452, 281 good, 15 bad) -- Avg runtime is 53.2 sec, exp. finish in 138.2 min at 16:57:32 on 27-Aug-2015
+
+RESULT for RcppFaddeeva_0.1.0.tar.gz : success (297 of 452, 282 good, 15 bad) -- Avg runtime is 53.3 sec, exp. finish in 137.7 min at 16:57:19 on 27-Aug-2015
+
+RESULT for RcppGSL_0.2.5.tar.gz : success (298 of 452, 283 good, 15 bad) -- Avg runtime is 53.3 sec, exp. finish in 136.9 min at 16:57:20 on 27-Aug-2015
+
+RESULT for RcppMLPACK_1.0.10-2.tar.gz : success (299 of 452, 284 good, 15 bad) -- Avg runtime is 52.7 sec, exp. finish in 134.4 min at 17:00:00 on 27-Aug-2015
+
+RESULT for RcppOctave_0.14.5.tar.gz : success (300 of 452, 285 good, 15 bad) -- Avg runtime is 52.7 sec, exp. finish in 133.5 min at 17:00:18 on 27-Aug-2015
+
+RESULT for RcppProgress_0.2.1.tar.gz : success (301 of 452, 286 good, 15 bad) -- Avg runtime is 52.8 sec, exp. finish in 133 min at 17:00:01 on 27-Aug-2015
+
+RESULT for RcppRedis_0.1.5.tar.gz : success (302 of 452, 287 good, 15 bad) -- Avg runtime is 52.9 sec, exp. finish in 132.3 min at 16:59:52 on 27-Aug-2015
+
+RESULT for RcppRoll_0.2.2.tar.gz : success (303 of 452, 288 good, 15 bad) -- Avg runtime is 53.1 sec, exp. finish in 131.8 min at 16:59:40 on 27-Aug-2015
+
+RESULT for RcppShark_0.1.tar.gz : success (304 of 452, 289 good, 15 bad) -- Avg runtime is 52.1 sec, exp. finish in 128.6 min at 17:03:41 on 27-Aug-2015
+
+RESULT for RcppSMC_0.1.4.tar.gz : success (305 of 452, 290 good, 15 bad) -- Avg runtime is 52.2 sec, exp. finish in 128 min at 17:03:33 on 27-Aug-2015
+
+RESULT for RcppStreams_0.1.0.tar.gz : success (306 of 452, 291 good, 15 bad) -- Avg runtime is 52.2 sec, exp. finish in 127.1 min at 17:03:49 on 27-Aug-2015
+
+RESULT for RcppTOML_0.0.4.tar.gz : success (307 of 452, 292 good, 15 bad) -- Avg runtime is 52.3 sec, exp. finish in 126.5 min at 17:03:38 on 27-Aug-2015
+
+RESULT for RcppXts_0.0.4.tar.gz : success (308 of 452, 293 good, 15 bad) -- Avg runtime is 52.5 sec, exp. finish in 125.9 min at 17:03:23 on 27-Aug-2015
+
+RESULT for RcppZiggurat_0.1.3.tar.gz : success (309 of 452, 294 good, 15 bad) -- Avg runtime is 52.6 sec, exp. finish in 125.3 min at 17:03:13 on 27-Aug-2015
+
+RESULT for readr_0.1.1.tar.gz : success (310 of 452, 295 good, 15 bad) -- Avg runtime is 52.5 sec, exp. finish in 124.2 min at 17:03:47 on 27-Aug-2015
+
+RESULT for readstata13_0.7.1.tar.gz : success (311 of 452, 296 good, 15 bad) -- Avg runtime is 52.6 sec, exp. finish in 123.6 min at 17:03:39 on 27-Aug-2015
+
+RESULT for readxl_0.1.0.tar.gz : success (312 of 452, 297 good, 15 bad) -- Avg runtime is 52.6 sec, exp. finish in 122.8 min at 17:03:49 on 27-Aug-2015
+
+RESULT for RealVAMS_0.3-2.tar.gz : success (313 of 452, 298 good, 15 bad) -- Avg runtime is 52.6 sec, exp. finish in 121.9 min at 17:04:01 on 27-Aug-2015
+
+RESULT for reconstructr_1.1.0.tar.gz : success (314 of 452, 299 good, 15 bad) -- Avg runtime is 52.7 sec, exp. finish in 121.2 min at 17:03:52 on 27-Aug-2015
+
+RESULT for recosystem_0.3.tar.gz : success (315 of 452, 300 good, 15 bad) -- Avg runtime is 52.8 sec, exp. finish in 120.5 min at 17:03:49 on 27-Aug-2015
+
+RESULT for redist_1.2.tar.gz : success (316 of 452, 301 good, 15 bad) -- Avg runtime is 52.7 sec, exp. finish in 119.5 min at 17:04:26 on 27-Aug-2015
+
+RESULT for relSim_0.2-0.tar.gz : success (317 of 452, 302 good, 15 bad) -- Avg runtime is 52.8 sec, exp. finish in 118.8 min at 17:04:19 on 27-Aug-2015
+
+RESULT for remote_1.0.0.tar.gz : success (318 of 452, 303 good, 15 bad) -- Avg runtime is 52.8 sec, exp. finish in 117.9 min at 17:04:34 on 27-Aug-2015
+
+RESULT for ReorderCluster_1.0.tar.gz : success (319 of 452, 304 good, 15 bad) -- Avg runtime is 52.9 sec, exp. finish in 117.2 min at 17:04:22 on 27-Aug-2015
+
+RESULT for repra_0.4.4.tar.gz : success (320 of 452, 305 good, 15 bad) -- Avg runtime is 53 sec, exp. finish in 116.5 min at 17:04:16 on 27-Aug-2015
+
+RESULT for resemble_1.1.1.tar.gz : success (321 of 452, 306 good, 15 bad) -- Avg runtime is 53 sec, exp. finish in 115.7 min at 17:04:20 on 27-Aug-2015
+
+RESULT for reshape2_1.4.1.tar.gz : success (322 of 452, 307 good, 15 bad) -- Avg runtime is 53.1 sec, exp. finish in 115.1 min at 17:04:05 on 27-Aug-2015
+
+RESULT for revealedPrefs_0.2.tar.gz : success (323 of 452, 308 good, 15 bad) -- Avg runtime is 53.1 sec, exp. finish in 114.2 min at 17:04:13 on 27-Aug-2015
+
+RESULT for rexpokit_0.24.1.tar.gz : success (324 of 452, 309 good, 15 bad) -- Avg runtime is 53.2 sec, exp. finish in 113.6 min at 17:04:00 on 27-Aug-2015
+
+RESULT for rforensicbatwing_1.3.tar.gz : success (325 of 452, 310 good, 15 bad) -- Avg runtime is 53.3 sec, exp. finish in 112.9 min at 17:03:44 on 27-Aug-2015
+
+RESULT for rgam_0.6.3.tar.gz : success (326 of 452, 311 good, 15 bad) -- Avg runtime is 53.3 sec, exp. finish in 112 min at 17:03:55 on 27-Aug-2015
+
+RESULT for rgeolocate_0.4.1.tar.gz : success (327 of 452, 312 good, 15 bad) -- Avg runtime is 53.4 sec, exp. finish in 111.2 min at 17:04:02 on 27-Aug-2015
+
+RESULT for RInside_0.2.13.tar.gz : success (328 of 452, 313 good, 15 bad) -- Avg runtime is 53.5 sec, exp. finish in 110.6 min at 17:03:40 on 27-Aug-2015
+
+RESULT for ripa_2.0-2.tar.gz : success (329 of 452, 314 good, 15 bad) -- Avg runtime is 53.6 sec, exp. finish in 109.8 min at 17:03:38 on 27-Aug-2015
+
+RESULT for rivr_0.9.2.tar.gz : success (330 of 452, 315 good, 15 bad) -- Avg runtime is 53.6 sec, exp. finish in 109.1 min at 17:03:23 on 27-Aug-2015
+
+RESULT for rkvo_0.1.tar.gz : success (331 of 452, 316 good, 15 bad) -- Avg runtime is 53.8 sec, exp. finish in 108.4 min at 17:03:03 on 27-Aug-2015
+
+RESULT for Rlibeemd_1.3.5.tar.gz : success (332 of 452, 317 good, 15 bad) -- Avg runtime is 53.8 sec, exp. finish in 107.6 min at 17:02:59 on 27-Aug-2015
+
+RESULT for rlme_0.4.tar.gz : failure (333 of 452, 317 good, 16 bad) -- Avg runtime is 53.8 sec, exp. finish in 106.7 min at 17:03:21 on 27-Aug-2015
+
+RESULT for RLRsim_3.0.tar.gz : success (334 of 452, 318 good, 16 bad) -- Avg runtime is 53.9 sec, exp. finish in 106 min at 17:03:04 on 27-Aug-2015
+
+RESULT for Rmalschains_0.2-2.tar.gz : success (335 of 452, 319 good, 16 bad) -- Avg runtime is 53.9 sec, exp. finish in 105.1 min at 17:03:24 on 27-Aug-2015
+
+RESULT for rmgarch_1.2-9.tar.gz : success (336 of 452, 320 good, 16 bad) -- Avg runtime is 53.6 sec, exp. finish in 103.7 min at 17:04:54 on 27-Aug-2015
+
+RESULT for Rmixmod_2.0.2.tar.gz : success (337 of 452, 321 good, 16 bad) -- Avg runtime is 53.4 sec, exp. finish in 102.3 min at 17:06:27 on 27-Aug-2015
+
+RESULT for RmixmodCombi_1.0.tar.gz : success (338 of 452, 322 good, 16 bad) -- Avg runtime is 53.4 sec, exp. finish in 101.5 min at 17:06:17 on 27-Aug-2015
+
+RESULT for rncl_0.6.0.tar.gz : success (339 of 452, 323 good, 16 bad) -- Avg runtime is 53.3 sec, exp. finish in 100.4 min at 17:07:13 on 27-Aug-2015
+
+RESULT for robustgam_0.1.7.tar.gz : success (340 of 452, 324 good, 16 bad) -- Avg runtime is 53.3 sec, exp. finish in 99.6 min at 17:07:18 on 27-Aug-2015
+
+RESULT for robustHD_0.5.0.tar.gz : success (341 of 452, 325 good, 16 bad) -- Avg runtime is 53.2 sec, exp. finish in 98.5 min at 17:08:04 on 27-Aug-2015
+
+RESULT for robustreg_0.1-9.tar.gz : success (342 of 452, 326 good, 16 bad) -- Avg runtime is 53.3 sec, exp. finish in 97.6 min at 17:08:12 on 27-Aug-2015
+
+RESULT for rococo_1.1.2.tar.gz : success (343 of 452, 327 good, 16 bad) -- Avg runtime is 53.3 sec, exp. finish in 96.9 min at 17:08:07 on 27-Aug-2015
+
+RESULT for rotations_1.3.tar.gz : success (344 of 452, 328 good, 16 bad) -- Avg runtime is 53.2 sec, exp. finish in 95.8 min at 17:08:43 on 27-Aug-2015
+
+RESULT for RoughSets_1.2-1.tar.gz : success (345 of 452, 329 good, 16 bad) -- Avg runtime is 53.3 sec, exp. finish in 95.1 min at 17:08:37 on 27-Aug-2015
+
+RESULT for roxygen2_4.1.1.tar.gz : success (346 of 452, 330 good, 16 bad) -- Avg runtime is 53.4 sec, exp. finish in 94.3 min at 17:08:31 on 27-Aug-2015
+
+RESULT for rpf_0.48.tar.gz : success (347 of 452, 331 good, 16 bad) -- Avg runtime is 53.4 sec, exp. finish in 93.5 min at 17:08:34 on 27-Aug-2015
+
+RESULT for rpg_1.4.tar.gz : success (348 of 452, 332 good, 16 bad) -- Avg runtime is 53.5 sec, exp. finish in 92.7 min at 17:08:17 on 27-Aug-2015
+
+RESULT for Rphylopars_0.1.1.tar.gz : success (349 of 452, 333 good, 16 bad) -- Avg runtime is 53.5 sec, exp. finish in 91.8 min at 17:08:42 on 27-Aug-2015
+
+RESULT for rplexos_1.1.4.tar.gz : success (350 of 452, 334 good, 16 bad) -- Avg runtime is 53.5 sec, exp. finish in 90.9 min at 17:08:45 on 27-Aug-2015
+
+RESULT for rPref_0.6.tar.gz : success (351 of 452, 335 good, 16 bad) -- Avg runtime is 53.5 sec, exp. finish in 90.1 min at 17:08:51 on 27-Aug-2015
+
+RESULT for RProtoBuf_0.4.3.tar.gz : success (352 of 452, 336 good, 16 bad) -- Avg runtime is 53.2 sec, exp. finish in 88.7 min at 17:10:51 on 27-Aug-2015
+
+RESULT for RQuantLib_0.4.0.tar.gz : success (353 of 452, 337 good, 16 bad) -- Avg runtime is 52 sec, exp. finish in 85.9 min at 17:18:05 on 27-Aug-2015
+
+RESULT for RSNNS_0.4-7.tar.gz : success (354 of 452, 338 good, 16 bad) -- Avg runtime is 52 sec, exp. finish in 85 min at 17:18:28 on 27-Aug-2015
+
+RESULT for RSNPset_0.4.tar.gz : success (355 of 452, 339 good, 16 bad) -- Avg runtime is 52.1 sec, exp. finish in 84.2 min at 17:18:25 on 27-Aug-2015
+
+RESULT for RSofia_1.1.tar.gz : success (356 of 452, 340 good, 16 bad) -- Avg runtime is 52.1 sec, exp. finish in 83.4 min at 17:18:16 on 27-Aug-2015
+
+RESULT for Rsomoclu_1.4.1.tar.gz : success (357 of 452, 341 good, 16 bad) -- Avg runtime is 52.3 sec, exp. finish in 82.7 min at 17:17:55 on 27-Aug-2015
+
+RESULT for rstan_2.7.0-1.tar.gz : success (358 of 452, 342 good, 16 bad) -- Avg runtime is 51.4 sec, exp. finish in 80.5 min at 17:23:44 on 27-Aug-2015
+
+RESULT for rstpm2_1.2.2.tar.gz : success (359 of 452, 343 good, 16 bad) -- Avg runtime is 51.4 sec, exp. finish in 79.6 min at 17:24:18 on 27-Aug-2015
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c rtkpp.cpp -o rtkpp.o
+(make -C ../inst)
+make[1]: Entering directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst'
+make -C projects/STKernel/src/
+make[2]: Entering directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst/projects/STKernel/src'
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_String.cpp -c -o ../../../bin/STK_String.o
+make[2]: Leaving directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst/projects/STKernel/src'
+make -C projects/Sdk/src/
+make[2]: Entering directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst/projects/Sdk/src'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst/projects/Sdk/src'
+make -C projects/Arrays/src/
+make[2]: Entering directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst/projects/Arrays/src'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst/projects/Arrays/src'
+make -C projects/Clustering/src/
+make[2]: Entering directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst/projects/Clustering/src'
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_MixtureComposer.cpp -c -o ../../../bin/STK_MixtureComposer.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_IMixture.cpp -c -o ../../../bin/STK_IMixture.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Clust_Util.cpp -c -o ../../../bin/STK_Clust_Util.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_IMixtureComposer.cpp -c -o ../../../bin/STK_IMixtureComposer.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_MixtureCriterion.cpp -c -o ../../../bin/STK_MixtureCriterion.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_IMixtureData.cpp -c -o ../../../bin/STK_IMixtureData.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_MixtureAlgo.cpp -c -o ../../../bin/STK_MixtureAlgo.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_MixtureFacade.cpp -c -o ../../../bin/STK_MixtureFacade.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_MixtureStrategy.cpp -c -o ../../../bin/STK_MixtureStrategy.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_MixtureInit.cpp -c -o ../../../bin/STK_MixtureInit.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_IMixtureModelBase.cpp -c -o ../../../bin/STK_IMixtureModelBase.o
+make[2]: Leaving directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst/projects/Clustering/src'
+make -C projects/Algebra/src/
+make[2]: Entering directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst/projects/Algebra/src'
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_lapack_Svd.cpp -c -o ../../../bin/STK_lapack_Svd.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_lapack_Qr.cpp -c -o ../../../bin/STK_lapack_Qr.o
+make[2]: Leaving directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst/projects/Algebra/src'
+make -C projects/Analysis/src/
+make[2]: Entering directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst/projects/Analysis/src'
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Funct_normal_raw.cpp -c -o ../../../bin/STK_Funct_normal_raw.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Funct_g0.cpp -c -o ../../../bin/STK_Funct_g0.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Funct_gammaRatio.cpp -c -o ../../../bin/STK_Funct_gammaRatio.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Funct_erf_raw.cpp -c -o ../../../bin/STK_Funct_erf_raw.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Funct_beta_raw.cpp -c -o ../../../bin/STK_Funct_beta_raw.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Funct_b1.cpp -c -o ../../../bin/STK_Funct_b1.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Funct_psi_raw.cpp -c -o ../../../bin/STK_Funct_psi_raw.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Funct_expm1.cpp -c -o ../../../bin/STK_Funct_expm1.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Funct_binomial_raw.cpp -c -o ../../../bin/STK_Funct_binomial_raw.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Funct_betaRatio.cpp -c -o ../../../bin/STK_Funct_betaRatio.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Funct_gamma.cpp -c -o ../../../bin/STK_Funct_gamma.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Funct_dev0.cpp -c -o ../../../bin/STK_Funct_dev0.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Const_Math.cpp -c -o ../../../bin/STK_Const_Math.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Funct_poisson_raw.cpp -c -o ../../../bin/STK_Funct_poisson_raw.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Funct_log1p.cpp -c -o ../../../bin/STK_Funct_log1p.o
+make[2]: Leaving directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst/projects/Analysis/src'
+make -C projects/STatistiK/src/
+make[2]: Entering directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst/projects/STatistiK/src'
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Law_ChiSquared.cpp -c -o ../../../bin/STK_Law_ChiSquared.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Law_HyperGeometric.cpp -c -o ../../../bin/STK_Law_HyperGeometric.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Law_Beta.cpp -c -o ../../../bin/STK_Law_Beta.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Law_Geometric.cpp -c -o ../../../bin/STK_Law_Geometric.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_RandBase.cpp -c -o ../../../bin/STK_RandBase.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Law_Gamma.cpp -c -o ../../../bin/STK_Law_Gamma.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Law_Student.cpp -c -o ../../../bin/STK_Law_Student.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Law_Binomial.cpp -c -o ../../../bin/STK_Law_Binomial.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Law_Exponential.cpp -c -o ../../../bin/STK_Law_Exponential.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Law_NegativeBinomial.cpp -c -o ../../../bin/STK_Law_NegativeBinomial.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Law_Normal.cpp -c -o ../../../bin/STK_Law_Normal.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Law_Cauchy.cpp -c -o ../../../bin/STK_Law_Cauchy.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Law_Weibull.cpp -c -o ../../../bin/STK_Law_Weibull.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Law_Logistic.cpp -c -o ../../../bin/STK_Law_Logistic.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Law_Poisson.cpp -c -o ../../../bin/STK_Law_Poisson.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Law_FisherSnedecor.cpp -c -o ../../../bin/STK_Law_FisherSnedecor.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Law_LogNormal.cpp -c -o ../../../bin/STK_Law_LogNormal.o
+make[2]: Leaving directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst/projects/STatistiK/src'
+make -C projects/Regress/src/
+make[2]: Entering directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst/projects/Regress/src'
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Regress_Util.cpp -c -o ../../../bin/STK_Regress_Util.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_AdditiveBSplineRegressionPage.cpp -c -o ../../../bin/STK_AdditiveBSplineRegressionPage.o
+make[2]: Leaving directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst/projects/Regress/src'
+make -C projects/Reduct/src/
+make[2]: Entering directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst/projects/Reduct/src'
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_Reduct_Util.cpp -c -o ../../../bin/STK_Reduct_Util.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/projects/ -I../inst/include/ -DIS_RTKPP_LIB  -DSTKUSELAPACK  -I"/usr/local/lib/R/site-library/Rcpp/include" -DIS_RTKPP_LIB -DSTKUSELAPACK -fpic   -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -g1  -I../../../projects/ STK_LocalVariancePage.cpp -c -o ../../../bin/STK_LocalVariancePage.o
+make[2]: Leaving directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst/projects/Reduct/src'
+make -C projects/AAModels/src/
+make[2]: Entering directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst/projects/AAModels/src'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst/projects/AAModels/src'
+ar rv lib//libSTKpp.a  bin/STK_String.o    bin/STK_MixtureComposer.o  bin/STK_IMixture.o  bin/STK_Clust_Util.o  bin/STK_IMixtureComposer.o  bin/STK_MixtureCriterion.o  bin/STK_IMixtureData.o  bin/STK_MixtureAlgo.o  bin/STK_MixtureFacade.o  bin/STK_MixtureStrategy.o  bin/STK_MixtureInit.o  bin/STK_IMixtureModelBase.o  bin/STK_lapack_Svd.o  bin/STK_lapack_Qr.o  bin/STK_Funct_normal_raw.o  bin/STK_Funct_g0.o  bin/STK_Funct_gammaRatio.o  bin/STK_Funct_erf_raw.o  bin/STK_Funct_beta_raw.o  bin/STK_Funct_b1.o  bin/STK_Funct_psi_raw.o  bin/STK_Funct_expm1.o  bin/STK_Funct_binomial_raw.o  bin/STK_Funct_betaRatio.o  bin/STK_Funct_gamma.o  bin/STK_Funct_dev0.o  bin/STK_Const_Math.o  bin/STK_Funct_poisson_raw.o  bin/STK_Funct_log1p.o  bin/STK_Law_ChiSquared.o  bin/STK_Law_HyperGeometric.o  bin/STK_Law_Beta.o  bin/STK_Law_Geometric.o  bin/STK_RandBase.o  bin/STK_Law_Gamma.o  bin/STK_Law_Student.o  bin/STK_Law_Binomial.o  bin/STK_Law_Exponential.o  bin/STK_Law_NegativeBinomial.o  bin/STK_Law_Normal.o  bin/STK_Law_Cauchy.o  bin/STK_Law_Weibull.o  bin/STK_Law_Logistic.o  bin/STK_Law_Poisson.o  bin/STK_Law_FisherSnedecor.o  bin/STK_Law_LogNormal.o  bin/STK_Regress_Util.o  bin/STK_AdditiveBSplineRegressionPage.o  bin/STK_Reduct_Util.o  bin/STK_LocalVariancePage.o  
+a - bin/STK_String.o
+a - bin/STK_MixtureComposer.o
+a - bin/STK_IMixture.o
+a - bin/STK_Clust_Util.o
+a - bin/STK_IMixtureComposer.o
+a - bin/STK_MixtureCriterion.o
+a - bin/STK_IMixtureData.o
+a - bin/STK_MixtureAlgo.o
+a - bin/STK_MixtureFacade.o
+a - bin/STK_MixtureStrategy.o
+a - bin/STK_MixtureInit.o
+a - bin/STK_IMixtureModelBase.o
+a - bin/STK_lapack_Svd.o
+a - bin/STK_lapack_Qr.o
+a - bin/STK_Funct_normal_raw.o
+a - bin/STK_Funct_g0.o
+a - bin/STK_Funct_gammaRatio.o
+a - bin/STK_Funct_erf_raw.o
+a - bin/STK_Funct_beta_raw.o
+a - bin/STK_Funct_b1.o
+a - bin/STK_Funct_psi_raw.o
+a - bin/STK_Funct_expm1.o
+a - bin/STK_Funct_binomial_raw.o
+a - bin/STK_Funct_betaRatio.o
+a - bin/STK_Funct_gamma.o
+a - bin/STK_Funct_dev0.o
+a - bin/STK_Const_Math.o
+a - bin/STK_Funct_poisson_raw.o
+a - bin/STK_Funct_log1p.o
+a - bin/STK_Law_ChiSquared.o
+a - bin/STK_Law_HyperGeometric.o
+a - bin/STK_Law_Beta.o
+a - bin/STK_Law_Geometric.o
+a - bin/STK_RandBase.o
+a - bin/STK_Law_Gamma.o
+a - bin/STK_Law_Student.o
+a - bin/STK_Law_Binomial.o
+a - bin/STK_Law_Exponential.o
+a - bin/STK_Law_NegativeBinomial.o
+a - bin/STK_Law_Normal.o
+a - bin/STK_Law_Cauchy.o
+a - bin/STK_Law_Weibull.o
+a - bin/STK_Law_Logistic.o
+a - bin/STK_Law_Poisson.o
+a - bin/STK_Law_FisherSnedecor.o
+a - bin/STK_Law_LogNormal.o
+a - bin/STK_Regress_Util.o
+a - bin/STK_AdditiveBSplineRegressionPage.o
+a - bin/STK_Reduct_Util.o
+a - bin/STK_LocalVariancePage.o
+../../../bin/
+../../../projects/
+
+DManager Rtkpp Analysis Reduct Clustering STKernel Regress AAModels Algebra STatistiK StatModels Sdk Arrays
+DManager Rtkpp Analysis Reduct Clustering STKernel Regress AAModels Algebra STatistiK StatModels Sdk Arrays
+-g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic
+-fpic
+-fopenmp -fpic -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -O3 -Wall -pipe -Wno-unused -pedantic -g1
+make[1]: Leaving directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst'
+(cd ../inst && make clean_obj)
+make[1]: Entering directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst'
+rm -f  bin/STK_String.o
+rm -f 
+rm -f 
+rm -f  bin/STK_ReadWritePages.o  bin/STK_DManager_Util.o  bin/STK_Import_Util.o  bin/STK_DataHandler.o  bin/STK_Option.o  bin/STK_DataFrame.o  bin/STK_IPage.o  bin/STK_ImportFromCsv.o
+rm -f  bin/STK_MixtureComposer.o  bin/STK_IMixture.o  bin/STK_Clust_Util.o  bin/STK_IMixtureComposer.o  bin/STK_MixtureCriterion.o  bin/STK_IMixtureData.o  bin/STK_MixtureAlgo.o  bin/STK_MixtureFacade.o  bin/STK_MixtureStrategy.o  bin/STK_MixtureInit.o  bin/STK_IMixtureModelBase.o
+rm -f  bin/STK_lapack_Svd.o  bin/STK_lapack_Qr.o
+rm -f  bin/STK_Funct_normal_raw.o  bin/STK_Funct_g0.o  bin/STK_Funct_gammaRatio.o  bin/STK_Funct_erf_raw.o  bin/STK_Funct_beta_raw.o  bin/STK_Funct_b1.o  bin/STK_Funct_psi_raw.o  bin/STK_Funct_expm1.o  bin/STK_Funct_binomial_raw.o  bin/STK_Funct_betaRatio.o  bin/STK_Funct_gamma.o  bin/STK_Funct_dev0.o  bin/STK_Const_Math.o  bin/STK_Funct_poisson_raw.o  bin/STK_Funct_log1p.o
+rm -f  bin/STK_Law_ChiSquared.o  bin/STK_Law_HyperGeometric.o  bin/STK_Law_Beta.o  bin/STK_Law_Geometric.o  bin/STK_RandBase.o  bin/STK_Law_Gamma.o  bin/STK_Law_Student.o  bin/STK_Law_Binomial.o  bin/STK_Law_Exponential.o  bin/STK_Law_NegativeBinomial.o  bin/STK_Law_Normal.o  bin/STK_Law_Cauchy.o  bin/STK_Law_Weibull.o  bin/STK_Law_Logistic.o  bin/STK_Law_Poisson.o  bin/STK_Law_FisherSnedecor.o  bin/STK_Law_LogNormal.o
+rm -f  bin/STK_Regress_Util.o  bin/STK_AdditiveBSplineRegressionPage.o
+rm -f  bin/STK_Reduct_Util.o  bin/STK_LocalVariancePage.o
+rm -f 
+make[1]: Leaving directory '/tmp/Rtmpggcv8N/R.INSTALL681a1535c625/rtkpp/inst'
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o rtkpp.so rtkpp.o -llapack -lblas -lgfortran -lm -lquadmath ../inst/lib//libSTKpp.a -fopenmp -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for rtkpp_0.9.2.tar.gz : success (360 of 452, 344 good, 16 bad) -- Avg runtime is 51.3 sec, exp. finish in 78.7 min at 17:24:37 on 27-Aug-2015
+
+RESULT for Rtsne_0.10.tar.gz : success (361 of 452, 345 good, 16 bad) -- Avg runtime is 51.4 sec, exp. finish in 78 min at 17:24:28 on 27-Aug-2015
+
+RESULT for Ruchardet_0.0-3.tar.gz : success (362 of 452, 346 good, 16 bad) -- Avg runtime is 51.5 sec, exp. finish in 77.3 min at 17:24:08 on 27-Aug-2015
+
+RESULT for rugarch_1.3-6.tar.gz : success (363 of 452, 347 good, 16 bad) -- Avg runtime is 51.3 sec, exp. finish in 76.1 min at 17:25:53 on 27-Aug-2015
+
+RESULT for Rvcg_0.12.2.tar.gz : success (364 of 452, 348 good, 16 bad) -- Avg runtime is 50.9 sec, exp. finish in 74.7 min at 17:28:41 on 27-Aug-2015
+
+RESULT for RVowpalWabbit_0.0.6.tar.gz : success (365 of 452, 349 good, 16 bad) -- Avg runtime is 50.8 sec, exp. finish in 73.6 min at 17:30:13 on 27-Aug-2015
+
+RESULT for satellite_0.1.0.tar.gz : failure (366 of 452, 349 good, 17 bad) -- Avg runtime is 50.8 sec, exp. finish in 72.8 min at 17:30:28 on 27-Aug-2015
+
+RESULT for saturnin_1.1.1.tar.gz : success (367 of 452, 350 good, 17 bad) -- Avg runtime is 50.9 sec, exp. finish in 72.1 min at 17:30:15 on 27-Aug-2015
+
+RESULT for sbmSDP_0.2.tar.gz : success (368 of 452, 351 good, 17 bad) -- Avg runtime is 50.9 sec, exp. finish in 71.3 min at 17:30:00 on 27-Aug-2015
+
+RESULT for SBSA_0.2.3.tar.gz : success (369 of 452, 352 good, 17 bad) -- Avg runtime is 50.9 sec, exp. finish in 70.4 min at 17:30:29 on 27-Aug-2015
+
+RESULT for scales_0.3.0.tar.gz : success (370 of 452, 353 good, 17 bad) -- Avg runtime is 51 sec, exp. finish in 69.7 min at 17:30:11 on 27-Aug-2015
+
+RESULT for scrm_1.6.0-2.tar.gz : success (371 of 452, 354 good, 17 bad) -- Avg runtime is 50.9 sec, exp. finish in 68.8 min at 17:30:58 on 27-Aug-2015
+
+RESULT for scrypt_0.1.0.tar.gz : success (372 of 452, 355 good, 17 bad) -- Avg runtime is 51 sec, exp. finish in 68 min at 17:30:46 on 27-Aug-2015
+
+RESULT for sdcMicro_4.5.0.tar.gz : success (373 of 452, 356 good, 17 bad) -- Avg runtime is 50.9 sec, exp. finish in 67.1 min at 17:31:42 on 27-Aug-2015
+
+RESULT for sdcTable_0.19.3.tar.gz : success (374 of 452, 357 good, 17 bad) -- Avg runtime is 50.9 sec, exp. finish in 66.2 min at 17:31:55 on 27-Aug-2015
+
+RESULT for SEERaBomb_2015.1.tar.gz : success (375 of 452, 358 good, 17 bad) -- Avg runtime is 51 sec, exp. finish in 65.4 min at 17:32:14 on 27-Aug-2015
+
+RESULT for segmag_1.2.2.tar.gz : success (376 of 452, 359 good, 17 bad) -- Avg runtime is 51 sec, exp. finish in 64.7 min at 17:31:53 on 27-Aug-2015
+
+RESULT for seismicRoll_1.0.1.tar.gz : success (377 of 452, 360 good, 17 bad) -- Avg runtime is 51.1 sec, exp. finish in 63.9 min at 17:31:29 on 27-Aug-2015
+
+RESULT for SelvarMix_1.0.tar.gz : success (378 of 452, 361 good, 17 bad) -- Avg runtime is 51.1 sec, exp. finish in 63 min at 17:32:03 on 27-Aug-2015
+
+RESULT for sequences_0.5.9.tar.gz : success (379 of 452, 362 good, 17 bad) -- Avg runtime is 51.2 sec, exp. finish in 62.3 min at 17:31:39 on 27-Aug-2015
+
+RESULT for sgd_0.1.tar.gz : success (380 of 452, 363 good, 17 bad) -- Avg runtime is 51.3 sec, exp. finish in 61.5 min at 17:31:24 on 27-Aug-2015
+
+RESULT for sglOptim_1.0.122.1.tar.gz : success (381 of 452, 364 good, 17 bad) -- Avg runtime is 51.2 sec, exp. finish in 60.6 min at 17:32:03 on 27-Aug-2015
+
+RESULT for signalHsmm_1.3.tar.gz : success (382 of 452, 365 good, 17 bad) -- Avg runtime is 51.3 sec, exp. finish in 59.9 min at 17:31:44 on 27-Aug-2015
+
+RESULT for simFrame_0.5.3.tar.gz : success (383 of 452, 366 good, 17 bad) -- Avg runtime is 51.4 sec, exp. finish in 59.1 min at 17:31:47 on 27-Aug-2015
+
+RESULT for simPop_0.2.9.tar.gz : success (384 of 452, 367 good, 17 bad) -- Avg runtime is 51.4 sec, exp. finish in 58.2 min at 17:32:00 on 27-Aug-2015
+Note: the specification for S3 class “dist” in package ‘graph’ seems equivalent to one from package ‘BiocGenerics’: not turning on duplicate class definitions for this class.
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c Chain.cpp -o Chain.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c DeltaLikelihood.cpp -o DeltaLikelihood.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c HPO.cpp -o HPO.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c Likelihood.cpp -o Likelihood.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c Similarity.cpp -o Similarity.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c State.cpp -o State.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c TermList.cpp -o TermList.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c Update.cpp -o Update.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c Utils.cpp -o Utils.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o SimReg.so Chain.o DeltaLikelihood.o HPO.o Likelihood.o RcppExports.o Similarity.o State.o TermList.o Update.o Utils.o -L/usr/lib/R/lib -lR
+Note: the specification for S3 class “dist” in package ‘graph’ seems equivalent to one from package ‘BiocGenerics’: not turning on duplicate class definitions for this class.
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for SimReg_1.1.tar.gz : success (385 of 452, 368 good, 17 bad) -- Avg runtime is 51.3 sec, exp. finish in 57.3 min at 17:32:33 on 27-Aug-2015
+
+RESULT for sirt_1.8-9.tar.gz : success (386 of 452, 369 good, 17 bad) -- Avg runtime is 50.9 sec, exp. finish in 56 min at 17:36:10 on 27-Aug-2015
+
+RESULT for slfm_0.2.2.tar.gz : success (387 of 452, 370 good, 17 bad) -- Avg runtime is 51 sec, exp. finish in 55.2 min at 17:36:05 on 27-Aug-2015
+
+RESULT for SLOPE_0.1.1.tar.gz : success (388 of 452, 371 good, 17 bad) -- Avg runtime is 51.1 sec, exp. finish in 54.5 min at 17:35:41 on 27-Aug-2015
+
+RESULT for snipEM_1.0.tar.gz : success (389 of 452, 372 good, 17 bad) -- Avg runtime is 51.1 sec, exp. finish in 53.7 min at 17:35:28 on 27-Aug-2015
+
+RESULT for snplist_0.13.tar.gz : success (390 of 452, 373 good, 17 bad) -- Avg runtime is 51.1 sec, exp. finish in 52.8 min at 17:35:49 on 27-Aug-2015
+
+RESULT for SocialNetworks_1.1.tar.gz : success (391 of 452, 374 good, 17 bad) -- Avg runtime is 51.2 sec, exp. finish in 52.1 min at 17:35:23 on 27-Aug-2015
+
+RESULT for SOD_1.0.tar.gz : success (392 of 452, 375 good, 17 bad) -- Avg runtime is 51.3 sec, exp. finish in 51.3 min at 17:35:07 on 27-Aug-2015
+
+RESULT for spacodiR_0.13.0115.tar.gz : success (393 of 452, 376 good, 17 bad) -- Avg runtime is 51.3 sec, exp. finish in 50.5 min at 17:35:12 on 27-Aug-2015
+
+RESULT for spaMM_1.5.1.tar.gz : success (394 of 452, 377 good, 17 bad) -- Avg runtime is 51.2 sec, exp. finish in 49.5 min at 17:36:12 on 27-Aug-2015
+
+RESULT for SparseFactorAnalysis_1.0.tar.gz : success (395 of 452, 378 good, 17 bad) -- Avg runtime is 51.3 sec, exp. finish in 48.7 min at 17:36:19 on 27-Aug-2015
+
+RESULT for sparseHessianFD_0.2.0.tar.gz : success (396 of 452, 379 good, 17 bad) -- Avg runtime is 51.3 sec, exp. finish in 47.9 min at 17:36:22 on 27-Aug-2015
+
+RESULT for sparseLTSEigen_0.2.0.tar.gz : success (397 of 452, 380 good, 17 bad) -- Avg runtime is 51.3 sec, exp. finish in 47 min at 17:36:49 on 27-Aug-2015
+
+RESULT for sparsereg_1.0.tar.gz : success (398 of 452, 381 good, 17 bad) -- Avg runtime is 51.3 sec, exp. finish in 46.1 min at 17:37:17 on 27-Aug-2015
+
+RESULT for SpatialEpi_1.2.1.tar.gz : success (399 of 452, 382 good, 17 bad) -- Avg runtime is 51.3 sec, exp. finish in 45.3 min at 17:37:35 on 27-Aug-2015
+
+RESULT for SpatialTools_0.5.8.tar.gz : success (400 of 452, 383 good, 17 bad) -- Avg runtime is 51.3 sec, exp. finish in 44.4 min at 17:37:41 on 27-Aug-2015
+
+RESULT for SpatPCA_1.0.0.2.tar.gz : success (401 of 452, 384 good, 17 bad) -- Avg runtime is 51.3 sec, exp. finish in 43.6 min at 17:37:35 on 27-Aug-2015
+
+RESULT for spBayesSurv_1.0.2.tar.gz : success (402 of 452, 385 good, 17 bad) -- Avg runtime is 51.2 sec, exp. finish in 42.7 min at 17:38:38 on 27-Aug-2015
+
+RESULT for spduration_0.13.1.tar.gz : success (403 of 452, 386 good, 17 bad) -- Avg runtime is 51.3 sec, exp. finish in 41.9 min at 17:38:39 on 27-Aug-2015
+
+RESULT for spsann_1.0.1.tar.gz : success (404 of 452, 387 good, 17 bad) -- Avg runtime is 51.3 sec, exp. finish in 41.1 min at 17:38:29 on 27-Aug-2015
+
+RESULT for StatMethRank_1.2.tar.gz : success (405 of 452, 388 good, 17 bad) -- Avg runtime is 51.4 sec, exp. finish in 40.3 min at 17:38:18 on 27-Aug-2015
+
+RESULT for staTools_0.1.0.tar.gz : success (406 of 452, 389 good, 17 bad) -- Avg runtime is 51.5 sec, exp. finish in 39.5 min at 17:37:59 on 27-Aug-2015
+
+RESULT for StereoMorph_1.4.tar.gz : success (407 of 452, 390 good, 17 bad) -- Avg runtime is 51.5 sec, exp. finish in 38.6 min at 17:38:25 on 27-Aug-2015
+
+RESULT for stm_1.1.0.tar.gz : success (408 of 452, 391 good, 17 bad) -- Avg runtime is 51.4 sec, exp. finish in 37.7 min at 17:38:53 on 27-Aug-2015
+
+RESULT for StMoSim_3.0.tar.gz : success (409 of 452, 392 good, 17 bad) -- Avg runtime is 51.5 sec, exp. finish in 36.9 min at 17:38:25 on 27-Aug-2015
+
+RESULT for stochvol_1.2.0.tar.gz : success (410 of 452, 393 good, 17 bad) -- Avg runtime is 51.6 sec, exp. finish in 36.1 min at 17:38:31 on 27-Aug-2015
+
+RESULT for stocks_1.1.1.tar.gz : success (411 of 452, 394 good, 17 bad) -- Avg runtime is 51.6 sec, exp. finish in 35.3 min at 17:38:27 on 27-Aug-2015
+
+RESULT for stosim_0.0.12.tar.gz : success (412 of 452, 395 good, 17 bad) -- Avg runtime is 51.7 sec, exp. finish in 34.4 min at 17:38:16 on 27-Aug-2015
+
+RESULT for strataG_0.9.4.tar.gz : failure (413 of 452, 395 good, 18 bad) -- Avg runtime is 51.8 sec, exp. finish in 33.7 min at 17:37:29 on 27-Aug-2015
+
+RESULT for stream_1.1-5.tar.gz : success (414 of 452, 396 good, 18 bad) -- Avg runtime is 51.7 sec, exp. finish in 32.8 min at 17:38:06 on 27-Aug-2015
+
+RESULT for strum_0.6.2.tar.gz : success (415 of 452, 397 good, 18 bad) -- Avg runtime is 51.7 sec, exp. finish in 31.9 min at 17:38:38 on 27-Aug-2015
+
+RESULT for survAccuracyMeasures_1.2.tar.gz : success (416 of 452, 398 good, 18 bad) -- Avg runtime is 51.7 sec, exp. finish in 31 min at 17:38:48 on 27-Aug-2015
+
+RESULT for surveillance_1.9-1.tar.gz : success (417 of 452, 399 good, 18 bad) -- Avg runtime is 51.5 sec, exp. finish in 30 min at 17:41:32 on 27-Aug-2015
+
+RESULT for survSNP_0.23.2.tar.gz : success (418 of 452, 400 good, 18 bad) -- Avg runtime is 51.5 sec, exp. finish in 29.2 min at 17:41:08 on 27-Aug-2015
+
+RESULT for SVMMatch_1.1.tar.gz : success (419 of 452, 401 good, 18 bad) -- Avg runtime is 51.6 sec, exp. finish in 28.4 min at 17:40:49 on 27-Aug-2015
+
+RESULT for synlik_0.1.1.tar.gz : success (420 of 452, 402 good, 18 bad) -- Avg runtime is 51.6 sec, exp. finish in 27.5 min at 17:41:16 on 27-Aug-2015
+
+RESULT for systemicrisk_0.2.tar.gz : success (421 of 452, 403 good, 18 bad) -- Avg runtime is 51.7 sec, exp. finish in 26.7 min at 17:40:48 on 27-Aug-2015
+
+RESULT for tagcloud_0.6.tar.gz : success (422 of 452, 404 good, 18 bad) -- Avg runtime is 51.7 sec, exp. finish in 25.9 min at 17:40:26 on 27-Aug-2015
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c irt_likelihood_cfa2.cpp -o irt_likelihood_cfa2.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c msq_itemfit.cpp -o msq_itemfit.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c prior_normal_density_c.cpp -o prior_normal_density_c.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c rowcumsums_source.cpp -o rowcumsums_source.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c tam_calcexp.cpp -o tam_calcexp.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99 -c tam_caux.c -o tam_caux.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c tam_ctt_c.cpp -o tam_ctt_c.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c tam_fit_simul.cpp -o tam_fit_simul.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c tam_helper_ccode.cpp -o tam_helper_ccode.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c tam_mml_3pl_helper_functions.cpp -o tam_mml_3pl_helper_functions.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c tam_mml_mfr_helper.cpp -o tam_mml_mfr_helper.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c tam_modelfit_aux.cpp -o tam_modelfit_aux.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c tamwle_helper_ccode.cpp -o tamwle_helper_ccode.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o TAM.so irt_likelihood_cfa2.o msq_itemfit.o prior_normal_density_c.o rowcumsums_source.o tam_calcexp.o tam_caux.o tam_ctt_c.o tam_fit_simul.o tam_helper_ccode.o tam_mml_3pl_helper_functions.o tam_mml_mfr_helper.o tam_modelfit_aux.o tamwle_helper_ccode.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for TAM_1.12-0.tar.gz : success (423 of 452, 405 good, 18 bad) -- Avg runtime is 51.5 sec, exp. finish in 24.9 min at 17:42:36 on 27-Aug-2015
+
+RESULT for TAQMNGR_2015.2-1.tar.gz : success (424 of 452, 406 good, 18 bad) -- Avg runtime is 51.4 sec, exp. finish in 24 min at 17:43:46 on 27-Aug-2015
+
+RESULT for tbart_1.0.tar.gz : failure (425 of 452, 406 good, 19 bad) -- Avg runtime is 51.5 sec, exp. finish in 23.2 min at 17:43:21 on 27-Aug-2015
+
+RESULT for tcR_2.1.1.tar.gz : success (426 of 452, 407 good, 19 bad) -- Avg runtime is 51.6 sec, exp. finish in 22.3 min at 17:43:21 on 27-Aug-2015
+
+RESULT for TED_1.1.1.tar.gz : success (427 of 452, 408 good, 19 bad) -- Avg runtime is 51.6 sec, exp. finish in 21.5 min at 17:43:06 on 27-Aug-2015
+
+RESULT for termstrc_1.3.7.tar.gz : failure (428 of 452, 408 good, 20 bad) -- Avg runtime is 51.7 sec, exp. finish in 20.7 min at 17:42:17 on 27-Aug-2015
+
+RESULT for TESS_2.0.0.tar.gz : success (429 of 452, 409 good, 20 bad) -- Avg runtime is 51.8 sec, exp. finish in 19.8 min at 17:42:24 on 27-Aug-2015
+
+RESULT for textreg_0.1.2.tar.gz : success (430 of 452, 410 good, 20 bad) -- Avg runtime is 51.8 sec, exp. finish in 19 min at 17:42:03 on 27-Aug-2015
+
+RESULT for TFMPvalue_0.0.5.tar.gz : success (431 of 452, 411 good, 20 bad) -- Avg runtime is 51.9 sec, exp. finish in 18.2 min at 17:41:32 on 27-Aug-2015
+
+RESULT for timma_1.2.1.tar.gz : success (432 of 452, 412 good, 20 bad) -- Avg runtime is 51.9 sec, exp. finish in 17.3 min at 17:41:39 on 27-Aug-2015
+
+RESULT for tmg_0.3.tar.gz : success (433 of 452, 413 good, 20 bad) -- Avg runtime is 52 sec, exp. finish in 16.5 min at 17:41:12 on 27-Aug-2015
+
+RESULT for treeclim_1.0.11.tar.gz : success (434 of 452, 414 good, 20 bad) -- Avg runtime is 52 sec, exp. finish in 15.6 min at 17:41:42 on 27-Aug-2015
+
+RESULT for trustOptim_0.8.5.tar.gz : success (435 of 452, 415 good, 20 bad) -- Avg runtime is 52 sec, exp. finish in 14.7 min at 17:41:48 on 27-Aug-2015
+
+RESULT for tvd_0.1.0.tar.gz : success (436 of 452, 416 good, 20 bad) -- Avg runtime is 52.1 sec, exp. finish in 13.9 min at 17:41:15 on 27-Aug-2015
+
+RESULT for unmarked_0.10-6.tar.gz : success (437 of 452, 417 good, 20 bad) -- Avg runtime is 52 sec, exp. finish in 13 min at 17:42:05 on 27-Aug-2015
+
+RESULT for urltools_1.2.0.tar.gz : success (438 of 452, 418 good, 20 bad) -- Avg runtime is 52.1 sec, exp. finish in 12.2 min at 17:41:55 on 27-Aug-2015
+
+RESULT for V8_0.7.tar.gz : success (439 of 452, 419 good, 20 bad) -- Avg runtime is 52.2 sec, exp. finish in 11.3 min at 17:41:28 on 27-Aug-2015
+
+RESULT for VarSelLCM_1.2.tar.gz : success (440 of 452, 420 good, 20 bad) -- Avg runtime is 52.2 sec, exp. finish in 10.4 min at 17:41:47 on 27-Aug-2015
+
+RESULT for VideoComparison_0.15.tar.gz : success (441 of 452, 421 good, 20 bad) -- Avg runtime is 52.2 sec, exp. finish in 9.6 min at 17:41:21 on 27-Aug-2015
+
+RESULT for VIM_4.3.0.tar.gz : success (442 of 452, 422 good, 20 bad) -- Avg runtime is 52.2 sec, exp. finish in 8.7 min at 17:42:02 on 27-Aug-2015
+
+RESULT for waffect_1.2.tar.gz : success (443 of 452, 423 good, 20 bad) -- Avg runtime is 52.3 sec, exp. finish in 7.8 min at 17:41:29 on 27-Aug-2015
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -DNDEBUG -DEIGEN_DONT_VECTORIZE -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -DNDEBUG -DEIGEN_DONT_VECTORIZE -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic -c rcppeigen_matrix_operations.cpp -o rcppeigen_matrix_operations.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o walkr.so RcppExports.o rcppeigen_matrix_operations.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for walkr_0.3.3.tar.gz : success (444 of 452, 424 good, 20 bad) -- Avg runtime is 52.3 sec, exp. finish in 7 min at 17:41:25 on 27-Aug-2015
+
+RESULT for webreadr_0.3.0.tar.gz : success (445 of 452, 425 good, 20 bad) -- Avg runtime is 52.4 sec, exp. finish in 6.1 min at 17:40:54 on 27-Aug-2015
+
+RESULT for wordcloud_2.5.tar.gz : success (446 of 452, 426 good, 20 bad) -- Avg runtime is 52.5 sec, exp. finish in 5.2 min at 17:40:23 on 27-Aug-2015
+
+RESULT for wsrf_1.5.24.tar.gz : failure (447 of 452, 426 good, 21 bad) -- Avg runtime is 52.5 sec, exp. finish in 4.4 min at 17:40:28 on 27-Aug-2015
+
+RESULT for XBRL_0.99.16.tar.gz : success (448 of 452, 427 good, 21 bad) -- Avg runtime is 52.5 sec, exp. finish in 3.5 min at 17:40:49 on 27-Aug-2015
+
+RESULT for xergm_1.5.tar.gz : success (449 of 452, 428 good, 21 bad) -- Avg runtime is 52.5 sec, exp. finish in 2.6 min at 17:41:18 on 27-Aug-2015
+
+RESULT for xml2_0.1.1.tar.gz : success (450 of 452, 429 good, 21 bad) -- Avg runtime is 52.5 sec, exp. finish in 1.7 min at 17:41:23 on 27-Aug-2015
+
+RESULT for yakmoR_0.1.1.tar.gz : success (451 of 452, 430 good, 21 bad) -- Avg runtime is 52.6 sec, exp. finish in 0.9 min at 17:40:55 on 27-Aug-2015
+
+RESULT for zic_0.8.1.tar.gz : success (452 of 452, 431 good, 21 bad) -- Avg runtime is 52.6 sec, exp. finish in 0 min at 17:40:44 on 27-Aug-2015
+                     pkg res
+1          accelerometry   0
+2       AdaptiveSparsity   0
+3                    AHR   0
+4                algstat   0
+5                   ALKr   0
+6                 Amelia   0
+7              apcluster   0
+8                 ASPBay   0
+9            autovarCore   0
+10                BaBooN   0
+11      BalancedSampling   0
+12             BayesComm   0
+13           BayesFactor   0
+14                bayesm   0
+15                 bayou   0
+16                   bcp   0
+17                  bcpa   1
+18                   bfa   0
+19                   bfp   0
+20           bifactorial   0
+21           BIFIEsurvey   0
+22                 BIPOD   0
+23          blockcluster   0
+24           blockmodels   0
+25                  brms   0
+26                   btf   0
+27                bvarsv   0
+28              CARBayes   0
+29            CARBayesST   0
+30                 ccaPP   0
+31                  cccp   0
+32                   cda   0
+33                   CDM   0
+34                 cgAUC   0
+35              chopthin   0
+36           CIDnetworks   0
+37             cladoRcpp   0
+38              classify   0
+39                 clere   0
+40          climdex.pcic   0
+41              clogitL1   0
+42             clusteval   0
+43             ClustMMDD   0
+44            ClustVarLV   0
+45                   CMF   0
+46                 coala   0
+47               CompGLM   0
+48         ConConPiWiFun   0
+49              coneproj   0
+50             contoureR   0
+51                copCAR   0
+52                CorReg   0
+53                Coxnet   0
+54               creditr   0
+55             Crossover   0
+56                   D3M   0
+57                 dbmss   0
+58                dbscan   0
+59               ddalpha   0
+60             Delaporte   0
+61        dendextendRcpp   0
+62             DepthProc   0
+63             DescTools   0
+64                DetMCD   0
+65                dfcomb   0
+66                 dfmta   0
+67                  dils   0
+68            disclapmix   0
+69           diversitree   0
+70             diveRsity   0
+71                  divo   0
+72           DNAprofiles   0
+73              DNAtools   0
+74                 dplyr   1
+75                dslice   1
+76                DStree   0
+77                   ecp   0
+78        EditImputeCont   0
+79                  eive   0
+80                 emIRT   0
+81                 EPGLM   0
+82            ESGtoolkit   0
+83                EstHer   0
+84                evolqg   0
+85                 EWGoF   0
+86          FastBandChol   0
+87            fastGHQuad   0
+88                FastGP   0
+89               FastHCS   0
+90                 fastM   0
+91               FastPCS   0
+92               FastRCS   0
+93             FBFsearch   0
+94                 fbroc   0
+95                FCNN4R   0
+96              fdaMixed   0
+97            FDGcopulas   0
+98                FDRreg   0
+99        FeatureHashing   0
+100                 fICA   0
+101             FisHiCal   0
+102                 flam   0
+103                 flip   0
+104                FLSSS   0
+105             forecast   0
+106          forestFloor   0
+107            FRESA.CAD   0
+108           FSInteract   0
+109                fugeR   0
+110             FunChisq   0
+111        Funclustering   0
+112                fwsim   0
+113             gaselect   0
+114                 GCPM   0
+115                  gdm   0
+116               geiger   0
+117         GeneticTools   0
+118               GENLIB   0
+119             geoCount   0
+120                GERGM   0
+121               gkmSVM   0
+122                 glcm   0
+123             glmgraph   0
+124                 GMCM   0
+125                Gmisc   0
+126                 gMWT   0
+127              GPareto   1
+128                GPvam   0
+129         graphicalVAR   0
+130               gRbase   0
+131                 gRim   0
+132           growcurves   0
+133        growfunctions   0
+134                  GSE   0
+135               GUILDS   0
+136                 GUTS   0
+137                  GxM   0
+138                   h5   0
+139                haven   0
+140               hawkes   0
+141              HLMdiag   0
+142              hsphase   0
+143                  hts   0
+144               httpuv   0
+145                  HUM   0
+146          hypervolume   0
+147              iBATCGH   0
+148                 IBHM   0
+149               icamix   0
+150              iccbeta   0
+151                 icd9   0
+152             icensmis   0
+153               imager   0
+154              inarmix   0
+155              iptools   0
+156         IsingSampler   0
+157             ISOpureR   0
+158               iterpc   0
+159               jaatha   0
+160          JacobiEigen   0
+161               JAGUAR   0
+162               jiebaR   0
+163            kdecopula   0
+164                kergp   0
+165        KernSmoothIRT   0
+166                  kmc   0
+167                Kmisc   0
+168                  LaF   0
+169                 lamW   0
+170             Langevin   0
+171               lasvmR   0
+172                lbfgs   0
+173              lcopula   0
+174                  lfl   0
+175    lifecontingencies   0
+176                lm.br   0
+177                 lme4   1
+178                 lpme   0
+179             lsbclust   0
+180                 lsgl   0
+181         Luminescence   0
+182               marked   0
+183           markophylo   0
+184          markovchain   1
+185                  MAT   0
+186      matchingMarkets   0
+187            matchingR   0
+188               maxent   0
+189               mbbefd   0
+190              mcemGLM   0
+191                mcIRT   0
+192               mcmcse   1
+193            metafolio   0
+194                 mets   0
+195                  mev   0
+196                 mice   0
+197             miceadds   1
+198                minqa   0
+199                 mirt   0
+200              mirtCAT   0
+201                miscF   0
+202              miscset   0
+203           missDeaths   0
+204               MixAll   0
+205             mixedMem   0
+206                 mkde   0
+207                 mlxR   0
+208                mmand   1
+209               Morpho   0
+210                   mp   0
+211           Mposterior   0
+212               MPTinR   0
+213              MRIaggr   1
+214                 msgl   1
+215                  MTS   0
+216            multicool   0
+217              mvabund   0
+218                  MVB   0
+219              mvnfast   0
+220               mwaved   0
+221                myTAI   0
+222                nabor   1
+223                  NAM   0
+224                  ndl   0
+225               NetSim   0
+226              neuroim   0
+227            ngspatial   0
+228                 NHMM   0
+229     nonlinearTseries   0
+230        NPBayesImpute   0
+231            oapackage   0
+232              odeintr   0
+233                  oem   0
+234             olctools   0
+235  OneArmPhaseTwoStudy   0
+236            onlinePCA   0
+237              openair   0
+238               OpenMx   0
+239             openxlsx   0
+240             optmatch   1
+241                 orQA   0
+242          packcircles   0
+243                PAFit   0
+244               pander   0
+245            partialAR   0
+246                pcalg   0
+247                pcIRT   0
+248               PedCNV   0
+249          pedometrics   0
+250               penMSM   0
+251           PerMallows   0
+252            phylobase   0
+253               planar   0
+254             plotSEMM   0
+255                 plyr   0
+256       poisDoubleSamp   0
+257              polywog   0
+258                PoweR   0
+259                   PP   0
+260            PPtreeViz   0
+261              PReMiuM   0
+262               primes   0
+263                 pROC   1
+264            propagate   0
+265            prospectr   0
+266              protViz   0
+267                 pryr   0
+268                  psd   0
+269                 psgp   0
+270                 pvar   0
+271                  QRM   0
+272            quadrupen   0
+273             quanteda   0
+274            quantspec   0
+275              qVarSel   0
+276  randomUniformForest   0
+277               ranger   0
+278          Rankcluster   0
+279             rankdist   0
+280              rARPACK   0
+281               raster   0
+282              Rblpapi   0
+283              Rborist   0
+284           Rclusterpp   0
+285            RcppAnnoy   0
+286              RcppAPT   0
+287        RcppArmadillo   0
+288              RcppBDT   0
+289             rcppbugs   0
+290          RcppClassic   0
+291  RcppClassicExamples   0
+292             RcppCNPy   0
+293               RcppDE   1
+294               RcppDL   0
+295            RcppEigen   0
+296         RcppExamples   0
+297         RcppFaddeeva   0
+298              RcppGSL   0
+299           RcppMLPACK   0
+300           RcppOctave   0
+301         RcppProgress   0
+302            RcppRedis   0
+303             RcppRoll   0
+304            RcppShark   0
+305              RcppSMC   0
+306          RcppStreams   0
+307             RcppTOML   0
+308              RcppXts   0
+309         RcppZiggurat   0
+310                readr   0
+311          readstata13   0
+312               readxl   0
+313             RealVAMS   0
+314         reconstructr   0
+315           recosystem   0
+316               redist   0
+317               relSim   0
+318               remote   0
+319       ReorderCluster   0
+320                repra   0
+321             resemble   0
+322             reshape2   0
+323        revealedPrefs   0
+324             rexpokit   0
+325     rforensicbatwing   0
+326                 rgam   0
+327           rgeolocate   0
+328              RInside   0
+329                 ripa   0
+330                 rivr   0
+331                 rkvo   0
+332             Rlibeemd   0
+333                 rlme   1
+334               RLRsim   0
+335          Rmalschains   0
+336              rmgarch   0
+337              Rmixmod   0
+338         RmixmodCombi   0
+339                 rncl   0
+340            robustgam   0
+341             robustHD   0
+342            robustreg   0
+343               rococo   0
+344            rotations   0
+345            RoughSets   0
+346             roxygen2   0
+347                  rpf   0
+348                  rpg   0
+349           Rphylopars   0
+350              rplexos   0
+351                rPref   0
+352            RProtoBuf   0
+353            RQuantLib   0
+354                RSNNS   0
+355              RSNPset   0
+356               RSofia   0
+357             Rsomoclu   0
+358                rstan   0
+359               rstpm2   0
+360                rtkpp   0
+361                Rtsne   0
+362            Ruchardet   0
+363              rugarch   0
+364                 Rvcg   0
+365        RVowpalWabbit   0
+366            satellite   1
+367             saturnin   0
+368               sbmSDP   0
+369                 SBSA   0
+370               scales   0
+371                 scrm   0
+372               scrypt   0
+373             sdcMicro   0
+374             sdcTable   0
+375            SEERaBomb   0
+376               segmag   0
+377          seismicRoll   0
+378            SelvarMix   0
+379            sequences   0
+380                  sgd   0
+381             sglOptim   0
+382           signalHsmm   0
+383             simFrame   0
+384               simPop   0
+385               SimReg   0
+386                 sirt   0
+387                 slfm   0
+388                SLOPE   0
+389               snipEM   0
+390              snplist   0
+391       SocialNetworks   0
+392                  SOD   0
+393             spacodiR   0
+394                spaMM   0
+395 SparseFactorAnalysis   0
+396      sparseHessianFD   0
+397       sparseLTSEigen   0
+398            sparsereg   0
+399           SpatialEpi   0
+400         SpatialTools   0
+401              SpatPCA   0
+402          spBayesSurv   0
+403           spduration   0
+404               spsann   0
+405         StatMethRank   0
+406             staTools   0
+407          StereoMorph   0
+408                  stm   0
+409              StMoSim   0
+410             stochvol   0
+411               stocks   0
+412               stosim   0
+413              strataG   1
+414               stream   0
+415                strum   0
+416 survAccuracyMeasures   0
+417         surveillance   0
+418              survSNP   0
+419             SVMMatch   0
+420               synlik   0
+421         systemicrisk   0
+422             tagcloud   0
+423                  TAM   0
+424              TAQMNGR   0
+425                tbart   1
+426                  tcR   0
+427                  TED   0
+428             termstrc   1
+429                 TESS   0
+430              textreg   0
+431            TFMPvalue   0
+432                timma   0
+433                  tmg   0
+434             treeclim   0
+435           trustOptim   0
+436                  tvd   0
+437             unmarked   0
+438             urltools   0
+439                   V8   0
+440            VarSelLCM   0
+441      VideoComparison   0
+442                  VIM   0
+443              waffect   0
+444                walkr   0
+445             webreadr   0
+446            wordcloud   0
+447                 wsrf   1
+448                 XBRL   0
+449                xergm   0
+450                 xml2   0
+451               yakmoR   0
+452                  zic   0
+
+  0   1 
+431  21 
+ [1] "bcpa"        "dplyr"       "dslice"      "GPareto"     "lme4"       
+ [6] "markovchain" "mcmcse"      "miceadds"    "mmand"       "MRIaggr"    
+[11] "msgl"        "nabor"       "optmatch"    "pROC"        "RcppDE"     
+[16] "rlme"        "satellite"   "strataG"     "tbart"       "termstrc"   
+[21] "wsrf"       
+Ended at  2015-08-27 17:40:44 
