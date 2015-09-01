@@ -17,7 +17,7 @@ loclib <- "/tmp/RcppDepends/lib"
 Sys.setenv("R_LIBS_USER"="/tmp/RcppDepends/lib")
 #Sys.setenv("CC"="gcc")   ## needed for a bad interaction between autoconf and llvm on Ubuntu 13.10
 #Sys.setenv("CXX"="g++")  ## idem
-Sys.setenv("MAKE"="make -j 4 -O")
+Sys.setenv("MAKE"="make -j 2 -O")
 
 r <- getOption("repos")
 r["CRAN"] <- "http://cran.rstudio.com"
@@ -76,14 +76,14 @@ remtime <- function(ndone, ntotal, starttime) {
     now <- Sys.time()
     running <- as.numeric(difftime(now, starttime, unit="secs"))
     #print(running)
-    avgtime <- ndone/(running/60)
+    avgtime <- running/ndone
     #print(avgtime)
     remaining <- (ntotal-ndone)*avgtime
     #print(remaining)
     #cat(format(now),"--",format(starttime), "--", running, "--", avgtime, "--", remaining,"\n")
-    paste("Avg runtime is", round(avgtime*60, digits=1), "sec,",
-          "exp. finish in", round(remaining, digits=1),
-          "min at", strftime(now+remaining*60, "%H:%M:%S on %d-%b-%Y"))
+    paste("Avg runtime is", round(avgtime, digits=1), "sec,",
+          "exp. finish in", round(remaining/60, digits=1),
+          "min at", strftime(now+remaining, "%H:%M:%S on %d-%b-%Y"))
 }
 
 #for (pi in 1:nrow(res)) {
