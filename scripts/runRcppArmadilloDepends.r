@@ -45,6 +45,21 @@ print(rcpparmaset)
 res <- data.frame(pkg=rcpparmaset, res=NA)
 good <- bad <- 0
 n <- nrow(res)
+starttime <- Sys.time()
+
+remtime <- function(ndone, ntotal, starttime) {
+    now <- Sys.time()
+    running <- as.numeric(difftime(now, starttime, unit="secs"))
+    #print(running)
+    avgtime <- running/ndone
+    #print(avgtime)
+    remaining <- (ntotal-ndone)*avgtime
+    #print(remaining)
+    #cat(format(now),"--",format(starttime), "--", running, "--", avgtime, "--", remaining,"\n")
+    paste("Avg runtime is", round(avgtime, digits=1), "sec,",
+          "exp. finish in", round(remaining/60, digits=1),
+          "min at", strftime(now+remaining, "%H:%M:%S on %d-%b-%Y"))
+}
 
 #for (pi in 1:nrow(res)) {
 #lres <- mclapply(1:nrow(res), mc.cores = 4, FUN=function(pi) {
@@ -79,8 +94,9 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     } else {
         bad <<- bad + 1
     }
-    cat(sprintf("\nRESULT for %s : %s (%d of %d, %d good, %d bad)\n",
-                pkg, if (rc==0) "success" else "failure", pi, n, good, bad))
+    cat(sprintf("\nRESULT for %s : %s (%d of %d, %d good, %d bad) -- %s\n",
+                pkg, if (rc==0) "success" else "failure", pi, n, good, bad,
+                remtime(good+bad, n, starttime)))
     res[pi, ]
 })
 
