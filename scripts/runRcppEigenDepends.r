@@ -15,6 +15,8 @@ Sys.setenv("R_LIBS_USER"="/tmp/RcppDepends/lib")
 #Sys.setenv("CC"="gcc")   ## needed for a bad interaction between autoconf and llvm on Ubuntu 13.10
 #Sys.setenv("CXX"="g++")  ## idem
 
+Sys.setenv("RGL_USE_NULL"="TRUE")       # Duncan Murdoch on r-package-devel on 12 Aug 2015
+
 r <- getOption("repos")
 r["CRAN"] <- "http://cran.rstudio.com"
 r["BioCsoft"] <- "http://www.bioconductor.org/packages/release/bioc"
@@ -26,7 +28,7 @@ setwd("/tmp/RcppDepends")
 invisible(sapply(list.files("/tmp", "(repos|lib).*rds$", full.names=TRUE), unlink))
 
 ## update local lib/
-update.packages(lib.loc=".", ask=FALSE)
+update.packages(lib.loc="lib/", ask=FALSE)
 
 IP <- installed.packages(lib.loc=loclib) 
 AP <- available.packages(contrib.url("http://cran.r-project.org"), filter=list())	# available package at CRAN
@@ -38,6 +40,17 @@ print( rcppeigenset )
 res <- data.frame(pkg=rcppeigenset, res=NA)
 good <- bad <- 0
 n <- nrow(res)
+starttime <- Sys.time()
+
+remtime <- function(ndone, ntotal, starttime) {
+    now <- Sys.time()
+    running <- as.numeric(difftime(now, starttime, unit="secs"))
+    avgtime <- running/ndone
+    remaining <- (ntotal-ndone)*avgtime
+    paste("Avg runtime is", round(avgtime, digits=1), "sec,",
+          "exp. finish in", round(remaining/60, digits=1),
+          "min at", strftime(now+remaining, "%H:%M:%S on %d-%b-%Y"))
+}
 
 #for (pi in 1:nrow(res)) {
 #lres <- mclapply(1:nrow(res), mc.cores = 4, FUN=function(pi) {
@@ -72,14 +85,16 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     } else {
         bad <<- bad + 1
     }
-    cat(sprintf("\nRESULT for %s : %s (%d of %d, %d good, %d bad)\n",
-                pkg, if (rc==0) "success" else "failure", pi, n, good, bad))
+    cat(sprintf("\nRESULT for %s : %s (%d of %d, %d good, %d bad) -- %s\n",
+                pkg, if (rc==0) "success" else "failure", pi, n, good, bad,
+                remtime(good+bad, n, starttime)))
     res[pi, ]
 })
 
 res <- do.call(rbind, lres)
 print(res)
 print(table(res[,"res"]))
+print(as.character(res[ res[,"res"] == 1, "pkg"]))
 write.table(res, file=paste("result-", strftime(Sys.time(), "%Y%m%d-%H%M%S"), ".txt", sep=""), sep=",")
 save(res, file=paste("result-", strftime(Sys.time(), "%Y%m%d-%H%M%S"), ".RData", sep=""))
 cat("Ended at ", format(Sys.time()), "\n")
