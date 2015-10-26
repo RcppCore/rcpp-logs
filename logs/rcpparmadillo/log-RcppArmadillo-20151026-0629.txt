@@ -1,0 +1,721 @@
+Started at  2015-10-26 06:29:04 
+Rcpp  version is  0.12.1.3 
+RcppArmadillo  version is  0.6.199.0.0 
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c branches.cpp -o branches.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c threepoint.cpp -o threepoint.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c weightmatrix.cpp -o weightmatrix.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o bayou.so RcppExports.o branches.o threepoint.o weightmatrix.o -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c KMUP.cpp -o KMUP.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o bWGR.so KMUP.o RcppExports.o -L/usr/lib/R/lib -lR
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c all_missing.c -o all_missing.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c all_nchar.c -o all_nchar.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c any_infinite.c -o any_infinite.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c any_missing.c -o any_missing.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c any_nan.c -o any_nan.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c checks.c -o checks.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c cmessages.c -o cmessages.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c helper.c -o helper.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c is_integerish.c -o is_integerish.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c qassert.c -o qassert.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c which_first.c -o which_first.o
+ccache gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o checkmate.so all_missing.o all_nchar.o any_infinite.o any_missing.o any_nan.o checks.o cmessages.o helper.o is_integerish.o qassert.o which_first.o -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/RcppArmadillo/include" -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c coneproj.cpp -o coneproj.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o coneproj.so coneproj.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c coxReg.cpp -o coxReg.o
+g++ -std=c++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o CoxPlus.so coxReg.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c ADinf.c -o ADinf.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c AnDarl.c -o AnDarl.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c Barnard.c -o Barnard.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c aux_fct.cpp -o aux_fct.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c between.c -o between.o
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c cidxcn.f -o cidxcn.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c conc.c -o conc.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c exactsum.c -o exactsum.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c fdwilcox.c -o fdwilcox.o
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c hoeffd.f -o hoeffd.o
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c jtpdf.f -o jtpdf.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c moments.c -o moments.o
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c pan.f -o pan.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c pointinpolygon.c -o pointinpolygon.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c ranksort.c -o ranksort.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c tbrm.c -o tbrm.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c wgt_himed.c -o wgt_himed.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o DescTools.so ADinf.o AnDarl.o Barnard.o RcppExports.o aux_fct.o between.o cidxcn.o conc.o exactsum.o fdwilcox.o hoeffd.o jtpdf.o moments.o pan.o pointinpolygon.o ranksort.o tbrm.o wgt_himed.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c distance.cpp -o distance.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c invert_toeplitz.cpp -o invert_toeplitz.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c rcppeigen.cpp -o rcppeigen.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o FastGP.so RcppExports.o distance.o invert_toeplitz.o rcppeigen.o -L/usr/lib/R/lib -lR
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -DEIGEN_DONT_PARALLELIZE -fopenmp -I../inst/include -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c FastRCS.cpp -o FastRCS.o
+g++ -std=c++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o FastRCS.so FastRCS.o -fopenmp -L/usr/lib/R/lib -lR
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/digest/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c RcppExports.cpp -o RcppExports.o
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/digest/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c as.cpp -o as.o
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/digest/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c bswap_32.cpp -o bswap_32.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/digest/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c digest.c -o digest.o
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/digest/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c hash_internal.cpp -o hash_internal.o
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/digest/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c hashed_model_matrix.cpp -o hashed_model_matrix.o
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/digest/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c intToRaw.cpp -o intToRaw.o
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/digest/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c product.cpp -o product.o
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/digest/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c split.cpp -o split.o
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/digest/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c subsetting.cpp -o subsetting.o
+g++ -std=c++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o FeatureHashing.so RcppExports.o as.o bswap_32.o digest.o hash_internal.o hashed_model_matrix.o intToRaw.o product.o split.o subsetting.o -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c calcBATS.cpp -o calcBATS.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c calcTBATS.cpp -o calcTBATS.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c etsTargetFunction.cpp -o etsTargetFunction.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c etsTargetFunctionWrapper.cpp -o etsTargetFunctionWrapper.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c etscalc.c -o etscalc.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c etspolyroot.c -o etspolyroot.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c makeBATSMatrices.cpp -o makeBATSMatrices.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c makeTBATSMatrices.cpp -o makeTBATSMatrices.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c updateMatrices.cpp -o updateMatrices.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c updateTBATSMatrices.cpp -o updateTBATSMatrices.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o forecast.so calcBATS.o calcTBATS.o etsTargetFunction.o etsTargetFunctionWrapper.o etscalc.o etspolyroot.o makeBATSMatrices.o makeTBATSMatrices.o updateMatrices.o updateTBATSMatrices.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c EMInterwovenFastICA.cpp -o EMInterwovenFastICA.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c WtsFastICA.cpp -o WtsFastICA.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c WtsKde.cpp -o WtsKde.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o icamix.so EMInterwovenFastICA.o RcppExports.o WtsFastICA.o WtsKde.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/S4Vectors/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c CompressedAtomicList_utils.c -o CompressedAtomicList_utils.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/S4Vectors/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c CompressedIRangesList_class.c -o CompressedIRangesList_class.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/S4Vectors/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c CompressedList_class.c -o CompressedList_class.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/S4Vectors/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c GappedRanges_class.c -o GappedRanges_class.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/S4Vectors/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c Grouping_class.c -o Grouping_class.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/S4Vectors/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c IRanges_class.c -o IRanges_class.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/S4Vectors/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c IRanges_constructor.c -o IRanges_constructor.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/S4Vectors/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c NCList.c -o NCList.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/S4Vectors/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c R_init_IRanges.c -o R_init_IRanges.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/S4Vectors/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c RangedData_class.c -o RangedData_class.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/S4Vectors/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c Ranges_class.c -o Ranges_class.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/S4Vectors/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c Ranges_comparison.c -o Ranges_comparison.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/S4Vectors/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c RleViews_utils.c -o RleViews_utils.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/S4Vectors/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c S4Vectors_stubs.c -o S4Vectors_stubs.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/S4Vectors/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c SimpleRangesList_class.c -o SimpleRangesList_class.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/S4Vectors/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c coverage_methods.c -o coverage_methods.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/tmp/RcppDepends/lib/S4Vectors/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c inter_range_methods.c -o inter_range_methods.o
+ccache gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o IRanges.so CompressedAtomicList_utils.o CompressedIRangesList_class.o CompressedList_class.o GappedRanges_class.o Grouping_class.o IRanges_class.o IRanges_constructor.o NCList.o R_init_IRanges.o RangedData_class.o Ranges_class.o Ranges_comparison.o RleViews_utils.o S4Vectors_stubs.o SimpleRangesList_class.o coverage_methods.o inter_range_methods.o -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c evaluators.cpp -o evaluators.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c hfunc.cpp -o hfunc.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c integrate.cpp -o integrate.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c interp.cpp -o interp.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c kernels.cpp -o kernels.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c renorm.cpp -o renorm.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o kdecopula.so RcppExports.o evaluators.o hfunc.o integrate.o interp.o kernels.o renorm.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+  [1] "AdaptiveSparsity"     "AHR"                  "Amelia"              
+  [4] "ASPBay"               "BaBooN"               "BayesComm"           
+  [7] "bayesm"               "bayou"                "bcp"                 
+ [10] "bfa"                  "BIFIEsurvey"          "BIPOD"               
+ [13] "blockmodels"          "BTLLasso"             "bvarsv"              
+ [16] "ccaPP"                "cccp"                 "cda"                 
+ [19] "CDM"                  "ChannelAttribution"   "cladoRcpp"           
+ [22] "coala"                "coneproj"             "copCAR"              
+ [25] "cord"                 "CoxPlus"              "Crossover"           
+ [28] "DepthProc"            "dfcomb"               "dfmta"               
+ [31] "DiffusionRgqd"        "EloChoice"            "emIRT"               
+ [34] "EPGLM"                "EstHer"               "FastBandChol"        
+ [37] "fastM"                "FBFsearch"            "fdaMixed"            
+ [40] "FDRreg"               "FIACH"                "fICA"                
+ [43] "FisHiCal"             "flip"                 "forecast"            
+ [46] "fourPNO"              "FRESA.CAD"            "gaselect"            
+ [49] "GeneticTools"         "geoCount"             "GERGM"               
+ [52] "glamlasso"            "glcm"                 "glmgraph"            
+ [55] "GMCM"                 "gmum.r"               "gMWT"                
+ [58] "GPvam"                "gRain"                "graphicalVAR"        
+ [61] "gRbase"               "gRim"                 "growcurves"          
+ [64] "growfunctions"        "GSE"                  "hawkes"              
+ [67] "HLMdiag"              "hsphase"              "hypervolume"         
+ [70] "iBATCGH"              "icamix"               "iccbeta"             
+ [73] "iLaplace"             "immer"                "JAGUAR"              
+ [76] "kdecopula"            "Langevin"             "lpme"                
+ [79] "lsgl"                 "markophylo"           "markovchain"         
+ [82] "MAT"                  "matchingMarkets"      "matchingR"           
+ [85] "mcemGLM"              "mcIRT"                "mcmcse"              
+ [88] "metafolio"            "mets"                 "mev"                 
+ [91] "miceadds"             "mirt"                 "mirtCAT"             
+ [94] "miscF"                "mixedMem"             "mmand"               
+ [97] "Morpho"               "moveHMM"              "mp"                  
+[100] "Mposterior"           "MRIaggr"              "msgl"                
+[103] "MVB"                  "mvnfast"              "ngspatial"           
+[106] "oem"                  "onlinePCA"            "PanelCount"          
+[109] "pcalg"                "PedCNV"               "planar"              
+[112] "polyfreqs"            "PoweR"                "PPtreeViz"           
+[115] "prospectr"            "psd"                  "psgp"                
+[118] "quadrupen"            "quanteda"             "rags2ridges"         
+[121] "Rborist"              "rcppbugs"             "RcppDE"              
+[124] "RcppMLPACK"           "RealVAMS"             "redist"              
+[127] "resemble"             "revealedPrefs"        "rgam"                
+[130] "rmgarch"              "robustgam"            "robustHD"            
+[133] "robustreg"            "rotations"            "Rphylopars"          
+[136] "rstpm2"               "rugarch"              "sbmSDP"              
+[139] "SBSA"                 "SelvarMix"            "sgd"                 
+[142] "sglOptim"             "sirt"                 "slfm"                
+[145] "snipEM"               "SparseFactorAnalysis" "sparsereg"           
+[148] "SpatialEpi"           "SpatialTools"         "SpatPCA"             
+[151] "spBayesSurv"          "spduration"           "starma"              
+[154] "stm"                  "stochvol"             "strum"               
+[157] "survAccuracyMeasures" "SVMMatch"             "synlik"              
+[160] "TAM"                  "TauStar"              "TED"                 
+[163] "timma"                "treeclim"             "unmarked"            
+[166] "VarSelLCM"            "zic"                 
+
+RESULT for AdaptiveSparsity_1.4.tar.gz : success (1 of 167, 1 good, 0 bad) -- Avg runtime is 22.2 sec, exp. finish in 61.5 min at 07:37:54 on 26-Oct-2015
+
+RESULT for AHR_1.2.tar.gz : success (2 of 167, 2 good, 0 bad) -- Avg runtime is 23.6 sec, exp. finish in 65 min at 07:41:47 on 26-Oct-2015
+
+RESULT for Amelia_1.7.3.tar.gz : success (3 of 167, 3 good, 0 bad) -- Avg runtime is 31.6 sec, exp. finish in 86.5 min at 08:04:04 on 26-Oct-2015
+
+RESULT for ASPBay_1.2.tar.gz : success (4 of 167, 4 good, 0 bad) -- Avg runtime is 32.5 sec, exp. finish in 88.3 min at 08:06:33 on 26-Oct-2015
+
+RESULT for BaBooN_0.2-0.tar.gz : failure (5 of 167, 4 good, 1 bad) -- Avg runtime is 33.6 sec, exp. finish in 90.7 min at 08:09:31 on 26-Oct-2015
+
+RESULT for BayesComm_0.1-2.tar.gz : success (6 of 167, 5 good, 1 bad) -- Avg runtime is 34 sec, exp. finish in 91.3 min at 08:10:46 on 26-Oct-2015
+
+RESULT for bayesm_3.0-2.tar.gz : success (7 of 167, 6 good, 1 bad) -- Avg runtime is 80.4 sec, exp. finish in 214.4 min at 10:19:51 on 26-Oct-2015
+
+RESULT for bayou_1.1.0.tar.gz : success (8 of 167, 7 good, 1 bad) -- Avg runtime is 77.6 sec, exp. finish in 205.7 min at 10:12:04 on 26-Oct-2015
+
+RESULT for bcp_4.0.0.tar.gz : success (9 of 167, 8 good, 1 bad) -- Avg runtime is 77.2 sec, exp. finish in 203.3 min at 10:10:58 on 26-Oct-2015
+
+RESULT for bfa_0.3.1.tar.gz : success (10 of 167, 9 good, 1 bad) -- Avg runtime is 77.1 sec, exp. finish in 201.8 min at 10:10:39 on 26-Oct-2015
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c jack_dataprep.cpp -o jack_dataprep.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c univar.cpp -o univar.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o BIFIEsurvey.so jack_dataprep.o univar.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+Note: the specification for S3 class “family” in package ‘MatrixModels’ seems equivalent to one from package ‘lme4’: not turning on duplicate class definitions for this class.
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for BIFIEsurvey_1.6-0.tar.gz : success (11 of 167, 10 good, 1 bad) -- Avg runtime is 86.9 sec, exp. finish in 225.8 min at 10:37:48 on 26-Oct-2015
+
+RESULT for BIPOD_0.2.1.tar.gz : success (12 of 167, 11 good, 1 bad) -- Avg runtime is 84 sec, exp. finish in 216.9 min at 10:29:43 on 26-Oct-2015
+
+RESULT for blockmodels_1.1.1.tar.gz : success (13 of 167, 12 good, 1 bad) -- Avg runtime is 83.5 sec, exp. finish in 214.3 min at 10:28:26 on 26-Oct-2015
+
+RESULT for BTLLasso_0.1-2.tar.gz : success (14 of 167, 13 good, 1 bad) -- Avg runtime is 81.8 sec, exp. finish in 208.6 min at 10:23:44 on 26-Oct-2015
+
+RESULT for bvarsv_1.0.tar.gz : success (15 of 167, 14 good, 1 bad) -- Avg runtime is 78.5 sec, exp. finish in 198.9 min at 10:14:36 on 26-Oct-2015
+
+RESULT for ccaPP_0.3.0.tar.gz : success (16 of 167, 15 good, 1 bad) -- Avg runtime is 77.3 sec, exp. finish in 194.6 min at 10:11:13 on 26-Oct-2015
+
+RESULT for cccp_0.2-4.tar.gz : success (17 of 167, 16 good, 1 bad) -- Avg runtime is 81.7 sec, exp. finish in 204.2 min at 10:23:22 on 26-Oct-2015
+
+RESULT for cda_1.5.1.tar.gz : success (18 of 167, 17 good, 1 bad) -- Avg runtime is 81.1 sec, exp. finish in 201.4 min at 10:21:47 on 26-Oct-2015
+
+RESULT for CDM_4.5-0.tar.gz : success (19 of 167, 18 good, 1 bad) -- Avg runtime is 83.1 sec, exp. finish in 205 min at 10:27:23 on 26-Oct-2015
+
+RESULT for ChannelAttribution_1.2.tar.gz : success (20 of 167, 19 good, 1 bad) -- Avg runtime is 80.1 sec, exp. finish in 196.3 min at 10:19:05 on 26-Oct-2015
+
+RESULT for cladoRcpp_0.14.4.tar.gz : success (21 of 167, 20 good, 1 bad) -- Avg runtime is 77.6 sec, exp. finish in 188.9 min at 10:12:04 on 26-Oct-2015
+
+RESULT for coala_0.1.1.tar.gz : success (22 of 167, 21 good, 1 bad) -- Avg runtime is 77.3 sec, exp. finish in 186.8 min at 10:11:09 on 26-Oct-2015
+
+RESULT for coneproj_1.9.tar.gz : success (23 of 167, 22 good, 1 bad) -- Avg runtime is 74.6 sec, exp. finish in 179.1 min at 10:03:47 on 26-Oct-2015
+
+RESULT for copCAR_1.0-1.tar.gz : success (24 of 167, 23 good, 1 bad) -- Avg runtime is 73 sec, exp. finish in 174.1 min at 09:59:21 on 26-Oct-2015
+
+RESULT for cord_0.1.1.tar.gz : success (25 of 167, 24 good, 1 bad) -- Avg runtime is 71.3 sec, exp. finish in 168.8 min at 09:54:33 on 26-Oct-2015
+
+RESULT for CoxPlus_1.1.1.tar.gz : success (26 of 167, 25 good, 1 bad) -- Avg runtime is 70.2 sec, exp. finish in 164.9 min at 09:51:17 on 26-Oct-2015
+
+RESULT for Crossover_0.1-15.tar.gz : success (27 of 167, 26 good, 1 bad) -- Avg runtime is 71.6 sec, exp. finish in 167.2 min at 09:55:27 on 26-Oct-2015
+
+RESULT for DepthProc_1.0.3.tar.gz : success (28 of 167, 27 good, 1 bad) -- Avg runtime is 73.1 sec, exp. finish in 169.4 min at 09:59:32 on 26-Oct-2015
+
+RESULT for dfcomb_2.1-5.tar.gz : success (29 of 167, 28 good, 1 bad) -- Avg runtime is 71.8 sec, exp. finish in 165.2 min at 09:55:54 on 26-Oct-2015
+
+RESULT for dfmta_1.3-3.tar.gz : success (30 of 167, 29 good, 1 bad) -- Avg runtime is 70.2 sec, exp. finish in 160.3 min at 09:51:23 on 26-Oct-2015
+
+RESULT for DiffusionRgqd_0.1.1.tar.gz : success (31 of 167, 30 good, 1 bad) -- Avg runtime is 69.3 sec, exp. finish in 157.1 min at 09:48:58 on 26-Oct-2015
+
+RESULT for EloChoice_0.29.tar.gz : success (32 of 167, 31 good, 1 bad) -- Avg runtime is 68.1 sec, exp. finish in 153.2 min at 09:45:33 on 26-Oct-2015
+
+RESULT for emIRT_0.0.5.tar.gz : success (33 of 167, 32 good, 1 bad) -- Avg runtime is 79.1 sec, exp. finish in 176.7 min at 10:16:12 on 26-Oct-2015
+
+RESULT for EPGLM_1.1.tar.gz : success (34 of 167, 33 good, 1 bad) -- Avg runtime is 77.6 sec, exp. finish in 172 min at 10:11:59 on 26-Oct-2015
+
+RESULT for EstHer_1.0.tar.gz : success (35 of 167, 34 good, 1 bad) -- Avg runtime is 76.9 sec, exp. finish in 169.3 min at 10:10:13 on 26-Oct-2015
+
+RESULT for FastBandChol_0.1.1.tar.gz : success (36 of 167, 35 good, 1 bad) -- Avg runtime is 75.5 sec, exp. finish in 164.8 min at 10:06:09 on 26-Oct-2015
+
+RESULT for fastM_0.0-2.tar.gz : success (37 of 167, 36 good, 1 bad) -- Avg runtime is 74.3 sec, exp. finish in 160.9 min at 10:02:42 on 26-Oct-2015
+
+RESULT for FBFsearch_1.0.tar.gz : success (38 of 167, 37 good, 1 bad) -- Avg runtime is 73 sec, exp. finish in 156.9 min at 09:59:11 on 26-Oct-2015
+
+RESULT for fdaMixed_0.4.tar.gz : success (39 of 167, 38 good, 1 bad) -- Avg runtime is 72.9 sec, exp. finish in 155.6 min at 09:59:03 on 26-Oct-2015
+
+RESULT for FDRreg_0.1.tar.gz : success (40 of 167, 39 good, 1 bad) -- Avg runtime is 72.9 sec, exp. finish in 154.3 min at 09:58:58 on 26-Oct-2015
+
+RESULT for FIACH_0.1.2.tar.gz : success (41 of 167, 40 good, 1 bad) -- Avg runtime is 72.3 sec, exp. finish in 151.8 min at 09:57:15 on 26-Oct-2015
+
+RESULT for fICA_1.0-3.tar.gz : success (42 of 167, 41 good, 1 bad) -- Avg runtime is 71.3 sec, exp. finish in 148.5 min at 09:54:28 on 26-Oct-2015
+
+RESULT for FisHiCal_1.1.tar.gz : success (43 of 167, 42 good, 1 bad) -- Avg runtime is 70.3 sec, exp. finish in 145.2 min at 09:51:35 on 26-Oct-2015
+
+RESULT for flip_2.4.3.tar.gz : success (44 of 167, 43 good, 1 bad) -- Avg runtime is 70.1 sec, exp. finish in 143.7 min at 09:51:06 on 26-Oct-2015
+
+RESULT for forecast_6.2.tar.gz : success (45 of 167, 44 good, 1 bad) -- Avg runtime is 69.9 sec, exp. finish in 142.2 min at 09:50:42 on 26-Oct-2015
+
+RESULT for fourPNO_1.0.1.tar.gz : success (46 of 167, 45 good, 1 bad) -- Avg runtime is 69.1 sec, exp. finish in 139.3 min at 09:48:17 on 26-Oct-2015
+
+RESULT for FRESA.CAD_2.1.3.tar.gz : success (47 of 167, 46 good, 1 bad) -- Avg runtime is 69.3 sec, exp. finish in 138.5 min at 09:48:47 on 26-Oct-2015
+
+RESULT for gaselect_1.0.5.tar.gz : success (48 of 167, 47 good, 1 bad) -- Avg runtime is 70.6 sec, exp. finish in 140 min at 09:52:27 on 26-Oct-2015
+
+RESULT for GeneticTools_0.3.1.tar.gz : success (49 of 167, 48 good, 1 bad) -- Avg runtime is 70.6 sec, exp. finish in 138.8 min at 09:52:31 on 26-Oct-2015
+
+RESULT for geoCount_1.150120.tar.gz : success (50 of 167, 49 good, 1 bad) -- Avg runtime is 70.5 sec, exp. finish in 137.5 min at 09:52:15 on 26-Oct-2015
+
+RESULT for GERGM_0.3.2.tar.gz : success (51 of 167, 50 good, 1 bad) -- Avg runtime is 69.7 sec, exp. finish in 134.7 min at 09:50:01 on 26-Oct-2015
+
+RESULT for glamlasso_1.0.tar.gz : success (52 of 167, 51 good, 1 bad) -- Avg runtime is 69.2 sec, exp. finish in 132.6 min at 09:48:32 on 26-Oct-2015
+
+RESULT for glcm_1.2.tar.gz : success (53 of 167, 52 good, 1 bad) -- Avg runtime is 68.5 sec, exp. finish in 130.1 min at 09:46:40 on 26-Oct-2015
+
+RESULT for glmgraph_1.0.3.tar.gz : success (54 of 167, 53 good, 1 bad) -- Avg runtime is 68.7 sec, exp. finish in 129.3 min at 09:47:09 on 26-Oct-2015
+
+RESULT for GMCM_1.2.2.tar.gz : success (55 of 167, 54 good, 1 bad) -- Avg runtime is 68.6 sec, exp. finish in 128.1 min at 09:47:03 on 26-Oct-2015
+
+RESULT for gmum.r_0.2.1.tar.gz : success (56 of 167, 55 good, 1 bad) -- Avg runtime is 72.9 sec, exp. finish in 134.9 min at 09:58:58 on 26-Oct-2015
+
+RESULT for gMWT_1.0.tar.gz : success (57 of 167, 56 good, 1 bad) -- Avg runtime is 72.4 sec, exp. finish in 132.7 min at 09:57:30 on 26-Oct-2015
+
+RESULT for GPvam_3.0-3.tar.gz : success (58 of 167, 57 good, 1 bad) -- Avg runtime is 72.2 sec, exp. finish in 131.2 min at 09:57:04 on 26-Oct-2015
+
+RESULT for gRain_1.2-4.tar.gz : success (59 of 167, 58 good, 1 bad) -- Avg runtime is 72.3 sec, exp. finish in 130.2 min at 09:57:24 on 26-Oct-2015
+
+RESULT for graphicalVAR_0.1.3.tar.gz : success (60 of 167, 59 good, 1 bad) -- Avg runtime is 72.4 sec, exp. finish in 129.1 min at 09:57:35 on 26-Oct-2015
+
+RESULT for gRbase_1.7-2.tar.gz : success (61 of 167, 60 good, 1 bad) -- Avg runtime is 74.4 sec, exp. finish in 131.4 min at 10:03:06 on 26-Oct-2015
+
+RESULT for gRim_0.1-17.tar.gz : success (62 of 167, 61 good, 1 bad) -- Avg runtime is 74.3 sec, exp. finish in 130.1 min at 10:02:57 on 26-Oct-2015
+
+RESULT for growcurves_0.2.3.9.tar.gz : success (63 of 167, 62 good, 1 bad) -- Avg runtime is 76.9 sec, exp. finish in 133.3 min at 10:10:02 on 26-Oct-2015
+
+RESULT for growfunctions_0.11.tar.gz : success (64 of 167, 63 good, 1 bad) -- Avg runtime is 78.9 sec, exp. finish in 135.4 min at 10:15:35 on 26-Oct-2015
+
+RESULT for GSE_3.2.2.tar.gz : success (65 of 167, 64 good, 1 bad) -- Avg runtime is 78.5 sec, exp. finish in 133.4 min at 10:14:24 on 26-Oct-2015
+
+RESULT for hawkes_0.0-4.tar.gz : success (66 of 167, 65 good, 1 bad) -- Avg runtime is 77.7 sec, exp. finish in 130.7 min at 10:12:13 on 26-Oct-2015
+
+RESULT for HLMdiag_0.3.0.tar.gz : success (67 of 167, 66 good, 1 bad) -- Avg runtime is 78.1 sec, exp. finish in 130.2 min at 10:13:25 on 26-Oct-2015
+
+RESULT for hsphase_2.0.1.tar.gz : success (68 of 167, 67 good, 1 bad) -- Avg runtime is 77.8 sec, exp. finish in 128.4 min at 10:12:42 on 26-Oct-2015
+
+RESULT for hypervolume_1.4.tar.gz : success (69 of 167, 68 good, 1 bad) -- Avg runtime is 77.5 sec, exp. finish in 126.5 min at 10:11:37 on 26-Oct-2015
+
+RESULT for iBATCGH_1.3.tar.gz : success (70 of 167, 69 good, 1 bad) -- Avg runtime is 79.3 sec, exp. finish in 128.1 min at 10:16:40 on 26-Oct-2015
+
+RESULT for icamix_1.0.4.tar.gz : success (71 of 167, 70 good, 1 bad) -- Avg runtime is 78.7 sec, exp. finish in 126 min at 10:15:10 on 26-Oct-2015
+
+RESULT for iccbeta_1.0.tar.gz : success (72 of 167, 71 good, 1 bad) -- Avg runtime is 78.4 sec, exp. finish in 124.1 min at 10:14:16 on 26-Oct-2015
+
+RESULT for iLaplace_1.0.0.tar.gz : success (73 of 167, 72 good, 1 bad) -- Avg runtime is 77.8 sec, exp. finish in 121.8 min at 10:12:27 on 26-Oct-2015
+
+RESULT for immer_0.1-1.tar.gz : success (74 of 167, 73 good, 1 bad) -- Avg runtime is 78.3 sec, exp. finish in 121.3 min at 10:13:54 on 26-Oct-2015
+
+RESULT for JAGUAR_3.0.0.tar.gz : success (75 of 167, 74 good, 1 bad) -- Avg runtime is 78.2 sec, exp. finish in 119.8 min at 10:13:33 on 26-Oct-2015
+
+RESULT for kdecopula_0.4.0.tar.gz : success (76 of 167, 75 good, 1 bad) -- Avg runtime is 78.3 sec, exp. finish in 118.7 min at 10:13:56 on 26-Oct-2015
+
+RESULT for Langevin_1.0.3.tar.gz : success (77 of 167, 76 good, 1 bad) -- Avg runtime is 77.9 sec, exp. finish in 116.9 min at 10:12:54 on 26-Oct-2015
+
+RESULT for lpme_1.0.1.tar.gz : success (78 of 167, 77 good, 1 bad) -- Avg runtime is 77.4 sec, exp. finish in 114.8 min at 10:11:30 on 26-Oct-2015
+
+RESULT for lsgl_1.2.0.tar.gz : success (79 of 167, 78 good, 1 bad) -- Avg runtime is 77.5 sec, exp. finish in 113.7 min at 10:11:46 on 26-Oct-2015
+
+RESULT for markophylo_1.0.2.tar.gz : success (80 of 167, 79 good, 1 bad) -- Avg runtime is 77.3 sec, exp. finish in 112.1 min at 10:11:17 on 26-Oct-2015
+
+RESULT for markovchain_0.4.2.tar.gz : success (81 of 167, 80 good, 1 bad) -- Avg runtime is 77.9 sec, exp. finish in 111.6 min at 10:12:43 on 26-Oct-2015
+
+RESULT for MAT_2.2.tar.gz : success (82 of 167, 81 good, 1 bad) -- Avg runtime is 77.5 sec, exp. finish in 109.8 min at 10:11:48 on 26-Oct-2015
+
+RESULT for matchingMarkets_0.1-7.tar.gz : success (83 of 167, 82 good, 1 bad) -- Avg runtime is 77.1 sec, exp. finish in 107.9 min at 10:10:35 on 26-Oct-2015
+
+RESULT for matchingR_1.1.1.tar.gz : success (84 of 167, 83 good, 1 bad) -- Avg runtime is 76.7 sec, exp. finish in 106.1 min at 10:09:34 on 26-Oct-2015
+
+RESULT for mcemGLM_1.0.tar.gz : success (85 of 167, 84 good, 1 bad) -- Avg runtime is 79.3 sec, exp. finish in 108.3 min at 10:16:39 on 26-Oct-2015
+
+RESULT for mcIRT_0.41.tar.gz : success (86 of 167, 85 good, 1 bad) -- Avg runtime is 79.3 sec, exp. finish in 107.1 min at 10:16:47 on 26-Oct-2015
+
+RESULT for mcmcse_1.1-2.tar.gz : success (87 of 167, 86 good, 1 bad) -- Avg runtime is 78.9 sec, exp. finish in 105.2 min at 10:15:33 on 26-Oct-2015
+
+RESULT for metafolio_0.1.0.tar.gz : success (88 of 167, 87 good, 1 bad) -- Avg runtime is 78.3 sec, exp. finish in 103.1 min at 10:14:05 on 26-Oct-2015
+
+RESULT for mets_1.1.1.tar.gz : success (89 of 167, 88 good, 1 bad) -- Avg runtime is 79.5 sec, exp. finish in 103.4 min at 10:17:21 on 26-Oct-2015
+
+RESULT for mev_1.3.tar.gz : success (90 of 167, 89 good, 1 bad) -- Avg runtime is 79 sec, exp. finish in 101.4 min at 10:15:54 on 26-Oct-2015
+
+RESULT for miceadds_1.3-0.tar.gz : failure (91 of 167, 89 good, 2 bad) -- Avg runtime is 79.8 sec, exp. finish in 101.1 min at 10:18:13 on 26-Oct-2015
+
+RESULT for mirt_1.13.tar.gz : success (92 of 167, 90 good, 2 bad) -- Avg runtime is 80.4 sec, exp. finish in 100.5 min at 10:19:56 on 26-Oct-2015
+
+RESULT for mirtCAT_0.6.tar.gz : success (93 of 167, 91 good, 2 bad) -- Avg runtime is 80.3 sec, exp. finish in 99 min at 10:19:29 on 26-Oct-2015
+
+RESULT for miscF_0.1-2.tar.gz : success (94 of 167, 92 good, 2 bad) -- Avg runtime is 79.7 sec, exp. finish in 97 min at 10:17:57 on 26-Oct-2015
+
+RESULT for mixedMem_1.1.0.tar.gz : success (95 of 167, 93 good, 2 bad) -- Avg runtime is 80.3 sec, exp. finish in 96.3 min at 10:19:30 on 26-Oct-2015
+
+RESULT for mmand_1.2.0.tar.gz : success (96 of 167, 94 good, 2 bad) -- Avg runtime is 79.9 sec, exp. finish in 94.6 min at 10:18:31 on 26-Oct-2015
+
+RESULT for Morpho_2.3.0.tar.gz : success (97 of 167, 95 good, 2 bad) -- Avg runtime is 81.2 sec, exp. finish in 94.7 min at 10:22:04 on 26-Oct-2015
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c nLogLike.cpp -o nLogLike.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c trMatrix.cpp -o trMatrix.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o moveHMM.so RcppExports.o nLogLike.o trMatrix.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for moveHMM_1.0.tar.gz : success (98 of 167, 96 good, 2 bad) -- Avg runtime is 81.1 sec, exp. finish in 93.2 min at 10:21:39 on 26-Oct-2015
+
+RESULT for mp_0.3.1.tar.gz : success (99 of 167, 97 good, 2 bad) -- Avg runtime is 80.7 sec, exp. finish in 91.4 min at 10:20:31 on 26-Oct-2015
+
+RESULT for Mposterior_0.1.2.tar.gz : success (100 of 167, 98 good, 2 bad) -- Avg runtime is 80.3 sec, exp. finish in 89.7 min at 10:19:36 on 26-Oct-2015
+
+RESULT for MRIaggr_1.1.2.tar.gz : failure (101 of 167, 98 good, 3 bad) -- Avg runtime is 80.1 sec, exp. finish in 88.1 min at 10:18:59 on 26-Oct-2015
+
+RESULT for msgl_2.2.0.tar.gz : failure (102 of 167, 98 good, 4 bad) -- Avg runtime is 80.1 sec, exp. finish in 86.7 min at 10:18:54 on 26-Oct-2015
+
+RESULT for MVB_1.1.tar.gz : success (103 of 167, 99 good, 4 bad) -- Avg runtime is 80.1 sec, exp. finish in 85.5 min at 10:19:05 on 26-Oct-2015
+
+RESULT for mvnfast_0.1.3.tar.gz : success (104 of 167, 100 good, 4 bad) -- Avg runtime is 79.8 sec, exp. finish in 83.7 min at 10:18:01 on 26-Oct-2015
+
+RESULT for ngspatial_1.0-5.tar.gz : success (105 of 167, 101 good, 4 bad) -- Avg runtime is 79.4 sec, exp. finish in 82.1 min at 10:17:09 on 26-Oct-2015
+
+RESULT for oem_1.02.1.tar.gz : success (106 of 167, 102 good, 4 bad) -- Avg runtime is 78.9 sec, exp. finish in 80.2 min at 10:15:41 on 26-Oct-2015
+
+RESULT for onlinePCA_1.2.tar.gz : success (107 of 167, 103 good, 4 bad) -- Avg runtime is 78.9 sec, exp. finish in 78.9 min at 10:15:39 on 26-Oct-2015
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c matrix.cpp -o matrix.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o PanelCount.so RcppExports.o matrix.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for PanelCount_1.0.9.tar.gz : success (108 of 167, 104 good, 4 bad) -- Avg runtime is 78.5 sec, exp. finish in 77.2 min at 10:14:26 on 26-Oct-2015
+
+RESULT for pcalg_2.2-4.tar.gz : success (109 of 167, 105 good, 4 bad) -- Avg runtime is 80.2 sec, exp. finish in 77.6 min at 10:19:21 on 26-Oct-2015
+
+RESULT for PedCNV_0.1.tar.gz : success (110 of 167, 106 good, 4 bad) -- Avg runtime is 80 sec, exp. finish in 76 min at 10:18:41 on 26-Oct-2015
+
+RESULT for planar_1.5.2.tar.gz : success (111 of 167, 107 good, 4 bad) -- Avg runtime is 79.8 sec, exp. finish in 74.5 min at 10:18:08 on 26-Oct-2015
+
+RESULT for polyfreqs_1.0.0.tar.gz : success (112 of 167, 108 good, 4 bad) -- Avg runtime is 79.4 sec, exp. finish in 72.8 min at 10:17:06 on 26-Oct-2015
+
+RESULT for PoweR_1.0.4.tar.gz : success (113 of 167, 109 good, 4 bad) -- Avg runtime is 79.2 sec, exp. finish in 71.3 min at 10:16:27 on 26-Oct-2015
+
+RESULT for PPtreeViz_1.3.0.tar.gz : success (114 of 167, 110 good, 4 bad) -- Avg runtime is 78.8 sec, exp. finish in 69.6 min at 10:15:24 on 26-Oct-2015
+
+RESULT for prospectr_0.1.3.tar.gz : success (115 of 167, 111 good, 4 bad) -- Avg runtime is 78.7 sec, exp. finish in 68.2 min at 10:15:09 on 26-Oct-2015
+
+RESULT for psd_1.0-1.tar.gz : success (116 of 167, 112 good, 4 bad) -- Avg runtime is 78.4 sec, exp. finish in 66.7 min at 10:14:17 on 26-Oct-2015
+
+RESULT for psgp_0.3-6.tar.gz : success (117 of 167, 113 good, 4 bad) -- Avg runtime is 79.4 sec, exp. finish in 66.2 min at 10:17:03 on 26-Oct-2015
+
+RESULT for quadrupen_0.2-4.tar.gz : success (118 of 167, 114 good, 4 bad) -- Avg runtime is 79.6 sec, exp. finish in 65 min at 10:17:37 on 26-Oct-2015
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c wordfish.cpp -o wordfish.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o quanteda.so RcppExports.o wordfish.o -lblas -llapack -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for quanteda_0.8.6-0.tar.gz : success (119 of 167, 115 good, 4 bad) -- Avg runtime is 79.8 sec, exp. finish in 63.9 min at 10:18:16 on 26-Oct-2015
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c rags2ridges.cpp -o rags2ridges.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o rags2ridges.so RcppExports.o rags2ridges.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for rags2ridges_2.0.tar.gz : success (120 of 167, 116 good, 4 bad) -- Avg runtime is 80 sec, exp. finish in 62.7 min at 10:18:46 on 26-Oct-2015
+
+RESULT for Rborist_0.1-0.tar.gz : success (121 of 167, 117 good, 4 bad) -- Avg runtime is 79.7 sec, exp. finish in 61.1 min at 10:18:00 on 26-Oct-2015
+
+RESULT for rcppbugs_0.1.4.1.tar.gz : success (122 of 167, 118 good, 4 bad) -- Avg runtime is 79.5 sec, exp. finish in 59.6 min at 10:17:21 on 26-Oct-2015
+
+RESULT for RcppDE_0.1.4.tar.gz : success (123 of 167, 119 good, 4 bad) -- Avg runtime is 79.2 sec, exp. finish in 58.1 min at 10:16:35 on 26-Oct-2015
+
+RESULT for RcppMLPACK_1.0.10-2.tar.gz : success (124 of 167, 120 good, 4 bad) -- Avg runtime is 81.1 sec, exp. finish in 58.1 min at 10:21:49 on 26-Oct-2015
+
+RESULT for RealVAMS_0.3-2.tar.gz : success (125 of 167, 121 good, 4 bad) -- Avg runtime is 80.9 sec, exp. finish in 56.6 min at 10:21:14 on 26-Oct-2015
+
+RESULT for redist_1.2.tar.gz : success (126 of 167, 122 good, 4 bad) -- Avg runtime is 81.1 sec, exp. finish in 55.4 min at 10:21:40 on 26-Oct-2015
+
+RESULT for resemble_1.1.1.tar.gz : success (127 of 167, 123 good, 4 bad) -- Avg runtime is 80.8 sec, exp. finish in 53.9 min at 10:21:00 on 26-Oct-2015
+
+RESULT for revealedPrefs_0.2.tar.gz : success (128 of 167, 124 good, 4 bad) -- Avg runtime is 80.6 sec, exp. finish in 52.4 min at 10:20:28 on 26-Oct-2015
+
+RESULT for rgam_0.6.3.tar.gz : success (129 of 167, 125 good, 4 bad) -- Avg runtime is 80.5 sec, exp. finish in 51 min at 10:20:03 on 26-Oct-2015
+
+RESULT for rmgarch_1.2-9.tar.gz : success (130 of 167, 126 good, 4 bad) -- Avg runtime is 81.3 sec, exp. finish in 50.1 min at 10:22:14 on 26-Oct-2015
+
+RESULT for robustgam_0.1.7.tar.gz : success (131 of 167, 127 good, 4 bad) -- Avg runtime is 81.1 sec, exp. finish in 48.6 min at 10:21:40 on 26-Oct-2015
+
+RESULT for robustHD_0.5.0.tar.gz : success (132 of 167, 128 good, 4 bad) -- Avg runtime is 81.3 sec, exp. finish in 47.4 min at 10:22:14 on 26-Oct-2015
+
+RESULT for robustreg_0.1-9.tar.gz : success (133 of 167, 129 good, 4 bad) -- Avg runtime is 81.1 sec, exp. finish in 45.9 min at 10:21:43 on 26-Oct-2015
+
+RESULT for rotations_1.4.tar.gz : success (134 of 167, 130 good, 4 bad) -- Avg runtime is 81.2 sec, exp. finish in 44.6 min at 10:21:59 on 26-Oct-2015
+
+RESULT for Rphylopars_0.1.1.tar.gz : success (135 of 167, 131 good, 4 bad) -- Avg runtime is 81.2 sec, exp. finish in 43.3 min at 10:22:00 on 26-Oct-2015
+
+RESULT for rstpm2_1.2.2.tar.gz : success (136 of 167, 132 good, 4 bad) -- Avg runtime is 81.2 sec, exp. finish in 42 min at 10:22:06 on 26-Oct-2015
+
+RESULT for rugarch_1.3-6.tar.gz : success (137 of 167, 133 good, 4 bad) -- Avg runtime is 82 sec, exp. finish in 41 min at 10:24:09 on 26-Oct-2015
+
+RESULT for sbmSDP_0.2.tar.gz : success (138 of 167, 134 good, 4 bad) -- Avg runtime is 81.6 sec, exp. finish in 39.4 min at 10:23:07 on 26-Oct-2015
+
+RESULT for SBSA_0.2.3.tar.gz : success (139 of 167, 135 good, 4 bad) -- Avg runtime is 81.6 sec, exp. finish in 38.1 min at 10:23:07 on 26-Oct-2015
+
+RESULT for SelvarMix_1.1.tar.gz : success (140 of 167, 136 good, 4 bad) -- Avg runtime is 81.6 sec, exp. finish in 36.7 min at 10:23:16 on 26-Oct-2015
+
+RESULT for sgd_1.0.tar.gz : success (141 of 167, 137 good, 4 bad) -- Avg runtime is 81.4 sec, exp. finish in 35.3 min at 10:22:28 on 26-Oct-2015
+
+RESULT for sglOptim_1.2.0.tar.gz : success (142 of 167, 138 good, 4 bad) -- Avg runtime is 81.6 sec, exp. finish in 34 min at 10:23:02 on 26-Oct-2015
+
+RESULT for sirt_1.8-9.tar.gz : success (143 of 167, 139 good, 4 bad) -- Avg runtime is 83.3 sec, exp. finish in 33.3 min at 10:27:58 on 26-Oct-2015
+
+RESULT for slfm_0.2.2.tar.gz : success (144 of 167, 140 good, 4 bad) -- Avg runtime is 83 sec, exp. finish in 31.8 min at 10:27:11 on 26-Oct-2015
+
+RESULT for snipEM_1.0.tar.gz : success (145 of 167, 141 good, 4 bad) -- Avg runtime is 82.7 sec, exp. finish in 30.3 min at 10:26:14 on 26-Oct-2015
+
+RESULT for SparseFactorAnalysis_1.0.tar.gz : success (146 of 167, 142 good, 4 bad) -- Avg runtime is 82.5 sec, exp. finish in 28.9 min at 10:25:44 on 26-Oct-2015
+
+RESULT for sparsereg_1.1.tar.gz : success (147 of 167, 143 good, 4 bad) -- Avg runtime is 82.5 sec, exp. finish in 27.5 min at 10:25:39 on 26-Oct-2015
+
+RESULT for SpatialEpi_1.2.1.tar.gz : success (148 of 167, 144 good, 4 bad) -- Avg runtime is 82.4 sec, exp. finish in 26.1 min at 10:25:25 on 26-Oct-2015
+
+RESULT for SpatialTools_1.0.0.tar.gz : success (149 of 167, 145 good, 4 bad) -- Avg runtime is 82.2 sec, exp. finish in 24.7 min at 10:24:55 on 26-Oct-2015
+
+RESULT for SpatPCA_1.0.0.2.tar.gz : success (150 of 167, 146 good, 4 bad) -- Avg runtime is 82 sec, exp. finish in 23.2 min at 10:24:11 on 26-Oct-2015
+
+RESULT for spBayesSurv_1.0.3.tar.gz : success (151 of 167, 147 good, 4 bad) -- Avg runtime is 82.6 sec, exp. finish in 22 min at 10:26:04 on 26-Oct-2015
+
+RESULT for spduration_0.13.1.tar.gz : success (152 of 167, 148 good, 4 bad) -- Avg runtime is 82.4 sec, exp. finish in 20.6 min at 10:25:29 on 26-Oct-2015
+
+RESULT for starma_1.1.tar.gz : success (153 of 167, 149 good, 4 bad) -- Avg runtime is 82.2 sec, exp. finish in 19.2 min at 10:24:51 on 26-Oct-2015
+
+RESULT for stm_1.1.0.tar.gz : success (154 of 167, 150 good, 4 bad) -- Avg runtime is 82.2 sec, exp. finish in 17.8 min at 10:24:45 on 26-Oct-2015
+
+RESULT for stochvol_1.2.0.tar.gz : success (155 of 167, 151 good, 4 bad) -- Avg runtime is 82 sec, exp. finish in 16.4 min at 10:24:18 on 26-Oct-2015
+
+RESULT for strum_0.6.2.tar.gz : success (156 of 167, 152 good, 4 bad) -- Avg runtime is 82 sec, exp. finish in 15 min at 10:24:21 on 26-Oct-2015
+
+RESULT for survAccuracyMeasures_1.2.tar.gz : success (157 of 167, 153 good, 4 bad) -- Avg runtime is 81.9 sec, exp. finish in 13.6 min at 10:23:58 on 26-Oct-2015
+
+RESULT for SVMMatch_1.1.tar.gz : success (158 of 167, 154 good, 4 bad) -- Avg runtime is 81.6 sec, exp. finish in 12.2 min at 10:23:02 on 26-Oct-2015
+
+RESULT for synlik_0.1.1.tar.gz : success (159 of 167, 155 good, 4 bad) -- Avg runtime is 81.5 sec, exp. finish in 10.9 min at 10:23:00 on 26-Oct-2015
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c irt_likelihood_cfa2.cpp -o irt_likelihood_cfa2.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c msq_itemfit.cpp -o msq_itemfit.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c prior_normal_density_c.cpp -o prior_normal_density_c.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c rowcumsums_source.cpp -o rowcumsums_source.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tam_calcexp.cpp -o tam_calcexp.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c tam_caux.c -o tam_caux.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tam_ctt_c.cpp -o tam_ctt_c.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tam_fit_simul.cpp -o tam_fit_simul.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tam_helper_ccode.cpp -o tam_helper_ccode.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tam_mml_3pl_helper_functions.cpp -o tam_mml_3pl_helper_functions.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tam_mml_mfr_helper.cpp -o tam_mml_mfr_helper.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tam_modelfit_aux.cpp -o tam_modelfit_aux.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c tamwle_helper_ccode.cpp -o tamwle_helper_ccode.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o TAM.so irt_likelihood_cfa2.o msq_itemfit.o prior_normal_density_c.o rowcumsums_source.o tam_calcexp.o tam_caux.o tam_ctt_c.o tam_fit_simul.o tam_helper_ccode.o tam_mml_3pl_helper_functions.o tam_mml_mfr_helper.o tam_modelfit_aux.o tamwle_helper_ccode.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for TAM_1.14-0.tar.gz : success (160 of 167, 156 good, 4 bad) -- Avg runtime is 82.2 sec, exp. finish in 9.6 min at 10:24:49 on 26-Oct-2015
+
+RESULT for TauStar_1.0.0.tar.gz : success (161 of 167, 157 good, 4 bad) -- Avg runtime is 82 sec, exp. finish in 8.2 min at 10:24:22 on 26-Oct-2015
+
+RESULT for TED_1.1.1.tar.gz : success (162 of 167, 158 good, 4 bad) -- Avg runtime is 81.7 sec, exp. finish in 6.8 min at 10:23:34 on 26-Oct-2015
+
+RESULT for timma_1.2.1.tar.gz : success (163 of 167, 159 good, 4 bad) -- Avg runtime is 81.6 sec, exp. finish in 5.4 min at 10:23:11 on 26-Oct-2015
+
+RESULT for treeclim_1.0.11.tar.gz : success (164 of 167, 160 good, 4 bad) -- Avg runtime is 81.6 sec, exp. finish in 4.1 min at 10:23:11 on 26-Oct-2015
+
+RESULT for unmarked_0.11-0.tar.gz : success (165 of 167, 161 good, 4 bad) -- Avg runtime is 82 sec, exp. finish in 2.7 min at 10:24:13 on 26-Oct-2015
+
+RESULT for VarSelLCM_1.2.tar.gz : success (166 of 167, 162 good, 4 bad) -- Avg runtime is 81.9 sec, exp. finish in 1.4 min at 10:24:03 on 26-Oct-2015
+
+RESULT for zic_0.9.tar.gz : success (167 of 167, 163 good, 4 bad) -- Avg runtime is 81.7 sec, exp. finish in 0 min at 10:23:23 on 26-Oct-2015
+                     pkg res
+1       AdaptiveSparsity   0
+2                    AHR   0
+3                 Amelia   0
+4                 ASPBay   0
+5                 BaBooN   1
+6              BayesComm   0
+7                 bayesm   0
+8                  bayou   0
+9                    bcp   0
+10                   bfa   0
+11           BIFIEsurvey   0
+12                 BIPOD   0
+13           blockmodels   0
+14              BTLLasso   0
+15                bvarsv   0
+16                 ccaPP   0
+17                  cccp   0
+18                   cda   0
+19                   CDM   0
+20    ChannelAttribution   0
+21             cladoRcpp   0
+22                 coala   0
+23              coneproj   0
+24                copCAR   0
+25                  cord   0
+26               CoxPlus   0
+27             Crossover   0
+28             DepthProc   0
+29                dfcomb   0
+30                 dfmta   0
+31         DiffusionRgqd   0
+32             EloChoice   0
+33                 emIRT   0
+34                 EPGLM   0
+35                EstHer   0
+36          FastBandChol   0
+37                 fastM   0
+38             FBFsearch   0
+39              fdaMixed   0
+40                FDRreg   0
+41                 FIACH   0
+42                  fICA   0
+43              FisHiCal   0
+44                  flip   0
+45              forecast   0
+46               fourPNO   0
+47             FRESA.CAD   0
+48              gaselect   0
+49          GeneticTools   0
+50              geoCount   0
+51                 GERGM   0
+52             glamlasso   0
+53                  glcm   0
+54              glmgraph   0
+55                  GMCM   0
+56                gmum.r   0
+57                  gMWT   0
+58                 GPvam   0
+59                 gRain   0
+60          graphicalVAR   0
+61                gRbase   0
+62                  gRim   0
+63            growcurves   0
+64         growfunctions   0
+65                   GSE   0
+66                hawkes   0
+67               HLMdiag   0
+68               hsphase   0
+69           hypervolume   0
+70               iBATCGH   0
+71                icamix   0
+72               iccbeta   0
+73              iLaplace   0
+74                 immer   0
+75                JAGUAR   0
+76             kdecopula   0
+77              Langevin   0
+78                  lpme   0
+79                  lsgl   0
+80            markophylo   0
+81           markovchain   0
+82                   MAT   0
+83       matchingMarkets   0
+84             matchingR   0
+85               mcemGLM   0
+86                 mcIRT   0
+87                mcmcse   0
+88             metafolio   0
+89                  mets   0
+90                   mev   0
+91              miceadds   1
+92                  mirt   0
+93               mirtCAT   0
+94                 miscF   0
+95              mixedMem   0
+96                 mmand   0
+97                Morpho   0
+98               moveHMM   0
+99                    mp   0
+100           Mposterior   0
+101              MRIaggr   1
+102                 msgl   1
+103                  MVB   0
+104              mvnfast   0
+105            ngspatial   0
+106                  oem   0
+107            onlinePCA   0
+108           PanelCount   0
+109                pcalg   0
+110               PedCNV   0
+111               planar   0
+112            polyfreqs   0
+113                PoweR   0
+114            PPtreeViz   0
+115            prospectr   0
+116                  psd   0
+117                 psgp   0
+118            quadrupen   0
+119             quanteda   0
+120          rags2ridges   0
+121              Rborist   0
+122             rcppbugs   0
+123               RcppDE   0
+124           RcppMLPACK   0
+125             RealVAMS   0
+126               redist   0
+127             resemble   0
+128        revealedPrefs   0
+129                 rgam   0
+130              rmgarch   0
+131            robustgam   0
+132             robustHD   0
+133            robustreg   0
+134            rotations   0
+135           Rphylopars   0
+136               rstpm2   0
+137              rugarch   0
+138               sbmSDP   0
+139                 SBSA   0
+140            SelvarMix   0
+141                  sgd   0
+142             sglOptim   0
+143                 sirt   0
+144                 slfm   0
+145               snipEM   0
+146 SparseFactorAnalysis   0
+147            sparsereg   0
+148           SpatialEpi   0
+149         SpatialTools   0
+150              SpatPCA   0
+151          spBayesSurv   0
+152           spduration   0
+153               starma   0
+154                  stm   0
+155             stochvol   0
+156                strum   0
+157 survAccuracyMeasures   0
+158             SVMMatch   0
+159               synlik   0
+160                  TAM   0
+161              TauStar   0
+162                  TED   0
+163                timma   0
+164             treeclim   0
+165             unmarked   0
+166            VarSelLCM   0
+167                  zic   0
+
+  0   1 
+163   4 
+[1] "BaBooN"   "miceadds" "MRIaggr"  "msgl"    
+Ended at  2015-10-26 10:23:23 
