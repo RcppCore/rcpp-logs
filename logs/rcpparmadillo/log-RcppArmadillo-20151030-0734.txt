@@ -1,0 +1,899 @@
+Started at  2015-10-30 07:34:35 
+Rcpp  version is  0.12.1.3 
+RcppArmadillo  version is  0.6.199.2.0 
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c KMUP.cpp -o KMUP.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c KMUP2.cpp -o KMUP2.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o bWGR.so KMUP.o KMUP2.o RcppExports.o -L/usr/lib/R/lib -lR
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c cdvine.c -o cdvine.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c condsim.c -o condsim.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c hfunc.c -o hfunc.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c likelihood.c -o likelihood.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c memoryhandling.c -o memoryhandling.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c tools.c -o tools.o
+ccache gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o CDVine.so cdvine.o condsim.o hfunc.o likelihood.o memoryhandling.o tools.o -L/usr/lib/R/lib -lR
+ccache gcc -I/usr/share/R/include -DNDEBUG -I./gsl -I./gsl/specfunc     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c An.c -o An.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I./gsl -I./gsl/specfunc     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c ecIndepTest.c -o ecIndepTest.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I./gsl -I./gsl/specfunc     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c empcop.c -o empcop.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I./gsl -I./gsl/specfunc     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c evtest.c -o evtest.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I./gsl -I./gsl/specfunc     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c exchtest.c -o exchtest.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I./gsl -I./gsl/specfunc     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c fgm.c -o fgm.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I./gsl -I./gsl/specfunc     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c gof.c -o gof.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I./gsl -I./gsl/specfunc     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c indepTest_utils.c -o indepTest_utils.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I./gsl -I./gsl/specfunc     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c init.c -o init.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I./gsl -I./gsl/specfunc     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c logseries.c -o logseries.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I./gsl -I./gsl/specfunc     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c multIndepTest.c -o multIndepTest.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I./gsl -I./gsl/specfunc     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c multSerialIndepTest.c -o multSerialIndepTest.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I./gsl -I./gsl/specfunc     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c polyn_eval.c -o polyn_eval.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I./gsl -I./gsl/specfunc     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c rF01Frank.c -o rF01Frank.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I./gsl -I./gsl/specfunc     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c rF01Joe.c -o rF01Joe.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I./gsl -I./gsl/specfunc     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c rLog.c -o rLog.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I./gsl -I./gsl/specfunc     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c rSibuya.c -o rSibuya.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I./gsl -I./gsl/specfunc     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c retstable.c -o retstable.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I./gsl -I./gsl/specfunc     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c serialIndepTest.c -o serialIndepTest.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -I./gsl -I./gsl/specfunc     -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c set_utils.c -o set_utils.o
+ccache gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o copula.so An.o ecIndepTest.o empcop.o evtest.o exchtest.o fgm.o gof.o indepTest_utils.o init.o logseries.o multIndepTest.o multSerialIndepTest.o polyn_eval.o rF01Frank.o rF01Joe.o rLog.o rSibuya.o retstable.o serialIndepTest.o set_utils.o -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"  -I../inst/include -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"  -I../inst/include -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c galeshapley.cpp -o galeshapley.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"  -I../inst/include -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c roommate.cpp -o roommate.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"  -I../inst/include -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c toptradingcycle.cpp -o toptradingcycle.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"  -I../inst/include -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c utils.cpp -o utils.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o matchingR.so RcppExports.o galeshapley.o roommate.o toptradingcycle.o utils.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c mclust.f -o mclust.o
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c mclustaddson.f -o mclustaddson.o
+ccache gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o mclust.so mclust.o mclustaddson.o -llapack -lblas -lgfortran -lm -lquadmath -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c compositions.cpp -o compositions.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c multicool.cpp -o multicool.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o multicool.so RcppExports.o compositions.o multicool.o -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG -I. -I../inst/include `/usr/lib/R/bin/Rscript -e "RcppGSL:::CFlags()"`  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppGSL/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I. -I../inst/include `/usr/lib/R/bin/Rscript -e "RcppGSL:::CFlags()"`  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppGSL/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c Rinterface.cpp -o Rinterface.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I. -I../inst/include `/usr/lib/R/bin/Rscript -e "RcppGSL:::CFlags()"`  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppGSL/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c anova.cpp -o anova.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I. -I../inst/include `/usr/lib/R/bin/Rscript -e "RcppGSL:::CFlags()"`  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppGSL/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c calctest.cpp -o calctest.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I. -I../inst/include `/usr/lib/R/bin/Rscript -e "RcppGSL:::CFlags()"`  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppGSL/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c glm.cpp -o glm.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I. -I../inst/include `/usr/lib/R/bin/Rscript -e "RcppGSL:::CFlags()"`  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppGSL/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c glmtest.cpp -o glmtest.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I. -I../inst/include `/usr/lib/R/bin/Rscript -e "RcppGSL:::CFlags()"`  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppGSL/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c io.cpp -o io.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I. -I../inst/include `/usr/lib/R/bin/Rscript -e "RcppGSL:::CFlags()"`  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppGSL/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c rnd.cpp -o rnd.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I. -I../inst/include `/usr/lib/R/bin/Rscript -e "RcppGSL:::CFlags()"`  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppGSL/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c simutility.cpp -o simutility.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I. -I../inst/include `/usr/lib/R/bin/Rscript -e "RcppGSL:::CFlags()"`  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppGSL/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c summary.cpp -o summary.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o mvabund.so RcppExports.o Rinterface.o anova.o calctest.o glm.o glmtest.o io.o rnd.o simutility.o summary.o -L/usr/lib -lgsl -lgslcblas -lm -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c KMUP.cpp -o KMUP.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c SAMP.cpp -o SAMP.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c SAMP2.cpp -o SAMP2.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c calcSize.cpp -o calcSize.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c funI.cpp -o funI.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c funX.cpp -o funX.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c inputRow.cpp -o inputRow.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c timesMatrix.cpp -o timesMatrix.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c timesVec.cpp -o timesVec.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o NAM.so KMUP.o RcppExports.o SAMP.o SAMP2.o calcSize.o funI.o funX.o inputRow.o timesMatrix.o timesVec.o -L/usr/lib/R/lib -lR
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c binomial.c -o binomial.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c cox-dh.c -o cox-dh.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c gaussian.c -o gaussian.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c maxprod.c -o maxprod.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c ncvreg.c -o ncvreg.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c poisson.c -o poisson.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c raw.c -o raw.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c standardize.c -o standardize.o
+ccache gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o ncvreg.so binomial.o cox-dh.o gaussian.o maxprod.o ncvreg.o poisson.o raw.o standardize.o -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG `/usr/lib/R/bin/Rscript -e "Rcpp:::CxxFlags()"` -g   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG `/usr/lib/R/bin/Rscript -e "Rcpp:::CxxFlags()"` -g   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c ccipca.cpp -o ccipca.o
+ccache g++ -I/usr/share/R/include -DNDEBUG `/usr/lib/R/bin/Rscript -e "Rcpp:::CxxFlags()"` -g   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c sga_ghapca.cpp -o sga_ghapca.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o onlinePCA.so RcppExports.o ccipca.o sga_ghapca.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c Cquantile.cpp -o Cquantile.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c cluster.cpp -o cluster.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c rolling.cpp -o rolling.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o openair.so Cquantile.o RcppExports.o cluster.o rolling.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c computeCoherency.cpp -o computeCoherency.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c computeSdNaive.cpp -o computeSdNaive.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o quantspec.so RcppExports.o computeCoherency.o computeSdNaive.o -L/usr/lib/R/lib -lR
+Setting up compilation for 64-bit system on linux
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/ -I.  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c RcppExports.cpp -o RcppExports.o
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/ -I.  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c authenticate.cpp -o authenticate.o
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/ -I.  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c bdh.cpp -o bdh.o
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/ -I.  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c bdp.cpp -o bdp.o
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/ -I.  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c bds.cpp -o bds.o
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/ -I.  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c beqs.cpp -o beqs.o
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/ -I.  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c blpConnect.cpp -o blpConnect.o
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/ -I.  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c blpapi_utils.cpp -o blpapi_utils.o
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/ -I.  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c fieldsearch.cpp -o fieldsearch.o
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/ -I.  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c getBars.cpp -o getBars.o
+g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/ -I.  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g -c getTicks.cpp -o getTicks.o
+g++ -std=c++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o Rblpapi.so RcppExports.o authenticate.o bdh.o bdp.o bds.o beqs.o blpConnect.o blpapi_utils.o fieldsearch.o getBars.o getTicks.o -lblpapi3_64 -L../inst/blp -Wl,-rpath,/tmp/RcppDepends/lib/Rblpapi/blp -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c Collector.cpp -o Collector.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c CollectorGuess.cpp -o CollectorGuess.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c DateTime.cpp -o DateTime.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c Iconv.cpp -o Iconv.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c LocaleInfo.cpp -o LocaleInfo.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c Source.cpp -o Source.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c Tokenizer.cpp -o Tokenizer.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c TokenizerDelim.cpp -o TokenizerDelim.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c TokenizerFwf.cpp -o TokenizerFwf.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c connection.cpp -o connection.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c localtime.c -o localtime.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c parse.cpp -o parse.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c read.cpp -o read.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c type_convert.cpp -o type_convert.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c write_delim.cpp -o write_delim.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o readr.so Collector.o CollectorGuess.o DateTime.o Iconv.o LocaleInfo.o RcppExports.o Source.o Tokenizer.o TokenizerDelim.o TokenizerFwf.o connection.o localtime.o parse.o read.o type_convert.o write_delim.o -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c rivmech_characteristic_v7.cpp -o rivmech_characteristic_v7.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o rivr.so RcppExports.o rivmech_characteristic_v7.o -L/usr/lib/R/lib -lR
+checking for pkg-config... /usr/bin/pkg-config
+configure: Setting compile and link flags according to pkg-config
+configure: Compile flags are -I/usr/include/JAGS 
+configure: Link flags are -ljags 
+checking for gcc... ccache gcc
+checking whether we are using the GNU C compiler... no
+checking whether ccache gcc accepts -g... no
+checking for ccache gcc option to accept ISO C89... unsupported
+checking for jags_version in -ljags... yes
+checking version of JAGS library... OK
+configure: creating ./config.status
+config.status: creating src/Makevars
+configure: creating ./config.status
+config.status: creating src/Makevars
+config.status: creating R/unix/zzz.R
+ccache g++ -I/usr/share/R/include -DNDEBUG -I/usr/include/JAGS       -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c jags.cc -o jags.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -I/usr/include/JAGS       -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c parallel.cc -o parallel.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o rjags.so jags.o parallel.o -ljags -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c main.cpp -o main.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c AffineMatrix.cpp -o AffineMatrix.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c NiftiImage.cpp -o NiftiImage.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c DeformationField.cpp -o DeformationField.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c aladin.cpp -o aladin.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c f3d.cpp -o f3d.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/_reg_aladin.cpp -o reg-lib/_reg_aladin.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/_reg_aladin_sym.cpp -o reg-lib/_reg_aladin_sym.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/_reg_base.cpp -o reg-lib/_reg_base.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/_reg_f3d.cpp -o reg-lib/_reg_f3d.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/_reg_f3d2.cpp -o reg-lib/_reg_f3d2.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/_reg_f3d_sym.cpp -o reg-lib/_reg_f3d_sym.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/_reg_polyAffine.cpp -o reg-lib/_reg_polyAffine.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/Content.cpp -o reg-lib/Content.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/Platform.cpp -o reg-lib/Platform.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/cpu/_reg_blockMatching.cpp -o reg-lib/cpu/_reg_blockMatching.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/cpu/_reg_dti.cpp -o reg-lib/cpu/_reg_dti.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/cpu/_reg_femTrans.cpp -o reg-lib/cpu/_reg_femTrans.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/cpu/_reg_globalTrans.cpp -o reg-lib/cpu/_reg_globalTrans.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/cpu/_reg_KLdivergence.cpp -o reg-lib/cpu/_reg_KLdivergence.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/cpu/_reg_lncc.cpp -o reg-lib/cpu/_reg_lncc.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/cpu/_reg_localTrans.cpp -o reg-lib/cpu/_reg_localTrans.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/cpu/_reg_maths.cpp -o reg-lib/cpu/_reg_maths.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/cpu/_reg_nmi.cpp -o reg-lib/cpu/_reg_nmi.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/cpu/_reg_optimiser.cpp -o reg-lib/cpu/_reg_optimiser.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/cpu/_reg_polyAffine.cpp -o reg-lib/cpu/_reg_polyAffine.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/cpu/_reg_resampling.cpp -o reg-lib/cpu/_reg_resampling.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/cpu/_reg_ssd.cpp -o reg-lib/cpu/_reg_ssd.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/cpu/_reg_thinPlateSpline.cpp -o reg-lib/cpu/_reg_thinPlateSpline.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/cpu/_reg_tools.cpp -o reg-lib/cpu/_reg_tools.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/cpu/CPUAffineDeformationFieldKernel.cpp -o reg-lib/cpu/CPUAffineDeformationFieldKernel.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/cpu/CPUBlockMatchingKernel.cpp -o reg-lib/cpu/CPUBlockMatchingKernel.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/cpu/CPUConvolutionKernel.cpp -o reg-lib/cpu/CPUConvolutionKernel.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/cpu/CPUKernelFactory.cpp -o reg-lib/cpu/CPUKernelFactory.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/cpu/CPUOptimiseKernel.cpp -o reg-lib/cpu/CPUOptimiseKernel.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c reg-lib/cpu/CPUResampleImageKernel.cpp -o reg-lib/cpu/CPUResampleImageKernel.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c zlib/adler32.c -o zlib/adler32.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c zlib/compress.c -o zlib/compress.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c zlib/crc32.c -o zlib/crc32.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c zlib/deflate.c -o zlib/deflate.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c zlib/gzclose.c -o zlib/gzclose.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c zlib/gzlib.c -o zlib/gzlib.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c zlib/gzread.c -o zlib/gzread.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c zlib/gzwrite.c -o zlib/gzwrite.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c zlib/infback.c -o zlib/infback.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c zlib/inffast.c -o zlib/inffast.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c zlib/inflate.c -o zlib/inflate.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c zlib/inftrees.c -o zlib/inftrees.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c zlib/trees.c -o zlib/trees.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c zlib/uncompr.c -o zlib/uncompr.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c zlib/zutil.c -o zlib/zutil.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c znzlib/znzlib.c -o znzlib/znzlib.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DNDEBUG -DRNIFTYREG -DHAVE_ZLIB -I. -Ireg-lib -Ireg-lib/cpu -Izlib -Iznzlib -Iniftilib  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c niftilib/nifti1_io.c -o niftilib/nifti1_io.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o RNiftyReg.so main.o AffineMatrix.o NiftiImage.o DeformationField.o aladin.o f3d.o reg-lib/_reg_aladin.o reg-lib/_reg_aladin_sym.o reg-lib/_reg_base.o reg-lib/_reg_f3d.o reg-lib/_reg_f3d2.o reg-lib/_reg_f3d_sym.o reg-lib/_reg_polyAffine.o reg-lib/Content.o reg-lib/Platform.o reg-lib/cpu/_reg_blockMatching.o reg-lib/cpu/_reg_dti.o reg-lib/cpu/_reg_femTrans.o reg-lib/cpu/_reg_globalTrans.o reg-lib/cpu/_reg_KLdivergence.o reg-lib/cpu/_reg_lncc.o reg-lib/cpu/_reg_localTrans.o reg-lib/cpu/_reg_maths.o reg-lib/cpu/_reg_nmi.o reg-lib/cpu/_reg_optimiser.o reg-lib/cpu/_reg_polyAffine.o reg-lib/cpu/_reg_resampling.o reg-lib/cpu/_reg_ssd.o reg-lib/cpu/_reg_thinPlateSpline.o reg-lib/cpu/_reg_tools.o reg-lib/cpu/CPUAffineDeformationFieldKernel.o reg-lib/cpu/CPUBlockMatchingKernel.o reg-lib/cpu/CPUConvolutionKernel.o reg-lib/cpu/CPUKernelFactory.o reg-lib/cpu/CPUOptimiseKernel.o reg-lib/cpu/CPUResampleImageKernel.o zlib/adler32.o zlib/compress.o zlib/crc32.o zlib/deflate.o zlib/gzclose.o zlib/gzlib.o zlib/gzread.o zlib/gzwrite.o zlib/infback.o zlib/inffast.o zlib/inflate.o zlib/inftrees.o zlib/trees.o zlib/uncompr.o zlib/zutil.o znzlib/znzlib.o niftilib/nifti1_io.o -fopenmp -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c isComplete.cpp -o isComplete.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c leadingSpaces.cpp -o leadingSpaces.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c parser2.cpp -o parser2.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c wrapString.cpp -o wrapString.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o roxygen2.so RcppExports.o isComplete.o leadingSpaces.o parser2.o wrapString.o -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppParallel/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppParallel/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c bnl.cpp -o bnl.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppParallel/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c hasse.cpp -o hasse.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppParallel/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c pref-classes.cpp -o pref-classes.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppParallel/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c psel-par-top.cpp -o psel-par-top.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppParallel/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c psel-par.cpp -o psel-par.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/RcppParallel/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c scalagon.cpp -o scalagon.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o rPref.so RcppExports.o bnl.o hasse.o pref-classes.o psel-par-top.o psel-par.o scalagon.o -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c rwirelesscom.cpp -o rwirelesscom.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o rwirelesscom.so RcppExports.o rwirelesscom.o -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c loglog_lnl.cpp -o loglog_lnl.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c sploglog_lnl.cpp -o sploglog_lnl.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c spweib_lnl.cpp -o spweib_lnl.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c weib_lnl.cpp -o weib_lnl.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o spduration.so RcppExports.o loglog_lnl.o sploglog_lnl.o spweib_lnl.o weib_lnl.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c calcMSSDCpp.cpp -o calcMSSDCpp.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c spJitterCpp.cpp -o spJitterCpp.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c updateMSSDCpp.cpp -o updateMSSDCpp.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c updatePPLCpp.cpp -o updatePPLCpp.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o spsann.so RcppExports.o calcMSSDCpp.o spJitterCpp.o updateMSSDCpp.o updatePPLCpp.o -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c DBSTREAM.cpp -o DBSTREAM.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c DStream.cpp -o DStream.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c NumericVector.cpp -o NumericVector.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c kmeansw.cc -o kmeansw.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o stream.so DBSTREAM.o DStream.o NumericVector.o kmeansw.o -L/usr/lib/R/lib -lR
+ccache gcc -I/usr/share/R/include -DNDEBUG     -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c Rstringdist.c -o Rstringdist.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c dl.c -o dl.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c hamming.c -o hamming.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c jaro.c -o jaro.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c lcs.c -o lcs.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c lv.c -o lv.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c osa.c -o osa.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c qgram.c -o qgram.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c soundex.c -o soundex.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c stringdist.c -o stringdist.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c utf8ToInt.c -o utf8ToInt.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -fopenmp -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c utils.c -o utils.o
+ccache gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o stringdist.so Rstringdist.o dl.o hamming.o jaro.o lcs.o lv.o osa.o qgram.o soundex.o stringdist.o utf8ToInt.o utils.o -fopenmp -L/usr/lib/R/lib -lR
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c mass_extinction_equations.cpp -o mass_extinction_equations.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o TESS.so RcppExports.o mass_extinction_equations.o -L/usr/lib/R/lib -lR
+Using PKG_CFLAGS=
+Using PKG_LIBS=-lv8
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -DV8_DISABLE_DEPRECATIONS -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -DV8_DISABLE_DEPRECATIONS -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c V8.cpp -o V8.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -DV8_DISABLE_DEPRECATIONS -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c v8_typed_array.cpp -o v8_typed_array.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o V8.so RcppExports.o V8.o v8_typed_array.o -lv8 -L/usr/lib/R/lib -lR
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c caqo3.c -o caqo3.o
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c cqof.f -o cqof.o
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c ei.f -o ei.o
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c fgam.f -o fgam.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c gautr.c -o gautr.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c lerchphi.c -o lerchphi.o
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c lms.f -o lms.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c muxr3.c -o muxr3.o
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c rgam.f -o rgam.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c rgam3.c -o rgam3.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c specfun3.c -o specfun3.o
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c tyeepolygamma.f -o tyeepolygamma.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c tyeepolygamma3.c -o tyeepolygamma3.o
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c vcall2.f -o vcall2.o
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c vdigami.f -o vdigami.o
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c veigen.f -o veigen.o
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c vgam.f -o vgam.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c vgam3.c -o vgam3.o
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c vlinpack1.f -o vlinpack1.o
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c vlinpack2.f -o vlinpack2.o
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c vlinpack3.f -o vlinpack3.o
+ccache gfortran   -fpic  -g -O2 -fstack-protector-strong  -O3 -g0 -Wall -pipe -c vmux.f -o vmux.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c vmux3.c -o vmux3.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c zeta3.c -o zeta3.o
+ccache gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o VGAM.so caqo3.o cqof.o ei.o fgam.o gautr.o lerchphi.o lms.o muxr3.o rgam.o rgam3.o specfun3.o tyeepolygamma.o tyeepolygamma3.o vcall2.o vdigami.o veigen.o vgam.o vgam3.o vlinpack1.o vlinpack2.o vlinpack3.o vmux.o vmux3.o zeta3.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c CD.c -o CD.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c MCMC.c -o MCMC.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c MHproposal.c -o MHproposal.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c MHproposals.c -o MHproposals.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c MHproposals_bipartite.c -o MHproposals_bipartite.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c MHproposals_block.c -o MHproposals_block.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c MHproposals_degree.c -o MHproposals_degree.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c MPLE.c -o MPLE.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c MPLEconddeg.c -o MPLEconddeg.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c SAN.c -o SAN.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c allstatistics.c -o allstatistics.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c changestat.c -o changestat.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c changestats.c -o changestats.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c changestats_coincidence.c -o changestats_coincidence.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c changestats_concurrentties.c -o changestats_concurrentties.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c changestats_experimental.c -o changestats_experimental.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c changestats_homoproportion.c -o changestats_homoproportion.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c changestats_indices.c -o changestats_indices.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c changestats_internal.c -o changestats_internal.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c changestats_transitiveties.c -o changestats_transitiveties.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c conddegmple.c -o conddegmple.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c edgelist.c -o edgelist.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c edgetree.c -o edgetree.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c geodist.c -o geodist.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c model.c -o model.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c netstats.c -o netstats.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c wtCD.c -o wtCD.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c wtMCMC.c -o wtMCMC.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c wtMHproposal.c -o wtMHproposal.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c wtMHproposals.c -o wtMHproposals.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c wtSAN.c -o wtSAN.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c wtchangestats.c -o wtchangestats.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c wtedgetree.c -o wtedgetree.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c wtmodel.c -o wtmodel.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -pedantic -std=gnu99  -c wtnetstats.c -o wtnetstats.o
+ccache gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o ergm.so CD.o MCMC.o MHproposal.o MHproposals.o MHproposals_bipartite.o MHproposals_block.o MHproposals_degree.o MPLE.o MPLEconddeg.o SAN.o allstatistics.o changestat.o changestats.o changestats_coincidence.o changestats_concurrentties.o changestats_experimental.o changestats_homoproportion.o changestats_indices.o changestats_internal.o changestats_transitiveties.o conddegmple.o edgelist.o edgetree.o geodist.o model.o netstats.o wtCD.o wtMCMC.o wtMHproposal.o wtMHproposals.o wtSAN.o wtchangestats.o wtedgetree.o wtmodel.o wtnetstats.o -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+  [1] "AdaptiveSparsity"     "AHR"                  "Amelia"              
+  [4] "ASPBay"               "BaBooN"               "BayesComm"           
+  [7] "bayesm"               "bayou"                "bcp"                 
+ [10] "bfa"                  "BIFIEsurvey"          "BIPOD"               
+ [13] "blockmodels"          "BTLLasso"             "bvarsv"              
+ [16] "ccaPP"                "cccp"                 "cda"                 
+ [19] "CDM"                  "ChannelAttribution"   "cladoRcpp"           
+ [22] "coala"                "coneproj"             "copCAR"              
+ [25] "cord"                 "CoxPlus"              "Crossover"           
+ [28] "DepthProc"            "dfcomb"               "dfmta"               
+ [31] "DiffusionRgqd"        "dina"                 "EloChoice"           
+ [34] "emIRT"                "EPGLM"                "EstHer"              
+ [37] "FastBandChol"         "fastM"                "FBFsearch"           
+ [40] "fdaMixed"             "FDRreg"               "FIACH"               
+ [43] "fICA"                 "FisHiCal"             "flip"                
+ [46] "forecast"             "fourPNO"              "FRESA.CAD"           
+ [49] "gaselect"             "GeneticTools"         "geoCount"            
+ [52] "GERGM"                "glamlasso"            "glcm"                
+ [55] "glmgraph"             "GMCM"                 "gmum.r"              
+ [58] "gMWT"                 "GPvam"                "gRain"               
+ [61] "graphicalVAR"         "gRbase"               "gRim"                
+ [64] "growcurves"           "growfunctions"        "GSE"                 
+ [67] "hawkes"               "HLMdiag"              "hsphase"             
+ [70] "hypervolume"          "iBATCGH"              "icamix"              
+ [73] "iccbeta"              "iLaplace"             "immer"               
+ [76] "JAGUAR"               "kdecopula"            "Langevin"            
+ [79] "lpme"                 "lsgl"                 "markophylo"          
+ [82] "markovchain"          "MAT"                  "matchingMarkets"     
+ [85] "matchingR"            "mcemGLM"              "mcIRT"               
+ [88] "mcmcse"               "metafolio"            "mets"                
+ [91] "mev"                  "miceadds"             "mirt"                
+ [94] "mirtCAT"              "miscF"                "mixedMem"            
+ [97] "mmand"                "Morpho"               "moveHMM"             
+[100] "mp"                   "Mposterior"           "MRIaggr"             
+[103] "msgl"                 "MVB"                  "mvnfast"             
+[106] "ngspatial"            "oem"                  "onlinePCA"           
+[109] "PanelCount"           "pcalg"                "PedCNV"              
+[112] "phylosignal"          "planar"               "polyfreqs"           
+[115] "PoweR"                "PPtreeViz"            "prospectr"           
+[118] "psd"                  "psgp"                 "quadrupen"           
+[121] "quanteda"             "rags2ridges"          "Rborist"             
+[124] "rcppbugs"             "RcppDE"               "RcppMLPACK"          
+[127] "RealVAMS"             "redist"               "resemble"            
+[130] "revealedPrefs"        "rgam"                 "rmgarch"             
+[133] "robustgam"            "robustHD"             "robustreg"           
+[136] "rotations"            "Rphylopars"           "rstpm2"              
+[139] "rugarch"              "sbmSDP"               "SBSA"                
+[142] "SelvarMix"            "sgd"                  "sglOptim"            
+[145] "sirt"                 "slfm"                 "snipEM"              
+[148] "SparseFactorAnalysis" "sparsereg"            "SpatialEpi"          
+[151] "SpatialTools"         "SpatPCA"              "spBayesSurv"         
+[154] "spduration"           "starma"               "stm"                 
+[157] "stochvol"             "strum"                "survAccuracyMeasures"
+[160] "SVMMatch"             "synlik"               "TAM"                 
+[163] "TauStar"              "TED"                  "timma"               
+[166] "treeclim"             "unmarked"             "VarSelLCM"           
+[169] "zic"                 
+
+RESULT for AdaptiveSparsity_1.4.tar.gz : success (1 of 169, 1 good, 0 bad) -- Avg runtime is 25.9 sec, exp. finish in 72.4 min at 09:05:47 on 30-Oct-2015
+
+RESULT for AHR_1.2.tar.gz : success (2 of 169, 2 good, 0 bad) -- Avg runtime is 25.5 sec, exp. finish in 71 min at 09:04:47 on 30-Oct-2015
+
+RESULT for Amelia_1.7.3.tar.gz : success (3 of 169, 3 good, 0 bad) -- Avg runtime is 33 sec, exp. finish in 91.3 min at 09:25:50 on 30-Oct-2015
+
+RESULT for ASPBay_1.2.tar.gz : success (4 of 169, 4 good, 0 bad) -- Avg runtime is 33.4 sec, exp. finish in 91.9 min at 09:27:02 on 30-Oct-2015
+
+RESULT for BaBooN_0.2-0.tar.gz : success (5 of 169, 5 good, 0 bad) -- Avg runtime is 33.7 sec, exp. finish in 92.2 min at 09:27:58 on 30-Oct-2015
+
+RESULT for BayesComm_0.1-2.tar.gz : success (6 of 169, 6 good, 0 bad) -- Avg runtime is 34.1 sec, exp. finish in 92.7 min at 09:29:04 on 30-Oct-2015
+
+RESULT for bayesm_3.0-2.tar.gz : success (7 of 169, 7 good, 0 bad) -- Avg runtime is 80.1 sec, exp. finish in 216.3 min at 11:38:34 on 30-Oct-2015
+
+RESULT for bayou_1.1.0.tar.gz : success (8 of 169, 8 good, 0 bad) -- Avg runtime is 81.6 sec, exp. finish in 218.9 min at 11:42:44 on 30-Oct-2015
+
+RESULT for bcp_4.0.0.tar.gz : success (9 of 169, 9 good, 0 bad) -- Avg runtime is 81 sec, exp. finish in 215.9 min at 11:40:58 on 30-Oct-2015
+
+RESULT for bfa_0.3.1.tar.gz : success (10 of 169, 10 good, 0 bad) -- Avg runtime is 80.6 sec, exp. finish in 213.5 min at 11:39:53 on 30-Oct-2015
+
+RESULT for BIFIEsurvey_1.6-0.tar.gz : success (11 of 169, 11 good, 0 bad) -- Avg runtime is 88.9 sec, exp. finish in 234 min at 12:03:15 on 30-Oct-2015
+
+RESULT for BIPOD_0.2.1.tar.gz : success (12 of 169, 12 good, 0 bad) -- Avg runtime is 85.8 sec, exp. finish in 224.6 min at 11:54:44 on 30-Oct-2015
+
+RESULT for blockmodels_1.1.1.tar.gz : success (13 of 169, 13 good, 0 bad) -- Avg runtime is 85.4 sec, exp. finish in 222.1 min at 11:53:34 on 30-Oct-2015
+
+RESULT for BTLLasso_0.1-2.tar.gz : success (14 of 169, 14 good, 0 bad) -- Avg runtime is 83.8 sec, exp. finish in 216.4 min at 11:48:49 on 30-Oct-2015
+
+RESULT for bvarsv_1.0.tar.gz : success (15 of 169, 15 good, 0 bad) -- Avg runtime is 80.4 sec, exp. finish in 206.3 min at 11:39:17 on 30-Oct-2015
+
+RESULT for ccaPP_0.3.0.tar.gz : success (16 of 169, 16 good, 0 bad) -- Avg runtime is 79.1 sec, exp. finish in 201.8 min at 11:35:48 on 30-Oct-2015
+
+RESULT for cccp_0.2-4.tar.gz : success (17 of 169, 17 good, 0 bad) -- Avg runtime is 83.5 sec, exp. finish in 211.4 min at 11:48:00 on 30-Oct-2015
+
+RESULT for cda_1.5.1.tar.gz : success (18 of 169, 18 good, 0 bad) -- Avg runtime is 82.9 sec, exp. finish in 208.5 min at 11:46:18 on 30-Oct-2015
+
+RESULT for CDM_4.5-0.tar.gz : success (19 of 169, 19 good, 0 bad) -- Avg runtime is 84.7 sec, exp. finish in 211.8 min at 11:51:34 on 30-Oct-2015
+
+RESULT for ChannelAttribution_1.2.tar.gz : success (20 of 169, 20 good, 0 bad) -- Avg runtime is 81.7 sec, exp. finish in 202.8 min at 11:42:57 on 30-Oct-2015
+
+RESULT for cladoRcpp_0.14.4.tar.gz : success (21 of 169, 21 good, 0 bad) -- Avg runtime is 79.1 sec, exp. finish in 195.1 min at 11:35:40 on 30-Oct-2015
+
+RESULT for coala_0.1.1.tar.gz : success (22 of 169, 22 good, 0 bad) -- Avg runtime is 78.6 sec, exp. finish in 192.7 min at 11:34:24 on 30-Oct-2015
+
+RESULT for coneproj_1.9.tar.gz : success (23 of 169, 23 good, 0 bad) -- Avg runtime is 76.4 sec, exp. finish in 185.9 min at 11:28:07 on 30-Oct-2015
+
+RESULT for copCAR_1.0-1.tar.gz : success (24 of 169, 24 good, 0 bad) -- Avg runtime is 74.7 sec, exp. finish in 180.6 min at 11:23:24 on 30-Oct-2015
+
+RESULT for cord_0.1.1.tar.gz : success (25 of 169, 25 good, 0 bad) -- Avg runtime is 72.9 sec, exp. finish in 175 min at 11:18:18 on 30-Oct-2015
+
+RESULT for CoxPlus_1.1.1.tar.gz : success (26 of 169, 26 good, 0 bad) -- Avg runtime is 71.7 sec, exp. finish in 170.8 min at 11:14:50 on 30-Oct-2015
+
+RESULT for Crossover_0.1-15.tar.gz : success (27 of 169, 27 good, 0 bad) -- Avg runtime is 73.1 sec, exp. finish in 173.1 min at 11:18:54 on 30-Oct-2015
+
+RESULT for DepthProc_1.0.3.tar.gz : success (28 of 169, 28 good, 0 bad) -- Avg runtime is 74.5 sec, exp. finish in 175.2 min at 11:22:52 on 30-Oct-2015
+
+RESULT for dfcomb_2.1-5.tar.gz : success (29 of 169, 29 good, 0 bad) -- Avg runtime is 73.2 sec, exp. finish in 170.8 min at 11:19:06 on 30-Oct-2015
+
+RESULT for dfmta_1.3-3.tar.gz : success (30 of 169, 30 good, 0 bad) -- Avg runtime is 71.5 sec, exp. finish in 165.7 min at 11:14:25 on 30-Oct-2015
+
+RESULT for DiffusionRgqd_0.1.1.tar.gz : success (31 of 169, 31 good, 0 bad) -- Avg runtime is 70.6 sec, exp. finish in 162.5 min at 11:11:52 on 30-Oct-2015
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c DINAcpp101315.cpp -o DINAcpp101315.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o dina.so DINAcpp101315.o RcppExports.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for dina_1.0.1.tar.gz : success (32 of 169, 32 good, 0 bad) -- Avg runtime is 69.4 sec, exp. finish in 158.4 min at 11:08:23 on 30-Oct-2015
+
+RESULT for EloChoice_0.29.tar.gz : success (33 of 169, 33 good, 0 bad) -- Avg runtime is 68.2 sec, exp. finish in 154.6 min at 11:05:02 on 30-Oct-2015
+
+RESULT for emIRT_0.0.5.tar.gz : success (34 of 169, 34 good, 0 bad) -- Avg runtime is 79.2 sec, exp. finish in 178.2 min at 11:36:03 on 30-Oct-2015
+
+RESULT for EPGLM_1.1.tar.gz : success (35 of 169, 35 good, 0 bad) -- Avg runtime is 77.8 sec, exp. finish in 173.8 min at 11:32:05 on 30-Oct-2015
+
+RESULT for EstHer_1.0.tar.gz : success (36 of 169, 36 good, 0 bad) -- Avg runtime is 77.2 sec, exp. finish in 171.1 min at 11:30:23 on 30-Oct-2015
+
+RESULT for FastBandChol_0.1.1.tar.gz : success (37 of 169, 37 good, 0 bad) -- Avg runtime is 75.8 sec, exp. finish in 166.7 min at 11:26:22 on 30-Oct-2015
+
+RESULT for fastM_0.0-2.tar.gz : success (38 of 169, 38 good, 0 bad) -- Avg runtime is 74.6 sec, exp. finish in 162.8 min at 11:22:59 on 30-Oct-2015
+
+RESULT for FBFsearch_1.0.tar.gz : success (39 of 169, 39 good, 0 bad) -- Avg runtime is 73.4 sec, exp. finish in 159 min at 11:19:34 on 30-Oct-2015
+
+RESULT for fdaMixed_0.4.tar.gz : success (40 of 169, 40 good, 0 bad) -- Avg runtime is 73.3 sec, exp. finish in 157.7 min at 11:19:29 on 30-Oct-2015
+
+RESULT for FDRreg_0.1.tar.gz : success (41 of 169, 41 good, 0 bad) -- Avg runtime is 73.3 sec, exp. finish in 156.4 min at 11:19:25 on 30-Oct-2015
+
+RESULT for FIACH_0.1.2.tar.gz : success (42 of 169, 42 good, 0 bad) -- Avg runtime is 72.7 sec, exp. finish in 153.9 min at 11:17:42 on 30-Oct-2015
+
+RESULT for fICA_1.0-3.tar.gz : success (43 of 169, 43 good, 0 bad) -- Avg runtime is 71.7 sec, exp. finish in 150.6 min at 11:14:56 on 30-Oct-2015
+
+RESULT for FisHiCal_1.1.tar.gz : success (44 of 169, 44 good, 0 bad) -- Avg runtime is 70.7 sec, exp. finish in 147.3 min at 11:12:04 on 30-Oct-2015
+
+RESULT for flip_2.4.3.tar.gz : success (45 of 169, 45 good, 0 bad) -- Avg runtime is 70.5 sec, exp. finish in 145.8 min at 11:11:37 on 30-Oct-2015
+
+RESULT for forecast_6.2.tar.gz : success (46 of 169, 46 good, 0 bad) -- Avg runtime is 71.5 sec, exp. finish in 146.6 min at 11:14:20 on 30-Oct-2015
+
+RESULT for fourPNO_1.0.1.tar.gz : success (47 of 169, 47 good, 0 bad) -- Avg runtime is 70.6 sec, exp. finish in 143.6 min at 11:11:51 on 30-Oct-2015
+
+RESULT for FRESA.CAD_2.1.3.tar.gz : success (48 of 169, 48 good, 0 bad) -- Avg runtime is 70.8 sec, exp. finish in 142.7 min at 11:12:15 on 30-Oct-2015
+
+RESULT for gaselect_1.0.5.tar.gz : success (49 of 169, 49 good, 0 bad) -- Avg runtime is 72 sec, exp. finish in 144.1 min at 11:15:51 on 30-Oct-2015
+
+RESULT for GeneticTools_0.3.1.tar.gz : success (50 of 169, 50 good, 0 bad) -- Avg runtime is 72 sec, exp. finish in 142.9 min at 11:15:50 on 30-Oct-2015
+
+RESULT for geoCount_1.150120.tar.gz : success (51 of 169, 51 good, 0 bad) -- Avg runtime is 71.9 sec, exp. finish in 141.4 min at 11:15:29 on 30-Oct-2015
+
+RESULT for GERGM_0.3.2.tar.gz : success (52 of 169, 52 good, 0 bad) -- Avg runtime is 71.1 sec, exp. finish in 138.7 min at 11:13:12 on 30-Oct-2015
+
+RESULT for glamlasso_1.0.tar.gz : success (53 of 169, 53 good, 0 bad) -- Avg runtime is 70.6 sec, exp. finish in 136.4 min at 11:11:41 on 30-Oct-2015
+
+RESULT for glcm_1.2.tar.gz : success (54 of 169, 54 good, 0 bad) -- Avg runtime is 69.9 sec, exp. finish in 134 min at 11:09:48 on 30-Oct-2015
+
+RESULT for glmgraph_1.0.3.tar.gz : success (55 of 169, 55 good, 0 bad) -- Avg runtime is 70.1 sec, exp. finish in 133.1 min at 11:10:15 on 30-Oct-2015
+
+RESULT for GMCM_1.2.2.tar.gz : success (56 of 169, 56 good, 0 bad) -- Avg runtime is 70 sec, exp. finish in 131.9 min at 11:10:09 on 30-Oct-2015
+
+RESULT for gmum.r_0.2.1.tar.gz : success (57 of 169, 57 good, 0 bad) -- Avg runtime is 74.3 sec, exp. finish in 138.7 min at 11:22:12 on 30-Oct-2015
+
+RESULT for gMWT_1.0.tar.gz : success (58 of 169, 58 good, 0 bad) -- Avg runtime is 73.8 sec, exp. finish in 136.4 min at 11:20:40 on 30-Oct-2015
+
+RESULT for GPvam_3.0-3.tar.gz : success (59 of 169, 59 good, 0 bad) -- Avg runtime is 73.6 sec, exp. finish in 134.9 min at 11:20:10 on 30-Oct-2015
+
+RESULT for gRain_1.2-4.tar.gz : success (60 of 169, 60 good, 0 bad) -- Avg runtime is 73.7 sec, exp. finish in 133.9 min at 11:20:29 on 30-Oct-2015
+
+RESULT for graphicalVAR_0.1.3.tar.gz : success (61 of 169, 61 good, 0 bad) -- Avg runtime is 73.7 sec, exp. finish in 132.7 min at 11:20:38 on 30-Oct-2015
+
+RESULT for gRbase_1.7-2.tar.gz : success (62 of 169, 62 good, 0 bad) -- Avg runtime is 75.7 sec, exp. finish in 135 min at 11:26:06 on 30-Oct-2015
+
+RESULT for gRim_0.1-17.tar.gz : success (63 of 169, 63 good, 0 bad) -- Avg runtime is 75.6 sec, exp. finish in 133.6 min at 11:25:54 on 30-Oct-2015
+
+RESULT for growcurves_0.2.3.9.tar.gz : success (64 of 169, 64 good, 0 bad) -- Avg runtime is 78.1 sec, exp. finish in 136.7 min at 11:33:00 on 30-Oct-2015
+
+RESULT for growfunctions_0.11.tar.gz : success (65 of 169, 65 good, 0 bad) -- Avg runtime is 80.1 sec, exp. finish in 138.8 min at 11:38:28 on 30-Oct-2015
+
+RESULT for GSE_3.2.2.tar.gz : success (66 of 169, 66 good, 0 bad) -- Avg runtime is 79.6 sec, exp. finish in 136.7 min at 11:37:15 on 30-Oct-2015
+
+RESULT for hawkes_0.0-4.tar.gz : success (67 of 169, 67 good, 0 bad) -- Avg runtime is 78.9 sec, exp. finish in 134.1 min at 11:35:02 on 30-Oct-2015
+
+RESULT for HLMdiag_0.3.0.tar.gz : success (68 of 169, 68 good, 0 bad) -- Avg runtime is 79.2 sec, exp. finish in 133.4 min at 11:36:06 on 30-Oct-2015
+
+RESULT for hsphase_2.0.1.tar.gz : success (69 of 169, 69 good, 0 bad) -- Avg runtime is 78.9 sec, exp. finish in 131.6 min at 11:35:15 on 30-Oct-2015
+
+RESULT for hypervolume_1.4.tar.gz : success (70 of 169, 70 good, 0 bad) -- Avg runtime is 78.5 sec, exp. finish in 129.6 min at 11:34:10 on 30-Oct-2015
+
+RESULT for iBATCGH_1.3.tar.gz : success (71 of 169, 71 good, 0 bad) -- Avg runtime is 80.3 sec, exp. finish in 131.1 min at 11:39:05 on 30-Oct-2015
+
+RESULT for icamix_1.0.4.tar.gz : success (72 of 169, 72 good, 0 bad) -- Avg runtime is 79.8 sec, exp. finish in 129 min at 11:37:41 on 30-Oct-2015
+
+RESULT for iccbeta_1.0.tar.gz : success (73 of 169, 73 good, 0 bad) -- Avg runtime is 79.5 sec, exp. finish in 127.1 min at 11:36:43 on 30-Oct-2015
+
+RESULT for iLaplace_1.0.0.tar.gz : success (74 of 169, 74 good, 0 bad) -- Avg runtime is 78.8 sec, exp. finish in 124.8 min at 11:34:53 on 30-Oct-2015
+
+RESULT for immer_0.1-1.tar.gz : success (75 of 169, 75 good, 0 bad) -- Avg runtime is 79.3 sec, exp. finish in 124.2 min at 11:36:14 on 30-Oct-2015
+
+RESULT for JAGUAR_3.0.0.tar.gz : success (76 of 169, 76 good, 0 bad) -- Avg runtime is 79.1 sec, exp. finish in 122.7 min at 11:35:49 on 30-Oct-2015
+
+RESULT for kdecopula_0.4.0.tar.gz : success (77 of 169, 77 good, 0 bad) -- Avg runtime is 79.4 sec, exp. finish in 121.8 min at 11:36:38 on 30-Oct-2015
+
+RESULT for Langevin_1.0.3.tar.gz : success (78 of 169, 78 good, 0 bad) -- Avg runtime is 79 sec, exp. finish in 119.9 min at 11:35:32 on 30-Oct-2015
+
+RESULT for lpme_1.0.1.tar.gz : success (79 of 169, 79 good, 0 bad) -- Avg runtime is 78.5 sec, exp. finish in 117.8 min at 11:34:05 on 30-Oct-2015
+
+RESULT for lsgl_1.2.0.tar.gz : success (80 of 169, 80 good, 0 bad) -- Avg runtime is 78.6 sec, exp. finish in 116.6 min at 11:34:18 on 30-Oct-2015
+
+RESULT for markophylo_1.0.2.tar.gz : success (81 of 169, 81 good, 0 bad) -- Avg runtime is 78.4 sec, exp. finish in 115 min at 11:33:44 on 30-Oct-2015
+
+RESULT for markovchain_0.4.2.tar.gz : success (82 of 169, 82 good, 0 bad) -- Avg runtime is 78.9 sec, exp. finish in 114.4 min at 11:35:08 on 30-Oct-2015
+
+RESULT for MAT_2.2.tar.gz : success (83 of 169, 83 good, 0 bad) -- Avg runtime is 78.5 sec, exp. finish in 112.6 min at 11:34:10 on 30-Oct-2015
+
+RESULT for matchingMarkets_0.1-7.tar.gz : success (84 of 169, 84 good, 0 bad) -- Avg runtime is 78.1 sec, exp. finish in 110.6 min at 11:32:55 on 30-Oct-2015
+
+RESULT for matchingR_1.2.tar.gz : success (85 of 169, 85 good, 0 bad) -- Avg runtime is 77.7 sec, exp. finish in 108.8 min at 11:31:54 on 30-Oct-2015
+
+RESULT for mcemGLM_1.0.tar.gz : success (86 of 169, 86 good, 0 bad) -- Avg runtime is 80.2 sec, exp. finish in 111 min at 11:38:54 on 30-Oct-2015
+
+RESULT for mcIRT_0.41.tar.gz : success (87 of 169, 87 good, 0 bad) -- Avg runtime is 80.3 sec, exp. finish in 109.7 min at 11:38:59 on 30-Oct-2015
+
+RESULT for mcmcse_1.1-2.tar.gz : success (88 of 169, 88 good, 0 bad) -- Avg runtime is 79.8 sec, exp. finish in 107.7 min at 11:37:41 on 30-Oct-2015
+
+RESULT for metafolio_0.1.0.tar.gz : success (89 of 169, 89 good, 0 bad) -- Avg runtime is 79.3 sec, exp. finish in 105.7 min at 11:36:11 on 30-Oct-2015
+
+RESULT for mets_1.1.1.tar.gz : success (90 of 169, 90 good, 0 bad) -- Avg runtime is 80.4 sec, exp. finish in 105.9 min at 11:39:24 on 30-Oct-2015
+
+RESULT for mev_1.3.tar.gz : success (91 of 169, 91 good, 0 bad) -- Avg runtime is 79.9 sec, exp. finish in 103.8 min at 11:37:55 on 30-Oct-2015
+
+RESULT for miceadds_1.3-0.tar.gz : failure (92 of 169, 91 good, 1 bad) -- Avg runtime is 80.7 sec, exp. finish in 103.6 min at 11:40:13 on 30-Oct-2015
+
+RESULT for mirt_1.13.tar.gz : success (93 of 169, 92 good, 1 bad) -- Avg runtime is 81.3 sec, exp. finish in 103 min at 11:41:55 on 30-Oct-2015
+
+RESULT for mirtCAT_0.6.tar.gz : success (94 of 169, 93 good, 1 bad) -- Avg runtime is 81.1 sec, exp. finish in 101.4 min at 11:41:27 on 30-Oct-2015
+
+RESULT for miscF_0.1-2.tar.gz : success (95 of 169, 94 good, 1 bad) -- Avg runtime is 80.6 sec, exp. finish in 99.4 min at 11:39:53 on 30-Oct-2015
+
+RESULT for mixedMem_1.1.0.tar.gz : success (96 of 169, 95 good, 1 bad) -- Avg runtime is 81.1 sec, exp. finish in 98.7 min at 11:41:22 on 30-Oct-2015
+
+RESULT for mmand_1.2.0.tar.gz : success (97 of 169, 96 good, 1 bad) -- Avg runtime is 80.7 sec, exp. finish in 96.9 min at 11:40:22 on 30-Oct-2015
+
+RESULT for Morpho_2.3.0.tar.gz : success (98 of 169, 97 good, 1 bad) -- Avg runtime is 82 sec, exp. finish in 97.1 min at 11:43:57 on 30-Oct-2015
+
+RESULT for moveHMM_1.0.tar.gz : success (99 of 169, 98 good, 1 bad) -- Avg runtime is 81.8 sec, exp. finish in 95.4 min at 11:43:12 on 30-Oct-2015
+
+RESULT for mp_0.3.1.tar.gz : success (100 of 169, 99 good, 1 bad) -- Avg runtime is 81.3 sec, exp. finish in 93.5 min at 11:42:03 on 30-Oct-2015
+
+RESULT for Mposterior_0.1.2.tar.gz : success (101 of 169, 100 good, 1 bad) -- Avg runtime is 81 sec, exp. finish in 91.8 min at 11:41:06 on 30-Oct-2015
+
+RESULT for MRIaggr_1.1.2.tar.gz : failure (102 of 169, 100 good, 2 bad) -- Avg runtime is 80.8 sec, exp. finish in 90.2 min at 11:40:28 on 30-Oct-2015
+
+RESULT for msgl_2.2.0.tar.gz : failure (103 of 169, 100 good, 3 bad) -- Avg runtime is 80.7 sec, exp. finish in 88.8 min at 11:40:21 on 30-Oct-2015
+
+RESULT for MVB_1.1.tar.gz : success (104 of 169, 101 good, 3 bad) -- Avg runtime is 80.8 sec, exp. finish in 87.5 min at 11:40:30 on 30-Oct-2015
+
+RESULT for mvnfast_0.1.3.tar.gz : success (105 of 169, 102 good, 3 bad) -- Avg runtime is 80.4 sec, exp. finish in 85.8 min at 11:39:25 on 30-Oct-2015
+
+RESULT for ngspatial_1.0-5.tar.gz : success (106 of 169, 103 good, 3 bad) -- Avg runtime is 80.1 sec, exp. finish in 84.1 min at 11:38:30 on 30-Oct-2015
+
+RESULT for oem_1.02.1.tar.gz : success (107 of 169, 104 good, 3 bad) -- Avg runtime is 79.6 sec, exp. finish in 82.2 min at 11:37:00 on 30-Oct-2015
+
+RESULT for onlinePCA_1.3.tar.gz : success (108 of 169, 105 good, 3 bad) -- Avg runtime is 79.4 sec, exp. finish in 80.7 min at 11:36:36 on 30-Oct-2015
+
+RESULT for PanelCount_1.0.9.tar.gz : success (109 of 169, 106 good, 3 bad) -- Avg runtime is 78.9 sec, exp. finish in 78.9 min at 11:35:17 on 30-Oct-2015
+
+RESULT for pcalg_2.2-4.tar.gz : success (110 of 169, 107 good, 3 bad) -- Avg runtime is 80.7 sec, exp. finish in 79.3 min at 11:40:12 on 30-Oct-2015
+
+RESULT for PedCNV_0.1.tar.gz : success (111 of 169, 108 good, 3 bad) -- Avg runtime is 80.4 sec, exp. finish in 77.8 min at 11:39:30 on 30-Oct-2015
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -O3 -Wall -pipe -Wno-unused -pedantic  -c signaltest.cpp -o signaltest.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o phylosignal.so RcppExports.o signaltest.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for phylosignal_1.1.tar.gz : success (112 of 169, 109 good, 3 bad) -- Avg runtime is 80.8 sec, exp. finish in 76.8 min at 11:40:30 on 30-Oct-2015
+
+RESULT for planar_1.5.2.tar.gz : success (113 of 169, 110 good, 3 bad) -- Avg runtime is 80.6 sec, exp. finish in 75.2 min at 11:39:55 on 30-Oct-2015
+
+RESULT for polyfreqs_1.0.0.tar.gz : success (114 of 169, 111 good, 3 bad) -- Avg runtime is 80.2 sec, exp. finish in 73.5 min at 11:38:51 on 30-Oct-2015
+
+RESULT for PoweR_1.0.4.tar.gz : success (115 of 169, 112 good, 3 bad) -- Avg runtime is 80 sec, exp. finish in 72 min at 11:38:10 on 30-Oct-2015
+
+RESULT for PPtreeViz_1.3.0.tar.gz : success (116 of 169, 113 good, 3 bad) -- Avg runtime is 79.6 sec, exp. finish in 70.3 min at 11:37:06 on 30-Oct-2015
+
+RESULT for prospectr_0.1.3.tar.gz : success (117 of 169, 114 good, 3 bad) -- Avg runtime is 79.5 sec, exp. finish in 68.9 min at 11:36:48 on 30-Oct-2015
+
+RESULT for psd_1.0-1.tar.gz : success (118 of 169, 115 good, 3 bad) -- Avg runtime is 79.2 sec, exp. finish in 67.3 min at 11:35:55 on 30-Oct-2015
+
+RESULT for psgp_0.3-6.tar.gz : success (119 of 169, 116 good, 3 bad) -- Avg runtime is 80.1 sec, exp. finish in 66.7 min at 11:38:30 on 30-Oct-2015
+
+RESULT for quadrupen_0.2-4.tar.gz : success (120 of 169, 117 good, 3 bad) -- Avg runtime is 80.3 sec, exp. finish in 65.6 min at 11:39:00 on 30-Oct-2015
+
+RESULT for quanteda_0.8.6-0.tar.gz : success (121 of 169, 118 good, 3 bad) -- Avg runtime is 80.4 sec, exp. finish in 64.3 min at 11:39:25 on 30-Oct-2015
+
+RESULT for rags2ridges_2.0.tar.gz : success (122 of 169, 119 good, 3 bad) -- Avg runtime is 80.5 sec, exp. finish in 63.1 min at 11:39:46 on 30-Oct-2015
+
+RESULT for Rborist_0.1-0.tar.gz : success (123 of 169, 120 good, 3 bad) -- Avg runtime is 80.3 sec, exp. finish in 61.5 min at 11:38:58 on 30-Oct-2015
+
+RESULT for rcppbugs_0.1.4.1.tar.gz : success (124 of 169, 121 good, 3 bad) -- Avg runtime is 80 sec, exp. finish in 60 min at 11:38:19 on 30-Oct-2015
+
+RESULT for RcppDE_0.1.4.tar.gz : success (125 of 169, 122 good, 3 bad) -- Avg runtime is 79.7 sec, exp. finish in 58.5 min at 11:37:32 on 30-Oct-2015
+
+RESULT for RcppMLPACK_1.0.10-2.tar.gz : success (126 of 169, 123 good, 3 bad) -- Avg runtime is 81.6 sec, exp. finish in 58.5 min at 11:42:44 on 30-Oct-2015
+
+RESULT for RealVAMS_0.3-2.tar.gz : success (127 of 169, 124 good, 3 bad) -- Avg runtime is 81.4 sec, exp. finish in 57 min at 11:42:08 on 30-Oct-2015
+
+RESULT for redist_1.2.tar.gz : success (128 of 169, 125 good, 3 bad) -- Avg runtime is 81.5 sec, exp. finish in 55.7 min at 11:42:33 on 30-Oct-2015
+
+RESULT for resemble_1.1.1.tar.gz : success (129 of 169, 126 good, 3 bad) -- Avg runtime is 81.3 sec, exp. finish in 54.2 min at 11:41:52 on 30-Oct-2015
+
+RESULT for revealedPrefs_0.2.tar.gz : success (130 of 169, 127 good, 3 bad) -- Avg runtime is 81.1 sec, exp. finish in 52.7 min at 11:41:20 on 30-Oct-2015
+
+RESULT for rgam_0.6.3.tar.gz : success (131 of 169, 128 good, 3 bad) -- Avg runtime is 80.9 sec, exp. finish in 51.3 min at 11:40:54 on 30-Oct-2015
+
+RESULT for rmgarch_1.2-9.tar.gz : success (132 of 169, 129 good, 3 bad) -- Avg runtime is 81.7 sec, exp. finish in 50.4 min at 11:43:02 on 30-Oct-2015
+
+RESULT for robustgam_0.1.7.tar.gz : success (133 of 169, 130 good, 3 bad) -- Avg runtime is 81.5 sec, exp. finish in 48.9 min at 11:42:27 on 30-Oct-2015
+
+RESULT for robustHD_0.5.0.tar.gz : success (134 of 169, 131 good, 3 bad) -- Avg runtime is 81.7 sec, exp. finish in 47.7 min at 11:43:00 on 30-Oct-2015
+
+RESULT for robustreg_0.1-9.tar.gz : success (135 of 169, 132 good, 3 bad) -- Avg runtime is 81.5 sec, exp. finish in 46.2 min at 11:42:29 on 30-Oct-2015
+
+RESULT for rotations_1.4.tar.gz : success (136 of 169, 133 good, 3 bad) -- Avg runtime is 81.6 sec, exp. finish in 44.9 min at 11:42:44 on 30-Oct-2015
+
+RESULT for Rphylopars_0.1.1.tar.gz : success (137 of 169, 134 good, 3 bad) -- Avg runtime is 81.6 sec, exp. finish in 43.5 min at 11:42:44 on 30-Oct-2015
+
+RESULT for rstpm2_1.2.2.tar.gz : success (138 of 169, 135 good, 3 bad) -- Avg runtime is 81.6 sec, exp. finish in 42.2 min at 11:42:48 on 30-Oct-2015
+
+RESULT for rugarch_1.3-6.tar.gz : success (139 of 169, 136 good, 3 bad) -- Avg runtime is 82.4 sec, exp. finish in 41.2 min at 11:44:53 on 30-Oct-2015
+
+RESULT for sbmSDP_0.2.tar.gz : success (140 of 169, 137 good, 3 bad) -- Avg runtime is 82 sec, exp. finish in 39.6 min at 11:43:50 on 30-Oct-2015
+
+RESULT for SBSA_0.2.3.tar.gz : success (141 of 169, 138 good, 3 bad) -- Avg runtime is 82 sec, exp. finish in 38.3 min at 11:43:50 on 30-Oct-2015
+
+RESULT for SelvarMix_1.1.tar.gz : success (142 of 169, 139 good, 3 bad) -- Avg runtime is 82 sec, exp. finish in 36.9 min at 11:43:58 on 30-Oct-2015
+
+RESULT for sgd_1.0.tar.gz : success (143 of 169, 140 good, 3 bad) -- Avg runtime is 81.7 sec, exp. finish in 35.4 min at 11:43:10 on 30-Oct-2015
+
+RESULT for sglOptim_1.2.0.tar.gz : success (144 of 169, 141 good, 3 bad) -- Avg runtime is 81.9 sec, exp. finish in 34.1 min at 11:43:44 on 30-Oct-2015
+
+RESULT for sirt_1.8-9.tar.gz : success (145 of 169, 142 good, 3 bad) -- Avg runtime is 83.7 sec, exp. finish in 33.5 min at 11:48:39 on 30-Oct-2015
+
+RESULT for slfm_0.2.2.tar.gz : success (146 of 169, 143 good, 3 bad) -- Avg runtime is 83.4 sec, exp. finish in 32 min at 11:47:51 on 30-Oct-2015
+
+RESULT for snipEM_1.0.tar.gz : success (147 of 169, 144 good, 3 bad) -- Avg runtime is 83.1 sec, exp. finish in 30.5 min at 11:46:54 on 30-Oct-2015
+
+RESULT for SparseFactorAnalysis_1.0.tar.gz : success (148 of 169, 145 good, 3 bad) -- Avg runtime is 82.9 sec, exp. finish in 29 min at 11:46:24 on 30-Oct-2015
+
+RESULT for sparsereg_1.1.tar.gz : success (149 of 169, 146 good, 3 bad) -- Avg runtime is 82.9 sec, exp. finish in 27.6 min at 11:46:20 on 30-Oct-2015
+
+RESULT for SpatialEpi_1.2.1.tar.gz : success (150 of 169, 147 good, 3 bad) -- Avg runtime is 82.8 sec, exp. finish in 26.2 min at 11:46:05 on 30-Oct-2015
+
+RESULT for SpatialTools_1.0.0.tar.gz : success (151 of 169, 148 good, 3 bad) -- Avg runtime is 82.6 sec, exp. finish in 24.8 min at 11:45:35 on 30-Oct-2015
+
+RESULT for SpatPCA_1.0.0.2.tar.gz : success (152 of 169, 149 good, 3 bad) -- Avg runtime is 82.3 sec, exp. finish in 23.3 min at 11:44:50 on 30-Oct-2015
+
+RESULT for spBayesSurv_1.0.3.tar.gz : success (153 of 169, 150 good, 3 bad) -- Avg runtime is 83 sec, exp. finish in 22.1 min at 11:46:43 on 30-Oct-2015
+
+RESULT for spduration_0.14.0.tar.gz : success (154 of 169, 151 good, 3 bad) -- Avg runtime is 82.8 sec, exp. finish in 20.7 min at 11:46:13 on 30-Oct-2015
+
+RESULT for starma_1.1.tar.gz : success (155 of 169, 152 good, 3 bad) -- Avg runtime is 82.6 sec, exp. finish in 19.3 min at 11:45:35 on 30-Oct-2015
+
+RESULT for stm_1.1.0.tar.gz : success (156 of 169, 153 good, 3 bad) -- Avg runtime is 82.6 sec, exp. finish in 17.9 min at 11:45:29 on 30-Oct-2015
+
+RESULT for stochvol_1.2.0.tar.gz : success (157 of 169, 154 good, 3 bad) -- Avg runtime is 82.4 sec, exp. finish in 16.5 min at 11:45:02 on 30-Oct-2015
+
+RESULT for strum_0.6.2.tar.gz : success (158 of 169, 155 good, 3 bad) -- Avg runtime is 82.4 sec, exp. finish in 15.1 min at 11:45:05 on 30-Oct-2015
+
+RESULT for survAccuracyMeasures_1.2.tar.gz : success (159 of 169, 156 good, 3 bad) -- Avg runtime is 82.3 sec, exp. finish in 13.7 min at 11:44:41 on 30-Oct-2015
+
+RESULT for SVMMatch_1.1.tar.gz : success (160 of 169, 157 good, 3 bad) -- Avg runtime is 81.9 sec, exp. finish in 12.3 min at 11:43:45 on 30-Oct-2015
+
+RESULT for synlik_0.1.1.tar.gz : success (161 of 169, 158 good, 3 bad) -- Avg runtime is 81.9 sec, exp. finish in 10.9 min at 11:43:41 on 30-Oct-2015
+
+RESULT for TAM_1.14-0.tar.gz : success (162 of 169, 159 good, 3 bad) -- Avg runtime is 82.5 sec, exp. finish in 9.6 min at 11:45:19 on 30-Oct-2015
+
+RESULT for TauStar_1.0.0.tar.gz : success (163 of 169, 160 good, 3 bad) -- Avg runtime is 82.3 sec, exp. finish in 8.2 min at 11:44:51 on 30-Oct-2015
+
+RESULT for TED_1.1.1.tar.gz : success (164 of 169, 161 good, 3 bad) -- Avg runtime is 82.1 sec, exp. finish in 6.8 min at 11:44:02 on 30-Oct-2015
+
+RESULT for timma_1.2.1.tar.gz : success (165 of 169, 162 good, 3 bad) -- Avg runtime is 81.9 sec, exp. finish in 5.5 min at 11:43:38 on 30-Oct-2015
+
+RESULT for treeclim_1.0.11.tar.gz : success (166 of 169, 163 good, 3 bad) -- Avg runtime is 81.9 sec, exp. finish in 4.1 min at 11:43:36 on 30-Oct-2015
+
+RESULT for unmarked_0.11-0.tar.gz : success (167 of 169, 164 good, 3 bad) -- Avg runtime is 82.3 sec, exp. finish in 2.7 min at 11:44:37 on 30-Oct-2015
+
+RESULT for VarSelLCM_1.2.tar.gz : success (168 of 169, 165 good, 3 bad) -- Avg runtime is 82.2 sec, exp. finish in 1.4 min at 11:44:25 on 30-Oct-2015
+
+RESULT for zic_0.9.tar.gz : success (169 of 169, 166 good, 3 bad) -- Avg runtime is 81.9 sec, exp. finish in 0 min at 11:43:43 on 30-Oct-2015
+                     pkg res
+1       AdaptiveSparsity   0
+2                    AHR   0
+3                 Amelia   0
+4                 ASPBay   0
+5                 BaBooN   0
+6              BayesComm   0
+7                 bayesm   0
+8                  bayou   0
+9                    bcp   0
+10                   bfa   0
+11           BIFIEsurvey   0
+12                 BIPOD   0
+13           blockmodels   0
+14              BTLLasso   0
+15                bvarsv   0
+16                 ccaPP   0
+17                  cccp   0
+18                   cda   0
+19                   CDM   0
+20    ChannelAttribution   0
+21             cladoRcpp   0
+22                 coala   0
+23              coneproj   0
+24                copCAR   0
+25                  cord   0
+26               CoxPlus   0
+27             Crossover   0
+28             DepthProc   0
+29                dfcomb   0
+30                 dfmta   0
+31         DiffusionRgqd   0
+32                  dina   0
+33             EloChoice   0
+34                 emIRT   0
+35                 EPGLM   0
+36                EstHer   0
+37          FastBandChol   0
+38                 fastM   0
+39             FBFsearch   0
+40              fdaMixed   0
+41                FDRreg   0
+42                 FIACH   0
+43                  fICA   0
+44              FisHiCal   0
+45                  flip   0
+46              forecast   0
+47               fourPNO   0
+48             FRESA.CAD   0
+49              gaselect   0
+50          GeneticTools   0
+51              geoCount   0
+52                 GERGM   0
+53             glamlasso   0
+54                  glcm   0
+55              glmgraph   0
+56                  GMCM   0
+57                gmum.r   0
+58                  gMWT   0
+59                 GPvam   0
+60                 gRain   0
+61          graphicalVAR   0
+62                gRbase   0
+63                  gRim   0
+64            growcurves   0
+65         growfunctions   0
+66                   GSE   0
+67                hawkes   0
+68               HLMdiag   0
+69               hsphase   0
+70           hypervolume   0
+71               iBATCGH   0
+72                icamix   0
+73               iccbeta   0
+74              iLaplace   0
+75                 immer   0
+76                JAGUAR   0
+77             kdecopula   0
+78              Langevin   0
+79                  lpme   0
+80                  lsgl   0
+81            markophylo   0
+82           markovchain   0
+83                   MAT   0
+84       matchingMarkets   0
+85             matchingR   0
+86               mcemGLM   0
+87                 mcIRT   0
+88                mcmcse   0
+89             metafolio   0
+90                  mets   0
+91                   mev   0
+92              miceadds   1
+93                  mirt   0
+94               mirtCAT   0
+95                 miscF   0
+96              mixedMem   0
+97                 mmand   0
+98                Morpho   0
+99               moveHMM   0
+100                   mp   0
+101           Mposterior   0
+102              MRIaggr   1
+103                 msgl   1
+104                  MVB   0
+105              mvnfast   0
+106            ngspatial   0
+107                  oem   0
+108            onlinePCA   0
+109           PanelCount   0
+110                pcalg   0
+111               PedCNV   0
+112          phylosignal   0
+113               planar   0
+114            polyfreqs   0
+115                PoweR   0
+116            PPtreeViz   0
+117            prospectr   0
+118                  psd   0
+119                 psgp   0
+120            quadrupen   0
+121             quanteda   0
+122          rags2ridges   0
+123              Rborist   0
+124             rcppbugs   0
+125               RcppDE   0
+126           RcppMLPACK   0
+127             RealVAMS   0
+128               redist   0
+129             resemble   0
+130        revealedPrefs   0
+131                 rgam   0
+132              rmgarch   0
+133            robustgam   0
+134             robustHD   0
+135            robustreg   0
+136            rotations   0
+137           Rphylopars   0
+138               rstpm2   0
+139              rugarch   0
+140               sbmSDP   0
+141                 SBSA   0
+142            SelvarMix   0
+143                  sgd   0
+144             sglOptim   0
+145                 sirt   0
+146                 slfm   0
+147               snipEM   0
+148 SparseFactorAnalysis   0
+149            sparsereg   0
+150           SpatialEpi   0
+151         SpatialTools   0
+152              SpatPCA   0
+153          spBayesSurv   0
+154           spduration   0
+155               starma   0
+156                  stm   0
+157             stochvol   0
+158                strum   0
+159 survAccuracyMeasures   0
+160             SVMMatch   0
+161               synlik   0
+162                  TAM   0
+163              TauStar   0
+164                  TED   0
+165                timma   0
+166             treeclim   0
+167             unmarked   0
+168            VarSelLCM   0
+169                  zic   0
+
+  0   1 
+166   3 
+[1] "miceadds" "MRIaggr"  "msgl"    
+Ended at  2015-10-30 11:43:43 
