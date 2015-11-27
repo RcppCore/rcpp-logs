@@ -42,10 +42,13 @@ rcppset <- sort(unname(AP[unique(c(grep("Rcpp", as.character(AP[,"Depends"])),
                                    grep("Rcpp", as.character(AP[,"Imports"])))),"Package"]))
 
 exclset <- c("cqrReg",          # requires Rmosek which require Mosek which is commercial
+             "LANDD",		# requires GOstats GOSemSim
              "miceadds",        # requires jomo which requires Rmosek
+             "gpuR",            # CUDA
              "RStoolbox",	# requires rgdal
              "satellite", 	# requires rgdal
-             "WideLM")
+             "WideLM"           # CUDA (currently off CRAN anyway)
+             )
 
 rcppset <- rcppset[ ! rcppset %in% exclset ]
 
