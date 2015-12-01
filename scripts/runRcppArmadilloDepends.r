@@ -14,6 +14,7 @@ loclib <- "/tmp/RcppDepends/lib"
 Sys.setenv("R_LIBS_USER"="/tmp/RcppDepends/lib")
 #Sys.setenv("CC"="gcc")   ## needed for a bad interaction between autoconf and llvm on Ubuntu 13.10
 #Sys.setenv("CXX"="g++")  ## idem
+Sys.setenv("MAKE"="make -j 2 -O")
 
 Sys.setenv("RGL_USE_NULL"="TRUE")       # Duncan Murdoch on r-package-devel on 12 Aug 2015
 
@@ -36,7 +37,7 @@ rcpparmaset <- sort(unname(AP[unique(c(grep(pkg, as.character(AP[,"Depends"])),
                                        grep(pkg, as.character(AP[,"LinkingTo"])),
                                        grep(pkg, as.character(AP[,"Imports"])))),"Package"]))
 
-exclset <- c("cqrReg")                  # requires Rmosek which require Mosek which is commercial
+exclset <- c("cqrReg")          # requires Rmosek which require Mosek which is commercial
 
 rcpparmaset <- rcpparmaset[ ! rcpparmaset %in% exclset ]
 
@@ -72,7 +73,7 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
 
     ipidx <- which(IP[,"Package"] == p)
     if ((length(ipidx) == 0) || (IP[ipidx,"Version"] != AP[i,"Version"])) {
-        install.packages(p, lib=loclib)
+        install.packages(p, lib=loclib, quiet=TRUE, verbose=FALSE)
     }
 
     if (!file.exists(pkg)) {
@@ -86,8 +87,8 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     }
     
     #if (!file.exists(pkg)) download.file(pathpkg, pkg, quiet=TRUE)
-    rc <- system(paste("xvfb-run --server-args=\"-screen 0 1024x768x24\" ",
-                       "R CMD check --no-manual --no-vignettes ", pkg, " > ", pkg, ".log", sep=""))
+    rc <- system(paste0("xvfb-run --server-args=\"-screen 0 1024x768x24\" ",
+                        "R CMD check --no-manual --no-vignettes ", pkg, " 2>&1 > ", pkg, ".log"))
     res[pi, "res"] <- rc
     if (rc == 0) {
         good <<- good + 1
