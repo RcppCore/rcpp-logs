@@ -102,7 +102,7 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
 
     ipidx <- which(IP[,"Package"] == p)
     if ((length(ipidx) == 0) || (IP[ipidx,"Version"] != AP[i,"Version"])) {
-        install.packages(p, lib=loclib)
+        install.packages(p, lib=loclib, quiet=TRUE, verbose=FALSE)
     }
     
     if (!file.exists(pkg)) {
@@ -117,7 +117,7 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
 
     rc <- system(paste("xvfb-run --server-args=\"-screen 0 1024x768x24\" ",
                        rbinary,         # R or RD
-                       " CMD check --no-manual --no-vignettes ", pkg, " > ", pkg, ".log", sep=""))
+                       " CMD check --no-manual --no-vignettes ", pkg, " 2>&1 > ", pkg, ".log", sep=""))
     res[pi, "res"] <- rc
     if (rc == 0) {
         good <<- good + 1
