@@ -35,7 +35,7 @@ invisible(sapply(list.files("/tmp", "(repos|lib).*rds$", full.names=TRUE), unlin
 ## update local lib/
 update.packages(lib.loc="lib/", ask=FALSE)
 
-IP <- installed.packages(lib.loc=loclib) 
+IP <- installed.packages(lib.loc=loclib)
 AP <- available.packages(contrib.url(r["CRAN"]),filter=list())	# available package at CRAN
 rcppset <- sort(unname(AP[unique(c(grep("Rcpp", as.character(AP[,"Depends"])),
                                    grep("Rcpp", as.character(AP[,"LinkingTo"])),
@@ -104,7 +104,7 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     if ((length(ipidx) == 0) || (IP[ipidx,"Version"] != AP[i,"Version"])) {
         install.packages(p, lib=loclib, quiet=TRUE, verbose=FALSE)
     }
-    
+
     if (!file.exists(pkg)) {
         ## we got random download failures once in a while, so if running locally, use CRANberries-created mirror
         localPath <- paste("/home/edd/cranberries/sources/", pkg, sep="")
@@ -115,7 +115,7 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
         }
     }
 
-    rc <- system(paste("xvfb-run --server-args=\"-screen 0 1024x768x24\" ",
+    rc <- system(paste("xvfb-run-safe --server-args=\"-screen 0 1024x768x24\" ",
                        rbinary,         # R or RD
                        " CMD check --no-manual --no-vignettes ", pkg, " 2>&1 > ", pkg, ".log", sep=""))
     res[pi, "res"] <- rc
