@@ -17,7 +17,7 @@ loclib <- "/tmp/RcppDepends/lib"
 Sys.setenv("R_LIBS_USER"="/tmp/RcppDepends/lib")
 #Sys.setenv("CC"="gcc")   ## needed for a bad interaction between autoconf and llvm on Ubuntu 13.10
 #Sys.setenv("CXX"="g++")  ## idem
-Sys.setenv("MAKE"="make -j 2 -O")
+Sys.setenv("MAKE"="make -j 4 -O")
 
 r <- getOption("repos")
 r["CRAN"] <- "http://cran.rstudio.com"
@@ -42,9 +42,12 @@ rcppset <- sort(unname(AP[unique(c(grep("Rcpp", as.character(AP[,"Depends"])),
                                    grep("Rcpp", as.character(AP[,"Imports"])))),"Package"]))
 
 exclset <- c("cqrReg",          # requires Rmosek which require Mosek which is commercial
+	     "growcurves",	# takes too long
+	     "growfunctions",	# takes too long
              "LANDD",		# requires GOstats GOSemSim
              "miceadds",        # requires jomo which requires Rmosek
              "gpuR",            # CUDA
+             #"rags2ridges",     # sometimes takes very long
              "RStoolbox",	# requires rgdal
              "satellite", 	# requires rgdal
              "WideLM"           # CUDA (currently off CRAN anyway)
@@ -78,7 +81,7 @@ good <- bad <- 0
 n <- nrow(res)
 starttime <- Sys.time()
 
-remtime <- function(ndone, ntotal, starttime) {
+remtime <- function(ndone, ntotal, starttime, thisstart) {
     now <- Sys.time()
     running <- as.numeric(difftime(now, starttime, unit="secs"))
     #print(running)
@@ -87,7 +90,9 @@ remtime <- function(ndone, ntotal, starttime) {
     remaining <- (ntotal-ndone)*avgtime
     #print(remaining)
     #cat(format(now),"--",format(starttime), "--", running, "--", avgtime, "--", remaining,"\n")
-    paste("Avg runtime is", round(avgtime, digits=1), "sec,",
+    paste("Now", strftime(now, "%H:%M:%S"),  
+          "This", round(difftime(now, thisstart, unit="sec"), digits=1), "sec,", 
+	  "Avg", round(avgtime, digits=1), "sec,",
           "exp. finish in", round(remaining/60, digits=1),
           "min at", strftime(now+remaining, "%H:%M:%S on %d-%b-%Y"))
 }
@@ -100,9 +105,10 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     pkg <- paste(AP[i,"Package"], "_", AP[i,"Version"], ".tar.gz", sep="")
     pathpkg <- paste(AP[i,"Repository"], "/", pkg, sep="")
 
+    thisstart <- Sys.time()
     ipidx <- which(IP[,"Package"] == p)
     if ((length(ipidx) == 0) || (IP[ipidx,"Version"] != AP[i,"Version"])) {
-        install.packages(p, lib=loclib, quiet=TRUE, verbose=FALSE)
+        install.packages(p, lib=loclib, quiet=TRUE, verbose=FALSE, dependencies=TRUE)
     }
 
     if (!file.exists(pkg)) {
@@ -126,7 +132,7 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     }
     cat(sprintf("\nRESULT for %s : %s (%d of %d, %d good, %d bad) -- %s\n",
                 pkg, if (rc==0) "success" else "failure", pi, n, good, bad,
-                remtime(good+bad, n, starttime)))
+                remtime(good+bad, n, starttime, thisstart)))
     res[pi, ]
 })
 
