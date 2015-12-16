@@ -42,9 +42,8 @@ rcppset <- sort(unname(AP[unique(c(grep("Rcpp", as.character(AP[,"Depends"])),
                                    grep("Rcpp", as.character(AP[,"Imports"])))),"Package"]))
 
 exclset <- c("cqrReg",          # requires Rmosek which require Mosek which is commercial
-	     "growcurves",	# takes too long
-	     "growfunctions",	# takes too long
              "LANDD",		# requires GOstats GOSemSim
+             "mapview",		# requires rgdal
              "miceadds",        # requires jomo which requires Rmosek
              "gpuR",            # CUDA
              #"rags2ridges",     # sometimes takes very long
