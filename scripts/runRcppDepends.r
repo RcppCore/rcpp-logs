@@ -2,7 +2,7 @@
 
 cat("Started at ", format(Sys.time()), "\n")
 pkg <- "Rcpp"
-cat(pkg, "version is", packageDescription(pkg)$Version, "\n")
+cat(pkg, "version is", packageDescription(pkg)$Version, "on", Sys.info()[["nodename"]], "\n")
 
 rbinary <- "RD"
 rversion <- system(paste(rbinary, "--version | head -1"), intern=TRUE)
