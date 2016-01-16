@@ -17,7 +17,8 @@ loclib <- "/tmp/RcppDepends/lib"
 Sys.setenv("R_LIBS_USER"="/tmp/RcppDepends/lib")
 #Sys.setenv("CC"="gcc")   ## needed for a bad interaction between autoconf and llvm on Ubuntu 13.10
 #Sys.setenv("CXX"="g++")  ## idem
-if (Sys.getenv("MAKE") == "") Sys.setenv("MAKE"="make -j 4 -O")
+##if (Sys.getenv("MAKE") == "")
+Sys.setenv("MAKE"="make -j 2 -O")
 
 r <- getOption("repos")
 r["CRAN"] <- "http://cran.rstudio.com"
@@ -73,6 +74,7 @@ if (grep("BioGeoBEARS", rcppset)) {     ## indirect match, no need to test
 #    rcppset <- rcppset[ ! grepl("WideLM", rcppset) ]
 #}
 
+#rcppset <- c("apcluster", "autovarCore")
 print(rcppset)
 
 res <- data.frame(pkg=rcppset, res=NA, stringsAsFactors=FALSE)
@@ -102,12 +104,17 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     p <- rcppset[pi]
     i <- which(AP[,"Package"]==p)
     pkg <- paste(AP[i,"Package"], "_", AP[i,"Version"], ".tar.gz", sep="")
+    #print(pkg)
     pathpkg <- paste(AP[i,"Repository"], "/", pkg, sep="")
 
     thisstart <- Sys.time()
     ipidx <- which(IP[,"Package"] == p)
     if ((length(ipidx) == 0) || (IP[ipidx,"Version"] != AP[i,"Version"])) {
+        #cat("Installing Dependencies\n")
         install.packages(p, lib=loclib, quiet=TRUE, verbose=FALSE, dependencies=TRUE)
+    #} else {
+        #cat("NOT Installing Dependencies\n")
+        #print(ipidx)
     }
 
     if (!file.exists(pkg)) {
@@ -116,7 +123,10 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
         if (file.exists(localPath)) {
             file.copy(localPath, ".")
         } else {
-            download.file(pathpkg, pkg, quiet=TRUE)
+            ##download.file(pathpkg, pkg, quiet=TRUE)
+            dl <- download.packages(AP[i,"Package"], ".")
+            pkg <- basename(dl[,2])
+            cat("Downloaded ", pkg, "\n")
         }
     }
 
