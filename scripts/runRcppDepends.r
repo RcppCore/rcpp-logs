@@ -50,6 +50,7 @@ exclset <- c("cqrReg",          # requires Rmosek which require Mosek which is c
              #"rags2ridges",     # sometimes takes very long
              "RStoolbox",	# requires rgdal
              "satellite", 	# requires rgdal
+             "stplanr",		# requires rgdal
              "WideLM"           # CUDA (currently off CRAN anyway)
              )
 
