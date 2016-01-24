@@ -6,6 +6,10 @@ cat(pkg, " version is ", packageDescription(pkg)$Version, "\n")
 pkg <- "RcppEigen"
 cat(pkg, " version is ", packageDescription(pkg)$Version, "\n")
 
+rbinary <- "RD"
+rversion <- system(paste(rbinary, "--version | head -1"), intern=TRUE)
+cat(rversion, "\n")
+
 ## use a test-local directory, install Rcpp, RcppArmadillo, ... there
 ## this will work for sub-shells such as the ones started by system() below
 if (!file.exists("/tmp/RcppDepends")) dir.create("/tmp/RcppDepends")
@@ -14,13 +18,14 @@ loclib <- "/tmp/RcppDepends/lib"
 Sys.setenv("R_LIBS_USER"="/tmp/RcppDepends/lib")
 #Sys.setenv("CC"="gcc")   ## needed for a bad interaction between autoconf and llvm on Ubuntu 13.10
 #Sys.setenv("CXX"="g++")  ## idem
-
-Sys.setenv("RGL_USE_NULL"="TRUE")       # Duncan Murdoch on r-package-devel on 12 Aug 2015
+Sys.setenv("MAKE"="make -j 2 -O")
 
 r <- getOption("repos")
 r["CRAN"] <- "http://cran.rstudio.com"
 r["BioCsoft"] <- "http://www.bioconductor.org/packages/release/bioc"
 options(repos = r)
+
+Sys.setenv("RGL_USE_NULL"="TRUE")       # Duncan Murdoch on r-package-devel on 12 Aug 2015
 
 setwd("/tmp/RcppDepends")
 
@@ -35,6 +40,12 @@ AP <- available.packages(contrib.url("http://cran.r-project.org"), filter=list()
 rcppeigenset <- sort(unname(AP[unique(c(grep(pkg, as.character(AP[,"Depends"])),
                                         grep(pkg, as.character(AP[,"LinkingTo"])),
                                         grep(pkg, as.character(AP[,"Imports"])))),"Package"]))
+
+exclset <- c("gpuR"             # CUDA
+             )
+
+rcppeigenset <- rcppeigenset[ ! rcppeigenset %in% exclset ]
+
 print( rcppeigenset )
 
 res <- data.frame(pkg=rcppeigenset, res=NA)
@@ -42,12 +53,14 @@ good <- bad <- 0
 n <- nrow(res)
 starttime <- Sys.time()
 
-remtime <- function(ndone, ntotal, starttime) {
+remtime <- function(ndone, ntotal, starttime, thisstart) {
     now <- Sys.time()
     running <- as.numeric(difftime(now, starttime, unit="secs"))
     avgtime <- running/ndone
     remaining <- (ntotal-ndone)*avgtime
-    paste("Avg runtime is", round(avgtime, digits=1), "sec,",
+    paste("Now", strftime(now, "%H:%M:%S"),
+          "This", round(difftime(now, thisstart, unit="sec"), digits=1), "sec,",
+	  "Avg", round(avgtime, digits=1), "sec,",
           "exp. finish in", round(remaining/60, digits=1),
           "min at", strftime(now+remaining, "%H:%M:%S on %d-%b-%Y"))
 }
@@ -61,9 +74,10 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     pathpkg <- paste(AP[i,"Repository"], "/", pkg, sep="")
     #print(pathpkg)
 
+    thisstart <- Sys.time()
     ipidx <- which(IP[,"Package"] == p)
     if ((length(ipidx) == 0) || (IP[ipidx,"Version"] != AP[i,"Version"])) {
-        install.packages(p, lib=loclib)
+        install.packages(p, lib=loclib, quiet=TRUE, verbose=FALSE, dependencies=TRUE)
     }
 
     if (!file.exists(pkg)) {
@@ -72,13 +86,16 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
         if (file.exists(localPath)) {
             file.copy(localPath, ".")
         } else {
-            download.file(pathpkg, pkg, quiet=TRUE)
+            ##download.file(pathpkg, pkg, quiet=TRUE)
+            dl <- download.packages(AP[i,"Package"], ".")
+            pkg <- basename(dl[,2])
+            cat("Downloaded ", pkg, "\n")
         }
     }
     
-    #if (!file.exists(pkg)) download.file(pathpkg, pkg, quiet=TRUE)
-    rc <- system(paste("xvfb-run --server-args=\"-screen 0 1024x768x24\" ",
-                       "R CMD check --no-manual --no-vignettes ", pkg, " > ", pkg, ".log", sep=""))
+    rc <- system(paste("xvfb-run-safe --server-args=\"-screen 0 1024x768x24\" ",
+                       rbinary,         # R or RD
+                       " CMD check --no-manual --no-vignettes ", pkg, " 2>&1 > ", pkg, ".log", sep=""))
     res[pi, "res"] <- rc
     if (rc == 0) {
         good <<- good + 1
@@ -87,7 +104,7 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     }
     cat(sprintf("\nRESULT for %s : %s (%d of %d, %d good, %d bad) -- %s\n",
                 pkg, if (rc==0) "success" else "failure", pi, n, good, bad,
-                remtime(good+bad, n, starttime)))
+                remtime(good+bad, n, starttime, thisstart)))
     res[pi, ]
 })
 

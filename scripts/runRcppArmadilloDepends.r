@@ -6,9 +6,9 @@ cat(pkg, " version is ", packageDescription(pkg)$Version, "\n")
 pkg <- "RcppArmadillo"
 cat(pkg, " version is ", packageDescription(pkg)$Version, "\n")
 
-
-
-
+rbinary <- "RD"
+rversion <- system(paste(rbinary, "--version | head -1"), intern=TRUE)
+cat(rversion, "\n")
 
 ## use a test-local directory, install Rcpp, RcppArmadillo, ... there
 ## this will work for sub-shells such as the ones started by system() below
@@ -95,10 +95,9 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     }
     
     #if (!file.exists(pkg)) download.file(pathpkg, pkg, quiet=TRUE)
-    cmd <- paste0("xvfb-run-safe --server-args=\"-screen 0 1024x768x24\" ",
-                  "R CMD check --no-manual --no-vignettes ", pkg, " 2>&1 > ", pkg, ".log")
-    #print(cmd)
-    rc <- system(cmd)
+    rc <- system(paste("xvfb-run-safe --server-args=\"-screen 0 1024x768x24\" ",
+                       rbinary,         # R or RD
+                       " CMD check --no-manual --no-vignettes ", pkg, " 2>&1 > ", pkg, ".log", sep=""))
     res[pi, "res"] <- rc
     if (rc == 0) {
         good <<- good + 1
