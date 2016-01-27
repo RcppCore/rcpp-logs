@@ -42,7 +42,12 @@ rcpparmaset <- sort(unname(AP[unique(c(grep(pkg, as.character(AP[,"Depends"])),
                                        grep(pkg, as.character(AP[,"LinkingTo"])),
                                        grep(pkg, as.character(AP[,"Imports"])))),"Package"]))
 
-exclset <- c("cqrReg")          # requires Rmosek which require Mosek which is commercial
+exclset <- c("cqrReg",          # requires Rmosek which require Mosek which is commercial
+             "miceadds",        # requires jomo which requires Rmosek
+             "RStoolbox",	# requires rgdal
+             "stplanr"		# requires rgdal
+             )
+
 
 rcpparmaset <- rcpparmaset[ ! rcpparmaset %in% exclset ]
 
