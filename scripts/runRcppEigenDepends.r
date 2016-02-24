@@ -6,7 +6,8 @@ cat(pkg, " version is ", packageDescription(pkg)$Version, "\n")
 pkg <- "RcppEigen"
 cat(pkg, " version is ", packageDescription(pkg)$Version, "\n")
 
-rbinary <- "RD"
+##rbinary <- "RD"
+rbinary <- "R"
 rversion <- system(paste(rbinary, "--version | head -1"), intern=TRUE)
 cat(rversion, "\n")
 
