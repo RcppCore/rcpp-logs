@@ -1,0 +1,90 @@
+
+Summary from running script inside Docker
+=========================================
+
+  0   1 
+182  20 
+ [1] "BIFIEsurvey"  "BacArena"     "CDM"          "Crossover"    "Luminescence"
+ [6] "TAM"          "crawl"        "geoCount"     "gmwm"         "kdecopula"   
+[11] "markovchain"  "phylosignal"  "psd"          "psgp"         "quanteda"    
+[16] "rags2ridges"  "sirt"         "smoof"        "textmineR"    "treeclim"
+
+
+Detailed Discussion
+===================
+
+"BIFIEsurvey"           Package required but not available: 'miceadds'
+
+"BacArena"              Packages suggested but not available: 'glpkAPI' 'sybilSBML'
+
+"CDM"                   Packages suggested but not available: 'BIFIEsurvey' 'miceadds'
+
+"Crossover"             Packages required but not available: 'rJava' 'JavaGD'
+
+"Luminescence"          Package required but not available: 'XML'
+
+"TAM"                   Package suggested but not available: 'miceadds'
+
+"crawl"                 Package suggested but not available: 'rgdal'
+
+"geoCount"              Missing libgsl-dev
+
+"gmwm"                  Package suggested but not available: 'imudata'
+
+"kdecopula"             Package required but not available: 'VineCopula'
+
+"markovchain"           Package suggested but not available: 'knitcitations'
+
+"phylosignal"           Packages required but not available: 'adephylo' 'phylobase'
+
+"psd"                   Package suggested but not available: 'fftw'
+
+"psgp"                  Package suggested but not available: 'rgdal'
+
+"quanteda"              Packages suggested but not available: 'topicmodels' 'XML'
+
+"rags2ridges"           Package suggested but not available: 'KEGGgraph'
+
+"sirt"                  Package suggested but not available: 'miceadds'
+
+"smoof"                 Package suggested but not available: 'rPython'
+
+"textmineR"             Package required but not available: 'RWeka'
+
+"treeclim"              Package suggested but not available: 'dplR'
+
+
+Re-running with 'export _R_CHECK_FORCE_SUGGESTS_=0'
+===================================================
+
+"BacArena"              FAIL: there is no package called 'glpkAPI'
+                        (after installing "Packages required but not available: 'sybil' 'ReacTran' 'deSolve'")
+
+"CDM"                   FAIL: there is no package called 'sirt'
+                        (after installing "Packages required but not available: 'polycor' 'psych' 'sfsmisc'")
+
+"TAM"                   FAIL: there is no package called 'sirt'
+                        (after installing "Packages required but not available: 'CDM' 'GPArotation' 'lavaan' 'msm' 'psych' 'sfsmisc' 'tensor' 'WrightMap'")
+
+"crawl"                 PASS (after installing shiny; then knitr + markdown)
+
+"geoCount"              PASS (after installing 'Missing libgsl-dev')
+
+"gmwm"                  PASS (after installing testthat) 
+
+"markovchain"           FAIL in example, possible DiagrammeR change (after installation 'matlab' and 'RcppParallel')
+
+"psd"                   PASS (after installing 'signal')
+
+"psgp"                  PASS (after installing 'intamap automap gstat')
+
+"quanteda"              FAIL in example, tm missing
+                        (after installing 'data.table SnowballC wordcloud proxy ca')
+
+"rags2ridges"           PASS (after installing 'Hmisc fdrtool snowfall')
+
+"sirt"                  SKIP: Packages required but not available: 'coda' 'combinat' 'gtools' 'ic.infer' 'lavaan.survey' 'mirt' 'sm' 'survey'
+
+"smoof"                 SKIP: Packages required but not available: 'ParamHelpers' 'BBmisc' 'checkmate' 'plot3D' 'mco'
+
+"treeclim"              SKIP: Packages required but not available: 'lmtest' 'lmodel2' 'np'

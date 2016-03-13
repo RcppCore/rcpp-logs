@@ -1,0 +1,40 @@
+
+Summary from running script
+===========================
+  0   1 
+194   8 
+[1] "FIACH"       "forecast"    "gmum.r"      "hypervolume" "Morpho"      "msgl"        "rmgarch"     "rugarch"    
+
+
+Detailed Discussion
+===================
+
+FIACH            installation failed: *** caught segfault ***, address (nil), cause 'memory not mapped'
+                 [1] "Some initial values were NULL: therefore random initial values were chosen"
+                 
+forecast         test failed
+                 --> BUT passes in fresh Docker container
+
+gmum.r           latex error (??)
+                 --> BUT passes in fresh Docker container
+
+hypervolume      *** caught segfault ***, address 0x20, cause 'memory not mapped'
+                 --> BUT passes in fresh Docker container
+
+Morpho           test failed: Error in library(shapes) : there is no package called ‘shapes’
+                 --> EXCUSED
+
+msgl		 test failed due to convergence issue
+                 --> OLD issue we have seen before
+
+rmgarch		 installation failed: *** caught segfault ***, address 0x20, cause 'memory not mapped'
+                 --> BUT passes in fresh Docker container
+
+rugarch		 installation failed: *** caught segfault ***, address 0x20, cause 'memory not mapped'
+                 --> BUT passes in fresh Docker container
+
+Remaining
+=========
+
+FIACH           passes with RcppArmadillo 0.6.500.4.0
+                fails with RcppArmadillo 0.6.600.2.1 (aka 6.600.3.test)
