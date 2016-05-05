@@ -30,7 +30,10 @@ setwd("/tmp/RcppDepends")
 ## clean old lib or repo files in /tmp
 invisible(sapply(list.files("/tmp", "(repos|lib).*rds$", full.names=TRUE), unlink))
 
-IP <- installed.packages(lib.loc=loclib) 
+## update local lib/
+update.packages(lib.loc="lib/", ask=FALSE)
+
+IP <- installed.packages(lib.loc=loclib)
 AP <- available.packages(contrib.url("http://cran.r-project.org"), filter=list())	# available package at CRAN
 pkgset <- sort(unname(AP[unique(c(grep(pkg, as.character(AP[,"Depends"])),
                                   grep(pkg, as.character(AP[,"LinkingTo"])),
@@ -40,7 +43,7 @@ exclset <- c("LANDD",		# requires GOstats GOSemSim
              "gpuR"             # CUDA
              )
 
-rcppset <- rcppset[ ! rcppset %in% exclset ]
+pkgset <- pkgset[ ! pkgset %in% exclset ]
 
 print( pkgset )
 
@@ -90,11 +93,11 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
             download.file(pathpkg, pkg, quiet=TRUE)
         }
     }
-    
+
     #if (!file.exists(pkg)) download.file(pathpkg, pkg, quiet=TRUE)
     rc <- system(paste("xvfb-run-safe --server-args=\"-screen 0 1024x768x24\" ",
                        rbinary,         # R or RD
-                       " sCMD check --no-manual --no-vignettes ", pkg, " 2>&1 > ", pkg, ".log", sep=""))
+                       " CMD check --no-manual --no-vignettes ", pkg, " 2>&1 > ", pkg, ".log", sep=""))
     res[pi, "res"] <- rc
     if (rc == 0) {
         good <<- good + 1
