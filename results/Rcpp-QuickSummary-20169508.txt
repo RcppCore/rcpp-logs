@@ -1,0 +1,78 @@
+
+OVERVIEW
+========
+
+630 passed
+ 24 failed
+
+
+ [1] "BIFIEsurvey"      "brainGraph"       "ClusterStability" "contoureR"        "diversitree"      "erah"             "evolqg"           "futureheatwaves"  "geoCount"         "kdecopula"
+ [11] "kergp"            "lcopula"          "mbbefd"           "mvabund"          "QRM"              "Rblpapi"          "RcppGSL"          "RcppMLPACK"       "RcppZiggurat"     "Rlibeemd"
+ [21] "strataG"          "survSNP"          "textmineR"        "timma"    
+
+
+DETAILS
+=======
+
+"BIFIEsurvey"		Package required but not available: ‘miceadds’
+
+"brainGraph"            Package required but not available: ‘cairoDevice’
+
+"ClusterStability"      Package required but not available: ‘copula’
+
+"contoureR"             [again] _internal_ unit test error with qhull
+
+"diversitree"           configure: error: gsl-config not found, is GSL installed?
+
+"erah"                  Package required but not available: ‘ncdf4’
+
+"evolqg"                possible _internal_ unit test error between complex and numeric
+
+"futureheatwaves"       Error in IDHeatwavesCPP(heatwaveLength = as.integer(numDays), tempsExceedingCutoff = tempsExceedingthreshold) : unimplemented type 'builtin' in 'coerceToReal'
+
+"geoCount"              runMCMC.h:8:31: fatal error: gsl/gsl_sf_bessel.h: No such file or directory
+             
+"kdecopula"             Package required but not available: ‘VineCopula’
+
+"kergp"                 _internal_ unit test error with optim
+
+"lcopula"               Package required but not available: ‘copula’
+
+"mbbefd"                Package required but not available: ‘gsl’
+
+"mvabund"               unable to load shared object '/usr/local/lib/R/site-library/RcppGSL/libs/RcppGSL.so':
+
+"QRM"                   Package required but not available: ‘gsl’
+
+"Rblpapi"               internal, fixed upstream
+                
+"RcppGSL"               configure: error: gsl-config not found, is GSL installed?
+
+"RcppMLPACK"            package ‘RcppMLPACK’ is not available (for R version 3.3.0) 
+
+"RcppZiggurat"          /usr/local/lib/R/site-library/RcppGSL/include/RcppGSLForward.h:26:29: fatal error: gsl/gsl_vector.h: No such file or directory
+
+"Rlibeemd"              configure: error: gsl-config not found, is GSL installed?
+
+"strataG"               Package required but not available: ‘copula’
+
+"survSNP"               configure: error: gsl-config not found, is GSL installed?
+
+"textmineR"             Package required but not available: ‘topicmodels’
+
+"timma"                 Package required but not available: ‘QCA’
+
+
+
+SUMMARY
+=======
+
+One potential and new issue in 'futureheatwaves' we will look into
+
+Several 'doh' issues by (temporarily) not having libgsl-dev installed
+
+Several 'this package is needed' issue we have seen before
+
+Several known previous failures
+
+No other issues related to Rcpp as far as we can tell
