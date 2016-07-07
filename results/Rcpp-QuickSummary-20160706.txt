@@ -1,0 +1,51 @@
+
+OVERVIEW
+========
+
+Rcpp 0.12.5.4
+
+  0   1 
+681  14 
+ [1] "contoureR" "datafsm"   "elpatron"  "evolqg"    "gkmSVM"    "haven"     "kergp"
+ [8] "mbbefd"    "Rblpapi"   "rcppbugs"  "rplexos"   "sdcTable"  "text2vec"  "vcfR"     
+
+
+DETAILS
+=======
+
+"contoureR"             [again] _internal_ unit test error with qhull
+
+"datafsm"		[again] Error in fitness(Pop[i, ], ...) : unused argument (maxfitness = 1)
+
+"elpatron"              [same on CRAN] "Running examples in ‘elpatron-Ex.R’ failed: Error: Length of logical index vector must be 1 or 18, got: 17"
+
+"evolqg"                [CHECK AGAINST CRAN Rcpp] possible _internal_ unit test error between complex and numeric
+                        [Same failure with Rcpp 0.12.5]
+
+"gkmSVM"                Packages required but not available: ‘BSgenome.Hsapiens.UCSC.hg18.masked’ ‘BSgenome.Hsapiens.UCSC.hg19.masked’
+
+"haven"                 possibly spurious access to cancer.gov sample data
+
+"kergp"                 _internal_ unit test error with optim
+
+"mbbefd"                [same on CRAN] possibly internal BFGS convergence
+
+"Rblpapi"               [possibly spurious timeout]
+
+"rcppbugs"              [same on CRAN] due to RcppArmadillo changes
+
+"rplexos"               [same on CRAN] "Running examples in ‘rplexos-Ex.R’ failed"
+
+"sdcTable"              [same on CRAN] checking tests ... ERROR: ... Error in glp_call_interface(obj, n_of_objective_vars, get.simpleTriplet(mat,  : argument "presolve" is missing, with no default
+
+"text2vec"              [CHECK AGAINST CRAN Rcpp] [possibly spurious]
+
+"vcfR"                  [same on CRAN]
+
+
+SUMMARY
+=======
+
+Several known previous failures; several failures also occurring on CRAN
+
+No other new issues related to Rcpp as far as we can tell
