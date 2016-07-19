@@ -1,0 +1,1878 @@
+Started at  2016-07-17 12:34:28.738998 
+Rcpp version is 0.12.5.8 on dirk5930ub 
+R version 3.3.1 (2016-06-21) -- "Bug in Your Hair" 
+  [1] "AbsFilterGSEA"        "accelerometry"        "ACEt"                 "AdaptiveSparsity"     "ADMMnet"              "AHR"                  "algstat"              "AlignStat"           
+  [9] "ALKr"                 "Amelia"               "apcluster"            "arrApply"             "ASPBay"               "aSPU"                 "autovarCore"          "BaBooN"              
+ [17] "BacArena"             "BalancedSampling"     "BAMMtools"            "batman"               "BayesComm"            "BayesFactor"          "bayesm"               "bayou"               
+ [25] "bcp"                  "bcpa"                 "beanz"                "BEDMatrix"            "BeviMed"              "bfa"                  "bfp"                  "bifactorial"         
+ [33] "BIFIEsurvey"          "biganalytics"         "biglasso"             "bigmemory"            "BigQuic"              "bigtabulate"          "BigVAR"               "Biocomb"             
+ [41] "BIPOD"                "biwavelet"            "blackbox"             "blockcluster"         "blockmodels"          "blockseg"             "bnnSurvival"          "bootTimeInference"   
+ [49] "brainGraph"           "btf"                  "BTLLasso"             "BTR"                  "bvarsv"               "bWGR"                 "BWStest"              "CARBayes"            
+ [57] "CARBayesST"           "ccaPP"                "cccp"                 "cda"                  "CDM"                  "CFC"                  "cgAUC"                "ChannelAttribution"  
+ [65] "chopthin"             "CIDnetworks"          "cIRT"                 "cladoRcpp"            "classify"             "clere"                "climdex.pcic"         "clogitboost"         
+ [73] "clogitL1"             "clusrank"             "ClusterStability"     "clusteval"            "ClustMMDD"            "ClustVarLV"           "CMF"                  "coala"               
+ [81] "collUtils"            "CompGLM"              "ConConPiWiFun"        "coneproj"             "contoureR"            "copCAR"               "cord"                 "CorReg"              
+ [89] "Countr"               "covafillr"            "Coxnet"               "CoxPlus"              "cpgen"                "crawl"                "creditr"              "Crossover"           
+ [97] "cycleRtools"          "D3M"                  "datafsm"              "dbmss"                "dbscan"               "ddalpha"              "ddR"                  "DDRTree"             
+[105] "deepboost"            "Delaporte"            "DeLorean"             "dendextendRcpp"       "densityClust"         "DepthProc"            "DescTools"            "DetMCD"              
+[113] "DetR"                 "dfcomb"               "dfmta"                "DiffusionRgqd"        "DiffusionRimp"        "DiffusionRjgqd"       "dils"                 "dina"                
+[121] "disclapmix"           "diversitree"          "diveRsity"            "divo"                 "DLMtool"              "DNAprofiles"          "DNAtools"             "dnc"                 
+[129] "dplyr"                "drgee"                "dslice"               "DStree"               "dtwclust"             "easyVerification"     "EBMAforecast"         "ECctmc"              
+[137] "ecp"                  "EditImputeCont"       "eggCounts"            "eive"                 "EloChoice"            "elpatron"             "emil"                 "emIRT"               
+[145] "EPGLM"                "erah"                 "ESGtoolkit"           "EstHer"               "evolqg"               "EWGoF"                "exif"                 "extraDistr"          
+[153] "fastAdaboost"         "FastBandChol"         "fastGHQuad"           "FastGP"               "FastHCS"              "fastM"                "FastPCS"              "FastRCS"             
+[161] "FBFsearch"            "fbroc"                "FCNN4R"               "fdaMixed"             "fdapace"              "fdaPDE"               "fdasrvf"              "FDGcopulas"          
+[169] "FDRreg"               "feather"              "FeatureHashing"       "FIACH"                "fICA"                 "FisHiCal"             "flam"                 "flan"                
+[177] "flars"                "flip"                 "FLSSS"                "forecast"             "forega"               "forestFloor"          "fourierin"            "fourPNO"             
+[185] "fractional"           "frailtySurv"          "FRESA.CAD"            "fromo"                "FSInteract"           "fugeR"                "FunChisq"             "Funclustering"       
+[193] "futureheatwaves"      "fwsim"                "gapfill"              "gaselect"             "gaston"               "GCPM"                 "gdm"                  "gdtools"             
+[201] "geiger"               "GeneticTools"         "genie"                "GENLIB"               "geoCount"             "geohash"              "GERGM"                "ggrepel"             
+[209] "GiRaF"                "gjam"                 "gkmSVM"               "glamlasso"            "glcm"                 "glmBfp"               "glmgraph"             "glmmsr"              
+[217] "GMCM"                 "Gmedian"              "Gmisc"                "gmum.r"               "gmwm"                 "gMWT"                 "googleway"            "GPareto"             
+[225] "GPvam"                "gRain"                "graphicalVAR"         "gRbase"               "gRim"                 "growcurves"           "growfunctions"        "grpSLOPE"            
+[233] "GSE"                  "gsEasy"               "GUILDS"               "GUTS"                 "GxM"                  "h5"                   "hashmap"              "haven"               
+[241] "hawkes"               "HDPenReg"             "hierarchicalSets"     "hit"                  "hkevp"                "HLMdiag"              "HSAR"                 "hsphase"             
+[249] "htmltools"            "hts"                  "httpuv"               "HUM"                  "humaniformat"         "humarray"             "hunspell"             "hypervolume"         
+[257] "hyphenatr"            "iBATCGH"              "IBHM"                 "ibm"                  "icamix"               "iccbeta"              "icd"                  "icd9"                
+[265] "icensmis"             "icRSF"                "iLaplace"             "imager"               "immer"                "imputeMulti"          "inarmix"              "iptools"             
+[273] "IRTpp"                "IsingSampler"         "isoph"                "ISOpureR"             "iterpc"               "JacobiEigen"          "JAGUAR"               "jiebaR"              
+[281] "jmcm"                 "jmotif"               "jqr"                  "jtGWAS"               "kdecopula"            "kergp"                "kernDeepStackNet"     "KernelKnn"           
+[289] "KernSmoothIRT"        "kmc"                  "kmeans.ddR"           "Kmisc"                "LaF"                  "LambertW"             "lamW"                 "Langevin"            
+[297] "LassoBacktracking"    "lasvmR"               "lbfgs"                "lcopula"              "lfl"                  "lifecontingencies"    "lm.br"                "lme4"                
+[305] "lpme"                 "lsbclust"             "lsgl"                 "lucr"                 "Luminescence"         "marked"               "markophylo"           "markovchain"         
+[313] "MAT"                  "matchingMarkets"      "matchingR"            "mateable"             "MatrixCorrelation"    "maxent"               "mbbefd"               "mcemGLM"             
+[321] "mcga"                 "mcIRT"                "mcmcse"               "mcPAFit"              "MediaK"               "MEGENA"               "MESS"                 "metafolio"           
+[329] "mets"                 "mev"                  "mgm"                  "mice"                 "milr"                 "minimaxdesign"        "minqa"                "mirt"                
+[337] "mirtCAT"              "miscF"                "miscset"              "MiSPU"                "missDeaths"           "MixAll"               "MixedDataImpute"      "mixedMem"            
+[345] "mixpack"              "mkde"                 "mlmc"                 "mlxR"                 "mmand"                "Morpho"               "move"                 "moveHMM"             
+[353] "mp"                   "Mposterior"           "MPTinR"               "MRS"                  "msgl"                 "MTS"                  "multicool"            "mvabund"             
+[361] "MVB"                  "mvcluster"            "mvnfast"              "mwaved"               "myTAI"                "nabor"                "NAM"                  "ndl"                 
+[369] "netcoh"               "netdiffuseR"          "NetSim"               "neuroim"              "ngspatial"            "NHMM"                 "nmfgpu4R"             "NNLM"                
+[377] "noncompliance"        "nonlinearTseries"     "NPBayesImpute"        "NPflow"               "oapackage"            "odeintr"              "oem"                  "OjaNP"               
+[385] "olctools"             "OneArmPhaseTwoStudy"  "onlinePCA"            "ontologySimilarity"   "openair"              "OpenImageR"           "OpenMx"               "openxlsx"            
+[393] "optmatch"             "orQA"                 "PAC"                  "packcircles"          "PACVB"                "PAFit"                "pander"               "PanelCount"          
+[401] "partialAR"            "pcalg"                "pcIRT"                "pdftools"             "PedCNV"               "pedometrics"          "PenCoxFrail"          "penMSM"              
+[409] "perccal"              "PerMallows"           "ph2bayes"             "phonics"              "phylobase"            "phylocurve"           "phylosignal"          "Pijavski"            
+[417] "plac"                 "planar"               "plotSEMM"             "plyr"                 "poisDoubleSamp"       "polyfreqs"            "polywog"              "PoweR"               
+[425] "PP"                   "PPtreeViz"            "prclust"              "precrec"              "PReMiuM"              "primes"               "ProbitSpatial"        "pROC"                
+[433] "prodlim"              "ProNet"               "propagate"            "prospectr"            "protolite"            "prototest"            "protViz"              "pryr"                
+[441] "psd"                  "psgp"                 "purrr"                "pvar"                 "PWD"                  "pystr"                "QRM"                  "quadrupen"           
+[449] "quanteda"             "quantspec"            "qVarSel"              "qwraps2"              "radiomics"            "rags2ridges"          "ragt2ridges"          "randomUniformForest" 
+[457] "ranger"               "Rankcluster"          "rankdist"             "raster"               "Rblpapi"              "Rborist"              "Rclusterpp"           "RcppAnnoy"           
+[465] "RcppAPT"              "RcppArmadillo"        "RcppBDT"              "RcppCCTZ"             "RcppClassic"          "RcppClassicExamples"  "RcppCNPy"             "RcppDE"              
+[473] "RcppDL"               "RcppEigen"            "RcppExamples"         "RcppFaddeeva"         "RcppGSL"              "RcppMLPACK"           "RcppNumerical"        "RcppOctave"          
+[481] "RcppProgress"         "RcppRedis"            "RcppRoll"             "RcppShark"            "RcppSMC"              "RcppStreams"          "RcppTOML"             "RcppXts"             
+[489] "RcppZiggurat"         "rcss"                 "readr"                "readstata13"          "readxl"               "RealVAMS"             "recmap"               "reconstructr"        
+[497] "recosystem"           "redist"               "rEDM"                 "regsem"               "relSim"               "rem"                  "remote"               "ReorderCluster"      
+[505] "repolr"               "resemble"             "reshape2"             "revealedPrefs"        "rexpokit"             "Rfast"                "rflann"               "rforensicbatwing"    
+[513] "rgam"                 "rgeolocate"           "RInside"              "Rip46"                "ripa"                 "rivr"                 "rkvo"                 "Rlibeemd"            
+[521] "RLRsim"               "Rmalschains"          "rmgarch"              "Rmixmod"              "RmixmodCombi"         "rmumps"               "rncl"                 "RNiftyReg"           
+[529] "robustgam"            "robustHD"             "robustreg"            "rococo"               "roll"                 "rollply"              "rootWishart"          "rotations"           
+[537] "RoughSets"            "roxygen2"             "rpf"                  "rpg"                  "Rphylopars"           "rplexos"              "rPref"                "RProtoBuf"           
+[545] "RPtests"              "RQuantLib"            "RSNNS"                "RSNPset"              "RSofia"               "Rsomoclu"             "RSpectra"             "rstan"               
+[553] "rstanarm"             "rstpm2"               "rtkore"               "rtkpp"                "Rtsne"                "Ruchardet"            "rugarch"              "Rvcg"                
+[561] "rvg"                  "RVowpalWabbit"        "rwfec"                "rwirelesscom"         "Ryacas"               "saeRobust"            "SAMM"                 "saturnin"            
+[569] "sbfc"                 "sbmSDP"               "sbrl"                 "SBSA"                 "scales"               "scorer"               "scoringRules"         "scrm"                
+[577] "scrypt"               "sdcMicro"             "sdcTable"             "SEERaBomb"            "segmag"               "seismicRoll"          "SelvarMix"            "seqHMM"              
+[585] "sequences"            "sgd"                  "sglOptim"             "signalHsmm"           "simFrame"             "simmer"               "simPop"               "SimReg"              
+[593] "simstudy"             "sirt"                 "sitmo"                "slfm"                 "SLOPE"                "smoof"                "snipEM"               "snowboot"            
+[601] "snplist"              "SocialNetworks"       "SOD"                  "sourceR"              "spacodiR"             "spaMM"                "SparseFactorAnalysis" "sparseHessianFD"     
+[609] "sparseLTSEigen"       "sparsereg"            "spatgraphs"           "SpatialEpi"           "SpatialTools"         "SpatMCA"              "SpatPCA"              "spBayesSurv"         
+[617] "spduration"           "spray"                "spsann"               "SSL"                  "starma"               "StatMethRank"         "staTools"             "steadyICA"           
+[625] "StereoMorph"          "stlplus"              "stm"                  "StMoSim"              "stochvol"             "stocks"               "stosim"               "stpm"                
+[633] "strataG"              "stream"               "strum"                "survAccuracyMeasures" "surveillance"         "surveybootstrap"      "survSNP"              "svglite"             
+[641] "SVMMatch"             "synchronicity"        "synlik"               "synthACS"             "systemicrisk"         "tagcloud"             "TAM"                  "TAQMNGR"             
+[649] "TauStar"              "tbart"                "tcR"                  "TDA"                  "TED"                  "tensorBSS"            "termstrc"             "TESS"                
+[657] "text2vec"             "textmineR"            "textreg"              "textreuse"            "TFMPvalue"            "tibble"               "tidyr"                "timma"               
+[665] "TMB"                  "tmg"                  "tmlenet"              "tnam"                 "tokenizers"           "TransferEntropy"      "treeclim"             "treeplyr"            
+[673] "treescape"            "triebeard"            "trustOptim"           "tsBSS"                "tvd"                  "tweenr"               "UncerIn2"             "unmarked"            
+[681] "urltools"             "V8"                   "VarSelLCM"            "vcfR"                 "VideoComparison"      "VIM"                  "vita"                 "VNM"                 
+[689] "waffect"              "walkr"                "wCorr"                "webreadr"             "wingui"               "wordcloud"            "wrswoR"               "wsrf"                
+[697] "XBRL"                 "xml2"                 "yakmoR"               "yCrypticRNAs"         "zic"                 
+also installing the dependencies ‘IRanges’, ‘RSQLite’, ‘S4Vectors’, ‘AnnotationDbi’, ‘annotate’, ‘BiocGenerics’, ‘Biobase’, ‘locfit’, ‘genefilter’, ‘geneplotter’, ‘limma’, ‘DESeq’
+
+trying URL 'http://cran.rstudio.com/src/contrib/AbsFilterGSEA_1.2.1.tar.gz'
+Content type 'application/x-gzip' length 582116 bytes (568 KB)
+==================================================
+downloaded 568 KB
+
+Downloaded  AbsFilterGSEA_1.2.1.tar.gz 
+
+RESULT for AbsFilterGSEA_1.2.1.tar.gz : success (1 of 701, 1 good, 0 bad) -- Now 12:36:53 This 143.1 sec, Avg 143.1 sec, exp. finish in 1669.3 min at 16:26:10 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/accelerometry_2.2.5.tar.gz'
+Content type 'application/x-gzip' length 83912 bytes (81 KB)
+==================================================
+downloaded 81 KB
+
+Downloaded  accelerometry_2.2.5.tar.gz 
+
+RESULT for accelerometry_2.2.5.tar.gz : success (2 of 701, 2 good, 0 bad) -- Now 12:37:20 This 27.4 sec, Avg 85.2 sec, exp. finish in 992.9 min at 05:10:15 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/ACEt_1.6.8.tar.gz'
+Content type 'application/x-gzip' length 110289 bytes (107 KB)
+==================================================
+downloaded 107 KB
+
+Downloaded  ACEt_1.6.8.tar.gz 
+
+RESULT for ACEt_1.6.8.tar.gz : success (3 of 701, 3 good, 0 bad) -- Now 12:37:50 This 30.1 sec, Avg 66.9 sec, exp. finish in 777.7 min at 01:35:34 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/AdaptiveSparsity_1.4.tar.gz'
+Content type 'application/x-gzip' length 10245 bytes (10 KB)
+==================================================
+downloaded 10 KB
+
+Downloaded  AdaptiveSparsity_1.4.tar.gz 
+
+RESULT for AdaptiveSparsity_1.4.tar.gz : success (4 of 701, 4 good, 0 bad) -- Now 12:38:12 This 21.4 sec, Avg 55.5 sec, exp. finish in 644.6 min at 23:22:48 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/ADMMnet_0.1.tar.gz'
+Content type 'application/x-gzip' length 19460 bytes (19 KB)
+==================================================
+downloaded 19 KB
+
+Downloaded  ADMMnet_0.1.tar.gz 
+
+RESULT for ADMMnet_0.1.tar.gz : success (5 of 701, 5 good, 0 bad) -- Now 12:38:51 This 39.4 sec, Avg 52.3 sec, exp. finish in 606.3 min at 22:45:07 on 17-Jul-2016
+also installing the dependency ‘etm’
+
+trying URL 'http://cran.rstudio.com/src/contrib/AHR_1.4.1.tar.gz'
+Content type 'application/x-gzip' length 24946 bytes (24 KB)
+==================================================
+downloaded 24 KB
+
+Downloaded  AHR_1.4.1.tar.gz 
+
+RESULT for AHR_1.4.1.tar.gz : success (6 of 701, 6 good, 0 bad) -- Now 12:39:32 This 40.8 sec, Avg 50.4 sec, exp. finish in 583.3 min at 22:22:50 on 17-Jul-2016
+also installing the dependencies ‘gmp’, ‘partitions’, ‘polynom’, ‘orthopolynom’, ‘mpoly’
+
+trying URL 'http://cran.rstudio.com/src/contrib/algstat_0.0.2.tar.gz'
+Content type 'application/x-gzip' length 87454 bytes (85 KB)
+==================================================
+downloaded 85 KB
+
+Downloaded  algstat_0.0.2.tar.gz 
+
+RESULT for algstat_0.0.2.tar.gz : success (7 of 701, 7 good, 0 bad) -- Now 12:40:11 This 39.2 sec, Avg 48.8 sec, exp. finish in 564 min at 22:04:12 on 17-Jul-2016
+also installing the dependencies ‘ade4’, ‘segmented’, ‘seqinr’
+
+trying URL 'http://cran.rstudio.com/src/contrib/AlignStat_1.2.2.tar.gz'
+Content type 'application/x-gzip' length 34878 bytes (34 KB)
+==================================================
+downloaded 34 KB
+
+Downloaded  AlignStat_1.2.2.tar.gz 
+
+RESULT for AlignStat_1.2.2.tar.gz : success (8 of 701, 8 good, 0 bad) -- Now 12:40:40 This 29.1 sec, Avg 46.3 sec, exp. finish in 534.8 min at 21:35:30 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/ALKr_0.5.3.1.tar.gz'
+Content type 'application/x-gzip' length 186728 bytes (182 KB)
+==================================================
+downloaded 182 KB
+
+Downloaded  ALKr_0.5.3.1.tar.gz 
+
+RESULT for ALKr_0.5.3.1.tar.gz : success (9 of 701, 9 good, 0 bad) -- Now 12:41:04 This 23.6 sec, Avg 43.8 sec, exp. finish in 504.9 min at 21:06:00 on 17-Jul-2016
+also installing the dependencies ‘Formula’, ‘mcmc’, ‘miscTools’, ‘VGAM’, ‘AER’, ‘geepack’, ‘MCMCpack’, ‘MatchIt’, ‘maxLik’, ‘survey’, ‘Zelig’
+
+trying URL 'http://cran.rstudio.com/src/contrib/Amelia_1.7.4.tar.gz'
+Content type 'application/x-gzip' length 1309481 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+Downloaded  Amelia_1.7.4.tar.gz 
+
+RESULT for Amelia_1.7.4.tar.gz : success (10 of 701, 10 good, 0 bad) -- Now 12:43:20 This 136.1 sec, Avg 53 sec, exp. finish in 610.6 min at 22:53:54 on 17-Jul-2016
+also installing the dependencies ‘zlibbioc’, ‘XVector’, ‘kernlab’, ‘LiblineaR’, ‘Biostrings’, ‘kebabs’
+
+trying URL 'http://cran.rstudio.com/src/contrib/apcluster_1.4.3.tar.gz'
+Content type 'application/x-gzip' length 1141793 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+Downloaded  apcluster_1.4.3.tar.gz 
+
+RESULT for apcluster_1.4.3.tar.gz : success (11 of 701, 11 good, 0 bad) -- Now 12:45:02 This 102.4 sec, Avg 57.5 sec, exp. finish in 661.4 min at 23:46:24 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/arrApply_1.0.4.tar.gz'
+Content type 'application/x-gzip' length 4452 bytes
+==================================================
+downloaded 4452 bytes
+
+Downloaded  arrApply_1.0.4.tar.gz 
+
+RESULT for arrApply_1.0.4.tar.gz : success (12 of 701, 12 good, 0 bad) -- Now 12:45:18 This 15.8 sec, Avg 54 sec, exp. finish in 620.5 min at 23:05:50 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/ASPBay_1.2.tar.gz'
+Content type 'application/x-gzip' length 692381 bytes (676 KB)
+==================================================
+downloaded 676 KB
+
+Downloaded  ASPBay_1.2.tar.gz 
+
+RESULT for ASPBay_1.2.tar.gz : success (13 of 701, 13 good, 0 bad) -- Now 12:45:40 This 21.5 sec, Avg 51.5 sec, exp. finish in 590.9 min at 22:36:35 on 17-Jul-2016
+also installing the dependencies ‘spam’, ‘maps’, ‘gee’, ‘fields’, ‘matrixStats’
+
+trying URL 'http://cran.rstudio.com/src/contrib/aSPU_1.42.tar.gz'
+Content type 'application/x-gzip' length 558783 bytes (545 KB)
+==================================================
+downloaded 545 KB
+
+Downloaded  aSPU_1.42.tar.gz 
+
+RESULT for aSPU_1.42.tar.gz : success (14 of 701, 14 good, 0 bad) -- Now 12:47:20 This 100.2 sec, Avg 55 sec, exp. finish in 629.9 min at 23:17:11 on 17-Jul-2016
+also installing the dependencies ‘urca’, ‘vars’
+
+trying URL 'http://cran.rstudio.com/src/contrib/autovarCore_1.0-0.tar.gz'
+Content type 'application/x-gzip' length 143996 bytes (140 KB)
+==================================================
+downloaded 140 KB
+
+Downloaded  autovarCore_1.0-0.tar.gz 
+
+RESULT for autovarCore_1.0-0.tar.gz : success (15 of 701, 15 good, 0 bad) -- Now 12:47:46 This 25.8 sec, Avg 53.1 sec, exp. finish in 606.7 min at 22:54:25 on 17-Jul-2016
+also installing the dependencies ‘acepack’, ‘Hmisc’, ‘mice’, ‘norm’
+
+trying URL 'http://cran.rstudio.com/src/contrib/BaBooN_0.2-0.tar.gz'
+Content type 'application/x-gzip' length 27148 bytes (26 KB)
+==================================================
+downloaded 26 KB
+
+Downloaded  BaBooN_0.2-0.tar.gz 
+
+RESULT for BaBooN_0.2-0.tar.gz : success (16 of 701, 16 good, 0 bad) -- Now 12:48:40 This 54.3 sec, Avg 53.1 sec, exp. finish in 606.7 min at 22:55:20 on 17-Jul-2016
+also installing the dependencies ‘pkgmaker’, ‘registry’, ‘rngtools’, ‘gridBase’, ‘doParallel’, ‘rootSolve’, ‘shape’, ‘NMF’, ‘irlba’, ‘sybil’, ‘ReacTran’, ‘deSolve’, ‘igraph’, ‘glpkAPI’, ‘sybilSBML’
+
+trying URL 'http://cran.rstudio.com/src/contrib/BacArena_1.5.0.tar.gz'
+Content type 'application/x-gzip' length 1124904 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+Downloaded  BacArena_1.5.0.tar.gz 
+
+RESULT for BacArena_1.5.0.tar.gz : success (17 of 701, 17 good, 0 bad) -- Now 12:51:49 This 188.5 sec, Avg 61.1 sec, exp. finish in 696.5 min at 00:28:20 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/BalancedSampling_1.5.2.tar.gz'
+Content type 'application/x-gzip' length 21587 bytes (21 KB)
+==================================================
+downloaded 21 KB
+
+Downloaded  BalancedSampling_1.5.2.tar.gz 
+
+RESULT for BalancedSampling_1.5.2.tar.gz : success (18 of 701, 18 good, 0 bad) -- Now 12:52:12 This 23 sec, Avg 59 sec, exp. finish in 671.4 min at 00:03:36 on 18-Jul-2016
+also installing the dependencies ‘gtools’, ‘gdata’, ‘ape’, ‘gplots’
+
+trying URL 'http://cran.rstudio.com/src/contrib/BAMMtools_2.1.4.tar.gz'
+Content type 'application/x-gzip' length 752067 bytes (734 KB)
+==================================================
+downloaded 734 KB
+
+Downloaded  BAMMtools_2.1.4.tar.gz 
+
+RESULT for BAMMtools_2.1.4.tar.gz : success (19 of 701, 19 good, 0 bad) -- Now 12:53:11 This 59.7 sec, Avg 59 sec, exp. finish in 670.9 min at 00:04:02 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/batman_0.1.0.tar.gz'
+Content type 'application/x-gzip' length 6686 bytes
+==================================================
+downloaded 6686 bytes
+
+Downloaded  batman_0.1.0.tar.gz 
+
+RESULT for batman_0.1.0.tar.gz : success (20 of 701, 20 good, 0 bad) -- Now 12:53:28 This 16.9 sec, Avg 56.9 sec, exp. finish in 646 min at 23:39:26 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/BayesComm_0.1-2.tar.gz'
+Content type 'application/x-gzip' length 11963 bytes (11 KB)
+==================================================
+downloaded 11 KB
+
+Downloaded  BayesComm_0.1-2.tar.gz 
+
+RESULT for BayesComm_0.1-2.tar.gz : success (21 of 701, 21 good, 0 bad) -- Now 12:53:52 This 24.2 sec, Avg 55.4 sec, exp. finish in 627.3 min at 23:21:13 on 17-Jul-2016
+also installing the dependencies ‘pbapply’, ‘doMC’, ‘languageR’
+
+trying URL 'http://cran.rstudio.com/src/contrib/BayesFactor_0.9.12-2.tar.gz'
+Content type 'application/x-gzip' length 1398310 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+Downloaded  BayesFactor_0.9.12-2.tar.gz 
+
+RESULT for BayesFactor_0.9.12-2.tar.gz : success (22 of 701, 22 good, 0 bad) -- Now 12:55:17 This 85.1 sec, Avg 56.7 sec, exp. finish in 641.7 min at 23:37:01 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/bayesm_3.0-2.tar.gz'
+Content type 'application/x-gzip' length 948455 bytes (926 KB)
+==================================================
+downloaded 926 KB
+
+Downloaded  bayesm_3.0-2.tar.gz 
+
+RESULT for bayesm_3.0-2.tar.gz : success (23 of 701, 23 good, 0 bad) -- Now 12:57:20 This 122.2 sec, Avg 59.6 sec, exp. finish in 672.9 min at 00:10:16 on 18-Jul-2016
+also installing the dependencies ‘quadprog’, ‘nnls’, ‘fastmatch’, ‘subplex’, ‘ncbit’, ‘animation’, ‘clusterGeneration’, ‘msm’, ‘numDeriv’, ‘phangorn’, ‘scatterplot3d’, ‘geiger’, ‘phytools’, ‘fitdistrplus’, ‘denstrip’
+
+trying URL 'http://cran.rstudio.com/src/contrib/bayou_1.1.0.tar.gz'
+Content type 'application/x-gzip' length 69933 bytes (68 KB)
+==================================================
+downloaded 68 KB
+
+Downloaded  bayou_1.1.0.tar.gz 
+
+RESULT for bayou_1.1.0.tar.gz : success (24 of 701, 24 good, 0 bad) -- Now 12:58:49 This 89 sec, Avg 60.8 sec, exp. finish in 685.8 min at 00:24:36 on 18-Jul-2016
+also installing the dependencies ‘permute’, ‘DNAcopy’, ‘vegan’
+
+trying URL 'http://cran.rstudio.com/src/contrib/bcp_4.0.0.tar.gz'
+Content type 'application/x-gzip' length 122055 bytes (119 KB)
+==================================================
+downloaded 119 KB
+
+Downloaded  bcp_4.0.0.tar.gz 
+
+RESULT for bcp_4.0.0.tar.gz : success (25 of 701, 25 good, 0 bad) -- Now 12:59:33 This 44.4 sec, Avg 60.1 sec, exp. finish in 677.4 min at 00:16:57 on 18-Jul-2016
+also installing the dependency ‘circular’
+
+trying URL 'http://cran.rstudio.com/src/contrib/bcpa_1.1.tar.gz'
+Content type 'application/x-gzip' length 352914 bytes (344 KB)
+==================================================
+downloaded 344 KB
+
+Downloaded  bcpa_1.1.tar.gz 
+
+RESULT for bcpa_1.1.tar.gz : success (26 of 701, 26 good, 0 bad) -- Now 13:00:00 This 26.7 sec, Avg 58.8 sec, exp. finish in 661.9 min at 00:01:55 on 18-Jul-2016
+also installing the dependencies ‘rstan’, ‘StanHeaders’, ‘anoint’, ‘pander’, ‘shinythemes’
+
+trying URL 'http://cran.rstudio.com/src/contrib/beanz_1.5.tar.gz'
+Content type 'application/x-gzip' length 538495 bytes (525 KB)
+==================================================
+downloaded 525 KB
+
+Downloaded  beanz_1.5.tar.gz 
+
+RESULT for beanz_1.5.tar.gz : success (27 of 701, 27 good, 0 bad) -- Now 13:06:00 This 360.8 sec, Avg 70 sec, exp. finish in 786.6 min at 02:12:36 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/BEDMatrix_1.2.0.tar.gz'
+Content type 'application/x-gzip' length 9586 bytes
+==================================================
+downloaded 9586 bytes
+
+Downloaded  BEDMatrix_1.2.0.tar.gz 
+
+RESULT for BEDMatrix_1.2.0.tar.gz : success (28 of 701, 28 good, 0 bad) -- Now 13:06:18 This 17 sec, Avg 68.1 sec, exp. finish in 764.2 min at 01:50:30 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/BeviMed_2.2.tar.gz'
+Content type 'application/x-gzip' length 30392 bytes (29 KB)
+==================================================
+downloaded 29 KB
+
+Downloaded  BeviMed_2.2.tar.gz 
+
+RESULT for BeviMed_2.2.tar.gz : success (29 of 701, 29 good, 0 bad) -- Now 13:06:38 This 20.8 sec, Avg 66.5 sec, exp. finish in 744.8 min at 01:31:26 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/bfa_0.3.1.tar.gz'
+Content type 'application/x-gzip' length 76544 bytes (74 KB)
+==================================================
+downloaded 74 KB
+
+Downloaded  bfa_0.3.1.tar.gz 
+
+RESULT for bfa_0.3.1.tar.gz : success (30 of 701, 30 good, 0 bad) -- Now 13:07:12 This 34 sec, Avg 65.4 sec, exp. finish in 731.6 min at 01:18:46 on 18-Jul-2016
+also installing the dependencies ‘doBy’, ‘SoDA’, ‘mfp’
+
+trying URL 'http://cran.rstudio.com/src/contrib/bfp_0.0-31.tar.gz'
+Content type 'application/x-gzip' length 253978 bytes (248 KB)
+==================================================
+downloaded 248 KB
+
+Downloaded  bfp_0.0-31.tar.gz 
+
+RESULT for bfp_0.0-31.tar.gz : success (31 of 701, 31 good, 0 bad) -- Now 13:08:13 This 60.3 sec, Avg 65.3 sec, exp. finish in 728.6 min at 01:16:51 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/bifactorial_1.4.7.tar.gz'
+Content type 'application/x-gzip' length 36479 bytes (35 KB)
+==================================================
+downloaded 35 KB
+
+Downloaded  bifactorial_1.4.7.tar.gz 
+
+RESULT for bifactorial_1.4.7.tar.gz : success (32 of 701, 32 good, 0 bad) -- Now 13:09:00 This 47.2 sec, Avg 64.7 sec, exp. finish in 721.3 min at 01:10:15 on 18-Jul-2016
+also installing the dependencies ‘lpSolve’, ‘kappalab’, ‘corpcor’, ‘tensorA’, ‘cubature’, ‘combinat’, ‘ic.infer’, ‘mirt’, ‘pbivnorm’, ‘sm’, ‘haven’, ‘stringdist’, ‘polycor’, ‘blme’, ‘grouped’, ‘MCMCglmm’, ‘multiwayvcov’, ‘sirt’, ‘sjmisc’, ‘CDM’, ‘GPArotation’, ‘lavaan’, ‘sfsmisc’, ‘tensor’, ‘WrightMap’, ‘memisc’, ‘miceadds’, ‘mitools’, ‘TAM’, ‘intsvy’, ‘lavaan.survey’, ‘svyPVpack’
+
+trying URL 'http://cran.rstudio.com/src/contrib/BIFIEsurvey_1.9.4-0.tar.gz'
+Content type 'application/x-gzip' length 1554648 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+Downloaded  BIFIEsurvey_1.9.4-0.tar.gz 
+
+RESULT for BIFIEsurvey_1.9.4-0.tar.gz : success (33 of 701, 33 good, 0 bad) -- Now 13:13:34 This 274.2 sec, Avg 71 sec, exp. finish in 790.9 min at 02:24:25 on 18-Jul-2016
+also installing the dependency ‘biglm’
+
+trying URL 'http://cran.rstudio.com/src/contrib/biganalytics_1.1.14.tar.gz'
+Content type 'application/x-gzip' length 22115 bytes (21 KB)
+==================================================
+downloaded 21 KB
+
+Downloaded  biganalytics_1.1.14.tar.gz 
+
+RESULT for biganalytics_1.1.14.tar.gz : success (34 of 701, 34 good, 0 bad) -- Now 13:13:57 This 23 sec, Avg 69.6 sec, exp. finish in 774 min at 02:07:55 on 18-Jul-2016
+also installing the dependency ‘ncvreg’
+
+trying URL 'http://cran.rstudio.com/src/contrib/biglasso_1.0-1.tar.gz'
+Content type 'application/x-gzip' length 20130 bytes (19 KB)
+==================================================
+downloaded 19 KB
+
+Downloaded  biglasso_1.0-1.tar.gz 
+
+RESULT for biglasso_1.0-1.tar.gz : success (35 of 701, 35 good, 0 bad) -- Now 13:14:33 This 36 sec, Avg 68.7 sec, exp. finish in 762.2 min at 01:56:42 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/bigmemory_4.5.19.tar.gz'
+Content type 'application/x-gzip' length 236680 bytes (231 KB)
+==================================================
+downloaded 231 KB
+
+Downloaded  bigmemory_4.5.19.tar.gz 
+
+RESULT for bigmemory_4.5.19.tar.gz : success (36 of 701, 36 good, 0 bad) -- Now 13:15:08 This 35.2 sec, Avg 67.7 sec, exp. finish in 750.7 min at 01:45:52 on 18-Jul-2016
+also installing the dependencies ‘lars’, ‘scalreg’
+
+trying URL 'http://cran.rstudio.com/src/contrib/BigQuic_1.1-5.tar.gz'
+Content type 'application/x-gzip' length 168277 bytes (164 KB)
+==================================================
+downloaded 164 KB
+
+Downloaded  BigQuic_1.1-5.tar.gz 
+
+RESULT for BigQuic_1.1-5.tar.gz : success (37 of 701, 37 good, 0 bad) -- Now 13:15:52 This 44.1 sec, Avg 67.1 sec, exp. finish in 742.5 min at 01:38:24 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/bigtabulate_1.1.5.tar.gz'
+Content type 'application/x-gzip' length 14409 bytes (14 KB)
+==================================================
+downloaded 14 KB
+
+Downloaded  bigtabulate_1.1.5.tar.gz 
+
+RESULT for bigtabulate_1.1.5.tar.gz : success (38 of 701, 38 good, 0 bad) -- Now 13:16:14 This 21.8 sec, Avg 65.9 sec, exp. finish in 728.2 min at 01:24:28 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/BigVAR_1.0.1.tar.gz'
+Content type 'application/x-gzip' length 55351 bytes (54 KB)
+==================================================
+downloaded 54 KB
+
+Downloaded  BigVAR_1.0.1.tar.gz 
+
+RESULT for BigVAR_1.0.1.tar.gz : success (39 of 701, 39 good, 0 bad) -- Now 13:16:51 This 36.4 sec, Avg 65.1 sec, exp. finish in 718.8 min at 01:15:38 on 18-Jul-2016
+also installing the dependencies ‘entropy’, ‘RWekajars’, ‘rgl’, ‘pROC’, ‘ROCR’, ‘discretization’, ‘arules’, ‘pamr’, ‘FSelector’, ‘RWeka’
+
+trying URL 'http://cran.rstudio.com/src/contrib/Biocomb_0.2.tar.gz'
+Content type 'application/x-gzip' length 134632 bytes (131 KB)
+==================================================
+downloaded 131 KB
+
+Downloaded  Biocomb_0.2.tar.gz 
+
+RESULT for Biocomb_0.2.tar.gz : success (40 of 701, 40 good, 0 bad) -- Now 13:18:24 This 93.9 sec, Avg 65.9 sec, exp. finish in 725.6 min at 01:24:02 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/BIPOD_0.2.1.tar.gz'
+Content type 'application/x-gzip' length 19251 bytes (18 KB)
+==================================================
+downloaded 18 KB
+
+Downloaded  BIPOD_0.2.1.tar.gz 
+
+RESULT for BIPOD_0.2.1.tar.gz : success (41 of 701, 41 good, 0 bad) -- Now 13:18:52 This 27.6 sec, Avg 64.9 sec, exp. finish in 714.3 min at 01:13:08 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/biwavelet_0.20.7.tar.gz'
+Content type 'application/x-gzip' length 440264 bytes (429 KB)
+==================================================
+downloaded 429 KB
+
+Downloaded  biwavelet_0.20.7.tar.gz 
+
+RESULT for biwavelet_0.20.7.tar.gz : success (42 of 701, 42 good, 0 bad) -- Now 13:19:23 This 31.3 sec, Avg 64.1 sec, exp. finish in 704.4 min at 01:03:46 on 18-Jul-2016
+also installing the dependencies ‘magic’, ‘lpSolveAPI’, ‘bit’, ‘rcdd’, ‘geometry’, ‘proxy’, ‘spaMM’, ‘ff’, ‘lbfgsb3’
+
+trying URL 'http://cran.rstudio.com/src/contrib/blackbox_1.0.8.1.tar.gz'
+Content type 'application/x-gzip' length 170060 bytes (166 KB)
+==================================================
+downloaded 166 KB
+
+Downloaded  blackbox_1.0.8.1.tar.gz 
+
+RESULT for blackbox_1.0.8.1.tar.gz : success (43 of 701, 43 good, 0 bad) -- Now 13:21:22 This 118.9 sec, Avg 65.4 sec, exp. finish in 717.3 min at 01:18:39 on 18-Jul-2016
+also installing the dependency ‘rtkore’
+
+trying URL 'http://cran.rstudio.com/src/contrib/blockcluster_4.0.2.tar.gz'
+Content type 'application/x-gzip' length 1822973 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+Downloaded  blockcluster_4.0.2.tar.gz 
+
+RESULT for blockcluster_4.0.2.tar.gz : success (44 of 701, 44 good, 0 bad) -- Now 13:23:20 This 118.1 sec, Avg 66.6 sec, exp. finish in 729.3 min at 01:32:39 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/blockmodels_1.1.1.tar.gz'
+Content type 'application/x-gzip' length 43717 bytes (42 KB)
+==================================================
+downloaded 42 KB
+
+Downloaded  blockmodels_1.1.1.tar.gz 
+
+RESULT for blockmodels_1.1.1.tar.gz : success (45 of 701, 45 good, 0 bad) -- Now 13:24:22 This 61.9 sec, Avg 66.5 sec, exp. finish in 727.1 min at 01:31:27 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/blockseg_0.2.tar.gz'
+Content type 'application/x-gzip' length 22062 bytes (21 KB)
+==================================================
+downloaded 21 KB
+
+Downloaded  blockseg_0.2.tar.gz 
+
+RESULT for blockseg_0.2.tar.gz : success (46 of 701, 46 good, 0 bad) -- Now 13:25:11 This 48.7 sec, Avg 66.1 sec, exp. finish in 721.7 min at 01:26:55 on 18-Jul-2016
+also installing the dependencies ‘polspline’, ‘lava’, ‘rms’, ‘timereg’, ‘prodlim’, ‘pec’
+
+trying URL 'http://cran.rstudio.com/src/contrib/bnnSurvival_0.1.4.tar.gz'
+Content type 'application/x-gzip' length 9430 bytes
+==================================================
+downloaded 9430 bytes
+
+Downloaded  bnnSurvival_0.1.4.tar.gz 
+
+RESULT for bnnSurvival_0.1.4.tar.gz : success (47 of 701, 47 good, 0 bad) -- Now 13:26:24 This 73.3 sec, Avg 66.3 sec, exp. finish in 722.3 min at 01:28:42 on 18-Jul-2016
+also installing the dependencies ‘R.methodsS3’, ‘R.oo’, ‘R.utils’, ‘R.cache’, ‘R.rsp’
+
+trying URL 'http://cran.rstudio.com/src/contrib/bootTimeInference_0.1.0.tar.gz'
+Content type 'application/x-gzip' length 264786 bytes (258 KB)
+==================================================
+downloaded 258 KB
+
+Downloaded  bootTimeInference_0.1.0.tar.gz 
+
+RESULT for bootTimeInference_0.1.0.tar.gz : success (48 of 701, 48 good, 0 bad) -- Now 13:26:55 This 30.5 sec, Avg 65.5 sec, exp. finish in 713.1 min at 01:20:00 on 18-Jul-2016
+also installing the dependencies ‘cairoDevice’, ‘oro.nifti’
+
+trying URL 'http://cran.rstudio.com/src/contrib/brainGraph_0.62.0.tar.gz'
+Content type 'application/x-gzip' length 554015 bytes (541 KB)
+==================================================
+downloaded 541 KB
+
+Downloaded  brainGraph_0.62.0.tar.gz 
+
+RESULT for brainGraph_0.62.0.tar.gz : success (49 of 701, 49 good, 0 bad) -- Now 13:27:56 This 61.2 sec, Avg 65.4 sec, exp. finish in 711 min at 01:18:58 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/btf_1.1.tar.gz'
+Content type 'application/x-gzip' length 9359 bytes
+==================================================
+downloaded 9359 bytes
+
+Downloaded  btf_1.1.tar.gz 
+
+RESULT for btf_1.1.tar.gz : success (50 of 701, 50 good, 0 bad) -- Now 13:28:45 This 49.1 sec, Avg 65.1 sec, exp. finish in 706.4 min at 01:15:10 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/BTLLasso_0.1-2.tar.gz'
+Content type 'application/x-gzip' length 34598 bytes (33 KB)
+==================================================
+downloaded 33 KB
+
+Downloaded  BTLLasso_0.1-2.tar.gz 
+
+RESULT for BTLLasso_0.1-2.tar.gz : success (51 of 701, 51 good, 0 bad) -- Now 13:29:24 This 38.7 sec, Avg 64.6 sec, exp. finish in 699.7 min at 01:09:06 on 18-Jul-2016
+also installing the dependencies ‘poweRlaw’, ‘diptest’, ‘infotheo’, ‘bnlearn’
+
+trying URL 'http://cran.rstudio.com/src/contrib/BTR_1.2.3.tar.gz'
+Content type 'application/x-gzip' length 2429677 bytes (2.3 MB)
+==================================================
+downloaded 2.3 MB
+
+Downloaded  BTR_1.2.3.tar.gz 
+
+RESULT for BTR_1.2.3.tar.gz : success (52 of 701, 52 good, 0 bad) -- Now 13:30:05 This 41.4 sec, Avg 64.1 sec, exp. finish in 693.8 min at 01:03:54 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/bvarsv_1.1.tar.gz'
+Content type 'application/x-gzip' length 27742 bytes (27 KB)
+==================================================
+downloaded 27 KB
+
+Downloaded  bvarsv_1.1.tar.gz 
+
+RESULT for bvarsv_1.1.tar.gz : success (53 of 701, 53 good, 0 bad) -- Now 13:30:25 This 20 sec, Avg 63.3 sec, exp. finish in 683.7 min at 00:54:10 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/bWGR_1.3.1.tar.gz'
+Content type 'application/x-gzip' length 482656 bytes (471 KB)
+==================================================
+downloaded 471 KB
+
+Downloaded  bWGR_1.3.1.tar.gz 
+
+RESULT for bWGR_1.3.1.tar.gz : success (54 of 701, 54 good, 0 bad) -- Now 13:30:50 This 24.9 sec, Avg 62.6 sec, exp. finish in 675 min at 00:45:52 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/BWStest_0.2.0.tar.gz'
+Content type 'application/x-gzip' length 28124 bytes (27 KB)
+==================================================
+downloaded 27 KB
+
+Downloaded  BWStest_0.2.0.tar.gz 
+
+RESULT for BWStest_0.2.0.tar.gz : success (55 of 701, 55 good, 0 bad) -- Now 13:31:11 This 20.5 sec, Avg 61.8 sec, exp. finish in 665.7 min at 00:36:55 on 18-Jul-2016
+also installing the dependencies ‘LearnBayes’, ‘gmodels’, ‘evd’, ‘CARBayesdata’, ‘matrixcalc’, ‘spdep’, ‘truncdist’, ‘deldir’, ‘maptools’, ‘shapefiles’
+
+trying URL 'http://cran.rstudio.com/src/contrib/CARBayes_4.6.tar.gz'
+Content type 'application/x-gzip' length 2334661 bytes (2.2 MB)
+==================================================
+downloaded 2.2 MB
+
+Downloaded  CARBayes_4.6.tar.gz 
+
+RESULT for CARBayes_4.6.tar.gz : success (56 of 701, 56 good, 0 bad) -- Now 13:32:23 This 72.4 sec, Avg 62 sec, exp. finish in 666.7 min at 00:39:08 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/CARBayesST_2.3.tar.gz'
+Content type 'application/x-gzip' length 2148455 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+Downloaded  CARBayesST_2.3.tar.gz 
+
+RESULT for CARBayesST_2.3.tar.gz : success (57 of 701, 57 good, 0 bad) -- Now 13:33:37 This 74.2 sec, Avg 62.2 sec, exp. finish in 668 min at 00:41:38 on 18-Jul-2016
+also installing the dependency ‘pcaPP’
+
+trying URL 'http://cran.rstudio.com/src/contrib/ccaPP_0.3.2.tar.gz'
+Content type 'application/x-gzip' length 298493 bytes (291 KB)
+==================================================
+downloaded 291 KB
+
+Downloaded  ccaPP_0.3.2.tar.gz 
+
+RESULT for ccaPP_0.3.2.tar.gz : success (58 of 701, 58 good, 0 bad) -- Now 13:34:18 This 40.3 sec, Avg 61.9 sec, exp. finish in 662.9 min at 00:37:12 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/cccp_0.2-4.tar.gz'
+Content type 'application/x-gzip' length 40658 bytes (39 KB)
+==================================================
+downloaded 39 KB
+
+Downloaded  cccp_0.2-4.tar.gz 
+
+RESULT for cccp_0.2-4.tar.gz : success (59 of 701, 59 good, 0 bad) -- Now 13:35:26 This 68.4 sec, Avg 62 sec, exp. finish in 663.1 min at 00:38:31 on 18-Jul-2016
+also installing the dependencies ‘rngWELL’, ‘dielectric’, ‘statmod’, ‘randtoolbox’
+
+trying URL 'http://cran.rstudio.com/src/contrib/cda_1.5.1.tar.gz'
+Content type 'application/x-gzip' length 653134 bytes (637 KB)
+==================================================
+downloaded 637 KB
+
+Downloaded  cda_1.5.1.tar.gz 
+
+RESULT for cda_1.5.1.tar.gz : success (60 of 701, 60 good, 0 bad) -- Now 13:36:10 This 43.9 sec, Avg 61.7 sec, exp. finish in 658.8 min at 00:35:00 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/CDM_5.0-0.tar.gz'
+Content type 'application/x-gzip' length 941060 bytes (919 KB)
+==================================================
+downloaded 919 KB
+
+Downloaded  CDM_5.0-0.tar.gz 
+
+RESULT for CDM_5.0-0.tar.gz : success (61 of 701, 61 good, 0 bad) -- Now 13:37:03 This 52.8 sec, Avg 61.5 sec, exp. finish in 656.3 min at 00:33:18 on 18-Jul-2016
+also installing the dependencies ‘ars’, ‘HI’, ‘MfUSampler’, ‘RcppProgress’, ‘BSGW’, ‘BayesMixSurv’, ‘randomForestSRC’
+
+trying URL 'http://cran.rstudio.com/src/contrib/CFC_1.0.1.tar.gz'
+Content type 'application/x-gzip' length 442764 bytes (432 KB)
+==================================================
+downloaded 432 KB
+
+Downloaded  CFC_1.0.1.tar.gz 
+
+RESULT for CFC_1.0.1.tar.gz : success (62 of 701, 62 good, 0 bad) -- Now 13:37:54 This 51.5 sec, Avg 61.4 sec, exp. finish in 653.5 min at 00:31:25 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/cgAUC_1.2.1.tar.gz'
+Content type 'application/x-gzip' length 6423 bytes
+==================================================
+downloaded 6423 bytes
+
+Downloaded  cgAUC_1.2.1.tar.gz 
+
+RESULT for cgAUC_1.2.1.tar.gz : success (63 of 701, 63 good, 0 bad) -- Now 13:38:08 This 13.3 sec, Avg 60.6 sec, exp. finish in 644.4 min at 00:22:31 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/ChannelAttribution_1.6.tar.gz'
+Content type 'application/x-gzip' length 104437 bytes (101 KB)
+==================================================
+downloaded 101 KB
+
+Downloaded  ChannelAttribution_1.6.tar.gz 
+
+RESULT for ChannelAttribution_1.6.tar.gz : success (64 of 701, 64 good, 0 bad) -- Now 13:38:27 This 19.2 sec, Avg 60 sec, exp. finish in 636.5 min at 00:14:57 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/chopthin_0.2.1.tar.gz'
+Content type 'application/x-gzip' length 6514 bytes
+==================================================
+downloaded 6514 bytes
+
+Downloaded  chopthin_0.2.1.tar.gz 
+
+RESULT for chopthin_0.2.1.tar.gz : success (65 of 701, 65 good, 0 bad) -- Now 13:38:43 This 15.7 sec, Avg 59.3 sec, exp. finish in 628.3 min at 00:07:00 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/CIDnetworks_0.8.1.tar.gz'
+Content type 'application/x-gzip' length 91565 bytes (89 KB)
+==================================================
+downloaded 89 KB
+
+Downloaded  CIDnetworks_0.8.1.tar.gz 
+
+RESULT for CIDnetworks_0.8.1.tar.gz : success (66 of 701, 66 good, 0 bad) -- Now 13:39:22 This 39.3 sec, Avg 59 sec, exp. finish in 624.1 min at 00:03:28 on 18-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/cIRT_1.2.0.tar.gz'
+Content type 'application/x-gzip' length 65245 bytes (63 KB)
+==================================================
+downloaded 63 KB
+
+Downloaded  cIRT_1.2.0.tar.gz 
+
+RESULT for cIRT_1.2.0.tar.gz : success (67 of 701, 67 good, 0 bad) -- Now 13:39:46 This 24.1 sec, Avg 58.4 sec, exp. finish in 617.6 min at 23:57:23 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/cladoRcpp_0.14.4.tar.gz'
+Content type 'application/x-gzip' length 59369 bytes (57 KB)
+==================================================
+downloaded 57 KB
+
+Downloaded  cladoRcpp_0.14.4.tar.gz 
+
+RESULT for cladoRcpp_0.14.4.tar.gz : success (68 of 701, 68 good, 0 bad) -- Now 13:40:09 This 23.5 sec, Avg 57.9 sec, exp. finish in 611.2 min at 23:51:22 on 17-Jul-2016
+also installing the dependencies ‘rjags’, ‘R2jags’, ‘R2WinBUGS’
+
+trying URL 'http://cran.rstudio.com/src/contrib/classify_1.3.tar.gz'
+Content type 'application/x-gzip' length 26702 bytes (26 KB)
+==================================================
+downloaded 26 KB
+
+Downloaded  classify_1.3.tar.gz 
+
+RESULT for classify_1.3.tar.gz : success (69 of 701, 69 good, 0 bad) -- Now 13:40:38 This 28.8 sec, Avg 57.5 sec, exp. finish in 605.8 min at 23:46:27 on 17-Jul-2016
+also installing the dependency ‘lasso2’
+
+trying URL 'http://cran.rstudio.com/src/contrib/clere_1.1.4.tar.gz'
+Content type 'application/x-gzip' length 594797 bytes (580 KB)
+==================================================
+downloaded 580 KB
+
+Downloaded  clere_1.1.4.tar.gz 
+
+RESULT for clere_1.1.4.tar.gz : success (70 of 701, 70 good, 0 bad) -- Now 13:41:21 This 42.6 sec, Avg 57.3 sec, exp. finish in 602.6 min at 23:43:57 on 17-Jul-2016
+also installing the dependency ‘PCICt’
+
+trying URL 'http://cran.rstudio.com/src/contrib/climdex.pcic_1.1-6.tar.gz'
+Content type 'application/x-gzip' length 294950 bytes (288 KB)
+==================================================
+downloaded 288 KB
+
+Downloaded  climdex.pcic_1.1-6.tar.gz 
+
+RESULT for climdex.pcic_1.1-6.tar.gz : success (71 of 701, 71 good, 0 bad) -- Now 13:42:01 This 40.2 sec, Avg 57.1 sec, exp. finish in 599.1 min at 23:41:08 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/clogitboost_1.1.tar.gz'
+Content type 'application/x-gzip' length 11996 bytes (11 KB)
+==================================================
+downloaded 11 KB
+
+Downloaded  clogitboost_1.1.tar.gz 
+
+RESULT for clogitboost_1.1.tar.gz : success (72 of 701, 72 good, 0 bad) -- Now 13:42:20 This 18.6 sec, Avg 56.5 sec, exp. finish in 592.6 min at 23:34:54 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/clogitL1_1.4.tar.gz'
+Content type 'application/x-gzip' length 16325 bytes (15 KB)
+==================================================
+downloaded 15 KB
+
+Downloaded  clogitL1_1.4.tar.gz 
+
+RESULT for clogitL1_1.4.tar.gz : success (73 of 701, 73 good, 0 bad) -- Now 13:42:37 This 17.8 sec, Avg 56 sec, exp. finish in 586.1 min at 23:28:42 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/clusrank_0.2-2.tar.gz'
+Content type 'application/x-gzip' length 32002 bytes (31 KB)
+==================================================
+downloaded 31 KB
+
+Downloaded  clusrank_0.2-2.tar.gz 
+
+RESULT for clusrank_0.2-2.tar.gz : success (74 of 701, 74 good, 0 bad) -- Now 13:42:56 This 18.7 sec, Avg 55.5 sec, exp. finish in 579.9 min at 23:22:49 on 17-Jul-2016
+also installing the dependencies ‘gsl’, ‘ADGofTest’, ‘stabledist’, ‘pspline’, ‘TraMineR’, ‘clusterCrit’, ‘copula’, ‘WeightedCluster’
+
+trying URL 'http://cran.rstudio.com/src/contrib/ClusterStability_1.0.3.tar.gz'
+Content type 'application/x-gzip' length 8181 bytes
+==================================================
+downloaded 8181 bytes
+
+Downloaded  ClusterStability_1.0.3.tar.gz 
+
+RESULT for ClusterStability_1.0.3.tar.gz : success (75 of 701, 75 good, 0 bad) -- Now 13:44:07 This 71.1 sec, Avg 55.7 sec, exp. finish in 581.1 min at 23:25:16 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/clusteval_0.1.tar.gz'
+Content type 'application/x-gzip' length 21399 bytes (20 KB)
+==================================================
+downloaded 20 KB
+
+Downloaded  clusteval_0.1.tar.gz 
+
+RESULT for clusteval_0.1.tar.gz : success (76 of 701, 76 good, 0 bad) -- Now 13:44:27 This 19.6 sec, Avg 55.2 sec, exp. finish in 575.3 min at 23:19:43 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/ClustMMDD_1.0.4.tar.gz'
+Content type 'application/x-gzip' length 159728 bytes (155 KB)
+==================================================
+downloaded 155 KB
+
+Downloaded  ClustMMDD_1.0.4.tar.gz 
+
+RESULT for ClustMMDD_1.0.4.tar.gz : success (77 of 701, 77 good, 0 bad) -- Now 13:45:04 This 36.6 sec, Avg 55 sec, exp. finish in 571.8 min at 23:16:53 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/ClustVarLV_1.4.1.tar.gz'
+Content type 'application/x-gzip' length 922917 bytes (901 KB)
+==================================================
+downloaded 901 KB
+
+Downloaded  ClustVarLV_1.4.1.tar.gz 
+
+RESULT for ClustVarLV_1.4.1.tar.gz : success (78 of 701, 78 good, 0 bad) -- Now 13:45:25 This 21.5 sec, Avg 54.6 sec, exp. finish in 566.4 min at 23:11:51 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/CMF_1.0.tar.gz'
+Content type 'application/x-gzip' length 15005 bytes (14 KB)
+==================================================
+downloaded 14 KB
+
+Downloaded  CMF_1.0.tar.gz 
+
+RESULT for CMF_1.0.tar.gz : success (79 of 701, 79 good, 0 bad) -- Now 13:45:41 This 15.9 sec, Avg 54.1 sec, exp. finish in 560.5 min at 23:06:08 on 17-Jul-2016
+also installing the dependencies ‘abc.data’, ‘rehh’, ‘scrm’, ‘abc’, ‘PopGenome’, ‘phyclust’
+
+trying URL 'http://cran.rstudio.com/src/contrib/coala_0.4.0.tar.gz'
+Content type 'application/x-gzip' length 261413 bytes (255 KB)
+==================================================
+downloaded 255 KB
+
+Downloaded  coala_0.4.0.tar.gz 
+
+RESULT for coala_0.4.0.tar.gz : success (80 of 701, 80 good, 0 bad) -- Now 13:47:14 This 92.7 sec, Avg 54.5 sec, exp. finish in 564.6 min at 23:11:47 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/collUtils_1.0.5.tar.gz'
+Content type 'application/x-gzip' length 2110477 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+Downloaded  collUtils_1.0.5.tar.gz 
+
+RESULT for collUtils_1.0.5.tar.gz : success (81 of 701, 81 good, 0 bad) -- Now 13:47:34 This 20.5 sec, Avg 54.1 sec, exp. finish in 559.3 min at 23:06:53 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/CompGLM_1.0.tar.gz'
+Content type 'application/x-gzip' length 10160 bytes
+==================================================
+downloaded 10160 bytes
+
+Downloaded  CompGLM_1.0.tar.gz 
+
+RESULT for CompGLM_1.0.tar.gz : success (82 of 701, 82 good, 0 bad) -- Now 13:47:54 This 19.9 sec, Avg 53.7 sec, exp. finish in 554.1 min at 23:02:00 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/ConConPiWiFun_0.4.6.tar.gz'
+Content type 'application/x-gzip' length 23624 bytes (23 KB)
+==================================================
+downloaded 23 KB
+
+Downloaded  ConConPiWiFun_0.4.6.tar.gz 
+
+RESULT for ConConPiWiFun_0.4.6.tar.gz : success (83 of 701, 83 good, 0 bad) -- Now 13:48:33 This 39 sec, Avg 53.5 sec, exp. finish in 551.4 min at 22:59:56 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/coneproj_1.10.tar.gz'
+Content type 'application/x-gzip' length 29268 bytes (28 KB)
+==================================================
+downloaded 28 KB
+
+Downloaded  coneproj_1.10.tar.gz 
+
+RESULT for coneproj_1.10.tar.gz : success (84 of 701, 84 good, 0 bad) -- Now 13:48:54 This 21.1 sec, Avg 53.1 sec, exp. finish in 546.5 min at 22:55:26 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/contoureR_1.0.5.tar.gz'
+Content type 'application/x-gzip' length 23484 bytes (22 KB)
+==================================================
+downloaded 22 KB
+
+Downloaded  contoureR_1.0.5.tar.gz 
+
+RESULT for contoureR_1.0.5.tar.gz : failure (85 of 701, 84 good, 1 bad) -- Now 13:49:16 This 22.1 sec, Avg 52.8 sec, exp. finish in 541.9 min at 22:51:10 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/copCAR_1.0-2.tar.gz'
+Content type 'application/x-gzip' length 22092 bytes (21 KB)
+==================================================
+downloaded 21 KB
+
+Downloaded  copCAR_1.0-2.tar.gz 
+
+RESULT for copCAR_1.0-2.tar.gz : success (86 of 701, 85 good, 1 bad) -- Now 13:49:42 This 25.3 sec, Avg 52.5 sec, exp. finish in 537.7 min at 22:47:26 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/cord_0.1.1.tar.gz'
+Content type 'application/x-gzip' length 4231 bytes
+==================================================
+downloaded 4231 bytes
+
+Downloaded  cord_0.1.1.tar.gz 
+
+RESULT for cord_0.1.1.tar.gz : success (87 of 701, 86 good, 1 bad) -- Now 13:49:59 This 17.5 sec, Avg 52.1 sec, exp. finish in 532.8 min at 22:42:45 on 17-Jul-2016
+also installing the dependencies ‘cmprsk’, ‘longitudinal’, ‘fdrtool’, ‘ellipse’, ‘flashClust’, ‘leaps’, ‘ppls’, ‘Epi’, ‘GeneNet’, ‘FactoMineR’, ‘signal’, ‘Rmixmod’, ‘elasticnet’, ‘mclust’, ‘spikeslab’, ‘parcor’, ‘missMDA’, ‘tuneR’
+
+trying URL 'http://cran.rstudio.com/src/contrib/CorReg_1.1.1.tar.gz'
+Content type 'application/x-gzip' length 105819 bytes (103 KB)
+==================================================
+downloaded 103 KB
+
+Downloaded  CorReg_1.1.1.tar.gz 
+
+RESULT for CorReg_1.1.1.tar.gz : success (88 of 701, 87 good, 1 bad) -- Now 13:52:56 This 177 sec, Avg 53.5 sec, exp. finish in 546.4 min at 22:59:20 on 17-Jul-2016
+also installing the dependencies ‘optextras’, ‘mstate’, ‘muhaz’, ‘ucminf’, ‘BB’, ‘Rcgmin’, ‘Rvmmin’, ‘setRNG’, ‘dfoptim’, ‘svUnit’, ‘flexsurv’, ‘optimx’
+
+trying URL 'http://cran.rstudio.com/src/contrib/Countr_3.2.0.tar.gz'
+Content type 'application/x-gzip' length 506355 bytes (494 KB)
+==================================================
+downloaded 494 KB
+
+Downloaded  Countr_3.2.0.tar.gz 
+
+RESULT for Countr_3.2.0.tar.gz : success (89 of 701, 88 good, 1 bad) -- Now 13:54:18 This 82 sec, Avg 53.8 sec, exp. finish in 548.8 min at 23:03:05 on 17-Jul-2016
+also installing the dependency ‘TMB’
+
+trying URL 'http://cran.rstudio.com/src/contrib/covafillr_0.3.0.tar.gz'
+Content type 'application/x-gzip' length 88606 bytes (86 KB)
+==================================================
+downloaded 86 KB
+
+Downloaded  covafillr_0.3.0.tar.gz 
+
+RESULT for covafillr_0.3.0.tar.gz : success (90 of 701, 89 good, 1 bad) -- Now 13:55:07 This 48.7 sec, Avg 53.7 sec, exp. finish in 547.3 min at 23:02:25 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/Coxnet_0.2.tar.gz'
+Content type 'application/x-gzip' length 23608 bytes (23 KB)
+==================================================
+downloaded 23 KB
+
+Downloaded  Coxnet_0.2.tar.gz 
+
+RESULT for Coxnet_0.2.tar.gz : success (91 of 701, 90 good, 1 bad) -- Now 13:55:49 This 41.8 sec, Avg 53.6 sec, exp. finish in 545.1 min at 23:00:53 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/CoxPlus_1.1.1.tar.gz'
+Content type 'application/x-gzip' length 20281 bytes (19 KB)
+==================================================
+downloaded 19 KB
+
+Downloaded  CoxPlus_1.1.1.tar.gz 
+
+RESULT for CoxPlus_1.1.1.tar.gz : success (92 of 701, 91 good, 1 bad) -- Now 13:56:17 This 28.3 sec, Avg 53.3 sec, exp. finish in 541.4 min at 22:57:41 on 17-Jul-2016
+also installing the dependency ‘pedigreemm’
+
+trying URL 'http://cran.rstudio.com/src/contrib/cpgen_0.1.tar.gz'
+Content type 'application/x-gzip' length 50717 bytes (49 KB)
+==================================================
+downloaded 49 KB
+
+Downloaded  cpgen_0.1.tar.gz 
+
+RESULT for cpgen_0.1.tar.gz : success (93 of 701, 92 good, 1 bad) -- Now 13:57:26 This 68.7 sec, Avg 53.5 sec, exp. finish in 542.2 min at 22:59:37 on 17-Jul-2016
+also installing the dependency ‘argosfilter’
+
+trying URL 'http://cran.rstudio.com/src/contrib/crawl_2.0.tar.gz'
+Content type 'application/x-gzip' length 1724919 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+Downloaded  crawl_2.0.tar.gz 
+
+RESULT for crawl_2.0.tar.gz : success (94 of 701, 93 good, 1 bad) -- Now 13:58:03 This 37.5 sec, Avg 53.3 sec, exp. finish in 539.6 min at 22:57:38 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/creditr_0.6.1.tar.gz'
+Content type 'application/x-gzip' length 1342092 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+Downloaded  creditr_0.6.1.tar.gz 
+
+RESULT for creditr_0.6.1.tar.gz : success (95 of 701, 94 good, 1 bad) -- Now 13:58:40 This 37.1 sec, Avg 53.2 sec, exp. finish in 537 min at 22:55:38 on 17-Jul-2016
+also installing the dependencies ‘AlgDesign’, ‘CommonJavaJars’, ‘JavaGD’, ‘crossdes’
+
+trying URL 'http://cran.rstudio.com/src/contrib/Crossover_0.1-15.tar.gz'
+Content type 'application/x-gzip' length 979931 bytes (956 KB)
+==================================================
+downloaded 956 KB
+
+Downloaded  Crossover_0.1-15.tar.gz 
+
+RESULT for Crossover_0.1-15.tar.gz : success (96 of 701, 95 good, 1 bad) -- Now 14:00:05 This 84.6 sec, Avg 53.5 sec, exp. finish in 539.4 min at 22:59:28 on 17-Jul-2016
+also installing the dependencies ‘png’, ‘changepoint’, ‘minpack.lm’, ‘raster’, ‘leaflet’
+
+trying URL 'http://cran.rstudio.com/src/contrib/cycleRtools_1.1.1.tar.gz'
+Content type 'application/x-gzip' length 2219350 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+Downloaded  cycleRtools_1.1.1.tar.gz 
+
+RESULT for cycleRtools_1.1.1.tar.gz : success (97 of 701, 96 good, 1 bad) -- Now 14:01:02 This 57 sec, Avg 53.5 sec, exp. finish in 538.9 min at 22:59:53 on 17-Jul-2016
+also installing the dependency ‘beanplot’
+
+trying URL 'http://cran.rstudio.com/src/contrib/D3M_0.41.1.tar.gz'
+Content type 'application/x-gzip' length 8581 bytes
+==================================================
+downloaded 8581 bytes
+
+Downloaded  D3M_0.41.1.tar.gz 
+
+RESULT for D3M_0.41.1.tar.gz : success (98 of 701, 97 good, 1 bad) -- Now 14:01:17 This 15.3 sec, Avg 53.1 sec, exp. finish in 534 min at 22:55:20 on 17-Jul-2016
+also installing the dependencies ‘GA’, ‘diagram’
+
+trying URL 'http://cran.rstudio.com/src/contrib/datafsm_0.1.0.tar.gz'
+Content type 'application/x-gzip' length 115600 bytes (112 KB)
+==================================================
+downloaded 112 KB
+
+Downloaded  datafsm_0.1.0.tar.gz 
+
+RESULT for datafsm_0.1.0.tar.gz : failure (99 of 701, 97 good, 2 bad) -- Now 14:01:42 This 25.1 sec, Avg 52.9 sec, exp. finish in 530.3 min at 22:52:01 on 17-Jul-2016
+also installing the dependencies ‘polyclip’, ‘goftest’, ‘spatstat’
+
+trying URL 'http://cran.rstudio.com/src/contrib/dbmss_2.2-5.tar.gz'
+Content type 'application/x-gzip' length 820257 bytes (801 KB)
+==================================================
+downloaded 801 KB
+
+Downloaded  dbmss_2.2-5.tar.gz 
+
+RESULT for dbmss_2.2-5.tar.gz : success (100 of 701, 98 good, 2 bad) -- Now 14:03:36 This 114 sec, Avg 53.5 sec, exp. finish in 535.6 min at 22:59:10 on 17-Jul-2016
+also installing the dependencies ‘flexmix’, ‘prabclus’, ‘trimcluster’, ‘fpc’
+
+trying URL 'http://cran.rstudio.com/src/contrib/dbscan_0.9-7.tar.gz'
+Content type 'application/x-gzip' length 91141 bytes (89 KB)
+==================================================
+downloaded 89 KB
+
+Downloaded  dbscan_0.9-7.tar.gz 
+
+RESULT for dbscan_0.9-7.tar.gz : success (101 of 701, 99 good, 2 bad) -- Now 14:04:14 This 37.6 sec, Avg 53.3 sec, exp. finish in 533.1 min at 22:57:19 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/ddalpha_1.1.3.1.tar.gz'
+Content type 'application/x-gzip' length 394390 bytes (385 KB)
+==================================================
+downloaded 385 KB
+
+Downloaded  ddalpha_1.1.3.1.tar.gz 
+
+RESULT for ddalpha_1.1.3.1.tar.gz : success (102 of 701, 100 good, 2 bad) -- Now 14:05:05 This 51 sec, Avg 53.3 sec, exp. finish in 532 min at 22:57:04 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/ddR_0.1.2.tar.gz'
+Content type 'application/x-gzip' length 88954 bytes (86 KB)
+==================================================
+downloaded 86 KB
+
+Downloaded  ddR_0.1.2.tar.gz 
+
+RESULT for ddR_0.1.2.tar.gz : success (103 of 701, 101 good, 2 bad) -- Now 14:05:31 This 26.3 sec, Avg 53 sec, exp. finish in 528.5 min at 22:54:00 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/DDRTree_0.1.3.tar.gz'
+Content type 'application/x-gzip' length 12259 bytes (11 KB)
+==================================================
+downloaded 11 KB
+
+Downloaded  DDRTree_0.1.3.tar.gz 
+
+RESULT for DDRTree_0.1.3.tar.gz : success (104 of 701, 102 good, 2 bad) -- Now 14:06:40 This 68.7 sec, Avg 53.2 sec, exp. finish in 529.1 min at 22:55:46 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/deepboost_0.1.4.tar.gz'
+Content type 'application/x-gzip' length 1093448 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+Downloaded  deepboost_0.1.4.tar.gz 
+
+RESULT for deepboost_0.1.4.tar.gz : success (105 of 701, 103 good, 2 bad) -- Now 14:07:06 This 26.2 sec, Avg 52.9 sec, exp. finish in 525.7 min at 22:52:46 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/Delaporte_2.3.1.tar.gz'
+Content type 'application/x-gzip' length 12330 bytes (12 KB)
+==================================================
+downloaded 12 KB
+
+Downloaded  Delaporte_2.3.1.tar.gz 
+
+RESULT for Delaporte_2.3.1.tar.gz : success (106 of 701, 104 good, 2 bad) -- Now 14:07:24 This 18.1 sec, Avg 52.6 sec, exp. finish in 521.5 min at 22:48:56 on 17-Jul-2016
+also installing the dependencies ‘bibtex’, ‘TSP’, ‘qap’, ‘gclus’, ‘dendextend’, ‘RefManageR’, ‘extrafontdb’, ‘Rttf2pt1’, ‘gdtools’, ‘functional’, ‘fastICA’, ‘seriation’, ‘knitcitations’, ‘extrafont’, ‘svglite’
+
+trying URL 'http://cran.rstudio.com/src/contrib/DeLorean_1.2.3.tar.gz'
+Content type 'application/x-gzip' length 1246269 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+Downloaded  DeLorean_1.2.3.tar.gz 
+
+RESULT for DeLorean_1.2.3.tar.gz : success (107 of 701, 105 good, 2 bad) -- Now 14:08:24 This 59.5 sec, Avg 52.7 sec, exp. finish in 521.3 min at 22:49:41 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/dendextendRcpp_0.6.1.tar.gz'
+Content type 'application/x-gzip' length 24086 bytes (23 KB)
+==================================================
+downloaded 23 KB
+
+Downloaded  dendextendRcpp_0.6.1.tar.gz 
+
+RESULT for dendextendRcpp_0.6.1.tar.gz : success (108 of 701, 106 good, 2 bad) -- Now 14:09:00 This 35.9 sec, Avg 52.5 sec, exp. finish in 518.9 min at 22:47:53 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/densityClust_0.2.1.tar.gz'
+Content type 'application/x-gzip' length 10454 bytes (10 KB)
+==================================================
+downloaded 10 KB
+
+Downloaded  densityClust_0.2.1.tar.gz 
+
+RESULT for densityClust_0.2.1.tar.gz : success (109 of 701, 107 good, 2 bad) -- Now 14:09:16 This 16.2 sec, Avg 52.2 sec, exp. finish in 514.7 min at 22:43:59 on 17-Jul-2016
+also installing the dependencies ‘rrcov’, ‘np’, ‘sn’
+
+trying URL 'http://cran.rstudio.com/src/contrib/DepthProc_1.0.7.tar.gz'
+Content type 'application/x-gzip' length 951732 bytes (929 KB)
+==================================================
+downloaded 929 KB
+
+Downloaded  DepthProc_1.0.7.tar.gz 
+
+RESULT for DepthProc_1.0.7.tar.gz : success (110 of 701, 108 good, 2 bad) -- Now 14:10:25 This 68.8 sec, Avg 52.3 sec, exp. finish in 515.3 min at 22:45:45 on 17-Jul-2016
+Warning: dependency ‘RDCOMClient’ is not available
+also installing the dependency ‘manipulate’
+
+trying URL 'http://cran.rstudio.com/src/contrib/DescTools_0.99.17.tar.gz'
+Content type 'application/x-gzip' length 2279900 bytes (2.2 MB)
+==================================================
+downloaded 2.2 MB
+
+Downloaded  DescTools_0.99.17.tar.gz 
+
+RESULT for DescTools_0.99.17.tar.gz : success (111 of 701, 109 good, 2 bad) -- Now 14:12:11 This 106.4 sec, Avg 52.8 sec, exp. finish in 519.3 min at 22:51:27 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/DetMCD_0.0.3.tar.gz'
+Content type 'application/x-gzip' length 15244 bytes (14 KB)
+==================================================
+downloaded 14 KB
+
+Downloaded  DetMCD_0.0.3.tar.gz 
+
+RESULT for DetMCD_0.0.3.tar.gz : success (112 of 701, 110 good, 2 bad) -- Now 14:12:32 This 20.6 sec, Avg 52.5 sec, exp. finish in 515.6 min at 22:48:05 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/DetR_0.0.4.tar.gz'
+Content type 'application/x-gzip' length 662043 bytes (646 KB)
+==================================================
+downloaded 646 KB
+
+Downloaded  DetR_0.0.4.tar.gz 
+
+RESULT for DetR_0.0.4.tar.gz : success (113 of 701, 111 good, 2 bad) -- Now 14:13:02 This 30.5 sec, Avg 52.3 sec, exp. finish in 512.8 min at 22:45:48 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/dfcomb_2.1-6.tar.gz'
+Content type 'application/x-gzip' length 72250 bytes (70 KB)
+==================================================
+downloaded 70 KB
+
+Downloaded  dfcomb_2.1-6.tar.gz 
+
+RESULT for dfcomb_2.1-6.tar.gz : success (114 of 701, 112 good, 2 bad) -- Now 14:13:25 This 22.3 sec, Avg 52.1 sec, exp. finish in 509.3 min at 22:42:44 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/dfmta_1.3-4.tar.gz'
+Content type 'application/x-gzip' length 60555 bytes (59 KB)
+==================================================
+downloaded 59 KB
+
+Downloaded  dfmta_1.3-4.tar.gz 
+
+RESULT for dfmta_1.3-4.tar.gz : success (115 of 701, 113 good, 2 bad) -- Now 14:13:43 This 18.3 sec, Avg 51.8 sec, exp. finish in 505.6 min at 22:39:18 on 17-Jul-2016
+also installing the dependency ‘fptdApprox’
+
+trying URL 'http://cran.rstudio.com/src/contrib/DiffusionRgqd_0.1.2.tar.gz'
+Content type 'application/x-gzip' length 2702302 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+Downloaded  DiffusionRgqd_0.1.2.tar.gz 
+
+RESULT for DiffusionRgqd_0.1.2.tar.gz : success (116 of 701, 114 good, 2 bad) -- Now 14:14:14 This 31.4 sec, Avg 51.6 sec, exp. finish in 503 min at 22:37:15 on 17-Jul-2016
+also installing the dependency ‘DiffusionRjgqd’
+
+trying URL 'http://cran.rstudio.com/src/contrib/DiffusionRimp_0.1.0.tar.gz'
+Content type 'application/x-gzip' length 1170475 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+Downloaded  DiffusionRimp_0.1.0.tar.gz 
+
+RESULT for DiffusionRimp_0.1.0.tar.gz : success (117 of 701, 115 good, 2 bad) -- Now 14:14:40 This 25.6 sec, Avg 51.4 sec, exp. finish in 500 min at 22:34:39 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/DiffusionRjgqd_0.1.0.tar.gz'
+Content type 'application/x-gzip' length 2746569 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+Downloaded  DiffusionRjgqd_0.1.0.tar.gz 
+
+RESULT for DiffusionRjgqd_0.1.0.tar.gz : success (118 of 701, 116 good, 2 bad) -- Now 14:15:05 This 24.8 sec, Avg 51.1 sec, exp. finish in 496.9 min at 22:32:01 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/dils_0.8.1.tar.gz'
+Content type 'application/x-gzip' length 23252 bytes (22 KB)
+==================================================
+downloaded 22 KB
+
+Downloaded  dils_0.8.1.tar.gz 
+
+RESULT for dils_0.8.1.tar.gz : success (119 of 701, 117 good, 2 bad) -- Now 14:15:31 This 26.4 sec, Avg 50.9 sec, exp. finish in 494.1 min at 22:29:35 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/dina_1.0.1.tar.gz'
+Content type 'application/x-gzip' length 11296 bytes (11 KB)
+==================================================
+downloaded 11 KB
+
+Downloaded  dina_1.0.1.tar.gz 
+
+RESULT for dina_1.0.1.tar.gz : success (120 of 701, 118 good, 2 bad) -- Now 14:15:48 This 17 sec, Avg 50.7 sec, exp. finish in 490.5 min at 22:26:17 on 17-Jul-2016
+also installing the dependencies ‘disclap’, ‘ggdendro’
+
+trying URL 'http://cran.rstudio.com/src/contrib/disclapmix_1.6.2.tar.gz'
+Content type 'application/x-gzip' length 31091 bytes (30 KB)
+==================================================
+downloaded 30 KB
+
+Downloaded  disclapmix_1.6.2.tar.gz 
+
+RESULT for disclapmix_1.6.2.tar.gz : success (121 of 701, 119 good, 2 bad) -- Now 14:16:16 This 28 sec, Avg 50.5 sec, exp. finish in 487.8 min at 22:24:06 on 17-Jul-2016
+also installing the dependency ‘caper’
+
+trying URL 'http://cran.rstudio.com/src/contrib/diversitree_0.9-8.tar.gz'
+Content type 'application/x-gzip' length 368238 bytes (359 KB)
+==================================================
+downloaded 359 KB
+
+Downloaded  diversitree_0.9-8.tar.gz 
+
+RESULT for diversitree_0.9-8.tar.gz : success (122 of 701, 120 good, 2 bad) -- Now 14:17:14 This 58 sec, Avg 50.5 sec, exp. finish in 487.6 min at 22:24:49 on 17-Jul-2016
+also installing the dependencies ‘mi’, ‘rjson’, ‘pixmap’, ‘sem’, ‘jpeg’, ‘sna’, ‘glasso’, ‘huge’, ‘d3Network’, ‘ggm’, ‘xlsxjars’, ‘rtiff’, ‘qgraph’, ‘xlsx’, ‘sendplot’, ‘HWxtest’
+
+trying URL 'http://cran.rstudio.com/src/contrib/diveRsity_1.9.89.tar.gz'
+Content type 'application/x-gzip' length 1333696 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+Downloaded  diveRsity_1.9.89.tar.gz 
+
+RESULT for diveRsity_1.9.89.tar.gz : success (123 of 701, 121 good, 2 bad) -- Now 14:19:13 This 118.7 sec, Avg 51.1 sec, exp. finish in 492.1 min at 22:31:18 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/divo_0.1.2.tar.gz'
+Content type 'application/x-gzip' length 319516 bytes (312 KB)
+==================================================
+downloaded 312 KB
+
+Downloaded  divo_0.1.2.tar.gz 
+
+RESULT for divo_0.1.2.tar.gz : success (124 of 701, 122 good, 2 bad) -- Now 14:19:35 This 22.6 sec, Avg 50.9 sec, exp. finish in 489 min at 22:28:37 on 17-Jul-2016
+also installing the dependencies ‘snowfall’, ‘readxl’
+
+trying URL 'http://cran.rstudio.com/src/contrib/DLMtool_3.2.tar.gz'
+Content type 'application/x-gzip' length 3998861 bytes (3.8 MB)
+==================================================
+downloaded 3.8 MB
+
+Downloaded  DLMtool_3.2.tar.gz 
+
+RESULT for DLMtool_3.2.tar.gz : success (125 of 701, 123 good, 2 bad) -- Now 14:20:32 This 56.7 sec, Avg 50.9 sec, exp. finish in 488.6 min at 22:29:10 on 17-Jul-2016
+also installing the dependencies ‘truncnorm’, ‘Rsolnp’, ‘multicool’, ‘DNAtools’
+
+trying URL 'http://cran.rstudio.com/src/contrib/DNAprofiles_0.3.1.tar.gz'
+Content type 'application/x-gzip' length 84212 bytes (82 KB)
+==================================================
+downloaded 82 KB
+
+Downloaded  DNAprofiles_0.3.1.tar.gz 
+
+RESULT for DNAprofiles_0.3.1.tar.gz : success (126 of 701, 124 good, 2 bad) -- Now 14:21:28 This 55.7 sec, Avg 50.9 sec, exp. finish in 488.1 min at 22:29:36 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/DNAtools_0.1-21.1.tar.gz'
+Content type 'application/x-gzip' length 321441 bytes (313 KB)
+==================================================
+downloaded 313 KB
+
+Downloaded  DNAtools_0.1-21.1.tar.gz 
+
+RESULT for DNAtools_0.1-21.1.tar.gz : success (127 of 701, 125 good, 2 bad) -- Now 14:21:56 This 28.5 sec, Avg 50.8 sec, exp. finish in 485.6 min at 22:27:33 on 17-Jul-2016
+also installing the dependencies ‘slam’, ‘clue’, ‘misc3d’, ‘skmeans’, ‘plot3D’, ‘plot3Drgl’, ‘BayesLogit’, ‘movMF’
+
+trying URL 'http://cran.rstudio.com/src/contrib/dnc_1.2.tar.gz'
+Content type 'application/x-gzip' length 25443 bytes (24 KB)
+==================================================
+downloaded 24 KB
+
+Downloaded  dnc_1.2.tar.gz 
+
+RESULT for dnc_1.2.tar.gz : success (128 of 701, 126 good, 2 bad) -- Now 14:24:04 This 127.6 sec, Avg 51.4 sec, exp. finish in 490.5 min at 22:34:34 on 17-Jul-2016
+also installing the dependencies ‘rex’, ‘RPostgreSQL’, ‘Lahman’, ‘nycflights13’, ‘covr’, ‘dtplyr’
+
+trying URL 'http://cran.rstudio.com/src/contrib/dplyr_0.5.0.tar.gz'
+Content type 'application/x-gzip' length 708476 bytes (691 KB)
+==================================================
+downloaded 691 KB
+
+Downloaded  dplyr_0.5.0.tar.gz 
+
+RESULT for dplyr_0.5.0.tar.gz : success (129 of 701, 127 good, 2 bad) -- Now 14:25:45 This 101.4 sec, Avg 51.7 sec, exp. finish in 493.3 min at 22:39:05 on 17-Jul-2016
+also installing the dependency ‘nleqslv’
+
+trying URL 'http://cran.rstudio.com/src/contrib/drgee_1.1.5.tar.gz'
+Content type 'application/x-gzip' length 24843 bytes (24 KB)
+==================================================
+downloaded 24 KB
+
+Downloaded  drgee_1.1.5.tar.gz 
+
+RESULT for drgee_1.1.5.tar.gz : success (130 of 701, 128 good, 2 bad) -- Now 14:26:23 This 37.6 sec, Avg 51.6 sec, exp. finish in 491.4 min at 22:37:49 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/dslice_1.1.5.tar.gz'
+Content type 'application/x-gzip' length 1504761 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+Downloaded  dslice_1.1.5.tar.gz 
+
+RESULT for dslice_1.1.5.tar.gz : success (131 of 701, 129 good, 2 bad) -- Now 14:26:46 This 23.5 sec, Avg 51.4 sec, exp. finish in 488.5 min at 22:35:19 on 17-Jul-2016
+also installing the dependencies ‘fda’, ‘tis’, ‘Ecfun’, ‘Ecdat’, ‘rpart.plot’
+
+trying URL 'http://cran.rstudio.com/src/contrib/DStree_1.0.tar.gz'
+Content type 'application/x-gzip' length 20326 bytes (19 KB)
+==================================================
+downloaded 19 KB
+
+Downloaded  DStree_1.0.tar.gz 
+
+RESULT for DStree_1.0.tar.gz : success (132 of 701, 130 good, 2 bad) -- Now 14:27:43 This 56.3 sec, Avg 51.5 sec, exp. finish in 488 min at 22:35:44 on 17-Jul-2016
+also installing the dependencies ‘clv’, ‘splus2R’, ‘ifultools’, ‘locpol’, ‘pdc’, ‘longitudinalData’, ‘wmtsa’, ‘dtw’, ‘flexclust’, ‘TSdist’, ‘TSclust’
+
+trying URL 'http://cran.rstudio.com/src/contrib/dtwclust_2.1.2.tar.gz'
+Content type 'application/x-gzip' length 137036 bytes (133 KB)
+==================================================
+downloaded 133 KB
+
+Downloaded  dtwclust_2.1.2.tar.gz 
+
+RESULT for dtwclust_2.1.2.tar.gz : success (133 of 701, 131 good, 2 bad) -- Now 14:29:04 This 80.9 sec, Avg 51.7 sec, exp. finish in 489.3 min at 22:38:19 on 17-Jul-2016
+also installing the dependency ‘SpecsVerification’
+
+trying URL 'http://cran.rstudio.com/src/contrib/easyVerification_0.2.0.tar.gz'
+Content type 'application/x-gzip' length 296632 bytes (289 KB)
+==================================================
+downloaded 289 KB
+
+Downloaded  easyVerification_0.2.0.tar.gz 
+
+RESULT for easyVerification_0.2.0.tar.gz : success (134 of 701, 132 good, 2 bad) -- Now 14:29:27 This 23.8 sec, Avg 51.5 sec, exp. finish in 486.4 min at 22:35:53 on 17-Jul-2016
+also installing the dependency ‘separationplot’
+
+trying URL 'http://cran.rstudio.com/src/contrib/EBMAforecast_0.52.tar.gz'
+Content type 'application/x-gzip' length 115438 bytes (112 KB)
+==================================================
+downloaded 112 KB
+
+Downloaded  EBMAforecast_0.52.tar.gz 
+
+RESULT for EBMAforecast_0.52.tar.gz : success (135 of 701, 133 good, 2 bad) -- Now 14:30:08 This 40.2 sec, Avg 51.4 sec, exp. finish in 484.8 min at 22:34:55 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/ECctmc_0.2.1.tar.gz'
+Content type 'application/x-gzip' length 21474 bytes (20 KB)
+==================================================
+downloaded 20 KB
+
+Downloaded  ECctmc_0.2.1.tar.gz 
+
+RESULT for ECctmc_0.2.1.tar.gz : success (136 of 701, 134 good, 2 bad) -- Now 14:30:29 This 21.3 sec, Avg 51.2 sec, exp. finish in 481.9 min at 22:32:20 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/ecp_2.0.0.tar.gz'
+Content type 'application/x-gzip' length 1658778 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+Downloaded  ecp_2.0.0.tar.gz 
+
+RESULT for ecp_2.0.0.tar.gz : success (137 of 701, 135 good, 2 bad) -- Now 14:30:52 This 22.8 sec, Avg 51 sec, exp. finish in 479.1 min at 22:29:55 on 17-Jul-2016
+also installing the dependency ‘editrules’
+
+trying URL 'http://cran.rstudio.com/src/contrib/EditImputeCont_1.0.1.tar.gz'
+Content type 'application/x-gzip' length 665816 bytes (650 KB)
+==================================================
+downloaded 650 KB
+
+Downloaded  EditImputeCont_1.0.1.tar.gz 
+
+RESULT for EditImputeCont_1.0.1.tar.gz : success (138 of 701, 136 good, 2 bad) -- Now 14:31:32 This 39.7 sec, Avg 50.9 sec, exp. finish in 477.4 min at 22:28:58 on 17-Jul-2016
+also installing the dependencies ‘actuar’, ‘numbers’
+
+trying URL 'http://cran.rstudio.com/src/contrib/eggCounts_1.1.tar.gz'
+Content type 'application/x-gzip' length 42132 bytes (41 KB)
+==================================================
+downloaded 41 KB
+
+Downloaded  eggCounts_1.1.tar.gz 
+
+RESULT for eggCounts_1.1.tar.gz : success (139 of 701, 137 good, 2 bad) -- Now 14:36:02 This 270.4 sec, Avg 52.5 sec, exp. finish in 491.4 min at 22:47:25 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/eive_2.1.tar.gz'
+Content type 'application/x-gzip' length 4806 bytes
+==================================================
+downloaded 4806 bytes
+
+Downloaded  eive_2.1.tar.gz 
+
+RESULT for eive_2.1.tar.gz : success (140 of 701, 138 good, 2 bad) -- Now 14:36:16 This 13.6 sec, Avg 52.2 sec, exp. finish in 487.9 min at 22:44:11 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/EloChoice_0.29.tar.gz'
+Content type 'application/x-gzip' length 308607 bytes (301 KB)
+==================================================
+downloaded 301 KB
+
+Downloaded  EloChoice_0.29.tar.gz 
+
+RESULT for EloChoice_0.29.tar.gz : success (141 of 701, 139 good, 2 bad) -- Now 14:36:35 This 19.2 sec, Avg 51.9 sec, exp. finish in 484.9 min at 22:41:27 on 17-Jul-2016
+also installing the dependency ‘purrr’
+
+trying URL 'http://cran.rstudio.com/src/contrib/elpatron_0.0.2.tar.gz'
+Content type 'application/x-gzip' length 477662 bytes (466 KB)
+==================================================
+downloaded 466 KB
+
+Downloaded  elpatron_0.0.2.tar.gz 
+
+RESULT for elpatron_0.0.2.tar.gz : failure (142 of 701, 139 good, 3 bad) -- Now 14:37:26 This 50.7 sec, Avg 51.9 sec, exp. finish in 483.9 min at 22:41:21 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/emil_2.2.6.tar.gz'
+Content type 'application/x-gzip' length 85390 bytes (83 KB)
+==================================================
+downloaded 83 KB
+
+Downloaded  emil_2.2.6.tar.gz 
+
+RESULT for emil_2.2.6.tar.gz : success (143 of 701, 140 good, 3 bad) -- Now 14:38:10 This 44.5 sec, Avg 51.9 sec, exp. finish in 482.6 min at 22:40:44 on 17-Jul-2016
+also installing the dependency ‘pscl’
+
+trying URL 'http://cran.rstudio.com/src/contrib/emIRT_0.0.6.tar.gz'
+Content type 'application/x-gzip' length 2163839 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+Downloaded  emIRT_0.0.6.tar.gz 
+
+RESULT for emIRT_0.0.6.tar.gz : success (144 of 701, 141 good, 3 bad) -- Now 14:40:47 This 157.3 sec, Avg 52.6 sec, exp. finish in 488.5 min at 22:49:18 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/EPGLM_1.1.1.tar.gz'
+Content type 'application/x-gzip' length 4988 bytes
+==================================================
+downloaded 4988 bytes
+
+Downloaded  EPGLM_1.1.1.tar.gz 
+
+RESULT for EPGLM_1.1.1.tar.gz : success (145 of 701, 142 good, 3 bad) -- Now 14:41:14 This 26.7 sec, Avg 52.4 sec, exp. finish in 486 min at 22:47:12 on 17-Jul-2016
+also installing the dependencies ‘JADE’, ‘ProtGenerics’, ‘osd’, ‘HiClimR’, ‘mzR’
+
+trying URL 'http://cran.rstudio.com/src/contrib/erah_1.0.1.tar.gz'
+Content type 'application/x-gzip' length 485391 bytes (474 KB)
+==================================================
+downloaded 474 KB
+
+Downloaded  erah_1.0.1.tar.gz 
+
+RESULT for erah_1.0.1.tar.gz : success (146 of 701, 143 good, 3 bad) -- Now 14:45:08 This 234.2 sec, Avg 53.7 sec, exp. finish in 496.6 min at 23:01:45 on 17-Jul-2016
+also installing the dependencies ‘gss’, ‘mcGlobaloptim’, ‘timeSeries’, ‘fBasics’, ‘CDVine’, ‘ycinterextra’, ‘fOptions’
+
+trying URL 'http://cran.rstudio.com/src/contrib/ESGtoolkit_0.1.tar.gz'
+Content type 'application/x-gzip' length 389756 bytes (380 KB)
+==================================================
+downloaded 380 KB
+
+Downloaded  ESGtoolkit_0.1.tar.gz 
+
+RESULT for ESGtoolkit_0.1.tar.gz : success (147 of 701, 144 good, 3 bad) -- Now 14:45:54 This 45.5 sec, Avg 53.6 sec, exp. finish in 495.2 min at 23:01:06 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/EstHer_1.0.tar.gz'
+Content type 'application/x-gzip' length 212438 bytes (207 KB)
+==================================================
+downloaded 207 KB
+
+Downloaded  EstHer_1.0.tar.gz 
+
+RESULT for EstHer_1.0.tar.gz : success (148 of 701, 145 good, 3 bad) -- Now 14:46:29 This 34.8 sec, Avg 53.5 sec, exp. finish in 493.1 min at 22:59:37 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/evolqg_0.2-4.tar.gz'
+Content type 'application/x-gzip' length 87207 bytes (85 KB)
+==================================================
+downloaded 85 KB
+
+Downloaded  evolqg_0.2-4.tar.gz 
+
+RESULT for evolqg_0.2-4.tar.gz : failure (149 of 701, 145 good, 4 bad) -- Now 14:47:59 This 90.4 sec, Avg 53.8 sec, exp. finish in 494.5 min at 23:02:30 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/EWGoF_2.1.tar.gz'
+Content type 'application/x-gzip' length 21862 bytes (21 KB)
+==================================================
+downloaded 21 KB
+
+Downloaded  EWGoF_2.1.tar.gz 
+
+RESULT for EWGoF_2.1.tar.gz : success (150 of 701, 146 good, 4 bad) -- Now 14:48:30 This 30.6 sec, Avg 53.6 sec, exp. finish in 492.2 min at 23:00:42 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/exif_0.1.0.tar.gz'
+Content type 'application/x-gzip' length 2697474 bytes (2.6 MB)
+==================================================
+downloaded 2.6 MB
+
+Downloaded  exif_0.1.0.tar.gz 
+
+RESULT for exif_0.1.0.tar.gz : success (151 of 701, 147 good, 4 bad) -- Now 14:48:48 This 18.2 sec, Avg 53.4 sec, exp. finish in 489.2 min at 22:57:58 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/extraDistr_1.7.2.tar.gz'
+Content type 'application/x-gzip' length 83698 bytes (81 KB)
+==================================================
+downloaded 81 KB
+
+Downloaded  extraDistr_1.7.2.tar.gz 
+
+RESULT for extraDistr_1.7.2.tar.gz : success (152 of 701, 148 good, 4 bad) -- Now 14:50:05 This 77 sec, Avg 53.5 sec, exp. finish in 489.7 min at 22:59:47 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/fastAdaboost_1.0.0.tar.gz'
+Content type 'application/x-gzip' length 14176 bytes (13 KB)
+==================================================
+downloaded 13 KB
+
+Downloaded  fastAdaboost_1.0.0.tar.gz 
+
+RESULT for fastAdaboost_1.0.0.tar.gz : success (153 of 701, 149 good, 4 bad) -- Now 14:50:24 This 19.4 sec, Avg 53.3 sec, exp. finish in 486.8 min at 22:57:10 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/FastBandChol_0.1.1.tar.gz'
+Content type 'application/x-gzip' length 4698 bytes
+==================================================
+downloaded 4698 bytes
+
+Downloaded  FastBandChol_0.1.1.tar.gz 
+
+RESULT for FastBandChol_0.1.1.tar.gz : success (154 of 701, 150 good, 4 bad) -- Now 14:50:40 This 15.6 sec, Avg 53.1 sec, exp. finish in 483.6 min at 22:54:19 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/fastGHQuad_0.2.tar.gz'
+Content type 'application/x-gzip' length 9134 bytes
+==================================================
+downloaded 9134 bytes
+
+Downloaded  fastGHQuad_0.2.tar.gz 
+
+RESULT for fastGHQuad_0.2.tar.gz : success (155 of 701, 151 good, 4 bad) -- Now 14:50:56 This 16 sec, Avg 52.8 sec, exp. finish in 480.6 min at 22:51:31 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/FastGP_1.2.tar.gz'
+Content type 'application/x-gzip' length 323866 bytes (316 KB)
+==================================================
+downloaded 316 KB
+
+Downloaded  FastGP_1.2.tar.gz 
+
+RESULT for FastGP_1.2.tar.gz : success (156 of 701, 152 good, 4 bad) -- Now 14:51:17 This 21.3 sec, Avg 52.6 sec, exp. finish in 477.9 min at 22:49:10 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/FastHCS_0.0.5.tar.gz'
+Content type 'application/x-gzip' length 1350346 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+Downloaded  FastHCS_0.0.5.tar.gz 
+
+RESULT for FastHCS_0.0.5.tar.gz : success (157 of 701, 153 good, 4 bad) -- Now 14:51:47 This 30.2 sec, Avg 52.5 sec, exp. finish in 475.7 min at 22:47:29 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/fastM_0.0-2.tar.gz'
+Content type 'application/x-gzip' length 12375 bytes (12 KB)
+==================================================
+downloaded 12 KB
+
+Downloaded  fastM_0.0-2.tar.gz 
+
+RESULT for fastM_0.0-2.tar.gz : success (158 of 701, 154 good, 4 bad) -- Now 14:52:20 This 32.3 sec, Avg 52.3 sec, exp. finish in 473.7 min at 22:46:00 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/FastPCS_0.1.2.tar.gz'
+Content type 'application/x-gzip' length 7631 bytes
+==================================================
+downloaded 7631 bytes
+
+Downloaded  FastPCS_0.1.2.tar.gz 
+
+RESULT for FastPCS_0.1.2.tar.gz : success (159 of 701, 155 good, 4 bad) -- Now 14:52:38 This 18.4 sec, Avg 52.1 sec, exp. finish in 470.9 min at 22:43:30 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/FastRCS_0.0.7.tar.gz'
+Content type 'application/x-gzip' length 21350 bytes (20 KB)
+==================================================
+downloaded 20 KB
+
+Downloaded  FastRCS_0.0.7.tar.gz 
+
+RESULT for FastRCS_0.0.7.tar.gz : success (160 of 701, 156 good, 4 bad) -- Now 14:53:01 This 22.8 sec, Avg 51.9 sec, exp. finish in 468.4 min at 22:41:22 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/FBFsearch_1.0.tar.gz'
+Content type 'application/x-gzip' length 3669859 bytes (3.5 MB)
+==================================================
+downloaded 3.5 MB
+
+Downloaded  FBFsearch_1.0.tar.gz 
+
+RESULT for FBFsearch_1.0.tar.gz : success (161 of 701, 157 good, 4 bad) -- Now 14:53:27 This 26.8 sec, Avg 51.8 sec, exp. finish in 466.1 min at 22:39:32 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/fbroc_0.4.0.tar.gz'
+Content type 'application/x-gzip' length 38921 bytes (38 KB)
+==================================================
+downloaded 38 KB
+
+Downloaded  fbroc_0.4.0.tar.gz 
+
+RESULT for fbroc_0.4.0.tar.gz : success (162 of 701, 158 good, 4 bad) -- Now 14:53:58 This 30.1 sec, Avg 51.7 sec, exp. finish in 464 min at 22:37:58 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/FCNN4R_0.6.2.tar.gz'
+Content type 'application/x-gzip' length 55915 bytes (54 KB)
+==================================================
+downloaded 54 KB
+
+Downloaded  FCNN4R_0.6.2.tar.gz 
+
+RESULT for FCNN4R_0.6.2.tar.gz : success (163 of 701, 159 good, 4 bad) -- Now 14:54:22 This 24.3 sec, Avg 51.5 sec, exp. finish in 461.6 min at 22:36:01 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/fdaMixed_0.4.tar.gz'
+Content type 'application/x-gzip' length 19428 bytes (18 KB)
+==================================================
+downloaded 18 KB
+
+Downloaded  fdaMixed_0.4.tar.gz 
+
+RESULT for fdaMixed_0.4.tar.gz : success (164 of 701, 160 good, 4 bad) -- Now 14:54:53 This 30.8 sec, Avg 51.4 sec, exp. finish in 459.7 min at 22:34:32 on 17-Jul-2016
+also installing the dependencies ‘pracma’, ‘aplpack’, ‘ks’
+
+trying URL 'http://cran.rstudio.com/src/contrib/fdapace_0.2.5.tar.gz'
+Content type 'application/x-gzip' length 488175 bytes (476 KB)
+==================================================
+downloaded 476 KB
+
+Downloaded  fdapace_0.2.5.tar.gz 
+
+RESULT for fdapace_0.2.5.tar.gz : success (165 of 701, 161 good, 4 bad) -- Now 14:56:31 This 97.9 sec, Avg 51.6 sec, exp. finish in 461.3 min at 22:37:50 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/fdaPDE_0.1-4.tar.gz'
+Content type 'application/x-gzip' length 263335 bytes (257 KB)
+==================================================
+downloaded 257 KB
+
+Downloaded  fdaPDE_0.1-4.tar.gz 
+
+RESULT for fdaPDE_0.1-4.tar.gz : success (166 of 701, 162 good, 4 bad) -- Now 14:57:14 This 43.8 sec, Avg 51.6 sec, exp. finish in 460 min at 22:37:17 on 17-Jul-2016
+also installing the dependency ‘akima’
+
+trying URL 'http://cran.rstudio.com/src/contrib/fdasrvf_1.6.1.tar.gz'
+Content type 'application/x-gzip' length 2337161 bytes (2.2 MB)
+==================================================
+downloaded 2.2 MB
+
+Downloaded  fdasrvf_1.6.1.tar.gz 
+
+RESULT for fdasrvf_1.6.1.tar.gz : success (167 of 701, 163 good, 4 bad) -- Now 14:59:07 This 113.2 sec, Avg 52 sec, exp. finish in 462.5 min at 22:41:35 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/FDGcopulas_1.0.tar.gz'
+Content type 'application/x-gzip' length 14149 bytes (13 KB)
+==================================================
+downloaded 13 KB
+
+Downloaded  FDGcopulas_1.0.tar.gz 
+
+RESULT for FDGcopulas_1.0.tar.gz : success (168 of 701, 164 good, 4 bad) -- Now 14:59:26 This 18.4 sec, Avg 51.8 sec, exp. finish in 459.8 min at 22:39:15 on 17-Jul-2016
+also installing the dependencies ‘mosaicData’, ‘mosaic’
+
+trying URL 'http://cran.rstudio.com/src/contrib/FDRreg_0.1.tar.gz'
+Content type 'application/x-gzip' length 17159 bytes (16 KB)
+==================================================
+downloaded 16 KB
+
+Downloaded  FDRreg_0.1.tar.gz 
+
+RESULT for FDRreg_0.1.tar.gz : success (169 of 701, 165 good, 4 bad) -- Now 15:00:19 This 53.2 sec, Avg 51.8 sec, exp. finish in 459 min at 22:39:21 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/feather_0.0.1.tar.gz'
+Content type 'application/x-gzip' length 49068 bytes (47 KB)
+==================================================
+downloaded 47 KB
+
+Downloaded  feather_0.0.1.tar.gz 
+
+RESULT for feather_0.0.1.tar.gz : success (170 of 701, 166 good, 4 bad) -- Now 15:00:44 This 25.2 sec, Avg 51.6 sec, exp. finish in 456.8 min at 22:37:32 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/FeatureHashing_0.9.1.1.tar.gz'
+Content type 'application/x-gzip' length 379378 bytes (370 KB)
+==================================================
+downloaded 370 KB
+
+Downloaded  FeatureHashing_0.9.1.1.tar.gz 
+
+RESULT for FeatureHashing_0.9.1.1.tar.gz : success (171 of 701, 167 good, 4 bad) -- Now 15:01:43 This 58.9 sec, Avg 51.7 sec, exp. finish in 456.3 min at 22:38:02 on 17-Jul-2016
+also installing the dependencies ‘ore’, ‘RNiftyReg’, ‘tkrplot’
+
+trying URL 'http://cran.rstudio.com/src/contrib/FIACH_0.1.2.tar.gz'
+Content type 'application/x-gzip' length 1001909 bytes (978 KB)
+==================================================
+downloaded 978 KB
+
+Downloaded  FIACH_0.1.2.tar.gz 
+
+RESULT for FIACH_0.1.2.tar.gz : success (172 of 701, 168 good, 4 bad) -- Now 15:03:47 This 123.5 sec, Avg 52.1 sec, exp. finish in 459.1 min at 22:42:55 on 17-Jul-2016
+also installing the dependency ‘BSSasymp’
+
+trying URL 'http://cran.rstudio.com/src/contrib/fICA_1.0-3.tar.gz'
+Content type 'application/x-gzip' length 12059 bytes (11 KB)
+==================================================
+downloaded 11 KB
+
+Downloaded  fICA_1.0-3.tar.gz 
+
+RESULT for fICA_1.0-3.tar.gz : success (173 of 701, 169 good, 4 bad) -- Now 15:04:20 This 33.5 sec, Avg 52 sec, exp. finish in 457.3 min at 22:41:39 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/FisHiCal_1.1.tar.gz'
+Content type 'application/x-gzip' length 299250 bytes (292 KB)
+==================================================
+downloaded 292 KB
+
+Downloaded  FisHiCal_1.1.tar.gz 
+
+RESULT for FisHiCal_1.1.tar.gz : success (174 of 701, 170 good, 4 bad) -- Now 15:04:39 This 19.2 sec, Avg 51.8 sec, exp. finish in 454.8 min at 22:39:27 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/flam_3.0.tar.gz'
+Content type 'application/x-gzip' length 22003 bytes (21 KB)
+==================================================
+downloaded 21 KB
+
+Downloaded  flam_3.0.tar.gz 
+
+RESULT for flam_3.0.tar.gz : success (175 of 701, 171 good, 4 bad) -- Now 15:04:59 This 19.1 sec, Avg 51.6 sec, exp. finish in 452.3 min at 22:37:16 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/flan_0.1.tar.gz'
+Content type 'application/x-gzip' length 36449 bytes (35 KB)
+==================================================
+downloaded 35 KB
+
+Downloaded  flan_0.1.tar.gz 
+
+RESULT for flan_0.1.tar.gz : success (176 of 701, 172 good, 4 bad) -- Now 15:05:36 This 37 sec, Avg 51.5 sec, exp. finish in 450.7 min at 22:36:18 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/flars_1.0.tar.gz'
+Content type 'application/x-gzip' length 2096834 bytes (2.0 MB)
+==================================================
+downloaded 2.0 MB
+
+Downloaded  flars_1.0.tar.gz 
+
+RESULT for flars_1.0.tar.gz : success (177 of 701, 173 good, 4 bad) -- Now 15:06:20 This 44 sec, Avg 51.5 sec, exp. finish in 449.5 min at 22:35:49 on 17-Jul-2016
+also installing the dependencies ‘someMTP’, ‘cherry’
+
+trying URL 'http://cran.rstudio.com/src/contrib/flip_2.4.3.tar.gz'
+Content type 'application/x-gzip' length 45850 bytes (44 KB)
+==================================================
+downloaded 44 KB
+
+Downloaded  flip_2.4.3.tar.gz 
+
+RESULT for flip_2.4.3.tar.gz : success (178 of 701, 174 good, 4 bad) -- Now 15:07:02 This 42.1 sec, Avg 51.4 sec, exp. finish in 448.2 min at 22:35:12 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/FLSSS_5.0.1.tar.gz'
+Content type 'application/x-gzip' length 17809 bytes (17 KB)
+==================================================
+downloaded 17 KB
+
+Downloaded  FLSSS_5.0.1.tar.gz 
+
+RESULT for FLSSS_5.0.1.tar.gz : success (179 of 701, 175 good, 4 bad) -- Now 15:07:18 This 16.6 sec, Avg 51.2 sec, exp. finish in 445.6 min at 22:32:56 on 17-Jul-2016
+also installing the dependencies ‘tseries’, ‘fracdiff’
+
+trying URL 'http://cran.rstudio.com/src/contrib/forecast_7.1.tar.gz'
+Content type 'application/x-gzip' length 196896 bytes (192 KB)
+==================================================
+downloaded 192 KB
+
+Downloaded  forecast_7.1.tar.gz 
+
+RESULT for forecast_7.1.tar.gz : success (180 of 701, 176 good, 4 bad) -- Now 15:09:07 This 108.6 sec, Avg 51.5 sec, exp. finish in 447.5 min at 22:36:39 on 17-Jul-2016
+also installing the dependency ‘robfilter’
+
+trying URL 'http://cran.rstudio.com/src/contrib/forega_1.0.tar.gz'
+Content type 'application/x-gzip' length 7519 bytes
+==================================================
+downloaded 7519 bytes
+
+Downloaded  forega_1.0.tar.gz 
+
+RESULT for forega_1.0.tar.gz : success (181 of 701, 177 good, 4 bad) -- Now 15:09:37 This 30.4 sec, Avg 51.4 sec, exp. finish in 445.7 min at 22:35:17 on 17-Jul-2016
+also installing the dependency ‘kknn’
+
+trying URL 'http://cran.rstudio.com/src/contrib/forestFloor_1.9.5.tar.gz'
+Content type 'application/x-gzip' length 61135 bytes (59 KB)
+==================================================
+downloaded 59 KB
+
+Downloaded  forestFloor_1.9.5.tar.gz 
+
+RESULT for forestFloor_1.9.5.tar.gz : success (182 of 701, 178 good, 4 bad) -- Now 15:10:28 This 50.9 sec, Avg 51.4 sec, exp. finish in 444.8 min at 22:35:15 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/fourierin_0.1.2.tar.gz'
+Content type 'application/x-gzip' length 88043 bytes (85 KB)
+==================================================
+downloaded 85 KB
+
+Downloaded  fourierin_0.1.2.tar.gz 
+
+RESULT for fourierin_0.1.2.tar.gz : success (183 of 701, 179 good, 4 bad) -- Now 15:10:58 This 30 sec, Avg 51.3 sec, exp. finish in 442.9 min at 22:33:53 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/fourPNO_1.0.3.tar.gz'
+Content type 'application/x-gzip' length 15276 bytes (14 KB)
+==================================================
+downloaded 14 KB
+
+Downloaded  fourPNO_1.0.3.tar.gz 
+
+RESULT for fourPNO_1.0.3.tar.gz : success (184 of 701, 180 good, 4 bad) -- Now 15:11:16 This 18 sec, Avg 51.1 sec, exp. finish in 440.5 min at 22:31:46 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/fractional_0.1.3.tar.gz'
+Content type 'application/x-gzip' length 107098 bytes (104 KB)
+==================================================
+downloaded 104 KB
+
+Downloaded  fractional_0.1.3.tar.gz 
+
+RESULT for fractional_0.1.3.tar.gz : success (185 of 701, 181 good, 4 bad) -- Now 15:11:30 This 13.8 sec, Avg 50.9 sec, exp. finish in 437.9 min at 22:29:25 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/frailtySurv_1.2.2.1.tar.gz'
+Content type 'application/x-gzip' length 389375 bytes (380 KB)
+==================================================
+downloaded 380 KB
+
+Downloaded  frailtySurv_1.2.2.1.tar.gz 
+
+RESULT for frailtySurv_1.2.2.1.tar.gz : success (186 of 701, 182 good, 4 bad) -- Now 15:12:16 This 46.1 sec, Avg 50.9 sec, exp. finish in 436.8 min at 22:29:07 on 17-Jul-2016
+also installing the dependency ‘cvTools’
+
+trying URL 'http://cran.rstudio.com/src/contrib/FRESA.CAD_2.2.0.tar.gz'
+Content type 'application/x-gzip' length 108022 bytes (105 KB)
+==================================================
+downloaded 105 KB
+
+Downloaded  FRESA.CAD_2.2.0.tar.gz 
+
+RESULT for FRESA.CAD_2.2.0.tar.gz : success (187 of 701, 183 good, 4 bad) -- Now 15:13:22 This 65.4 sec, Avg 51 sec, exp. finish in 436.7 min at 22:30:01 on 17-Jul-2016
+also installing the dependencies ‘moments’, ‘PDQutils’
+
+trying URL 'http://cran.rstudio.com/src/contrib/fromo_0.1.3.tar.gz'
+Content type 'application/x-gzip' length 47059 bytes (45 KB)
+==================================================
+downloaded 45 KB
+
+Downloaded  fromo_0.1.3.tar.gz 
+
+RESULT for fromo_0.1.3.tar.gz : success (188 of 701, 184 good, 4 bad) -- Now 15:13:44 This 22.8 sec, Avg 50.8 sec, exp. finish in 434.5 min at 22:28:16 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/FSInteract_0.1.1.tar.gz'
+Content type 'application/x-gzip' length 9053 bytes
+==================================================
+downloaded 9053 bytes
+
+Downloaded  FSInteract_0.1.1.tar.gz 
+
+RESULT for FSInteract_0.1.1.tar.gz : success (189 of 701, 185 good, 4 bad) -- Now 15:14:19 This 35.1 sec, Avg 50.7 sec, exp. finish in 433 min at 22:27:17 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/fugeR_0.1.2.tar.gz'
+Content type 'application/x-gzip' length 20180 bytes (19 KB)
+==================================================
+downloaded 19 KB
+
+Downloaded  fugeR_0.1.2.tar.gz 
+
+RESULT for fugeR_0.1.2.tar.gz : success (190 of 701, 186 good, 4 bad) -- Now 15:14:38 This 19.1 sec, Avg 50.6 sec, exp. finish in 430.7 min at 22:25:21 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/FunChisq_2.3.1.tar.gz'
+Content type 'application/x-gzip' length 31076 bytes (30 KB)
+==================================================
+downloaded 30 KB
+
+Downloaded  FunChisq_2.3.1.tar.gz 
+
+RESULT for FunChisq_2.3.1.tar.gz : success (191 of 701, 187 good, 4 bad) -- Now 15:15:02 This 23.8 sec, Avg 50.4 sec, exp. finish in 428.7 min at 22:23:42 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/Funclustering_1.0.1.tar.gz'
+Content type 'application/x-gzip' length 28933 bytes (28 KB)
+==================================================
+downloaded 28 KB
+
+Downloaded  Funclustering_1.0.1.tar.gz 
+
+RESULT for Funclustering_1.0.1.tar.gz : success (192 of 701, 188 good, 4 bad) -- Now 15:16:07 This 64.7 sec, Avg 50.5 sec, exp. finish in 428.5 min at 22:24:34 on 17-Jul-2016
+also installing the dependency ‘mapproj’
+
+trying URL 'http://cran.rstudio.com/src/contrib/futureheatwaves_1.0.1.tar.gz'
+Content type 'application/x-gzip' length 593958 bytes (580 KB)
+==================================================
+downloaded 580 KB
+
+Downloaded  futureheatwaves_1.0.1.tar.gz 
+
+RESULT for futureheatwaves_1.0.1.tar.gz : success (193 of 701, 189 good, 4 bad) -- Now 15:16:33 This 26.5 sec, Avg 50.4 sec, exp. finish in 426.6 min at 22:23:07 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/fwsim_0.3.3.tar.gz'
+Content type 'application/x-gzip' length 15104 bytes (14 KB)
+==================================================
+downloaded 14 KB
+
+Downloaded  fwsim_0.3.3.tar.gz 
+
+RESULT for fwsim_0.3.3.tar.gz : success (194 of 701, 190 good, 4 bad) -- Now 15:16:58 This 24.2 sec, Avg 50.2 sec, exp. finish in 424.6 min at 22:21:33 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/gapfill_0.9.3.tar.gz'
+Content type 'application/x-gzip' length 49087 bytes (47 KB)
+==================================================
+downloaded 47 KB
+
+Downloaded  gapfill_0.9.3.tar.gz 
+
+RESULT for gapfill_0.9.3.tar.gz : success (195 of 701, 191 good, 4 bad) -- Now 15:17:44 This 46.6 sec, Avg 50.2 sec, exp. finish in 423.6 min at 22:21:20 on 17-Jul-2016
+also installing the dependencies ‘som’, ‘pls’, ‘chemometrics’
+
+trying URL 'http://cran.rstudio.com/src/contrib/gaselect_1.0.5.tar.gz'
+Content type 'application/x-gzip' length 92080 bytes (89 KB)
+==================================================
+downloaded 89 KB
+
+Downloaded  gaselect_1.0.5.tar.gz 
+
+RESULT for gaselect_1.0.5.tar.gz : success (196 of 701, 192 good, 4 bad) -- Now 15:18:42 This 57.5 sec, Avg 50.3 sec, exp. finish in 423.1 min at 22:21:46 on 17-Jul-2016
+also installing the dependencies ‘genetics’, ‘LDheatmap’, ‘WhopGenome’, ‘CompQuadForm’
+
+trying URL 'http://cran.rstudio.com/src/contrib/gaston_1.4.6.tar.gz'
+Content type 'application/x-gzip' length 2255692 bytes (2.2 MB)
+==================================================
+downloaded 2.2 MB
+
+Downloaded  gaston_1.4.6.tar.gz 
+
+RESULT for gaston_1.4.6.tar.gz : success (197 of 701, 193 good, 4 bad) -- Now 15:20:46 This 123.9 sec, Avg 50.6 sec, exp. finish in 425.4 min at 22:26:08 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/GCPM_1.2.tar.gz'
+Content type 'application/x-gzip' length 276842 bytes (270 KB)
+==================================================
+downloaded 270 KB
+
+Downloaded  GCPM_1.2.tar.gz 
+
+RESULT for GCPM_1.2.tar.gz : success (198 of 701, 194 good, 4 bad) -- Now 15:21:11 This 25.2 sec, Avg 50.5 sec, exp. finish in 423.4 min at 22:24:38 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/gdm_1.2.3.tar.gz'
+Content type 'application/x-gzip' length 1640704 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+Downloaded  gdm_1.2.3.tar.gz 
+
+RESULT for gdm_1.2.3.tar.gz : success (199 of 701, 195 good, 4 bad) -- Now 15:22:13 This 62.1 sec, Avg 50.6 sec, exp. finish in 423.1 min at 22:25:18 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/gdtools_0.0.7.tar.gz'
+Content type 'application/x-gzip' length 12494 bytes (12 KB)
+==================================================
+downloaded 12 KB
+
+Downloaded  gdtools_0.0.7.tar.gz 
+
+RESULT for gdtools_0.0.7.tar.gz : success (200 of 701, 196 good, 4 bad) -- Now 15:22:34 This 20.8 sec, Avg 50.4 sec, exp. finish in 421 min at 22:23:34 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/geiger_2.0.6.tar.gz'
+Content type 'application/x-gzip' length 356101 bytes (347 KB)
+==================================================
+downloaded 347 KB
+
+Downloaded  geiger_2.0.6.tar.gz 
+
+RESULT for geiger_2.0.6.tar.gz : success (201 of 701, 197 good, 4 bad) -- Now 15:23:27 This 53.1 sec, Avg 50.4 sec, exp. finish in 420.3 min at 22:23:44 on 17-Jul-2016
+also installing the dependencies ‘clinfun’, ‘gMWT’, ‘snpStats’
+
+trying URL 'http://cran.rstudio.com/src/contrib/GeneticTools_0.3.1.tar.gz'
+Content type 'application/x-gzip' length 408755 bytes (399 KB)
+==================================================
+downloaded 399 KB
+
+Downloaded  GeneticTools_0.3.1.tar.gz 

@@ -1,0 +1,2284 @@
+Started at  2016-07-16 19:31:32.038495 
+Rcpp version is 0.12.5.8 on dirk5930ub 
+R version 3.3.1 (2016-06-21) -- "Bug in Your Hair" 
+trying URL 'http://cran.rstudio.com/src/contrib/BacArena_1.5.0.tar.gz'
+Content type 'application/x-gzip' length 1124904 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'http://cran.rstudio.com/src/contrib/fdapace_0.2.5.tar.gz'
+Content type 'application/x-gzip' length 488175 bytes (476 KB)
+==================================================
+downloaded 476 KB
+
+trying URL 'http://cran.rstudio.com/src/contrib/h5_0.9.8.tar.gz'
+Content type 'application/x-gzip' length 393742 bytes (384 KB)
+==================================================
+downloaded 384 KB
+
+trying URL 'http://cran.rstudio.com/src/contrib/OpenMx_2.6.8.tar.gz'
+Content type 'application/x-gzip' length 2998529 bytes (2.9 MB)
+==================================================
+downloaded 2.9 MB
+
+trying URL 'http://cran.rstudio.com/src/contrib/phyclust_0.1-17.tar.gz'
+Content type 'application/x-gzip' length 677689 bytes (661 KB)
+==================================================
+downloaded 661 KB
+
+trying URL 'http://cran.rstudio.com/src/contrib/V8_1.1.tar.gz'
+Content type 'application/x-gzip' length 325934 bytes (318 KB)
+==================================================
+downloaded 318 KB
+
+* installing *source* package ‘BacArena’ ...
+** package ‘BacArena’ successfully unpacked and MD5 sums checked
+** libs
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c addBac.cpp -o addBac.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c diff.cpp -o diff.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c duplicate.cpp -o duplicate.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c move.cpp -o move.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o BacArena.so RcppExports.o addBac.o diff.o duplicate.o move.o -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/BacArena/libs
+** R
+** inst
+** preparing package for lazy loading
+Creating a new generic function for ‘scale’ in package ‘BacArena’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (BacArena)
+* installing *source* package ‘fdapace’ ...
+** package ‘fdapace’ successfully unpacked and MD5 sums checked
+** libs
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c CPPlwls1d.cpp -o CPPlwls1d.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c GetIndCEScoresCPP.cpp -o GetIndCEScoresCPP.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c RCPPmean.cpp -o RCPPmean.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c RCPPvar.cpp -o RCPPvar.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c GetIndCEScoresCPPnewInd.cpp -o GetIndCEScoresCPPnewInd.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c Rmullwlsk.cpp -o Rmullwlsk.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c RmullwlskCC.cpp -o RmullwlskCC.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c RmullwlskCCsort2.cpp -o RmullwlskCCsort2.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c RmullwlskUniversal.cpp -o RmullwlskUniversal.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c cumtrapzRcpp.cpp -o cumtrapzRcpp.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c dropZeroElementsXYWin.cpp -o dropZeroElementsXYWin.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c RrotatedMullwlsk.cpp -o RrotatedMullwlsk.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c trapzRcpp.cpp -o trapzRcpp.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c interp2lin.cpp -o interp2lin.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o fdapace.so CPPlwls1d.o GetIndCEScoresCPP.o GetIndCEScoresCPPnewInd.o RCPPmean.o RCPPvar.o RcppExports.o Rmullwlsk.o RmullwlskCC.o RmullwlskCCsort2.o RmullwlskUniversal.o RrotatedMullwlsk.o cumtrapzRcpp.o dropZeroElementsXYWin.o interp2lin.o trapzRcpp.o -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/fdapace/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (fdapace)
+* installing *source* package ‘h5’ ...
+** package ‘h5’ successfully unpacked and MD5 sums checked
+checking for h5c++... /usr/bin/h5c++
+checking for ggrep... /bin/grep
+checking whether /bin/grep accepts -o... yes
+checking for ggrep... (cached) /bin/grep
+checking whether /bin/grep accepts -o... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I/usr/include/hdf5/serial   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c Dataset.cpp -o Dataset.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I/usr/include/hdf5/serial   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c Attribute.cpp -o Attribute.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I/usr/include/hdf5/serial   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c Dataspace.cpp -o Dataspace.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I/usr/include/hdf5/serial   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c File.cpp -o File.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I/usr/include/hdf5/serial   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c Group.cpp -o Group.o
+Group.cpp: In function ‘herr_t dset_info(hid_t, const char*, const H5L_info_t*, void*)’:
+Group.cpp:107:20: warning: comparison between ‘const enum H5L_type_t’ and ‘enum H5O_type_t’ [-Wenum-compare]
+   if(info->type == H5O_TYPE_DATASET) {
+                    ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I/usr/include/hdf5/serial   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c Helpers.cpp -o Helpers.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I/usr/include/hdf5/serial   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -std=c++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o h5.so Attribute.o Dataset.o Dataspace.o File.o Group.o Helpers.o RcppExports.o -L/usr/lib/x86_64-linux-gnu/hdf5/serial -L. -lhdf5_cpp -lhdf5 -lz -lm -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/h5/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (h5)
+* installing *source* package ‘OpenMx’ ...
+** package ‘OpenMx’ successfully unpacked and MD5 sums checked
+Change default C/C++ compiler and default compile flags by editing ~/.R/Makevars
+** libs
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c ComputeGD.cpp -o ComputeGD.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from ComputeGD.cpp:18:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from ComputeGD.cpp:17:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from ComputeGD.cpp:18:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from ComputeGD.cpp:17:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c ComputeNR.cpp -o ComputeNR.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from ComputeNR.cpp:19:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from /usr/include/c++/5/random:40,
+                 from /usr/include/c++/5/bits/stl_algo.h:66,
+                 from /usr/include/c++/5/algorithm:62,
+                 from /usr/include/c++/5/valarray:38,
+                 from ComputeNR.cpp:17:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from ComputeNR.cpp:19:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from /usr/include/c++/5/random:40,
+                 from /usr/include/c++/5/bits/stl_algo.h:66,
+                 from /usr/include/c++/5/algorithm:62,
+                 from /usr/include/c++/5/valarray:38,
+                 from ComputeNR.cpp:17:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c ComputeSD.cpp -o ComputeSD.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from ComputeSD.h:6,
+                 from ComputeSD.cpp:3:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from /usr/include/c++/5/random:40,
+                 from /usr/include/c++/5/bits/stl_algo.h:66,
+                 from /usr/include/c++/5/algorithm:62,
+                 from /usr/include/c++/5/valarray:38,
+                 from ComputeSD.h:4,
+                 from ComputeSD.cpp:3:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from ComputeSD.h:6,
+                 from ComputeSD.cpp:3:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from /usr/include/c++/5/random:40,
+                 from /usr/include/c++/5/bits/stl_algo.h:66,
+                 from /usr/include/c++/5/algorithm:62,
+                 from /usr/include/c++/5/valarray:38,
+                 from ComputeSD.h:4,
+                 from ComputeSD.cpp:3:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c Compute.cpp -o Compute.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from glue.h:23,
+                 from Compute.cpp:23:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from /usr/include/c++/5/random:40,
+                 from /usr/include/c++/5/bits/stl_algo.h:66,
+                 from /usr/include/c++/5/algorithm:62,
+                 from Compute.cpp:17:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from glue.h:23,
+                 from Compute.cpp:23:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from /usr/include/c++/5/random:40,
+                 from /usr/include/c++/5/bits/stl_algo.h:66,
+                 from /usr/include/c++/5/algorithm:62,
+                 from Compute.cpp:17:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c FellnerFitFunction.cpp -o FellnerFitFunction.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from glue.h:23,
+                 from FellnerFitFunction.cpp:22:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from glue.h:21,
+                 from FellnerFitFunction.cpp:22:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from glue.h:23,
+                 from FellnerFitFunction.cpp:22:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from glue.h:21,
+                 from FellnerFitFunction.cpp:22:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c dmvnorm.cpp -o dmvnorm.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from dmvnorm.cpp:9:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from dmvnorm.cpp:8:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from dmvnorm.cpp:9:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from dmvnorm.cpp:8:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c fitMultigroup.cpp -o fitMultigroup.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxExpectation.h:40,
+                 from fitMultigroup.cpp:18:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from fitMultigroup.cpp:17:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxExpectation.h:40,
+                 from fitMultigroup.cpp:18:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from fitMultigroup.cpp:17:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"   -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c general.c -o general.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c ba81quad.cpp -o ba81quad.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from glue.h:23,
+                 from ba81quad.h:21,
+                 from ba81quad.cpp:18:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from glue.h:21,
+                 from ba81quad.h:21,
+                 from ba81quad.cpp:18:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from glue.h:23,
+                 from ba81quad.h:21,
+                 from ba81quad.cpp:18:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from glue.h:21,
+                 from ba81quad.h:21,
+                 from ba81quad.cpp:18:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c glue.cpp -o glue.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from glue.h:23,
+                 from glue.cpp:29:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from glue.cpp:28:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from glue.h:23,
+                 from glue.cpp:29:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from glue.cpp:28:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c matrix.cpp -o matrix.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from matrix.h:12,
+                 from matrix.cpp:15:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from matrix.cpp:1:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from matrix.h:12,
+                 from matrix.cpp:15:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from matrix.cpp:1:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c merge.cpp -o merge.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxAlgebra.cpp -o omxAlgebra.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxAlgebra.cpp:30:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxMatrix.h:37,
+                 from omxAlgebra.cpp:30:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxAlgebra.cpp:30:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxMatrix.h:37,
+                 from omxAlgebra.cpp:30:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c nloptcpp.cpp -o nloptcpp.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from nloptcpp.cpp:7:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxState.h:41,
+                 from nloptcpp.cpp:7:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from nloptcpp.cpp:7:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxState.h:41,
+                 from nloptcpp.cpp:7:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxAlgebraFitFunction.cpp -o omxAlgebraFitFunction.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxFitFunction.h:40,
+                 from omxAlgebraFitFunction.cpp:17:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxFitFunction.h:39,
+                 from omxAlgebraFitFunction.cpp:17:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxFitFunction.h:40,
+                 from omxAlgebraFitFunction.cpp:17:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxFitFunction.h:39,
+                 from omxAlgebraFitFunction.cpp:17:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxCsolnp.cpp -o omxCsolnp.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from omxCsolnp.cpp:22:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxState.h:41,
+                 from omxCsolnp.cpp:22:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from omxCsolnp.cpp:22:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxState.h:41,
+                 from omxCsolnp.cpp:22:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxExpectation.cpp -o omxExpectation.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxExpectation.h:40,
+                 from omxExpectation.cpp:33:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxExpectation.h:39,
+                 from omxExpectation.cpp:33:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxExpectation.h:40,
+                 from omxExpectation.cpp:33:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxExpectation.h:39,
+                 from omxExpectation.cpp:33:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxData.cpp -o omxData.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxSymbolTable.h:4,
+                 from omxAlgebra.h:30,
+                 from omxData.h:45,
+                 from omxData.cpp:27:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxData.h:39,
+                 from omxData.cpp:27:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxSymbolTable.h:4,
+                 from omxAlgebra.h:30,
+                 from omxData.h:45,
+                 from omxData.cpp:27:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxData.h:39,
+                 from omxData.cpp:27:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxExportBackendState.cpp -o omxExportBackendState.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from omxExportBackendState.cpp:24:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxExportBackendState.cpp:23:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from omxExportBackendState.cpp:24:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxExportBackendState.cpp:23:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxFIMLFitFunction.cpp -o omxFIMLFitFunction.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxSymbolTable.h:4,
+                 from omxFIMLFitFunction.cpp:18:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxFIMLFitFunction.cpp:17:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxSymbolTable.h:4,
+                 from omxFIMLFitFunction.cpp:18:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxFIMLFitFunction.cpp:17:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxFIMLSingleIteration.cpp -o omxFIMLSingleIteration.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxSymbolTable.h:4,
+                 from omxFIMLSingleIteration.cpp:19:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxFIMLSingleIteration.cpp:18:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxSymbolTable.h:4,
+                 from omxFIMLSingleIteration.cpp:19:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxFIMLSingleIteration.cpp:18:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxExpectationBA81.cpp -o omxExpectationBA81.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxExpectation.h:40,
+                 from omxExpectationBA81.h:20,
+                 from omxExpectationBA81.cpp:20:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxExpectation.h:39,
+                 from omxExpectationBA81.h:20,
+                 from omxExpectationBA81.cpp:20:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxExpectation.h:40,
+                 from omxExpectationBA81.h:20,
+                 from omxExpectationBA81.cpp:20:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxExpectation.h:39,
+                 from omxExpectationBA81.h:20,
+                 from omxExpectationBA81.cpp:20:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxFitFunction.cpp -o omxFitFunction.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxFitFunction.h:40,
+                 from omxFitFunction.cpp:31:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxFitFunction.h:39,
+                 from omxFitFunction.cpp:31:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxFitFunction.h:40,
+                 from omxFitFunction.cpp:31:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxFitFunction.h:39,
+                 from omxFitFunction.cpp:31:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxFitFunctionBA81.cpp -o omxFitFunctionBA81.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxFitFunction.h:40,
+                 from omxFitFunctionBA81.cpp:19:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from /usr/include/c++/5/random:40,
+                 from /usr/include/c++/5/bits/stl_algo.h:66,
+                 from /usr/include/c++/5/algorithm:62,
+                 from omxFitFunctionBA81.cpp:17:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxFitFunction.h:40,
+                 from omxFitFunctionBA81.cpp:19:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from /usr/include/c++/5/random:40,
+                 from /usr/include/c++/5/bits/stl_algo.h:66,
+                 from /usr/include/c++/5/algorithm:62,
+                 from omxFitFunctionBA81.cpp:17:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxGREMLExpectation.cpp -o omxGREMLExpectation.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxExpectation.h:40,
+                 from omxGREMLExpectation.cpp:17:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxExpectation.h:39,
+                 from omxGREMLExpectation.cpp:17:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxExpectation.h:40,
+                 from omxGREMLExpectation.cpp:17:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxExpectation.h:39,
+                 from omxGREMLExpectation.cpp:17:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxHessianCalculation.cpp -o omxHessianCalculation.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from glue.h:23,
+                 from omxHessianCalculation.cpp:30:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxHessianCalculation.cpp:29:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from glue.h:23,
+                 from omxHessianCalculation.cpp:30:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxHessianCalculation.cpp:29:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxGREMLfitfunction.cpp -o omxGREMLfitfunction.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxFitFunction.h:40,
+                 from omxGREMLfitfunction.cpp:17:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxFitFunction.h:39,
+                 from omxGREMLfitfunction.cpp:17:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxFitFunction.h:40,
+                 from omxGREMLfitfunction.cpp:17:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxFitFunction.h:39,
+                 from omxGREMLfitfunction.cpp:17:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxImportFrontendState.cpp -o omxImportFrontendState.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from glue.h:23,
+                 from omxImportFrontendState.cpp:25:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxImportFrontendState.cpp:24:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from glue.h:23,
+                 from omxImportFrontendState.cpp:25:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxImportFrontendState.cpp:24:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxLISRELExpectation.cpp -o omxLISRELExpectation.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxExpectation.h:40,
+                 from omxLISRELExpectation.cpp:17:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxExpectation.h:39,
+                 from omxLISRELExpectation.cpp:17:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxExpectation.h:40,
+                 from omxLISRELExpectation.cpp:17:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxExpectation.h:39,
+                 from omxLISRELExpectation.cpp:17:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxMatrix.cpp -o omxMatrix.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxMatrix.cpp:28:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxMatrix.h:37,
+                 from omxMatrix.cpp:28:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxMatrix.cpp:28:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxMatrix.h:37,
+                 from omxMatrix.cpp:28:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxNPSOLSpecific.cpp -o omxNPSOLSpecific.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from omxNPSOLSpecific.cpp:22:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxState.h:41,
+                 from omxNPSOLSpecific.cpp:22:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from omxNPSOLSpecific.cpp:22:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxState.h:41,
+                 from omxNPSOLSpecific.cpp:22:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxNormalExpectation.cpp -o omxNormalExpectation.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxExpectation.h:40,
+                 from omxNormalExpectation.cpp:17:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxExpectation.h:39,
+                 from omxNormalExpectation.cpp:17:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxExpectation.h:40,
+                 from omxNormalExpectation.cpp:17:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxExpectation.h:39,
+                 from omxNormalExpectation.cpp:17:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxMLFitFunction.cpp -o omxMLFitFunction.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Dense:1,
+                 from /tmp/RcppDepends/lib/StanHeaders/include/stan/math/prim/mat/fun/Eigen.hpp:4,
+                 from /tmp/RcppDepends/lib/StanHeaders/include/stan/math/rev/mat/fun/Eigen_NumTraits.hpp:6,
+                 from /tmp/RcppDepends/lib/StanHeaders/include/stan/math/rev/core/matrix_vari.hpp:4,
+                 from /tmp/RcppDepends/lib/StanHeaders/include/stan/math/rev/core.hpp:14,
+                 from /tmp/RcppDepends/lib/StanHeaders/include/stan/math/rev/mat.hpp:4,
+                 from /tmp/RcppDepends/lib/StanHeaders/include/stan/math.hpp:4,
+                 from omxMLFitFunction.cpp:19:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxMLFitFunction.cpp:17:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Dense:1,
+                 from /tmp/RcppDepends/lib/StanHeaders/include/stan/math/prim/mat/fun/Eigen.hpp:4,
+                 from /tmp/RcppDepends/lib/StanHeaders/include/stan/math/rev/mat/fun/Eigen_NumTraits.hpp:6,
+                 from /tmp/RcppDepends/lib/StanHeaders/include/stan/math/rev/core/matrix_vari.hpp:4,
+                 from /tmp/RcppDepends/lib/StanHeaders/include/stan/math/rev/core.hpp:14,
+                 from /tmp/RcppDepends/lib/StanHeaders/include/stan/math/rev/mat.hpp:4,
+                 from /tmp/RcppDepends/lib/StanHeaders/include/stan/math.hpp:4,
+                 from omxMLFitFunction.cpp:19:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxMLFitFunction.cpp:17:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxRFitFunction.cpp -o omxRFitFunction.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from glue.h:23,
+                 from omxRFitFunction.cpp:17:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from glue.h:21,
+                 from omxRFitFunction.cpp:17:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from glue.h:23,
+                 from omxRFitFunction.cpp:17:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from glue.h:21,
+                 from omxRFitFunction.cpp:17:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxRowFitFunction.cpp -o omxRowFitFunction.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxSymbolTable.h:4,
+                 from omxRowFitFunction.cpp:18:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxRowFitFunction.cpp:17:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxSymbolTable.h:4,
+                 from omxRowFitFunction.cpp:18:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxRowFitFunction.cpp:17:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxSadmvnWrapper.cpp -o omxSadmvnWrapper.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxSymbolTable.h:4,
+                 from omxSadmvnWrapper.cpp:18:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxSadmvnWrapper.cpp:17:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxSymbolTable.h:4,
+                 from omxSadmvnWrapper.cpp:18:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxSadmvnWrapper.cpp:17:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxState.cpp -o omxState.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from omxState.cpp:21:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/bits/stl_tree.h:65,
+                 from /usr/include/c++/5/set:60,
+                 from omxState.cpp:19:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxState.h:52,
+                 from omxState.cpp:21:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/bits/stl_tree.h:65,
+                 from /usr/include/c++/5/set:60,
+                 from omxState.cpp:19:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxRAMExpectation.cpp -o omxRAMExpectation.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxExpectation.h:40,
+                 from omxRAMExpectation.cpp:17:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxExpectation.h:39,
+                 from omxRAMExpectation.cpp:17:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxExpectation.h:40,
+                 from omxRAMExpectation.cpp:17:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxExpectation.h:39,
+                 from omxRAMExpectation.cpp:17:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+In file included from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:56:0,
+                 from RAMInternal.h:10,
+                 from omxRAMExpectation.cpp:20:
+/usr/local/lib/R/site-library/Rcpp/include/Rcpp/DataFrame.h: In instantiation of ‘Rcpp::DataFrame_Impl<StoragePolicy>::DataFrame_Impl(const Rcpp::DataFrame_Impl<StoragePolicy>&) [with StoragePolicy = Rcpp::PreserveStorage]’:
+/usr/local/lib/R/site-library/Rcpp/include/Rcpp/generated/DataFrame_generated.h:41:68:   required from ‘static Rcpp::DataFrame_Impl<StoragePolicy> Rcpp::DataFrame_Impl<StoragePolicy>::create(const T1&, const T2&, const T3&) [with T1 = Rcpp::traits::named_object<SEXPREC*>; T2 = Rcpp::traits::named_object<SEXPREC*>; T3 = Rcpp::traits::named_object<SEXPREC*>; StoragePolicy = Rcpp::PreserveStorage]’
+omxRAMExpectation.cpp:1692:42:   required from here
+/usr/local/lib/R/site-library/Rcpp/include/Rcpp/DataFrame.h:46:9: warning: base class ‘class Rcpp::Vector<19>’ should be explicitly initialized in the copy constructor [-Wextra]
+         DataFrame_Impl( const DataFrame_Impl& other){
+         ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxStateSpaceExpectation.cpp -o omxStateSpaceExpectation.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxExpectation.h:40,
+                 from omxStateSpaceExpectation.cpp:33:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxExpectation.h:39,
+                 from omxStateSpaceExpectation.cpp:33:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxExpectation.h:40,
+                 from omxStateSpaceExpectation.cpp:33:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxExpectation.h:39,
+                 from omxStateSpaceExpectation.cpp:33:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxWLSFitFunction.cpp -o omxWLSFitFunction.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxSymbolTable.h:4,
+                 from omxAlgebra.h:30,
+                 from omxData.h:45,
+                 from omxWLSFitFunction.h:21,
+                 from omxWLSFitFunction.cpp:17:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxData.h:39,
+                 from omxWLSFitFunction.h:21,
+                 from omxWLSFitFunction.cpp:17:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxSymbolTable.h:4,
+                 from omxAlgebra.h:30,
+                 from omxData.h:45,
+                 from omxWLSFitFunction.h:21,
+                 from omxWLSFitFunction.cpp:17:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxData.h:39,
+                 from omxWLSFitFunction.h:21,
+                 from omxWLSFitFunction.cpp:17:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"   -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c optimize.c -o optimize.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"   -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c options.c -o options.o
+ccache gfortran   -fpic  -O3 -g0 -Wall -pipe -c sadmvn.f -o sadmvn.o
+f951: Warning: Nonconforming tab character in column 1 of line 612 [-Wtabs]
+f951: Warning: Nonconforming tab character in column 1 of line 613 [-Wtabs]
+f951: Warning: Nonconforming tab character in column 1 of line 614 [-Wtabs]
+f951: Warning: Nonconforming tab character in column 1 of line 615 [-Wtabs]
+f951: Warning: Nonconforming tab character in column 1 of line 616 [-Wtabs]
+f951: Warning: Nonconforming tab character in column 1 of line 617 [-Wtabs]
+sadmvn.f:54:15:
+
+       INFORM = MVNNIT(N, CORREL, LOWER, UPPER, 
+               1
+Warning: Possible change of value in conversion from REAL(8) to INTEGER(4) at (1) [-Wconversion]
+sadmvn.f:315:31:
+
+                      INFI(I) = TMP
+                               1
+Warning: Possible change of value in conversion from REAL(8) to INTEGER(4) at (1) [-Wconversion]
+sadmvn.f:162:15:
+
+       INFORM = SPNRNT(N, CORREL, LOWER, UPPER, INFIN, INFIS, D, E, NS)
+               1
+Warning: Possible change of value in conversion from REAL(8) to INTEGER(4) at (1) [-Wconversion]
+sadmvn.f:625:15:
+
+       INFORM = MVNNIT( N, CORREL, LOWER, UPPER, 
+               1
+Warning: Possible change of value in conversion from REAL(8) to INTEGER(4) at (1) [-Wconversion]
+sadmvn.f:1920:38:
+
+         IF ( MINCLS .LT. 0 ) SBRGNS = WORK(LENWRK,TID)
+                                      1
+Warning: Possible change of value in conversion from REAL(8) to INTEGER(4) at (1) [-Wconversion]
+sadmvn.f:2112:21:
+
+             RGNCLS = RGNCLS*(MESH(DIVAXN)+1)/MESH(DIVAXN)
+                     1
+Warning: Possible change of value in conversion from REAL(8) to INTEGER(4) at (1) [-Wconversion]
+sadmvn.f:2113:21:
+
+             NWRGNS = NWRGNS*(MESH(DIVAXN)+1)/MESH(DIVAXN)
+                     1
+Warning: Possible change of value in conversion from REAL(8) to INTEGER(4) at (1) [-Wconversion]
+sadmvn.f:2162:15:
+
+          TOP = PONTRS(1)
+               1
+Warning: Possible change of value in conversion from REAL(8) to INTEGER(4) at (1) [-Wconversion]
+sadmvn.f:2169:21:
+
+             RGNCLS = RGNCLS*MESH(I)
+                     1
+Warning: Possible change of value in conversion from REAL(8) to INTEGER(4) at (1) [-Wconversion]
+sadmvn.f:2174:18:
+
+          RGNCLS = RGNCLS*(MESH(DIVAXN)+1)/MESH(DIVAXN)
+                  1
+Warning: Possible change of value in conversion from REAL(8) to INTEGER(4) at (1) [-Wconversion]
+sadmvn.f:713:18:
+
+          INFORM = MVNNIT(N, CORREL, LOWER, UPPER, 
+                  1
+Warning: Possible change of value in conversion from REAL(8) to INTEGER(4) at (1) [-Wconversion]
+sadmvn.f:382:32:
+
+       INTEGER NDIM, MAXPTS, M, K, IR, NPTS
+                                1
+Warning: Unused variable ‘k’ declared at (1) [-Wunused-variable]
+sadmvn.f:382:42:
+
+       INTEGER NDIM, MAXPTS, M, K, IR, NPTS
+                                          1
+Warning: Unused variable ‘npts’ declared at (1) [-Wunused-variable]
+sadmvn.f:383:50:
+
+       DOUBLE PRECISION FINEST, ABSEST, SPNRML, UNI,
+                                                  1
+Warning: Unused variable ‘uni’ declared at (1) [-Wunused-variable]
+sadmvn.f:1387:0:
+
+                CHOFAC(II+J) = S/T
+ ^
+Warning: ‘t’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+sadmvn.f:2290:0:
+
+       INTEGER S, IXCHNG, LXCHNG, I, L, TID
+ ^
+Warning: ‘lxchng’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+sadmvn.f:1698:0:
+
+       END
+ ^
+Warning: ‘__result_bvn’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+sadmvn.f:1656:0:
+
+       DOUBLE PRECISION FUNCTION BVN ( LOWER, UPPER, INFIN, CORREL )
+ ^
+note: ‘__result_bvn’ was declared here
+sadmvn.f:1283:0:
+
+                   IF ( INFI(I) .EQ. 0 ) Y(I) = BMIN
+ ^
+Warning: ‘bmin’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+sadmvn.f:1284:0:
+
+                   IF ( INFI(I) .EQ. 1 ) Y(I) = AMIN
+ ^
+Warning: ‘amin’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c omxSymbolTable.cpp -o omxSymbolTable.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxSymbolTable.h:4,
+                 from omxSymbolTable.cpp:1:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxMatrix.h:37,
+                 from omxSymbolTable.h:4,
+                 from omxSymbolTable.cpp:1:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from omxMatrix.h:38,
+                 from omxSymbolTable.h:4,
+                 from omxSymbolTable.cpp:1:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from omxMatrix.h:37,
+                 from omxSymbolTable.h:4,
+                 from omxSymbolTable.cpp:1:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"   -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c stop.c -o stop.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"   -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c slsqp.c -o slsqp.o
+slsqp.c: In function ‘nnls_’:
+slsqp.c:318:16: warning: ‘izmax’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     int itmax, izmax, nsetp;
+                ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include" -I"/tmp/RcppDepends/lib/StanHeaders/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/rpf/include"  -fopenmp -Wall -Wextra -Wno-unknown-pragmas -Wno-unused-parameter -Wvla -Wno-unused-local-typedefs -fdiagnostics-color=auto    -fpic  -g -O3 -Wall -pipe -Wno-unused  -c subnp.cpp -o subnp.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from matrix.h:12,
+                 from subnp.cpp:7:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from matrix.h:11,
+                 from subnp.cpp:7:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from matrix.h:12,
+                 from subnp.cpp:7:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from omxDefines.h:31,
+                 from matrix.h:11,
+                 from subnp.cpp:7:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o OpenMx.so Compute.o ComputeGD.o ComputeNR.o ComputeSD.o FellnerFitFunction.o ba81quad.o dmvnorm.o fitMultigroup.o general.o glue.o matrix.o merge.o nloptcpp.o omxAlgebra.o omxAlgebraFitFunction.o omxCsolnp.o omxData.o omxExpectation.o omxExpectationBA81.o omxExportBackendState.o omxFIMLFitFunction.o omxFIMLSingleIteration.o omxFitFunction.o omxFitFunctionBA81.o omxGREMLExpectation.o omxGREMLfitfunction.o omxHessianCalculation.o omxImportFrontendState.o omxLISRELExpectation.o omxMLFitFunction.o omxMatrix.o omxNPSOLSpecific.o omxNormalExpectation.o omxRAMExpectation.o omxRFitFunction.o omxRowFitFunction.o omxSadmvnWrapper.o omxState.o omxStateSpaceExpectation.o omxSymbolTable.o omxWLSFitFunction.o optimize.o options.o sadmvn.o slsqp.o stop.o subnp.o -fopenmp -lgfortran -lm -lquadmath -lblas -llapack -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+mkdir -p ../inst/debug
+cp *.gcno ../inst/debug/
+cp: cannot stat '*.gcno': No such file or directory
+Makevars:45: recipe for target 'save-gcno' failed
+make: [save-gcno] Error 1 (ignored)
+installing to /tmp/RcppDepends/lib/OpenMx/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** preparing package for lazy loading
+Creating a generic function for ‘nrow’ from package ‘base’ in package ‘OpenMx’
+Creating a generic function for ‘ncol’ from package ‘base’ in package ‘OpenMx’
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (OpenMx)
+* installing *source* package ‘phyclust’ ...
+** package ‘phyclust’ successfully unpacked and MD5 sums checked
+** libs
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c R_phyclust_edist.c -o R_phyclust_edist.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c R_phyclust.c -o R_phyclust.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c R_phyclust_find_consensus.c -o R_phyclust_find_consensus.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c R_phyclust_em_step.c -o R_phyclust_em_step.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c R_phyclust_label.c -o R_phyclust_label.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c R_phyclust_logL.c -o R_phyclust_logL.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c R_phyclust_qmatrix.c -o R_phyclust_qmatrix.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c R_phyclust_logPt.c -o R_phyclust_logPt.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c R_phyclust_se_update.c -o R_phyclust_se_update.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c R_phyclust_struct.c -o R_phyclust_struct.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c R_phyclust_se.c -o R_phyclust_se.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c R_phyclust_update.c -o R_phyclust_update.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c RRand.c -o RRand.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c R_RRand.c -o R_RRand.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_ape_nj.c -o phyclust/phyclust_ape_nj.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_edist.c -o phyclust/phyclust_edist.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_em_control.c -o phyclust/phyclust_em_control.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_em_fp.c -o phyclust/phyclust_em_fp.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_em_phyclust_struct.c -o phyclust/phyclust_em_phyclust_struct.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_em_step.c -o phyclust/phyclust_em_step.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_file_input.c -o phyclust/phyclust_file_input.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_em_tool.c -o phyclust/phyclust_em_tool.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_init_method_ex.c -o phyclust/phyclust_init_method_ex.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_init_method_kmed.c -o phyclust/phyclust_init_method_kmed.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_init_method_nj.c -o phyclust/phyclust_init_method_nj.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_init_method.c -o phyclust/phyclust_init_method.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_init_method_pam.c -o phyclust/phyclust_init_method_pam.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_label.c -o phyclust/phyclust_label.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_init_procedure.c -o phyclust/phyclust_init_procedure.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_logpL.c -o phyclust/phyclust_logpL.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_optim_nmmin.c -o phyclust/phyclust_optim_nmmin.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_qmatrix_array.c -o phyclust/phyclust_qmatrix_array.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_pam.c -o phyclust/phyclust_pam.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_se_convolution_em_step.c -o phyclust/phyclust_se_convolution_em_step.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_qmatrix.c -o phyclust/phyclust_qmatrix.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_se_convolution_em_tool.c -o phyclust/phyclust_se_convolution_em_tool.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_se_em_fp.c -o phyclust/phyclust_se_em_fp.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_se_convolution_logpL.c -o phyclust/phyclust_se_convolution_logpL.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_se_em_phyclust_struct.c -o phyclust/phyclust_se_em_phyclust_struct.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_se_em_tool.c -o phyclust/phyclust_se_em_tool.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_se_struct.c -o phyclust/phyclust_se_struct.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_se_pmatrix.c -o phyclust/phyclust_se_pmatrix.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_struct.c -o phyclust/phyclust_struct.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c phyclust/phyclust_tool.c -o phyclust/phyclust_tool.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c msdir/ms.c -o msdir/ms.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c msdir/ms_main.c -o msdir/ms_main.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c msdir/R_ms_main.c -o msdir/R_ms_main.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c msdir/R_rand.c -o msdir/R_rand.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c seq-gen/aamodels.c -o seq-gen/aamodels.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c msdir/streec.c -o msdir/streec.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c seq-gen/evolve.c -o seq-gen/evolve.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c seq-gen/gamma.c -o seq-gen/gamma.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c seq-gen/global.c -o seq-gen/global.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c seq-gen/eigen.c -o seq-gen/eigen.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c seq-gen/model.c -o seq-gen/model.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c seq-gen/R_seq-gen_main.c -o seq-gen/R_seq-gen_main.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c seq-gen/nucmodels.c -o seq-gen/nucmodels.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c seq-gen/treefile.c -o seq-gen/treefile.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c seq-gen/seq-gen.c -o seq-gen/seq-gen.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c seq-gen/twister.c -o seq-gen/twister.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c paml_baseml/R_paml_baseml_main.c -o paml_baseml/R_paml_baseml_main.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c paml_baseml/tools.c -o paml_baseml/tools.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -D__HAVE_R_ -fpic  -g -O3 -Wall -pipe -pedantic -Wno-unused -std=gnu99 -march=native -c paml_baseml/baseml.c -o paml_baseml/baseml.o
+ccache gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o phyclust.so R_phyclust.o R_phyclust_edist.o R_phyclust_em_step.o R_phyclust_find_consensus.o R_phyclust_label.o R_phyclust_logL.o R_phyclust_logPt.o R_phyclust_qmatrix.o R_phyclust_se.o R_phyclust_se_update.o R_phyclust_struct.o R_phyclust_update.o RRand.o R_RRand.o phyclust/phyclust_ape_nj.o phyclust/phyclust_edist.o phyclust/phyclust_em_control.o phyclust/phyclust_em_fp.o phyclust/phyclust_em_phyclust_struct.o phyclust/phyclust_em_step.o phyclust/phyclust_em_tool.o phyclust/phyclust_file_input.o phyclust/phyclust_init_method.o phyclust/phyclust_init_method_ex.o phyclust/phyclust_init_method_kmed.o phyclust/phyclust_init_method_nj.o phyclust/phyclust_init_method_pam.o phyclust/phyclust_init_procedure.o phyclust/phyclust_label.o phyclust/phyclust_logpL.o phyclust/phyclust_optim_nmmin.o phyclust/phyclust_pam.o phyclust/phyclust_qmatrix_array.o phyclust/phyclust_qmatrix.o phyclust/phyclust_se_convolution_em_step.o phyclust/phyclust_se_convolution_em_tool.o phyclust/phyclust_se_convolution_logpL.o phyclust/phyclust_se_em_fp.o phyclust/phyclust_se_em_phyclust_struct.o phyclust/phyclust_se_em_tool.o phyclust/phyclust_se_pmatrix.o phyclust/phyclust_se_struct.o phyclust/phyclust_struct.o phyclust/phyclust_tool.o msdir/ms.o msdir/ms_main.o msdir/R_ms_main.o msdir/R_rand.o msdir/streec.o seq-gen/aamodels.o seq-gen/eigen.o seq-gen/evolve.o seq-gen/gamma.o seq-gen/global.o seq-gen/model.o seq-gen/nucmodels.o seq-gen/R_seq-gen_main.o seq-gen/seq-gen.o seq-gen/treefile.o seq-gen/twister.o paml_baseml/baseml.o paml_baseml/R_paml_baseml_main.o paml_baseml/tools.o -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/phyclust/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** demo
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+   ‘phyclust-guide.Rnw’ 
+** testing if installed package can be loaded
+* DONE (phyclust)
+* installing *source* package ‘V8’ ...
+** package ‘V8’ successfully unpacked and MD5 sums checked
+Package libv8 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libv8.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'libv8' found
+Using PKG_CFLAGS=
+Using PKG_LIBS=-lv8
+** libs
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -DV8_DISABLE_DEPRECATIONS -fpic  -g -O3 -Wall -pipe -Wno-unused  -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -DV8_DISABLE_DEPRECATIONS -fpic  -g -O3 -Wall -pipe -Wno-unused  -c v8_typed_array.cpp -o v8_typed_array.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"  -DV8_DISABLE_DEPRECATIONS -fpic  -g -O3 -Wall -pipe -Wno-unused  -c V8.cpp -o V8.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o V8.so RcppExports.o V8.o v8_typed_array.o -lv8 -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/V8/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (V8)
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+  [1] "AbsFilterGSEA"        "accelerometry"        "ACEt"                 "AdaptiveSparsity"     "ADMMnet"              "AHR"                  "algstat"              "AlignStat"           
+  [9] "ALKr"                 "Amelia"               "apcluster"            "arrApply"             "ASPBay"               "aSPU"                 "autovarCore"          "BaBooN"              
+ [17] "BacArena"             "BalancedSampling"     "BAMMtools"            "batman"               "BayesComm"            "BayesFactor"          "bayesm"               "bayou"               
+ [25] "bcp"                  "bcpa"                 "beanz"                "BEDMatrix"            "BeviMed"              "bfa"                  "bfp"                  "bifactorial"         
+ [33] "BIFIEsurvey"          "biganalytics"         "biglasso"             "bigmemory"            "BigQuic"              "bigtabulate"          "BigVAR"               "Biocomb"             
+ [41] "BIPOD"                "biwavelet"            "blackbox"             "blockcluster"         "blockmodels"          "blockseg"             "bnnSurvival"          "bootTimeInference"   
+ [49] "brainGraph"           "btf"                  "BTLLasso"             "BTR"                  "bvarsv"               "bWGR"                 "BWStest"              "CARBayes"            
+ [57] "CARBayesST"           "ccaPP"                "cccp"                 "cda"                  "CDM"                  "CFC"                  "cgAUC"                "ChannelAttribution"  
+ [65] "chopthin"             "CIDnetworks"          "cIRT"                 "cladoRcpp"            "classify"             "clere"                "climdex.pcic"         "clogitboost"         
+ [73] "clogitL1"             "clusrank"             "ClusterStability"     "clusteval"            "ClustMMDD"            "ClustVarLV"           "CMF"                  "coala"               
+ [81] "collUtils"            "CompGLM"              "ConConPiWiFun"        "coneproj"             "contoureR"            "copCAR"               "cord"                 "CorReg"              
+ [89] "Countr"               "covafillr"            "Coxnet"               "CoxPlus"              "cpgen"                "crawl"                "creditr"              "Crossover"           
+ [97] "cycleRtools"          "D3M"                  "datafsm"              "dbmss"                "dbscan"               "ddalpha"              "ddR"                  "DDRTree"             
+[105] "deepboost"            "Delaporte"            "DeLorean"             "dendextendRcpp"       "densityClust"         "DepthProc"            "DescTools"            "DetMCD"              
+[113] "DetR"                 "dfcomb"               "dfmta"                "DiffusionRgqd"        "DiffusionRimp"        "DiffusionRjgqd"       "dils"                 "dina"                
+[121] "disclapmix"           "diversitree"          "diveRsity"            "divo"                 "DLMtool"              "DNAprofiles"          "DNAtools"             "dnc"                 
+[129] "dplyr"                "drgee"                "dslice"               "DStree"               "dtwclust"             "easyVerification"     "EBMAforecast"         "ECctmc"              
+[137] "ecp"                  "EditImputeCont"       "eggCounts"            "eive"                 "EloChoice"            "elpatron"             "emil"                 "emIRT"               
+[145] "EPGLM"                "erah"                 "ESGtoolkit"           "EstHer"               "evolqg"               "EWGoF"                "exif"                 "extraDistr"          
+[153] "fastAdaboost"         "FastBandChol"         "fastGHQuad"           "FastGP"               "FastHCS"              "fastM"                "FastPCS"              "FastRCS"             
+[161] "FBFsearch"            "fbroc"                "FCNN4R"               "fdaMixed"             "fdapace"              "fdaPDE"               "fdasrvf"              "FDGcopulas"          
+[169] "FDRreg"               "feather"              "FeatureHashing"       "FIACH"                "fICA"                 "FisHiCal"             "flam"                 "flan"                
+[177] "flars"                "flip"                 "FLSSS"                "forecast"             "forega"               "forestFloor"          "fourierin"            "fourPNO"             
+[185] "fractional"           "frailtySurv"          "FRESA.CAD"            "fromo"                "FSInteract"           "fugeR"                "FunChisq"             "Funclustering"       
+[193] "futureheatwaves"      "fwsim"                "gapfill"              "gaselect"             "gaston"               "GCPM"                 "gdm"                  "gdtools"             
+[201] "geiger"               "GeneticTools"         "genie"                "GENLIB"               "geoCount"             "geohash"              "GERGM"                "ggrepel"             
+[209] "GiRaF"                "gjam"                 "gkmSVM"               "glamlasso"            "glcm"                 "glmBfp"               "glmgraph"             "glmmsr"              
+[217] "GMCM"                 "Gmedian"              "Gmisc"                "gmum.r"               "gmwm"                 "gMWT"                 "googleway"            "GPareto"             
+[225] "GPvam"                "gRain"                "graphicalVAR"         "gRbase"               "gRim"                 "growcurves"           "growfunctions"        "grpSLOPE"            
+[233] "GSE"                  "gsEasy"               "GUILDS"               "GUTS"                 "GxM"                  "h5"                   "hashmap"              "haven"               
+[241] "hawkes"               "HDPenReg"             "hierarchicalSets"     "hit"                  "hkevp"                "HLMdiag"              "HSAR"                 "hsphase"             
+[249] "htmltools"            "hts"                  "httpuv"               "HUM"                  "humaniformat"         "humarray"             "hunspell"             "hypervolume"         
+[257] "hyphenatr"            "iBATCGH"              "IBHM"                 "ibm"                  "icamix"               "iccbeta"              "icd"                  "icd9"                
+[265] "icensmis"             "icRSF"                "iLaplace"             "imager"               "immer"                "imputeMulti"          "inarmix"              "iptools"             
+[273] "IRTpp"                "IsingSampler"         "isoph"                "ISOpureR"             "iterpc"               "JacobiEigen"          "JAGUAR"               "jiebaR"              
+[281] "jmcm"                 "jmotif"               "jqr"                  "jtGWAS"               "kdecopula"            "kergp"                "kernDeepStackNet"     "KernelKnn"           
+[289] "KernSmoothIRT"        "kmc"                  "kmeans.ddR"           "Kmisc"                "LaF"                  "LambertW"             "lamW"                 "Langevin"            
+[297] "LassoBacktracking"    "lasvmR"               "lbfgs"                "lcopula"              "lfl"                  "lifecontingencies"    "lm.br"                "lme4"                
+[305] "lpme"                 "lsbclust"             "lsgl"                 "lucr"                 "Luminescence"         "marked"               "markophylo"           "markovchain"         
+[313] "MAT"                  "matchingMarkets"      "matchingR"            "mateable"             "MatrixCorrelation"    "maxent"               "mbbefd"               "mcemGLM"             
+[321] "mcga"                 "mcIRT"                "mcmcse"               "mcPAFit"              "MediaK"               "MEGENA"               "MESS"                 "metafolio"           
+[329] "mets"                 "mev"                  "mgm"                  "mice"                 "milr"                 "minimaxdesign"        "minqa"                "mirt"                
+[337] "mirtCAT"              "miscF"                "miscset"              "MiSPU"                "missDeaths"           "MixAll"               "MixedDataImpute"      "mixedMem"            
+[345] "mixpack"              "mkde"                 "mlmc"                 "mlxR"                 "mmand"                "Morpho"               "move"                 "moveHMM"             
+[353] "mp"                   "Mposterior"           "MPTinR"               "MRS"                  "msgl"                 "MTS"                  "multicool"            "mvabund"             
+[361] "MVB"                  "mvcluster"            "mvnfast"              "mwaved"               "myTAI"                "nabor"                "NAM"                  "ndl"                 
+[369] "netcoh"               "netdiffuseR"          "NetSim"               "neuroim"              "ngspatial"            "NHMM"                 "nmfgpu4R"             "NNLM"                
+[377] "noncompliance"        "nonlinearTseries"     "NPBayesImpute"        "NPflow"               "oapackage"            "odeintr"              "oem"                  "OjaNP"               
+[385] "olctools"             "OneArmPhaseTwoStudy"  "onlinePCA"            "ontologySimilarity"   "openair"              "OpenImageR"           "OpenMx"               "openxlsx"            
+[393] "optmatch"             "orQA"                 "PAC"                  "packcircles"          "PACVB"                "PAFit"                "pander"               "PanelCount"          
+[401] "partialAR"            "pcalg"                "pcIRT"                "pdftools"             "PedCNV"               "pedometrics"          "PenCoxFrail"          "penMSM"              
+[409] "perccal"              "PerMallows"           "ph2bayes"             "phonics"              "phylobase"            "phylocurve"           "phylosignal"          "Pijavski"            
+[417] "plac"                 "planar"               "plotSEMM"             "plyr"                 "poisDoubleSamp"       "polyfreqs"            "polywog"              "PoweR"               
+[425] "PP"                   "PPtreeViz"            "prclust"              "precrec"              "PReMiuM"              "primes"               "ProbitSpatial"        "pROC"                
+[433] "prodlim"              "ProNet"               "propagate"            "prospectr"            "protolite"            "prototest"            "protViz"              "pryr"                
+[441] "psd"                  "psgp"                 "purrr"                "pvar"                 "PWD"                  "pystr"                "QRM"                  "quadrupen"           
+[449] "quanteda"             "quantspec"            "qVarSel"              "qwraps2"              "radiomics"            "rags2ridges"          "ragt2ridges"          "randomUniformForest" 
+[457] "ranger"               "Rankcluster"          "rankdist"             "raster"               "Rblpapi"              "Rborist"              "Rclusterpp"           "RcppAnnoy"           
+[465] "RcppAPT"              "RcppArmadillo"        "RcppBDT"              "RcppCCTZ"             "RcppClassic"          "RcppClassicExamples"  "RcppCNPy"             "RcppDE"              
+[473] "RcppDL"               "RcppEigen"            "RcppExamples"         "RcppFaddeeva"         "RcppGSL"              "RcppMLPACK"           "RcppNumerical"        "RcppOctave"          
+[481] "RcppProgress"         "RcppRedis"            "RcppRoll"             "RcppShark"            "RcppSMC"              "RcppStreams"          "RcppTOML"             "RcppXts"             
+[489] "RcppZiggurat"         "rcss"                 "readr"                "readstata13"          "readxl"               "RealVAMS"             "recmap"               "reconstructr"        
+[497] "recosystem"           "redist"               "rEDM"                 "regsem"               "relSim"               "rem"                  "remote"               "ReorderCluster"      
+[505] "repolr"               "resemble"             "reshape2"             "revealedPrefs"        "rexpokit"             "Rfast"                "rflann"               "rforensicbatwing"    
+[513] "rgam"                 "rgeolocate"           "RInside"              "Rip46"                "ripa"                 "rivr"                 "rkvo"                 "Rlibeemd"            
+[521] "RLRsim"               "Rmalschains"          "rmgarch"              "Rmixmod"              "RmixmodCombi"         "rmumps"               "rncl"                 "RNiftyReg"           
+[529] "robustgam"            "robustHD"             "robustreg"            "rococo"               "roll"                 "rollply"              "rootWishart"          "rotations"           
+[537] "RoughSets"            "roxygen2"             "rpf"                  "rpg"                  "Rphylopars"           "rplexos"              "rPref"                "RProtoBuf"           
+[545] "RPtests"              "RQuantLib"            "RSNNS"                "RSNPset"              "RSofia"               "Rsomoclu"             "RSpectra"             "rstan"               
+[553] "rstanarm"             "rstpm2"               "rtkore"               "rtkpp"                "Rtsne"                "Ruchardet"            "rugarch"              "Rvcg"                
+[561] "rvg"                  "RVowpalWabbit"        "rwfec"                "rwirelesscom"         "Ryacas"               "saeRobust"            "SAMM"                 "saturnin"            
+[569] "sbfc"                 "sbmSDP"               "sbrl"                 "SBSA"                 "scales"               "scorer"               "scoringRules"         "scrm"                
+[577] "scrypt"               "sdcMicro"             "sdcTable"             "SEERaBomb"            "segmag"               "seismicRoll"          "SelvarMix"            "seqHMM"              
+[585] "sequences"            "sgd"                  "sglOptim"             "signalHsmm"           "simFrame"             "simmer"               "simPop"               "SimReg"              
+[593] "simstudy"             "sirt"                 "sitmo"                "slfm"                 "SLOPE"                "smoof"                "snipEM"               "snowboot"            
+[601] "snplist"              "SocialNetworks"       "SOD"                  "sourceR"              "spacodiR"             "spaMM"                "SparseFactorAnalysis" "sparseHessianFD"     
+[609] "sparseLTSEigen"       "sparsereg"            "spatgraphs"           "SpatialEpi"           "SpatialTools"         "SpatMCA"              "SpatPCA"              "spBayesSurv"         
+[617] "spduration"           "spray"                "spsann"               "SSL"                  "starma"               "StatMethRank"         "staTools"             "steadyICA"           
+[625] "StereoMorph"          "stlplus"              "stm"                  "StMoSim"              "stochvol"             "stocks"               "stosim"               "stpm"                
+[633] "strataG"              "stream"               "strum"                "survAccuracyMeasures" "surveillance"         "surveybootstrap"      "survSNP"              "svglite"             
+[641] "SVMMatch"             "synchronicity"        "synlik"               "synthACS"             "systemicrisk"         "tagcloud"             "TAM"                  "TAQMNGR"             
+[649] "TauStar"              "tbart"                "tcR"                  "TDA"                  "TED"                  "tensorBSS"            "termstrc"             "TESS"                
+[657] "text2vec"             "textmineR"            "textreg"              "textreuse"            "TFMPvalue"            "tibble"               "tidyr"                "timma"               
+[665] "TMB"                  "tmg"                  "tmlenet"              "tnam"                 "tokenizers"           "TransferEntropy"      "treeclim"             "treeplyr"            
+[673] "treescape"            "triebeard"            "trustOptim"           "tsBSS"                "tvd"                  "tweenr"               "UncerIn2"             "unmarked"            
+[681] "urltools"             "V8"                   "VarSelLCM"            "vcfR"                 "VideoComparison"      "VIM"                  "vita"                 "VNM"                 
+[689] "waffect"              "walkr"                "wCorr"                "webreadr"             "wingui"               "wordcloud"            "wrswoR"               "wsrf"                
+[697] "XBRL"                 "xml2"                 "yakmoR"               "yCrypticRNAs"         "zic"                 
+
+RESULT for AbsFilterGSEA_1.2.1.tar.gz : success (1 of 701, 1 good, 0 bad) -- Now 19:35:43 This 65.2 sec, Avg 65.2 sec, exp. finish in 760.4 min at 08:16:09 on 17-Jul-2016
+
+RESULT for accelerometry_2.2.5.tar.gz : success (2 of 701, 2 good, 0 bad) -- Now 19:36:08 This 25.8 sec, Avg 45.5 sec, exp. finish in 529.8 min at 04:25:56 on 17-Jul-2016
+
+RESULT for ACEt_1.6.8.tar.gz : success (3 of 701, 3 good, 0 bad) -- Now 19:36:39 This 30.3 sec, Avg 40.4 sec, exp. finish in 470 min at 03:26:40 on 17-Jul-2016
+
+RESULT for AdaptiveSparsity_1.4.tar.gz : success (4 of 701, 4 good, 0 bad) -- Now 19:36:54 This 15 sec, Avg 34.1 sec, exp. finish in 395.7 min at 02:12:36 on 17-Jul-2016
+
+RESULT for ADMMnet_0.1.tar.gz : success (5 of 701, 5 good, 0 bad) -- Now 19:37:27 This 33.4 sec, Avg 33.9 sec, exp. finish in 393.7 min at 02:11:08 on 17-Jul-2016
+
+RESULT for AHR_1.4.1.tar.gz : success (6 of 701, 6 good, 0 bad) -- Now 19:38:01 This 33.6 sec, Avg 33.9 sec, exp. finish in 392.4 min at 02:10:27 on 17-Jul-2016
+
+RESULT for algstat_0.0.2.tar.gz : success (7 of 701, 7 good, 0 bad) -- Now 19:38:28 This 27.3 sec, Avg 32.9 sec, exp. finish in 381.1 min at 01:59:33 on 17-Jul-2016
+
+RESULT for AlignStat_1.2.2.tar.gz : success (8 of 701, 8 good, 0 bad) -- Now 19:38:45 This 17.4 sec, Avg 31 sec, exp. finish in 358.1 min at 01:36:50 on 17-Jul-2016
+
+RESULT for ALKr_0.5.3.1.tar.gz : success (9 of 701, 9 good, 0 bad) -- Now 19:39:06 This 20.4 sec, Avg 29.8 sec, exp. finish in 344 min at 01:23:03 on 17-Jul-2016
+
+RESULT for Amelia_1.7.4.tar.gz : success (10 of 701, 10 good, 0 bad) -- Now 19:39:38 This 32.4 sec, Avg 30.1 sec, exp. finish in 346.4 min at 01:26:00 on 17-Jul-2016
+
+RESULT for apcluster_1.4.3.tar.gz : success (11 of 701, 11 good, 0 bad) -- Now 19:40:26 This 48.1 sec, Avg 31.7 sec, exp. finish in 364.8 min at 01:45:12 on 17-Jul-2016
+
+RESULT for arrApply_1.0.4.tar.gz : success (12 of 701, 12 good, 0 bad) -- Now 19:40:41 This 14.5 sec, Avg 30.3 sec, exp. finish in 347.7 min at 01:28:25 on 17-Jul-2016
+
+RESULT for ASPBay_1.2.tar.gz : success (13 of 701, 13 good, 0 bad) -- Now 19:41:00 This 19.2 sec, Avg 29.4 sec, exp. finish in 337.5 min at 01:18:27 on 17-Jul-2016
+
+RESULT for aSPU_1.42.tar.gz : success (14 of 701, 14 good, 0 bad) -- Now 19:41:32 This 32.4 sec, Avg 29.6 sec, exp. finish in 339.4 min at 01:20:54 on 17-Jul-2016
+
+RESULT for autovarCore_1.0-0.tar.gz : success (15 of 701, 15 good, 0 bad) -- Now 19:41:53 This 20.9 sec, Avg 29.1 sec, exp. finish in 332.2 min at 01:14:06 on 17-Jul-2016
+
+RESULT for BaBooN_0.2-0.tar.gz : success (16 of 701, 16 good, 0 bad) -- Now 19:42:31 This 38 sec, Avg 29.6 sec, exp. finish in 338.1 min at 01:20:37 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/BacArena_1.5.0.tar.gz'
+Content type 'application/x-gzip' length 1124904 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+Downloaded  BacArena_1.5.0.tar.gz 
+
+RESULT for BacArena_1.5.0.tar.gz : success (17 of 701, 17 good, 0 bad) -- Now 19:43:53 This 82.3 sec, Avg 32.7 sec, exp. finish in 372.9 min at 01:56:48 on 17-Jul-2016
+
+RESULT for BalancedSampling_1.5.2.tar.gz : success (18 of 701, 18 good, 0 bad) -- Now 19:44:16 This 22.3 sec, Avg 32.1 sec, exp. finish in 365.8 min at 01:50:02 on 17-Jul-2016
+
+RESULT for BAMMtools_2.1.4.tar.gz : success (19 of 701, 19 good, 0 bad) -- Now 19:45:08 This 52.1 sec, Avg 33.2 sec, exp. finish in 377.2 min at 02:02:21 on 17-Jul-2016
+
+RESULT for batman_0.1.0.tar.gz : success (20 of 701, 20 good, 0 bad) -- Now 19:45:22 This 14.3 sec, Avg 32.2 sec, exp. finish in 365.9 min at 01:51:19 on 17-Jul-2016
+
+RESULT for BayesComm_0.1-2.tar.gz : success (21 of 701, 21 good, 0 bad) -- Now 19:45:42 This 20.1 sec, Avg 31.7 sec, exp. finish in 358.9 min at 01:44:33 on 17-Jul-2016
+
+RESULT for BayesFactor_0.9.12-2.tar.gz : success (22 of 701, 22 good, 0 bad) -- Now 19:47:00 This 78 sec, Avg 33.8 sec, exp. finish in 382.2 min at 02:09:11 on 17-Jul-2016
+
+RESULT for bayesm_3.0-2.tar.gz : success (23 of 701, 23 good, 0 bad) -- Now 19:48:57 This 116.7 sec, Avg 37.4 sec, exp. finish in 422.4 min at 02:51:20 on 17-Jul-2016
+
+RESULT for bayou_1.1.0.tar.gz : success (24 of 701, 24 good, 0 bad) -- Now 19:49:43 This 46.4 sec, Avg 37.8 sec, exp. finish in 426 min at 02:55:45 on 17-Jul-2016
+
+RESULT for bcp_4.0.0.tar.gz : success (25 of 701, 25 good, 0 bad) -- Now 19:50:19 This 35.1 sec, Avg 37.7 sec, exp. finish in 424.2 min at 02:54:32 on 17-Jul-2016
+
+RESULT for bcpa_1.1.tar.gz : success (26 of 701, 26 good, 0 bad) -- Now 19:50:42 This 22.9 sec, Avg 37.1 sec, exp. finish in 417.2 min at 02:47:55 on 17-Jul-2016
+
+RESULT for beanz_1.5.tar.gz : success (27 of 701, 27 good, 0 bad) -- Now 19:52:40 This 118.6 sec, Avg 40.1 sec, exp. finish in 450.5 min at 03:23:10 on 17-Jul-2016
+
+RESULT for BEDMatrix_1.2.0.tar.gz : success (28 of 701, 28 good, 0 bad) -- Now 19:52:56 This 16.1 sec, Avg 39.2 sec, exp. finish in 440.2 min at 03:13:08 on 17-Jul-2016
+
+RESULT for BeviMed_2.2.tar.gz : success (29 of 701, 29 good, 0 bad) -- Now 19:53:12 This 15.5 sec, Avg 38.4 sec, exp. finish in 430.4 min at 03:03:34 on 17-Jul-2016
+
+RESULT for bfa_0.3.1.tar.gz : success (30 of 701, 30 good, 0 bad) -- Now 19:53:41 This 29.4 sec, Avg 38.1 sec, exp. finish in 426.4 min at 03:00:03 on 17-Jul-2016
+
+RESULT for bfp_0.0-31.tar.gz : success (31 of 701, 31 good, 0 bad) -- Now 19:54:25 This 44.3 sec, Avg 38.3 sec, exp. finish in 427.9 min at 03:02:22 on 17-Jul-2016
+
+RESULT for bifactorial_1.4.7.tar.gz : success (32 of 701, 32 good, 0 bad) -- Now 19:55:07 This 41.3 sec, Avg 38.4 sec, exp. finish in 428.4 min at 03:03:28 on 17-Jul-2016
+
+RESULT for BIFIEsurvey_1.9.4-0.tar.gz : success (33 of 701, 33 good, 0 bad) -- Now 19:56:32 This 85.7 sec, Avg 39.8 sec, exp. finish in 443.7 min at 03:20:12 on 17-Jul-2016
+
+RESULT for biganalytics_1.1.14.tar.gz : success (34 of 701, 34 good, 0 bad) -- Now 19:56:53 This 20.4 sec, Avg 39.3 sec, exp. finish in 436.6 min at 03:13:31 on 17-Jul-2016
+
+RESULT for biglasso_1.0-1.tar.gz : success (35 of 701, 35 good, 0 bad) -- Now 19:57:26 This 32.9 sec, Avg 39.1 sec, exp. finish in 433.9 min at 03:11:22 on 17-Jul-2016
+
+RESULT for bigmemory_4.5.19.tar.gz : success (36 of 701, 36 good, 0 bad) -- Now 19:57:57 This 31 sec, Avg 38.9 sec, exp. finish in 430.8 min at 03:08:44 on 17-Jul-2016
+
+RESULT for BigQuic_1.1-5.tar.gz : success (37 of 701, 37 good, 0 bad) -- Now 19:58:34 This 37.3 sec, Avg 38.8 sec, exp. finish in 429.7 min at 03:08:15 on 17-Jul-2016
+
+RESULT for bigtabulate_1.1.5.tar.gz : success (38 of 701, 38 good, 0 bad) -- Now 19:58:54 This 20.3 sec, Avg 38.3 sec, exp. finish in 423.6 min at 03:02:33 on 17-Jul-2016
+
+RESULT for BigVAR_1.0.1.tar.gz : success (39 of 701, 39 good, 0 bad) -- Now 19:59:29 This 34.3 sec, Avg 38.2 sec, exp. finish in 421.9 min at 03:01:21 on 17-Jul-2016
+
+RESULT for Biocomb_0.2.tar.gz : success (40 of 701, 40 good, 0 bad) -- Now 20:00:28 This 59 sec, Avg 38.8 sec, exp. finish in 426.9 min at 03:07:24 on 17-Jul-2016
+
+RESULT for BIPOD_0.2.1.tar.gz : success (41 of 701, 41 good, 0 bad) -- Now 20:00:54 This 26.8 sec, Avg 38.5 sec, exp. finish in 423.1 min at 03:04:00 on 17-Jul-2016
+
+RESULT for biwavelet_0.20.7.tar.gz : success (42 of 701, 42 good, 0 bad) -- Now 20:01:24 This 29.5 sec, Avg 38.2 sec, exp. finish in 420.1 min at 03:01:29 on 17-Jul-2016
+
+RESULT for blackbox_1.0.8.1.tar.gz : success (43 of 701, 43 good, 0 bad) -- Now 20:02:10 This 46.2 sec, Avg 38.4 sec, exp. finish in 421.5 min at 03:03:40 on 17-Jul-2016
+
+RESULT for blockcluster_4.0.2.tar.gz : success (44 of 701, 44 good, 0 bad) -- Now 20:03:49 This 98.8 sec, Avg 39.8 sec, exp. finish in 435.9 min at 03:19:42 on 17-Jul-2016
+
+RESULT for blockmodels_1.1.1.tar.gz : success (45 of 701, 45 good, 0 bad) -- Now 20:04:30 This 41.5 sec, Avg 39.8 sec, exp. finish in 435.6 min at 03:20:08 on 17-Jul-2016
+
+RESULT for blockseg_0.2.tar.gz : success (46 of 701, 46 good, 0 bad) -- Now 20:05:12 This 41.3 sec, Avg 39.9 sec, exp. finish in 435.3 min at 03:20:31 on 17-Jul-2016
+
+RESULT for bnnSurvival_0.1.4.tar.gz : success (47 of 701, 47 good, 0 bad) -- Now 20:05:42 This 30.2 sec, Avg 39.7 sec, exp. finish in 432.4 min at 03:18:06 on 17-Jul-2016
+
+RESULT for bootTimeInference_0.1.0.tar.gz : success (48 of 701, 48 good, 0 bad) -- Now 20:06:03 This 21.6 sec, Avg 39.3 sec, exp. finish in 427.6 min at 03:13:41 on 17-Jul-2016
+
+RESULT for brainGraph_0.62.0.tar.gz : success (49 of 701, 49 good, 0 bad) -- Now 20:06:54 This 50.5 sec, Avg 39.5 sec, exp. finish in 429.5 min at 03:16:21 on 17-Jul-2016
+
+RESULT for btf_1.1.tar.gz : success (50 of 701, 50 good, 0 bad) -- Now 20:07:35 This 40.7 sec, Avg 39.5 sec, exp. finish in 429 min at 03:16:37 on 17-Jul-2016
+
+RESULT for BTLLasso_0.1-2.tar.gz : success (51 of 701, 51 good, 0 bad) -- Now 20:08:11 This 36.1 sec, Avg 39.5 sec, exp. finish in 427.7 min at 03:15:50 on 17-Jul-2016
+
+RESULT for BTR_1.2.3.tar.gz : success (52 of 701, 52 good, 0 bad) -- Now 20:08:36 This 25.4 sec, Avg 39.2 sec, exp. finish in 424.1 min at 03:12:41 on 17-Jul-2016
+
+RESULT for bvarsv_1.1.tar.gz : success (53 of 701, 53 good, 0 bad) -- Now 20:08:55 This 18.6 sec, Avg 38.8 sec, exp. finish in 419.2 min at 03:08:08 on 17-Jul-2016
+
+RESULT for bWGR_1.3.1.tar.gz : success (54 of 701, 54 good, 0 bad) -- Now 20:09:17 This 22.2 sec, Avg 38.5 sec, exp. finish in 415.3 min at 03:04:32 on 17-Jul-2016
+
+RESULT for BWStest_0.2.0.tar.gz : success (55 of 701, 55 good, 0 bad) -- Now 20:09:34 This 17.4 sec, Avg 38.1 sec, exp. finish in 410.5 min at 03:00:03 on 17-Jul-2016
+
+RESULT for CARBayes_4.6.tar.gz : success (56 of 701, 56 good, 0 bad) -- Now 20:10:27 This 52.5 sec, Avg 38.4 sec, exp. finish in 412.6 min at 03:03:03 on 17-Jul-2016
+
+RESULT for CARBayesST_2.3.tar.gz : success (57 of 701, 57 good, 0 bad) -- Now 20:11:31 This 64.7 sec, Avg 38.8 sec, exp. finish in 416.9 min at 03:08:27 on 17-Jul-2016
+
+RESULT for ccaPP_0.3.2.tar.gz : success (58 of 701, 58 good, 0 bad) -- Now 20:11:58 This 26.2 sec, Avg 38.6 sec, exp. finish in 413.9 min at 03:05:54 on 17-Jul-2016
+
+RESULT for cccp_0.2-4.tar.gz : success (59 of 701, 59 good, 0 bad) -- Now 20:12:57 This 59.8 sec, Avg 39 sec, exp. finish in 417.1 min at 03:10:05 on 17-Jul-2016
+
+RESULT for cda_1.5.1.tar.gz : success (60 of 701, 60 good, 0 bad) -- Now 20:13:28 This 30.5 sec, Avg 38.8 sec, exp. finish in 415 min at 03:08:26 on 17-Jul-2016
+
+RESULT for CDM_5.0-0.tar.gz : success (61 of 701, 61 good, 0 bad) -- Now 20:14:27 This 59.3 sec, Avg 39.2 sec, exp. finish in 417.9 min at 03:12:21 on 17-Jul-2016
+
+RESULT for CFC_1.0.1.tar.gz : success (62 of 701, 62 good, 0 bad) -- Now 20:15:00 This 33.2 sec, Avg 39.1 sec, exp. finish in 416.2 min at 03:11:13 on 17-Jul-2016
+
+RESULT for cgAUC_1.2.1.tar.gz : success (63 of 701, 63 good, 0 bad) -- Now 20:15:12 This 11.9 sec, Avg 38.6 sec, exp. finish in 411 min at 03:06:10 on 17-Jul-2016
+
+RESULT for ChannelAttribution_1.6.tar.gz : success (64 of 701, 64 good, 0 bad) -- Now 20:15:29 This 17.1 sec, Avg 38.3 sec, exp. finish in 406.8 min at 03:02:14 on 17-Jul-2016
+
+RESULT for chopthin_0.2.1.tar.gz : success (65 of 701, 65 good, 0 bad) -- Now 20:15:42 This 12.5 sec, Avg 37.9 sec, exp. finish in 401.9 min at 02:57:36 on 17-Jul-2016
+
+RESULT for CIDnetworks_0.8.1.tar.gz : success (66 of 701, 66 good, 0 bad) -- Now 20:16:19 This 36.8 sec, Avg 37.9 sec, exp. finish in 401.1 min at 02:57:24 on 17-Jul-2016
+
+RESULT for cIRT_1.2.0.tar.gz : success (67 of 701, 67 good, 0 bad) -- Now 20:16:41 This 22.8 sec, Avg 37.7 sec, exp. finish in 398.1 min at 02:54:46 on 17-Jul-2016
+
+RESULT for cladoRcpp_0.14.4.tar.gz : success (68 of 701, 68 good, 0 bad) -- Now 20:16:58 This 16.9 sec, Avg 37.4 sec, exp. finish in 394.2 min at 02:51:12 on 17-Jul-2016
+
+RESULT for classify_1.3.tar.gz : success (69 of 701, 69 good, 0 bad) -- Now 20:17:18 This 19.9 sec, Avg 37.1 sec, exp. finish in 390.9 min at 02:48:14 on 17-Jul-2016
+
+RESULT for clere_1.1.4.tar.gz : success (70 of 701, 70 good, 0 bad) -- Now 20:17:51 This 32.5 sec, Avg 37 sec, exp. finish in 389.6 min at 02:47:29 on 17-Jul-2016
+
+RESULT for climdex.pcic_1.1-6.tar.gz : success (71 of 701, 71 good, 0 bad) -- Now 20:18:27 This 35.9 sec, Avg 37 sec, exp. finish in 388.8 min at 02:47:17 on 17-Jul-2016
+
+RESULT for clogitboost_1.1.tar.gz : success (72 of 701, 72 good, 0 bad) -- Now 20:18:45 This 18.3 sec, Avg 36.8 sec, exp. finish in 385.5 min at 02:44:14 on 17-Jul-2016
+
+RESULT for clogitL1_1.4.tar.gz : success (73 of 701, 73 good, 0 bad) -- Now 20:19:01 This 15.9 sec, Avg 36.5 sec, exp. finish in 381.9 min at 02:40:54 on 17-Jul-2016
+
+RESULT for clusrank_0.2-2.tar.gz : success (74 of 701, 74 good, 0 bad) -- Now 20:19:18 This 17.7 sec, Avg 36.2 sec, exp. finish in 378.6 min at 02:37:56 on 17-Jul-2016
+
+RESULT for ClusterStability_1.0.3.tar.gz : success (75 of 701, 75 good, 0 bad) -- Now 20:19:55 This 36.4 sec, Avg 36.2 sec, exp. finish in 378 min at 02:37:58 on 17-Jul-2016
+
+RESULT for clusteval_0.1.tar.gz : success (76 of 701, 76 good, 0 bad) -- Now 20:20:10 This 15.4 sec, Avg 36 sec, exp. finish in 374.6 min at 02:34:45 on 17-Jul-2016
+
+RESULT for ClustMMDD_1.0.4.tar.gz : success (77 of 701, 77 good, 0 bad) -- Now 20:20:37 This 27 sec, Avg 35.8 sec, exp. finish in 372.8 min at 02:33:24 on 17-Jul-2016
+
+RESULT for ClustVarLV_1.4.1.tar.gz : success (78 of 701, 78 good, 0 bad) -- Now 20:20:58 This 20.2 sec, Avg 35.6 sec, exp. finish in 370.1 min at 02:31:03 on 17-Jul-2016
+
+RESULT for CMF_1.0.tar.gz : success (79 of 701, 79 good, 0 bad) -- Now 20:21:11 This 13.2 sec, Avg 35.4 sec, exp. finish in 366.6 min at 02:27:44 on 17-Jul-2016
+
+RESULT for coala_0.4.0.tar.gz : success (80 of 701, 80 good, 0 bad) -- Now 20:21:51 This 40 sec, Avg 35.4 sec, exp. finish in 366.6 min at 02:28:25 on 17-Jul-2016
+
+RESULT for collUtils_1.0.5.tar.gz : success (81 of 701, 81 good, 0 bad) -- Now 20:22:08 This 17.2 sec, Avg 35.2 sec, exp. finish in 363.7 min at 02:25:48 on 17-Jul-2016
+
+RESULT for CompGLM_1.0.tar.gz : success (82 of 701, 82 good, 0 bad) -- Now 20:22:27 This 19.2 sec, Avg 35 sec, exp. finish in 361.1 min at 02:23:31 on 17-Jul-2016
+
+RESULT for ConConPiWiFun_0.4.6.tar.gz : success (83 of 701, 83 good, 0 bad) -- Now 20:22:52 This 24.8 sec, Avg 34.9 sec, exp. finish in 359.2 min at 02:22:05 on 17-Jul-2016
+
+RESULT for coneproj_1.10.tar.gz : success (84 of 701, 84 good, 0 bad) -- Now 20:23:12 This 19.7 sec, Avg 34.7 sec, exp. finish in 356.8 min at 02:19:58 on 17-Jul-2016
+
+RESULT for contoureR_1.0.5.tar.gz : failure (85 of 701, 84 good, 1 bad) -- Now 20:23:29 This 17.8 sec, Avg 34.5 sec, exp. finish in 354.2 min at 02:17:39 on 17-Jul-2016
+
+RESULT for copCAR_1.0-2.tar.gz : success (86 of 701, 85 good, 1 bad) -- Now 20:23:50 This 20.9 sec, Avg 34.3 sec, exp. finish in 352 min at 02:15:48 on 17-Jul-2016
+
+RESULT for cord_0.1.1.tar.gz : success (87 of 701, 86 good, 1 bad) -- Now 20:24:06 This 16.1 sec, Avg 34.1 sec, exp. finish in 349.2 min at 02:13:21 on 17-Jul-2016
+
+RESULT for CorReg_1.1.1.tar.gz : success (88 of 701, 87 good, 1 bad) -- Now 20:25:29 This 82.3 sec, Avg 34.7 sec, exp. finish in 354.3 min at 02:19:44 on 17-Jul-2016
+
+RESULT for Countr_3.2.0.tar.gz : success (89 of 701, 88 good, 1 bad) -- Now 20:26:30 This 61.1 sec, Avg 35 sec, exp. finish in 356.7 min at 02:23:13 on 17-Jul-2016
+
+RESULT for covafillr_0.3.0.tar.gz : success (90 of 701, 89 good, 1 bad) -- Now 20:26:46 This 15.7 sec, Avg 34.8 sec, exp. finish in 353.9 min at 02:20:42 on 17-Jul-2016
+
+RESULT for Coxnet_0.2.tar.gz : success (91 of 701, 90 good, 1 bad) -- Now 20:27:22 This 36.2 sec, Avg 34.8 sec, exp. finish in 353.5 min at 02:20:53 on 17-Jul-2016
+
+RESULT for CoxPlus_1.1.1.tar.gz : success (92 of 701, 91 good, 1 bad) -- Now 20:27:49 This 26.9 sec, Avg 34.7 sec, exp. finish in 352.1 min at 02:19:53 on 17-Jul-2016
+
+RESULT for cpgen_0.1.tar.gz : success (93 of 701, 92 good, 1 bad) -- Now 20:28:39 This 50.8 sec, Avg 34.9 sec, exp. finish in 353.3 min at 02:21:55 on 17-Jul-2016
+
+RESULT for crawl_2.0.tar.gz : success (94 of 701, 93 good, 1 bad) -- Now 20:29:15 This 35.6 sec, Avg 34.9 sec, exp. finish in 352.8 min at 02:22:00 on 17-Jul-2016
+
+RESULT for creditr_0.6.1.tar.gz : success (95 of 701, 94 good, 1 bad) -- Now 20:29:48 This 33.3 sec, Avg 34.9 sec, exp. finish in 352 min at 02:21:49 on 17-Jul-2016
+
+RESULT for Crossover_0.1-15.tar.gz : success (96 of 701, 95 good, 1 bad) -- Now 20:30:55 This 66.6 sec, Avg 35.2 sec, exp. finish in 354.8 min at 02:25:41 on 17-Jul-2016
+
+RESULT for cycleRtools_1.1.1.tar.gz : success (97 of 701, 96 good, 1 bad) -- Now 20:31:21 This 25.8 sec, Avg 35.1 sec, exp. finish in 353.2 min at 02:24:33 on 17-Jul-2016
+
+RESULT for D3M_0.41.1.tar.gz : success (98 of 701, 97 good, 1 bad) -- Now 20:31:34 This 13.5 sec, Avg 34.9 sec, exp. finish in 350.4 min at 02:21:59 on 17-Jul-2016
+
+RESULT for datafsm_0.1.0.tar.gz : failure (99 of 701, 97 good, 2 bad) -- Now 20:31:54 This 19.9 sec, Avg 34.7 sec, exp. finish in 348.3 min at 02:20:13 on 17-Jul-2016
+
+RESULT for dbmss_2.2-5.tar.gz : success (100 of 701, 98 good, 2 bad) -- Now 20:32:49 This 54.8 sec, Avg 34.9 sec, exp. finish in 349.8 min at 02:22:34 on 17-Jul-2016
+
+RESULT for dbscan_0.9-7.tar.gz : success (101 of 701, 99 good, 2 bad) -- Now 20:33:16 This 26.6 sec, Avg 34.8 sec, exp. finish in 348.4 min at 02:21:37 on 17-Jul-2016
+
+RESULT for ddalpha_1.1.3.1.tar.gz : success (102 of 701, 100 good, 2 bad) -- Now 20:34:02 This 46.4 sec, Avg 34.9 sec, exp. finish in 348.9 min at 02:22:56 on 17-Jul-2016
+
+RESULT for ddR_0.1.2.tar.gz : success (103 of 701, 101 good, 2 bad) -- Now 20:34:27 This 25.4 sec, Avg 34.9 sec, exp. finish in 347.4 min at 02:21:51 on 17-Jul-2016
+
+RESULT for DDRTree_0.1.3.tar.gz : success (104 of 701, 102 good, 2 bad) -- Now 20:35:14 This 46.5 sec, Avg 35 sec, exp. finish in 347.9 min at 02:23:09 on 17-Jul-2016
+
+RESULT for deepboost_0.1.4.tar.gz : success (105 of 701, 103 good, 2 bad) -- Now 20:35:37 This 23.2 sec, Avg 34.9 sec, exp. finish in 346.2 min at 02:21:51 on 17-Jul-2016
+
+RESULT for Delaporte_2.3.1.tar.gz : success (106 of 701, 104 good, 2 bad) -- Now 20:35:54 This 16.8 sec, Avg 34.7 sec, exp. finish in 344 min at 02:19:52 on 17-Jul-2016
+
+RESULT for DeLorean_1.2.3.tar.gz : success (107 of 701, 105 good, 2 bad) -- Now 20:36:18 This 23.6 sec, Avg 34.6 sec, exp. finish in 342.4 min at 02:18:39 on 17-Jul-2016
+
+RESULT for dendextendRcpp_0.6.1.tar.gz : success (108 of 701, 106 good, 2 bad) -- Now 20:36:49 This 31.6 sec, Avg 34.6 sec, exp. finish in 341.5 min at 02:18:20 on 17-Jul-2016
+
+RESULT for densityClust_0.2.1.tar.gz : success (109 of 701, 107 good, 2 bad) -- Now 20:37:03 This 14.1 sec, Avg 34.4 sec, exp. finish in 339.1 min at 02:16:09 on 17-Jul-2016
+
+RESULT for DepthProc_1.0.7.tar.gz : success (110 of 701, 108 good, 2 bad) -- Now 20:37:51 This 47.7 sec, Avg 34.5 sec, exp. finish in 339.7 min at 02:17:33 on 17-Jul-2016
+
+RESULT for DescTools_0.99.17.tar.gz : success (111 of 701, 109 good, 2 bad) -- Now 20:39:25 This 93.9 sec, Avg 35 sec, exp. finish in 344.4 min at 02:23:49 on 17-Jul-2016
+
+RESULT for DetMCD_0.0.3.tar.gz : success (112 of 701, 110 good, 2 bad) -- Now 20:39:44 This 19.1 sec, Avg 34.9 sec, exp. finish in 342.4 min at 02:22:09 on 17-Jul-2016
+
+RESULT for DetR_0.0.4.tar.gz : success (113 of 701, 111 good, 2 bad) -- Now 20:40:13 This 28.7 sec, Avg 34.8 sec, exp. finish in 341.3 min at 02:21:30 on 17-Jul-2016
+
+RESULT for dfcomb_2.1-6.tar.gz : success (114 of 701, 112 good, 2 bad) -- Now 20:40:33 This 20.5 sec, Avg 34.7 sec, exp. finish in 339.5 min at 02:20:02 on 17-Jul-2016
+
+RESULT for dfmta_1.3-4.tar.gz : success (115 of 701, 113 good, 2 bad) -- Now 20:40:50 This 16.8 sec, Avg 34.5 sec, exp. finish in 337.4 min at 02:18:13 on 17-Jul-2016
+
+RESULT for DiffusionRgqd_0.1.2.tar.gz : success (116 of 701, 114 good, 2 bad) -- Now 20:41:18 This 28.4 sec, Avg 34.5 sec, exp. finish in 336.3 min at 02:17:36 on 17-Jul-2016
+
+RESULT for DiffusionRimp_0.1.0.tar.gz : success (117 of 701, 115 good, 2 bad) -- Now 20:41:38 This 19.5 sec, Avg 34.4 sec, exp. finish in 334.5 min at 02:16:07 on 17-Jul-2016
+
+RESULT for DiffusionRjgqd_0.1.0.tar.gz : success (118 of 701, 116 good, 2 bad) -- Now 20:42:04 This 26.5 sec, Avg 34.3 sec, exp. finish in 333.3 min at 02:15:20 on 17-Jul-2016
+
+RESULT for dils_0.8.1.tar.gz : success (119 of 701, 117 good, 2 bad) -- Now 20:42:27 This 22.5 sec, Avg 34.2 sec, exp. finish in 331.7 min at 02:14:10 on 17-Jul-2016
+
+RESULT for dina_1.0.1.tar.gz : success (120 of 701, 118 good, 2 bad) -- Now 20:42:42 This 15.6 sec, Avg 34 sec, exp. finish in 329.6 min at 02:12:21 on 17-Jul-2016
+
+RESULT for disclapmix_1.6.2.tar.gz : success (121 of 701, 119 good, 2 bad) -- Now 20:43:06 This 24 sec, Avg 34 sec, exp. finish in 328.3 min at 02:11:23 on 17-Jul-2016
+
+RESULT for diversitree_0.9-8.tar.gz : success (122 of 701, 120 good, 2 bad) -- Now 20:44:02 This 55.5 sec, Avg 34.1 sec, exp. finish in 329.4 min at 02:13:26 on 17-Jul-2016
+
+RESULT for diveRsity_1.9.89.tar.gz : success (123 of 701, 121 good, 2 bad) -- Now 20:45:15 This 73.4 sec, Avg 34.5 sec, exp. finish in 331.9 min at 02:17:10 on 17-Jul-2016
+
+RESULT for divo_0.1.2.tar.gz : success (124 of 701, 122 good, 2 bad) -- Now 20:45:38 This 22.9 sec, Avg 34.4 sec, exp. finish in 330.4 min at 02:16:05 on 17-Jul-2016
+
+RESULT for DLMtool_3.2.tar.gz : success (125 of 701, 123 good, 2 bad) -- Now 20:46:15 This 37.3 sec, Avg 34.4 sec, exp. finish in 330.1 min at 02:16:21 on 17-Jul-2016
+
+RESULT for DNAprofiles_0.3.1.tar.gz : success (126 of 701, 124 good, 2 bad) -- Now 20:46:55 This 39.5 sec, Avg 34.4 sec, exp. finish in 329.9 min at 02:16:50 on 17-Jul-2016
+
+RESULT for DNAtools_0.1-21.1.tar.gz : success (127 of 701, 125 good, 2 bad) -- Now 20:47:23 This 27.8 sec, Avg 34.4 sec, exp. finish in 328.8 min at 02:16:13 on 17-Jul-2016
+
+RESULT for dnc_1.2.tar.gz : success (128 of 701, 126 good, 2 bad) -- Now 20:49:12 This 109.3 sec, Avg 35 sec, exp. finish in 333.9 min at 02:23:03 on 17-Jul-2016
+
+RESULT for dplyr_0.5.0.tar.gz : success (129 of 701, 127 good, 2 bad) -- Now 20:50:33 This 80.5 sec, Avg 35.3 sec, exp. finish in 336.6 min at 02:27:11 on 17-Jul-2016
+
+RESULT for drgee_1.1.5.tar.gz : success (130 of 701, 128 good, 2 bad) -- Now 20:51:06 This 33.2 sec, Avg 35.3 sec, exp. finish in 335.9 min at 02:26:59 on 17-Jul-2016
+
+RESULT for dslice_1.1.5.tar.gz : success (131 of 701, 129 good, 2 bad) -- Now 20:51:28 This 22.8 sec, Avg 35.2 sec, exp. finish in 334.4 min at 02:25:52 on 17-Jul-2016
+
+RESULT for DStree_1.0.tar.gz : success (132 of 701, 130 good, 2 bad) -- Now 20:52:11 This 43 sec, Avg 35.3 sec, exp. finish in 334.4 min at 02:26:33 on 17-Jul-2016
+
+RESULT for dtwclust_2.1.2.tar.gz : success (133 of 701, 131 good, 2 bad) -- Now 20:53:02 This 50.9 sec, Avg 35.4 sec, exp. finish in 334.9 min at 02:27:56 on 17-Jul-2016
+
+RESULT for easyVerification_0.2.0.tar.gz : success (134 of 701, 132 good, 2 bad) -- Now 20:53:26 This 23.9 sec, Avg 35.3 sec, exp. finish in 333.5 min at 02:26:56 on 17-Jul-2016
+
+RESULT for EBMAforecast_0.52.tar.gz : success (135 of 701, 133 good, 2 bad) -- Now 20:54:04 This 37.9 sec, Avg 35.3 sec, exp. finish in 333.1 min at 02:27:09 on 17-Jul-2016
+
+RESULT for ECctmc_0.2.1.tar.gz : success (136 of 701, 134 good, 2 bad) -- Now 20:54:21 This 17.2 sec, Avg 35.2 sec, exp. finish in 331.2 min at 02:25:36 on 17-Jul-2016
+
+RESULT for ecp_2.0.0.tar.gz : success (137 of 701, 135 good, 2 bad) -- Now 20:54:42 This 20.4 sec, Avg 35.1 sec, exp. finish in 329.6 min at 02:24:20 on 17-Jul-2016
+
+RESULT for EditImputeCont_1.0.1.tar.gz : success (138 of 701, 136 good, 2 bad) -- Now 20:55:16 This 34 sec, Avg 35.1 sec, exp. finish in 329 min at 02:24:14 on 17-Jul-2016
+
+RESULT for eggCounts_1.1.tar.gz : success (139 of 701, 137 good, 2 bad) -- Now 20:58:39 This 203.3 sec, Avg 36.3 sec, exp. finish in 339.7 min at 02:38:23 on 17-Jul-2016
+
+RESULT for eive_2.1.tar.gz : success (140 of 701, 138 good, 2 bad) -- Now 20:58:51 This 12 sec, Avg 36.1 sec, exp. finish in 337.5 min at 02:36:22 on 17-Jul-2016
+
+RESULT for EloChoice_0.29.tar.gz : success (141 of 701, 139 good, 2 bad) -- Now 20:59:09 This 17.8 sec, Avg 36 sec, exp. finish in 335.7 min at 02:34:51 on 17-Jul-2016
+
+RESULT for elpatron_0.0.2.tar.gz : failure (142 of 701, 139 good, 3 bad) -- Now 20:59:48 This 39.2 sec, Avg 36 sec, exp. finish in 335.3 min at 02:35:07 on 17-Jul-2016
+
+RESULT for emil_2.2.6.tar.gz : success (143 of 701, 140 good, 3 bad) -- Now 21:00:31 This 42.8 sec, Avg 36 sec, exp. finish in 335.2 min at 02:35:40 on 17-Jul-2016
+
+RESULT for emIRT_0.0.6.tar.gz : success (144 of 701, 141 good, 3 bad) -- Now 21:03:02 This 151.5 sec, Avg 36.8 sec, exp. finish in 342 min at 02:45:02 on 17-Jul-2016
+
+RESULT for EPGLM_1.1.1.tar.gz : success (145 of 701, 142 good, 3 bad) -- Now 21:03:20 This 18 sec, Avg 36.7 sec, exp. finish in 340.2 min at 02:43:31 on 17-Jul-2016
+
+RESULT for erah_1.0.1.tar.gz : success (146 of 701, 143 good, 3 bad) -- Now 21:03:56 This 36 sec, Avg 36.7 sec, exp. finish in 339.5 min at 02:43:28 on 17-Jul-2016
+
+RESULT for ESGtoolkit_0.1.tar.gz : success (147 of 701, 144 good, 3 bad) -- Now 21:04:17 This 20.9 sec, Avg 36.6 sec, exp. finish in 337.9 min at 02:42:12 on 17-Jul-2016
+
+RESULT for EstHer_1.0.tar.gz : success (148 of 701, 145 good, 3 bad) -- Now 21:04:50 This 33.1 sec, Avg 36.6 sec, exp. finish in 337.1 min at 02:41:56 on 17-Jul-2016
+
+RESULT for evolqg_0.2-4.tar.gz : failure (149 of 701, 145 good, 4 bad) -- Now 21:06:19 This 88.4 sec, Avg 36.9 sec, exp. finish in 339.7 min at 02:46:00 on 17-Jul-2016
+
+RESULT for EWGoF_2.1.tar.gz : success (150 of 701, 146 good, 4 bad) -- Now 21:06:48 This 29.8 sec, Avg 36.9 sec, exp. finish in 338.6 min at 02:45:26 on 17-Jul-2016
+
+RESULT for exif_0.1.0.tar.gz : success (151 of 701, 147 good, 4 bad) -- Now 21:07:04 This 15.1 sec, Avg 36.7 sec, exp. finish in 336.7 min at 02:43:45 on 17-Jul-2016
+
+RESULT for extraDistr_1.7.2.tar.gz : success (152 of 701, 148 good, 4 bad) -- Now 21:08:19 This 75.8 sec, Avg 37 sec, exp. finish in 338.4 min at 02:46:45 on 17-Jul-2016
+
+RESULT for fastAdaboost_1.0.0.tar.gz : success (153 of 701, 149 good, 4 bad) -- Now 21:08:38 This 18.5 sec, Avg 36.9 sec, exp. finish in 336.7 min at 02:45:20 on 17-Jul-2016
+
+RESULT for FastBandChol_0.1.1.tar.gz : success (154 of 701, 150 good, 4 bad) -- Now 21:08:53 This 14.7 sec, Avg 36.7 sec, exp. finish in 334.8 min at 02:43:40 on 17-Jul-2016
+
+RESULT for fastGHQuad_0.2.tar.gz : success (155 of 701, 151 good, 4 bad) -- Now 21:09:06 This 13.3 sec, Avg 36.6 sec, exp. finish in 332.8 min at 02:41:54 on 17-Jul-2016
+
+RESULT for FastGP_1.2.tar.gz : success (156 of 701, 152 good, 4 bad) -- Now 21:09:25 This 19.6 sec, Avg 36.5 sec, exp. finish in 331.2 min at 02:40:37 on 17-Jul-2016
+
+RESULT for FastHCS_0.0.5.tar.gz : success (157 of 701, 153 good, 4 bad) -- Now 21:09:46 This 20.2 sec, Avg 36.4 sec, exp. finish in 329.7 min at 02:39:25 on 17-Jul-2016
+
+RESULT for fastM_0.0-2.tar.gz : success (158 of 701, 154 good, 4 bad) -- Now 21:10:05 This 19.6 sec, Avg 36.3 sec, exp. finish in 328.1 min at 02:38:10 on 17-Jul-2016
+
+RESULT for FastPCS_0.1.2.tar.gz : success (159 of 701, 155 good, 4 bad) -- Now 21:10:22 This 16.8 sec, Avg 36.1 sec, exp. finish in 326.4 min at 02:36:44 on 17-Jul-2016
+
+RESULT for FastRCS_0.0.7.tar.gz : success (160 of 701, 156 good, 4 bad) -- Now 21:10:43 This 21.4 sec, Avg 36 sec, exp. finish in 324.9 min at 02:35:40 on 17-Jul-2016
+
+RESULT for FBFsearch_1.0.tar.gz : success (161 of 701, 157 good, 4 bad) -- Now 21:11:02 This 18.8 sec, Avg 35.9 sec, exp. finish in 323.4 min at 02:34:25 on 17-Jul-2016
+
+RESULT for fbroc_0.4.0.tar.gz : success (162 of 701, 158 good, 4 bad) -- Now 21:11:30 This 27.6 sec, Avg 35.9 sec, exp. finish in 322.3 min at 02:33:49 on 17-Jul-2016
+
+RESULT for FCNN4R_0.6.2.tar.gz : success (163 of 701, 159 good, 4 bad) -- Now 21:11:51 This 21.3 sec, Avg 35.8 sec, exp. finish in 320.9 min at 02:32:46 on 17-Jul-2016
+
+RESULT for fdaMixed_0.4.tar.gz : success (164 of 701, 160 good, 4 bad) -- Now 21:12:21 This 29.7 sec, Avg 35.8 sec, exp. finish in 320 min at 02:32:21 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/fdapace_0.2.5.tar.gz'
+Content type 'application/x-gzip' length 488175 bytes (476 KB)
+==================================================
+downloaded 476 KB
+
+Downloaded  fdapace_0.2.5.tar.gz 
+
+RESULT for fdapace_0.2.5.tar.gz : success (165 of 701, 161 good, 4 bad) -- Now 21:13:51 This 89.7 sec, Avg 36.1 sec, exp. finish in 322.3 min at 02:36:10 on 17-Jul-2016
+
+RESULT for fdaPDE_0.1-4.tar.gz : success (166 of 701, 162 good, 4 bad) -- Now 21:14:30 This 39.8 sec, Avg 36.1 sec, exp. finish in 321.9 min at 02:36:25 on 17-Jul-2016
+
+RESULT for fdasrvf_1.6.1.tar.gz : success (167 of 701, 163 good, 4 bad) -- Now 21:16:18 This 107.9 sec, Avg 36.5 sec, exp. finish in 325.1 min at 02:41:27 on 17-Jul-2016
+
+RESULT for FDGcopulas_1.0.tar.gz : success (168 of 701, 164 good, 4 bad) -- Now 21:16:36 This 17.3 sec, Avg 36.4 sec, exp. finish in 323.5 min at 02:40:07 on 17-Jul-2016
+
+RESULT for FDRreg_0.1.tar.gz : success (169 of 701, 165 good, 4 bad) -- Now 21:17:12 This 36.4 sec, Avg 36.4 sec, exp. finish in 322.9 min at 02:40:07 on 17-Jul-2016
+
+RESULT for feather_0.0.1.tar.gz : success (170 of 701, 166 good, 4 bad) -- Now 21:17:33 This 20.9 sec, Avg 36.3 sec, exp. finish in 321.5 min at 02:39:03 on 17-Jul-2016
+
+RESULT for FeatureHashing_0.9.1.1.tar.gz : success (171 of 701, 167 good, 4 bad) -- Now 21:18:30 This 56.9 sec, Avg 36.4 sec, exp. finish in 322 min at 02:40:27 on 17-Jul-2016
+
+RESULT for FIACH_0.1.2.tar.gz : success (172 of 701, 168 good, 4 bad) -- Now 21:18:56 This 26.6 sec, Avg 36.4 sec, exp. finish in 320.8 min at 02:39:47 on 17-Jul-2016
+
+RESULT for fICA_1.0-3.tar.gz : success (173 of 701, 169 good, 4 bad) -- Now 21:19:18 This 21.8 sec, Avg 36.3 sec, exp. finish in 319.5 min at 02:38:48 on 17-Jul-2016
+
+RESULT for FisHiCal_1.1.tar.gz : success (174 of 701, 170 good, 4 bad) -- Now 21:19:35 This 17.1 sec, Avg 36.2 sec, exp. finish in 317.9 min at 02:37:30 on 17-Jul-2016
+
+RESULT for flam_3.0.tar.gz : success (175 of 701, 171 good, 4 bad) -- Now 21:19:54 This 18.4 sec, Avg 36.1 sec, exp. finish in 316.4 min at 02:36:19 on 17-Jul-2016
+
+RESULT for flan_0.1.tar.gz : success (176 of 701, 172 good, 4 bad) -- Now 21:20:27 This 33.7 sec, Avg 36.1 sec, exp. finish in 315.7 min at 02:36:10 on 17-Jul-2016
+
+RESULT for flars_1.0.tar.gz : success (177 of 701, 173 good, 4 bad) -- Now 21:21:09 This 41.6 sec, Avg 36.1 sec, exp. finish in 315.4 min at 02:36:32 on 17-Jul-2016
+
+RESULT for flip_2.4.3.tar.gz : success (178 of 701, 174 good, 4 bad) -- Now 21:21:46 This 37 sec, Avg 36.1 sec, exp. finish in 314.8 min at 02:36:35 on 17-Jul-2016
+
+RESULT for FLSSS_5.0.1.tar.gz : success (179 of 701, 175 good, 4 bad) -- Now 21:22:03 This 17 sec, Avg 36 sec, exp. finish in 313.3 min at 02:35:20 on 17-Jul-2016
+
+RESULT for forecast_7.1.tar.gz : success (180 of 701, 176 good, 4 bad) -- Now 21:23:39 This 96.3 sec, Avg 36.3 sec, exp. finish in 315.6 min at 02:39:15 on 17-Jul-2016
+
+RESULT for forega_1.0.tar.gz : success (181 of 701, 177 good, 4 bad) -- Now 21:24:03 This 23.9 sec, Avg 36.3 sec, exp. finish in 314.4 min at 02:38:26 on 17-Jul-2016
+
+RESULT for forestFloor_1.9.5.tar.gz : success (182 of 701, 178 good, 4 bad) -- Now 21:24:48 This 44.8 sec, Avg 36.3 sec, exp. finish in 314.2 min at 02:38:59 on 17-Jul-2016
+
+RESULT for fourierin_0.1.2.tar.gz : success (183 of 701, 179 good, 4 bad) -- Now 21:25:13 This 24.6 sec, Avg 36.3 sec, exp. finish in 313 min at 02:38:14 on 17-Jul-2016
+
+RESULT for fourPNO_1.0.3.tar.gz : success (184 of 701, 180 good, 4 bad) -- Now 21:25:30 This 17 sec, Avg 36.2 sec, exp. finish in 311.5 min at 02:37:01 on 17-Jul-2016
+
+RESULT for fractional_0.1.3.tar.gz : success (185 of 701, 181 good, 4 bad) -- Now 21:25:43 This 13.1 sec, Avg 36 sec, exp. finish in 309.8 min at 02:35:33 on 17-Jul-2016
+
+RESULT for frailtySurv_1.2.2.1.tar.gz : success (186 of 701, 182 good, 4 bad) -- Now 21:26:23 This 40.7 sec, Avg 36.1 sec, exp. finish in 309.5 min at 02:35:51 on 17-Jul-2016
+
+RESULT for FRESA.CAD_2.2.0.tar.gz : success (187 of 701, 183 good, 4 bad) -- Now 21:27:18 This 54.8 sec, Avg 36.2 sec, exp. finish in 309.7 min at 02:37:01 on 17-Jul-2016
+
+RESULT for fromo_0.1.3.tar.gz : success (188 of 701, 184 good, 4 bad) -- Now 21:27:39 This 21.2 sec, Avg 36.1 sec, exp. finish in 308.4 min at 02:36:05 on 17-Jul-2016
+
+RESULT for FSInteract_0.1.1.tar.gz : success (189 of 701, 185 good, 4 bad) -- Now 21:28:09 This 29.4 sec, Avg 36 sec, exp. finish in 307.5 min at 02:35:40 on 17-Jul-2016
+
+RESULT for fugeR_0.1.2.tar.gz : success (190 of 701, 186 good, 4 bad) -- Now 21:28:24 This 15.1 sec, Avg 35.9 sec, exp. finish in 306 min at 02:34:23 on 17-Jul-2016
+
+RESULT for FunChisq_2.3.1.tar.gz : success (191 of 701, 187 good, 4 bad) -- Now 21:28:44 This 19.8 sec, Avg 35.8 sec, exp. finish in 304.7 min at 02:33:24 on 17-Jul-2016
+
+RESULT for Funclustering_1.0.1.tar.gz : success (192 of 701, 188 good, 4 bad) -- Now 21:29:31 This 47.7 sec, Avg 35.9 sec, exp. finish in 304.6 min at 02:34:07 on 17-Jul-2016
+
+RESULT for futureheatwaves_1.0.1.tar.gz : success (193 of 701, 189 good, 4 bad) -- Now 21:29:52 This 20.7 sec, Avg 35.8 sec, exp. finish in 303.3 min at 02:33:12 on 17-Jul-2016
+
+RESULT for fwsim_0.3.3.tar.gz : success (194 of 701, 190 good, 4 bad) -- Now 21:30:11 This 19.2 sec, Avg 35.7 sec, exp. finish in 302 min at 02:32:12 on 17-Jul-2016
+
+RESULT for gapfill_0.9.3.tar.gz : success (195 of 701, 191 good, 4 bad) -- Now 21:30:55 This 43.9 sec, Avg 35.8 sec, exp. finish in 301.8 min at 02:32:41 on 17-Jul-2016
+
+RESULT for gaselect_1.0.5.tar.gz : success (196 of 701, 192 good, 4 bad) -- Now 21:31:42 This 46.5 sec, Avg 35.8 sec, exp. finish in 301.6 min at 02:33:20 on 17-Jul-2016
+
+RESULT for gaston_1.4.6.tar.gz : success (197 of 701, 193 good, 4 bad) -- Now 21:33:21 This 99.9 sec, Avg 36.2 sec, exp. finish in 303.8 min at 02:37:08 on 17-Jul-2016
+
+RESULT for GCPM_1.2.tar.gz : success (198 of 701, 194 good, 4 bad) -- Now 21:33:43 This 21.3 sec, Avg 36.1 sec, exp. finish in 302.5 min at 02:36:15 on 17-Jul-2016
+
+RESULT for gdm_1.2.3.tar.gz : success (199 of 701, 195 good, 4 bad) -- Now 21:34:41 This 58 sec, Avg 36.2 sec, exp. finish in 302.9 min at 02:37:32 on 17-Jul-2016
+
+RESULT for gdtools_0.0.7.tar.gz : success (200 of 701, 196 good, 4 bad) -- Now 21:34:58 This 16.7 sec, Avg 36.1 sec, exp. finish in 301.4 min at 02:36:24 on 17-Jul-2016
+
+RESULT for geiger_2.0.6.tar.gz : success (201 of 701, 197 good, 4 bad) -- Now 21:35:44 This 46.5 sec, Avg 36.2 sec, exp. finish in 301.3 min at 02:37:00 on 17-Jul-2016
+
+RESULT for GeneticTools_0.3.1.tar.gz : success (202 of 701, 198 good, 4 bad) -- Now 21:36:25 This 40.9 sec, Avg 36.2 sec, exp. finish in 300.9 min at 02:37:17 on 17-Jul-2016
+
+RESULT for genie_1.0.2.tar.gz : success (203 of 701, 199 good, 4 bad) -- Now 21:36:50 This 24.6 sec, Avg 36.1 sec, exp. finish in 299.8 min at 02:36:37 on 17-Jul-2016
+
+RESULT for GENLIB_1.0.4.tar.gz : success (204 of 701, 200 good, 4 bad) -- Now 21:38:01 This 71.1 sec, Avg 36.3 sec, exp. finish in 300.6 min at 02:38:37 on 17-Jul-2016
+
+RESULT for geoCount_1.150120.tar.gz : success (205 of 701, 201 good, 4 bad) -- Now 21:38:32 This 31.8 sec, Avg 36.3 sec, exp. finish in 299.8 min at 02:38:22 on 17-Jul-2016
+
+RESULT for geohash_0.1.2.tar.gz : success (206 of 701, 202 good, 4 bad) -- Now 21:38:47 This 15 sec, Avg 36.2 sec, exp. finish in 298.4 min at 02:37:09 on 17-Jul-2016
+
+RESULT for GERGM_0.7.4.tar.gz : success (207 of 701, 203 good, 4 bad) -- Now 21:39:11 This 23.7 sec, Avg 36.1 sec, exp. finish in 297.3 min at 02:36:27 on 17-Jul-2016
+
+RESULT for ggrepel_0.5.tar.gz : success (208 of 701, 204 good, 4 bad) -- Now 21:39:27 This 16.4 sec, Avg 36 sec, exp. finish in 295.9 min at 02:35:21 on 17-Jul-2016
+
+RESULT for GiRaF_1.0.tar.gz : success (209 of 701, 205 good, 4 bad) -- Now 21:40:00 This 32.6 sec, Avg 36 sec, exp. finish in 295.2 min at 02:35:09 on 17-Jul-2016
+
+RESULT for gjam_1.0.tar.gz : success (210 of 701, 206 good, 4 bad) -- Now 21:40:31 This 30.4 sec, Avg 36 sec, exp. finish in 294.3 min at 02:34:51 on 17-Jul-2016
+Warning: dependencies ‘BSgenome.Hsapiens.UCSC.hg18.masked’, ‘BSgenome.Hsapiens.UCSC.hg19.masked’ are not available
+also installing the dependencies ‘SummarizedExperiment’, ‘Rsamtools’, ‘GenomicAlignments’, ‘GenomeInfoDb’, ‘GenomicRanges’, ‘rtracklayer’
+
+
+RESULT for gkmSVM_0.70.tar.gz : failure (211 of 701, 206 good, 5 bad) -- Now 21:41:23 This 52.7 sec, Avg 36 sec, exp. finish in 294.4 min at 02:35:46 on 17-Jul-2016
+
+RESULT for glamlasso_1.0.tar.gz : success (212 of 701, 207 good, 5 bad) -- Now 21:41:46 This 23 sec, Avg 36 sec, exp. finish in 293.3 min at 02:35:03 on 17-Jul-2016
+
+RESULT for glcm_1.6.1.tar.gz : success (213 of 701, 208 good, 5 bad) -- Now 21:42:06 This 19.9 sec, Avg 35.9 sec, exp. finish in 292.1 min at 02:34:10 on 17-Jul-2016
+
+RESULT for glmBfp_0.0-48.tar.gz : success (214 of 701, 209 good, 5 bad) -- Now 21:43:13 This 66.5 sec, Avg 36.1 sec, exp. finish in 292.6 min at 02:35:50 on 17-Jul-2016
+
+RESULT for glmgraph_1.0.3.tar.gz : success (215 of 701, 210 good, 5 bad) -- Now 21:43:58 This 45 sec, Avg 36.1 sec, exp. finish in 292.4 min at 02:36:19 on 17-Jul-2016
+
+RESULT for glmmsr_0.1.1.tar.gz : success (216 of 701, 211 good, 5 bad) -- Now 21:45:45 This 107.2 sec, Avg 36.4 sec, exp. finish in 294.4 min at 02:40:10 on 17-Jul-2016
+
+RESULT for GMCM_1.2.3.tar.gz : success (217 of 701, 212 good, 5 bad) -- Now 21:46:20 This 35.1 sec, Avg 36.4 sec, exp. finish in 293.8 min at 02:40:06 on 17-Jul-2016
+
+RESULT for Gmedian_1.2.1.tar.gz : success (218 of 701, 213 good, 5 bad) -- Now 21:46:58 This 37.9 sec, Avg 36.4 sec, exp. finish in 293.2 min at 02:40:10 on 17-Jul-2016
+
+RESULT for Gmisc_1.3.1.tar.gz : success (219 of 701, 214 good, 5 bad) -- Now 21:47:46 This 48.6 sec, Avg 36.5 sec, exp. finish in 293.1 min at 02:40:50 on 17-Jul-2016
+
+RESULT for gmum.r_0.2.1.tar.gz : success (220 of 701, 215 good, 5 bad) -- Now 21:49:37 This 111 sec, Avg 36.8 sec, exp. finish in 295.2 min at 02:44:47 on 17-Jul-2016
+
+RESULT for gmwm_2.0.0.tar.gz : success (221 of 701, 216 good, 5 bad) -- Now 21:51:11 This 93.5 sec, Avg 37.1 sec, exp. finish in 296.6 min at 02:47:47 on 17-Jul-2016
+
+RESULT for gMWT_1.0.tar.gz : success (222 of 701, 217 good, 5 bad) -- Now 21:51:38 This 26.7 sec, Avg 37 sec, exp. finish in 295.6 min at 02:47:14 on 17-Jul-2016
+
+RESULT for googleway_1.0.0.tar.gz : success (223 of 701, 218 good, 5 bad) -- Now 21:51:52 This 14.3 sec, Avg 36.9 sec, exp. finish in 294.2 min at 02:46:02 on 17-Jul-2016
+
+RESULT for GPareto_1.0.2.tar.gz : success (224 of 701, 219 good, 5 bad) -- Now 21:52:29 This 37.1 sec, Avg 36.9 sec, exp. finish in 293.6 min at 02:46:03 on 17-Jul-2016
+
+RESULT for GPvam_3.0-3.tar.gz : success (225 of 701, 220 good, 5 bad) -- Now 21:53:09 This 39.8 sec, Avg 36.9 sec, exp. finish in 293.1 min at 02:46:12 on 17-Jul-2016
+
+RESULT for gRain_1.2-5.tar.gz : success (226 of 701, 221 good, 5 bad) -- Now 21:53:54 This 45.3 sec, Avg 37 sec, exp. finish in 292.7 min at 02:46:38 on 17-Jul-2016
+
+RESULT for graphicalVAR_0.1.4.tar.gz : success (227 of 701, 222 good, 5 bad) -- Now 21:54:40 This 45.5 sec, Avg 37 sec, exp. finish in 292.4 min at 02:47:04 on 17-Jul-2016
+
+RESULT for gRbase_1.7-5.tar.gz : success (228 of 701, 223 good, 5 bad) -- Now 21:55:55 This 75.1 sec, Avg 37.2 sec, exp. finish in 293.1 min at 02:49:01 on 17-Jul-2016
+
+RESULT for gRim_0.1-17.tar.gz : success (229 of 701, 224 good, 5 bad) -- Now 21:56:41 This 46.1 sec, Avg 37.2 sec, exp. finish in 292.8 min at 02:49:29 on 17-Jul-2016
+
+RESULT for growcurves_0.2.4.0.tar.gz : success (230 of 701, 225 good, 5 bad) -- Now 21:58:25 This 104.4 sec, Avg 37.5 sec, exp. finish in 294.5 min at 02:52:53 on 17-Jul-2016
+
+RESULT for growfunctions_0.12.tar.gz : success (231 of 701, 226 good, 5 bad) -- Now 21:59:52 This 86.7 sec, Avg 37.7 sec, exp. finish in 295.5 min at 02:55:22 on 17-Jul-2016
+
+RESULT for grpSLOPE_0.1.0.tar.gz : success (232 of 701, 227 good, 5 bad) -- Now 22:00:11 This 19.6 sec, Avg 37.6 sec, exp. finish in 294.3 min at 02:54:28 on 17-Jul-2016
+
+RESULT for GSE_3.3.tar.gz : success (233 of 701, 228 good, 5 bad) -- Now 22:00:41 This 29.3 sec, Avg 37.6 sec, exp. finish in 293.4 min at 02:54:03 on 17-Jul-2016
+
+RESULT for gsEasy_1.0.tar.gz : success (234 of 701, 229 good, 5 bad) -- Now 22:00:53 This 12.3 sec, Avg 37.5 sec, exp. finish in 291.9 min at 02:52:47 on 17-Jul-2016
+
+RESULT for GUILDS_1.2.1.tar.gz : success (235 of 701, 230 good, 5 bad) -- Now 22:01:11 This 18.2 sec, Avg 37.4 sec, exp. finish in 290.6 min at 02:51:49 on 17-Jul-2016
+
+RESULT for GUTS_1.0.0.tar.gz : success (236 of 701, 231 good, 5 bad) -- Now 22:01:26 This 14.3 sec, Avg 37.3 sec, exp. finish in 289.3 min at 02:50:41 on 17-Jul-2016
+
+RESULT for GxM_1.1.tar.gz : success (237 of 701, 232 good, 5 bad) -- Now 22:01:44 This 18.7 sec, Avg 37.2 sec, exp. finish in 288 min at 02:49:46 on 17-Jul-2016
+trying URL 'http://cran.rstudio.com/src/contrib/h5_0.9.8.tar.gz'
+Content type 'application/x-gzip' length 393742 bytes (384 KB)
+==================================================
+downloaded 384 KB
+
+Downloaded  h5_0.9.8.tar.gz 
+
+RESULT for h5_0.9.8.tar.gz : success (238 of 701, 233 good, 5 bad) -- Now 22:02:14 This 30 sec, Avg 37.2 sec, exp. finish in 287.2 min at 02:49:24 on 17-Jul-2016
+
+RESULT for hashmap_0.1.0.tar.gz : success (239 of 701, 234 good, 5 bad) -- Now 22:02:43 This 29 sec, Avg 37.2 sec, exp. finish in 286.3 min at 02:49:00 on 17-Jul-2016
+
+RESULT for haven_0.2.0.tar.gz : failure (240 of 701, 234 good, 6 bad) -- Now 22:03:01 This 18 sec, Avg 37.1 sec, exp. finish in 285 min at 02:48:04 on 17-Jul-2016
+
+RESULT for hawkes_0.0-4.tar.gz : success (241 of 701, 235 good, 6 bad) -- Now 22:03:18 This 16.9 sec, Avg 37 sec, exp. finish in 283.8 min at 02:47:06 on 17-Jul-2016
+
+RESULT for HDPenReg_0.93.1.tar.gz : success (242 of 701, 236 good, 6 bad) -- Now 22:04:53 This 95.2 sec, Avg 37.3 sec, exp. finish in 285 min at 02:49:54 on 17-Jul-2016
+
+RESULT for hierarchicalSets_1.0.2.tar.gz : success (243 of 701, 237 good, 6 bad) -- Now 22:05:36 This 42.4 sec, Avg 37.3 sec, exp. finish in 284.6 min at 02:50:09 on 17-Jul-2016
+
+RESULT for hit_0.2-2.tar.gz : success (244 of 701, 238 good, 6 bad) -- Now 22:06:09 This 32.8 sec, Avg 37.3 sec, exp. finish in 283.8 min at 02:49:56 on 17-Jul-2016
+
+RESULT for hkevp_1.1.2.tar.gz : success (245 of 701, 239 good, 6 bad) -- Now 22:06:37 This 28.2 sec, Avg 37.2 sec, exp. finish in 282.9 min at 02:49:30 on 17-Jul-2016
+
+RESULT for HLMdiag_0.3.1.tar.gz : success (246 of 701, 240 good, 6 bad) -- Now 22:07:29 This 52 sec, Avg 37.3 sec, exp. finish in 282.7 min at 02:50:12 on 17-Jul-2016
+
+RESULT for HSAR_0.4.0.tar.gz : success (247 of 701, 241 good, 6 bad) -- Now 22:08:24 This 55.6 sec, Avg 37.4 sec, exp. finish in 282.7 min at 02:51:04 on 17-Jul-2016
+
+RESULT for hsphase_2.0.1.tar.gz : success (248 of 701, 242 good, 6 bad) -- Now 22:08:52 This 27.8 sec, Avg 37.3 sec, exp. finish in 281.7 min at 02:50:37 on 17-Jul-2016
+
+RESULT for htmltools_0.3.5.tar.gz : success (249 of 701, 243 good, 6 bad) -- Now 22:09:07 This 14.5 sec, Avg 37.2 sec, exp. finish in 280.4 min at 02:49:33 on 17-Jul-2016
+
+RESULT for hts_5.0.tar.gz : success (250 of 701, 244 good, 6 bad) -- Now 22:09:48 This 41.2 sec, Avg 37.2 sec, exp. finish in 279.9 min at 02:49:44 on 17-Jul-2016
+
+RESULT for httpuv_1.3.3.tar.gz : success (251 of 701, 245 good, 6 bad) -- Now 22:10:10 This 22.5 sec, Avg 37.2 sec, exp. finish in 278.9 min at 02:49:03 on 17-Jul-2016
+
+RESULT for HUM_1.0.tar.gz : success (252 of 701, 246 good, 6 bad) -- Now 22:10:25 This 14.6 sec, Avg 37.1 sec, exp. finish in 277.6 min at 02:48:00 on 17-Jul-2016
+
+RESULT for humaniformat_0.6.0.tar.gz : success (253 of 701, 247 good, 6 bad) -- Now 22:10:42 This 17 sec, Avg 37 sec, exp. finish in 276.4 min at 02:47:04 on 17-Jul-2016
+also installing the dependencies ‘GenomicFeatures’, ‘genoset’
+
+trying URL 'http://cran.rstudio.com/src/contrib/humarray_1.0.2.tar.gz'
+Content type 'application/x-gzip' length 4946376 bytes (4.7 MB)
+==================================================
+downloaded 4.7 MB
+
+Downloaded  humarray_1.0.2.tar.gz 
+
+RESULT for humarray_1.0.2.tar.gz : success (254 of 701, 248 good, 6 bad) -- Now 22:13:46 This 183.7 sec, Avg 37.6 sec, exp. finish in 280.1 min at 02:53:49 on 17-Jul-2016
+
+RESULT for hunspell_1.4.2.tar.gz : success (255 of 701, 249 good, 6 bad) -- Now 22:14:27 This 41.5 sec, Avg 37.6 sec, exp. finish in 279.5 min at 02:54:00 on 17-Jul-2016
+
+RESULT for hypervolume_1.4.1.tar.gz : success (256 of 701, 250 good, 6 bad) -- Now 22:14:57 This 29.5 sec, Avg 37.6 sec, exp. finish in 278.7 min at 02:53:38 on 17-Jul-2016
+
+RESULT for hyphenatr_0.3.0.tar.gz : success (257 of 701, 251 good, 6 bad) -- Now 22:15:10 This 13.9 sec, Avg 37.5 sec, exp. finish in 277.4 min at 02:52:33 on 17-Jul-2016
+
+RESULT for iBATCGH_1.3.tar.gz : success (258 of 701, 252 good, 6 bad) -- Now 22:16:21 This 70.9 sec, Avg 37.6 sec, exp. finish in 277.7 min at 02:54:04 on 17-Jul-2016
+
+RESULT for IBHM_1.1-11.tar.gz : success (259 of 701, 253 good, 6 bad) -- Now 22:17:20 This 58.7 sec, Avg 37.7 sec, exp. finish in 277.7 min at 02:55:01 on 17-Jul-2016
+
+RESULT for ibm_0.1.0.tar.gz : success (260 of 701, 254 good, 6 bad) -- Now 22:17:33 This 13 sec, Avg 37.6 sec, exp. finish in 276.4 min at 02:53:54 on 17-Jul-2016
+
+RESULT for icamix_1.0.4.tar.gz : success (261 of 701, 255 good, 6 bad) -- Now 22:17:52 This 19.3 sec, Avg 37.5 sec, exp. finish in 275.2 min at 02:53:05 on 17-Jul-2016
+
+RESULT for iccbeta_1.0.tar.gz : success (262 of 701, 256 good, 6 bad) -- Now 22:18:24 This 31.8 sec, Avg 37.5 sec, exp. finish in 274.4 min at 02:52:50 on 17-Jul-2016
+
+RESULT for icd_2.0.1.tar.gz : success (263 of 701, 257 good, 6 bad) -- Now 22:22:02 This 217.3 sec, Avg 38.2 sec, exp. finish in 278.8 min at 03:00:49 on 17-Jul-2016
+
+RESULT for icd9_1.3.1.tar.gz : success (264 of 701, 258 good, 6 bad) -- Now 22:22:54 This 52.4 sec, Avg 38.2 sec, exp. finish in 278.5 min at 03:01:27 on 17-Jul-2016
+
+RESULT for icensmis_1.3.1.tar.gz : success (265 of 701, 259 good, 6 bad) -- Now 22:23:18 This 24.4 sec, Avg 38.2 sec, exp. finish in 277.5 min at 03:00:50 on 17-Jul-2016
+
+RESULT for icRSF_1.0.tar.gz : success (266 of 701, 260 good, 6 bad) -- Now 22:23:34 This 15.8 sec, Avg 38.1 sec, exp. finish in 276.3 min at 02:59:51 on 17-Jul-2016
+
+RESULT for iLaplace_1.0.0.tar.gz : success (267 of 701, 261 good, 6 bad) -- Now 22:23:54 This 20.1 sec, Avg 38 sec, exp. finish in 275.2 min at 02:59:04 on 17-Jul-2016
+
+RESULT for imager_0.20.tar.gz : success (268 of 701, 262 good, 6 bad) -- Now 22:25:38 This 103.7 sec, Avg 38.3 sec, exp. finish in 276.3 min at 03:01:56 on 17-Jul-2016
+
+RESULT for immer_0.5-0.tar.gz : success (269 of 701, 263 good, 6 bad) -- Now 22:26:30 This 52.5 sec, Avg 38.3 sec, exp. finish in 276 min at 03:02:33 on 17-Jul-2016
+
+RESULT for imputeMulti_0.5.3.tar.gz : success (270 of 701, 264 good, 6 bad) -- Now 22:26:47 This 16.7 sec, Avg 38.3 sec, exp. finish in 274.8 min at 03:01:37 on 17-Jul-2016
+
+RESULT for inarmix_0.4.tar.gz : success (271 of 701, 265 good, 6 bad) -- Now 22:27:26 This 38.7 sec, Avg 38.3 sec, exp. finish in 274.2 min at 03:01:38 on 17-Jul-2016
+
+RESULT for iptools_0.4.0.tar.gz : success (272 of 701, 266 good, 6 bad) -- Now 22:27:49 This 22.9 sec, Avg 38.2 sec, exp. finish in 273.2 min at 03:00:58 on 17-Jul-2016
+                                                                                                                                                                          
