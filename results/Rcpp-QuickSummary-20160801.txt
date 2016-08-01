@@ -1,0 +1,47 @@
+
+OVERVIEW
+========
+
+Rcpp 0.12.6.2 (with #523)
+
+  0   1 
+709  12 
+ [1] "AbsFilterGSEA"    "contoureR"   "datafsm"    "evolqg"      "kergp"    "magick"
+        "phylocurve"  "RcppGetconf"   "rplexos"    "sdcTable"    "seqHMM"   "smoof"
+
+
+DETAILS
+=======
+
+"AbsFilterGSEA"         [cannot install] "Package required but not available: ‘limma’"
+
+"contoureR"             [again] _internal_ unit test error with qhull
+
+"datafsm"		[again] Error in fitness(Pop[i, ], ...) : unused argument (maxfitness = 1)
+
+"evolqg"                [CHECK AGAINST CRAN Rcpp] possible _internal_ unit test error between complex and numeric
+                        [Same failure with Rcpp 0.12.5]
+
+"kergp"                 _internal_ unit test error with optim
+
+"magick"                [cannot install] libmagick++-dev missing; 
+
+"phylocurve"		[cannot install] "Package required but not available: ‘geomorph’"
+
+"RcppGetconf"           [spurious, version changed during test]
+
+"rplexos"               [same on CRAN] "Running examples in ‘rplexos-Ex.R’ failed"
+
+"sdcTable"              [same on CRAN] checking tests ... ERROR: ... Error in glp_call_interface(obj, n_of_objective_vars, get.simpleTriplet(mat,  : argument "presolve" is missing, with no default
+
+"seqHMM"                [spurious, version changed during test]
+
+"smoof"                 [cannot install] "Package required but not available: ‘ParamHelpers’"
+
+
+SUMMARY
+=======
+
+Several known previous failures; several failures also occurring on CRAN; several spurious failures.
+
+No other new issues related to Rcpp as far as we can tell
