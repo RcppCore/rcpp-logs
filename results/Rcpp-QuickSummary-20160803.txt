@@ -1,0 +1,46 @@
+
+OVERVIEW
+========
+
+Rcpp 0.12.6.3 (with #527, #528, #529)
+
+  0   1 
+712  12 
+[1] "AbsFilterGSEA"     "coala"  "Compositional" "contoureR"    "datafsm"  "evolqg"
+        "glamlasso"     "kergp"     "phylocurve"   "rplexos"   "sdcTable"   "smoof"
+
+DETAILS
+=======
+
+"AbsFilterGSEA"         [cannot install] "Package required but not available: ‘limma’"
+
+"coala"                 [testthat error] -- also fails with Rcpp 0.12.6 from CRAN]
+
+"Compositional"         [examples error] 'caught segfault' -- spurious, passes later
+
+"contoureR"             [again] _internal_ unit test error with qhull
+
+"datafsm"		[again] Error in fitness(Pop[i, ], ...) : unused argument (maxfitness = 1)
+
+"evolqg"                [CHECK AGAINST CRAN Rcpp] possible _internal_ unit test error between complex and numeric
+                        [Same failure with Rcpp 0.12.5]
+
+"glamlasso"             [does not build, Armadillo/C++11 issue?]
+
+"kergp"                 _internal_ unit test error with optim
+
+"phylocurve"		[cannot install] "Package required but not available: ‘geomorph’"
+
+"rplexos"               [same on CRAN] "Running examples in ‘rplexos-Ex.R’ failed"
+
+"sdcTable"              [same on CRAN] checking tests ... ERROR: ... Error in glp_call_interface(obj, n_of_objective_vars, get.simpleTriplet(mat,  : argument "presolve" is missing, with no default
+
+"smoof"                 [cannot install] "Package required but not available: ‘ParamHelpers’"
+
+
+SUMMARY
+=======
+
+Several known previous failures; several failures also occurring on CRAN; one spurious failure.
+
+No other new issues related to Rcpp as far as we can tell
