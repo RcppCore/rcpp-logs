@@ -1,0 +1,59 @@
+
+OVERVIEW
+========
+
+Rcpp 0.12.6.4 (with #527, #528, #529)
+
+  0   1 
+744  12 
+ [1] "Compositional" "contoureR"     "datafsm"       "Directional"   "evolqg"
+ [6]         "kergp"      "mice"        "move"          "rstanarm"     "sbrl"
+[11]         "walkr"      "wand"         
+
+
+Of those twelve, seven were due to missing depends or a stale local package (RcppZiggurat)
+
+
+DETAILS
+=======
+
+Can Be Fixed Easily Via Dependencies
+------------------------------------
+
+"Compositional"         [spurious] RcppZiggurat cannot be loaded; passes once RcppZiggurat reinstalled
+
+"Directional"           [spurious] RcppZiggurat cannot be loaded; passes once RcppZiggurat reinstalled
+
+"mice"                  [internal] "Package 'pan' needed "
+
+"move"                  [internal] "The package adehabitatHR can't be loaded, probably it needs to be installed"
+
+"rstanarm"              [internal] "Package required but not available: ‘shinystan’"
+
+"walkr"                 [internal] "Package required but not available: ‘shinystan’"
+
+"wand"                  [libmagic-dev missing]
+
+
+Other Issue Possibly Due to Package Itself
+------------------------------------------
+
+"contoureR"             [again] _internal_ unit test error with qhull
+
+"datafsm"		[again] Error in fitness(Pop[i, ], ...) : unused argument (maxfitness = 1)
+
+"evolqg"                [CHECK AGAINST CRAN Rcpp] possible _internal_ unit test error between complex and numeric
+                        [Same failure with Rcpp 0.12.5]
+
+"kergp"                 _internal_ unit test error with optim
+
+"sbrl"                  [internal ?] seg.fault
+
+
+
+SUMMARY
+=======
+
+Several known previous failures; several failures also occurring on CRAN; one spurious failure.
+
+No other new issues related to Rcpp as far as we can tell
