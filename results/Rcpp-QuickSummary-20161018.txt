@@ -1,0 +1,63 @@
+
+OVERVIEW
+========
+
+Again Rcpp 0.12.7.2 (with #557), this time 'active'
+
+  0   1 
+792  11 
+ [1] "contoureR"    "datafsm"      "evolqg"       "forecast"     "humarray"     "kergp"
+ [7] "openxlsx"     "Rblpapi"      "RcppExamples" "rpg"          "RQuantLib" 
+
+
+Of those eleven,
+
+  - six were known
+
+  - four of five fail because of a missing `operator double()` which was since added.
+
+
+
+DETAILS
+=======
+
+Previously Known Failures
+-------------------------
+
+"contoureR"             [again] _internal_ unit test error with qhull
+
+"datafsm"		[again] Error in fitness(Pop[i, ], ...) : unused argument (maxfitness = 1)
+
+"evolqg"                [CHECK AGAINST CRAN Rcpp] possible _internal_ unit test error between complex and numeric
+                        [Same failure with Rcpp 0.12.5]
+
+"forecast"              _internal_ unit test error also present with Rcpp 0.12.7
+
+"humarray"              _internal_ unit test error: 'couldn't reach t1dbase website at: http://www.immunobase.org/....'
+
+"kergp"                 _internal_ unit test error with optim
+
+
+New Failures 
+-------------
+
+"openxlsx"		error: cannot convert ‘Rcpp::Date’ to ‘Rcpp::traits::storage_type<14>::type {aka double}’ in assignment
+                        [passes with updated Rcpp PR #557]
+                        
+"Rblpapi"		error: cannot convert ‘Rcpp::Date’ to ‘Rcpp::traits::storage_type<14>::type {aka double}’ in assignment
+                        [passes with updated Rcpp PR #557]
+
+"RcppExamples"		need to update one example
+
+"rpg"			error: cannot convert ‘Rcpp::Date’ to ‘Rcpp::traits::storage_type<14>::type {aka double}’ in assignment
+                        [passes with updated Rcpp PR #557]
+
+"RQuantLib" 		error: cannot convert ‘Rcpp::Date’ to ‘Rcpp::traits::storage_type<14>::type {aka double}’ in assignment
+                        [has another issue]       
+
+
+SUMMARY
+=======
+
+No significant issues; RcppExamples and RQuantLib will be addressed
+
