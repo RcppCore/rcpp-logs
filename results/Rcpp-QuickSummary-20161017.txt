@@ -1,0 +1,37 @@
+
+OVERVIEW
+========
+
+Rcpp 0.12.7.2 (with #557)
+
+  0   1 
+794   7 
+[1] "contoureR" "datafsm"   "evolqg"    "forecast"  "humarray"  "kergp"     "stpm"     
+
+
+Of those seven, one was spurious and all six others were due to internals in those packages
+
+
+DETAILS
+=======
+
+"contoureR"             [again] _internal_ unit test error with qhull
+
+"datafsm"		[again] Error in fitness(Pop[i, ], ...) : unused argument (maxfitness = 1)
+
+"evolqg"                [CHECK AGAINST CRAN Rcpp] possible _internal_ unit test error between complex and numeric
+                        [Same failure with Rcpp 0.12.5]
+
+"forecast"              _internal_ unit test error also present with Rcpp 0.12.7
+
+"humarray"              _internal_ unit test error: 'couldn't reach t1dbase website at: http://www.immunobase.org/....'
+
+"kergp"                 _internal_ unit test error with optim
+
+"stpm"                  _spurious_, version upgraded during test run; old and new version pass
+
+SUMMARY
+=======
+
+No Rcpp issues
+
