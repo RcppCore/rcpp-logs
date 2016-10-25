@@ -1,0 +1,57 @@
+
+OVERVIEW
+========
+
+Again Rcpp 0.12.7.5
+
+0   1 
+798   9 
+[1] "bootTimeInference" "contoureR"  "datafsm"       "evolqg"
+[5]          "forecast"  "humarray"    "kergp" "RcppExamples"
+[9]         "RQuantLib"
+
+Of those nine,
+
+  - six were known previously and a 'constant'
+
+  - two were introduced with the new date(time) vectors (which was active during the test)
+
+  - only one is new: 'bootTimeInference"
+
+
+DETAILS
+=======
+
+New issue
+---------
+
+"bootTimeInference"     "boot_time_inference.cpp:382:52: error: ambiguous overload for ‘operator-’ (operand types are ‘Rcpp::Range’ and ‘int’)"
+
+
+Previously Known Failures
+-------------------------
+
+"contoureR"             [again] _internal_ unit test error with qhull
+
+"datafsm"		[again] Error in fitness(Pop[i, ], ...) : unused argument (maxfitness = 1)
+
+"evolqg"                [CHECK AGAINST CRAN Rcpp] possible _internal_ unit test error between complex and numeric
+                        [Same failure with Rcpp 0.12.5]
+
+"forecast"              _internal_ unit test error also present with Rcpp 0.12.7
+
+"humarray"              _internal_ unit test error: 'couldn't reach t1dbase website at: http://www.immunobase.org/....'
+
+"kergp"                 _internal_ unit test error with optim
+
+"RcppExamples"		need to update one example
+
+"RQuantLib" 		error: cannot convert ‘Rcpp::Date’ to ‘Rcpp::traits::storage_type<14>::type {aka double}’ in assignment
+                        [has another issue]       
+
+
+SUMMARY
+=======
+
+No significant issues; RcppExamples and RQuantLib will be addressed
+
