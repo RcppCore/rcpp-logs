@@ -1,0 +1,67 @@
+
+OVERVIEW
+========
+
+Again Rcpp 0.12.7.6 (with "old" date[time] vectors)
+
+  0   1 
+814  11 
+ [1] "contoureR"    "datafsm"    "evolqg"  "forecast"  "gdtools"   "humarray"  "sbrl"  "sf"
+ [9]   "svglite"  "tesseract" "textmineR"
+Ended at  2016-11-08 05:40:28.1146 
+
+
+
+Of those eleven
+
+  - two were due a missing package
+
+  - one was a runwaway simulation 
+
+  - one required new system build-depends
+
+
+DETAILS
+=======
+
+
+Spurious
+--------
+
+"textmineR"             killed after two hours
+
+Previously Known Failures
+-------------------------
+
+"contoureR"             [again] _internal_ unit test error with qhull
+
+"datafsm"		[again] Error in fitness(Pop[i, ], ...) : unused argument (maxfitness = 1)
+
+"evolqg"                [CHECK AGAINST CRAN Rcpp] possible _internal_ unit test error between complex and numeric
+                        [Same failure with Rcpp 0.12.5]
+
+"forecast"              _internal_ unit test error also present with Rcpp 0.12.7
+
+"humarray"              _internal_ unit test error: 'couldn't reach t1dbase website at: http://www.immunobase.org/....'
+
+
+New failures
+------------
+
+"gdtools"               Error in loadNamespace(name) : there is no package called 'fontquiver'
+
+"sbrl"                  *** caught segfault ***, address 0x20e272cc0, cause 'memory not mapped'
+                        [ goes away after re-installing dependency arules ]
+                        
+"sf"                    uninstallable with given versions of gdal & geos
+
+"svglite"		Error in loadNamespace(name) : there is no package called 'fontquiver'
+
+"tesseract"		uninstallable for lack of libtesseract-dev libleptonica-dev
+
+
+SUMMARY
+=======
+
+No significant issues
+

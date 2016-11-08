@@ -1,0 +1,57 @@
+
+OVERVIEW
+========
+
+Again Rcpp 0.12.7.5 (with "old" date[time] vectors)
+
+  0   1
+801   8
+[1] "contoureR"  "datafsm"    "evolqg"     "forecast"   "humarray"   "kergp"      "Mposterior" "sf"
+
+Of those nine,
+
+  - six were known previously and a 'constant'
+
+  - one was a runwaway simulation (Mposterior) killed after two+ hours
+
+  - sf is a brandnew package and this looks internal to it
+
+
+DETAILS
+=======
+
+New issue
+---------
+
+"sf"                    gdal_geom.cpp:49:19: error: ‘class OGRGeometry’ has no member named ‘DelaunayTriangulation’
+    out[i] = g[i]->DelaunayTriangulation(dTolerance, bOnlyEdges);
+
+
+Spurious
+--------
+
+Mposterior              killed after two hours
+
+Previously Known Failures
+-------------------------
+
+"contoureR"             [again] _internal_ unit test error with qhull
+
+"datafsm"		[again] Error in fitness(Pop[i, ], ...) : unused argument (maxfitness = 1)
+
+"evolqg"                [CHECK AGAINST CRAN Rcpp] possible _internal_ unit test error between complex and numeric
+                        [Same failure with Rcpp 0.12.5]
+
+"forecast"              _internal_ unit test error also present with Rcpp 0.12.7
+
+"humarray"              _internal_ unit test error: 'couldn't reach t1dbase website at: http://www.immunobase.org/....'
+
+"kergp"                 _internal_ unit test error with optim
+
+
+
+SUMMARY
+=======
+
+No significant issues
+
