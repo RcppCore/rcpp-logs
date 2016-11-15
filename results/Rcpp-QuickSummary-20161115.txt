@@ -1,0 +1,60 @@
+
+OVERVIEW
+========
+
+Again Rcpp 0.12.7.8 (with exceptions fix)
+
+  0   1
+  826  10
+   [1] "contoureR"  "datafsm"  "evolqg"    "forecast"  "gapfill"   "humarray"  "quanteda"
+   [8] "RQuantLib" "rstanarm"  "vdiffr" 
+Ended at  2016-11-15 05:15:09.78237
+
+Of those ten
+
+  - five are recurring
+
+  - four seem ggplot2 related
+
+  - one is unrelated
+
+DETAILS
+=======
+
+
+Previously Known Failures
+-------------------------
+
+"contoureR"             [again] _internal_ unit test error with qhull
+
+"datafsm"		[again] Error in fitness(Pop[i, ], ...) : unused argument (maxfitness = 1)
+
+"evolqg"                [CHECK AGAINST CRAN Rcpp] possible _internal_ unit test error between complex and numeric
+                        [Same failure with Rcpp 0.12.5]
+
+"forecast"              _internal_ unit test error also present with Rcpp 0.12.7
+
+"humarray"              _internal_ unit test error: 'couldn't reach t1dbase website at: http://www.immunobase.org/....'
+
+New failures
+------------
+
+"gapfill"               Test failure, plotting related, maybe ggplot2?
+
+"quanteda"              Test failure, plotting related, maybe ggplot2?
+
+"rstanarm"              Test failure, plotting related, maybe ggplot2?
+
+"vdiffr"                Test failure, plotting related, maybe ggplot2?
+
+Other
+-----
+
+"RQuantLib"             interaction with QL 1.9, now fixed upstream and in .deb package
+
+
+SUMMARY
+=======
+
+No significant issues
+

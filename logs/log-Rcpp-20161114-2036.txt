@@ -1,0 +1,2643 @@
+Started at  2016-11-14 20:36:06.507046 
+Rcpp version is 0.12.7.8 on dirk5930ub 
+R version 3.3.2 (2016-10-31) -- "Sincere Pumpkin Patch" 
+  [1] "AbsFilterGSEA"            "accelerometry"            "acebayes"                 "ACEt"                     "AdaptiveSparsity"         "ADMMnet"                  "AhoCorasickTrie"         
+  [8] "AHR"                      "alakazam"                 "algstat"                  "AlignStat"                "ALKr"                     "Amelia"                   "anytime"                 
+ [15] "apcluster"                "arrApply"                 "ASPBay"                   "aSPU"                     "autovarCore"              "BaBooN"                   "BacArena"                
+ [22] "BalancedSampling"         "BAMMtools"                "Barycenter"               "batman"                   "bayesAB"                  "BayesBD"                  "BayesComm"               
+ [29] "BayesFactor"              "bayesImageS"              "bayesm"                   "bayou"                    "bcp"                      "bcpa"                     "BCSub"                   
+ [36] "beanz"                    "BEDMatrix"                "BeviMed"                  "bfa"                      "bfp"                      "bifactorial"              "bife"                    
+ [43] "BIFIEsurvey"              "biganalytics"             "bigFastlm"                "biglasso"                 "bigmemory"                "BigQuic"                  "bigReg"                  
+ [50] "bigtabulate"              "BigVAR"                   "bio3d"                    "Biocomb"                  "BIPOD"                    "biwavelet"                "blackbox"                
+ [57] "blockcluster"             "blockmodels"              "blockseg"                 "bmlm"                     "bnnSurvival"              "bootTimeInference"        "brainGraph"              
+ [64] "bsearchtools"             "btb"                      "btf"                      "BTLLasso"                 "BTR"                      "BuyseTest"                "bvarsv"                  
+ [71] "bWGR"                     "BWStest"                  "CARBayes"                 "CARBayesST"               "catlearn"                 "ccaPP"                    "cccp"                    
+ [78] "ccdrAlgorithm"            "cda"                      "CDF.PSIdekick"            "CDM"                      "CFC"                      "cgAUC"                    "ChannelAttribution"      
+ [85] "chopthin"                 "CIDnetworks"              "cIRT"                     "cladoRcpp"                "classify"                 "clere"                    "climdex.pcic"            
+ [92] "clogitboost"              "clogitL1"                 "clusrank"                 "ClusterR"                 "ClusterStability"         "clusteval"                "ClustMMDD"               
+ [99] "ClustVarLV"               "CMF"                      "coala"                    "collUtils"                "combiter"                 "CompGLM"                  "Compositional"           
+[106] "ConConPiWiFun"            "coneproj"                 "contoureR"                "copCAR"                   "cord"                     "CorReg"                   "Countr"                  
+[113] "covafillr"                "Coxnet"                   "CoxPlus"                  "cpgen"                    "crawl"                    "creditr"                  "Crossover"               
+[120] "ctmcd"                    "cycleRtools"              "Cyclops"                  "D3M"                      "darch"                    "datafsm"                  "dbmss"                   
+[127] "dbscan"                   "ddalpha"                  "ddR"                      "DDRTree"                  "deepboost"                "Delaporte"                "DeLorean"                
+[134] "dendextendRcpp"           "densityClust"             "DepthProc"                "DescTools"                "DetMCD"                   "DetR"                     "dfcomb"                  
+[141] "dfmta"                    "dfphase1"                 "dfpk"                     "diagis"                   "diffrprojects"            "DiffusionRgqd"            "DiffusionRimp"           
+[148] "DiffusionRjgqd"           "dils"                     "dina"                     "Directional"              "disclapmix"               "discretecdAlgorithm"      "diversitree"             
+[155] "diveRsity"                "divo"                     "DLMtool"                  "DNAprofiles"              "DNAtools"                 "dnc"                      "dplyr"                   
+[162] "drgee"                    "dslice"                   "DStree"                   "dtwclust"                 "easyVerification"         "EBMAforecast"             "ECctmc"                  
+[169] "ecp"                      "EditImputeCont"           "eDMA"                     "eggCounts"                "eive"                     "EloChoice"                "EMbC"                    
+[176] "emil"                     "emIRT"                    "energy"                   "EPGLM"                    "erah"                     "ESGtoolkit"               "EstHer"                  
+[183] "evolqg"                   "EWGoF"                    "exif"                     "extraDistr"               "factorstochvol"           "fastAdaboost"             "FastBandChol"            
+[190] "fastcmh"                  "fasteraster"              "fastGHQuad"               "FastGP"                   "FastHCS"                  "fastM"                    "FastPCS"                 
+[197] "FastRCS"                  "FBFsearch"                "fbroc"                    "FCNN4R"                   "fdaMixed"                 "fdapace"                  "fdaPDE"                  
+[204] "fdasrvf"                  "FDGcopulas"               "FDRreg"                   "feather"                  "FeatureHashing"           "ffstream"                 "FIACH"                   
+[211] "fICA"                     "FisHiCal"                 "FIT"                      "flam"                     "flan"                     "flars"                    "flip"                    
+[218] "flock"                    "FLSSS"                    "forecast"                 "forecastSNSTS"            "forega"                   "forestFloor"              "fourierin"               
+[225] "fourPNO"                  "fractional"               "frailtySurv"              "FRESA.CAD"                "fromo"                    "FSInteract"               "fugeR"                   
+[232] "FunChisq"                 "Funclustering"            "futureheatwaves"          "fwsim"                    "gamreg"                   "gapfill"                  "GAS"                     
+[239] "gaselect"                 "gaston"                   "GauPro"                   "gcKrig"                   "GCPM"                     "gdm"                      "gdpc"                    
+[246] "gdtools"                  "GEEaSPU"                  "geiger"                   "GeneticTools"             "genie"                    "GENLIB"                   "GenomicTools"            
+[253] "geoCount"                 "geohash"                  "GERGM"                    "ggdmc"                    "ggrepel"                  "GiRaF"                    "gjam"                    
+[260] "gkmSVM"                   "glamlasso"                "glcm"                     "glmBfp"                   "glmgraph"                 "glmmsr"                   "GMCM"                    
+[267] "Gmedian"                  "Gmisc"                    "gmum.r"                   "gmwm"                     "gMWT"                     "gogamer"                  "goldi"                   
+[274] "googleway"                "GPareto"                  "GPvam"                    "gRain"                    "graphicalVAR"             "graphql"                  "gRbase"                  
+[281] "gRim"                     "growcurves"               "growfunctions"            "GSE"                      "gsEasy"                   "GUILDS"                   "GUTS"                    
+[288] "GxM"                      "h5"                       "hashmap"                  "haven"                    "hawkes"                   "HDPenReg"                 "hierarchicalSets"        
+[295] "hit"                      "hkevp"                    "HLMdiag"                  "HSAR"                     "hsphase"                  "htdp"                     "htmltidy"                
+[302] "htmltools"                "hts"                      "httpuv"                   "HUM"                      "humaniformat"             "humarray"                 "hunspell"                
+[309] "hypervolume"              "hyphenatr"                "IAPWS95"                  "iBATCGH"                  "IBHM"                     "ibm"                      "icamix"                  
+[316] "ICAOD"                    "iccbeta"                  "icd"                      "icd9"                     "icensmis"                 "icRSF"                    "IHSEP"                   
+[323] "iLaplace"                 "imager"                   "immer"                    "imputeMulti"              "inarmix"                  "inca"                     "indelmiss"               
+[330] "IntegratedMRF"            "iprior"                   "iptools"                  "IRTpp"                    "IsingSampler"             "isoph"                    "ISOpureR"                
+[337] "IsoSpecR"                 "iterpc"                   "JacobiEigen"              "JAGUAR"                   "jiebaR"                   "jmcm"                     "jmotif"                  
+[344] "joinXL"                   "JOUSBoost"                "jqr"                      "JSM"                      "jtGWAS"                   "jwutil"                   "kamila"                  
+[351] "kdecopula"                "kergp"                    "kernDeepStackNet"         "KernelKnn"                "KernSmoothIRT"            "kmc"                      "kmeans.ddR"              
+[358] "Kmisc"                    "KODAMA"                   "l0ara"                    "LaF"                      "LambertW"                 "lamW"                     "Langevin"                
+[365] "largeVis"                 "LassoBacktracking"        "lasvmR"                   "LatentREGpp"              "lbfgs"                    "lclGWAS"                  "lcopula"                 
+[372] "lexRankr"                 "lfl"                      "lifecontingencies"        "lm.br"                    "lme4"                     "lowmemtkmeans"            "lpme"                    
+[379] "lsbclust"                 "lsgl"                     "lucr"                     "Luminescence"             "magick"                   "MAINT.Data"               "ManifoldOptim"           
+[386] "marked"                   "markophylo"               "markovchain"              "MAT"                      "matchingMarkets"          "matchingR"                "MatchItSE"               
+[393] "mateable"                 "MatrixCorrelation"        "MatrixLDA"                "maxent"                   "mbbefd"                   "mcemGLM"                  "mcga"                    
+[400] "mcIRT"                    "mcmcse"                   "mcPAFit"                  "medfate"                  "MediaK"                   "MEGENA"                   "MESS"                    
+[407] "metafolio"                "MetaheuristicFPA"         "meteoland"                "mets"                     "mev"                      "mgm"                      "mice"                    
+[414] "microclass"               "milr"                     "minimaxdesign"            "minqa"                    "mirt"                     "mirtCAT"                  "miscF"                   
+[421] "miscset"                  "MiSPU"                    "missDeaths"               "MixAll"                   "MixedDataImpute"          "mixedMem"                 "mixpack"                 
+[428] "mkde"                     "mlmc"                     "mlxR"                     "mmand"                    "ModelMetrics"             "Morpho"                   "move"                    
+[435] "moveHMM"                  "moveWindSpeed"            "mp"                       "Mposterior"               "MPTinR"                   "MRS"                      "MSGARCH"                 
+[442] "msgl"                     "MTS"                      "MultiBD"                  "multicool"                "MultivariateRandomForest" "mvabund"                  "MVB"                     
+[449] "mvcluster"                "mvnfast"                  "mwaved"                   "myTAI"                    "nabor"                    "NAM"                      "ndjson"                  
+[456] "ndl"                      "netcoh"                   "netdiffuseR"              "NetRep"                   "NetSim"                   "neuroim"                  "ngspatial"               
+[463] "NHMM"                     "nmfgpu4R"                 "NNLM"                     "noncompliance"            "nonlinearTseries"         "NPBayesImpute"            "NPflow"                  
+[470] "nprobust"                 "oapackage"                "odeintr"                  "oem"                      "OjaNP"                    "olctools"                 "OneArmPhaseTwoStudy"     
+[477] "onlinePCA"                "ontologySimilarity"       "openair"                  "OpenImageR"               "OpenMx"                   "openxlsx"                 "optmatch"                
+[484] "orQA"                     "oXim"                     "PAC"                      "packcircles"              "PACVB"                    "PAFit"                    "pander"                  
+[491] "PanelCount"               "partialAR"                "pcalg"                    "pcIRT"                    "pdftools"                 "PedCNV"                   "pedometrics"             
+[498] "PenCoxFrail"              "penMSM"                   "perccal"                  "PerMallows"               "ph2bayes"                 "ph2bye"                   "phonics"                 
+[505] "phybreak"                 "phylobase"                "phylocurve"               "phylosignal"              "Pijavski"                 "pirate"                   "plac"                    
+[512] "planar"                   "plotSEMM"                 "plyr"                     "poisDoubleSamp"           "polyfreqs"                "polywog"                  "PoweR"                   
+[519] "PP"                       "PPtreeViz"                "prclust"                  "precrec"                  "PReMiuM"                  "primes"                   "ProbitSpatial"           
+[526] "pROC"                     "prodlim"                  "ProFit"                   "ProNet"                   "propagate"                "propr"                    "prospectr"               
+[533] "protolite"                "prototest"                "protViz"                  "pryr"                     "psd"                      "psgp"                     "purrr"                   
+[540] "pvar"                     "PWD"                      "pystr"                    "qrencoder"                "QRM"                      "quadrupen"                "quanteda"                
+[547] "quantspec"                "QuantTools"               "qVarSel"                  "qwraps2"                  "radiomics"                "rags2ridges"              "ragt2ridges"             
+[554] "randomUniformForest"      "ranger"                   "Rankcluster"              "rankdist"                 "raptr"                    "raster"                   "Rblpapi"                 
+[561] "Rborist"                  "Rclusterpp"               "RcppAnnoy"                "RcppAPT"                  "RcppArmadillo"            "RcppBDT"                  "RcppCCTZ"                
+[568] "RcppClassic"              "RcppClassicExamples"      "RcppCNPy"                 "RcppDE"                   "RcppDL"                   "RcppEigen"                "RcppExamples"            
+[575] "RcppFaddeeva"             "RcppGetconf"              "RcppGSL"                  "RcppHoney"                "RcppMLPACK"               "RcppNumerical"            "RcppOctave"              
+[582] "RcppProgress"             "RcppRedis"                "RcppRoll"                 "RcppShark"                "RcppSMC"                  "RcppStreams"              "RcppTOML"                
+[589] "RcppXts"                  "RcppZiggurat"             "rcss"                     "readr"                    "readstata13"              "readxl"                   "RealVAMS"                
+[596] "recexcavAAR"              "recmap"                   "reconstructr"             "recosystem"               "redist"                   "rEDM"                     "regsem"                  
+[603] "relSim"                   "rem"                      "remote"                   "ReorderCluster"           "repolr"                   "resemble"                 "reshape2"                
+[610] "revealedPrefs"            "rexpokit"                 "Rfast"                    "rflann"                   "rforensicbatwing"         "rFTRLProximal"            "rgam"                    
+[617] "rgeolocate"               "RI2by2"                   "RInside"                  "Rip46"                    "ripa"                     "rivr"                     "rkvo"                    
+[624] "Rlibeemd"                 "RLRsim"                   "Rmalschains"              "rmgarch"                  "Rmixmod"                  "RmixmodCombi"             "rmumps"                  
+[631] "rncl"                     "RNifti"                   "RNiftyReg"                "robustgam"                "RobustGaSP"               "robustHD"                 "robustreg"               
+[638] "rococo"                   "roll"                     "rollply"                  "rootWishart"              "rotations"                "RoughSets"                "roxygen2"                
+[645] "rpf"                      "rpg"                      "Rphylopars"               "rplexos"                  "rpms"                     "rPref"                    "RProtoBuf"               
+[652] "RPtests"                  "RQuantLib"                "RSNNS"                    "RSNPset"                  "Rsomoclu"                 "RSpectra"                 "RSSL"                    
+[659] "rstan"                    "rstanarm"                 "rstpm2"                   "rtext"                    "rtk"                      "rtkore"                   "rtkpp"                   
+[666] "Rtsne"                    "Ruchardet"                "rucrdtw"                  "rugarch"                  "Rvcg"                     "rvg"                      "RVowpalWabbit"           
+[673] "rwfec"                    "rwirelesscom"             "Ryacas"                   "s2"                       "saeRobust"                "SAMM"                     "saturnin"                
+[680] "sbfc"                     "sBIC"                     "sbmSDP"                   "sbrl"                     "SBSA"                     "scales"                   "SciencesPo"              
+[687] "scorer"                   "scoringRules"             "scrm"                     "scrypt"                   "scvxclustr"               "sdcMicro"                 "sdcTable"                
+[694] "SEERaBomb"                "segmag"                   "seismicRoll"              "SelvarMix"                "seqHMM"                   "sequences"                "sgd"                     
+[701] "sglOptim"                 "sharpeRratio"             "signalHsmm"               "simFrame"                 "simmer"                   "simPop"                   "SimReg"                  
+[708] "simstudy"                 "sirt"                     "sitmo"                    "slfm"                     "SLOPE"                    "smam"                     "smoof"                   
+[715] "smooth"                   "SnakeCharmR"              "snipEM"                   "snowboot"                 "snplist"                  "SocialNetworks"           "SOD"                     
+[722] "sourceR"                  "spacodiR"                 "spaMM"                    "SparseFactorAnalysis"     "sparseHessianFD"          "sparseLTSEigen"           "sparsereg"               
+[729] "spass"                    "spatgraphs"               "SpatialEpi"               "SpatialTools"             "SpatMCA"                  "SpatPCA"                  "spBayesSurv"             
+[736] "spduration"               "spectral"                 "spray"                    "spsann"                   "SSL"                      "starma"                   "StatMethRank"            
+[743] "staTools"                 "steadyICA"                "StepwiseTest"             "StereoMorph"              "stlplus"                  "stm"                      "StMoSim"                 
+[750] "stochvol"                 "stocks"                   "stosim"                   "stpm"                     "strataG"                  "stream"                   "stremr"                  
+[757] "strum"                    "SuperRanker"              "survAccuracyMeasures"     "surveillance"             "surveybootstrap"          "survSNP"                  "svglite"                 
+[764] "SVMMatch"                 "synchronicity"            "synlik"                   "synthACS"                 "systemicrisk"             "tagcloud"                 "TAM"                     
+[771] "TAQMNGR"                  "TauStar"                  "tbart"                    "tcR"                      "TDA"                      "TED"                      "tensorBSS"               
+[778] "termstrc"                 "TESS"                     "tesseract"                "text2vec"                 "textmineR"                "textreg"                  "textreuse"               
+[785] "TFMPvalue"                "tibble"                   "tidyr"                    "timma"                    "TMB"                      "tmg"                      "tmlenet"                 
+[792] "tnam"                     "tokenizers"               "TransferEntropy"          "TreeBUGS"                 "treeclim"                 "treeplyr"                 "treescape"               
+[799] "triebeard"                "trustOptim"               "tsBSS"                    "TSS.RESTREND"             "tvd"                      "tweenr"                   "UncerIn2"                
+[806] "unmarked"                 "unsystation"              "urltools"                 "V8"                       "validatejsonr"            "varband"                  "VarSelLCM"               
+[813] "vcfR"                     "vdiffr"                   "velox"                    "VideoComparison"          "VIM"                      "vita"                     "VNM"                     
+[820] "waffect"                  "walkr"                    "wand"                     "wCorr"                    "webreadr"                 "wingui"                   "wordcloud"               
+[827] "wordspace"                "wrswoR"                   "wsrf"                     "XBRL"                     "xml2"                     "xyz"                      "yakmoR"                  
+[834] "yCrypticRNAs"             "yuima"                    "zic"                     
+
+RESULT for AbsFilterGSEA_1.5.tar.gz : success (1 of 836, 1 good, 0 bad) -- Now 20:37:13 This 63.8 sec, Avg 63.8 sec, exp. finish in 887.8 min at 11:25:00 on 15-Nov-2016
+
+RESULT for accelerometry_2.2.5.tar.gz : success (2 of 836, 2 good, 0 bad) -- Now 20:37:38 This 24.5 sec, Avg 44.2 sec, exp. finish in 613.8 min at 06:51:28 on 15-Nov-2016
+
+RESULT for acebayes_1.2.tar.gz : success (3 of 836, 3 good, 0 bad) -- Now 20:38:02 This 23.9 sec, Avg 37.4 sec, exp. finish in 519.2 min at 05:17:16 on 15-Nov-2016
+
+RESULT for ACEt_1.7.0.tar.gz : success (4 of 836, 4 good, 0 bad) -- Now 20:38:30 This 28.7 sec, Avg 35.2 sec, exp. finish in 488.5 min at 04:47:02 on 15-Nov-2016
+
+RESULT for AdaptiveSparsity_1.4.tar.gz : success (5 of 836, 5 good, 0 bad) -- Now 20:38:46 This 15.4 sec, Avg 31.3 sec, exp. finish in 433.1 min at 03:51:52 on 15-Nov-2016
+
+RESULT for ADMMnet_0.1.tar.gz : success (6 of 836, 6 good, 0 bad) -- Now 20:39:16 This 30.3 sec, Avg 31.1 sec, exp. finish in 430.5 min at 03:49:44 on 15-Nov-2016
+
+RESULT for AhoCorasickTrie_0.1.0.tar.gz : success (7 of 836, 7 good, 0 bad) -- Now 20:39:35 This 18.7 sec, Avg 29.3 sec, exp. finish in 405.5 min at 03:25:05 on 15-Nov-2016
+
+RESULT for AHR_1.4.2.tar.gz : success (8 of 836, 8 good, 0 bad) -- Now 20:40:04 This 29.6 sec, Avg 29.4 sec, exp. finish in 405.4 min at 03:25:26 on 15-Nov-2016
+
+RESULT for alakazam_0.2.5.tar.gz : success (9 of 836, 9 good, 0 bad) -- Now 20:40:37 This 32.1 sec, Avg 29.7 sec, exp. finish in 409.1 min at 03:29:42 on 15-Nov-2016
+
+RESULT for algstat_0.0.2.tar.gz : success (10 of 836, 10 good, 0 bad) -- Now 20:41:03 This 26 sec, Avg 29.3 sec, exp. finish in 403.6 min at 03:24:37 on 15-Nov-2016
+
+RESULT for AlignStat_1.3.1.tar.gz : success (11 of 836, 11 good, 0 bad) -- Now 20:41:20 This 17.4 sec, Avg 28.2 sec, exp. finish in 388.1 min at 03:09:28 on 15-Nov-2016
+
+RESULT for ALKr_0.5.3.1.tar.gz : success (12 of 836, 12 good, 0 bad) -- Now 20:41:39 This 19.3 sec, Avg 27.5 sec, exp. finish in 377.4 min at 02:59:05 on 15-Nov-2016
+
+RESULT for Amelia_1.7.4.tar.gz : success (13 of 836, 13 good, 0 bad) -- Now 20:42:10 This 30.8 sec, Avg 27.7 sec, exp. finish in 380.5 min at 03:02:41 on 15-Nov-2016
+
+RESULT for anytime_0.1.0.tar.gz : success (14 of 836, 14 good, 0 bad) -- Now 20:42:27 This 17 sec, Avg 27 sec, exp. finish in 369.5 min at 02:51:58 on 15-Nov-2016
+
+RESULT for apcluster_1.4.3.tar.gz : success (15 of 836, 15 good, 0 bad) -- Now 20:43:11 This 43.8 sec, Avg 28.1 sec, exp. finish in 384.4 min at 03:07:37 on 15-Nov-2016
+
+RESULT for arrApply_2.0.1.tar.gz : success (16 of 836, 16 good, 0 bad) -- Now 20:43:27 This 16.3 sec, Avg 27.4 sec, exp. finish in 373.9 min at 02:57:19 on 15-Nov-2016
+
+RESULT for ASPBay_1.2.tar.gz : success (17 of 836, 17 good, 0 bad) -- Now 20:43:45 This 18.3 sec, Avg 26.8 sec, exp. finish in 366.1 min at 02:49:54 on 15-Nov-2016
+
+RESULT for aSPU_1.46.tar.gz : success (18 of 836, 18 good, 0 bad) -- Now 20:44:19 This 33.3 sec, Avg 27.2 sec, exp. finish in 370.6 min at 02:54:57 on 15-Nov-2016
+
+RESULT for autovarCore_1.0-0.tar.gz : success (19 of 836, 19 good, 0 bad) -- Now 20:44:38 This 19.6 sec, Avg 26.8 sec, exp. finish in 364.7 min at 02:49:21 on 15-Nov-2016
+
+RESULT for BaBooN_0.2-0.tar.gz : success (20 of 836, 20 good, 0 bad) -- Now 20:45:14 This 35.8 sec, Avg 27.2 sec, exp. finish in 370.4 min at 02:55:36 on 15-Nov-2016
+
+RESULT for BacArena_1.5.1.tar.gz : success (21 of 836, 21 good, 0 bad) -- Now 20:46:45 This 91.1 sec, Avg 30.3 sec, exp. finish in 411.3 min at 03:38:01 on 15-Nov-2016
+
+RESULT for BalancedSampling_1.5.2.tar.gz : success (22 of 836, 22 good, 0 bad) -- Now 20:47:07 This 22 sec, Avg 29.9 sec, exp. finish in 405.6 min at 03:32:46 on 15-Nov-2016
+
+RESULT for BAMMtools_2.1.5.tar.gz : success (23 of 836, 23 good, 0 bad) -- Now 20:47:59 This 52.1 sec, Avg 30.9 sec, exp. finish in 418.2 min at 03:46:14 on 15-Nov-2016
+
+RESULT for Barycenter_1.0.tar.gz : success (24 of 836, 24 good, 0 bad) -- Now 20:48:16 This 16.6 sec, Avg 30.3 sec, exp. finish in 409.7 min at 03:37:55 on 15-Nov-2016
+
+RESULT for batman_0.1.0.tar.gz : success (25 of 836, 25 good, 0 bad) -- Now 20:48:30 This 13.7 sec, Avg 29.6 sec, exp. finish in 400.2 min at 03:28:40 on 15-Nov-2016
+
+RESULT for bayesAB_0.7.0.tar.gz : success (26 of 836, 26 good, 0 bad) -- Now 20:49:06 This 36.4 sec, Avg 29.9 sec, exp. finish in 403.2 min at 03:32:19 on 15-Nov-2016
+
+RESULT for BayesBD_1.0.tar.gz : success (27 of 836, 27 good, 0 bad) -- Now 20:49:30 This 23.7 sec, Avg 29.6 sec, exp. finish in 399.6 min at 03:29:08 on 15-Nov-2016
+
+RESULT for BayesComm_0.1-2.tar.gz : success (28 of 836, 28 good, 0 bad) -- Now 20:49:49 This 19.7 sec, Avg 29.3 sec, exp. finish in 394.4 min at 03:24:11 on 15-Nov-2016
+
+RESULT for BayesFactor_0.9.12-2.tar.gz : success (29 of 836, 29 good, 0 bad) -- Now 20:51:03 This 73.8 sec, Avg 30.8 sec, exp. finish in 414.5 min at 03:45:35 on 15-Nov-2016
+
+RESULT for bayesImageS_0.3-3.tar.gz : success (30 of 836, 30 good, 0 bad) -- Now 20:51:29 This 26.1 sec, Avg 30.7 sec, exp. finish in 411.9 min at 03:43:24 on 15-Nov-2016
+
+RESULT for bayesm_3.0-2.tar.gz : success (31 of 836, 31 good, 0 bad) -- Now 20:53:25 This 115.9 sec, Avg 33.4 sec, exp. finish in 448.3 min at 04:21:43 on 15-Nov-2016
+
+RESULT for bayou_1.1.0.tar.gz : success (32 of 836, 32 good, 0 bad) -- Now 20:54:09 This 44.1 sec, Avg 33.7 sec, exp. finish in 452.2 min at 04:26:23 on 15-Nov-2016
+
+RESULT for bcp_4.0.0.tar.gz : success (33 of 836, 33 good, 0 bad) -- Now 20:54:43 This 34.1 sec, Avg 33.8 sec, exp. finish in 451.8 min at 04:26:31 on 15-Nov-2016
+
+RESULT for bcpa_1.1.tar.gz : success (34 of 836, 34 good, 0 bad) -- Now 20:55:07 This 23.4 sec, Avg 33.5 sec, exp. finish in 447.1 min at 04:22:15 on 15-Nov-2016
+
+RESULT for BCSub_0.2.tar.gz : success (35 of 836, 35 good, 0 bad) -- Now 20:55:28 This 21 sec, Avg 33.1 sec, exp. finish in 441.8 min at 04:17:17 on 15-Nov-2016
+
+RESULT for beanz_1.7.1.tar.gz : success (36 of 836, 36 good, 0 bad) -- Now 20:57:28 This 120.5 sec, Avg 35.5 sec, exp. finish in 473.7 min at 04:51:08 on 15-Nov-2016
+
+RESULT for BEDMatrix_1.3.0.tar.gz : success (37 of 836, 37 good, 0 bad) -- Now 20:57:45 This 16.5 sec, Avg 35 sec, exp. finish in 466.2 min at 04:43:58 on 15-Nov-2016
+
+RESULT for BeviMed_2.2.tar.gz : success (38 of 836, 38 good, 0 bad) -- Now 20:57:59 This 14.6 sec, Avg 34.5 sec, exp. finish in 458.5 min at 04:36:29 on 15-Nov-2016
+
+RESULT for bfa_0.4.tar.gz : success (39 of 836, 39 good, 0 bad) -- Now 20:58:28 This 28.9 sec, Avg 34.3 sec, exp. finish in 456 min at 04:34:30 on 15-Nov-2016
+
+RESULT for bfp_0.0-31.tar.gz : success (40 of 836, 40 good, 0 bad) -- Now 20:59:11 This 42.7 sec, Avg 34.5 sec, exp. finish in 458.2 min at 04:37:25 on 15-Nov-2016
+
+RESULT for bifactorial_1.4.7.tar.gz : success (41 of 836, 41 good, 0 bad) -- Now 20:59:49 This 38.3 sec, Avg 34.6 sec, exp. finish in 458.9 min at 04:38:41 on 15-Nov-2016
+
+RESULT for bife_0.1.tar.gz : success (42 of 836, 42 good, 0 bad) -- Now 21:00:28 This 39 sec, Avg 34.7 sec, exp. finish in 459.7 min at 04:40:08 on 15-Nov-2016
+
+RESULT for BIFIEsurvey_1.11-0.tar.gz : success (43 of 836, 43 good, 0 bad) -- Now 21:01:48 This 79.9 sec, Avg 35.8 sec, exp. finish in 473 min at 04:54:46 on 15-Nov-2016
+
+RESULT for biganalytics_1.1.14.tar.gz : success (44 of 836, 44 good, 0 bad) -- Now 21:02:08 This 19.9 sec, Avg 35.4 sec, exp. finish in 467.6 min at 04:49:45 on 15-Nov-2016
+
+RESULT for bigFastlm_0.0.1.tar.gz : success (45 of 836, 45 good, 0 bad) -- Now 21:02:38 This 30 sec, Avg 35.3 sec, exp. finish in 465.4 min at 04:48:04 on 15-Nov-2016
+
+RESULT for biglasso_1.2-3.tar.gz : success (46 of 836, 46 good, 0 bad) -- Now 21:03:26 This 48 sec, Avg 35.6 sec, exp. finish in 468.5 min at 04:51:55 on 15-Nov-2016
+
+RESULT for bigmemory_4.5.19.tar.gz : success (47 of 836, 47 good, 0 bad) -- Now 21:03:55 This 29 sec, Avg 35.4 sec, exp. finish in 466 min at 04:49:58 on 15-Nov-2016
+
+RESULT for BigQuic_1.1-5.tar.gz : success (48 of 836, 48 good, 0 bad) -- Now 21:04:29 This 33.5 sec, Avg 35.4 sec, exp. finish in 464.9 min at 04:49:25 on 15-Nov-2016
+
+RESULT for bigReg_0.1.2.tar.gz : success (49 of 836, 49 good, 0 bad) -- Now 21:04:52 This 23.4 sec, Avg 35.2 sec, exp. finish in 461.1 min at 04:46:01 on 15-Nov-2016
+
+RESULT for bigtabulate_1.1.5.tar.gz : success (50 of 836, 50 good, 0 bad) -- Now 21:05:12 This 19.4 sec, Avg 34.8 sec, exp. finish in 456.4 min at 04:41:38 on 15-Nov-2016
+
+RESULT for BigVAR_1.0.1.tar.gz : success (51 of 836, 51 good, 0 bad) -- Now 21:05:46 This 34.3 sec, Avg 34.8 sec, exp. finish in 455.7 min at 04:41:29 on 15-Nov-2016
+
+RESULT for bio3d_2.3-1.tar.gz : success (52 of 836, 52 good, 0 bad) -- Now 21:06:47 This 61.6 sec, Avg 35.3 sec, exp. finish in 461.9 min at 04:48:41 on 15-Nov-2016
+
+RESULT for Biocomb_0.2.tar.gz : success (53 of 836, 53 good, 0 bad) -- Now 21:07:44 This 56.4 sec, Avg 35.7 sec, exp. finish in 466.5 min at 04:54:13 on 15-Nov-2016
+
+RESULT for BIPOD_0.2.1.tar.gz : success (54 of 836, 54 good, 0 bad) -- Now 21:08:10 This 26.1 sec, Avg 35.6 sec, exp. finish in 463.6 min at 04:51:44 on 15-Nov-2016
+
+RESULT for biwavelet_0.20.11.tar.gz : success (55 of 836, 55 good, 0 bad) -- Now 21:08:38 This 28.1 sec, Avg 35.4 sec, exp. finish in 461.2 min at 04:49:51 on 15-Nov-2016
+
+RESULT for blackbox_1.0.8.1.tar.gz : success (56 of 836, 56 good, 0 bad) -- Now 21:09:22 This 44 sec, Avg 35.6 sec, exp. finish in 462.6 min at 04:51:59 on 15-Nov-2016
+
+RESULT for blockcluster_4.0.2.tar.gz : success (57 of 836, 57 good, 0 bad) -- Now 21:11:00 This 98.1 sec, Avg 36.7 sec, exp. finish in 476.3 min at 05:07:17 on 15-Nov-2016
+
+RESULT for blockmodels_1.1.1.tar.gz : success (58 of 836, 58 good, 0 bad) -- Now 21:11:40 This 40.1 sec, Avg 36.7 sec, exp. finish in 476.4 min at 05:08:07 on 15-Nov-2016
+
+RESULT for blockseg_0.2.tar.gz : success (59 of 836, 59 good, 0 bad) -- Now 21:12:19 This 38.2 sec, Avg 36.8 sec, exp. finish in 476.1 min at 05:08:27 on 15-Nov-2016
+
+RESULT for bmlm_1.2.1.tar.gz : success (60 of 836, 60 good, 0 bad) -- Now 21:13:25 This 66.5 sec, Avg 37.3 sec, exp. finish in 482 min at 05:15:22 on 15-Nov-2016
+
+RESULT for bnnSurvival_0.1.4.tar.gz : success (61 of 836, 61 good, 0 bad) -- Now 21:13:53 This 28.2 sec, Avg 37.1 sec, exp. finish in 479.4 min at 05:13:18 on 15-Nov-2016
+
+RESULT for bootTimeInference_0.1.0.tar.gz : success (62 of 836, 62 good, 0 bad) -- Now 21:14:14 This 20.9 sec, Avg 36.9 sec, exp. finish in 475.4 min at 05:09:40 on 15-Nov-2016
+
+RESULT for brainGraph_0.72.0.tar.gz : success (63 of 836, 63 good, 0 bad) -- Now 21:15:04 This 49.5 sec, Avg 37.1 sec, exp. finish in 477.4 min at 05:12:27 on 15-Nov-2016
+
+RESULT for bsearchtools_0.0.41.tar.gz : success (64 of 836, 64 good, 0 bad) -- Now 21:15:17 This 12.7 sec, Avg 36.7 sec, exp. finish in 471.9 min at 05:07:10 on 15-Nov-2016
+
+RESULT for btb_0.1.3.tar.gz : success (65 of 836, 65 good, 0 bad) -- Now 21:15:34 This 17.2 sec, Avg 36.4 sec, exp. finish in 467.4 min at 05:02:59 on 15-Nov-2016
+
+RESULT for btf_1.1.tar.gz : success (66 of 836, 66 good, 0 bad) -- Now 21:16:12 This 38 sec, Avg 36.4 sec, exp. finish in 467.1 min at 05:03:20 on 15-Nov-2016
+
+RESULT for BTLLasso_0.1-2.tar.gz : success (67 of 836, 67 good, 0 bad) -- Now 21:16:46 This 34.4 sec, Avg 36.4 sec, exp. finish in 466.1 min at 05:02:55 on 15-Nov-2016
+
+RESULT for BTR_1.2.4.tar.gz : success (68 of 836, 68 good, 0 bad) -- Now 21:17:12 This 26 sec, Avg 36.2 sec, exp. finish in 463.6 min at 05:00:47 on 15-Nov-2016
+
+RESULT for BuyseTest_1.0.tar.gz : success (69 of 836, 69 good, 0 bad) -- Now 21:18:28 This 75.4 sec, Avg 36.8 sec, exp. finish in 470.2 min at 05:08:42 on 15-Nov-2016
+
+RESULT for bvarsv_1.1.tar.gz : success (70 of 836, 70 good, 0 bad) -- Now 21:18:45 This 17.8 sec, Avg 36.5 sec, exp. finish in 466.2 min at 05:04:56 on 15-Nov-2016
+
+RESULT for bWGR_1.3.2.tar.gz : success (71 of 836, 71 good, 0 bad) -- Now 21:19:09 This 23.9 sec, Avg 36.3 sec, exp. finish in 463.3 min at 05:02:27 on 15-Nov-2016
+
+RESULT for BWStest_0.2.0.tar.gz : success (72 of 836, 72 good, 0 bad) -- Now 21:19:26 This 16.8 sec, Avg 36.1 sec, exp. finish in 459.2 min at 04:58:40 on 15-Nov-2016
+
+RESULT for CARBayes_4.6.tar.gz : success (73 of 836, 73 good, 0 bad) -- Now 21:20:17 This 50.8 sec, Avg 36.3 sec, exp. finish in 461.2 min at 05:01:29 on 15-Nov-2016
+
+RESULT for CARBayesST_2.4.tar.gz : success (74 of 836, 74 good, 0 bad) -- Now 21:21:21 This 63.7 sec, Avg 36.6 sec, exp. finish in 465.3 min at 05:06:39 on 15-Nov-2016
+
+RESULT for catlearn_0.3.tar.gz : success (75 of 836, 75 good, 0 bad) -- Now 21:21:35 This 14.5 sec, Avg 36.3 sec, exp. finish in 461 min at 05:02:33 on 15-Nov-2016
+
+RESULT for ccaPP_0.3.2.tar.gz : success (76 of 836, 76 good, 0 bad) -- Now 21:22:02 This 26.4 sec, Avg 36.2 sec, exp. finish in 458.7 min at 05:00:44 on 15-Nov-2016
+
+RESULT for cccp_0.2-4.tar.gz : success (77 of 836, 77 good, 0 bad) -- Now 21:23:01 This 59.7 sec, Avg 36.5 sec, exp. finish in 462 min at 05:04:58 on 15-Nov-2016
+
+RESULT for ccdrAlgorithm_0.0.1.tar.gz : success (78 of 836, 78 good, 0 bad) -- Now 21:23:16 This 15 sec, Avg 36.2 sec, exp. finish in 457.9 min at 05:01:08 on 15-Nov-2016
+
+RESULT for cda_2.0.0.tar.gz : success (79 of 836, 79 good, 0 bad) -- Now 21:23:53 This 36.5 sec, Avg 36.2 sec, exp. finish in 457.3 min at 05:01:11 on 15-Nov-2016
+
+RESULT for CDF.PSIdekick_1.2.tar.gz : success (80 of 836, 80 good, 0 bad) -- Now 21:24:12 This 19 sec, Avg 36 sec, exp. finish in 454 min at 04:58:10 on 15-Nov-2016
+
+RESULT for CDM_5.2-1.tar.gz : success (81 of 836, 81 good, 0 bad) -- Now 21:25:11 This 59.4 sec, Avg 36.3 sec, exp. finish in 457 min at 05:02:12 on 15-Nov-2016
+
+RESULT for CFC_1.0.1.tar.gz : success (82 of 836, 82 good, 0 bad) -- Now 21:25:43 This 31.4 sec, Avg 36.3 sec, exp. finish in 455.6 min at 05:01:21 on 15-Nov-2016
+
+RESULT for cgAUC_1.2.1.tar.gz : success (83 of 836, 83 good, 0 bad) -- Now 21:25:54 This 11.2 sec, Avg 36 sec, exp. finish in 451.3 min at 04:57:09 on 15-Nov-2016
+
+RESULT for ChannelAttribution_1.9.tar.gz : success (84 of 836, 84 good, 0 bad) -- Now 21:26:10 This 16.5 sec, Avg 35.7 sec, exp. finish in 447.8 min at 04:53:55 on 15-Nov-2016
+
+RESULT for chopthin_0.2.1.tar.gz : success (85 of 836, 85 good, 0 bad) -- Now 21:26:23 This 12.2 sec, Avg 35.4 sec, exp. finish in 443.7 min at 04:50:05 on 15-Nov-2016
+
+RESULT for CIDnetworks_0.8.1.tar.gz : success (86 of 836, 86 good, 0 bad) -- Now 21:26:57 This 34.5 sec, Avg 35.4 sec, exp. finish in 443 min at 04:49:56 on 15-Nov-2016
+
+RESULT for cIRT_1.2.0.tar.gz : success (87 of 836, 87 good, 0 bad) -- Now 21:27:20 This 22.4 sec, Avg 35.3 sec, exp. finish in 440.5 min at 04:47:51 on 15-Nov-2016
+
+RESULT for cladoRcpp_0.14.4.tar.gz : success (88 of 836, 88 good, 0 bad) -- Now 21:27:36 This 16 sec, Avg 35.1 sec, exp. finish in 437.2 min at 04:44:48 on 15-Nov-2016
+
+RESULT for classify_1.3.tar.gz : success (89 of 836, 89 good, 0 bad) -- Now 21:27:55 This 19.7 sec, Avg 34.9 sec, exp. finish in 434.5 min at 04:42:23 on 15-Nov-2016
+
+RESULT for clere_1.1.4.tar.gz : success (90 of 836, 90 good, 0 bad) -- Now 21:28:27 This 31.9 sec, Avg 34.9 sec, exp. finish in 433.5 min at 04:41:55 on 15-Nov-2016
+
+RESULT for climdex.pcic_1.1-6.tar.gz : success (91 of 836, 91 good, 0 bad) -- Now 21:29:02 This 35.2 sec, Avg 34.9 sec, exp. finish in 432.9 min at 04:41:58 on 15-Nov-2016
+
+RESULT for clogitboost_1.1.tar.gz : success (92 of 836, 92 good, 0 bad) -- Now 21:29:20 This 17.7 sec, Avg 34.7 sec, exp. finish in 430 min at 04:39:22 on 15-Nov-2016
+
+RESULT for clogitL1_1.4.tar.gz : success (93 of 836, 93 good, 0 bad) -- Now 21:29:36 This 15.6 sec, Avg 34.5 sec, exp. finish in 426.9 min at 04:36:30 on 15-Nov-2016
+
+RESULT for clusrank_0.5-0.tar.gz : success (94 of 836, 94 good, 0 bad) -- Now 21:29:54 This 18.1 sec, Avg 34.3 sec, exp. finish in 424.2 min at 04:34:04 on 15-Nov-2016
+
+RESULT for ClusterR_1.0.3.tar.gz : success (95 of 836, 95 good, 0 bad) -- Now 21:30:43 This 49.1 sec, Avg 34.5 sec, exp. finish in 425.5 min at 04:36:15 on 15-Nov-2016
+
+RESULT for ClusterStability_1.0.3.tar.gz : success (96 of 836, 96 good, 0 bad) -- Now 21:31:19 This 35.8 sec, Avg 34.5 sec, exp. finish in 425.1 min at 04:36:27 on 15-Nov-2016
+
+RESULT for clusteval_0.1.tar.gz : success (97 of 836, 97 good, 0 bad) -- Now 21:31:34 This 15.2 sec, Avg 34.3 sec, exp. finish in 422.1 min at 04:33:41 on 15-Nov-2016
+
+RESULT for ClustMMDD_1.0.4.tar.gz : success (98 of 836, 98 good, 0 bad) -- Now 21:32:01 This 26.7 sec, Avg 34.2 sec, exp. finish in 420.6 min at 04:32:37 on 15-Nov-2016
+
+RESULT for ClustVarLV_1.5.0.tar.gz : success (99 of 836, 99 good, 0 bad) -- Now 21:32:21 This 20.6 sec, Avg 34.1 sec, exp. finish in 418.3 min at 04:30:42 on 15-Nov-2016
+
+RESULT for CMF_1.0.tar.gz : success (100 of 836, 100 good, 0 bad) -- Now 21:32:34 This 13.3 sec, Avg 33.9 sec, exp. finish in 415.2 min at 04:27:48 on 15-Nov-2016
+
+RESULT for coala_0.4.1.tar.gz : success (101 of 836, 101 good, 0 bad) -- Now 21:33:14 This 39.7 sec, Avg 33.9 sec, exp. finish in 415.4 min at 04:28:36 on 15-Nov-2016
+
+RESULT for collUtils_1.0.5.tar.gz : success (102 of 836, 102 good, 0 bad) -- Now 21:33:31 This 16.5 sec, Avg 33.7 sec, exp. finish in 412.7 min at 04:26:13 on 15-Nov-2016
+
+RESULT for combiter_0.1.0.tar.gz : success (103 of 836, 103 good, 0 bad) -- Now 21:33:46 This 15.3 sec, Avg 33.6 sec, exp. finish in 410 min at 04:23:44 on 15-Nov-2016
+
+RESULT for CompGLM_1.0.tar.gz : success (104 of 836, 104 good, 0 bad) -- Now 21:34:05 This 19.3 sec, Avg 33.4 sec, exp. finish in 407.7 min at 04:21:49 on 15-Nov-2016
+
+RESULT for Compositional_2.0.tar.gz : success (105 of 836, 105 good, 0 bad) -- Now 21:34:54 This 48.7 sec, Avg 33.6 sec, exp. finish in 408.9 min at 04:23:50 on 15-Nov-2016
+
+RESULT for ConConPiWiFun_0.4.6.tar.gz : success (106 of 836, 106 good, 0 bad) -- Now 21:35:18 This 24.3 sec, Avg 33.5 sec, exp. finish in 407.3 min at 04:22:37 on 15-Nov-2016
+
+RESULT for coneproj_1.11.tar.gz : success (107 of 836, 107 good, 0 bad) -- Now 21:35:37 This 18.9 sec, Avg 33.3 sec, exp. finish in 405.1 min at 04:20:43 on 15-Nov-2016
+
+RESULT for contoureR_1.0.5.tar.gz : failure (108 of 836, 107 good, 1 bad) -- Now 21:35:55 This 17.6 sec, Avg 33.2 sec, exp. finish in 402.8 min at 04:18:42 on 15-Nov-2016
+
+RESULT for copCAR_1.0-2.tar.gz : success (109 of 836, 108 good, 1 bad) -- Now 21:36:15 This 20.1 sec, Avg 33.1 sec, exp. finish in 400.8 min at 04:17:01 on 15-Nov-2016
+
+RESULT for cord_0.1.1.tar.gz : success (110 of 836, 109 good, 1 bad) -- Now 21:36:30 This 15.7 sec, Avg 32.9 sec, exp. finish in 398.3 min at 04:14:49 on 15-Nov-2016
+
+RESULT for CorReg_1.1.9.tar.gz : success (111 of 836, 110 good, 1 bad) -- Now 21:37:52 This 81.7 sec, Avg 33.4 sec, exp. finish in 403.1 min at 04:20:57 on 15-Nov-2016
+
+RESULT for Countr_3.2.7.tar.gz : success (112 of 836, 111 good, 1 bad) -- Now 21:38:51 This 58.5 sec, Avg 33.6 sec, exp. finish in 405.2 min at 04:24:04 on 15-Nov-2016
+
+RESULT for covafillr_0.3.0.tar.gz : success (113 of 836, 112 good, 1 bad) -- Now 21:39:07 This 16.3 sec, Avg 33.4 sec, exp. finish in 402.8 min at 04:21:56 on 15-Nov-2016
+
+RESULT for Coxnet_0.2.tar.gz : success (114 of 836, 113 good, 1 bad) -- Now 21:39:40 This 32.9 sec, Avg 33.4 sec, exp. finish in 402.2 min at 04:21:52 on 15-Nov-2016
+
+RESULT for CoxPlus_1.1.1.tar.gz : success (115 of 836, 114 good, 1 bad) -- Now 21:40:07 This 27.3 sec, Avg 33.4 sec, exp. finish in 401 min at 04:21:08 on 15-Nov-2016
+
+RESULT for cpgen_0.1.tar.gz : success (116 of 836, 115 good, 1 bad) -- Now 21:40:54 This 46.8 sec, Avg 33.5 sec, exp. finish in 401.8 min at 04:22:45 on 15-Nov-2016
+
+RESULT for crawl_2.0.1.tar.gz : success (117 of 836, 116 good, 1 bad) -- Now 21:41:30 This 35.7 sec, Avg 33.5 sec, exp. finish in 401.5 min at 04:23:00 on 15-Nov-2016
+
+RESULT for creditr_0.6.1.tar.gz : success (118 of 836, 117 good, 1 bad) -- Now 21:42:02 This 32.8 sec, Avg 33.5 sec, exp. finish in 400.9 min at 04:22:55 on 15-Nov-2016
+
+RESULT for Crossover_0.1-16.tar.gz : success (119 of 836, 118 good, 1 bad) -- Now 21:43:05 This 62.8 sec, Avg 33.7 sec, exp. finish in 403.3 min at 04:26:22 on 15-Nov-2016
+
+RESULT for ctmcd_1.0.tar.gz : success (120 of 836, 119 good, 1 bad) -- Now 21:43:37 This 31.5 sec, Avg 33.7 sec, exp. finish in 402.5 min at 04:26:06 on 15-Nov-2016
+
+RESULT for cycleRtools_1.1.1.tar.gz : success (121 of 836, 120 good, 1 bad) -- Now 21:44:01 This 24.6 sec, Avg 33.7 sec, exp. finish in 401 min at 04:25:03 on 15-Nov-2016
+
+RESULT for Cyclops_1.2.2.tar.gz : success (122 of 836, 121 good, 1 bad) -- Now 21:45:06 This 65 sec, Avg 33.9 sec, exp. finish in 403.5 min at 04:28:37 on 15-Nov-2016
+
+RESULT for D3M_0.41.1.tar.gz : success (123 of 836, 122 good, 1 bad) -- Now 21:45:20 This 13.2 sec, Avg 33.7 sec, exp. finish in 401 min at 04:26:17 on 15-Nov-2016
+
+RESULT for darch_0.12.0.tar.gz : success (124 of 836, 123 good, 1 bad) -- Now 21:46:06 This 46.1 sec, Avg 33.8 sec, exp. finish in 401.6 min at 04:27:40 on 15-Nov-2016
+
+RESULT for datafsm_0.1.0.tar.gz : failure (125 of 836, 123 good, 2 bad) -- Now 21:46:25 This 19.3 sec, Avg 33.7 sec, exp. finish in 399.6 min at 04:26:03 on 15-Nov-2016
+
+RESULT for dbmss_2.3-0.tar.gz : success (126 of 836, 124 good, 2 bad) -- Now 21:47:18 This 53.3 sec, Avg 33.9 sec, exp. finish in 400.9 min at 04:28:13 on 15-Nov-2016
+
+RESULT for dbscan_0.9-8.tar.gz : success (127 of 836, 125 good, 2 bad) -- Now 21:47:44 This 25.4 sec, Avg 33.8 sec, exp. finish in 399.6 min at 04:27:17 on 15-Nov-2016
+
+RESULT for ddalpha_1.2.1.tar.gz : success (128 of 836, 126 good, 2 bad) -- Now 21:48:43 This 59.3 sec, Avg 34 sec, exp. finish in 401.3 min at 04:30:03 on 15-Nov-2016
+
+RESULT for ddR_0.1.2.tar.gz : success (129 of 836, 127 good, 2 bad) -- Now 21:49:12 This 29.3 sec, Avg 34 sec, exp. finish in 400.3 min at 04:29:32 on 15-Nov-2016
+
+RESULT for DDRTree_0.1.4.tar.gz : success (130 of 836, 128 good, 2 bad) -- Now 21:49:52 This 40.1 sec, Avg 34 sec, exp. finish in 400.3 min at 04:30:12 on 15-Nov-2016
+
+RESULT for deepboost_0.1.4.tar.gz : success (131 of 836, 129 good, 2 bad) -- Now 21:50:15 This 23.3 sec, Avg 33.9 sec, exp. finish in 398.8 min at 04:29:03 on 15-Nov-2016
+
+RESULT for Delaporte_3.0.0.tar.gz : success (132 of 836, 130 good, 2 bad) -- Now 21:50:29 This 13.7 sec, Avg 33.8 sec, exp. finish in 396.4 min at 04:26:55 on 15-Nov-2016
+
+RESULT for DeLorean_1.2.4.tar.gz : success (133 of 836, 131 good, 2 bad) -- Now 21:50:53 This 23.7 sec, Avg 33.7 sec, exp. finish in 395 min at 04:25:51 on 15-Nov-2016
+
+RESULT for dendextendRcpp_0.6.1.tar.gz : success (134 of 836, 132 good, 2 bad) -- Now 21:51:25 This 32.1 sec, Avg 33.7 sec, exp. finish in 394.3 min at 04:25:41 on 15-Nov-2016
+
+RESULT for densityClust_0.2.1.tar.gz : success (135 of 836, 133 good, 2 bad) -- Now 21:51:39 This 14.1 sec, Avg 33.6 sec, exp. finish in 392 min at 04:23:40 on 15-Nov-2016
+
+RESULT for DepthProc_1.0.7.tar.gz : success (136 of 836, 134 good, 2 bad) -- Now 21:52:25 This 46 sec, Avg 33.6 sec, exp. finish in 392.5 min at 04:24:56 on 15-Nov-2016
+
+RESULT for DescTools_0.99.18.tar.gz : success (137 of 836, 135 good, 2 bad) -- Now 21:54:03 This 98.3 sec, Avg 34.1 sec, exp. finish in 397.5 min at 04:31:31 on 15-Nov-2016
+
+RESULT for DetMCD_0.0.4.tar.gz : success (138 of 836, 136 good, 2 bad) -- Now 21:54:22 This 18.2 sec, Avg 34 sec, exp. finish in 395.5 min at 04:29:54 on 15-Nov-2016
+
+RESULT for DetR_0.0.4.tar.gz : success (139 of 836, 137 good, 2 bad) -- Now 21:54:49 This 27.3 sec, Avg 34 sec, exp. finish in 394.4 min at 04:29:14 on 15-Nov-2016
+
+RESULT for dfcomb_2.1-6.tar.gz : success (140 of 836, 138 good, 2 bad) -- Now 21:55:09 This 19.9 sec, Avg 33.9 sec, exp. finish in 392.7 min at 04:27:50 on 15-Nov-2016
+
+RESULT for dfmta_1.3-4.tar.gz : success (141 of 836, 139 good, 2 bad) -- Now 21:55:25 This 16.5 sec, Avg 33.7 sec, exp. finish in 390.7 min at 04:26:07 on 15-Nov-2016
+
+RESULT for dfphase1_1.0.1.tar.gz : success (142 of 836, 140 good, 2 bad) -- Now 21:55:48 This 22.5 sec, Avg 33.7 sec, exp. finish in 389.2 min at 04:25:01 on 15-Nov-2016
+
+RESULT for dfpk_1.0.tar.gz : success (143 of 836, 141 good, 2 bad) -- Now 21:57:17 This 88.9 sec, Avg 34 sec, exp. finish in 393.1 min at 04:30:24 on 15-Nov-2016
+
+RESULT for diagis_0.1.0.tar.gz : success (144 of 836, 142 good, 2 bad) -- Now 21:57:42 This 25.2 sec, Avg 34 sec, exp. finish in 391.8 min at 04:29:33 on 15-Nov-2016
+
+RESULT for diffrprojects_0.1.14.tar.gz : success (145 of 836, 143 good, 2 bad) -- Now 21:58:16 This 34.4 sec, Avg 34 sec, exp. finish in 391.3 min at 04:29:35 on 15-Nov-2016
+
+RESULT for DiffusionRgqd_0.1.3.tar.gz : success (146 of 836, 144 good, 2 bad) -- Now 21:58:47 This 30.5 sec, Avg 34 sec, exp. finish in 390.5 min at 04:29:15 on 15-Nov-2016
+
+RESULT for DiffusionRimp_0.1.2.tar.gz : success (147 of 836, 145 good, 2 bad) -- Now 21:59:07 This 19.9 sec, Avg 33.9 sec, exp. finish in 388.8 min at 04:27:55 on 15-Nov-2016
+
+RESULT for DiffusionRjgqd_0.1.1.tar.gz : success (148 of 836, 146 good, 2 bad) -- Now 21:59:36 This 29 sec, Avg 33.8 sec, exp. finish in 387.9 min at 04:27:28 on 15-Nov-2016
+
+RESULT for dils_0.8.1.tar.gz : success (149 of 836, 147 good, 2 bad) -- Now 21:59:57 This 21.4 sec, Avg 33.7 sec, exp. finish in 386.3 min at 04:26:18 on 15-Nov-2016
+
+RESULT for dina_1.0.1.tar.gz : success (150 of 836, 148 good, 2 bad) -- Now 22:00:13 This 16.4 sec, Avg 33.6 sec, exp. finish in 384.5 min at 04:24:41 on 15-Nov-2016
+
+RESULT for Directional_2.3.tar.gz : success (151 of 836, 149 good, 2 bad) -- Now 22:00:36 This 22.4 sec, Avg 33.6 sec, exp. finish in 383.1 min at 04:23:39 on 15-Nov-2016
+
+RESULT for disclapmix_1.6.2.tar.gz : success (152 of 836, 150 good, 2 bad) -- Now 22:01:00 This 24.1 sec, Avg 33.5 sec, exp. finish in 381.8 min at 04:22:48 on 15-Nov-2016
+
+RESULT for discretecdAlgorithm_0.0.1.tar.gz : success (153 of 836, 151 good, 2 bad) -- Now 22:01:22 This 22.4 sec, Avg 33.4 sec, exp. finish in 380.4 min at 04:21:47 on 15-Nov-2016
+
+RESULT for diversitree_0.9-9.tar.gz : success (154 of 836, 152 good, 2 bad) -- Now 22:02:13 This 50.7 sec, Avg 33.5 sec, exp. finish in 381.1 min at 04:23:21 on 15-Nov-2016
+
+RESULT for diveRsity_1.9.89.tar.gz : success (155 of 836, 153 good, 2 bad) -- Now 22:03:25 This 71.7 sec, Avg 33.8 sec, exp. finish in 383.4 min at 04:26:47 on 15-Nov-2016
+
+RESULT for divo_0.1.2.tar.gz : success (156 of 836, 154 good, 2 bad) -- Now 22:03:45 This 20 sec, Avg 33.7 sec, exp. finish in 381.8 min at 04:25:33 on 15-Nov-2016
+
+RESULT for DLMtool_3.2.2.tar.gz : success (157 of 836, 155 good, 2 bad) -- Now 22:04:22 This 37.7 sec, Avg 33.7 sec, exp. finish in 381.5 min at 04:25:54 on 15-Nov-2016
+
+RESULT for DNAprofiles_0.3.1.tar.gz : success (158 of 836, 156 good, 2 bad) -- Now 22:05:03 This 40.9 sec, Avg 33.8 sec, exp. finish in 381.5 min at 04:26:32 on 15-Nov-2016
+
+RESULT for DNAtools_0.1-21.1.tar.gz : success (159 of 836, 157 good, 2 bad) -- Now 22:05:32 This 29 sec, Avg 33.7 sec, exp. finish in 380.6 min at 04:26:07 on 15-Nov-2016
+
+RESULT for dnc_1.2.tar.gz : success (160 of 836, 158 good, 2 bad) -- Now 22:07:22 This 110.1 sec, Avg 34.2 sec, exp. finish in 385.4 min at 04:32:46 on 15-Nov-2016
+
+RESULT for dplyr_0.5.0.tar.gz : success (161 of 836, 159 good, 2 bad) -- Now 22:08:46 This 83.7 sec, Avg 34.5 sec, exp. finish in 388.3 min at 04:37:03 on 15-Nov-2016
+
+RESULT for drgee_1.1.6.tar.gz : success (162 of 836, 160 good, 2 bad) -- Now 22:09:17 This 30.5 sec, Avg 34.5 sec, exp. finish in 387.4 min at 04:36:43 on 15-Nov-2016
+
+RESULT for dslice_1.1.5.tar.gz : success (163 of 836, 161 good, 2 bad) -- Now 22:09:40 This 23.7 sec, Avg 34.4 sec, exp. finish in 386.1 min at 04:35:47 on 15-Nov-2016
+
+RESULT for DStree_1.0.tar.gz : success (164 of 836, 162 good, 2 bad) -- Now 22:10:21 This 40.6 sec, Avg 34.5 sec, exp. finish in 386 min at 04:36:19 on 15-Nov-2016
+
+RESULT for dtwclust_2.3.0.tar.gz : success (165 of 836, 163 good, 2 bad) -- Now 22:11:21 This 60.1 sec, Avg 34.6 sec, exp. finish in 387.1 min at 04:38:28 on 15-Nov-2016
+
+RESULT for easyVerification_0.3.0.tar.gz : success (166 of 836, 164 good, 2 bad) -- Now 22:11:43 This 22 sec, Avg 34.5 sec, exp. finish in 385.7 min at 04:37:25 on 15-Nov-2016
+
+RESULT for EBMAforecast_0.52.tar.gz : success (167 of 836, 165 good, 2 bad) -- Now 22:12:18 This 35.1 sec, Avg 34.5 sec, exp. finish in 385.2 min at 04:37:27 on 15-Nov-2016
+
+RESULT for ECctmc_0.2.2.tar.gz : success (168 of 836, 166 good, 2 bad) -- Now 22:12:34 This 16.4 sec, Avg 34.4 sec, exp. finish in 383.4 min at 04:35:57 on 15-Nov-2016
+
+RESULT for ecp_3.0.0.tar.gz : success (169 of 836, 167 good, 2 bad) -- Now 22:12:56 This 21.7 sec, Avg 34.4 sec, exp. finish in 382 min at 04:34:54 on 15-Nov-2016
+
+RESULT for EditImputeCont_1.0.2.tar.gz : success (170 of 836, 168 good, 2 bad) -- Now 22:13:27 This 31.2 sec, Avg 34.3 sec, exp. finish in 381.2 min at 04:34:39 on 15-Nov-2016
+
+RESULT for eDMA_1.3.tar.gz : success (171 of 836, 169 good, 2 bad) -- Now 22:14:01 This 33.8 sec, Avg 34.3 sec, exp. finish in 380.6 min at 04:34:36 on 15-Nov-2016
+
+RESULT for eggCounts_1.2.tar.gz : success (172 of 836, 170 good, 2 bad) -- Now 22:15:39 This 97.4 sec, Avg 34.7 sec, exp. finish in 384.1 min at 04:39:43 on 15-Nov-2016
+
+RESULT for eive_2.1.tar.gz : success (173 of 836, 171 good, 2 bad) -- Now 22:15:50 This 11.7 sec, Avg 34.6 sec, exp. finish in 382 min at 04:37:52 on 15-Nov-2016
+
+RESULT for EloChoice_0.29.tar.gz : success (174 of 836, 172 good, 2 bad) -- Now 22:16:08 This 18.1 sec, Avg 34.5 sec, exp. finish in 380.4 min at 04:36:32 on 15-Nov-2016
+
+RESULT for EMbC_2.0.0.tar.gz : success (175 of 836, 173 good, 2 bad) -- Now 22:16:33 This 24.8 sec, Avg 34.4 sec, exp. finish in 379.2 min at 04:35:46 on 15-Nov-2016
+
+RESULT for emil_2.2.6.tar.gz : success (176 of 836, 174 good, 2 bad) -- Now 22:17:16 This 42.3 sec, Avg 34.5 sec, exp. finish in 379.1 min at 04:36:24 on 15-Nov-2016
+
+RESULT for emIRT_0.0.7.tar.gz : success (177 of 836, 175 good, 2 bad) -- Now 22:19:50 This 154.8 sec, Avg 35.1 sec, exp. finish in 386 min at 04:45:52 on 15-Nov-2016
+
+RESULT for energy_1.7-0.tar.gz : success (178 of 836, 176 good, 2 bad) -- Now 22:20:10 This 20.1 sec, Avg 35.1 sec, exp. finish in 384.5 min at 04:44:41 on 15-Nov-2016
+
+RESULT for EPGLM_1.1.2.tar.gz : success (179 of 836, 177 good, 2 bad) -- Now 22:20:28 This 18 sec, Avg 35 sec, exp. finish in 382.9 min at 04:43:22 on 15-Nov-2016
+
+RESULT for erah_1.0.4.tar.gz : success (180 of 836, 178 good, 2 bad) -- Now 22:21:01 This 32.1 sec, Avg 35 sec, exp. finish in 382.1 min at 04:43:08 on 15-Nov-2016
+
+RESULT for ESGtoolkit_0.1.tar.gz : success (181 of 836, 179 good, 2 bad) -- Now 22:21:21 This 20 sec, Avg 34.9 sec, exp. finish in 380.6 min at 04:41:59 on 15-Nov-2016
+
+RESULT for EstHer_1.0.tar.gz : success (182 of 836, 180 good, 2 bad) -- Now 22:21:51 This 30.3 sec, Avg 34.8 sec, exp. finish in 379.8 min at 04:41:38 on 15-Nov-2016
+
+RESULT for evolqg_0.2-4.tar.gz : failure (183 of 836, 180 good, 3 bad) -- Now 22:23:17 This 86.6 sec, Avg 35.1 sec, exp. finish in 382.3 min at 04:45:35 on 15-Nov-2016
+
+RESULT for EWGoF_2.1.tar.gz : success (184 of 836, 181 good, 3 bad) -- Now 22:23:48 This 30.1 sec, Avg 35.1 sec, exp. finish in 381.4 min at 04:45:12 on 15-Nov-2016
+
+RESULT for exif_0.1.0.tar.gz : success (185 of 836, 182 good, 3 bad) -- Now 22:24:02 This 14.5 sec, Avg 35 sec, exp. finish in 379.6 min at 04:43:39 on 15-Nov-2016
+
+RESULT for extraDistr_1.8.2.tar.gz : success (186 of 836, 183 good, 3 bad) -- Now 22:25:21 This 78.6 sec, Avg 35.2 sec, exp. finish in 381.6 min at 04:46:55 on 15-Nov-2016
+
+RESULT for factorstochvol_0.8.2.tar.gz : success (187 of 836, 184 good, 3 bad) -- Now 22:25:52 This 31.1 sec, Avg 35.2 sec, exp. finish in 380.7 min at 04:46:36 on 15-Nov-2016
+
+RESULT for fastAdaboost_1.0.0.tar.gz : success (188 of 836, 185 good, 3 bad) -- Now 22:26:11 This 18.8 sec, Avg 35.1 sec, exp. finish in 379.2 min at 04:45:23 on 15-Nov-2016
+
+RESULT for FastBandChol_0.1.1.tar.gz : success (189 of 836, 186 good, 3 bad) -- Now 22:26:25 This 14.1 sec, Avg 35 sec, exp. finish in 377.4 min at 04:43:51 on 15-Nov-2016
+
+RESULT for fastcmh_0.2.7.tar.gz : success (190 of 836, 187 good, 3 bad) -- Now 22:26:43 This 18.4 sec, Avg 34.9 sec, exp. finish in 375.9 min at 04:42:37 on 15-Nov-2016
+
+RESULT for fasteraster_1.0.4.tar.gz : success (191 of 836, 188 good, 3 bad) -- Now 22:26:55 This 11.5 sec, Avg 34.8 sec, exp. finish in 374 min at 04:40:55 on 15-Nov-2016
+
+RESULT for fastGHQuad_0.2.tar.gz : success (192 of 836, 189 good, 3 bad) -- Now 22:27:08 This 13.3 sec, Avg 34.7 sec, exp. finish in 372.2 min at 04:39:21 on 15-Nov-2016
+
+RESULT for FastGP_1.2.tar.gz : success (193 of 836, 190 good, 3 bad) -- Now 22:27:27 This 19.3 sec, Avg 34.6 sec, exp. finish in 370.8 min at 04:38:15 on 15-Nov-2016
+
+RESULT for FastHCS_0.0.5.tar.gz : success (194 of 836, 191 good, 3 bad) -- Now 22:27:46 This 19.2 sec, Avg 34.5 sec, exp. finish in 369.4 min at 04:37:08 on 15-Nov-2016
+
+RESULT for fastM_0.0-2.tar.gz : success (195 of 836, 192 good, 3 bad) -- Now 22:28:06 This 19.3 sec, Avg 34.4 sec, exp. finish in 368 min at 04:36:03 on 15-Nov-2016
+
+RESULT for FastPCS_0.1.2.tar.gz : success (196 of 836, 193 good, 3 bad) -- Now 22:28:21 This 15.4 sec, Avg 34.3 sec, exp. finish in 366.3 min at 04:34:42 on 15-Nov-2016
+
+RESULT for FastRCS_0.0.7.tar.gz : success (197 of 836, 194 good, 3 bad) -- Now 22:28:41 This 19.8 sec, Avg 34.3 sec, exp. finish in 365 min at 04:33:40 on 15-Nov-2016
+
+RESULT for FBFsearch_1.0.tar.gz : success (198 of 836, 195 good, 3 bad) -- Now 22:29:00 This 18.9 sec, Avg 34.2 sec, exp. finish in 363.6 min at 04:32:35 on 15-Nov-2016
+
+RESULT for fbroc_0.4.0.tar.gz : success (199 of 836, 196 good, 3 bad) -- Now 22:29:28 This 28.4 sec, Avg 34.2 sec, exp. finish in 362.7 min at 04:32:11 on 15-Nov-2016
+
+RESULT for FCNN4R_0.6.2.tar.gz : success (200 of 836, 197 good, 3 bad) -- Now 22:29:49 This 20.6 sec, Avg 34.1 sec, exp. finish in 361.4 min at 04:31:14 on 15-Nov-2016
+
+RESULT for fdaMixed_0.4.tar.gz : success (201 of 836, 198 good, 3 bad) -- Now 22:30:18 This 29.7 sec, Avg 34.1 sec, exp. finish in 360.6 min at 04:30:56 on 15-Nov-2016
+
+RESULT for fdapace_0.2.5.tar.gz : success (202 of 836, 199 good, 3 bad) -- Now 22:31:46 This 87.5 sec, Avg 34.3 sec, exp. finish in 362.9 min at 04:34:37 on 15-Nov-2016
+
+RESULT for fdaPDE_0.1-4.tar.gz : success (203 of 836, 200 good, 3 bad) -- Now 22:32:30 This 44 sec, Avg 34.4 sec, exp. finish in 362.8 min at 04:35:17 on 15-Nov-2016
+
+RESULT for fdasrvf_1.7.0.tar.gz : success (204 of 836, 201 good, 3 bad) -- Now 22:34:25 This 114.8 sec, Avg 34.8 sec, exp. finish in 366.4 min at 04:40:47 on 15-Nov-2016
+
+RESULT for FDGcopulas_1.0.tar.gz : success (205 of 836, 202 good, 3 bad) -- Now 22:34:41 This 16.4 sec, Avg 34.7 sec, exp. finish in 364.8 min at 04:39:32 on 15-Nov-2016
+
+RESULT for FDRreg_0.1.tar.gz : success (206 of 836, 203 good, 3 bad) -- Now 22:35:14 This 32.9 sec, Avg 34.7 sec, exp. finish in 364.2 min at 04:39:24 on 15-Nov-2016
+
+RESULT for feather_0.3.1.tar.gz : success (207 of 836, 204 good, 3 bad) -- Now 22:35:36 This 21.5 sec, Avg 34.6 sec, exp. finish in 362.9 min at 04:38:31 on 15-Nov-2016
+
+RESULT for FeatureHashing_0.9.1.1.tar.gz : success (208 of 836, 205 good, 3 bad) -- Now 22:36:29 This 53.2 sec, Avg 34.7 sec, exp. finish in 363.3 min at 04:39:46 on 15-Nov-2016
+
+RESULT for ffstream_0.1.2.tar.gz : success (209 of 836, 206 good, 3 bad) -- Now 22:37:10 This 41.6 sec, Avg 34.7 sec, exp. finish in 363.1 min at 04:40:14 on 15-Nov-2016
+
+RESULT for FIACH_0.1.2.tar.gz : success (210 of 836, 207 good, 3 bad) -- Now 22:37:37 This 26.4 sec, Avg 34.7 sec, exp. finish in 362.1 min at 04:39:40 on 15-Nov-2016
+
+RESULT for fICA_1.0-3.tar.gz : success (211 of 836, 208 good, 3 bad) -- Now 22:37:58 This 21.5 sec, Avg 34.6 sec, exp. finish in 360.8 min at 04:38:48 on 15-Nov-2016
+
+RESULT for FisHiCal_1.1.tar.gz : success (212 of 836, 209 good, 3 bad) -- Now 22:38:15 This 16.7 sec, Avg 34.6 sec, exp. finish in 359.4 min at 04:37:37 on 15-Nov-2016
+
+RESULT for FIT_0.0.1.tar.gz : success (213 of 836, 210 good, 3 bad) -- Now 22:38:36 This 21.2 sec, Avg 34.5 sec, exp. finish in 358.1 min at 04:36:45 on 15-Nov-2016
+
+RESULT for flam_3.1.tar.gz : success (214 of 836, 211 good, 3 bad) -- Now 22:38:55 This 18.3 sec, Avg 34.4 sec, exp. finish in 356.8 min at 04:35:42 on 15-Nov-2016
+
+RESULT for flan_0.3.tar.gz : success (215 of 836, 212 good, 3 bad) -- Now 22:39:28 This 33.6 sec, Avg 34.4 sec, exp. finish in 356.2 min at 04:35:38 on 15-Nov-2016
+
+RESULT for flars_1.0.tar.gz : success (216 of 836, 213 good, 3 bad) -- Now 22:40:06 This 37.6 sec, Avg 34.4 sec, exp. finish in 355.8 min at 04:35:51 on 15-Nov-2016
+
+RESULT for flip_2.4.3.tar.gz : success (217 of 836, 214 good, 3 bad) -- Now 22:40:39 This 33.8 sec, Avg 34.4 sec, exp. finish in 355.1 min at 04:35:48 on 15-Nov-2016
+
+RESULT for flock_0.7.tar.gz : success (218 of 836, 215 good, 3 bad) -- Now 22:40:51 This 11.3 sec, Avg 34.3 sec, exp. finish in 353.5 min at 04:34:19 on 15-Nov-2016
+
+RESULT for FLSSS_5.0.1.tar.gz : success (219 of 836, 216 good, 3 bad) -- Now 22:41:07 This 16 sec, Avg 34.2 sec, exp. finish in 352 min at 04:33:10 on 15-Nov-2016
+
+RESULT for forecast_7.3.tar.gz : failure (220 of 836, 216 good, 4 bad) -- Now 22:42:56 This 109.1 sec, Avg 34.6 sec, exp. finish in 355 min at 04:37:54 on 15-Nov-2016
+
+RESULT for forecastSNSTS_1.0-0.tar.gz : success (221 of 836, 217 good, 4 bad) -- Now 22:43:11 This 15 sec, Avg 34.5 sec, exp. finish in 353.5 min at 04:36:40 on 15-Nov-2016
+
+RESULT for forega_1.0.tar.gz : success (222 of 836, 218 good, 4 bad) -- Now 22:43:35 This 23.8 sec, Avg 34.4 sec, exp. finish in 352.4 min at 04:36:00 on 15-Nov-2016
+
+RESULT for forestFloor_1.9.5.tar.gz : success (223 of 836, 219 good, 4 bad) -- Now 22:44:18 This 43.3 sec, Avg 34.5 sec, exp. finish in 352.3 min at 04:36:33 on 15-Nov-2016
+
+RESULT for fourierin_0.1.2.tar.gz : success (224 of 836, 220 good, 4 bad) -- Now 22:44:43 This 24.5 sec, Avg 34.4 sec, exp. finish in 351.2 min at 04:35:56 on 15-Nov-2016
+
+RESULT for fourPNO_1.0.3.tar.gz : success (225 of 836, 221 good, 4 bad) -- Now 22:45:00 This 17.1 sec, Avg 34.4 sec, exp. finish in 349.9 min at 04:34:52 on 15-Nov-2016
+
+RESULT for fractional_0.1.3.tar.gz : success (226 of 836, 222 good, 4 bad) -- Now 22:45:12 This 12.3 sec, Avg 34.3 sec, exp. finish in 348.3 min at 04:33:30 on 15-Nov-2016
+
+RESULT for frailtySurv_1.2.2.1.tar.gz : success (227 of 836, 223 good, 4 bad) -- Now 22:45:50 This 37.9 sec, Avg 34.3 sec, exp. finish in 347.9 min at 04:33:43 on 15-Nov-2016
+
+RESULT for FRESA.CAD_2.2.1.tar.gz : success (228 of 836, 224 good, 4 bad) -- Now 22:46:50 This 59.9 sec, Avg 34.4 sec, exp. finish in 348.5 min at 04:35:17 on 15-Nov-2016
+
+RESULT for fromo_0.1.3.tar.gz : success (229 of 836, 225 good, 4 bad) -- Now 22:47:10 This 20.7 sec, Avg 34.3 sec, exp. finish in 347.3 min at 04:34:27 on 15-Nov-2016
+
+RESULT for FSInteract_0.1.1.tar.gz : success (230 of 836, 226 good, 4 bad) -- Now 22:47:36 This 25.7 sec, Avg 34.3 sec, exp. finish in 346.3 min at 04:33:56 on 15-Nov-2016
+
+RESULT for fugeR_0.1.2.tar.gz : success (231 of 836, 227 good, 4 bad) -- Now 22:47:51 This 15 sec, Avg 34.2 sec, exp. finish in 344.9 min at 04:32:46 on 15-Nov-2016
+
+RESULT for FunChisq_2.3.3.tar.gz : success (232 of 836, 228 good, 4 bad) -- Now 22:48:11 This 19.7 sec, Avg 34.1 sec, exp. finish in 343.7 min at 04:31:54 on 15-Nov-2016
+
+RESULT for Funclustering_1.0.1.tar.gz : success (233 of 836, 229 good, 4 bad) -- Now 22:48:55 This 44.3 sec, Avg 34.2 sec, exp. finish in 343.6 min at 04:32:30 on 15-Nov-2016
+
+RESULT for futureheatwaves_1.0.1.tar.gz : success (234 of 836, 230 good, 4 bad) -- Now 22:49:15 This 20 sec, Avg 34.1 sec, exp. finish in 342.4 min at 04:31:40 on 15-Nov-2016
+
+RESULT for fwsim_0.3.3.tar.gz : success (235 of 836, 231 good, 4 bad) -- Now 22:49:34 This 19 sec, Avg 34.1 sec, exp. finish in 341.2 min at 04:30:46 on 15-Nov-2016
+
+RESULT for gamreg_0.2.tar.gz : success (236 of 836, 232 good, 4 bad) -- Now 22:50:03 This 28.7 sec, Avg 34 sec, exp. finish in 340.4 min at 04:30:27 on 15-Nov-2016
+
+RESULT for gapfill_0.9.3.tar.gz : failure (237 of 836, 232 good, 5 bad) -- Now 22:50:42 This 38.8 sec, Avg 34.1 sec, exp. finish in 340 min at 04:30:44 on 15-Nov-2016
+
+RESULT for GAS_0.1.4.tar.gz : success (238 of 836, 233 good, 5 bad) -- Now 22:52:00 This 78.5 sec, Avg 34.2 sec, exp. finish in 341.3 min at 04:33:20 on 15-Nov-2016
+
+RESULT for gaselect_1.0.5.tar.gz : success (239 of 836, 234 good, 5 bad) -- Now 22:52:46 This 45.5 sec, Avg 34.3 sec, exp. finish in 341.2 min at 04:33:59 on 15-Nov-2016
+
+RESULT for gaston_1.4.8.tar.gz : success (240 of 836, 235 good, 5 bad) -- Now 22:54:42 This 116.5 sec, Avg 34.6 sec, exp. finish in 344.1 min at 04:38:45 on 15-Nov-2016
+
+RESULT for GauPro_0.1.0.tar.gz : success (241 of 836, 236 good, 5 bad) -- Now 22:55:15 This 32.5 sec, Avg 34.6 sec, exp. finish in 343.4 min at 04:38:38 on 15-Nov-2016
+
+RESULT for gcKrig_1.0.0.tar.gz : success (242 of 836, 237 good, 5 bad) -- Now 22:55:37 This 22.9 sec, Avg 34.6 sec, exp. finish in 342.3 min at 04:37:57 on 15-Nov-2016
+
+RESULT for GCPM_1.2.1.tar.gz : success (243 of 836, 238 good, 5 bad) -- Now 22:55:58 This 20.9 sec, Avg 34.5 sec, exp. finish in 341.2 min at 04:37:10 on 15-Nov-2016
+
+RESULT for gdm_1.2.3.tar.gz : success (244 of 836, 239 good, 5 bad) -- Now 22:56:52 This 53.5 sec, Avg 34.6 sec, exp. finish in 341.4 min at 04:38:15 on 15-Nov-2016
+
+RESULT for gdpc_1.0.0.tar.gz : success (245 of 836, 240 good, 5 bad) -- Now 22:57:16 This 24.1 sec, Avg 34.6 sec, exp. finish in 340.4 min at 04:37:39 on 15-Nov-2016
+
+RESULT for gdtools_0.1.3.tar.gz : success (246 of 836, 241 good, 5 bad) -- Now 22:57:36 This 20 sec, Avg 34.5 sec, exp. finish in 339.2 min at 04:36:50 on 15-Nov-2016
+
+RESULT for GEEaSPU_1.0.2.tar.gz : success (247 of 836, 242 good, 5 bad) -- Now 22:57:55 This 18.8 sec, Avg 34.4 sec, exp. finish in 338 min at 04:35:57 on 15-Nov-2016
+
+RESULT for geiger_2.0.6.tar.gz : success (248 of 836, 243 good, 5 bad) -- Now 22:58:41 This 46.1 sec, Avg 34.5 sec, exp. finish in 337.9 min at 04:36:36 on 15-Nov-2016
+
+RESULT for GeneticTools_0.3.1.tar.gz : success (249 of 836, 244 good, 5 bad) -- Now 22:59:19 This 38.2 sec, Avg 34.5 sec, exp. finish in 337.5 min at 04:36:48 on 15-Nov-2016
+
+RESULT for genie_1.0.2.tar.gz : success (250 of 836, 245 good, 5 bad) -- Now 22:59:43 This 23.8 sec, Avg 34.5 sec, exp. finish in 336.5 min at 04:36:13 on 15-Nov-2016
+
+RESULT for GENLIB_1.0.4.tar.gz : success (251 of 836, 246 good, 5 bad) -- Now 23:00:48 This 64.9 sec, Avg 34.6 sec, exp. finish in 337.1 min at 04:37:54 on 15-Nov-2016
+
+RESULT for GenomicTools_0.2.2.tar.gz : success (252 of 836, 247 good, 5 bad) -- Now 23:01:30 This 42 sec, Avg 34.6 sec, exp. finish in 336.8 min at 04:38:18 on 15-Nov-2016
+
+RESULT for geoCount_1.150120.tar.gz : success (253 of 836, 248 good, 5 bad) -- Now 23:02:02 This 32.3 sec, Avg 34.6 sec, exp. finish in 336.2 min at 04:38:11 on 15-Nov-2016
+
+RESULT for geohash_0.1.2.tar.gz : success (254 of 836, 249 good, 5 bad) -- Now 23:02:52 This 50.5 sec, Avg 34.7 sec, exp. finish in 336.2 min at 04:39:03 on 15-Nov-2016
+
+RESULT for GERGM_0.10.0.tar.gz : success (255 of 836, 250 good, 5 bad) -- Now 23:03:49 This 56.3 sec, Avg 34.7 sec, exp. finish in 336.4 min at 04:40:14 on 15-Nov-2016
+
+RESULT for ggdmc_0.1.3.5.tar.gz : success (256 of 836, 251 good, 5 bad) -- Now 23:05:32 This 103.6 sec, Avg 35 sec, exp. finish in 338.4 min at 04:43:59 on 15-Nov-2016
+
+RESULT for ggrepel_0.6.3.tar.gz : success (257 of 836, 252 good, 5 bad) -- Now 23:05:49 This 16.5 sec, Avg 34.9 sec, exp. finish in 337.2 min at 04:42:59 on 15-Nov-2016
+
+RESULT for GiRaF_1.0.tar.gz : success (258 of 836, 253 good, 5 bad) -- Now 23:06:21 This 32.7 sec, Avg 34.9 sec, exp. finish in 336.5 min at 04:42:51 on 15-Nov-2016
+
+RESULT for gjam_2.0.tar.gz : success (259 of 836, 254 good, 5 bad) -- Now 23:07:11 This 49.6 sec, Avg 35 sec, exp. finish in 336.5 min at 04:43:38 on 15-Nov-2016
+
+RESULT for gkmSVM_0.71.0.tar.gz : success (260 of 836, 255 good, 5 bad) -- Now 23:07:36 This 25.1 sec, Avg 34.9 sec, exp. finish in 335.5 min at 04:43:07 on 15-Nov-2016
+
+RESULT for glamlasso_2.0.1.tar.gz : success (261 of 836, 256 good, 5 bad) -- Now 23:07:59 This 23 sec, Avg 34.9 sec, exp. finish in 334.5 min at 04:42:28 on 15-Nov-2016
+
+RESULT for glcm_1.6.1.tar.gz : success (262 of 836, 257 good, 5 bad) -- Now 23:08:19 This 20 sec, Avg 34.8 sec, exp. finish in 333.4 min at 04:41:41 on 15-Nov-2016
+
+RESULT for glmBfp_0.0-48.tar.gz : success (263 of 836, 258 good, 5 bad) -- Now 23:09:22 This 62.7 sec, Avg 35 sec, exp. finish in 333.8 min at 04:43:09 on 15-Nov-2016
+
+RESULT for glmgraph_1.0.3.tar.gz : success (264 of 836, 259 good, 5 bad) -- Now 23:10:02 This 40.1 sec, Avg 35 sec, exp. finish in 333.4 min at 04:43:26 on 15-Nov-2016
+
+RESULT for glmmsr_0.1.1.tar.gz : success (265 of 836, 260 good, 5 bad) -- Now 23:11:48 This 105.7 sec, Avg 35.2 sec, exp. finish in 335.4 min at 04:47:09 on 15-Nov-2016
+
+RESULT for GMCM_1.2.3.tar.gz : success (266 of 836, 261 good, 5 bad) -- Now 23:12:22 This 34.4 sec, Avg 35.2 sec, exp. finish in 334.7 min at 04:47:06 on 15-Nov-2016
+
+RESULT for Gmedian_1.2.3.tar.gz : success (267 of 836, 262 good, 5 bad) -- Now 23:12:56 This 34.5 sec, Avg 35.2 sec, exp. finish in 334.1 min at 04:47:04 on 15-Nov-2016
+
+RESULT for Gmisc_1.4.1.tar.gz : success (268 of 836, 263 good, 5 bad) -- Now 23:13:43 This 47 sec, Avg 35.3 sec, exp. finish in 333.9 min at 04:47:40 on 15-Nov-2016
+
+RESULT for gmum.r_0.2.1.tar.gz : success (269 of 836, 264 good, 5 bad) -- Now 23:15:35 This 111.2 sec, Avg 35.6 sec, exp. finish in 336 min at 04:51:36 on 15-Nov-2016
+
+RESULT for gmwm_2.0.0.tar.gz : success (270 of 836, 265 good, 5 bad) -- Now 23:17:10 This 94.9 sec, Avg 35.8 sec, exp. finish in 337.5 min at 04:54:40 on 15-Nov-2016
+
+RESULT for gMWT_1.1.tar.gz : success (271 of 836, 266 good, 5 bad) -- Now 23:17:37 This 27.3 sec, Avg 35.7 sec, exp. finish in 336.6 min at 04:54:14 on 15-Nov-2016
+
+RESULT for gogamer_0.4.3.tar.gz : success (272 of 836, 267 good, 5 bad) -- Now 23:18:08 This 31.6 sec, Avg 35.7 sec, exp. finish in 335.9 min at 04:54:01 on 15-Nov-2016
+
+RESULT for goldi_1.0.0.tar.gz : success (273 of 836, 268 good, 5 bad) -- Now 23:18:56 This 47.5 sec, Avg 35.8 sec, exp. finish in 335.7 min at 04:54:37 on 15-Nov-2016
+
+RESULT for googleway_1.0.0.tar.gz : success (274 of 836, 269 good, 5 bad) -- Now 23:19:10 This 13.7 sec, Avg 35.7 sec, exp. finish in 334.3 min at 04:53:30 on 15-Nov-2016
+
+RESULT for GPareto_1.0.3.tar.gz : success (275 of 836, 270 good, 5 bad) -- Now 23:19:50 This 40.1 sec, Avg 35.7 sec, exp. finish in 333.9 min at 04:53:43 on 15-Nov-2016
+
+RESULT for GPvam_3.0-3.tar.gz : success (276 of 836, 271 good, 5 bad) -- Now 23:20:27 This 37.4 sec, Avg 35.7 sec, exp. finish in 333.4 min at 04:53:48 on 15-Nov-2016
+
+RESULT for gRain_1.3-0.tar.gz : success (277 of 836, 272 good, 5 bad) -- Now 23:21:10 This 42.8 sec, Avg 35.7 sec, exp. finish in 333 min at 04:54:10 on 15-Nov-2016
+
+RESULT for graphicalVAR_0.1.4.tar.gz : success (278 of 836, 273 good, 5 bad) -- Now 23:21:55 This 44.8 sec, Avg 35.8 sec, exp. finish in 332.7 min at 04:54:37 on 15-Nov-2016
+
+RESULT for graphql_1.0.tar.gz : success (279 of 836, 274 good, 5 bad) -- Now 23:22:12 This 17.8 sec, Avg 35.7 sec, exp. finish in 331.5 min at 04:53:43 on 15-Nov-2016
+
+RESULT for gRbase_1.8-1.tar.gz : success (280 of 836, 275 good, 5 bad) -- Now 23:23:29 This 76.7 sec, Avg 35.9 sec, exp. finish in 332.3 min at 04:55:46 on 15-Nov-2016
+
+RESULT for gRim_0.1-17.tar.gz : success (281 of 836, 276 good, 5 bad) -- Now 23:24:13 This 43.8 sec, Avg 35.9 sec, exp. finish in 331.9 min at 04:56:09 on 15-Nov-2016
+
+RESULT for growcurves_0.2.4.0.tar.gz : success (282 of 836, 277 good, 5 bad) -- Now 23:25:55 This 102 sec, Avg 36.1 sec, exp. finish in 333.5 min at 04:59:25 on 15-Nov-2016
+
+RESULT for growfunctions_0.13.tar.gz : success (283 of 836, 278 good, 5 bad) -- Now 23:27:22 This 87.5 sec, Avg 36.3 sec, exp. finish in 334.6 min at 05:01:57 on 15-Nov-2016
+
+RESULT for GSE_4.0.tar.gz : success (284 of 836, 279 good, 5 bad) -- Now 23:27:55 This 33 sec, Avg 36.3 sec, exp. finish in 333.9 min at 05:01:47 on 15-Nov-2016
+
+RESULT for gsEasy_1.1.tar.gz : success (285 of 836, 280 good, 5 bad) -- Now 23:28:08 This 12.7 sec, Avg 36.2 sec, exp. finish in 332.5 min at 05:00:38 on 15-Nov-2016
+
+RESULT for GUILDS_1.3.tar.gz : success (286 of 836, 281 good, 5 bad) -- Now 23:28:26 This 17.4 sec, Avg 36.1 sec, exp. finish in 331.3 min at 04:59:43 on 15-Nov-2016
+
+RESULT for GUTS_1.0.0.tar.gz : success (287 of 836, 282 good, 5 bad) -- Now 23:28:39 This 13.3 sec, Avg 36.1 sec, exp. finish in 330 min at 04:58:36 on 15-Nov-2016
+
+RESULT for GxM_1.1.tar.gz : success (288 of 836, 283 good, 5 bad) -- Now 23:28:57 This 17.7 sec, Avg 36 sec, exp. finish in 328.8 min at 04:57:43 on 15-Nov-2016
+
+RESULT for h5_0.9.8.tar.gz : success (289 of 836, 284 good, 5 bad) -- Now 23:29:26 This 29.2 sec, Avg 36 sec, exp. finish in 328 min at 04:57:23 on 15-Nov-2016
+
+RESULT for hashmap_0.1.0.tar.gz : success (290 of 836, 285 good, 5 bad) -- Now 23:29:55 This 28.9 sec, Avg 35.9 sec, exp. finish in 327.1 min at 04:57:03 on 15-Nov-2016
+
+RESULT for haven_1.0.0.tar.gz : success (291 of 836, 286 good, 5 bad) -- Now 23:30:15 This 20 sec, Avg 35.9 sec, exp. finish in 326 min at 04:56:17 on 15-Nov-2016
+
+RESULT for hawkes_0.0-4.tar.gz : success (292 of 836, 287 good, 5 bad) -- Now 23:30:30 This 15.8 sec, Avg 35.8 sec, exp. finish in 324.8 min at 04:55:19 on 15-Nov-2016
+
+RESULT for HDPenReg_0.93.1.tar.gz : success (293 of 836, 288 good, 5 bad) -- Now 23:32:02 This 91.7 sec, Avg 36 sec, exp. finish in 325.9 min at 04:57:59 on 15-Nov-2016
+
+RESULT for hierarchicalSets_1.0.2.tar.gz : success (294 of 836, 289 good, 5 bad) -- Now 23:32:41 This 39.3 sec, Avg 36 sec, exp. finish in 325.4 min at 04:58:08 on 15-Nov-2016
+
+RESULT for hit_0.3.1.tar.gz : success (295 of 836, 290 good, 5 bad) -- Now 23:33:10 This 29 sec, Avg 36 sec, exp. finish in 324.6 min at 04:57:48 on 15-Nov-2016
+
+RESULT for hkevp_1.1.4.tar.gz : success (296 of 836, 291 good, 5 bad) -- Now 23:33:46 This 35.2 sec, Avg 36 sec, exp. finish in 324 min at 04:57:46 on 15-Nov-2016
+
+RESULT for HLMdiag_0.3.1.tar.gz : success (297 of 836, 292 good, 5 bad) -- Now 23:34:34 This 48.5 sec, Avg 36 sec, exp. finish in 323.8 min at 04:58:21 on 15-Nov-2016
+
+RESULT for HSAR_0.4.0.tar.gz : success (298 of 836, 293 good, 5 bad) -- Now 23:35:26 This 52.1 sec, Avg 36.1 sec, exp. finish in 323.7 min at 04:59:06 on 15-Nov-2016
+
+RESULT for hsphase_2.0.1.tar.gz : success (299 of 836, 294 good, 5 bad) -- Now 23:35:52 This 26.1 sec, Avg 36.1 sec, exp. finish in 322.8 min at 04:58:38 on 15-Nov-2016
+
+RESULT for htdp_0.1.4.tar.gz : success (300 of 836, 295 good, 5 bad) -- Now 23:36:08 This 15.5 sec, Avg 36 sec, exp. finish in 321.6 min at 04:57:41 on 15-Nov-2016
+
+RESULT for htmltidy_0.3.0.tar.gz : success (301 of 836, 296 good, 5 bad) -- Now 23:36:30 This 21.9 sec, Avg 35.9 sec, exp. finish in 320.5 min at 04:57:02 on 15-Nov-2016
+
+RESULT for htmltools_0.3.5.tar.gz : success (302 of 836, 297 good, 5 bad) -- Now 23:36:44 This 14 sec, Avg 35.9 sec, exp. finish in 319.3 min at 04:56:01 on 15-Nov-2016
+
+RESULT for hts_5.0.tar.gz : success (303 of 836, 298 good, 5 bad) -- Now 23:37:23 This 39.1 sec, Avg 35.9 sec, exp. finish in 318.8 min at 04:56:10 on 15-Nov-2016
+
+RESULT for httpuv_1.3.3.tar.gz : success (304 of 836, 299 good, 5 bad) -- Now 23:37:43 This 20.4 sec, Avg 35.8 sec, exp. finish in 317.7 min at 04:55:27 on 15-Nov-2016
+
+RESULT for HUM_1.0.tar.gz : success (305 of 836, 300 good, 5 bad) -- Now 23:37:59 This 15.5 sec, Avg 35.8 sec, exp. finish in 316.5 min at 04:54:32 on 15-Nov-2016
+
+RESULT for humaniformat_0.6.0.tar.gz : success (306 of 836, 301 good, 5 bad) -- Now 23:38:16 This 17 sec, Avg 35.7 sec, exp. finish in 315.4 min at 04:53:40 on 15-Nov-2016
+
+RESULT for humarray_1.0.2.tar.gz : failure (307 of 836, 301 good, 6 bad) -- Now 23:40:46 This 150.5 sec, Avg 36.1 sec, exp. finish in 318.1 min at 04:58:53 on 15-Nov-2016
+
+RESULT for hunspell_2.2.tar.gz : success (308 of 836, 302 good, 6 bad) -- Now 23:41:20 This 34.3 sec, Avg 36.1 sec, exp. finish in 317.5 min at 04:58:48 on 15-Nov-2016
+
+RESULT for hypervolume_1.4.1.tar.gz : success (309 of 836, 303 good, 6 bad) -- Now 23:41:51 This 30.7 sec, Avg 36.1 sec, exp. finish in 316.7 min at 04:58:33 on 15-Nov-2016
+
+RESULT for hyphenatr_0.3.0.tar.gz : success (310 of 836, 304 good, 6 bad) -- Now 23:42:05 This 14.3 sec, Avg 36 sec, exp. finish in 315.5 min at 04:57:35 on 15-Nov-2016
+
+RESULT for IAPWS95_1.0.0.tar.gz : success (311 of 836, 305 good, 6 bad) -- Now 23:42:20 This 14.5 sec, Avg 35.9 sec, exp. finish in 314.3 min at 04:56:37 on 15-Nov-2016
+
+RESULT for iBATCGH_1.3.tar.gz : success (312 of 836, 306 good, 6 bad) -- Now 23:43:28 This 68 sec, Avg 36 sec, exp. finish in 314.6 min at 04:58:03 on 15-Nov-2016
+
+RESULT for IBHM_1.1-11.tar.gz : success (313 of 836, 307 good, 6 bad) -- Now 23:44:24 This 56.3 sec, Avg 36.1 sec, exp. finish in 314.5 min at 04:58:57 on 15-Nov-2016
+
+RESULT for ibm_0.1.0.tar.gz : success (314 of 836, 308 good, 6 bad) -- Now 23:44:37 This 12.7 sec, Avg 36 sec, exp. finish in 313.3 min at 04:57:55 on 15-Nov-2016
+
+RESULT for icamix_1.0.4.tar.gz : success (315 of 836, 309 good, 6 bad) -- Now 23:44:56 This 19.1 sec, Avg 36 sec, exp. finish in 312.2 min at 04:57:10 on 15-Nov-2016
+
+RESULT for ICAOD_0.9.1.tar.gz : success (316 of 836, 310 good, 6 bad) -- Now 23:45:39 This 42.7 sec, Avg 36 sec, exp. finish in 311.8 min at 04:57:28 on 15-Nov-2016
+
+RESULT for iccbeta_1.0.tar.gz : success (317 of 836, 311 good, 6 bad) -- Now 23:46:08 This 28.9 sec, Avg 36 sec, exp. finish in 311 min at 04:57:09 on 15-Nov-2016
+
+RESULT for icd_2.1.tar.gz : success (318 of 836, 312 good, 6 bad) -- Now 23:48:02 This 114 sec, Avg 36.2 sec, exp. finish in 312.5 min at 05:00:34 on 15-Nov-2016
+
+RESULT for icd9_1.3.1.tar.gz : success (319 of 836, 313 good, 6 bad) -- Now 23:48:52 This 50.2 sec, Avg 36.2 sec, exp. finish in 312.3 min at 05:01:11 on 15-Nov-2016
+
+RESULT for icensmis_1.3.1.tar.gz : success (320 of 836, 314 good, 6 bad) -- Now 23:49:16 This 24.1 sec, Avg 36.2 sec, exp. finish in 311.4 min at 05:00:39 on 15-Nov-2016
+
+RESULT for icRSF_1.0.tar.gz : success (321 of 836, 315 good, 6 bad) -- Now 23:49:31 This 15 sec, Avg 36.1 sec, exp. finish in 310.2 min at 04:59:44 on 15-Nov-2016
+
+RESULT for IHSEP_0.0.tar.gz : success (322 of 836, 316 good, 6 bad) -- Now 23:49:45 This 14.3 sec, Avg 36.1 sec, exp. finish in 309 min at 04:58:47 on 15-Nov-2016
+
+RESULT for iLaplace_1.1.0.tar.gz : success (323 of 836, 317 good, 6 bad) -- Now 23:50:02 This 16.4 sec, Avg 36 sec, exp. finish in 307.9 min at 04:57:56 on 15-Nov-2016
+
+RESULT for imager_0.31.tar.gz : success (324 of 836, 318 good, 6 bad) -- Now 23:51:36 This 94.4 sec, Avg 36.2 sec, exp. finish in 308.8 min at 05:00:27 on 15-Nov-2016
+
+RESULT for immer_0.6-0.tar.gz : success (325 of 836, 319 good, 6 bad) -- Now 23:52:26 This 50.3 sec, Avg 36.2 sec, exp. finish in 308.6 min at 05:01:03 on 15-Nov-2016
+
+RESULT for imputeMulti_0.6.3.tar.gz : success (326 of 836, 320 good, 6 bad) -- Now 23:52:43 This 16.2 sec, Avg 36.2 sec, exp. finish in 307.5 min at 05:00:12 on 15-Nov-2016
+
+RESULT for inarmix_0.4.tar.gz : success (327 of 836, 321 good, 6 bad) -- Now 23:53:18 This 35.1 sec, Avg 36.2 sec, exp. finish in 306.9 min at 05:00:09 on 15-Nov-2016
+
+RESULT for inca_0.0.2.tar.gz : success (328 of 836, 322 good, 6 bad) -- Now 23:53:51 This 33 sec, Avg 36.2 sec, exp. finish in 306.2 min at 05:00:01 on 15-Nov-2016
+
+RESULT for indelmiss_1.0.7.tar.gz : success (329 of 836, 323 good, 6 bad) -- Now 23:54:20 This 29.5 sec, Avg 36.1 sec, exp. finish in 305.4 min at 04:59:44 on 15-Nov-2016
+
+RESULT for IntegratedMRF_1.1.5.tar.gz : success (330 of 836, 324 good, 6 bad) -- Now 23:54:47 This 27 sec, Avg 36.1 sec, exp. finish in 304.6 min at 04:59:21 on 15-Nov-2016
+
+RESULT for iprior_0.6.2.tar.gz : success (331 of 836, 325 good, 6 bad) -- Now 23:55:20 This 32.4 sec, Avg 36.1 sec, exp. finish in 303.9 min at 04:59:12 on 15-Nov-2016
+
+RESULT for iptools_0.4.0.tar.gz : success (332 of 836, 326 good, 6 bad) -- Now 23:55:39 This 19.1 sec, Avg 36.1 sec, exp. finish in 302.8 min at 04:58:29 on 15-Nov-2016
+
+RESULT for IRTpp_0.2.6.1.tar.gz : success (333 of 836, 327 good, 6 bad) -- Now 23:56:04 This 25.5 sec, Avg 36 sec, exp. finish in 302 min at 04:58:03 on 15-Nov-2016
+
+RESULT for IsingSampler_0.2.tar.gz : success (334 of 836, 328 good, 6 bad) -- Now 23:56:22 This 17.6 sec, Avg 36 sec, exp. finish in 300.9 min at 04:57:17 on 15-Nov-2016
+
+RESULT for isoph_0.5.tar.gz : success (335 of 836, 329 good, 6 bad) -- Now 23:56:47 This 24.7 sec, Avg 35.9 sec, exp. finish in 300 min at 04:56:48 on 15-Nov-2016
+
+RESULT for ISOpureR_1.0.21.tar.gz : success (336 of 836, 330 good, 6 bad) -- Now 23:57:05 This 18.5 sec, Avg 35.9 sec, exp. finish in 299 min at 04:56:05 on 15-Nov-2016
+
+RESULT for IsoSpecR_1.0.1.tar.gz : success (337 of 836, 331 good, 6 bad) -- Now 23:57:22 This 16.8 sec, Avg 35.8 sec, exp. finish in 297.9 min at 04:55:18 on 15-Nov-2016
+
+RESULT for iterpc_0.3.0.tar.gz : success (338 of 836, 332 good, 6 bad) -- Now 23:57:37 This 15.5 sec, Avg 35.8 sec, exp. finish in 296.8 min at 04:54:27 on 15-Nov-2016
+
+RESULT for JacobiEigen_0.2-2.tar.gz : success (339 of 836, 333 good, 6 bad) -- Now 23:57:50 This 13 sec, Avg 35.7 sec, exp. finish in 295.7 min at 04:53:31 on 15-Nov-2016
+
+RESULT for JAGUAR_3.0.1.tar.gz : success (340 of 836, 334 good, 6 bad) -- Now 23:58:26 This 35.3 sec, Avg 35.7 sec, exp. finish in 295.1 min at 04:53:30 on 15-Nov-2016
+
+RESULT for jiebaR_0.9.1.tar.gz : success (341 of 836, 335 good, 6 bad) -- Now 23:59:03 This 37.1 sec, Avg 35.7 sec, exp. finish in 294.5 min at 04:53:34 on 15-Nov-2016
+
+RESULT for jmcm_0.1.7.0.tar.gz : success (342 of 836, 336 good, 6 bad) -- Now 23:59:33 This 30 sec, Avg 35.7 sec, exp. finish in 293.8 min at 04:53:20 on 15-Nov-2016
+
+RESULT for jmotif_1.0.2.900.tar.gz : success (343 of 836, 337 good, 6 bad) -- Now 00:00:30 This 57.7 sec, Avg 35.7 sec, exp. finish in 293.7 min at 04:54:14 on 15-Nov-2016
+
+RESULT for joinXL_1.0.1.tar.gz : success (344 of 836, 338 good, 6 bad) -- Now 00:00:53 This 22.8 sec, Avg 35.7 sec, exp. finish in 292.8 min at 04:53:42 on 15-Nov-2016
+
+RESULT for JOUSBoost_1.0.0.tar.gz : success (345 of 836, 339 good, 6 bad) -- Now 00:01:06 This 12.7 sec, Avg 35.6 sec, exp. finish in 291.7 min at 04:52:46 on 15-Nov-2016
+
+RESULT for jqr_0.2.4.tar.gz : success (346 of 836, 340 good, 6 bad) -- Now 00:01:23 This 16.7 sec, Avg 35.6 sec, exp. finish in 290.6 min at 04:52:01 on 15-Nov-2016
+
+RESULT for JSM_0.1.0.tar.gz : success (347 of 836, 341 good, 6 bad) -- Now 00:03:26 This 123.1 sec, Avg 35.8 sec, exp. finish in 292.1 min at 04:55:32 on 15-Nov-2016
+
+RESULT for jtGWAS_1.4.tar.gz : success (348 of 836, 342 good, 6 bad) -- Now 00:03:44 This 17.8 sec, Avg 35.8 sec, exp. finish in 291.1 min at 04:54:48 on 15-Nov-2016
+
+RESULT for jwutil_1.1.1.tar.gz : success (349 of 836, 343 good, 6 bad) -- Now 00:04:01 This 16.9 sec, Avg 35.7 sec, exp. finish in 290 min at 04:54:03 on 15-Nov-2016
+
+RESULT for kamila_0.1.1.1.tar.gz : success (350 of 836, 344 good, 6 bad) -- Now 00:04:16 This 15.2 sec, Avg 35.7 sec, exp. finish in 289 min at 04:53:14 on 15-Nov-2016
+
+RESULT for kdecopula_0.6.0.tar.gz : success (351 of 836, 345 good, 6 bad) -- Now 00:04:48 This 32.3 sec, Avg 35.7 sec, exp. finish in 288.3 min at 04:53:06 on 15-Nov-2016
+
+RESULT for kergp_0.2.0.tar.gz : success (352 of 836, 346 good, 6 bad) -- Now 00:05:09 This 20.5 sec, Avg 35.6 sec, exp. finish in 287.4 min at 04:52:30 on 15-Nov-2016
+
+RESULT for kernDeepStackNet_1.0.1.tar.gz : success (353 of 836, 347 good, 6 bad) -- Now 00:06:57 This 108.3 sec, Avg 35.8 sec, exp. finish in 288.4 min at 04:55:22 on 15-Nov-2016
+
+RESULT for KernelKnn_1.0.2.tar.gz : success (354 of 836, 348 good, 6 bad) -- Now 00:07:36 This 39.1 sec, Avg 35.8 sec, exp. finish in 287.9 min at 04:55:30 on 15-Nov-2016
+
+RESULT for KernSmoothIRT_6.1.tar.gz : success (355 of 836, 349 good, 6 bad) -- Now 00:07:55 This 18.8 sec, Avg 35.8 sec, exp. finish in 286.9 min at 04:54:49 on 15-Nov-2016
+
+RESULT for kmc_0.2-2.tar.gz : success (356 of 836, 350 good, 6 bad) -- Now 00:08:22 This 27.7 sec, Avg 35.8 sec, exp. finish in 286.1 min at 04:54:31 on 15-Nov-2016
+
+RESULT for kmeans.ddR_0.1.0.tar.gz : success (357 of 836, 351 good, 6 bad) -- Now 00:08:36 This 13.8 sec, Avg 35.7 sec, exp. finish in 285 min at 04:53:39 on 15-Nov-2016
+
+RESULT for Kmisc_0.5.0.tar.gz : success (358 of 836, 352 good, 6 bad) -- Now 00:09:03 This 26.9 sec, Avg 35.7 sec, exp. finish in 284.3 min at 04:53:19 on 15-Nov-2016
+
+RESULT for KODAMA_1.1.tar.gz : success (359 of 836, 353 good, 6 bad) -- Now 00:09:33 This 29.5 sec, Avg 35.7 sec, exp. finish in 283.5 min at 04:53:04 on 15-Nov-2016
+
+RESULT for l0ara_0.1.3.tar.gz : success (360 of 836, 354 good, 6 bad) -- Now 00:09:48 This 15.1 sec, Avg 35.6 sec, exp. finish in 282.5 min at 04:52:16 on 15-Nov-2016
+
+RESULT for LaF_0.6.2.tar.gz : success (361 of 836, 355 good, 6 bad) -- Now 00:10:16 This 27.9 sec, Avg 35.6 sec, exp. finish in 281.7 min at 04:51:58 on 15-Nov-2016
+
+RESULT for LambertW_0.6.4.tar.gz : success (362 of 836, 356 good, 6 bad) -- Now 00:11:02 This 46.5 sec, Avg 35.6 sec, exp. finish in 281.4 min at 04:52:24 on 15-Nov-2016
+
+RESULT for lamW_1.2.0.tar.gz : success (363 of 836, 357 good, 6 bad) -- Now 00:11:15 This 13.1 sec, Avg 35.6 sec, exp. finish in 280.3 min at 04:51:32 on 15-Nov-2016
+
+RESULT for Langevin_1.2.tar.gz : success (364 of 836, 358 good, 6 bad) -- Now 00:11:36 This 21.3 sec, Avg 35.5 sec, exp. finish in 279.4 min at 04:50:59 on 15-Nov-2016
+
+RESULT for largeVis_0.1.10.tar.gz : success (365 of 836, 359 good, 6 bad) -- Now 00:13:12 This 95.2 sec, Avg 35.7 sec, exp. finish in 280.1 min at 04:53:16 on 15-Nov-2016
+
+RESULT for LassoBacktracking_0.1.1.tar.gz : success (366 of 836, 360 good, 6 bad) -- Now 00:13:39 This 27.6 sec, Avg 35.7 sec, exp. finish in 279.3 min at 04:52:57 on 15-Nov-2016
+
+RESULT for lasvmR_0.1.2.tar.gz : success (367 of 836, 361 good, 6 bad) -- Now 00:14:01 This 21.6 sec, Avg 35.6 sec, exp. finish in 278.4 min at 04:52:25 on 15-Nov-2016
+
+RESULT for LatentREGpp_0.1.1.tar.gz : success (368 of 836, 362 good, 6 bad) -- Now 00:15:21 This 80.4 sec, Avg 35.7 sec, exp. finish in 278.8 min at 04:54:07 on 15-Nov-2016
+
+RESULT for lbfgs_1.2.1.tar.gz : success (369 of 836, 363 good, 6 bad) -- Now 00:15:36 This 15 sec, Avg 35.7 sec, exp. finish in 277.7 min at 04:53:20 on 15-Nov-2016
+trying URL 'http://cran.rstudio.com/src/contrib/lclGWAS_1.0.tar.gz'
+Content type 'application/x-gzip' length 78377 bytes (76 KB)
+==================================================
+downloaded 76 KB
+
+Downloaded  lclGWAS_1.0.tar.gz 
+
+RESULT for lclGWAS_1.0.tar.gz : success (370 of 836, 364 good, 6 bad) -- Now 00:15:56 This 19.6 sec, Avg 35.6 sec, exp. finish in 276.8 min at 04:52:44 on 15-Nov-2016
+
+RESULT for lcopula_0.206.tar.gz : success (371 of 836, 365 good, 6 bad) -- Now 00:16:32 This 36.4 sec, Avg 35.6 sec, exp. finish in 276.2 min at 04:52:46 on 15-Nov-2016
+
+RESULT for lexRankr_0.3.0.tar.gz : success (372 of 836, 366 good, 6 bad) -- Now 00:16:45 This 12.4 sec, Avg 35.6 sec, exp. finish in 275.1 min at 04:51:53 on 15-Nov-2016
+
+RESULT for lfl_1.3.tar.gz : success (373 of 836, 367 good, 6 bad) -- Now 00:17:28 This 43.7 sec, Avg 35.6 sec, exp. finish in 274.7 min at 04:52:12 on 15-Nov-2016
+
+RESULT for lifecontingencies_1.2.1.tar.gz : success (374 of 836, 368 good, 6 bad) -- Now 00:18:16 This 47.7 sec, Avg 35.6 sec, exp. finish in 274.4 min at 04:52:39 on 15-Nov-2016
+
+RESULT for lm.br_2.8.tar.gz : success (375 of 836, 369 good, 6 bad) -- Now 00:19:00 This 43.4 sec, Avg 35.7 sec, exp. finish in 273.9 min at 04:52:56 on 15-Nov-2016
+
+RESULT for lme4_1.1-12.tar.gz : success (376 of 836, 370 good, 6 bad) -- Now 00:23:17 This 257.5 sec, Avg 36.2 sec, exp. finish in 277.9 min at 05:01:09 on 15-Nov-2016
+
+RESULT for lowmemtkmeans_0.1.1.tar.gz : success (377 of 836, 371 good, 6 bad) -- Now 00:23:33 This 15.8 sec, Avg 36.2 sec, exp. finish in 276.9 min at 05:00:24 on 15-Nov-2016
+
+RESULT for lpme_1.0.1.tar.gz : success (378 of 836, 372 good, 6 bad) -- Now 00:23:53 This 20.2 sec, Avg 36.1 sec, exp. finish in 275.9 min at 04:59:49 on 15-Nov-2016
+
+RESULT for lsbclust_1.0.4.tar.gz : success (379 of 836, 373 good, 6 bad) -- Now 00:24:23 This 30.4 sec, Avg 36.1 sec, exp. finish in 275.2 min at 04:59:36 on 15-Nov-2016
+
+RESULT for lsgl_1.3.0.tar.gz : success (380 of 836, 374 good, 6 bad) -- Now 00:25:18 This 54.5 sec, Avg 36.2 sec, exp. finish in 275 min at 05:00:16 on 15-Nov-2016
+
+RESULT for lucr_0.2.0.tar.gz : success (381 of 836, 375 good, 6 bad) -- Now 00:25:31 This 12.8 sec, Avg 36.1 sec, exp. finish in 273.9 min at 04:59:25 on 15-Nov-2016
+
+RESULT for Luminescence_0.6.4.tar.gz : success (382 of 836, 376 good, 6 bad) -- Now 00:26:51 This 80.1 sec, Avg 36.2 sec, exp. finish in 274.2 min at 05:01:01 on 15-Nov-2016
+
+RESULT for magick_0.3.tar.gz : success (383 of 836, 377 good, 6 bad) -- Now 00:27:20 This 29.4 sec, Avg 36.2 sec, exp. finish in 273.4 min at 05:00:46 on 15-Nov-2016
+
+RESULT for MAINT.Data_1.0.0.tar.gz : success (384 of 836, 378 good, 6 bad) -- Now 00:28:08 This 47.4 sec, Avg 36.2 sec, exp. finish in 273 min at 05:01:11 on 15-Nov-2016
+
+RESULT for ManifoldOptim_0.1.0.tar.gz : success (385 of 836, 379 good, 6 bad) -- Now 00:28:48 This 40.1 sec, Avg 36.3 sec, exp. finish in 272.5 min at 05:01:19 on 15-Nov-2016
+
+RESULT for marked_1.1.11.tar.gz : success (386 of 836, 380 good, 6 bad) -- Now 00:29:30 This 42 sec, Avg 36.3 sec, exp. finish in 272 min at 05:01:31 on 15-Nov-2016
+
+RESULT for markophylo_1.0.4.tar.gz : success (387 of 836, 381 good, 6 bad) -- Now 00:30:04 This 34 sec, Avg 36.3 sec, exp. finish in 271.4 min at 05:01:27 on 15-Nov-2016
+
+RESULT for markovchain_0.6.5.1.tar.gz : success (388 of 836, 382 good, 6 bad) -- Now 00:31:07 This 62.9 sec, Avg 36.3 sec, exp. finish in 271.3 min at 05:02:24 on 15-Nov-2016
+
+RESULT for MAT_2.2.tar.gz : success (389 of 836, 383 good, 6 bad) -- Now 00:31:30 This 23.1 sec, Avg 36.3 sec, exp. finish in 270.4 min at 05:01:56 on 15-Nov-2016
+
+RESULT for matchingMarkets_0.3-2.tar.gz : success (390 of 836, 384 good, 6 bad) -- Now 00:32:04 This 34.7 sec, Avg 36.3 sec, exp. finish in 269.8 min at 05:01:52 on 15-Nov-2016
+
+RESULT for matchingR_1.2.1.tar.gz : success (391 of 836, 385 good, 6 bad) -- Now 00:32:27 This 22.7 sec, Avg 36.3 sec, exp. finish in 268.9 min at 05:01:23 on 15-Nov-2016
+
+RESULT for MatchItSE_1.0.tar.gz : success (392 of 836, 386 good, 6 bad) -- Now 00:32:45 This 18.1 sec, Avg 36.2 sec, exp. finish in 268 min at 05:00:44 on 15-Nov-2016
+
+RESULT for mateable_0.3.1.tar.gz : success (393 of 836, 387 good, 6 bad) -- Now 00:33:03 This 18.2 sec, Avg 36.2 sec, exp. finish in 267 min at 05:00:06 on 15-Nov-2016
+
+RESULT for MatrixCorrelation_0.9.tar.gz : success (394 of 836, 388 good, 6 bad) -- Now 00:33:36 This 32.4 sec, Avg 36.2 sec, exp. finish in 266.4 min at 04:59:58 on 15-Nov-2016
+
+RESULT for MatrixLDA_0.1.tar.gz : success (395 of 836, 389 good, 6 bad) -- Now 00:33:55 This 19.4 sec, Avg 36.1 sec, exp. finish in 265.5 min at 04:59:22 on 15-Nov-2016
+
+RESULT for maxent_1.3.3.1.tar.gz : success (396 of 836, 390 good, 6 bad) -- Now 00:34:18 This 22.8 sec, Avg 36.1 sec, exp. finish in 264.6 min at 04:58:54 on 15-Nov-2016
+
+RESULT for mbbefd_0.8-5.tar.gz : success (397 of 836, 391 good, 6 bad) -- Now 00:35:18 This 60 sec, Avg 36.1 sec, exp. finish in 264.4 min at 04:59:45 on 15-Nov-2016
+
+RESULT for mcemGLM_1.1.tar.gz : success (398 of 836, 392 good, 6 bad) -- Now 00:37:10 This 111.7 sec, Avg 36.3 sec, exp. finish in 265.2 min at 05:02:23 on 15-Nov-2016
+
+RESULT for mcga_3.0.1.tar.gz : success (399 of 836, 393 good, 6 bad) -- Now 00:37:33 This 23 sec, Avg 36.3 sec, exp. finish in 264.4 min at 05:01:56 on 15-Nov-2016
+
+RESULT for mcIRT_0.41.tar.gz : success (400 of 836, 394 good, 6 bad) -- Now 00:38:10 This 37.5 sec, Avg 36.3 sec, exp. finish in 263.8 min at 05:01:58 on 15-Nov-2016
+
+RESULT for mcmcse_1.2-1.tar.gz : success (401 of 836, 395 good, 6 bad) -- Now 00:38:32 This 21.6 sec, Avg 36.3 sec, exp. finish in 262.9 min at 05:01:27 on 15-Nov-2016
+
+RESULT for mcPAFit_0.1.3.tar.gz : success (402 of 836, 396 good, 6 bad) -- Now 00:38:50 This 18 sec, Avg 36.2 sec, exp. finish in 262 min at 05:00:49 on 15-Nov-2016
+
+RESULT for medfate_0.2.2.tar.gz : success (403 of 836, 397 good, 6 bad) -- Now 00:39:54 This 64.1 sec, Avg 36.3 sec, exp. finish in 261.9 min at 05:01:47 on 15-Nov-2016
+
+RESULT for MediaK_1.0.tar.gz : success (404 of 836, 398 good, 6 bad) -- Now 00:40:07 This 13.1 sec, Avg 36.2 sec, exp. finish in 260.9 min at 05:00:59 on 15-Nov-2016
+
+RESULT for MEGENA_1.3.5-2.tar.gz : success (405 of 836, 399 good, 6 bad) -- Now 00:40:55 This 47.6 sec, Avg 36.3 sec, exp. finish in 260.5 min at 05:01:23 on 15-Nov-2016
+
+RESULT for MESS_0.4-3.tar.gz : success (406 of 836, 400 good, 6 bad) -- Now 00:41:31 This 36.5 sec, Avg 36.3 sec, exp. finish in 259.9 min at 05:01:23 on 15-Nov-2016
+
+RESULT for metafolio_0.1.0.tar.gz : success (407 of 836, 401 good, 6 bad) -- Now 00:41:51 This 20.3 sec, Avg 36.2 sec, exp. finish in 259 min at 05:00:50 on 15-Nov-2016
+
+RESULT for MetaheuristicFPA_1.0.tar.gz : success (408 of 836, 402 good, 6 bad) -- Now 00:42:05 This 13.8 sec, Avg 36.2 sec, exp. finish in 258 min at 05:00:04 on 15-Nov-2016
+
+RESULT for meteoland_0.4.3.tar.gz : success (409 of 836, 403 good, 6 bad) -- Now 00:42:54 This 49.2 sec, Avg 36.2 sec, exp. finish in 257.6 min at 05:00:31 on 15-Nov-2016
+
+RESULT for mets_1.1.1.tar.gz : success (410 of 836, 404 good, 6 bad) -- Now 00:44:23 This 89.1 sec, Avg 36.3 sec, exp. finish in 257.9 min at 05:02:19 on 15-Nov-2016
+
+RESULT for mev_1.8.2.tar.gz : success (411 of 836, 405 good, 6 bad) -- Now 00:45:18 This 54.5 sec, Avg 36.4 sec, exp. finish in 257.6 min at 05:02:56 on 15-Nov-2016
+
+RESULT for mgm_1.1-7.tar.gz : success (412 of 836, 406 good, 6 bad) -- Now 00:45:44 This 26.3 sec, Avg 36.3 sec, exp. finish in 256.9 min at 05:02:35 on 15-Nov-2016
+
+RESULT for mice_2.25.tar.gz : success (413 of 836, 407 good, 6 bad) -- Now 00:46:36 This 51.8 sec, Avg 36.4 sec, exp. finish in 256.5 min at 05:03:07 on 15-Nov-2016
+
+RESULT for microclass_1.0.1.tar.gz : success (414 of 836, 408 good, 6 bad) -- Now 00:47:27 This 50.8 sec, Avg 36.4 sec, exp. finish in 256.1 min at 05:03:36 on 15-Nov-2016
+
+RESULT for milr_0.1.0.tar.gz : success (415 of 836, 409 good, 6 bad) -- Now 00:47:45 This 18.5 sec, Avg 36.4 sec, exp. finish in 255.2 min at 05:03:00 on 15-Nov-2016
+
+RESULT for minimaxdesign_0.1.0.1.tar.gz : success (416 of 836, 410 good, 6 bad) -- Now 00:48:06 This 20.8 sec, Avg 36.3 sec, exp. finish in 254.4 min at 05:02:28 on 15-Nov-2016
+
+RESULT for minqa_1.2.4.tar.gz : success (417 of 836, 411 good, 6 bad) -- Now 00:48:22 This 15.4 sec, Avg 36.3 sec, exp. finish in 253.4 min at 05:01:46 on 15-Nov-2016
+
+RESULT for mirt_1.20.1.tar.gz : success (418 of 836, 412 good, 6 bad) -- Now 00:49:38 This 76.3 sec, Avg 36.4 sec, exp. finish in 253.5 min at 05:03:06 on 15-Nov-2016
+
+RESULT for mirtCAT_1.1.tar.gz : success (419 of 836, 413 good, 6 bad) -- Now 00:50:16 This 38.1 sec, Avg 36.4 sec, exp. finish in 252.9 min at 05:03:10 on 15-Nov-2016
+
+RESULT for miscF_0.1-3.tar.gz : success (420 of 836, 414 good, 6 bad) -- Now 00:50:52 This 36.2 sec, Avg 36.4 sec, exp. finish in 252.3 min at 05:03:10 on 15-Nov-2016
+
+RESULT for miscset_1.0.0.tar.gz : success (421 of 836, 415 good, 6 bad) -- Now 00:51:10 This 17.3 sec, Avg 36.3 sec, exp. finish in 251.4 min at 05:02:32 on 15-Nov-2016
+
+RESULT for MiSPU_1.0.tar.gz : success (422 of 836, 416 good, 6 bad) -- Now 00:51:52 This 42.7 sec, Avg 36.4 sec, exp. finish in 250.9 min at 05:02:44 on 15-Nov-2016
+
+RESULT for missDeaths_1.2.tar.gz : success (423 of 836, 417 good, 6 bad) -- Now 00:52:40 This 48.2 sec, Avg 36.4 sec, exp. finish in 250.5 min at 05:03:08 on 15-Nov-2016
+
+RESULT for MixAll_1.2.0.tar.gz : success (424 of 836, 418 good, 6 bad) -- Now 00:53:51 This 71.1 sec, Avg 36.5 sec, exp. finish in 250.4 min at 05:04:16 on 15-Nov-2016
+
+RESULT for MixedDataImpute_0.1.tar.gz : success (425 of 836, 419 good, 6 bad) -- Now 00:54:25 This 34 sec, Avg 36.5 sec, exp. finish in 249.8 min at 05:04:11 on 15-Nov-2016
+
+RESULT for mixedMem_1.1.0.tar.gz : success (426 of 836, 420 good, 6 bad) -- Now 00:55:16 This 50.9 sec, Avg 36.5 sec, exp. finish in 249.4 min at 05:04:39 on 15-Nov-2016
+
+RESULT for mixpack_0.3.4.tar.gz : success (427 of 836, 421 good, 6 bad) -- Now 00:55:34 This 17.4 sec, Avg 36.5 sec, exp. finish in 248.5 min at 05:04:02 on 15-Nov-2016
+
+RESULT for mkde_0.1.tar.gz : success (428 of 836, 422 good, 6 bad) -- Now 00:56:11 This 36.8 sec, Avg 36.5 sec, exp. finish in 247.9 min at 05:04:03 on 15-Nov-2016
+
+RESULT for mlmc_1.0.0.tar.gz : success (429 of 836, 423 good, 6 bad) -- Now 00:56:30 This 19.4 sec, Avg 36.4 sec, exp. finish in 247 min at 05:03:29 on 15-Nov-2016
+
+RESULT for mlxR_3.1.0.tar.gz : success (430 of 836, 424 good, 6 bad) -- Now 00:56:54 This 24.6 sec, Avg 36.4 sec, exp. finish in 246.2 min at 05:03:06 on 15-Nov-2016
+
+RESULT for mmand_1.4.1.tar.gz : success (431 of 836, 425 good, 6 bad) -- Now 00:57:16 This 21.4 sec, Avg 36.3 sec, exp. finish in 245.4 min at 05:02:37 on 15-Nov-2016
+
+RESULT for ModelMetrics_1.1.0.tar.gz : success (432 of 836, 426 good, 6 bad) -- Now 00:57:33 This 17.1 sec, Avg 36.3 sec, exp. finish in 244.4 min at 05:02:00 on 15-Nov-2016
+
+RESULT for Morpho_2.4.1.1.tar.gz : success (433 of 836, 427 good, 6 bad) -- Now 00:59:13 This 100.4 sec, Avg 36.5 sec, exp. finish in 244.8 min at 05:04:04 on 15-Nov-2016
+
+RESULT for move_2.1.0.tar.gz : success (434 of 836, 428 good, 6 bad) -- Now 01:00:34 This 80.8 sec, Avg 36.6 sec, exp. finish in 244.9 min at 05:05:29 on 15-Nov-2016
+
+RESULT for moveHMM_1.2.tar.gz : success (435 of 836, 429 good, 6 bad) -- Now 01:01:07 This 33.2 sec, Avg 36.5 sec, exp. finish in 244.3 min at 05:05:23 on 15-Nov-2016
+
+RESULT for moveWindSpeed_0.1.0.tar.gz : success (436 of 836, 430 good, 6 bad) -- Now 01:01:45 This 38.1 sec, Avg 36.6 sec, exp. finish in 243.7 min at 05:05:26 on 15-Nov-2016
+
+RESULT for mp_0.4.1.tar.gz : success (437 of 836, 431 good, 6 bad) -- Now 01:02:05 This 19.1 sec, Avg 36.5 sec, exp. finish in 242.8 min at 05:04:52 on 15-Nov-2016
+
+RESULT for Mposterior_0.1.2.tar.gz : success (438 of 836, 432 good, 6 bad) -- Now 01:02:35 This 30.9 sec, Avg 36.5 sec, exp. finish in 242.1 min at 05:04:42 on 15-Nov-2016
+
+RESULT for MPTinR_1.10.3.tar.gz : success (439 of 836, 433 good, 6 bad) -- Now 01:03:10 This 34.5 sec, Avg 36.5 sec, exp. finish in 241.5 min at 05:04:38 on 15-Nov-2016
+
+RESULT for MRS_1.2.1.tar.gz : success (440 of 836, 434 good, 6 bad) -- Now 01:03:34 This 23.6 sec, Avg 36.5 sec, exp. finish in 240.7 min at 05:04:13 on 15-Nov-2016
+
+RESULT for MSGARCH_0.17.tar.gz : success (441 of 836, 435 good, 6 bad) -- Now 01:05:43 This 129.4 sec, Avg 36.7 sec, exp. finish in 241.4 min at 05:07:10 on 15-Nov-2016
+
+RESULT for msgl_2.3.0.tar.gz : success (442 of 836, 436 good, 6 bad) -- Now 01:06:44 This 60.9 sec, Avg 36.7 sec, exp. finish in 241.2 min at 05:07:55 on 15-Nov-2016
+
+RESULT for MTS_0.33.tar.gz : success (443 of 836, 437 good, 6 bad) -- Now 01:07:34 This 49.8 sec, Avg 36.8 sec, exp. finish in 240.8 min at 05:08:20 on 15-Nov-2016
+
+RESULT for MultiBD_0.2.0.tar.gz : success (444 of 836, 438 good, 6 bad) -- Now 01:08:37 This 63.3 sec, Avg 36.8 sec, exp. finish in 240.6 min at 05:09:10 on 15-Nov-2016
+
+RESULT for multicool_0.1-9.tar.gz : success (445 of 836, 439 good, 6 bad) -- Now 01:08:55 This 17.5 sec, Avg 36.8 sec, exp. finish in 239.7 min at 05:08:34 on 15-Nov-2016
+
+RESULT for MultivariateRandomForest_1.1.1.tar.gz : success (446 of 836, 440 good, 6 bad) -- Now 01:09:09 This 14.1 sec, Avg 36.7 sec, exp. finish in 238.7 min at 05:07:51 on 15-Nov-2016
+
+RESULT for mvabund_3.11.9.tar.gz : success (447 of 836, 441 good, 6 bad) -- Now 01:10:02 This 53.4 sec, Avg 36.8 sec, exp. finish in 238.3 min at 05:08:22 on 15-Nov-2016
+
+RESULT for MVB_1.1.tar.gz : success (448 of 836, 442 good, 6 bad) -- Now 01:10:38 This 35.6 sec, Avg 36.8 sec, exp. finish in 237.7 min at 05:08:20 on 15-Nov-2016
+
+RESULT for mvcluster_1.0.tar.gz : success (449 of 836, 443 good, 6 bad) -- Now 01:11:10 This 32.5 sec, Avg 36.7 sec, exp. finish in 237 min at 05:08:12 on 15-Nov-2016
+
+RESULT for mvnfast_0.1.7.tar.gz : success (450 of 836, 444 good, 6 bad) -- Now 01:11:38 This 28 sec, Avg 36.7 sec, exp. finish in 236.3 min at 05:07:56 on 15-Nov-2016
+
+RESULT for mwaved_1.1.4.tar.gz : success (451 of 836, 445 good, 6 bad) -- Now 01:12:00 This 21.8 sec, Avg 36.7 sec, exp. finish in 235.5 min at 05:07:28 on 15-Nov-2016
+
+RESULT for myTAI_0.4.0.tar.gz : success (452 of 836, 446 good, 6 bad) -- Now 01:13:14 This 74.3 sec, Avg 36.8 sec, exp. finish in 235.4 min at 05:08:38 on 15-Nov-2016
+
+RESULT for nabor_0.4.6.tar.gz : success (453 of 836, 447 good, 6 bad) -- Now 01:13:37 This 23 sec, Avg 36.8 sec, exp. finish in 234.6 min at 05:08:12 on 15-Nov-2016
+
+RESULT for NAM_1.5.0.tar.gz : success (454 of 836, 448 good, 6 bad) -- Now 01:14:31 This 53.4 sec, Avg 36.8 sec, exp. finish in 234.2 min at 05:08:43 on 15-Nov-2016
+
+RESULT for ndjson_0.2.0.tar.gz : success (455 of 836, 449 good, 6 bad) -- Now 01:14:49 This 18.5 sec, Avg 36.7 sec, exp. finish in 233.3 min at 05:08:10 on 15-Nov-2016
+
+RESULT for ndl_0.2.17.tar.gz : success (456 of 836, 450 good, 6 bad) -- Now 01:15:16 This 27.1 sec, Avg 36.7 sec, exp. finish in 232.6 min at 05:07:52 on 15-Nov-2016
+
+RESULT for netcoh_0.2.tar.gz : success (457 of 836, 451 good, 6 bad) -- Now 01:15:47 This 30.4 sec, Avg 36.7 sec, exp. finish in 231.9 min at 05:07:40 on 15-Nov-2016
+
+RESULT for netdiffuseR_1.17.0.tar.gz : success (458 of 836, 452 good, 6 bad) -- Now 01:17:15 This 88.2 sec, Avg 36.8 sec, exp. finish in 232 min at 05:09:14 on 15-Nov-2016
+
+RESULT for NetRep_1.0.2.tar.gz : success (459 of 836, 453 good, 6 bad) -- Now 01:18:19 This 63.8 sec, Avg 36.9 sec, exp. finish in 231.7 min at 05:10:04 on 15-Nov-2016
+
+RESULT for NetSim_0.9.tar.gz : success (460 of 836, 454 good, 6 bad) -- Now 01:18:58 This 39.7 sec, Avg 36.9 sec, exp. finish in 231.2 min at 05:10:09 on 15-Nov-2016
+
+RESULT for neuroim_0.0.6.tar.gz : success (461 of 836, 455 good, 6 bad) -- Now 01:19:48 This 49.8 sec, Avg 36.9 sec, exp. finish in 230.7 min at 05:10:32 on 15-Nov-2016
+
+RESULT for ngspatial_1.1-1.tar.gz : success (462 of 836, 456 good, 6 bad) -- Now 01:20:16 This 28 sec, Avg 36.9 sec, exp. finish in 230 min at 05:10:16 on 15-Nov-2016
+
+RESULT for NHMM_3.6.tar.gz : success (463 of 836, 457 good, 6 bad) -- Now 01:21:21 This 65 sec, Avg 37 sec, exp. finish in 229.8 min at 05:11:07 on 15-Nov-2016
+
+RESULT for nmfgpu4R_0.2.5.2.tar.gz : success (464 of 836, 458 good, 6 bad) -- Now 01:21:50 This 29.2 sec, Avg 36.9 sec, exp. finish in 229 min at 05:10:53 on 15-Nov-2016
+
+RESULT for NNLM_0.4.1.tar.gz : success (465 of 836, 459 good, 6 bad) -- Now 01:22:16 This 26.1 sec, Avg 36.9 sec, exp. finish in 228.3 min at 05:10:33 on 15-Nov-2016
+
+RESULT for noncompliance_0.2.2.tar.gz : success (466 of 836, 460 good, 6 bad) -- Now 01:22:41 This 25.1 sec, Avg 36.9 sec, exp. finish in 227.5 min at 05:10:12 on 15-Nov-2016
+
+RESULT for nonlinearTseries_0.2.3.tar.gz : success (467 of 836, 461 good, 6 bad) -- Now 01:23:17 This 35.2 sec, Avg 36.9 sec, exp. finish in 226.9 min at 05:10:09 on 15-Nov-2016
+
+RESULT for NPBayesImpute_0.6.tar.gz : success (468 of 836, 462 good, 6 bad) -- Now 01:23:37 This 20.1 sec, Avg 36.9 sec, exp. finish in 226 min at 05:09:39 on 15-Nov-2016
+
+RESULT for NPflow_0.10.1.tar.gz : success (469 of 836, 463 good, 6 bad) -- Now 01:24:49 This 72.5 sec, Avg 36.9 sec, exp. finish in 225.9 min at 05:10:42 on 15-Nov-2016
+
+RESULT for nprobust_0.0.1.tar.gz : success (470 of 836, 464 good, 6 bad) -- Now 01:25:09 This 19.9 sec, Avg 36.9 sec, exp. finish in 225 min at 05:10:12 on 15-Nov-2016
+
+RESULT for oapackage_2.0.23.tar.gz : success (471 of 836, 465 good, 6 bad) -- Now 01:25:34 This 24.8 sec, Avg 36.9 sec, exp. finish in 224.3 min at 05:09:51 on 15-Nov-2016
+
+RESULT for odeintr_1.3.tar.gz : success (472 of 836, 466 good, 6 bad) -- Now 01:25:52 This 17.6 sec, Avg 36.8 sec, exp. finish in 223.4 min at 05:09:16 on 15-Nov-2016
+
+RESULT for oem_2.0.3.tar.gz : success (473 of 836, 467 good, 6 bad) -- Now 01:27:32 This 100.3 sec, Avg 37 sec, exp. finish in 223.6 min at 05:11:09 on 15-Nov-2016
+
+RESULT for OjaNP_0.9-9.tar.gz : success (474 of 836, 468 good, 6 bad) -- Now 01:28:10 This 38.2 sec, Avg 37 sec, exp. finish in 223 min at 05:11:11 on 15-Nov-2016
+
+RESULT for olctools_0.3.0.tar.gz : success (475 of 836, 469 good, 6 bad) -- Now 01:28:26 This 16.5 sec, Avg 36.9 sec, exp. finish in 222.1 min at 05:10:35 on 15-Nov-2016
+
+RESULT for OneArmPhaseTwoStudy_0.1.6.tar.gz : success (476 of 836, 470 good, 6 bad) -- Now 01:28:53 This 26.6 sec, Avg 36.9 sec, exp. finish in 221.4 min at 05:10:17 on 15-Nov-2016
+
+RESULT for onlinePCA_1.3.1.tar.gz : success (477 of 836, 471 good, 6 bad) -- Now 01:29:26 This 33 sec, Avg 36.9 sec, exp. finish in 220.7 min at 05:10:10 on 15-Nov-2016
+
+RESULT for ontologySimilarity_2.2.tar.gz : success (478 of 836, 472 good, 6 bad) -- Now 01:29:46 This 20.3 sec, Avg 36.9 sec, exp. finish in 219.9 min at 05:09:41 on 15-Nov-2016
+
+RESULT for openair_1.9-0.tar.gz : success (479 of 836, 473 good, 6 bad) -- Now 01:31:02 This 75.5 sec, Avg 36.9 sec, exp. finish in 219.8 min at 05:10:48 on 15-Nov-2016
+
+RESULT for OpenImageR_1.0.2.tar.gz : success (480 of 836, 474 good, 6 bad) -- Now 01:31:33 This 31.1 sec, Avg 36.9 sec, exp. finish in 219.1 min at 05:10:38 on 15-Nov-2016
+
+RESULT for OpenMx_2.6.9.tar.gz : success (481 of 836, 475 good, 6 bad) -- Now 01:34:22 This 169.2 sec, Avg 37.2 sec, exp. finish in 220.1 min at 05:14:28 on 15-Nov-2016
+
+RESULT for openxlsx_3.0.0.tar.gz : success (482 of 836, 476 good, 6 bad) -- Now 01:35:16 This 54.4 sec, Avg 37.2 sec, exp. finish in 219.7 min at 05:14:58 on 15-Nov-2016
+
+RESULT for optmatch_0.9-6.tar.gz : success (483 of 836, 477 good, 6 bad) -- Now 01:36:10 This 54 sec, Avg 37.3 sec, exp. finish in 219.3 min at 05:15:27 on 15-Nov-2016
+
+RESULT for orQA_0.2.1.tar.gz : success (484 of 836, 478 good, 6 bad) -- Now 01:37:13 This 62.1 sec, Avg 37.3 sec, exp. finish in 218.9 min at 05:16:09 on 15-Nov-2016
+
+RESULT for oXim_1.0.1.tar.gz : success (485 of 836, 479 good, 6 bad) -- Now 01:37:39 This 26.5 sec, Avg 37.3 sec, exp. finish in 218.2 min at 05:15:51 on 15-Nov-2016
+
+RESULT for PAC_1.0.5.tar.gz : success (486 of 836, 480 good, 6 bad) -- Now 01:38:11 This 31.9 sec, Avg 37.3 sec, exp. finish in 217.5 min at 05:15:42 on 15-Nov-2016
+
+RESULT for packcircles_0.1.1.tar.gz : success (487 of 836, 481 good, 6 bad) -- Now 01:38:26 This 15.2 sec, Avg 37.2 sec, exp. finish in 216.6 min at 05:15:04 on 15-Nov-2016
+
+RESULT for PACVB_1.1.1.tar.gz : success (488 of 836, 482 good, 6 bad) -- Now 01:38:45 This 18.8 sec, Avg 37.2 sec, exp. finish in 215.8 min at 05:14:32 on 15-Nov-2016
+
+RESULT for PAFit_0.8.7.tar.gz : success (489 of 836, 483 good, 6 bad) -- Now 01:39:10 This 25.2 sec, Avg 37.2 sec, exp. finish in 215 min at 05:14:11 on 15-Nov-2016
+
+RESULT for pander_0.6.0.tar.gz : success (490 of 836, 484 good, 6 bad) -- Now 01:39:37 This 26.4 sec, Avg 37.2 sec, exp. finish in 214.3 min at 05:13:53 on 15-Nov-2016
+
+RESULT for PanelCount_1.0.9.tar.gz : success (491 of 836, 485 good, 6 bad) -- Now 01:39:53 This 16.3 sec, Avg 37.1 sec, exp. finish in 213.4 min at 05:13:18 on 15-Nov-2016
+
+RESULT for partialAR_1.0.5.tar.gz : success (492 of 836, 486 good, 6 bad) -- Now 01:43:30 This 216.7 sec, Avg 37.5 sec, exp. finish in 214.9 min at 05:18:23 on 15-Nov-2016
+
+RESULT for pcalg_2.4-3.tar.gz : success (493 of 836, 487 good, 6 bad) -- Now 01:45:52 This 142.7 sec, Avg 37.7 sec, exp. finish in 215.5 min at 05:21:21 on 15-Nov-2016
+
+RESULT for pcIRT_0.2.2.tar.gz : success (494 of 836, 488 good, 6 bad) -- Now 01:46:17 This 24.5 sec, Avg 37.7 sec, exp. finish in 214.7 min at 05:20:59 on 15-Nov-2016
+
+RESULT for pdftools_0.5.tar.gz : success (495 of 836, 489 good, 6 bad) -- Now 01:46:38 This 21.1 sec, Avg 37.6 sec, exp. finish in 213.9 min at 05:20:31 on 15-Nov-2016
+
+RESULT for PedCNV_0.1.tar.gz : success (496 of 836, 490 good, 6 bad) -- Now 01:47:04 This 26.2 sec, Avg 37.6 sec, exp. finish in 213.1 min at 05:20:12 on 15-Nov-2016
+
+RESULT for pedometrics_0.6-6.tar.gz : success (497 of 836, 491 good, 6 bad) -- Now 01:47:27 This 22.3 sec, Avg 37.6 sec, exp. finish in 212.3 min at 05:19:46 on 15-Nov-2016
+
+RESULT for PenCoxFrail_1.0.1.tar.gz : success (498 of 836, 492 good, 6 bad) -- Now 01:47:54 This 27.9 sec, Avg 37.6 sec, exp. finish in 211.6 min at 05:19:30 on 15-Nov-2016
+
+RESULT for penMSM_0.99.tar.gz : success (499 of 836, 493 good, 6 bad) -- Now 01:48:17 This 22.5 sec, Avg 37.5 sec, exp. finish in 210.8 min at 05:19:05 on 15-Nov-2016
+
+RESULT for perccal_1.0.tar.gz : success (500 of 836, 494 good, 6 bad) -- Now 01:48:36 This 18.8 sec, Avg 37.5 sec, exp. finish in 210 min at 05:18:33 on 15-Nov-2016
+
+RESULT for PerMallows_1.12.tar.gz : success (501 of 836, 495 good, 6 bad) -- Now 01:48:54 This 18.5 sec, Avg 37.5 sec, exp. finish in 209.1 min at 05:18:02 on 15-Nov-2016
+
+RESULT for ph2bayes_0.0.1.tar.gz : success (502 of 836, 496 good, 6 bad) -- Now 01:49:07 This 12.3 sec, Avg 37.4 sec, exp. finish in 208.2 min at 05:17:20 on 15-Nov-2016
+
+RESULT for ph2bye_0.1.4.tar.gz : success (503 of 836, 497 good, 6 bad) -- Now 01:49:35 This 28.4 sec, Avg 37.4 sec, exp. finish in 207.5 min at 05:17:05 on 15-Nov-2016
+
+RESULT for phonics_0.7.4.tar.gz : success (504 of 836, 498 good, 6 bad) -- Now 01:49:51 This 16 sec, Avg 37.3 sec, exp. finish in 206.6 min at 05:16:29 on 15-Nov-2016
+
+RESULT for phybreak_0.1.1.tar.gz : success (505 of 836, 499 good, 6 bad) -- Now 01:50:39 This 48.3 sec, Avg 37.4 sec, exp. finish in 206.1 min at 05:16:47 on 15-Nov-2016
+
+RESULT for phylobase_0.8.2.tar.gz : success (506 of 836, 500 good, 6 bad) -- Now 01:51:29 This 50.1 sec, Avg 37.4 sec, exp. finish in 205.7 min at 05:17:08 on 15-Nov-2016
+
+RESULT for phylocurve_2.0.6.tar.gz : success (507 of 836, 501 good, 6 bad) -- Now 01:52:25 This 55.5 sec, Avg 37.4 sec, exp. finish in 205.2 min at 05:17:38 on 15-Nov-2016
+
+RESULT for phylosignal_1.1.tar.gz : success (508 of 836, 502 good, 6 bad) -- Now 01:53:21 This 56.1 sec, Avg 37.5 sec, exp. finish in 204.8 min at 05:18:09 on 15-Nov-2016
+
+RESULT for Pijavski_1.0.tar.gz : success (509 of 836, 503 good, 6 bad) -- Now 01:53:33 This 12.1 sec, Avg 37.4 sec, exp. finish in 203.9 min at 05:17:27 on 15-Nov-2016
+
+RESULT for pirate_1.0.0.tar.gz : success (510 of 836, 504 good, 6 bad) -- Now 01:53:52 This 19.2 sec, Avg 37.4 sec, exp. finish in 203.1 min at 05:16:58 on 15-Nov-2016
+
+RESULT for plac_0.1.1.tar.gz : success (511 of 836, 505 good, 6 bad) -- Now 01:54:37 This 44.6 sec, Avg 37.4 sec, exp. finish in 202.5 min at 05:17:10 on 15-Nov-2016
+
+RESULT for planar_1.6.tar.gz : success (512 of 836, 506 good, 6 bad) -- Now 01:55:10 This 33.3 sec, Avg 37.4 sec, exp. finish in 201.9 min at 05:17:03 on 15-Nov-2016
+
+RESULT for plotSEMM_2.2.tar.gz : success (513 of 836, 507 good, 6 bad) -- Now 01:55:29 This 18.9 sec, Avg 37.3 sec, exp. finish in 201.1 min at 05:16:33 on 15-Nov-2016
+
+RESULT for plyr_1.8.4.tar.gz : success (514 of 836, 508 good, 6 bad) -- Now 01:55:58 This 29 sec, Avg 37.3 sec, exp. finish in 200.3 min at 05:16:19 on 15-Nov-2016
+
+RESULT for poisDoubleSamp_1.1.tar.gz : success (515 of 836, 509 good, 6 bad) -- Now 01:56:12 This 13.8 sec, Avg 37.3 sec, exp. finish in 199.5 min at 05:15:41 on 15-Nov-2016
+
+RESULT for polyfreqs_1.0.0.tar.gz : success (516 of 836, 510 good, 6 bad) -- Now 01:56:29 This 17.3 sec, Avg 37.2 sec, exp. finish in 198.7 min at 05:15:09 on 15-Nov-2016
+
+RESULT for polywog_0.4-0.tar.gz : success (517 of 836, 511 good, 6 bad) -- Now 01:57:05 This 35.9 sec, Avg 37.2 sec, exp. finish in 198 min at 05:15:06 on 15-Nov-2016
+
+RESULT for PoweR_1.0.5.tar.gz : success (518 of 836, 512 good, 6 bad) -- Now 01:57:35 This 29.3 sec, Avg 37.2 sec, exp. finish in 197.3 min at 05:14:54 on 15-Nov-2016
+
+RESULT for PP_0.5.3.tar.gz : success (519 of 836, 513 good, 6 bad) -- Now 01:57:54 This 19.1 sec, Avg 37.2 sec, exp. finish in 196.5 min at 05:14:24 on 15-Nov-2016
+
+RESULT for PPtreeViz_1.3.0.tar.gz : success (520 of 836, 514 good, 6 bad) -- Now 01:58:14 This 20.5 sec, Avg 37.2 sec, exp. finish in 195.7 min at 05:13:58 on 15-Nov-2016
+
+RESULT for prclust_1.2.tar.gz : success (521 of 836, 515 good, 6 bad) -- Now 01:58:28 This 14 sec, Avg 37.1 sec, exp. finish in 194.9 min at 05:13:20 on 15-Nov-2016
+
+RESULT for precrec_0.5.2.tar.gz : success (522 of 836, 516 good, 6 bad) -- Now 02:00:56 This 147.4 sec, Avg 37.3 sec, exp. finish in 195.4 min at 05:16:17 on 15-Nov-2016
+
+RESULT for PReMiuM_3.1.3.tar.gz : success (523 of 836, 517 good, 6 bad) -- Now 02:01:34 This 38.9 sec, Avg 37.3 sec, exp. finish in 194.8 min at 05:16:20 on 15-Nov-2016
+
+RESULT for primes_0.1.0.tar.gz : success (524 of 836, 518 good, 6 bad) -- Now 02:01:47 This 12.3 sec, Avg 37.3 sec, exp. finish in 193.9 min at 05:15:40 on 15-Nov-2016
+
+RESULT for ProbitSpatial_1.0.tar.gz : success (525 of 836, 519 good, 6 bad) -- Now 02:02:37 This 49.9 sec, Avg 37.3 sec, exp. finish in 193.4 min at 05:16:00 on 15-Nov-2016
+
+RESULT for pROC_1.8.tar.gz : success (526 of 836, 520 good, 6 bad) -- Now 02:03:05 This 27.8 sec, Avg 37.3 sec, exp. finish in 192.7 min at 05:15:45 on 15-Nov-2016
+
+RESULT for prodlim_1.5.7.tar.gz : success (527 of 836, 521 good, 6 bad) -- Now 02:03:38 This 33.6 sec, Avg 37.3 sec, exp. finish in 192 min at 05:15:39 on 15-Nov-2016
+
+RESULT for ProFit_1.0.tar.gz : success (528 of 836, 522 good, 6 bad) -- Now 02:04:18 This 39.4 sec, Avg 37.3 sec, exp. finish in 191.4 min at 05:15:42 on 15-Nov-2016
+
+RESULT for ProNet_1.0.0.tar.gz : success (529 of 836, 523 good, 6 bad) -- Now 02:04:52 This 34.5 sec, Avg 37.3 sec, exp. finish in 190.8 min at 05:15:38 on 15-Nov-2016
+
+RESULT for propagate_1.0-4.tar.gz : success (530 of 836, 524 good, 6 bad) -- Now 02:05:27 This 34.6 sec, Avg 37.3 sec, exp. finish in 190.1 min at 05:15:34 on 15-Nov-2016
+
+RESULT for propr_2.0.4.tar.gz : success (531 of 836, 525 good, 6 bad) -- Now 02:05:45 This 18.8 sec, Avg 37.2 sec, exp. finish in 189.3 min at 05:15:05 on 15-Nov-2016
+
+RESULT for prospectr_0.1.3.tar.gz : success (532 of 836, 526 good, 6 bad) -- Now 02:06:16 This 30.2 sec, Avg 37.2 sec, exp. finish in 188.6 min at 05:14:54 on 15-Nov-2016
+
+RESULT for protolite_1.5.tar.gz : success (533 of 836, 527 good, 6 bad) -- Now 02:06:37 This 21.1 sec, Avg 37.2 sec, exp. finish in 187.9 min at 05:14:28 on 15-Nov-2016
+
+RESULT for prototest_1.1.tar.gz : success (534 of 836, 528 good, 6 bad) -- Now 02:07:20 This 43 sec, Avg 37.2 sec, exp. finish in 187.3 min at 05:14:37 on 15-Nov-2016
+
+RESULT for protViz_0.2.15.tar.gz : success (535 of 836, 529 good, 6 bad) -- Now 02:07:46 This 26 sec, Avg 37.2 sec, exp. finish in 186.6 min at 05:14:20 on 15-Nov-2016
+
+RESULT for pryr_0.1.2.tar.gz : success (536 of 836, 530 good, 6 bad) -- Now 02:08:09 This 23.5 sec, Avg 37.2 sec, exp. finish in 185.8 min at 05:13:59 on 15-Nov-2016
+
+RESULT for psd_1.0-1.tar.gz : success (537 of 836, 531 good, 6 bad) -- Now 02:08:34 This 24.5 sec, Avg 37.1 sec, exp. finish in 185.1 min at 05:13:39 on 15-Nov-2016
+
+RESULT for psgp_0.3-6.tar.gz : success (538 of 836, 532 good, 6 bad) -- Now 02:09:50 This 76 sec, Avg 37.2 sec, exp. finish in 184.8 min at 05:14:39 on 15-Nov-2016
+
+RESULT for purrr_0.2.2.tar.gz : success (539 of 836, 533 good, 6 bad) -- Now 02:10:14 This 24 sec, Avg 37.2 sec, exp. finish in 184.1 min at 05:14:19 on 15-Nov-2016
+
+RESULT for pvar_2.2.2.tar.gz : success (540 of 836, 534 good, 6 bad) -- Now 02:10:32 This 18.6 sec, Avg 37.2 sec, exp. finish in 183.3 min at 05:13:50 on 15-Nov-2016
+
+RESULT for PWD_1.0.tar.gz : success (541 of 836, 535 good, 6 bad) -- Now 02:10:47 This 14.7 sec, Avg 37.1 sec, exp. finish in 182.5 min at 05:13:15 on 15-Nov-2016
+
+RESULT for pystr_2.0.0.tar.gz : success (542 of 836, 536 good, 6 bad) -- Now 02:11:11 This 23.6 sec, Avg 37.1 sec, exp. finish in 181.7 min at 05:12:54 on 15-Nov-2016
+
+RESULT for qrencoder_0.1.0.tar.gz : success (543 of 836, 537 good, 6 bad) -- Now 02:11:38 This 27 sec, Avg 37.1 sec, exp. finish in 181 min at 05:12:39 on 15-Nov-2016
+
+RESULT for QRM_0.4-13.tar.gz : success (544 of 836, 538 good, 6 bad) -- Now 02:12:23 This 45.5 sec, Avg 37.1 sec, exp. finish in 180.5 min at 05:12:52 on 15-Nov-2016
+
+RESULT for quadrupen_0.2-4.tar.gz : success (545 of 836, 539 good, 6 bad) -- Now 02:13:11 This 47.9 sec, Avg 37.1 sec, exp. finish in 180 min at 05:13:09 on 15-Nov-2016
+
+RESULT for quanteda_0.9.8.5.tar.gz : failure (546 of 836, 539 good, 7 bad) -- Now 02:14:28 This 76.4 sec, Avg 37.2 sec, exp. finish in 179.7 min at 05:14:09 on 15-Nov-2016
+
+RESULT for quantspec_1.2-1.tar.gz : success (547 of 836, 540 good, 7 bad) -- Now 02:15:23 This 55.7 sec, Avg 37.2 sec, exp. finish in 179.2 min at 05:14:37 on 15-Nov-2016
+
+RESULT for QuantTools_0.5.1.tar.gz : success (548 of 836, 541 good, 7 bad) -- Now 02:16:05 This 41.8 sec, Avg 37.2 sec, exp. finish in 178.6 min at 05:14:44 on 15-Nov-2016
+
+RESULT for qVarSel_1.0.tar.gz : success (549 of 836, 542 good, 7 bad) -- Now 02:16:18 This 12.5 sec, Avg 37.2 sec, exp. finish in 177.8 min at 05:14:06 on 15-Nov-2016
+
+RESULT for qwraps2_0.2.2.tar.gz : success (550 of 836, 543 good, 7 bad) -- Now 02:16:39 This 21.5 sec, Avg 37.1 sec, exp. finish in 177.1 min at 05:13:42 on 15-Nov-2016
+
+RESULT for radiomics_0.1.2.tar.gz : success (551 of 836, 544 good, 7 bad) -- Now 02:17:18 This 38.5 sec, Avg 37.1 sec, exp. finish in 176.4 min at 05:13:44 on 15-Nov-2016
+
+RESULT for rags2ridges_2.1.1.tar.gz : success (552 of 836, 545 good, 7 bad) -- Now 02:18:15 This 57.7 sec, Avg 37.2 sec, exp. finish in 176 min at 05:14:16 on 15-Nov-2016
+
+RESULT for ragt2ridges_0.2.3.tar.gz : success (553 of 836, 546 good, 7 bad) -- Now 02:19:12 This 56.5 sec, Avg 37.2 sec, exp. finish in 175.6 min at 05:14:45 on 15-Nov-2016
+
+RESULT for randomUniformForest_1.1.5.tar.gz : success (554 of 836, 547 good, 7 bad) -- Now 02:20:03 This 50.9 sec, Avg 37.2 sec, exp. finish in 175 min at 05:15:05 on 15-Nov-2016
+
+RESULT for ranger_0.6.0.tar.gz : success (555 of 836, 548 good, 7 bad) -- Now 02:20:34 This 31.5 sec, Avg 37.2 sec, exp. finish in 174.4 min at 05:14:57 on 15-Nov-2016
+
+RESULT for Rankcluster_0.94.tar.gz : success (556 of 836, 549 good, 7 bad) -- Now 02:20:58 This 23.6 sec, Avg 37.2 sec, exp. finish in 173.6 min at 05:14:36 on 15-Nov-2016
+
+RESULT for rankdist_1.1.2.tar.gz : success (557 of 836, 550 good, 7 bad) -- Now 02:21:13 This 15.4 sec, Avg 37.2 sec, exp. finish in 172.8 min at 05:14:04 on 15-Nov-2016
+
+RESULT for raptr_0.0.1.tar.gz : success (558 of 836, 551 good, 7 bad) -- Now 02:23:36 This 143 sec, Avg 37.4 sec, exp. finish in 173.1 min at 05:16:42 on 15-Nov-2016
+
+RESULT for raster_2.5-8.tar.gz : success (559 of 836, 552 good, 7 bad) -- Now 02:25:20 This 103.7 sec, Avg 37.5 sec, exp. finish in 173 min at 05:18:21 on 15-Nov-2016
+
+RESULT for Rblpapi_0.3.5.tar.gz : success (560 of 836, 553 good, 7 bad) -- Now 02:27:13 This 113.3 sec, Avg 37.6 sec, exp. finish in 173 min at 05:20:15 on 15-Nov-2016
+
+RESULT for Rborist_0.1-3.tar.gz : success (561 of 836, 554 good, 7 bad) -- Now 02:27:38 This 24.5 sec, Avg 37.6 sec, exp. finish in 172.3 min at 05:19:55 on 15-Nov-2016
+
+RESULT for Rclusterpp_0.2.3.tar.gz : success (562 of 836, 555 good, 7 bad) -- Now 02:28:06 This 28.3 sec, Avg 37.6 sec, exp. finish in 171.6 min at 05:19:41 on 15-Nov-2016
+
+RESULT for RcppAnnoy_0.0.8.tar.gz : success (563 of 836, 556 good, 7 bad) -- Now 02:28:29 This 23.4 sec, Avg 37.5 sec, exp. finish in 170.8 min at 05:19:20 on 15-Nov-2016
+
+RESULT for RcppAPT_0.0.2.tar.gz : success (564 of 836, 557 good, 7 bad) -- Now 02:28:46 This 16.8 sec, Avg 37.5 sec, exp. finish in 170.1 min at 05:18:49 on 15-Nov-2016
+
+RESULT for RcppArmadillo_0.7.500.0.0.tar.gz : success (565 of 836, 558 good, 7 bad) -- Now 02:29:39 This 53.3 sec, Avg 37.5 sec, exp. finish in 169.6 min at 05:19:13 on 15-Nov-2016
+
+RESULT for RcppBDT_0.2.3.tar.gz : success (566 of 836, 559 good, 7 bad) -- Now 02:30:34 This 54.1 sec, Avg 37.6 sec, exp. finish in 169.1 min at 05:19:37 on 15-Nov-2016
+
+RESULT for RcppCCTZ_0.0.5.tar.gz : success (567 of 836, 560 good, 7 bad) -- Now 02:30:52 This 18.2 sec, Avg 37.5 sec, exp. finish in 168.3 min at 05:19:09 on 15-Nov-2016
+
+RESULT for RcppClassic_0.9.6.tar.gz : success (568 of 836, 561 good, 7 bad) -- Now 02:31:32 This 40.7 sec, Avg 37.5 sec, exp. finish in 167.7 min at 05:19:13 on 15-Nov-2016
+
+RESULT for RcppClassicExamples_0.1.1.tar.gz : success (569 of 836, 562 good, 7 bad) -- Now 02:31:50 This 17.4 sec, Avg 37.5 sec, exp. finish in 166.9 min at 05:18:44 on 15-Nov-2016
+
+RESULT for RcppCNPy_0.2.6.tar.gz : success (570 of 836, 563 good, 7 bad) -- Now 02:32:06 This 16.4 sec, Avg 37.5 sec, exp. finish in 166.1 min at 05:18:13 on 15-Nov-2016
+
+RESULT for RcppDE_0.1.5.tar.gz : success (571 of 836, 564 good, 7 bad) -- Now 02:32:27 This 20.9 sec, Avg 37.4 sec, exp. finish in 165.4 min at 05:17:49 on 15-Nov-2016
+
+RESULT for RcppDL_0.0.5.tar.gz : success (572 of 836, 565 good, 7 bad) -- Now 02:32:53 This 26.1 sec, Avg 37.4 sec, exp. finish in 164.6 min at 05:17:32 on 15-Nov-2016
+
+RESULT for RcppEigen_0.3.2.9.0.tar.gz : success (573 of 836, 566 good, 7 bad) -- Now 02:34:49 This 115.4 sec, Avg 37.6 sec, exp. finish in 164.6 min at 05:19:26 on 15-Nov-2016
+
+RESULT for RcppExamples_0.1.7.tar.gz : success (574 of 836, 567 good, 7 bad) -- Now 02:35:07 This 18 sec, Avg 37.5 sec, exp. finish in 163.8 min at 05:18:57 on 15-Nov-2016
+
+RESULT for RcppFaddeeva_0.1.0.tar.gz : success (575 of 836, 568 good, 7 bad) -- Now 02:35:20 This 13.5 sec, Avg 37.5 sec, exp. finish in 163 min at 05:18:22 on 15-Nov-2016
+
+RESULT for RcppGetconf_0.0.2.tar.gz : success (576 of 836, 569 good, 7 bad) -- Now 02:35:32 This 11.8 sec, Avg 37.4 sec, exp. finish in 162.2 min at 05:17:45 on 15-Nov-2016
+
+RESULT for RcppGSL_0.3.1.tar.gz : success (577 of 836, 570 good, 7 bad) -- Now 02:35:56 This 23.7 sec, Avg 37.4 sec, exp. finish in 161.5 min at 05:17:25 on 15-Nov-2016
+
+RESULT for RcppHoney_0.1.1.tar.gz : success (578 of 836, 571 good, 7 bad) -- Now 02:36:13 This 17 sec, Avg 37.4 sec, exp. finish in 160.7 min at 05:16:56 on 15-Nov-2016
+
+RESULT for RcppMLPACK_1.0.10-4.tar.gz : success (579 of 836, 572 good, 7 bad) -- Now 02:37:52 This 99.7 sec, Avg 37.5 sec, exp. finish in 160.6 min at 05:18:25 on 15-Nov-2016
+
+RESULT for RcppNumerical_0.2-0.tar.gz : success (580 of 836, 573 good, 7 bad) -- Now 02:38:09 This 16.5 sec, Avg 37.4 sec, exp. finish in 159.8 min at 05:17:55 on 15-Nov-2016
+
+RESULT for RcppOctave_0.18.1.tar.gz : success (581 of 836, 574 good, 7 bad) -- Now 02:38:51 This 42.6 sec, Avg 37.5 sec, exp. finish in 159.2 min at 05:18:03 on 15-Nov-2016
+
+RESULT for RcppProgress_0.2.1.tar.gz : success (582 of 836, 575 good, 7 bad) -- Now 02:39:03 This 11.7 sec, Avg 37.4 sec, exp. finish in 158.4 min at 05:17:26 on 15-Nov-2016
+
+RESULT for RcppRedis_0.1.7.tar.gz : success (583 of 836, 576 good, 7 bad) -- Now 02:39:26 This 22.9 sec, Avg 37.4 sec, exp. finish in 157.6 min at 05:17:05 on 15-Nov-2016
+
+RESULT for RcppRoll_0.2.2.tar.gz : success (584 of 836, 577 good, 7 bad) -- Now 02:39:41 This 15.4 sec, Avg 37.3 sec, exp. finish in 156.9 min at 05:16:33 on 15-Nov-2016
+
+RESULT for RcppShark_3.1.0.tar.gz : success (585 of 836, 578 good, 7 bad) -- Now 02:41:47 This 125.3 sec, Avg 37.5 sec, exp. finish in 156.9 min at 05:18:39 on 15-Nov-2016
+
+RESULT for RcppSMC_0.1.4.tar.gz : success (586 of 836, 579 good, 7 bad) -- Now 02:42:02 This 15.1 sec, Avg 37.5 sec, exp. finish in 156.1 min at 05:18:07 on 15-Nov-2016
+
+RESULT for RcppStreams_0.1.1.tar.gz : success (587 of 836, 580 good, 7 bad) -- Now 02:42:30 This 27.8 sec, Avg 37.4 sec, exp. finish in 155.4 min at 05:17:53 on 15-Nov-2016
+
+RESULT for RcppTOML_0.0.5.tar.gz : success (588 of 836, 581 good, 7 bad) -- Now 02:42:46 This 16.8 sec, Avg 37.4 sec, exp. finish in 154.6 min at 05:17:24 on 15-Nov-2016
+
+RESULT for RcppXts_0.0.4.tar.gz : success (589 of 836, 582 good, 7 bad) -- Now 02:43:01 This 14.8 sec, Avg 37.4 sec, exp. finish in 153.8 min at 05:16:52 on 15-Nov-2016
+
+RESULT for RcppZiggurat_0.1.3.tar.gz : success (590 of 836, 583 good, 7 bad) -- Now 02:43:17 This 16.1 sec, Avg 37.3 sec, exp. finish in 153.1 min at 05:16:22 on 15-Nov-2016
+
+RESULT for rcss_1.1.tar.gz : success (591 of 836, 584 good, 7 bad) -- Now 02:44:08 This 51.1 sec, Avg 37.4 sec, exp. finish in 152.5 min at 05:16:41 on 15-Nov-2016
+
+RESULT for readr_1.0.0.tar.gz : success (592 of 836, 585 good, 7 bad) -- Now 02:45:11 This 62.9 sec, Avg 37.4 sec, exp. finish in 152.1 min at 05:17:17 on 15-Nov-2016
+
+RESULT for readstata13_0.8.5.tar.gz : success (593 of 836, 586 good, 7 bad) -- Now 02:45:34 This 23.1 sec, Avg 37.4 sec, exp. finish in 151.4 min at 05:16:57 on 15-Nov-2016
+
+RESULT for readxl_0.1.1.tar.gz : success (594 of 836, 587 good, 7 bad) -- Now 02:45:59 This 24.8 sec, Avg 37.4 sec, exp. finish in 150.7 min at 05:16:39 on 15-Nov-2016
+
+RESULT for RealVAMS_0.3-2.tar.gz : success (595 of 836, 588 good, 7 bad) -- Now 02:46:36 This 36.7 sec, Avg 37.4 sec, exp. finish in 150 min at 05:16:38 on 15-Nov-2016
+
+RESULT for recexcavAAR_0.2.2.tar.gz : success (596 of 836, 589 good, 7 bad) -- Now 02:47:02 This 26.4 sec, Avg 37.3 sec, exp. finish in 149.3 min at 05:16:23 on 15-Nov-2016
+
+RESULT for recmap_0.5.4.tar.gz : success (597 of 836, 590 good, 7 bad) -- Now 02:47:25 This 22.5 sec, Avg 37.3 sec, exp. finish in 148.6 min at 05:16:02 on 15-Nov-2016
+
+RESULT for reconstructr_2.0.0.tar.gz : success (598 of 836, 591 good, 7 bad) -- Now 02:47:41 This 16.6 sec, Avg 37.3 sec, exp. finish in 147.9 min at 05:15:33 on 15-Nov-2016
+
+RESULT for recosystem_0.4.tar.gz : success (599 of 836, 592 good, 7 bad) -- Now 02:48:05 This 23.7 sec, Avg 37.3 sec, exp. finish in 147.2 min at 05:15:14 on 15-Nov-2016
+
+RESULT for redist_1.2.tar.gz : success (600 of 836, 593 good, 7 bad) -- Now 02:48:49 This 44.1 sec, Avg 37.3 sec, exp. finish in 146.6 min at 05:15:24 on 15-Nov-2016
+
+RESULT for rEDM_0.5.3.tar.gz : success (601 of 836, 594 good, 7 bad) -- Now 02:49:27 This 37.6 sec, Avg 37.3 sec, exp. finish in 146 min at 05:15:24 on 15-Nov-2016
+
+RESULT for regsem_0.4.0.tar.gz : success (602 of 836, 595 good, 7 bad) -- Now 02:49:54 This 27.2 sec, Avg 37.2 sec, exp. finish in 145.3 min at 05:15:10 on 15-Nov-2016
+
+RESULT for relSim_0.2-0.tar.gz : success (603 of 836, 596 good, 7 bad) -- Now 02:50:13 This 19.4 sec, Avg 37.2 sec, exp. finish in 144.5 min at 05:14:46 on 15-Nov-2016
+
+RESULT for rem_1.1.2.tar.gz : success (604 of 836, 597 good, 7 bad) -- Now 02:50:49 This 35.8 sec, Avg 37.2 sec, exp. finish in 143.9 min at 05:14:44 on 15-Nov-2016
+
+RESULT for remote_1.2.1.tar.gz : success (605 of 836, 598 good, 7 bad) -- Now 02:51:33 This 43.7 sec, Avg 37.2 sec, exp. finish in 143.3 min at 05:14:53 on 15-Nov-2016
+
+RESULT for ReorderCluster_1.0.tar.gz : success (606 of 836, 599 good, 7 bad) -- Now 02:51:50 This 17.6 sec, Avg 37.2 sec, exp. finish in 142.6 min at 05:14:25 on 15-Nov-2016
+
+RESULT for repolr_3.4.tar.gz : success (607 of 836, 600 good, 7 bad) -- Now 02:52:28 This 37.3 sec, Avg 37.2 sec, exp. finish in 142 min at 05:14:26 on 15-Nov-2016
+
+RESULT for resemble_1.2.2.tar.gz : success (608 of 836, 601 good, 7 bad) -- Now 02:53:00 This 32.1 sec, Avg 37.2 sec, exp. finish in 141.3 min at 05:14:19 on 15-Nov-2016
+
+RESULT for reshape2_1.4.2.tar.gz : success (609 of 836, 602 good, 7 bad) -- Now 02:53:15 This 15.5 sec, Avg 37.2 sec, exp. finish in 140.6 min at 05:13:49 on 15-Nov-2016
+
+RESULT for revealedPrefs_0.2.tar.gz : success (610 of 836, 603 good, 7 bad) -- Now 02:53:39 This 24.3 sec, Avg 37.1 sec, exp. finish in 139.9 min at 05:13:31 on 15-Nov-2016
+
+RESULT for rexpokit_0.24.1.tar.gz : success (611 of 836, 604 good, 7 bad) -- Now 02:53:58 This 18.3 sec, Avg 37.1 sec, exp. finish in 139.1 min at 05:13:05 on 15-Nov-2016
+
+RESULT for Rfast_1.5.tar.gz : success (612 of 836, 605 good, 7 bad) -- Now 02:56:14 This 136.5 sec, Avg 37.3 sec, exp. finish in 139.1 min at 05:15:21 on 15-Nov-2016
+
+RESULT for rflann_1.0.tar.gz : success (613 of 836, 606 good, 7 bad) -- Now 02:56:34 This 19.5 sec, Avg 37.2 sec, exp. finish in 138.4 min at 05:14:57 on 15-Nov-2016
+
+RESULT for rforensicbatwing_1.3.tar.gz : success (614 of 836, 607 good, 7 bad) -- Now 02:56:48 This 14 sec, Avg 37.2 sec, exp. finish in 137.6 min at 05:14:25 on 15-Nov-2016
+
+RESULT for rFTRLProximal_1.0.0.tar.gz : success (615 of 836, 608 good, 7 bad) -- Now 02:57:08 This 19.8 sec, Avg 37.2 sec, exp. finish in 136.9 min at 05:14:02 on 15-Nov-2016
+
+RESULT for rgam_0.6.3.tar.gz : success (616 of 836, 609 good, 7 bad) -- Now 02:57:35 This 27 sec, Avg 37.2 sec, exp. finish in 136.2 min at 05:13:48 on 15-Nov-2016
+
+RESULT for rgeolocate_0.8.0.tar.gz : success (617 of 836, 610 good, 7 bad) -- Now 02:57:54 This 19.6 sec, Avg 37.1 sec, exp. finish in 135.5 min at 05:13:24 on 15-Nov-2016
+
+RESULT for RI2by2_1.3.tar.gz : success (618 of 836, 611 good, 7 bad) -- Now 02:58:10 This 15.6 sec, Avg 37.1 sec, exp. finish in 134.8 min at 05:12:55 on 15-Nov-2016
+
+RESULT for RInside_0.2.13.tar.gz : success (619 of 836, 612 good, 7 bad) -- Now 02:58:22 This 12.2 sec, Avg 37 sec, exp. finish in 134 min at 05:12:21 on 15-Nov-2016
+
+RESULT for Rip46_1.0.2.tar.gz : success (620 of 836, 613 good, 7 bad) -- Now 02:58:36 This 14.2 sec, Avg 37 sec, exp. finish in 133.2 min at 05:11:51 on 15-Nov-2016
+
+RESULT for ripa_2.0-2.tar.gz : success (621 of 836, 614 good, 7 bad) -- Now 02:58:59 This 23 sec, Avg 37 sec, exp. finish in 132.5 min at 05:11:32 on 15-Nov-2016
+
+RESULT for rivr_1.2.tar.gz : success (622 of 836, 615 good, 7 bad) -- Now 02:59:16 This 16.3 sec, Avg 37 sec, exp. finish in 131.8 min at 05:11:04 on 15-Nov-2016
+
+RESULT for rkvo_0.1.tar.gz : success (623 of 836, 616 good, 7 bad) -- Now 02:59:28 This 12.1 sec, Avg 36.9 sec, exp. finish in 131 min at 05:10:31 on 15-Nov-2016
+
+RESULT for Rlibeemd_1.3.7.tar.gz : success (624 of 836, 617 good, 7 bad) -- Now 02:59:48 This 20.2 sec, Avg 36.9 sec, exp. finish in 130.3 min at 05:10:08 on 15-Nov-2016
+
+RESULT for RLRsim_3.1-3.tar.gz : success (625 of 836, 618 good, 7 bad) -- Now 03:00:17 This 28.8 sec, Avg 36.9 sec, exp. finish in 129.7 min at 05:09:57 on 15-Nov-2016
+
+RESULT for Rmalschains_0.2-2.tar.gz : success (626 of 836, 619 good, 7 bad) -- Now 03:00:47 This 30.6 sec, Avg 36.9 sec, exp. finish in 129 min at 05:09:49 on 15-Nov-2016
+
+RESULT for rmgarch_1.3-0.tar.gz : success (627 of 836, 620 good, 7 bad) -- Now 03:02:19 This 91.9 sec, Avg 37 sec, exp. finish in 128.7 min at 05:11:03 on 15-Nov-2016
+
+RESULT for Rmixmod_2.1.1.tar.gz : success (628 of 836, 621 good, 7 bad) -- Now 03:03:44 This 85 sec, Avg 37 sec, exp. finish in 128.4 min at 05:12:07 on 15-Nov-2016
+
+RESULT for RmixmodCombi_1.0.tar.gz : success (629 of 836, 622 good, 7 bad) -- Now 03:04:02 This 17.8 sec, Avg 37 sec, exp. finish in 127.6 min at 05:11:41 on 15-Nov-2016
+
+RESULT for rmumps_5.0.1.10.tar.gz : success (630 of 836, 623 good, 7 bad) -- Now 03:04:49 This 46.7 sec, Avg 37 sec, exp. finish in 127.1 min at 05:11:54 on 15-Nov-2016
+
+RESULT for rncl_0.6.0.tar.gz : success (631 of 836, 624 good, 7 bad) -- Now 03:05:35 This 46 sec, Avg 37 sec, exp. finish in 126.5 min at 05:12:06 on 15-Nov-2016
+
+RESULT for RNifti_0.2.2.tar.gz : success (632 of 836, 625 good, 7 bad) -- Now 03:05:52 This 17.6 sec, Avg 37 sec, exp. finish in 125.8 min at 05:11:40 on 15-Nov-2016
+
+RESULT for RNiftyReg_2.4.0.tar.gz : success (633 of 836, 626 good, 7 bad) -- Now 03:07:39 This 106.5 sec, Avg 37.1 sec, exp. finish in 125.5 min at 05:13:12 on 15-Nov-2016
+
+RESULT for robustgam_0.1.7.tar.gz : success (634 of 836, 627 good, 7 bad) -- Now 03:08:08 This 29.4 sec, Avg 37.1 sec, exp. finish in 124.9 min at 05:13:02 on 15-Nov-2016
+
+RESULT for RobustGaSP_0.5.2.tar.gz : success (635 of 836, 628 good, 7 bad) -- Now 03:08:31 This 23 sec, Avg 37.1 sec, exp. finish in 124.2 min at 05:12:43 on 15-Nov-2016
+
+RESULT for robustHD_0.5.1.tar.gz : success (636 of 836, 629 good, 7 bad) -- Now 03:09:20 This 48.5 sec, Avg 37.1 sec, exp. finish in 123.6 min at 05:12:58 on 15-Nov-2016
+
+RESULT for robustreg_0.1-9.tar.gz : success (637 of 836, 630 good, 7 bad) -- Now 03:09:48 This 28.5 sec, Avg 37.1 sec, exp. finish in 123 min at 05:12:47 on 15-Nov-2016
+
+RESULT for rococo_1.1.4.tar.gz : success (638 of 836, 631 good, 7 bad) -- Now 03:10:09 This 20.5 sec, Avg 37.1 sec, exp. finish in 122.3 min at 05:12:25 on 15-Nov-2016
+
+RESULT for roll_1.0.6.tar.gz : success (639 of 836, 632 good, 7 bad) -- Now 03:10:31 This 22.1 sec, Avg 37 sec, exp. finish in 121.6 min at 05:12:05 on 15-Nov-2016
+
+RESULT for rollply_0.5.0.tar.gz : success (640 of 836, 633 good, 7 bad) -- Now 03:10:52 This 21.5 sec, Avg 37 sec, exp. finish in 120.9 min at 05:11:45 on 15-Nov-2016
+
+RESULT for rootWishart_0.3.0.tar.gz : success (641 of 836, 634 good, 7 bad) -- Now 03:11:25 This 32.4 sec, Avg 37 sec, exp. finish in 120.2 min at 05:11:39 on 15-Nov-2016
+
+RESULT for rotations_1.5.tar.gz : success (642 of 836, 635 good, 7 bad) -- Now 03:12:08 This 43.5 sec, Avg 37 sec, exp. finish in 119.7 min at 05:11:48 on 15-Nov-2016
+
+RESULT for RoughSets_1.3-0.tar.gz : success (643 of 836, 636 good, 7 bad) -- Now 03:12:33 This 25.1 sec, Avg 37 sec, exp. finish in 119 min at 05:11:32 on 15-Nov-2016
+
+RESULT for roxygen2_5.0.1.tar.gz : success (644 of 836, 637 good, 7 bad) -- Now 03:12:55 This 21.3 sec, Avg 37 sec, exp. finish in 118.3 min at 05:11:12 on 15-Nov-2016
+
+RESULT for rpf_0.53.tar.gz : success (645 of 836, 638 good, 7 bad) -- Now 03:13:19 This 24.8 sec, Avg 36.9 sec, exp. finish in 117.6 min at 05:10:56 on 15-Nov-2016
+
+RESULT for rpg_1.4.tar.gz : success (646 of 836, 639 good, 7 bad) -- Now 03:13:35 This 15.2 sec, Avg 36.9 sec, exp. finish in 116.9 min at 05:10:28 on 15-Nov-2016
+
+RESULT for Rphylopars_0.2.9.tar.gz : success (647 of 836, 640 good, 7 bad) -- Now 03:14:19 This 44.8 sec, Avg 36.9 sec, exp. finish in 116.3 min at 05:10:38 on 15-Nov-2016
+
+RESULT for rplexos_1.1.8.tar.gz : success (648 of 836, 641 good, 7 bad) -- Now 03:14:47 This 28.1 sec, Avg 36.9 sec, exp. finish in 115.7 min at 05:10:27 on 15-Nov-2016
+
+RESULT for rpms_0.1.0.tar.gz : success (649 of 836, 642 good, 7 bad) -- Now 03:15:20 This 32.6 sec, Avg 36.9 sec, exp. finish in 115 min at 05:10:21 on 15-Nov-2016
+
+RESULT for rPref_1.1.tar.gz : success (650 of 836, 643 good, 7 bad) -- Now 03:15:50 This 29.8 sec, Avg 36.9 sec, exp. finish in 114.4 min at 05:10:12 on 15-Nov-2016
+
+RESULT for RProtoBuf_0.4.7.tar.gz : success (651 of 836, 644 good, 7 bad) -- Now 03:16:57 This 66.8 sec, Avg 36.9 sec, exp. finish in 113.9 min at 05:10:50 on 15-Nov-2016
+
+RESULT for RPtests_0.1.2.tar.gz : success (652 of 836, 645 good, 7 bad) -- Now 03:17:26 This 29.1 sec, Avg 36.9 sec, exp. finish in 113.2 min at 05:10:40 on 15-Nov-2016
+
+RESULT for RQuantLib_0.4.3.tar.gz : failure (653 of 836, 645 good, 8 bad) -- Now 03:20:59 This 213.3 sec, Avg 37.2 sec, exp. finish in 113.5 min at 05:14:26 on 15-Nov-2016
+
+RESULT for RSNNS_0.4-7.tar.gz : success (654 of 836, 646 good, 8 bad) -- Now 03:21:35 This 35.5 sec, Avg 37.2 sec, exp. finish in 112.8 min at 05:14:24 on 15-Nov-2016
+
+RESULT for RSNPset_0.5.tar.gz : success (655 of 836, 647 good, 8 bad) -- Now 03:22:03 This 28 sec, Avg 37.2 sec, exp. finish in 112.2 min at 05:14:12 on 15-Nov-2016
+
+RESULT for Rsomoclu_1.7.1.tar.gz : success (656 of 836, 648 good, 8 bad) -- Now 03:22:24 This 21.8 sec, Avg 37.2 sec, exp. finish in 111.5 min at 05:13:53 on 15-Nov-2016
+
+RESULT for RSpectra_0.12-0.tar.gz : success (657 of 836, 649 good, 8 bad) -- Now 03:23:21 This 57 sec, Avg 37.2 sec, exp. finish in 110.9 min at 05:14:18 on 15-Nov-2016
+
+RESULT for RSSL_0.6.1.tar.gz : success (658 of 836, 650 good, 8 bad) -- Now 03:24:45 This 83.9 sec, Avg 37.3 sec, exp. finish in 110.5 min at 05:15:17 on 15-Nov-2016
+
+RESULT for rstan_2.12.1.tar.gz : success (659 of 836, 651 good, 8 bad) -- Now 03:27:55 This 190 sec, Avg 37.5 sec, exp. finish in 110.6 min at 05:18:31 on 15-Nov-2016
+
+RESULT for rstanarm_2.12.1.tar.gz : failure (660 of 836, 651 good, 9 bad) -- Now 03:32:54 This 299.1 sec, Avg 37.9 sec, exp. finish in 111.1 min at 05:24:02 on 15-Nov-2016
+
+RESULT for rstpm2_1.3.4.tar.gz : success (661 of 836, 652 good, 9 bad) -- Now 03:33:46 This 51.7 sec, Avg 37.9 sec, exp. finish in 110.6 min at 05:24:20 on 15-Nov-2016
+
+RESULT for rtext_0.1.20.tar.gz : success (662 of 836, 653 good, 9 bad) -- Now 03:34:12 This 26.2 sec, Avg 37.9 sec, exp. finish in 109.9 min at 05:24:05 on 15-Nov-2016
+
+RESULT for rtk_0.2.2.tar.gz : success (663 of 836, 654 good, 9 bad) -- Now 03:34:34 This 21.9 sec, Avg 37.9 sec, exp. finish in 109.2 min at 05:23:45 on 15-Nov-2016
+
+RESULT for rtkore_1.1.0.tar.gz : success (664 of 836, 655 good, 9 bad) -- Now 03:34:51 This 17.1 sec, Avg 37.8 sec, exp. finish in 108.5 min at 05:23:19 on 15-Nov-2016
+
+RESULT for rtkpp_0.9.2.tar.gz : success (665 of 836, 656 good, 9 bad) -- Now 03:35:07 This 15.4 sec, Avg 37.8 sec, exp. finish in 107.7 min at 05:22:51 on 15-Nov-2016
+
+RESULT for Rtsne_0.11.tar.gz : success (666 of 836, 657 good, 9 bad) -- Now 03:35:25 This 18.2 sec, Avg 37.8 sec, exp. finish in 107 min at 05:22:26 on 15-Nov-2016
+
+RESULT for Ruchardet_0.0-3.tar.gz : success (667 of 836, 658 good, 9 bad) -- Now 03:35:39 This 13.7 sec, Avg 37.7 sec, exp. finish in 106.3 min at 05:21:56 on 15-Nov-2016
+
+RESULT for rucrdtw_0.1.1.tar.gz : success (668 of 836, 659 good, 9 bad) -- Now 03:35:56 This 17.2 sec, Avg 37.7 sec, exp. finish in 105.6 min at 05:21:30 on 15-Nov-2016
+
+RESULT for rugarch_1.3-6.tar.gz : success (669 of 836, 660 good, 9 bad) -- Now 03:37:40 This 104.3 sec, Avg 37.8 sec, exp. finish in 105.2 min at 05:22:53 on 15-Nov-2016
+
+RESULT for Rvcg_0.14.tar.gz : success (670 of 836, 661 good, 9 bad) -- Now 03:39:43 This 122.8 sec, Avg 37.9 sec, exp. finish in 104.9 min at 05:24:39 on 15-Nov-2016
+
+RESULT for rvg_0.1.1.tar.gz : success (671 of 836, 662 good, 9 bad) -- Now 03:40:18 This 35.4 sec, Avg 37.9 sec, exp. finish in 104.3 min at 05:24:36 on 15-Nov-2016
+
+RESULT for RVowpalWabbit_0.0.8.tar.gz : success (672 of 836, 663 good, 9 bad) -- Now 03:41:08 This 49.6 sec, Avg 37.9 sec, exp. finish in 103.7 min at 05:24:51 on 15-Nov-2016
+
+RESULT for rwfec_0.2.tar.gz : success (673 of 836, 664 good, 9 bad) -- Now 03:41:21 This 13 sec, Avg 37.9 sec, exp. finish in 103 min at 05:24:20 on 15-Nov-2016
+
+RESULT for rwirelesscom_1.4.3.tar.gz : success (674 of 836, 665 good, 9 bad) -- Now 03:41:39 This 17.7 sec, Avg 37.9 sec, exp. finish in 102.3 min at 05:23:55 on 15-Nov-2016
+
+RESULT for Ryacas_0.3-1.tar.gz : success (675 of 836, 666 good, 9 bad) -- Now 03:42:10 This 31.4 sec, Avg 37.9 sec, exp. finish in 101.6 min at 05:23:47 on 15-Nov-2016
+
+RESULT for s2_0.1-1.tar.gz : success (676 of 836, 667 good, 9 bad) -- Now 03:43:02 This 52.1 sec, Avg 37.9 sec, exp. finish in 101 min at 05:24:04 on 15-Nov-2016
+
+RESULT for saeRobust_0.1.0.tar.gz : success (677 of 836, 668 good, 9 bad) -- Now 03:44:20 This 78 sec, Avg 37.9 sec, exp. finish in 100.6 min at 05:24:54 on 15-Nov-2016
+
+RESULT for SAMM_0.0.1.tar.gz : success (678 of 836, 669 good, 9 bad) -- Now 03:45:05 This 44.4 sec, Avg 38 sec, exp. finish in 100 min at 05:25:02 on 15-Nov-2016
+
+RESULT for saturnin_1.1.1.tar.gz : success (679 of 836, 670 good, 9 bad) -- Now 03:45:25 This 20.4 sec, Avg 37.9 sec, exp. finish in 99.3 min at 05:24:40 on 15-Nov-2016
+
+RESULT for sbfc_1.0.1.tar.gz : success (680 of 836, 671 good, 9 bad) -- Now 03:46:07 This 42.4 sec, Avg 37.9 sec, exp. finish in 98.6 min at 05:24:46 on 15-Nov-2016
+
+RESULT for sBIC_0.2.0.tar.gz : success (681 of 836, 672 good, 9 bad) -- Now 03:46:32 This 24.8 sec, Avg 37.9 sec, exp. finish in 98 min at 05:24:30 on 15-Nov-2016
+
+RESULT for sbmSDP_0.2.tar.gz : success (682 of 836, 673 good, 9 bad) -- Now 03:46:50 This 18.2 sec, Avg 37.9 sec, exp. finish in 97.3 min at 05:24:06 on 15-Nov-2016
+
+RESULT for sbrl_1.2.tar.gz : success (683 of 836, 674 good, 9 bad) -- Now 03:47:14 This 23.7 sec, Avg 37.9 sec, exp. finish in 96.6 min at 05:23:48 on 15-Nov-2016
+
+RESULT for SBSA_0.2.3.tar.gz : success (684 of 836, 675 good, 9 bad) -- Now 03:47:43 This 29 sec, Avg 37.9 sec, exp. finish in 95.9 min at 05:23:37 on 15-Nov-2016
+
+RESULT for scales_0.4.1.tar.gz : success (685 of 836, 676 good, 9 bad) -- Now 03:48:00 This 16.4 sec, Avg 37.8 sec, exp. finish in 95.2 min at 05:23:11 on 15-Nov-2016
+
+RESULT for SciencesPo_1.4.1.tar.gz : success (686 of 836, 677 good, 9 bad) -- Now 03:48:33 This 33.8 sec, Avg 37.8 sec, exp. finish in 94.5 min at 05:23:06 on 15-Nov-2016
+
+RESULT for scorer_0.2.0.tar.gz : success (687 of 836, 678 good, 9 bad) -- Now 03:48:47 This 13.6 sec, Avg 37.8 sec, exp. finish in 93.8 min at 05:22:37 on 15-Nov-2016
+
+RESULT for scoringRules_0.9.1.tar.gz : success (688 of 836, 679 good, 9 bad) -- Now 03:49:10 This 23.4 sec, Avg 37.8 sec, exp. finish in 93.1 min at 05:22:19 on 15-Nov-2016
+
+RESULT for scrm_1.6.0-2.tar.gz : success (689 of 836, 680 good, 9 bad) -- Now 03:49:48 This 37.1 sec, Avg 37.8 sec, exp. finish in 92.5 min at 05:22:19 on 15-Nov-2016
+
+RESULT for scrypt_0.1.1.tar.gz : success (690 of 836, 681 good, 9 bad) -- Now 03:50:09 This 21.9 sec, Avg 37.7 sec, exp. finish in 91.8 min at 05:21:59 on 15-Nov-2016
+
+RESULT for scvxclustr_0.1.tar.gz : success (691 of 836, 682 good, 9 bad) -- Now 03:50:40 This 30.5 sec, Avg 37.7 sec, exp. finish in 91.2 min at 05:21:51 on 15-Nov-2016
+
+RESULT for sdcMicro_4.6.1.tar.gz : success (692 of 836, 683 good, 9 bad) -- Now 03:51:50 This 69.7 sec, Avg 37.8 sec, exp. finish in 90.7 min at 05:22:29 on 15-Nov-2016
+
+RESULT for sdcTable_0.21.6.tar.gz : success (693 of 836, 684 good, 9 bad) -- Now 03:52:25 This 35.7 sec, Avg 37.8 sec, exp. finish in 90 min at 05:22:27 on 15-Nov-2016
+
+RESULT for SEERaBomb_2016.2.tar.gz : success (694 of 836, 685 good, 9 bad) -- Now 03:53:09 This 43.7 sec, Avg 37.8 sec, exp. finish in 89.4 min at 05:22:34 on 15-Nov-2016
+
+RESULT for segmag_1.2.4.tar.gz : success (695 of 836, 686 good, 9 bad) -- Now 03:53:24 This 14.7 sec, Avg 37.7 sec, exp. finish in 88.7 min at 05:22:06 on 15-Nov-2016
+
+RESULT for seismicRoll_1.1.2.tar.gz : success (696 of 836, 687 good, 9 bad) -- Now 03:53:36 This 12.5 sec, Avg 37.7 sec, exp. finish in 88 min at 05:21:36 on 15-Nov-2016
+
+RESULT for SelvarMix_1.2.tar.gz : success (697 of 836, 688 good, 9 bad) -- Now 03:54:10 This 33.4 sec, Avg 37.7 sec, exp. finish in 87.3 min at 05:21:31 on 15-Nov-2016
+
+RESULT for seqHMM_1.0.6.tar.gz : success (698 of 836, 689 good, 9 bad) -- Now 03:56:04 This 114.4 sec, Avg 37.8 sec, exp. finish in 87 min at 05:23:02 on 15-Nov-2016
+
+RESULT for sequences_0.5.9.tar.gz : success (699 of 836, 690 good, 9 bad) -- Now 03:56:21 This 16.7 sec, Avg 37.8 sec, exp. finish in 86.3 min at 05:22:37 on 15-Nov-2016
+
+RESULT for sgd_1.1.tar.gz : success (700 of 836, 691 good, 9 bad) -- Now 03:56:45 This 24.4 sec, Avg 37.8 sec, exp. finish in 85.6 min at 05:22:21 on 15-Nov-2016
+
+RESULT for sglOptim_1.3.0.tar.gz : success (701 of 836, 692 good, 9 bad) -- Now 03:57:56 This 70.5 sec, Avg 37.8 sec, exp. finish in 85.1 min at 05:23:00 on 15-Nov-2016
+
+RESULT for sharpeRratio_1.1.tar.gz : success (702 of 836, 693 good, 9 bad) -- Now 03:58:09 This 13.1 sec, Avg 37.8 sec, exp. finish in 84.4 min at 05:22:31 on 15-Nov-2016
+
+RESULT for signalHsmm_1.4.tar.gz : success (703 of 836, 694 good, 9 bad) -- Now 03:58:25 This 15.8 sec, Avg 37.7 sec, exp. finish in 83.7 min at 05:22:05 on 15-Nov-2016
+
+RESULT for simFrame_0.5.3.tar.gz : success (704 of 836, 695 good, 9 bad) -- Now 03:58:58 This 32.9 sec, Avg 37.7 sec, exp. finish in 83 min at 05:21:59 on 15-Nov-2016
+
+RESULT for simmer_3.5.0.tar.gz : success (705 of 836, 696 good, 9 bad) -- Now 03:59:35 This 37.8 sec, Avg 37.7 sec, exp. finish in 82.4 min at 05:21:59 on 15-Nov-2016
+
+RESULT for simPop_0.3.0.tar.gz : success (706 of 836, 697 good, 9 bad) -- Now 04:01:20 This 104.9 sec, Avg 37.8 sec, exp. finish in 82 min at 05:23:19 on 15-Nov-2016
+
+RESULT for SimReg_3.0.tar.gz : success (707 of 836, 698 good, 9 bad) -- Now 04:01:42 This 21.7 sec, Avg 37.8 sec, exp. finish in 81.3 min at 05:23:00 on 15-Nov-2016
+
+RESULT for simstudy_0.1.1.tar.gz : success (708 of 836, 699 good, 9 bad) -- Now 04:01:57 This 14.6 sec, Avg 37.8 sec, exp. finish in 80.6 min at 05:22:32 on 15-Nov-2016
+
+RESULT for sirt_1.12-2.tar.gz : success (709 of 836, 700 good, 9 bad) -- Now 04:04:24 This 147.1 sec, Avg 37.9 sec, exp. finish in 80.3 min at 05:24:41 on 15-Nov-2016
+
+RESULT for sitmo_1.0.0.tar.gz : success (710 of 836, 701 good, 9 bad) -- Now 04:04:38 This 14.4 sec, Avg 37.9 sec, exp. finish in 79.6 min at 05:24:13 on 15-Nov-2016
+
+RESULT for slfm_0.2.2.tar.gz : success (711 of 836, 702 good, 9 bad) -- Now 04:04:58 This 19.8 sec, Avg 37.9 sec, exp. finish in 78.9 min at 05:23:52 on 15-Nov-2016
+
+RESULT for SLOPE_0.1.3.tar.gz : success (712 of 836, 703 good, 9 bad) -- Now 04:05:11 This 13.2 sec, Avg 37.8 sec, exp. finish in 78.2 min at 05:23:23 on 15-Nov-2016
+
+RESULT for smam_0.3-0.tar.gz : success (713 of 836, 704 good, 9 bad) -- Now 04:05:30 This 18.8 sec, Avg 37.8 sec, exp. finish in 77.5 min at 05:23:01 on 15-Nov-2016
+
+RESULT for smoof_1.4.tar.gz : success (714 of 836, 705 good, 9 bad) -- Now 04:06:03 This 33.5 sec, Avg 37.8 sec, exp. finish in 76.9 min at 05:22:56 on 15-Nov-2016
+
+RESULT for smooth_1.4.7.tar.gz : success (715 of 836, 706 good, 9 bad) -- Now 04:07:11 This 67.4 sec, Avg 37.8 sec, exp. finish in 76.3 min at 05:23:30 on 15-Nov-2016
+
+RESULT for SnakeCharmR_1.0.4.tar.gz : success (716 of 836, 707 good, 9 bad) -- Now 04:07:24 This 13.6 sec, Avg 37.8 sec, exp. finish in 75.6 min at 05:23:02 on 15-Nov-2016
+
+RESULT for snipEM_1.0.tar.gz : success (717 of 836, 708 good, 9 bad) -- Now 04:07:44 This 19.5 sec, Avg 37.8 sec, exp. finish in 74.9 min at 05:22:41 on 15-Nov-2016
+
+RESULT for snowboot_0.5.1.tar.gz : success (718 of 836, 709 good, 9 bad) -- Now 04:08:05 This 20.7 sec, Avg 37.8 sec, exp. finish in 74.3 min at 05:22:21 on 15-Nov-2016
+
+RESULT for snplist_0.16.tar.gz : success (719 of 836, 710 good, 9 bad) -- Now 04:08:49 This 44.2 sec, Avg 37.8 sec, exp. finish in 73.7 min at 05:22:28 on 15-Nov-2016
+
+RESULT for SocialNetworks_1.1.tar.gz : success (720 of 836, 711 good, 9 bad) -- Now 04:09:01 This 12.1 sec, Avg 37.7 sec, exp. finish in 73 min at 05:21:58 on 15-Nov-2016
+
+RESULT for SOD_1.0.tar.gz : success (721 of 836, 712 good, 9 bad) -- Now 04:09:23 This 21.7 sec, Avg 37.7 sec, exp. finish in 72.3 min at 05:21:40 on 15-Nov-2016
+
+RESULT for sourceR_0.2.0.tar.gz : success (722 of 836, 713 good, 9 bad) -- Now 04:10:06 This 43.4 sec, Avg 37.7 sec, exp. finish in 71.7 min at 05:21:46 on 15-Nov-2016
+
+RESULT for spacodiR_0.13.0115.tar.gz : success (723 of 836, 714 good, 9 bad) -- Now 04:10:38 This 31.7 sec, Avg 37.7 sec, exp. finish in 71 min at 05:21:39 on 15-Nov-2016
+
+RESULT for spaMM_1.10.0.tar.gz : success (724 of 836, 715 good, 9 bad) -- Now 04:11:51 This 73.2 sec, Avg 37.8 sec, exp. finish in 70.5 min at 05:22:20 on 15-Nov-2016
+
+RESULT for SparseFactorAnalysis_1.0.tar.gz : success (725 of 836, 716 good, 9 bad) -- Now 04:12:18 This 27.2 sec, Avg 37.7 sec, exp. finish in 69.8 min at 05:22:08 on 15-Nov-2016
+
+RESULT for sparseHessianFD_0.3.0.tar.gz : success (726 of 836, 717 good, 9 bad) -- Now 04:12:51 This 32.8 sec, Avg 37.7 sec, exp. finish in 69.2 min at 05:22:03 on 15-Nov-2016
+
+RESULT for sparseLTSEigen_0.2.0.tar.gz : success (727 of 836, 718 good, 9 bad) -- Now 04:13:26 This 34.6 sec, Avg 37.7 sec, exp. finish in 68.6 min at 05:21:59 on 15-Nov-2016
+
+RESULT for sparsereg_1.2.tar.gz : success (728 of 836, 719 good, 9 bad) -- Now 04:14:07 This 41.4 sec, Avg 37.7 sec, exp. finish in 67.9 min at 05:22:03 on 15-Nov-2016
+
+RESULT for spass_1.0.tar.gz : success (729 of 836, 720 good, 9 bad) -- Now 04:14:41 This 34.5 sec, Avg 37.7 sec, exp. finish in 67.3 min at 05:22:00 on 15-Nov-2016
+
+RESULT for spatgraphs_3.0.tar.gz : success (730 of 836, 721 good, 9 bad) -- Now 04:15:19 This 37.6 sec, Avg 37.7 sec, exp. finish in 66.7 min at 05:21:59 on 15-Nov-2016
+
+RESULT for SpatialEpi_1.2.2.tar.gz : success (731 of 836, 722 good, 9 bad) -- Now 04:15:56 This 37.3 sec, Avg 37.7 sec, exp. finish in 66 min at 05:21:59 on 15-Nov-2016
+
+RESULT for SpatialTools_1.0.2.tar.gz : success (732 of 836, 723 good, 9 bad) -- Now 04:16:21 This 24.3 sec, Avg 37.7 sec, exp. finish in 65.4 min at 05:21:43 on 15-Nov-2016
+
+RESULT for SpatMCA_1.0.0.1.tar.gz : success (733 of 836, 724 good, 9 bad) -- Now 04:16:47 This 26.3 sec, Avg 37.7 sec, exp. finish in 64.7 min at 05:21:30 on 15-Nov-2016
+
+RESULT for SpatPCA_1.1.1.1.tar.gz : success (734 of 836, 725 good, 9 bad) -- Now 04:17:07 This 20.1 sec, Avg 37.7 sec, exp. finish in 64.1 min at 05:21:10 on 15-Nov-2016
+
+RESULT for spBayesSurv_1.0.5.tar.gz : success (735 of 836, 726 good, 9 bad) -- Now 04:18:32 This 85.3 sec, Avg 37.7 sec, exp. finish in 63.5 min at 05:22:04 on 15-Nov-2016
+
+RESULT for spduration_0.15.1.tar.gz : success (736 of 836, 727 good, 9 bad) -- Now 04:19:01 This 28.6 sec, Avg 37.7 sec, exp. finish in 62.9 min at 05:21:54 on 15-Nov-2016
+
+RESULT for spectral_1.0.1.tar.gz : success (737 of 836, 728 good, 9 bad) -- Now 04:19:15 This 14 sec, Avg 37.7 sec, exp. finish in 62.2 min at 05:21:27 on 15-Nov-2016
+
+RESULT for spray_1.0.tar.gz : success (738 of 836, 729 good, 9 bad) -- Now 04:19:34 This 18.8 sec, Avg 37.7 sec, exp. finish in 61.5 min at 05:21:06 on 15-Nov-2016
+
+RESULT for spsann_2.0-0.tar.gz : success (739 of 836, 730 good, 9 bad) -- Now 04:19:56 This 22.7 sec, Avg 37.7 sec, exp. finish in 60.9 min at 05:20:49 on 15-Nov-2016
+
+RESULT for SSL_0.1.tar.gz : success (740 of 836, 731 good, 9 bad) -- Now 04:20:39 This 43.1 sec, Avg 37.7 sec, exp. finish in 60.3 min at 05:20:55 on 15-Nov-2016
+
+RESULT for starma_1.3.tar.gz : success (741 of 836, 732 good, 9 bad) -- Now 04:21:06 This 26.3 sec, Avg 37.6 sec, exp. finish in 59.6 min at 05:20:42 on 15-Nov-2016
+
+RESULT for StatMethRank_1.3.tar.gz : success (742 of 836, 733 good, 9 bad) -- Now 04:21:28 This 22.3 sec, Avg 37.6 sec, exp. finish in 58.9 min at 05:20:25 on 15-Nov-2016
+
+RESULT for staTools_0.1.0.tar.gz : success (743 of 836, 734 good, 9 bad) -- Now 04:21:47 This 19.2 sec, Avg 37.6 sec, exp. finish in 58.3 min at 05:20:04 on 15-Nov-2016
+
+RESULT for steadyICA_1.0.tar.gz : success (744 of 836, 735 good, 9 bad) -- Now 04:22:07 This 19.4 sec, Avg 37.6 sec, exp. finish in 57.6 min at 05:19:44 on 15-Nov-2016
+
+RESULT for StepwiseTest_1.0.tar.gz : success (745 of 836, 736 good, 9 bad) -- Now 04:22:21 This 14.2 sec, Avg 37.5 sec, exp. finish in 56.9 min at 05:19:18 on 15-Nov-2016
+
+RESULT for StereoMorph_1.5.1.tar.gz : success (746 of 836, 737 good, 9 bad) -- Now 04:23:02 This 40.8 sec, Avg 37.6 sec, exp. finish in 56.3 min at 05:19:21 on 15-Nov-2016
+
+RESULT for stlplus_0.5.1.tar.gz : success (747 of 836, 738 good, 9 bad) -- Now 04:23:20 This 18.1 sec, Avg 37.5 sec, exp. finish in 55.7 min at 05:18:59 on 15-Nov-2016
+
+RESULT for stm_1.1.3.tar.gz : success (748 of 836, 739 good, 9 bad) -- Now 04:24:03 This 43.1 sec, Avg 37.5 sec, exp. finish in 55 min at 05:19:06 on 15-Nov-2016
+
+RESULT for StMoSim_3.0.tar.gz : success (749 of 836, 740 good, 9 bad) -- Now 04:24:16 This 12.7 sec, Avg 37.5 sec, exp. finish in 54.4 min at 05:18:38 on 15-Nov-2016
+
+RESULT for stochvol_1.3.2.tar.gz : success (750 of 836, 741 good, 9 bad) -- Now 04:24:47 This 31.2 sec, Avg 37.5 sec, exp. finish in 53.7 min at 05:18:31 on 15-Nov-2016
+
+RESULT for stocks_1.1.1.tar.gz : success (751 of 836, 742 good, 9 bad) -- Now 04:25:07 This 20.2 sec, Avg 37.5 sec, exp. finish in 53.1 min at 05:18:12 on 15-Nov-2016
+
+RESULT for stosim_0.0.12.tar.gz : success (752 of 836, 743 good, 9 bad) -- Now 04:25:26 This 18.6 sec, Avg 37.4 sec, exp. finish in 52.4 min at 05:17:51 on 15-Nov-2016
+
+RESULT for stpm_1.4.2.tar.gz : success (753 of 836, 744 good, 9 bad) -- Now 04:26:14 This 48 sec, Avg 37.5 sec, exp. finish in 51.8 min at 05:18:02 on 15-Nov-2016
+
+RESULT for strataG_1.0.5.tar.gz : success (754 of 836, 745 good, 9 bad) -- Now 04:27:34 This 80.3 sec, Avg 37.5 sec, exp. finish in 51.3 min at 05:18:50 on 15-Nov-2016
+
+RESULT for stream_1.2-3.tar.gz : success (755 of 836, 746 good, 9 bad) -- Now 04:28:26 This 52.1 sec, Avg 37.5 sec, exp. finish in 50.7 min at 05:19:06 on 15-Nov-2016
+
+RESULT for stremr_0.2.tar.gz : success (756 of 836, 747 good, 9 bad) -- Now 04:31:33 This 187.3 sec, Avg 37.7 sec, exp. finish in 50.3 min at 05:21:52 on 15-Nov-2016
+
+RESULT for strum_0.6.2.tar.gz : success (757 of 836, 748 good, 9 bad) -- Now 04:32:23 This 49.7 sec, Avg 37.7 sec, exp. finish in 49.7 min at 05:22:05 on 15-Nov-2016
+
+RESULT for SuperRanker_1.0.1.tar.gz : success (758 of 836, 749 good, 9 bad) -- Now 04:32:51 This 28.3 sec, Avg 37.7 sec, exp. finish in 49.1 min at 05:21:55 on 15-Nov-2016
+
+RESULT for survAccuracyMeasures_1.2.tar.gz : success (759 of 836, 750 good, 9 bad) -- Now 04:33:31 This 39.8 sec, Avg 37.7 sec, exp. finish in 48.4 min at 05:21:57 on 15-Nov-2016
+
+RESULT for surveillance_1.12.1.tar.gz : success (760 of 836, 751 good, 9 bad) -- Now 04:35:52 This 140.6 sec, Avg 37.9 sec, exp. finish in 48 min at 05:23:50 on 15-Nov-2016
+
+RESULT for surveybootstrap_0.0.1.tar.gz : success (761 of 836, 752 good, 9 bad) -- Now 04:36:32 This 40.1 sec, Avg 37.9 sec, exp. finish in 47.3 min at 05:23:53 on 15-Nov-2016
+
+RESULT for survSNP_0.24.tar.gz : success (762 of 836, 753 good, 9 bad) -- Now 04:37:00 This 28.6 sec, Avg 37.9 sec, exp. finish in 46.7 min at 05:23:42 on 15-Nov-2016
+
+RESULT for svglite_1.2.0.tar.gz : success (763 of 836, 754 good, 9 bad) -- Now 04:37:17 This 16.6 sec, Avg 37.8 sec, exp. finish in 46 min at 05:23:19 on 15-Nov-2016
+
+RESULT for SVMMatch_1.1.tar.gz : success (764 of 836, 755 good, 9 bad) -- Now 04:37:34 This 17.4 sec, Avg 37.8 sec, exp. finish in 45.4 min at 05:22:57 on 15-Nov-2016
+
+RESULT for synchronicity_1.1.9.1.tar.gz : success (765 of 836, 756 good, 9 bad) -- Now 04:37:51 This 16.2 sec, Avg 37.8 sec, exp. finish in 44.7 min at 05:22:33 on 15-Nov-2016
+
+RESULT for synlik_0.1.1.tar.gz : success (766 of 836, 757 good, 9 bad) -- Now 04:38:37 This 46 sec, Avg 37.8 sec, exp. finish in 44.1 min at 05:22:42 on 15-Nov-2016
+
+RESULT for synthACS_1.0.0.tar.gz : success (767 of 836, 758 good, 9 bad) -- Now 04:39:04 This 27.5 sec, Avg 37.8 sec, exp. finish in 43.4 min at 05:22:31 on 15-Nov-2016
+
+RESULT for systemicrisk_0.3.tar.gz : success (768 of 836, 759 good, 9 bad) -- Now 04:39:23 This 18.5 sec, Avg 37.8 sec, exp. finish in 42.8 min at 05:22:10 on 15-Nov-2016
+
+RESULT for tagcloud_0.6.tar.gz : success (769 of 836, 760 good, 9 bad) -- Now 04:39:39 This 16.3 sec, Avg 37.7 sec, exp. finish in 42.1 min at 05:21:47 on 15-Nov-2016
+
+RESULT for TAM_1.995-0.tar.gz : success (770 of 836, 761 good, 9 bad) -- Now 04:41:03 This 84.3 sec, Avg 37.8 sec, exp. finish in 41.6 min at 05:22:37 on 15-Nov-2016
+
+RESULT for TAQMNGR_2015.2-1.tar.gz : success (771 of 836, 762 good, 9 bad) -- Now 04:41:39 This 35.2 sec, Avg 37.8 sec, exp. finish in 40.9 min at 05:22:34 on 15-Nov-2016
+
+RESULT for TauStar_1.1.0.tar.gz : success (772 of 836, 763 good, 9 bad) -- Now 04:42:51 This 72.2 sec, Avg 37.8 sec, exp. finish in 40.3 min at 05:23:12 on 15-Nov-2016
+
+RESULT for tbart_1.0.tar.gz : success (773 of 836, 764 good, 9 bad) -- Now 04:43:09 This 18.2 sec, Avg 37.8 sec, exp. finish in 39.7 min at 05:22:50 on 15-Nov-2016
+
+RESULT for tcR_2.2.1.11.tar.gz : success (774 of 836, 765 good, 9 bad) -- Now 04:43:39 This 30.2 sec, Avg 37.8 sec, exp. finish in 39.1 min at 05:22:42 on 15-Nov-2016
+
+RESULT for TDA_1.5.tar.gz : success (775 of 836, 766 good, 9 bad) -- Now 04:44:44 This 65 sec, Avg 37.8 sec, exp. finish in 38.5 min at 05:23:12 on 15-Nov-2016
+
+RESULT for TED_1.1.1.tar.gz : success (776 of 836, 767 good, 9 bad) -- Now 04:45:08 This 23.8 sec, Avg 37.8 sec, exp. finish in 37.8 min at 05:22:56 on 15-Nov-2016
+
+RESULT for tensorBSS_0.2.tar.gz : success (777 of 836, 768 good, 9 bad) -- Now 04:45:27 This 19.3 sec, Avg 37.8 sec, exp. finish in 37.2 min at 05:22:37 on 15-Nov-2016
+
+RESULT for termstrc_1.3.7.tar.gz : success (778 of 836, 769 good, 9 bad) -- Now 04:45:53 This 25.3 sec, Avg 37.8 sec, exp. finish in 36.5 min at 05:22:23 on 15-Nov-2016
+
+RESULT for TESS_2.1.0.tar.gz : success (779 of 836, 770 good, 9 bad) -- Now 04:46:23 This 30.2 sec, Avg 37.8 sec, exp. finish in 35.9 min at 05:22:15 on 15-Nov-2016
+
+RESULT for tesseract_1.2.tar.gz : success (780 of 836, 771 good, 9 bad) -- Now 04:46:42 This 19.4 sec, Avg 37.7 sec, exp. finish in 35.2 min at 05:21:55 on 15-Nov-2016
+
+RESULT for text2vec_0.4.0.tar.gz : success (781 of 836, 772 good, 9 bad) -- Now 04:47:48 This 65.3 sec, Avg 37.8 sec, exp. finish in 34.6 min at 05:22:25 on 15-Nov-2016
+
+RESULT for textmineR_2.0.4.tar.gz : success (782 of 836, 773 good, 9 bad) -- Now 04:48:35 This 47.8 sec, Avg 37.8 sec, exp. finish in 34 min at 05:22:36 on 15-Nov-2016
+
+RESULT for textreg_0.1.3.tar.gz : success (783 of 836, 774 good, 9 bad) -- Now 04:48:56 This 21 sec, Avg 37.8 sec, exp. finish in 33.4 min at 05:22:18 on 15-Nov-2016
+
+RESULT for textreuse_0.1.3.tar.gz : success (784 of 836, 775 good, 9 bad) -- Now 04:49:17 This 21 sec, Avg 37.7 sec, exp. finish in 32.7 min at 05:22:00 on 15-Nov-2016
+
+RESULT for TFMPvalue_0.0.6.tar.gz : success (785 of 836, 776 good, 9 bad) -- Now 04:49:30 This 13 sec, Avg 37.7 sec, exp. finish in 32.1 min at 05:21:34 on 15-Nov-2016
+
+RESULT for tibble_1.2.tar.gz : success (786 of 836, 777 good, 9 bad) -- Now 04:49:49 This 19 sec, Avg 37.7 sec, exp. finish in 31.4 min at 05:21:14 on 15-Nov-2016
+
+RESULT for tidyr_0.6.0.tar.gz : success (787 of 836, 778 good, 9 bad) -- Now 04:50:09 This 19.7 sec, Avg 37.7 sec, exp. finish in 30.8 min at 05:20:55 on 15-Nov-2016
+
+RESULT for timma_1.2.1.tar.gz : success (788 of 836, 779 good, 9 bad) -- Now 04:50:43 This 33.6 sec, Avg 37.7 sec, exp. finish in 30.1 min at 05:20:50 on 15-Nov-2016
+
+RESULT for TMB_1.7.4.tar.gz : success (789 of 836, 780 good, 9 bad) -- Now 04:51:30 This 47.2 sec, Avg 37.7 sec, exp. finish in 29.5 min at 05:21:00 on 15-Nov-2016
+
+RESULT for tmg_0.3.tar.gz : success (790 of 836, 781 good, 9 bad) -- Now 04:51:45 This 15 sec, Avg 37.6 sec, exp. finish in 28.9 min at 05:20:36 on 15-Nov-2016
+
+RESULT for tmlenet_0.1.0.tar.gz : success (791 of 836, 782 good, 9 bad) -- Now 04:52:41 This 56.2 sec, Avg 37.7 sec, exp. finish in 28.2 min at 05:20:56 on 15-Nov-2016
+
+RESULT for tnam_1.6.2.tar.gz : success (792 of 836, 783 good, 9 bad) -- Now 04:53:15 This 33.9 sec, Avg 37.7 sec, exp. finish in 27.6 min at 05:20:52 on 15-Nov-2016
+
+RESULT for tokenizers_0.1.4.tar.gz : success (793 of 836, 784 good, 9 bad) -- Now 04:53:33 This 18 sec, Avg 37.6 sec, exp. finish in 27 min at 05:20:31 on 15-Nov-2016
+
+RESULT for TransferEntropy_1.4.tar.gz : success (794 of 836, 785 good, 9 bad) -- Now 04:53:48 This 15.3 sec, Avg 37.6 sec, exp. finish in 26.3 min at 05:20:08 on 15-Nov-2016
+
+RESULT for TreeBUGS_0.6.3.tar.gz : success (795 of 836, 786 good, 9 bad) -- Now 04:54:12 This 23.2 sec, Avg 37.6 sec, exp. finish in 25.7 min at 05:19:53 on 15-Nov-2016
+
+RESULT for treeclim_2.0.0.tar.gz : success (796 of 836, 787 good, 9 bad) -- Now 04:55:06 This 53.9 sec, Avg 37.6 sec, exp. finish in 25.1 min at 05:20:10 on 15-Nov-2016
+
+RESULT for treeplyr_0.1.2.tar.gz : success (797 of 836, 788 good, 9 bad) -- Now 04:55:39 This 33.2 sec, Avg 37.6 sec, exp. finish in 24.4 min at 05:20:05 on 15-Nov-2016
+
+RESULT for treescape_1.10.17.tar.gz : success (798 of 836, 789 good, 9 bad) -- Now 04:56:59 This 80.3 sec, Avg 37.7 sec, exp. finish in 23.8 min at 05:20:50 on 15-Nov-2016
+
+RESULT for triebeard_0.3.0.tar.gz : success (799 of 836, 790 good, 9 bad) -- Now 04:57:24 This 24.7 sec, Avg 37.6 sec, exp. finish in 23.2 min at 05:20:36 on 15-Nov-2016
+
+RESULT for trustOptim_0.8.5.tar.gz : success (800 of 836, 791 good, 9 bad) -- Now 04:57:58 This 34 sec, Avg 37.6 sec, exp. finish in 22.6 min at 05:20:33 on 15-Nov-2016
+
+RESULT for tsBSS_0.2.tar.gz : success (801 of 836, 792 good, 9 bad) -- Now 04:58:17 This 19.1 sec, Avg 37.6 sec, exp. finish in 21.9 min at 05:20:13 on 15-Nov-2016
+
+RESULT for TSS.RESTREND_0.1.02.tar.gz : success (802 of 836, 793 good, 9 bad) -- Now 04:59:04 This 47.1 sec, Avg 37.6 sec, exp. finish in 21.3 min at 05:20:23 on 15-Nov-2016
+
+RESULT for tvd_0.1.0.tar.gz : success (803 of 836, 794 good, 9 bad) -- Now 04:59:16 This 11.8 sec, Avg 37.6 sec, exp. finish in 20.7 min at 05:19:56 on 15-Nov-2016
+
+RESULT for tweenr_0.1.5.tar.gz : success (804 of 836, 795 good, 9 bad) -- Now 04:59:30 This 14.4 sec, Avg 37.6 sec, exp. finish in 20 min at 05:19:32 on 15-Nov-2016
+
+RESULT for UncerIn2_2.0.tar.gz : success (805 of 836, 796 good, 9 bad) -- Now 05:00:02 This 32 sec, Avg 37.6 sec, exp. finish in 19.4 min at 05:19:26 on 15-Nov-2016
+
+RESULT for unmarked_0.11-0.tar.gz : success (806 of 836, 797 good, 9 bad) -- Now 05:01:13 This 70.9 sec, Avg 37.6 sec, exp. finish in 18.8 min at 05:20:01 on 15-Nov-2016
+
+RESULT for unsystation_0.1.1.tar.gz : success (807 of 836, 798 good, 9 bad) -- Now 05:01:29 This 16.4 sec, Avg 37.6 sec, exp. finish in 18.2 min at 05:19:39 on 15-Nov-2016
+
+RESULT for urltools_1.6.0.tar.gz : success (808 of 836, 799 good, 9 bad) -- Now 05:01:58 This 28.8 sec, Avg 37.6 sec, exp. finish in 17.5 min at 05:19:30 on 15-Nov-2016
+
+RESULT for V8_1.1.tar.gz : success (809 of 836, 800 good, 9 bad) -- Now 05:02:14 This 15.4 sec, Avg 37.5 sec, exp. finish in 16.9 min at 05:19:07 on 15-Nov-2016
+
+RESULT for validatejsonr_1.0.4.tar.gz : success (810 of 836, 801 good, 9 bad) -- Now 05:02:29 This 15.6 sec, Avg 37.5 sec, exp. finish in 16.3 min at 05:18:44 on 15-Nov-2016
+
+RESULT for varband_0.9.0.tar.gz : success (811 of 836, 802 good, 9 bad) -- Now 05:02:54 This 25 sec, Avg 37.5 sec, exp. finish in 15.6 min at 05:18:31 on 15-Nov-2016
+
+RESULT for VarSelLCM_1.2.tar.gz : success (812 of 836, 803 good, 9 bad) -- Now 05:03:22 This 28.1 sec, Avg 37.5 sec, exp. finish in 15 min at 05:18:22 on 15-Nov-2016
+
+RESULT for vcfR_1.2.0.tar.gz : success (813 of 836, 804 good, 9 bad) -- Now 05:04:22 This 59.3 sec, Avg 37.5 sec, exp. finish in 14.4 min at 05:18:44 on 15-Nov-2016
+
+RESULT for vdiffr_0.1.0.tar.gz : failure (814 of 836, 804 good, 10 bad) -- Now 05:04:39 This 17.7 sec, Avg 37.5 sec, exp. finish in 13.7 min at 05:18:24 on 15-Nov-2016
+
+RESULT for velox_0.1.0.tar.gz : success (815 of 836, 805 good, 10 bad) -- Now 05:05:16 This 36.7 sec, Avg 37.5 sec, exp. finish in 13.1 min at 05:18:23 on 15-Nov-2016
+
+RESULT for VideoComparison_0.15.tar.gz : success (816 of 836, 806 good, 10 bad) -- Now 05:05:35 This 18.6 sec, Avg 37.5 sec, exp. finish in 12.5 min at 05:18:04 on 15-Nov-2016
+
+RESULT for VIM_4.6.0.tar.gz : success (817 of 836, 807 good, 10 bad) -- Now 05:06:39 This 64.8 sec, Avg 37.5 sec, exp. finish in 11.9 min at 05:18:32 on 15-Nov-2016
+
+RESULT for vita_1.0.0.tar.gz : success (818 of 836, 808 good, 10 bad) -- Now 05:07:02 This 22.8 sec, Avg 37.5 sec, exp. finish in 11.2 min at 05:18:17 on 15-Nov-2016
+
+RESULT for VNM_4.1.tar.gz : success (819 of 836, 809 good, 10 bad) -- Now 05:07:19 This 17.2 sec, Avg 37.4 sec, exp. finish in 10.6 min at 05:17:56 on 15-Nov-2016
+
+RESULT for waffect_1.2.tar.gz : success (820 of 836, 810 good, 10 bad) -- Now 05:07:34 This 14.1 sec, Avg 37.4 sec, exp. finish in 10 min at 05:17:32 on 15-Nov-2016
+
+RESULT for walkr_0.3.3.tar.gz : success (821 of 836, 811 good, 10 bad) -- Now 05:08:13 This 39.9 sec, Avg 37.4 sec, exp. finish in 9.4 min at 05:17:35 on 15-Nov-2016
+
+RESULT for wand_0.2.0.tar.gz : success (822 of 836, 812 good, 10 bad) -- Now 05:08:31 This 17.5 sec, Avg 37.4 sec, exp. finish in 8.7 min at 05:17:14 on 15-Nov-2016
+
+RESULT for wCorr_1.8.0.tar.gz : success (823 of 836, 813 good, 10 bad) -- Now 05:09:08 This 37.1 sec, Avg 37.4 sec, exp. finish in 8.1 min at 05:17:14 on 15-Nov-2016
+
+RESULT for webreadr_0.4.0.tar.gz : success (824 of 836, 814 good, 10 bad) -- Now 05:09:23 This 15.3 sec, Avg 37.4 sec, exp. finish in 7.5 min at 05:16:52 on 15-Nov-2016
+
+RESULT for wingui_0.2.tar.gz : success (825 of 836, 815 good, 10 bad) -- Now 05:09:34 This 11.1 sec, Avg 37.3 sec, exp. finish in 6.8 min at 05:16:25 on 15-Nov-2016
+
+RESULT for wordcloud_2.5.tar.gz : success (826 of 836, 816 good, 10 bad) -- Now 05:09:50 This 15.8 sec, Avg 37.3 sec, exp. finish in 6.2 min at 05:16:03 on 15-Nov-2016
+
+RESULT for wordspace_0.2-0.tar.gz : success (827 of 836, 817 good, 10 bad) -- Now 05:10:38 This 48.2 sec, Avg 37.3 sec, exp. finish in 5.6 min at 05:16:14 on 15-Nov-2016
+
+RESULT for wrswoR_1.0-1.tar.gz : success (828 of 836, 818 good, 10 bad) -- Now 05:10:54 This 15.5 sec, Avg 37.3 sec, exp. finish in 5 min at 05:15:52 on 15-Nov-2016
+
+RESULT for wsrf_1.7.0.tar.gz : success (829 of 836, 819 good, 10 bad) -- Now 05:11:28 This 34.2 sec, Avg 37.3 sec, exp. finish in 4.4 min at 05:15:49 on 15-Nov-2016
+
+RESULT for XBRL_0.99.17.tar.gz : success (830 of 836, 820 good, 10 bad) -- Now 05:11:56 This 27.5 sec, Avg 37.3 sec, exp. finish in 3.7 min at 05:15:39 on 15-Nov-2016
+
+RESULT for xml2_1.0.0.tar.gz : success (831 of 836, 821 good, 10 bad) -- Now 05:12:21 This 25.8 sec, Avg 37.3 sec, exp. finish in 3.1 min at 05:15:28 on 15-Nov-2016
+
+RESULT for xyz_0.1.tar.gz : success (832 of 836, 822 good, 10 bad) -- Now 05:12:38 This 16.7 sec, Avg 37.2 sec, exp. finish in 2.5 min at 05:15:07 on 15-Nov-2016
+
+RESULT for yakmoR_0.1.1.tar.gz : success (833 of 836, 823 good, 10 bad) -- Now 05:12:53 This 15.2 sec, Avg 37.2 sec, exp. finish in 1.9 min at 05:14:45 on 15-Nov-2016
+
+RESULT for yCrypticRNAs_0.99.2.tar.gz : success (834 of 836, 824 good, 10 bad) -- Now 05:13:31 This 37.7 sec, Avg 37.2 sec, exp. finish in 1.2 min at 05:14:45 on 15-Nov-2016
+
+RESULT for yuima_1.3.6.tar.gz : success (835 of 836, 825 good, 10 bad) -- Now 05:14:49 This 78.5 sec, Avg 37.3 sec, exp. finish in 0.6 min at 05:15:27 on 15-Nov-2016
+
+RESULT for zic_0.9.tar.gz : success (836 of 836, 826 good, 10 bad) -- Now 05:15:09 This 19.8 sec, Avg 37.2 sec, exp. finish in 0 min at 05:15:09 on 15-Nov-2016
+                         pkg res
+1              AbsFilterGSEA   0
+2              accelerometry   0
+3                   acebayes   0
+4                       ACEt   0
+5           AdaptiveSparsity   0
+6                    ADMMnet   0
+7            AhoCorasickTrie   0
+8                        AHR   0
+9                   alakazam   0
+10                   algstat   0
+11                 AlignStat   0
+12                      ALKr   0
+13                    Amelia   0
+14                   anytime   0
+15                 apcluster   0
+16                  arrApply   0
+17                    ASPBay   0
+18                      aSPU   0
+19               autovarCore   0
+20                    BaBooN   0
+21                  BacArena   0
+22          BalancedSampling   0
+23                 BAMMtools   0
+24                Barycenter   0
+25                    batman   0
+26                   bayesAB   0
+27                   BayesBD   0
+28                 BayesComm   0
+29               BayesFactor   0
+30               bayesImageS   0
+31                    bayesm   0
+32                     bayou   0
+33                       bcp   0
+34                      bcpa   0
+35                     BCSub   0
+36                     beanz   0
+37                 BEDMatrix   0
+38                   BeviMed   0
+39                       bfa   0
+40                       bfp   0
+41               bifactorial   0
+42                      bife   0
+43               BIFIEsurvey   0
+44              biganalytics   0
+45                 bigFastlm   0
+46                  biglasso   0
+47                 bigmemory   0
+48                   BigQuic   0
+49                    bigReg   0
+50               bigtabulate   0
+51                    BigVAR   0
+52                     bio3d   0
+53                   Biocomb   0
+54                     BIPOD   0
+55                 biwavelet   0
+56                  blackbox   0
+57              blockcluster   0
+58               blockmodels   0
+59                  blockseg   0
+60                      bmlm   0
+61               bnnSurvival   0
+62         bootTimeInference   0
+63                brainGraph   0
+64              bsearchtools   0
+65                       btb   0
+66                       btf   0
+67                  BTLLasso   0
+68                       BTR   0
+69                 BuyseTest   0
+70                    bvarsv   0
+71                      bWGR   0
+72                   BWStest   0
+73                  CARBayes   0
+74                CARBayesST   0
+75                  catlearn   0
+76                     ccaPP   0
+77                      cccp   0
+78             ccdrAlgorithm   0
+79                       cda   0
+80             CDF.PSIdekick   0
+81                       CDM   0
+82                       CFC   0
+83                     cgAUC   0
+84        ChannelAttribution   0
+85                  chopthin   0
+86               CIDnetworks   0
+87                      cIRT   0
+88                 cladoRcpp   0
+89                  classify   0
+90                     clere   0
+91              climdex.pcic   0
+92               clogitboost   0
+93                  clogitL1   0
+94                  clusrank   0
+95                  ClusterR   0
+96          ClusterStability   0
+97                 clusteval   0
+98                 ClustMMDD   0
+99                ClustVarLV   0
+100                      CMF   0
+101                    coala   0
+102                collUtils   0
+103                 combiter   0
+104                  CompGLM   0
+105            Compositional   0
+106            ConConPiWiFun   0
+107                 coneproj   0
+108                contoureR   1
+109                   copCAR   0
+110                     cord   0
+111                   CorReg   0
+112                   Countr   0
+113                covafillr   0
+114                   Coxnet   0
+115                  CoxPlus   0
+116                    cpgen   0
+117                    crawl   0
+118                  creditr   0
+119                Crossover   0
+120                    ctmcd   0
+121              cycleRtools   0
+122                  Cyclops   0
+123                      D3M   0
+124                    darch   0
+125                  datafsm   1
+126                    dbmss   0
+127                   dbscan   0
+128                  ddalpha   0
+129                      ddR   0
+130                  DDRTree   0
+131                deepboost   0
+132                Delaporte   0
+133                 DeLorean   0
+134           dendextendRcpp   0
+135             densityClust   0
+136                DepthProc   0
+137                DescTools   0
+138                   DetMCD   0
+139                     DetR   0
+140                   dfcomb   0
+141                    dfmta   0
+142                 dfphase1   0
+143                     dfpk   0
+144                   diagis   0
+145            diffrprojects   0
+146            DiffusionRgqd   0
+147            DiffusionRimp   0
+148           DiffusionRjgqd   0
+149                     dils   0
+150                     dina   0
+151              Directional   0
+152               disclapmix   0
+153      discretecdAlgorithm   0
+154              diversitree   0
+155                diveRsity   0
+156                     divo   0
+157                  DLMtool   0
+158              DNAprofiles   0
+159                 DNAtools   0
+160                      dnc   0
+161                    dplyr   0
+162                    drgee   0
+163                   dslice   0
+164                   DStree   0
+165                 dtwclust   0
+166         easyVerification   0
+167             EBMAforecast   0
+168                   ECctmc   0
+169                      ecp   0
+170           EditImputeCont   0
+171                     eDMA   0
+172                eggCounts   0
+173                     eive   0
+174                EloChoice   0
+175                     EMbC   0
+176                     emil   0
+177                    emIRT   0
+178                   energy   0
+179                    EPGLM   0
+180                     erah   0
+181               ESGtoolkit   0
+182                   EstHer   0
+183                   evolqg   1
+184                    EWGoF   0
+185                     exif   0
+186               extraDistr   0
+187           factorstochvol   0
+188             fastAdaboost   0
+189             FastBandChol   0
+190                  fastcmh   0
+191              fasteraster   0
+192               fastGHQuad   0
+193                   FastGP   0
+194                  FastHCS   0
+195                    fastM   0
+196                  FastPCS   0
+197                  FastRCS   0
+198                FBFsearch   0
+199                    fbroc   0
+200                   FCNN4R   0
+201                 fdaMixed   0
+202                  fdapace   0
+203                   fdaPDE   0
+204                  fdasrvf   0
+205               FDGcopulas   0
+206                   FDRreg   0
+207                  feather   0
+208           FeatureHashing   0
+209                 ffstream   0
+210                    FIACH   0
+211                     fICA   0
+212                 FisHiCal   0
+213                      FIT   0
+214                     flam   0
+215                     flan   0
+216                    flars   0
+217                     flip   0
+218                    flock   0
+219                    FLSSS   0
+220                 forecast   1
+221            forecastSNSTS   0
+222                   forega   0
+223              forestFloor   0
+224                fourierin   0
+225                  fourPNO   0
+226               fractional   0
+227              frailtySurv   0
+228                FRESA.CAD   0
+229                    fromo   0
+230               FSInteract   0
+231                    fugeR   0
+232                 FunChisq   0
+233            Funclustering   0
+234          futureheatwaves   0
+235                    fwsim   0
+236                   gamreg   0
+237                  gapfill   1
+238                      GAS   0
+239                 gaselect   0
+240                   gaston   0
+241                   GauPro   0
+242                   gcKrig   0
+243                     GCPM   0
+244                      gdm   0
+245                     gdpc   0
+246                  gdtools   0
+247                  GEEaSPU   0
+248                   geiger   0
+249             GeneticTools   0
+250                    genie   0
+251                   GENLIB   0
+252             GenomicTools   0
+253                 geoCount   0
+254                  geohash   0
+255                    GERGM   0
+256                    ggdmc   0
+257                  ggrepel   0
+258                    GiRaF   0
+259                     gjam   0
+260                   gkmSVM   0
+261                glamlasso   0
+262                     glcm   0
+263                   glmBfp   0
+264                 glmgraph   0
+265                   glmmsr   0
+266                     GMCM   0
+267                  Gmedian   0
+268                    Gmisc   0
+269                   gmum.r   0
+270                     gmwm   0
+271                     gMWT   0
+272                  gogamer   0
+273                    goldi   0
+274                googleway   0
+275                  GPareto   0
+276                    GPvam   0
+277                    gRain   0
+278             graphicalVAR   0
+279                  graphql   0
+280                   gRbase   0
+281                     gRim   0
+282               growcurves   0
+283            growfunctions   0
+284                      GSE   0
+285                   gsEasy   0
+286                   GUILDS   0
+287                     GUTS   0
+288                      GxM   0
+289                       h5   0
+290                  hashmap   0
+291                    haven   0
+292                   hawkes   0
+293                 HDPenReg   0
+294         hierarchicalSets   0
+295                      hit   0
+296                    hkevp   0
+297                  HLMdiag   0
+298                     HSAR   0
+299                  hsphase   0
+300                     htdp   0
+301                 htmltidy   0
+302                htmltools   0
+303                      hts   0
+304                   httpuv   0
+305                      HUM   0
+306             humaniformat   0
+307                 humarray   1
+308                 hunspell   0
+309              hypervolume   0
+310                hyphenatr   0
+311                  IAPWS95   0
+312                  iBATCGH   0
+313                     IBHM   0
+314                      ibm   0
+315                   icamix   0
+316                    ICAOD   0
+317                  iccbeta   0
+318                      icd   0
+319                     icd9   0
+320                 icensmis   0
+321                    icRSF   0
+322                    IHSEP   0
+323                 iLaplace   0
+324                   imager   0
+325                    immer   0
+326              imputeMulti   0
+327                  inarmix   0
+328                     inca   0
+329                indelmiss   0
+330            IntegratedMRF   0
+331                   iprior   0
+332                  iptools   0
+333                    IRTpp   0
+334             IsingSampler   0
+335                    isoph   0
+336                 ISOpureR   0
+337                 IsoSpecR   0
+338                   iterpc   0
+339              JacobiEigen   0
+340                   JAGUAR   0
+341                   jiebaR   0
+342                     jmcm   0
+343                   jmotif   0
+344                   joinXL   0
+345                JOUSBoost   0
+346                      jqr   0
+347                      JSM   0
+348                   jtGWAS   0
+349                   jwutil   0
+350                   kamila   0
+351                kdecopula   0
+352                    kergp   0
+353         kernDeepStackNet   0
+354                KernelKnn   0
+355            KernSmoothIRT   0
+356                      kmc   0
+357               kmeans.ddR   0
+358                    Kmisc   0
+359                   KODAMA   0
+360                    l0ara   0
+361                      LaF   0
+362                 LambertW   0
+363                     lamW   0
+364                 Langevin   0
+365                 largeVis   0
+366        LassoBacktracking   0
+367                   lasvmR   0
+368              LatentREGpp   0
+369                    lbfgs   0
+370                  lclGWAS   0
+371                  lcopula   0
+372                 lexRankr   0
+373                      lfl   0
+374        lifecontingencies   0
+375                    lm.br   0
+376                     lme4   0
+377            lowmemtkmeans   0
+378                     lpme   0
+379                 lsbclust   0
+380                     lsgl   0
+381                     lucr   0
+382             Luminescence   0
+383                   magick   0
+384               MAINT.Data   0
+385            ManifoldOptim   0
+386                   marked   0
+387               markophylo   0
+388              markovchain   0
+389                      MAT   0
+390          matchingMarkets   0
+391                matchingR   0
+392                MatchItSE   0
+393                 mateable   0
+394        MatrixCorrelation   0
+395                MatrixLDA   0
+396                   maxent   0
+397                   mbbefd   0
+398                  mcemGLM   0
+399                     mcga   0
+400                    mcIRT   0
+401                   mcmcse   0
+402                  mcPAFit   0
+403                  medfate   0
+404                   MediaK   0
+405                   MEGENA   0
+406                     MESS   0
+407                metafolio   0
+408         MetaheuristicFPA   0
+409                meteoland   0
+410                     mets   0
+411                      mev   0
+412                      mgm   0
+413                     mice   0
+414               microclass   0
+415                     milr   0
+416            minimaxdesign   0
+417                    minqa   0
+418                     mirt   0
+419                  mirtCAT   0
+420                    miscF   0
+421                  miscset   0
+422                    MiSPU   0
+423               missDeaths   0
+424                   MixAll   0
+425          MixedDataImpute   0
+426                 mixedMem   0
+427                  mixpack   0
+428                     mkde   0
+429                     mlmc   0
+430                     mlxR   0
+431                    mmand   0
+432             ModelMetrics   0
+433                   Morpho   0
+434                     move   0
+435                  moveHMM   0
+436            moveWindSpeed   0
+437                       mp   0
+438               Mposterior   0
+439                   MPTinR   0
+440                      MRS   0
+441                  MSGARCH   0
+442                     msgl   0
+443                      MTS   0
+444                  MultiBD   0
+445                multicool   0
+446 MultivariateRandomForest   0
+447                  mvabund   0
+448                      MVB   0
+449                mvcluster   0
+450                  mvnfast   0
+451                   mwaved   0
+452                    myTAI   0
+453                    nabor   0
+454                      NAM   0
+455                   ndjson   0
+456                      ndl   0
+457                   netcoh   0
+458              netdiffuseR   0
+459                   NetRep   0
+460                   NetSim   0
+461                  neuroim   0
+462                ngspatial   0
+463                     NHMM   0
+464                 nmfgpu4R   0
+465                     NNLM   0
+466            noncompliance   0
+467         nonlinearTseries   0
+468            NPBayesImpute   0
+469                   NPflow   0
+470                 nprobust   0
+471                oapackage   0
+472                  odeintr   0
+473                      oem   0
+474                    OjaNP   0
+475                 olctools   0
+476      OneArmPhaseTwoStudy   0
+477                onlinePCA   0
+478       ontologySimilarity   0
+479                  openair   0
+480               OpenImageR   0
+481                   OpenMx   0
+482                 openxlsx   0
+483                 optmatch   0
+484                     orQA   0
+485                     oXim   0
+486                      PAC   0
+487              packcircles   0
+488                    PACVB   0
+489                    PAFit   0
+490                   pander   0
+491               PanelCount   0
+492                partialAR   0
+493                    pcalg   0
+494                    pcIRT   0
+495                 pdftools   0
+496                   PedCNV   0
+497              pedometrics   0
+498              PenCoxFrail   0
+499                   penMSM   0
+500                  perccal   0
+501               PerMallows   0
+502                 ph2bayes   0
+503                   ph2bye   0
+504                  phonics   0
+505                 phybreak   0
+506                phylobase   0
+507               phylocurve   0
+508              phylosignal   0
+509                 Pijavski   0
+510                   pirate   0
+511                     plac   0
+512                   planar   0
+513                 plotSEMM   0
+514                     plyr   0
+515           poisDoubleSamp   0
+516                polyfreqs   0
+517                  polywog   0
+518                    PoweR   0
+519                       PP   0
+520                PPtreeViz   0
+521                  prclust   0
+522                  precrec   0
+523                  PReMiuM   0
+524                   primes   0
+525            ProbitSpatial   0
+526                     pROC   0
+527                  prodlim   0
+528                   ProFit   0
+529                   ProNet   0
+530                propagate   0
+531                    propr   0
+532                prospectr   0
+533                protolite   0
+534                prototest   0
+535                  protViz   0
+536                     pryr   0
+537                      psd   0
+538                     psgp   0
+539                    purrr   0
+540                     pvar   0
+541                      PWD   0
+542                    pystr   0
+543                qrencoder   0
+544                      QRM   0
+545                quadrupen   0
+546                 quanteda   1
+547                quantspec   0
+548               QuantTools   0
+549                  qVarSel   0
+550                  qwraps2   0
+551                radiomics   0
+552              rags2ridges   0
+553              ragt2ridges   0
+554      randomUniformForest   0
+555                   ranger   0
+556              Rankcluster   0
+557                 rankdist   0
+558                    raptr   0
+559                   raster   0
+560                  Rblpapi   0
+561                  Rborist   0
+562               Rclusterpp   0
+563                RcppAnnoy   0
+564                  RcppAPT   0
+565            RcppArmadillo   0
+566                  RcppBDT   0
+567                 RcppCCTZ   0
+568              RcppClassic   0
+569      RcppClassicExamples   0
+570                 RcppCNPy   0
+571                   RcppDE   0
+572                   RcppDL   0
+573                RcppEigen   0
+574             RcppExamples   0
+575             RcppFaddeeva   0
+576              RcppGetconf   0
+577                  RcppGSL   0
+578                RcppHoney   0
+579               RcppMLPACK   0
+580            RcppNumerical   0
+581               RcppOctave   0
+582             RcppProgress   0
+583                RcppRedis   0
+584                 RcppRoll   0
+585                RcppShark   0
+586                  RcppSMC   0
+587              RcppStreams   0
+588                 RcppTOML   0
+589                  RcppXts   0
+590             RcppZiggurat   0
+591                     rcss   0
+592                    readr   0
+593              readstata13   0
+594                   readxl   0
+595                 RealVAMS   0
+596              recexcavAAR   0
+597                   recmap   0
+598             reconstructr   0
+599               recosystem   0
+600                   redist   0
+601                     rEDM   0
+602                   regsem   0
+603                   relSim   0
+604                      rem   0
+605                   remote   0
+606           ReorderCluster   0
+607                   repolr   0
+608                 resemble   0
+609                 reshape2   0
+610            revealedPrefs   0
+611                 rexpokit   0
+612                    Rfast   0
+613                   rflann   0
+614         rforensicbatwing   0
+615            rFTRLProximal   0
+616                     rgam   0
+617               rgeolocate   0
+618                   RI2by2   0
+619                  RInside   0
+620                    Rip46   0
+621                     ripa   0
+622                     rivr   0
+623                     rkvo   0
+624                 Rlibeemd   0
+625                   RLRsim   0
+626              Rmalschains   0
+627                  rmgarch   0
+628                  Rmixmod   0
+629             RmixmodCombi   0
+630                   rmumps   0
+631                     rncl   0
+632                   RNifti   0
+633                RNiftyReg   0
+634                robustgam   0
+635               RobustGaSP   0
+636                 robustHD   0
+637                robustreg   0
+638                   rococo   0
+639                     roll   0
+640                  rollply   0
+641              rootWishart   0
+642                rotations   0
+643                RoughSets   0
+644                 roxygen2   0
+645                      rpf   0
+646                      rpg   0
+647               Rphylopars   0
+648                  rplexos   0
+649                     rpms   0
+650                    rPref   0
+651                RProtoBuf   0
+652                  RPtests   0
+653                RQuantLib   1
+654                    RSNNS   0
+655                  RSNPset   0
+656                 Rsomoclu   0
+657                 RSpectra   0
+658                     RSSL   0
+659                    rstan   0
+660                 rstanarm   1
+661                   rstpm2   0
+662                    rtext   0
+663                      rtk   0
+664                   rtkore   0
+665                    rtkpp   0
+666                    Rtsne   0
+667                Ruchardet   0
+668                  rucrdtw   0
+669                  rugarch   0
+670                     Rvcg   0
+671                      rvg   0
+672            RVowpalWabbit   0
+673                    rwfec   0
+674             rwirelesscom   0
+675                   Ryacas   0
+676                       s2   0
+677                saeRobust   0
+678                     SAMM   0
+679                 saturnin   0
+680                     sbfc   0
+681                     sBIC   0
+682                   sbmSDP   0
+683                     sbrl   0
+684                     SBSA   0
+685                   scales   0
+686               SciencesPo   0
+687                   scorer   0
+688             scoringRules   0
+689                     scrm   0
+690                   scrypt   0
+691               scvxclustr   0
+692                 sdcMicro   0
+693                 sdcTable   0
+694                SEERaBomb   0
+695                   segmag   0
+696              seismicRoll   0
+697                SelvarMix   0
+698                   seqHMM   0
+699                sequences   0
+700                      sgd   0
+701                 sglOptim   0
+702             sharpeRratio   0
+703               signalHsmm   0
+704                 simFrame   0
+705                   simmer   0
+706                   simPop   0
+707                   SimReg   0
+708                 simstudy   0
+709                     sirt   0
+710                    sitmo   0
+711                     slfm   0
+712                    SLOPE   0
+713                     smam   0
+714                    smoof   0
+715                   smooth   0
+716              SnakeCharmR   0
+717                   snipEM   0
+718                 snowboot   0
+719                  snplist   0
+720           SocialNetworks   0
+721                      SOD   0
+722                  sourceR   0
+723                 spacodiR   0
+724                    spaMM   0
+725     SparseFactorAnalysis   0
+726          sparseHessianFD   0
+727           sparseLTSEigen   0
+728                sparsereg   0
+729                    spass   0
+730               spatgraphs   0
+731               SpatialEpi   0
+732             SpatialTools   0
+733                  SpatMCA   0
+734                  SpatPCA   0
+735              spBayesSurv   0
+736               spduration   0
+737                 spectral   0
+738                    spray   0
+739                   spsann   0
+740                      SSL   0
+741                   starma   0
+742             StatMethRank   0
+743                 staTools   0
+744                steadyICA   0
+745             StepwiseTest   0
+746              StereoMorph   0
+747                  stlplus   0
+748                      stm   0
+749                  StMoSim   0
+750                 stochvol   0
+751                   stocks   0
+752                   stosim   0
+753                     stpm   0
+754                  strataG   0
+755                   stream   0
+756                   stremr   0
+757                    strum   0
+758              SuperRanker   0
+759     survAccuracyMeasures   0
+760             surveillance   0
+761          surveybootstrap   0
+762                  survSNP   0
+763                  svglite   0
+764                 SVMMatch   0
+765            synchronicity   0
+766                   synlik   0
+767                 synthACS   0
+768             systemicrisk   0
+769                 tagcloud   0
+770                      TAM   0
+771                  TAQMNGR   0
+772                  TauStar   0
+773                    tbart   0
+774                      tcR   0
+775                      TDA   0
+776                      TED   0
+777                tensorBSS   0
+778                 termstrc   0
+779                     TESS   0
+780                tesseract   0
+781                 text2vec   0
+782                textmineR   0
+783                  textreg   0
+784                textreuse   0
+785                TFMPvalue   0
+786                   tibble   0
+787                    tidyr   0
+788                    timma   0
+789                      TMB   0
+790                      tmg   0
+791                  tmlenet   0
+792                     tnam   0
+793               tokenizers   0
+794          TransferEntropy   0
+795                 TreeBUGS   0
+796                 treeclim   0
+797                 treeplyr   0
+798                treescape   0
+799                triebeard   0
+800               trustOptim   0
+801                    tsBSS   0
+802             TSS.RESTREND   0
+803                      tvd   0
+804                   tweenr   0
+805                 UncerIn2   0
+806                 unmarked   0
+807              unsystation   0
+808                 urltools   0
+809                       V8   0
+810            validatejsonr   0
+811                  varband   0
+812                VarSelLCM   0
+813                     vcfR   0
+814                   vdiffr   1
+815                    velox   0
+816          VideoComparison   0
+817                      VIM   0
+818                     vita   0
+819                      VNM   0
+820                  waffect   0
+821                    walkr   0
+822                     wand   0
+823                    wCorr   0
+824                 webreadr   0
+825                   wingui   0
+826                wordcloud   0
+827                wordspace   0
+828                   wrswoR   0
+829                     wsrf   0
+830                     XBRL   0
+831                     xml2   0
+832                      xyz   0
+833                   yakmoR   0
+834             yCrypticRNAs   0
+835                    yuima   0
+836                      zic   0
+
+  0   1 
+826  10 
+ [1] "contoureR" "datafsm"   "evolqg"    "forecast"  "gapfill"   "humarray"  "quanteda"  "RQuantLib" "rstanarm"  "vdiffr"   
+Ended at  2016-11-15 05:15:09.78237 
