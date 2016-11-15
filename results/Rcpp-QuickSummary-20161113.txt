@@ -1,0 +1,78 @@
+
+OVERVIEW
+========
+
+Again Rcpp 0.12.7.7 (with "new" date[time] vectors and new/pending BH)
+
+  0   1 
+820  15 
+ [1] "contoureR"    "datafsm"       "evolqg"     "forecast"     "gapfill"      "humarray"
+ [7]  "quanteda"      "raptr" "RcppExamples"    "RQuantLib"       "rstan"      "rstanarm"
+[13] "tesseract"  "textreuse"       "vdiffr"      
+Ended at  2016-11-14 08:09:37.850502 
+
+Of those fifteen
+
+  - two were known newDatetime issues
+
+  - two were (new) BH related
+
+  - four seem ggplot2 related
+
+  - five are recurring
+
+  - one seem internal to the package
+
+  - leaving one to look at
+
+DETAILS
+=======
+
+
+Previously Known Failures
+-------------------------
+
+"contoureR"             [again] _internal_ unit test error with qhull
+
+"datafsm"		[again] Error in fitness(Pop[i, ], ...) : unused argument (maxfitness = 1)
+
+"evolqg"                [CHECK AGAINST CRAN Rcpp] possible _internal_ unit test error between complex and numeric
+                        [Same failure with Rcpp 0.12.5]
+
+"forecast"              _internal_ unit test error also present with Rcpp 0.12.7
+
+"humarray"              _internal_ unit test error: 'couldn't reach t1dbase website at: http://www.immunobase.org/....'
+
+"rstan"                 This came up with BH ...
+
+"textreuse"             This came up with BH ...
+
+New failures
+------------
+
+"gapfill"               Test failure, plotting related, maybe ggplot2?
+
+"quanteda"              Test failure, plotting related, maybe ggplot2?
+
+"raptr"                 Test failure, unclear
+
+"rstanarm"              Test failure, plotting related, maybe ggplot2?
+
+"tesseract"             Test failures, "Error opening data file /usr/share/tesseract-ocr/tessdata/eng.traineddata"
+
+"vdiffr"                Test failure, plotting related, maybe ggplot2?
+
+Known Datetime transition issues
+--------------------------------
+
+"RcppExamples"          POSIXct transitions: "'origin' must be supplied"
+
+"RQuantLib"             getDate needs change
+
+
+
+SUMMARY
+=======
+
+No significant issues, maybe look into raptr
+
