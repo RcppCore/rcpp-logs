@@ -1,0 +1,353 @@
+Started at  2016-11-17 10:52:35.69131 
+BH  version is  1.62.0-1 
+R version 3.3.2 (2016-10-31) -- "Sincere Pumpkin Patch" 
+trying URL 'http://cran.rstudio.com/src/contrib/FactoMineR_1.34.tar.gz'
+Content type 'application/x-gzip' length 3316957 bytes (3.2 MB)
+==================================================
+downloaded 3.2 MB
+
+trying URL 'http://cran.rstudio.com/src/contrib/statmod_1.4.27.tar.gz'
+Content type 'application/x-gzip' length 56087 bytes (54 KB)
+==================================================
+downloaded 54 KB
+
+trying URL 'http://cran.rstudio.com/src/contrib/surveillance_1.12.2.tar.gz'
+Content type 'application/x-gzip' length 4205402 bytes (4.0 MB)
+==================================================
+downloaded 4.0 MB
+
+* installing *source* package ‘FactoMineR’ ...
+** package ‘FactoMineR’ successfully unpacked and MD5 sums checked
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (FactoMineR)
+* installing *source* package ‘statmod’ ...
+** package ‘statmod’ successfully unpacked and MD5 sums checked
+** libs
+ccache gfortran   -fpic  -O3 -g0 -Wall -pipe -c gaussq2.f -o gaussq2.o
+ccache gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o statmod.so gaussq2.o -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/statmod/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (statmod)
+* installing *source* package ‘surveillance’ ...
+** package ‘surveillance’ successfully unpacked and MD5 sums checked
+** libs
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c backproj.cc -o backproj.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c determineSources.cc -o determineSources.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c ks.c -o ks.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c stcd-assuncaocorrea.cc -o stcd-assuncaocorrea.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c surveillance.c -o surveillance.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c twins.cc -o twins.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o surveillance.so RcppExports.o backproj.o determineSources.o ks.o stcd-assuncaocorrea.o surveillance.o twins.o -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/surveillance/libs
+** R
+** data
+** demo
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (surveillance)
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+ [1] "ACEt"            "anytime"         "beanz"           "BEDMatrix"       "bigalgebra"      "biganalytics"    "bigFastlm"       "biglasso"        "bigmemory"       "bigtabulate"    
+[11] "bmlm"            "BMRV"            "Boom"            "BoomSpikeSlab"   "bsts"            "Cyclops"         "ddalpha"         "DDRTree"         "DescTools"       "dfcomb"         
+[21] "dfmta"           "dfpk"            "dplyr"           "dynsurv"         "eggCounts"       "EPGLM"           "FeatureHashing"  "fts"             "FunChisq"        "GERGM"          
+[31] "GiRaF"           "glmmsr"          "gmum.r"          "hashmap"         "haven"           "iptools"         "jqr"             "LatentREGpp"     "lclGWAS"         "lsgl"           
+[41] "MBA"             "MEGENA"          "MixedDataImpute" "mixedMem"        "msgl"            "MultiBD"         "mvnfast"         "nabor"           "NetRep"          "odeintr"        
+[51] "oem"             "OpenMx"          "orsk"            "PACVB"           "pcalg"           "phonics"         "PReMiuM"         "purrr"           "raptr"           "Rblpapi"        
+[61] "RcppBDT"         "RcppMLPACK"      "RcppParallel"    "RcppRedis"       "RcppShark"       "RcppStreams"     "readr"           "rootWishart"     "rstan"           "rstanarm"       
+[71] "sgd"             "sglOptim"        "simmer"          "SSN"             "svglite"         "synchronicity"   "TDA"             "textreuse"       "TransferEntropy" "xml2"           
+
+RESULT for ACEt_1.7.0.tar.gz : success (1 of 80, 1 good, 0 bad) -- Now 10:53:42 This 42.6 sec, Avg 42.6 sec, exp. finish in 56.1 min at 11:49:47 on 17-Nov-2016
+
+RESULT for anytime_0.1.0.tar.gz : success (2 of 80, 2 good, 0 bad) -- Now 10:54:02 This 19.9 sec, Avg 31.3 sec, exp. finish in 40.6 min at 11:34:40 on 17-Nov-2016
+
+RESULT for beanz_1.7.1.tar.gz : success (3 of 80, 3 good, 0 bad) -- Now 10:56:04 This 122.1 sec, Avg 61.6 sec, exp. finish in 79 min at 12:15:04 on 17-Nov-2016
+
+RESULT for BEDMatrix_1.3.0.tar.gz : success (4 of 80, 4 good, 0 bad) -- Now 10:56:20 This 16.2 sec, Avg 50.2 sec, exp. finish in 63.6 min at 11:59:57 on 17-Nov-2016
+
+RESULT for bigalgebra_0.8.4.tar.gz : success (5 of 80, 5 good, 0 bad) -- Now 10:56:33 This 12.7 sec, Avg 42.7 sec, exp. finish in 53.4 min at 11:49:57 on 17-Nov-2016
+
+RESULT for biganalytics_1.1.14.tar.gz : success (6 of 80, 6 good, 0 bad) -- Now 10:56:58 This 25 sec, Avg 39.8 sec, exp. finish in 49 min at 11:46:01 on 17-Nov-2016
+
+RESULT for bigFastlm_0.0.1.tar.gz : success (7 of 80, 7 good, 0 bad) -- Now 10:57:37 This 38.4 sec, Avg 39.6 sec, exp. finish in 48.2 min at 11:45:46 on 17-Nov-2016
+
+RESULT for biglasso_1.2-3.tar.gz : success (8 of 80, 8 good, 0 bad) -- Now 10:58:44 This 67.8 sec, Avg 43.1 sec, exp. finish in 51.7 min at 11:50:28 on 17-Nov-2016
+
+RESULT for bigmemory_4.5.19.tar.gz : success (9 of 80, 9 good, 0 bad) -- Now 10:59:23 This 38.6 sec, Avg 42.6 sec, exp. finish in 50.4 min at 11:49:48 on 17-Nov-2016
+
+RESULT for bigtabulate_1.1.5.tar.gz : success (10 of 80, 10 good, 0 bad) -- Now 10:59:43 This 20 sec, Avg 40.4 sec, exp. finish in 47.1 min at 11:46:48 on 17-Nov-2016
+
+RESULT for bmlm_1.2.1.tar.gz : success (11 of 80, 11 good, 0 bad) -- Now 11:00:49 This 66.2 sec, Avg 42.7 sec, exp. finish in 49.1 min at 11:49:55 on 17-Nov-2016
+
+RESULT for BMRV_1.32.tar.gz : success (12 of 80, 12 good, 0 bad) -- Now 11:01:12 This 22.5 sec, Avg 41 sec, exp. finish in 46.5 min at 11:47:41 on 17-Nov-2016
+
+RESULT for Boom_0.5.tar.gz : success (13 of 80, 13 good, 0 bad) -- Now 11:16:21 This 909.3 sec, Avg 107.8 sec, exp. finish in 120.4 min at 13:16:44 on 17-Nov-2016
+
+RESULT for BoomSpikeSlab_0.7.0.tar.gz : success (14 of 80, 14 good, 0 bad) -- Now 11:16:55 This 33.7 sec, Avg 102.5 sec, exp. finish in 112.8 min at 13:09:40 on 17-Nov-2016
+
+RESULT for bsts_0.6.5.tar.gz : success (15 of 80, 15 good, 0 bad) -- Now 11:17:42 This 47.5 sec, Avg 98.8 sec, exp. finish in 107.1 min at 13:04:47 on 17-Nov-2016
+
+RESULT for Cyclops_1.2.2.tar.gz : success (16 of 80, 16 good, 0 bad) -- Now 11:19:23 This 100.4 sec, Avg 98.9 sec, exp. finish in 105.5 min at 13:04:55 on 17-Nov-2016
+
+RESULT for ddalpha_1.2.1.tar.gz : success (17 of 80, 17 good, 0 bad) -- Now 11:20:52 This 89.5 sec, Avg 98.4 sec, exp. finish in 103.3 min at 13:04:11 on 17-Nov-2016
+
+RESULT for DDRTree_0.1.4.tar.gz : success (18 of 80, 18 good, 0 bad) -- Now 11:21:36 This 43.9 sec, Avg 95.4 sec, exp. finish in 98.5 min at 13:00:08 on 17-Nov-2016
+
+RESULT for DescTools_0.99.18.tar.gz : success (19 of 80, 19 good, 0 bad) -- Now 11:23:21 This 105 sec, Avg 95.9 sec, exp. finish in 97.5 min at 13:00:49 on 17-Nov-2016
+
+RESULT for dfcomb_2.1-6.tar.gz : success (20 of 80, 20 good, 0 bad) -- Now 11:23:45 This 24.4 sec, Avg 92.3 sec, exp. finish in 92.3 min at 12:56:03 on 17-Nov-2016
+
+RESULT for dfmta_1.3-4.tar.gz : success (21 of 80, 21 good, 0 bad) -- Now 11:24:02 This 16.8 sec, Avg 88.7 sec, exp. finish in 87.2 min at 12:51:15 on 17-Nov-2016
+
+RESULT for dfpk_1.0.tar.gz : success (22 of 80, 22 good, 0 bad) -- Now 11:25:31 This 89 sec, Avg 88.7 sec, exp. finish in 85.8 min at 12:51:17 on 17-Nov-2016
+
+RESULT for dplyr_0.5.0.tar.gz : success (23 of 80, 23 good, 0 bad) -- Now 11:27:38 This 126.6 sec, Avg 90.4 sec, exp. finish in 85.8 min at 12:53:29 on 17-Nov-2016
+
+RESULT for dynsurv_0.3-3.tar.gz : success (24 of 80, 24 good, 0 bad) -- Now 11:28:17 This 39.4 sec, Avg 88.2 sec, exp. finish in 82.4 min at 12:50:39 on 17-Nov-2016
+
+RESULT for eggCounts_1.2.tar.gz : success (25 of 80, 25 good, 0 bad) -- Now 11:29:53 This 96.1 sec, Avg 88.6 sec, exp. finish in 81.2 min at 12:51:04 on 17-Nov-2016
+
+RESULT for EPGLM_1.1.2.tar.gz : success (26 of 80, 26 good, 0 bad) -- Now 11:30:11 This 18.1 sec, Avg 85.8 sec, exp. finish in 77.3 min at 12:47:27 on 17-Nov-2016
+
+RESULT for FeatureHashing_0.9.1.1.tar.gz : success (27 of 80, 27 good, 0 bad) -- Now 11:31:18 This 66.9 sec, Avg 85.1 sec, exp. finish in 75.2 min at 12:46:31 on 17-Nov-2016
+
+RESULT for fts_0.9.9.tar.gz : success (28 of 80, 28 good, 0 bad) -- Now 11:31:41 This 23 sec, Avg 82.9 sec, exp. finish in 71.9 min at 12:43:34 on 17-Nov-2016
+
+RESULT for FunChisq_2.3.3.tar.gz : success (29 of 80, 29 good, 0 bad) -- Now 11:32:06 This 24.7 sec, Avg 80.9 sec, exp. finish in 68.8 min at 12:40:53 on 17-Nov-2016
+
+RESULT for GERGM_0.10.0.tar.gz : success (30 of 80, 30 good, 0 bad) -- Now 11:32:43 This 37.2 sec, Avg 79.5 sec, exp. finish in 66.2 min at 12:38:57 on 17-Nov-2016
+
+RESULT for GiRaF_1.0.tar.gz : success (31 of 80, 31 good, 0 bad) -- Now 11:33:29 This 46 sec, Avg 78.4 sec, exp. finish in 64 min at 12:37:30 on 17-Nov-2016
+
+RESULT for glmmsr_0.1.1.tar.gz : success (32 of 80, 32 good, 0 bad) -- Now 11:36:23 This 174.1 sec, Avg 81.4 sec, exp. finish in 65.1 min at 12:41:29 on 17-Nov-2016
+
+RESULT for gmum.r_0.2.1.tar.gz : success (33 of 80, 33 good, 0 bad) -- Now 11:39:17 This 173.3 sec, Avg 84.2 sec, exp. finish in 65.9 min at 12:45:12 on 17-Nov-2016
+
+RESULT for hashmap_0.1.0.tar.gz : success (34 of 80, 34 good, 0 bad) -- Now 11:39:47 This 30.4 sec, Avg 82.6 sec, exp. finish in 63.3 min at 12:43:06 on 17-Nov-2016
+
+RESULT for haven_1.0.0.tar.gz : success (35 of 80, 35 good, 0 bad) -- Now 11:40:14 This 27 sec, Avg 81 sec, exp. finish in 60.7 min at 12:40:59 on 17-Nov-2016
+
+RESULT for iptools_0.4.0.tar.gz : success (36 of 80, 36 good, 0 bad) -- Now 11:40:39 This 24.5 sec, Avg 79.4 sec, exp. finish in 58.2 min at 12:38:53 on 17-Nov-2016
+
+RESULT for jqr_0.2.4.tar.gz : success (37 of 80, 37 good, 0 bad) -- Now 11:41:00 This 21.8 sec, Avg 77.9 sec, exp. finish in 55.8 min at 12:36:49 on 17-Nov-2016
+
+RESULT for LatentREGpp_0.1.1.tar.gz : success (38 of 80, 38 good, 0 bad) -- Now 11:42:53 This 112.6 sec, Avg 78.8 sec, exp. finish in 55.1 min at 12:38:02 on 17-Nov-2016
+
+RESULT for lclGWAS_1.0.1.tar.gz : success (39 of 80, 39 good, 0 bad) -- Now 11:43:17 This 23.9 sec, Avg 77.4 sec, exp. finish in 52.9 min at 12:36:09 on 17-Nov-2016
+
+RESULT for lsgl_1.3.0.tar.gz : success (40 of 80, 40 good, 0 bad) -- Now 11:44:13 This 56.2 sec, Avg 76.8 sec, exp. finish in 51.2 min at 12:35:27 on 17-Nov-2016
+
+RESULT for MBA_0.0-8.tar.gz : success (41 of 80, 41 good, 0 bad) -- Now 11:44:29 This 15.8 sec, Avg 75.4 sec, exp. finish in 49 min at 12:33:28 on 17-Nov-2016
+
+RESULT for MEGENA_1.3.5-2.tar.gz : success (42 of 80, 42 good, 0 bad) -- Now 11:45:18 This 49.3 sec, Avg 74.7 sec, exp. finish in 47.3 min at 12:32:38 on 17-Nov-2016
+
+RESULT for MixedDataImpute_0.1.tar.gz : success (43 of 80, 43 good, 0 bad) -- Now 11:46:05 This 46.4 sec, Avg 74.1 sec, exp. finish in 45.7 min at 12:31:45 on 17-Nov-2016
+
+RESULT for mixedMem_1.1.0.tar.gz : success (44 of 80, 44 good, 0 bad) -- Now 11:47:13 This 68.3 sec, Avg 73.9 sec, exp. finish in 44.4 min at 12:31:35 on 17-Nov-2016
+
+RESULT for msgl_2.3.0.tar.gz : success (45 of 80, 45 good, 0 bad) -- Now 11:48:14 This 61.5 sec, Avg 73.7 sec, exp. finish in 43 min at 12:31:13 on 17-Nov-2016
+
+RESULT for MultiBD_0.2.0.tar.gz : success (46 of 80, 46 good, 0 bad) -- Now 11:49:36 This 81.8 sec, Avg 73.8 sec, exp. finish in 41.8 min at 12:31:27 on 17-Nov-2016
+
+RESULT for mvnfast_0.1.7.tar.gz : success (47 of 80, 47 good, 0 bad) -- Now 11:50:11 This 34.9 sec, Avg 73 sec, exp. finish in 40.2 min at 12:30:21 on 17-Nov-2016
+
+RESULT for nabor_0.4.6.tar.gz : success (48 of 80, 48 good, 0 bad) -- Now 11:50:43 This 31.8 sec, Avg 72.2 sec, exp. finish in 38.5 min at 12:29:12 on 17-Nov-2016
+
+RESULT for NetRep_1.0.4.tar.gz : success (49 of 80, 49 good, 0 bad) -- Now 11:52:10 This 86.9 sec, Avg 72.5 sec, exp. finish in 37.4 min at 12:29:36 on 17-Nov-2016
+
+RESULT for odeintr_1.3.tar.gz : success (50 of 80, 50 good, 0 bad) -- Now 11:52:32 This 22.1 sec, Avg 71.5 sec, exp. finish in 35.7 min at 12:28:16 on 17-Nov-2016
+
+RESULT for oem_2.0.3.tar.gz : success (51 of 80, 51 good, 0 bad) -- Now 11:55:15 This 162.9 sec, Avg 73.2 sec, exp. finish in 35.4 min at 12:30:39 on 17-Nov-2016
+
+RESULT for OpenMx_2.6.9.tar.gz : success (52 of 80, 52 good, 0 bad) -- Now 11:59:25 This 250.3 sec, Avg 76.6 sec, exp. finish in 35.8 min at 12:35:11 on 17-Nov-2016
+
+RESULT for orsk_1.0-2.tar.gz : success (53 of 80, 53 good, 0 bad) -- Now 11:59:34 This 8.4 sec, Avg 75.4 sec, exp. finish in 33.9 min at 12:33:28 on 17-Nov-2016
+
+RESULT for PACVB_1.1.1.tar.gz : success (54 of 80, 54 good, 0 bad) -- Now 11:59:52 This 18.3 sec, Avg 74.3 sec, exp. finish in 32.2 min at 12:32:04 on 17-Nov-2016
+
+RESULT for pcalg_2.4-3.tar.gz : success (55 of 80, 55 good, 0 bad) -- Now 12:02:31 This 159.4 sec, Avg 75.8 sec, exp. finish in 31.6 min at 12:34:07 on 17-Nov-2016
+
+RESULT for phonics_0.7.4.tar.gz : success (56 of 80, 56 good, 0 bad) -- Now 12:02:51 This 19.4 sec, Avg 74.8 sec, exp. finish in 29.9 min at 12:32:47 on 17-Nov-2016
+
+RESULT for PReMiuM_3.1.3.tar.gz : success (57 of 80, 57 good, 0 bad) -- Now 12:03:33 This 42.7 sec, Avg 74.3 sec, exp. finish in 28.5 min at 12:32:02 on 17-Nov-2016
+
+RESULT for purrr_0.2.2.tar.gz : success (58 of 80, 58 good, 0 bad) -- Now 12:04:07 This 33.5 sec, Avg 73.6 sec, exp. finish in 27 min at 12:31:05 on 17-Nov-2016
+
+RESULT for raptr_0.0.1.tar.gz : success (59 of 80, 59 good, 0 bad) -- Now 12:07:05 This 177.7 sec, Avg 75.3 sec, exp. finish in 26.4 min at 12:33:27 on 17-Nov-2016
+
+RESULT for Rblpapi_0.3.5.tar.gz : success (60 of 80, 60 good, 0 bad) -- Now 12:09:30 This 144.9 sec, Avg 76.5 sec, exp. finish in 25.5 min at 12:35:00 on 17-Nov-2016
+trying URL 'http://feR.matcap.net/src/contrib/RcppBDT_0.2.3.2.tar.gz'
+Content type 'application/x-gzip' length 33902 bytes (33 KB)
+==================================================
+downloaded 33 KB
+
+* installing *source* package ‘RcppBDT’ ...
+** libs
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppBDTdd.cpp -o RcppBDTdd.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppBDTdt.cpp -o RcppBDTdt.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppBDTdu.cpp -o RcppBDTdu.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppBDTpt.cpp -o RcppBDTpt.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppBDTtz.cpp -o RcppBDTtz.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c toPOSIXct.cpp -o toPOSIXct.o
+ccache g++ -std=c++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o RcppBDT.so RcppBDTdd.o RcppBDTdt.o RcppBDTdu.o RcppBDTpt.o RcppBDTtz.o RcppExports.o toPOSIXct.o -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/RcppBDT/libs
+** R
+** demo
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (RcppBDT)
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for RcppBDT_0.2.3.tar.gz : success (61 of 80, 61 good, 0 bad) -- Now 12:10:41 This 71.5 sec, Avg 76.4 sec, exp. finish in 24.2 min at 12:34:53 on 17-Nov-2016
+
+RESULT for RcppMLPACK_1.0.10-4.tar.gz : success (62 of 80, 62 good, 0 bad) -- Now 12:13:36 This 174.9 sec, Avg 78 sec, exp. finish in 23.4 min at 12:37:00 on 17-Nov-2016
+
+RESULT for RcppParallel_4.3.20.tar.gz : success (63 of 80, 63 good, 0 bad) -- Now 12:14:18 This 42.5 sec, Avg 77.4 sec, exp. finish in 21.9 min at 12:36:15 on 17-Nov-2016
+
+RESULT for RcppRedis_0.1.7.tar.gz : success (64 of 80, 64 good, 0 bad) -- Now 12:14:43 This 24.5 sec, Avg 76.6 sec, exp. finish in 20.4 min at 12:35:09 on 17-Nov-2016
+
+RESULT for RcppShark_3.1.0.tar.gz : success (65 of 80, 65 good, 0 bad) -- Now 12:18:29 This 226.4 sec, Avg 78.9 sec, exp. finish in 19.7 min at 12:38:13 on 17-Nov-2016
+
+RESULT for RcppStreams_0.1.1.tar.gz : success (66 of 80, 66 good, 0 bad) -- Now 12:19:14 This 44.8 sec, Avg 78.4 sec, exp. finish in 18.3 min at 12:37:32 on 17-Nov-2016
+
+RESULT for readr_1.0.0.tar.gz : success (67 of 80, 67 good, 0 bad) -- Now 12:21:01 This 106.6 sec, Avg 78.8 sec, exp. finish in 17.1 min at 12:38:05 on 17-Nov-2016
+
+RESULT for rootWishart_0.3.0.tar.gz : success (68 of 80, 68 good, 0 bad) -- Now 12:21:53 This 52.2 sec, Avg 78.4 sec, exp. finish in 15.7 min at 12:37:34 on 17-Nov-2016
+
+RESULT for rstan_2.12.1.tar.gz : failure (69 of 80, 68 good, 1 bad) -- Now 12:22:07 This 14.2 sec, Avg 77.5 sec, exp. finish in 14.2 min at 12:36:19 on 17-Nov-2016
+
+RESULT for rstanarm_2.12.1.tar.gz : failure (70 of 80, 68 good, 2 bad) -- Now 12:27:05 This 298.3 sec, Avg 80.7 sec, exp. finish in 13.4 min at 12:40:32 on 17-Nov-2016
+
+RESULT for sgd_1.1.tar.gz : success (71 of 80, 69 good, 2 bad) -- Now 12:27:34 This 29 sec, Avg 79.9 sec, exp. finish in 12 min at 12:39:34 on 17-Nov-2016
+
+RESULT for sglOptim_1.3.0.tar.gz : success (72 of 80, 70 good, 2 bad) -- Now 12:28:47 This 72.9 sec, Avg 79.8 sec, exp. finish in 10.6 min at 12:39:26 on 17-Nov-2016
+
+RESULT for simmer_3.5.0.tar.gz : success (73 of 80, 71 good, 2 bad) -- Now 12:29:36 This 49 sec, Avg 79.4 sec, exp. finish in 9.3 min at 12:38:52 on 17-Nov-2016
+
+RESULT for SSN_1.1.8.tar.gz : success (74 of 80, 72 good, 2 bad) -- Now 12:30:32 This 55.6 sec, Avg 79.1 sec, exp. finish in 7.9 min at 12:38:26 on 17-Nov-2016
+
+RESULT for svglite_1.2.0.tar.gz : success (75 of 80, 73 good, 2 bad) -- Now 12:30:50 This 18.7 sec, Avg 78.3 sec, exp. finish in 6.5 min at 12:37:22 on 17-Nov-2016
+
+RESULT for synchronicity_1.1.9.1.tar.gz : success (76 of 80, 74 good, 2 bad) -- Now 12:31:11 This 20.3 sec, Avg 77.5 sec, exp. finish in 5.2 min at 12:36:21 on 17-Nov-2016
+
+RESULT for TDA_1.5.tar.gz : success (77 of 80, 75 good, 2 bad) -- Now 12:32:20 This 69.3 sec, Avg 77.4 sec, exp. finish in 3.9 min at 12:36:12 on 17-Nov-2016
+
+RESULT for textreuse_0.1.3.tar.gz : failure (78 of 80, 75 good, 3 bad) -- Now 12:32:46 This 25.8 sec, Avg 76.7 sec, exp. finish in 2.6 min at 12:35:19 on 17-Nov-2016
+
+RESULT for TransferEntropy_1.4.tar.gz : success (79 of 80, 76 good, 3 bad) -- Now 12:33:05 This 19.3 sec, Avg 76 sec, exp. finish in 1.3 min at 12:34:21 on 17-Nov-2016
+
+RESULT for xml2_1.0.0.tar.gz : success (80 of 80, 77 good, 3 bad) -- Now 12:33:43 This 38 sec, Avg 75.5 sec, exp. finish in 0 min at 12:33:43 on 17-Nov-2016
+               pkg res
+1             ACEt   0
+2          anytime   0
+3            beanz   0
+4        BEDMatrix   0
+5       bigalgebra   0
+6     biganalytics   0
+7        bigFastlm   0
+8         biglasso   0
+9        bigmemory   0
+10     bigtabulate   0
+11            bmlm   0
+12            BMRV   0
+13            Boom   0
+14   BoomSpikeSlab   0
+15            bsts   0
+16         Cyclops   0
+17         ddalpha   0
+18         DDRTree   0
+19       DescTools   0
+20          dfcomb   0
+21           dfmta   0
+22            dfpk   0
+23           dplyr   0
+24         dynsurv   0
+25       eggCounts   0
+26           EPGLM   0
+27  FeatureHashing   0
+28             fts   0
+29        FunChisq   0
+30           GERGM   0
+31           GiRaF   0
+32          glmmsr   0
+33          gmum.r   0
+34         hashmap   0
+35           haven   0
+36         iptools   0
+37             jqr   0
+38     LatentREGpp   0
+39         lclGWAS   0
+40            lsgl   0
+41             MBA   0
+42          MEGENA   0
+43 MixedDataImpute   0
+44        mixedMem   0
+45            msgl   0
+46         MultiBD   0
+47         mvnfast   0
+48           nabor   0
+49          NetRep   0
+50         odeintr   0
+51             oem   0
+52          OpenMx   0
+53            orsk   0
+54           PACVB   0
+55           pcalg   0
+56         phonics   0
+57         PReMiuM   0
+58           purrr   0
+59           raptr   0
+60         Rblpapi   0
+61         RcppBDT   0
+62      RcppMLPACK   0
+63    RcppParallel   0
+64       RcppRedis   0
+65       RcppShark   0
+66     RcppStreams   0
+67           readr   0
+68     rootWishart   0
+69           rstan   1
+70        rstanarm   1
+71             sgd   0
+72        sglOptim   0
+73          simmer   0
+74             SSN   0
+75         svglite   0
+76   synchronicity   0
+77             TDA   0
+78       textreuse   1
+79 TransferEntropy   0
+80            xml2   0
+
+ 0  1 
+77  3 
+[1] "rstan"     "rstanarm"  "textreuse"
+Ended at  2016-11-17 12:33:43.526006 

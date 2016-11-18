@@ -1,0 +1,838 @@
+Started at  2016-11-16 06:10:28.32341 
+BH  version is  1.62.0-1 
+R version 3.3.2 (2016-10-31) -- "Sincere Pumpkin Patch" 
+trying URL 'http://cran.rstudio.com/src/contrib/lclGWAS_1.0.1.tar.gz'
+Content type 'application/x-gzip' length 78222 bytes (76 KB)
+==================================================
+downloaded 76 KB
+
+trying URL 'http://cran.rstudio.com/src/contrib/maptools_0.8-40.tar.gz'
+Content type 'application/x-gzip' length 1576590 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'http://cran.rstudio.com/src/contrib/mirtCAT_1.2.tar.gz'
+Content type 'application/x-gzip' length 1279791 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'http://cran.rstudio.com/src/contrib/NetRep_1.0.4.tar.gz'
+Content type 'application/x-gzip' length 4345059 bytes (4.1 MB)
+==================================================
+downloaded 4.1 MB
+
+trying URL 'http://cran.rstudio.com/src/contrib/qwraps2_0.2.3.tar.gz'
+Content type 'application/x-gzip' length 48855 bytes (47 KB)
+==================================================
+downloaded 47 KB
+
+trying URL 'http://cran.rstudio.com/src/contrib/rEDM_0.5.4.tar.gz'
+Content type 'application/x-gzip' length 3114198 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'http://cran.rstudio.com/src/contrib/regsem_0.4.3.tar.gz'
+Content type 'application/x-gzip' length 35067 bytes (34 KB)
+==================================================
+downloaded 34 KB
+
+trying URL 'http://cran.rstudio.com/src/contrib/Rmpfr_0.6-1.tar.gz'
+Content type 'application/x-gzip' length 595963 bytes (581 KB)
+==================================================
+downloaded 581 KB
+
+trying URL 'http://cran.rstudio.com/src/contrib/smooth_1.5.0.tar.gz'
+Content type 'application/x-gzip' length 1687827 bytes (1.6 MB)
+==================================================
+downloaded 1.6 MB
+
+trying URL 'http://cran.rstudio.com/src/contrib/vdiffr_0.1.1.tar.gz'
+Content type 'application/x-gzip' length 69405 bytes (67 KB)
+==================================================
+downloaded 67 KB
+
+* installing *source* package ‘lclGWAS’ ...
+** package ‘lclGWAS’ successfully unpacked and MD5 sums checked
+** libs
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c Cuhre.c -o Cuhre.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c fminbr.cpp -o fminbr.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c alphaEst.cpp -o alphaEst.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c betaEst.cpp -o betaEst.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c varEst.cpp -o varEst.o
+ccache g++ -std=c++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o lclGWAS.so Cuhre.o RcppExports.o alphaEst.o betaEst.o fminbr.o varEst.o -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/lclGWAS/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (lclGWAS)
+* installing *source* package ‘maptools’ ...
+** package ‘maptools’ successfully unpacked and MD5 sums checked
+** libs
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c Rshapewrite.c -o Rshapewrite.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c insiders.c -o insiders.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c Rshapeinfo.c -o Rshapeinfo.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c pip.c -o pip.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c Rcentroid.c -o Rcentroid.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c Rshapewrite1.c -o Rshapewrite1.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c Rgshhs.c -o Rgshhs.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c Rshapeget.c -o Rshapeget.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c shptree.c -o shptree.o
+shptree.c: In function ‘SHPSearchDiskTree’:
+shptree.c:829:5: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result [-Wunused-result]
+     fread( abyBuf, 16, 1, fp );
+     ^
+shptree.c: In function ‘SHPSearchDiskTreeNode’:
+shptree.c:731:5: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result [-Wunused-result]
+     fread( &offset, 4, 1, fp );
+     ^
+shptree.c:734:5: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result [-Wunused-result]
+     fread( adfNodeBoundsMin, sizeof(double), 2, fp );
+     ^
+shptree.c:735:5: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result [-Wunused-result]
+     fread( adfNodeBoundsMax, sizeof(double), 2, fp );
+     ^
+shptree.c:744:5: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result [-Wunused-result]
+     fread( &numshapes, 4, 1, fp );
+     ^
+shptree.c:771:9: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result [-Wunused-result]
+         fread( *ppanResultBuffer + *pnResultCount, 
+         ^
+shptree.c:786:5: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result [-Wunused-result]
+     fread( &numsubnodes, 4, 1, fp );
+     ^
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c shpopen.c -o shpopen.o
+shpopen.c: In function ‘SHPOpen’:
+shpopen.c:507:5: warning: ignoring return value of ‘fread’, declared with attribute warn_unused_result [-Wunused-result]
+     fread( pabyBuf, 100, 1, psSHP->fpSHP );
+     ^
+ccache gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o maptools.so Rcentroid.o Rgshhs.o Rshapeget.o Rshapeinfo.o Rshapewrite.o Rshapewrite1.o insiders.o pip.o shpopen.o shptree.o -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/maptools/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (maptools)
+* installing *source* package ‘mirtCAT’ ...
+** package ‘mirtCAT’ successfully unpacked and MD5 sums checked
+** libs
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c item_functions.cpp -o item_functions.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c CAT_functions.cpp -o CAT_functions.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o mirtCAT.so CAT_functions.o item_functions.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/mirtCAT/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (mirtCAT)
+* installing *source* package ‘NetRep’ ...
+** package ‘NetRep’ successfully unpacked and MD5 sums checked
+** libs
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c interrupt.cpp -o interrupt.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c checkFinite.cpp -o checkFinite.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c thread-utils.cpp -o thread-utils.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c scale.cpp -o scale.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c discProps.cpp -o discProps.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c utils.cpp -o utils.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c netStats.cpp -o netStats.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c properties.cpp -o properties.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c permutationsNoData.cpp -o permutationsNoData.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c permutations.cpp -o permutations.o
+ccache g++ -std=c++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o NetRep.so RcppExports.o checkFinite.o discProps.o interrupt.o netStats.o permutations.o permutationsNoData.o properties.o scale.o thread-utils.o utils.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/NetRep/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (NetRep)
+* installing *source* package ‘qwraps2’ ...
+** package ‘qwraps2’ successfully unpacked and MD5 sums checked
+** libs
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c logit.cpp -o logit.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o qwraps2.so RcppExports.o logit.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/qwraps2/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (qwraps2)
+* installing *source* package ‘rEDM’ ...
+** package ‘rEDM’ successfully unpacked and MD5 sums checked
+** libs
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -I../inst/include -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Dense:1,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigenForward.h:30,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigen.h:25,
+                 from RcppExports.cpp:4:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iterator:64,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigenForward.h:25,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigen.h:25,
+                 from RcppExports.cpp:4:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Dense:1,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigenForward.h:30,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigen.h:25,
+                 from RcppExports.cpp:4:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iterator:64,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigenForward.h:25,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigen.h:25,
+                 from RcppExports.cpp:4:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -I../inst/include -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c lnlp.cpp -o lnlp.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Dense:1,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigenForward.h:30,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigen.h:25,
+                 from forecast_machine.h:14,
+                 from lnlp.h:5,
+                 from lnlp.cpp:1:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from /usr/include/c++/5/stdexcept:39,
+                 from /usr/include/c++/5/array:38,
+                 from /usr/include/c++/5/tuple:39,
+                 from /usr/include/c++/5/unordered_map:41,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp/platform/compiler.h:153,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp/r/headers.h:48,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:29,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from lnlp.h:4,
+                 from lnlp.cpp:1:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Dense:1,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigenForward.h:30,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigen.h:25,
+                 from forecast_machine.h:14,
+                 from lnlp.h:5,
+                 from lnlp.cpp:1:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from /usr/include/c++/5/stdexcept:39,
+                 from /usr/include/c++/5/array:38,
+                 from /usr/include/c++/5/tuple:39,
+                 from /usr/include/c++/5/unordered_map:41,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp/platform/compiler.h:153,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp/r/headers.h:48,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:29,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from lnlp.h:4,
+                 from lnlp.cpp:1:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -I../inst/include -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c xmap.cpp -o xmap.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Dense:1,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigenForward.h:30,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigen.h:25,
+                 from forecast_machine.h:14,
+                 from xmap.h:7,
+                 from xmap.cpp:1:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from /usr/include/c++/5/stdexcept:39,
+                 from /usr/include/c++/5/array:38,
+                 from /usr/include/c++/5/tuple:39,
+                 from /usr/include/c++/5/unordered_map:41,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp/platform/compiler.h:153,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp/r/headers.h:48,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:29,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from xmap.h:4,
+                 from xmap.cpp:1:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Dense:1,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigenForward.h:30,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigen.h:25,
+                 from forecast_machine.h:14,
+                 from xmap.h:7,
+                 from xmap.cpp:1:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from /usr/include/c++/5/stdexcept:39,
+                 from /usr/include/c++/5/array:38,
+                 from /usr/include/c++/5/tuple:39,
+                 from /usr/include/c++/5/unordered_map:41,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp/platform/compiler.h:153,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp/r/headers.h:48,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:29,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from xmap.h:4,
+                 from xmap.cpp:1:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -I../inst/include -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c block_lnlp.cpp -o block_lnlp.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Dense:1,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigenForward.h:30,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigen.h:25,
+                 from forecast_machine.h:14,
+                 from block_lnlp.h:6,
+                 from block_lnlp.cpp:1:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from /usr/include/c++/5/stdexcept:39,
+                 from /usr/include/c++/5/array:38,
+                 from /usr/include/c++/5/tuple:39,
+                 from /usr/include/c++/5/unordered_map:41,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp/platform/compiler.h:153,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp/r/headers.h:48,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:29,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from block_lnlp.h:4,
+                 from block_lnlp.cpp:1:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Dense:1,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigenForward.h:30,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigen.h:25,
+                 from forecast_machine.h:14,
+                 from block_lnlp.h:6,
+                 from block_lnlp.cpp:1:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from /usr/include/c++/5/stdexcept:39,
+                 from /usr/include/c++/5/array:38,
+                 from /usr/include/c++/5/tuple:39,
+                 from /usr/include/c++/5/unordered_map:41,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp/platform/compiler.h:153,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp/r/headers.h:48,
+                 from /usr/local/lib/R/site-library/Rcpp/include/RcppCommon.h:29,
+                 from /usr/local/lib/R/site-library/Rcpp/include/Rcpp.h:27,
+                 from block_lnlp.h:4,
+                 from block_lnlp.cpp:1:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppEigen/include"  -I../inst/include -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c forecast_machine.cpp -o forecast_machine.o
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Dense:1,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigenForward.h:30,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigen.h:25,
+                 from forecast_machine.h:14,
+                 from forecast_machine.cpp:1:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:973:28: warning: ‘template<class _Operation> class std::binder2nd’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder2nd<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from forecast_machine.h:4,
+                 from forecast_machine.cpp:1:
+/usr/include/c++/5/backward/binders.h:143:11: note: declared here
+     class binder2nd
+           ^
+In file included from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Core:276:0,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/Eigen/Dense:1,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigenForward.h:30,
+                 from /tmp/RcppDepends/lib/RcppEigen/include/RcppEigen.h:25,
+                 from forecast_machine.h:14,
+                 from forecast_machine.cpp:1:
+/tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/Functors.h:977:28: warning: ‘template<class _Operation> class std::binder1st’ is deprecated [-Wdeprecated-declarations]
+ struct functor_traits<std::binder1st<T> >
+                            ^
+In file included from /usr/include/c++/5/bits/stl_function.h:1128:0,
+                 from /usr/include/c++/5/string:48,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from forecast_machine.h:4,
+                 from forecast_machine.cpp:1:
+/usr/include/c++/5/backward/binders.h:108:11: note: declared here
+     class binder1st
+           ^
+ccache g++ -std=c++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o rEDM.so RcppExports.o block_lnlp.o forecast_machine.o lnlp.o xmap.o -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/rEDM/libs
+** R
+** data
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (rEDM)
+* installing *source* package ‘regsem’ ...
+** package ‘regsem’ successfully unpacked and MD5 sums checked
+** libs
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c regsem_rcpp_fit_fun.cpp -o regsem_rcpp_fit_fun.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c regsem_rcpp_RAMmult.cpp -o regsem_rcpp_RAMmult.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c regsem_rcpp_grad_ram.cpp -o regsem_rcpp_grad_ram.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o regsem.so RcppExports.o regsem_rcpp_RAMmult.o regsem_rcpp_fit_fun.o regsem_rcpp_grad_ram.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/regsem/libs
+** R
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (regsem)
+* installing *source* package ‘Rmpfr’ ...
+** package ‘Rmpfr’ successfully unpacked and MD5 sums checked
+checking for gcc... ccache gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether ccache gcc accepts -g... yes
+checking for ccache gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... ccache gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking mpfr.h usability... yes
+checking mpfr.h presence... yes
+checking for mpfr.h... yes
+checking gmp.h usability... yes
+checking gmp.h presence... yes
+checking for gmp.h... yes
+checking for __gmpz_init in -lgmp... yes
+checking for mpfr_init in -lmpfr... yes
+checking for mpfr_digamma in -lmpfr... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c init.c -o init.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c Summary.c -o Summary.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c convert.c -o convert.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c utils.c -o utils.o
+ccache gcc -I/usr/share/R/include -DNDEBUG      -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c Ops.c -o Ops.o
+ccache gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o Rmpfr.so Ops.o Summary.o convert.o init.o utils.o -lmpfr -lgmp -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/Rmpfr/libs
+** R
+** demo
+** inst
+** preparing package for lazy loading
+Creating a generic function for ‘factorial’ from package ‘base’ in package ‘Rmpfr’
+Creating a generic function for ‘diag’ from package ‘base’ in package ‘Rmpfr’
+Creating a generic function for ‘diag<-’ from package ‘base’ in package ‘Rmpfr’
+Creating a new generic function for ‘cbind’ in package ‘Rmpfr’
+Creating a new generic function for ‘rbind’ in package ‘Rmpfr’
+Creating a generic function for ‘colSums’ from package ‘base’ in package ‘Rmpfr’
+Creating a generic function for ‘colMeans’ from package ‘base’ in package ‘Rmpfr’
+Creating a generic function for ‘rowSums’ from package ‘base’ in package ‘Rmpfr’
+Creating a generic function for ‘rowMeans’ from package ‘base’ in package ‘Rmpfr’
+Creating a generic function for ‘norm’ from package ‘base’ in package ‘Rmpfr’
+in method for ‘show’ with signature ‘"integrateR"’: no definition for class “integrateR”
+Creating a new generic function for ‘pmin’ in package ‘Rmpfr’
+Creating a new generic function for ‘pmax’ in package ‘Rmpfr’
+Creating a generic function for ‘atan2’ from package ‘base’ in package ‘Rmpfr’
+Creating a generic function for ‘beta’ from package ‘base’ in package ‘Rmpfr’
+Creating a generic function for ‘lbeta’ from package ‘base’ in package ‘Rmpfr’
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (Rmpfr)
+* installing *source* package ‘smooth’ ...
+** package ‘smooth’ successfully unpacked and MD5 sums checked
+** libs
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c ssgeneralfun.cpp -o ssgeneralfun.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o smooth.so RcppExports.o ssgeneralfun.o -llapack -lblas -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/smooth/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (smooth)
+* installing *source* package ‘vdiffr’ ...
+** package ‘vdiffr’ successfully unpacked and MD5 sums checked
+** libs
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c compare.cpp -o compare.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o vdiffr.so RcppExports.o compare.o -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/vdiffr/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (vdiffr)
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+ [1] "ACEt"            "anytime"         "beanz"           "BEDMatrix"       "bigalgebra"      "biganalytics"    "bigFastlm"       "biglasso"        "bigmemory"       "bigtabulate"    
+[11] "bmlm"            "BMRV"            "Boom"            "BoomSpikeSlab"   "bsts"            "Cyclops"         "ddalpha"         "DDRTree"         "DescTools"       "dfcomb"         
+[21] "dfmta"           "dfpk"            "dplyr"           "dynsurv"         "eggCounts"       "EPGLM"           "FeatureHashing"  "fts"             "FunChisq"        "GERGM"          
+[31] "GiRaF"           "glmmsr"          "gmum.r"          "hashmap"         "haven"           "iptools"         "jqr"             "LatentREGpp"     "lclGWAS"         "lsgl"           
+[41] "MBA"             "MEGENA"          "MixedDataImpute" "mixedMem"        "msgl"            "MultiBD"         "mvnfast"         "nabor"           "NetRep"          "odeintr"        
+[51] "oem"             "OpenMx"          "orsk"            "PACVB"           "pcalg"           "phonics"         "PReMiuM"         "purrr"           "raptr"           "Rblpapi"        
+[61] "RcppBDT"         "RcppMLPACK"      "RcppParallel"    "RcppRedis"       "RcppShark"       "RcppStreams"     "readr"           "rootWishart"     "rstan"           "rstanarm"       
+[71] "sgd"             "sglOptim"        "simmer"          "SSN"             "svglite"         "synchronicity"   "TDA"             "textreuse"       "TransferEntropy" "xml2"           
+
+RESULT for ACEt_1.7.0.tar.gz : success (1 of 80, 1 good, 0 bad) -- Now 06:12:04 This 25.5 sec, Avg 25.5 sec, exp. finish in 33.6 min at 06:45:38 on 16-Nov-2016
+
+RESULT for anytime_0.1.0.tar.gz : success (2 of 80, 2 good, 0 bad) -- Now 06:12:21 This 17.1 sec, Avg 21.3 sec, exp. finish in 27.7 min at 06:40:03 on 16-Nov-2016
+
+RESULT for beanz_1.7.1.tar.gz : success (3 of 80, 3 good, 0 bad) -- Now 06:14:20 This 118.9 sec, Avg 53.8 sec, exp. finish in 69.1 min at 07:23:24 on 16-Nov-2016
+
+RESULT for BEDMatrix_1.3.0.tar.gz : success (4 of 80, 4 good, 0 bad) -- Now 06:14:36 This 15.7 sec, Avg 44.3 sec, exp. finish in 56.1 min at 07:10:41 on 16-Nov-2016
+
+RESULT for bigalgebra_0.8.4.tar.gz : success (5 of 80, 5 good, 0 bad) -- Now 06:14:48 This 12.5 sec, Avg 37.9 sec, exp. finish in 47.4 min at 07:02:12 on 16-Nov-2016
+
+RESULT for biganalytics_1.1.14.tar.gz : success (6 of 80, 6 good, 0 bad) -- Now 06:15:06 This 18.3 sec, Avg 34.6 sec, exp. finish in 42.7 min at 06:57:50 on 16-Nov-2016
+
+RESULT for bigFastlm_0.0.1.tar.gz : success (7 of 80, 7 good, 0 bad) -- Now 06:15:37 This 30.2 sec, Avg 34 sec, exp. finish in 41.4 min at 06:57:00 on 16-Nov-2016
+
+RESULT for biglasso_1.2-3.tar.gz : success (8 of 80, 8 good, 0 bad) -- Now 06:16:12 This 35.6 sec, Avg 34.2 sec, exp. finish in 41.1 min at 06:57:16 on 16-Nov-2016
+
+RESULT for bigmemory_4.5.19.tar.gz : success (9 of 80, 9 good, 0 bad) -- Now 06:16:39 This 26.6 sec, Avg 33.4 sec, exp. finish in 39.5 min at 06:56:08 on 16-Nov-2016
+
+RESULT for bigtabulate_1.1.5.tar.gz : success (10 of 80, 10 good, 0 bad) -- Now 06:16:59 This 20 sec, Avg 32 sec, exp. finish in 37.4 min at 06:54:21 on 16-Nov-2016
+
+RESULT for bmlm_1.2.1.tar.gz : success (11 of 80, 11 good, 0 bad) -- Now 06:18:05 This 66.2 sec, Avg 35.1 sec, exp. finish in 40.4 min at 06:58:30 on 16-Nov-2016
+
+RESULT for BMRV_1.32.tar.gz : success (12 of 80, 12 good, 0 bad) -- Now 06:18:23 This 18.2 sec, Avg 33.7 sec, exp. finish in 38.2 min at 06:56:37 on 16-Nov-2016
+
+RESULT for Boom_0.5.tar.gz : success (13 of 80, 13 good, 0 bad) -- Now 06:20:39 This 135.3 sec, Avg 41.5 sec, exp. finish in 46.4 min at 07:07:02 on 16-Nov-2016
+
+RESULT for BoomSpikeSlab_0.7.0.tar.gz : success (14 of 80, 14 good, 0 bad) -- Now 06:21:07 This 28.3 sec, Avg 40.6 sec, exp. finish in 44.7 min at 07:05:46 on 16-Nov-2016
+
+RESULT for bsts_0.6.5.tar.gz : success (15 of 80, 15 good, 0 bad) -- Now 06:21:38 This 30.9 sec, Avg 40 sec, exp. finish in 43.3 min at 07:04:55 on 16-Nov-2016
+
+RESULT for Cyclops_1.2.2.tar.gz : success (16 of 80, 16 good, 0 bad) -- Now 06:22:23 This 45.6 sec, Avg 40.3 sec, exp. finish in 43 min at 07:05:23 on 16-Nov-2016
+
+RESULT for ddalpha_1.2.1.tar.gz : success (17 of 80, 17 good, 0 bad) -- Now 06:23:05 This 41.8 sec, Avg 40.4 sec, exp. finish in 42.4 min at 07:05:30 on 16-Nov-2016
+
+RESULT for DDRTree_0.1.4.tar.gz : success (18 of 80, 18 good, 0 bad) -- Now 06:23:45 This 40.3 sec, Avg 40.4 sec, exp. finish in 41.7 min at 07:05:30 on 16-Nov-2016
+
+RESULT for DescTools_0.99.18.tar.gz : success (19 of 80, 19 good, 0 bad) -- Now 06:25:22 This 96.1 sec, Avg 43.3 sec, exp. finish in 44 min at 07:09:25 on 16-Nov-2016
+
+RESULT for dfcomb_2.1-6.tar.gz : success (20 of 80, 20 good, 0 bad) -- Now 06:25:42 This 20.3 sec, Avg 42.2 sec, exp. finish in 42.2 min at 07:07:53 on 16-Nov-2016
+
+RESULT for dfmta_1.3-4.tar.gz : success (21 of 80, 21 good, 0 bad) -- Now 06:25:58 This 16.3 sec, Avg 40.9 sec, exp. finish in 40.3 min at 07:06:14 on 16-Nov-2016
+
+RESULT for dfpk_1.0.tar.gz : success (22 of 80, 22 good, 0 bad) -- Now 06:27:26 This 87.3 sec, Avg 43.1 sec, exp. finish in 41.6 min at 07:09:03 on 16-Nov-2016
+
+RESULT for dplyr_0.5.0.tar.gz : success (23 of 80, 23 good, 0 bad) -- Now 06:28:24 This 58 sec, Avg 43.7 sec, exp. finish in 41.5 min at 07:09:55 on 16-Nov-2016
+
+RESULT for dynsurv_0.3-3.tar.gz : success (24 of 80, 24 good, 0 bad) -- Now 06:29:00 This 36 sec, Avg 43.4 sec, exp. finish in 40.5 min at 07:09:29 on 16-Nov-2016
+
+RESULT for eggCounts_1.2.tar.gz : success (25 of 80, 25 good, 0 bad) -- Now 06:30:35 This 95.3 sec, Avg 45.5 sec, exp. finish in 41.7 min at 07:12:15 on 16-Nov-2016
+
+RESULT for EPGLM_1.1.2.tar.gz : success (26 of 80, 26 good, 0 bad) -- Now 06:30:52 This 17.4 sec, Avg 44.4 sec, exp. finish in 39.9 min at 07:10:49 on 16-Nov-2016
+
+RESULT for FeatureHashing_0.9.1.1.tar.gz : success (27 of 80, 27 good, 0 bad) -- Now 06:31:37 This 45.1 sec, Avg 44.4 sec, exp. finish in 39.2 min at 07:10:51 on 16-Nov-2016
+
+RESULT for fts_0.9.9.tar.gz : success (28 of 80, 28 good, 0 bad) -- Now 06:31:54 This 17 sec, Avg 43.4 sec, exp. finish in 37.6 min at 07:09:33 on 16-Nov-2016
+
+RESULT for FunChisq_2.3.3.tar.gz : success (29 of 80, 29 good, 0 bad) -- Now 06:32:10 This 15.5 sec, Avg 42.5 sec, exp. finish in 36.1 min at 07:08:16 on 16-Nov-2016
+
+RESULT for GERGM_0.10.0.tar.gz : success (30 of 80, 30 good, 0 bad) -- Now 06:32:36 This 25.9 sec, Avg 41.9 sec, exp. finish in 34.9 min at 07:07:31 on 16-Nov-2016
+
+RESULT for GiRaF_1.0.tar.gz : success (31 of 80, 31 good, 0 bad) -- Now 06:33:01 This 25.1 sec, Avg 41.4 sec, exp. finish in 33.8 min at 07:06:48 on 16-Nov-2016
+
+RESULT for glmmsr_0.1.1.tar.gz : success (32 of 80, 32 good, 0 bad) -- Now 06:34:00 This 59.2 sec, Avg 41.9 sec, exp. finish in 33.5 min at 07:07:33 on 16-Nov-2016
+
+RESULT for gmum.r_0.2.1.tar.gz : success (33 of 80, 33 good, 0 bad) -- Now 06:35:07 This 67.2 sec, Avg 42.7 sec, exp. finish in 33.4 min at 07:08:34 on 16-Nov-2016
+
+RESULT for hashmap_0.1.0.tar.gz : success (34 of 80, 34 good, 0 bad) -- Now 06:35:36 This 28.6 sec, Avg 42.3 sec, exp. finish in 32.4 min at 07:08:01 on 16-Nov-2016
+
+RESULT for haven_1.0.0.tar.gz : success (35 of 80, 35 good, 0 bad) -- Now 06:35:52 This 16.4 sec, Avg 41.5 sec, exp. finish in 31.2 min at 07:07:02 on 16-Nov-2016
+
+RESULT for iptools_0.4.0.tar.gz : success (36 of 80, 36 good, 0 bad) -- Now 06:36:10 This 17.4 sec, Avg 40.9 sec, exp. finish in 30 min at 07:06:08 on 16-Nov-2016
+
+RESULT for jqr_0.2.4.tar.gz : success (37 of 80, 37 good, 0 bad) -- Now 06:36:25 This 15.4 sec, Avg 40.2 sec, exp. finish in 28.8 min at 07:05:13 on 16-Nov-2016
+
+RESULT for LatentREGpp_0.1.1.tar.gz : success (38 of 80, 38 good, 0 bad) -- Now 06:37:22 This 57.2 sec, Avg 40.6 sec, exp. finish in 28.4 min at 07:05:49 on 16-Nov-2016
+
+RESULT for lclGWAS_1.0.1.tar.gz : success (39 of 80, 39 good, 0 bad) -- Now 06:37:37 This 14.6 sec, Avg 40 sec, exp. finish in 27.3 min at 07:04:55 on 16-Nov-2016
+
+RESULT for lsgl_1.3.0.tar.gz : success (40 of 80, 40 good, 0 bad) -- Now 06:38:32 This 55.2 sec, Avg 40.3 sec, exp. finish in 26.9 min at 07:05:26 on 16-Nov-2016
+
+RESULT for MBA_0.0-8.tar.gz : success (41 of 80, 41 good, 0 bad) -- Now 06:38:44 This 12.2 sec, Avg 39.7 sec, exp. finish in 25.8 min at 07:04:31 on 16-Nov-2016
+
+RESULT for MEGENA_1.3.5-2.tar.gz : success (42 of 80, 42 good, 0 bad) -- Now 06:39:31 This 46.2 sec, Avg 39.8 sec, exp. finish in 25.2 min at 07:04:43 on 16-Nov-2016
+
+RESULT for MixedDataImpute_0.1.tar.gz : success (43 of 80, 43 good, 0 bad) -- Now 06:39:57 This 26.7 sec, Avg 39.5 sec, exp. finish in 24.4 min at 07:04:19 on 16-Nov-2016
+
+RESULT for mixedMem_1.1.0.tar.gz : success (44 of 80, 44 good, 0 bad) -- Now 06:40:25 This 27.7 sec, Avg 39.2 sec, exp. finish in 23.5 min at 07:03:58 on 16-Nov-2016
+
+RESULT for msgl_2.3.0.tar.gz : success (45 of 80, 45 good, 0 bad) -- Now 06:41:26 This 60.9 sec, Avg 39.7 sec, exp. finish in 23.2 min at 07:04:36 on 16-Nov-2016
+
+RESULT for MultiBD_0.2.0.tar.gz : success (46 of 80, 46 good, 0 bad) -- Now 06:42:16 This 50.1 sec, Avg 39.9 sec, exp. finish in 22.6 min at 07:04:54 on 16-Nov-2016
+
+RESULT for mvnfast_0.1.7.tar.gz : success (47 of 80, 47 good, 0 bad) -- Now 06:42:36 This 19.7 sec, Avg 39.5 sec, exp. finish in 21.7 min at 07:04:20 on 16-Nov-2016
+
+RESULT for nabor_0.4.6.tar.gz : success (48 of 80, 48 good, 0 bad) -- Now 06:42:53 This 17.8 sec, Avg 39.1 sec, exp. finish in 20.8 min at 07:03:43 on 16-Nov-2016
+
+RESULT for NetRep_1.0.4.tar.gz : success (49 of 80, 49 good, 0 bad) -- Now 06:43:40 This 46.5 sec, Avg 39.2 sec, exp. finish in 20.3 min at 07:03:56 on 16-Nov-2016
+
+RESULT for odeintr_1.3.tar.gz : success (50 of 80, 50 good, 0 bad) -- Now 06:43:56 This 16 sec, Avg 38.8 sec, exp. finish in 19.4 min at 07:03:18 on 16-Nov-2016
+
+RESULT for oem_2.0.3.tar.gz : success (51 of 80, 51 good, 0 bad) -- Now 06:45:02 This 66.3 sec, Avg 39.3 sec, exp. finish in 19 min at 07:04:02 on 16-Nov-2016
+
+RESULT for OpenMx_2.6.9.tar.gz : success (52 of 80, 52 good, 0 bad) -- Now 06:46:49 This 107.2 sec, Avg 40.6 sec, exp. finish in 18.9 min at 07:05:46 on 16-Nov-2016
+
+RESULT for orsk_1.0-2.tar.gz : success (53 of 80, 53 good, 0 bad) -- Now 06:46:58 This 8.2 sec, Avg 40 sec, exp. finish in 18 min at 07:04:57 on 16-Nov-2016
+
+RESULT for PACVB_1.1.1.tar.gz : success (54 of 80, 54 good, 0 bad) -- Now 06:47:15 This 17.3 sec, Avg 39.6 sec, exp. finish in 17.1 min at 07:04:24 on 16-Nov-2016
+
+RESULT for pcalg_2.4-3.tar.gz : success (55 of 80, 55 good, 0 bad) -- Now 06:49:30 This 134.7 sec, Avg 41.3 sec, exp. finish in 17.2 min at 07:06:42 on 16-Nov-2016
+
+RESULT for phonics_0.7.4.tar.gz : success (56 of 80, 56 good, 0 bad) -- Now 06:49:44 This 14 sec, Avg 40.8 sec, exp. finish in 16.3 min at 07:06:03 on 16-Nov-2016
+
+RESULT for PReMiuM_3.1.3.tar.gz : success (57 of 80, 57 good, 0 bad) -- Now 06:50:22 This 38.5 sec, Avg 40.8 sec, exp. finish in 15.6 min at 07:06:00 on 16-Nov-2016
+
+RESULT for purrr_0.2.2.tar.gz : success (58 of 80, 58 good, 0 bad) -- Now 06:50:41 This 18.8 sec, Avg 40.4 sec, exp. finish in 14.8 min at 07:05:30 on 16-Nov-2016
+
+RESULT for raptr_0.0.1.tar.gz : success (59 of 80, 59 good, 0 bad) -- Now 06:52:46 This 124.5 sec, Avg 41.8 sec, exp. finish in 14.6 min at 07:07:24 on 16-Nov-2016
+
+RESULT for Rblpapi_0.3.5.tar.gz : success (60 of 80, 60 good, 0 bad) -- Now 06:54:07 This 81.7 sec, Avg 42.5 sec, exp. finish in 14.2 min at 07:08:17 on 16-Nov-2016
+trying URL 'http://feR.matcap.net/src/contrib/RcppBDT_0.2.3.2.tar.gz'
+Content type 'application/x-gzip' length 33902 bytes (33 KB)
+==================================================
+downloaded 33 KB
+
+* installing *source* package ‘RcppBDT’ ...
+** libs
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppBDTdd.cpp -o RcppBDTdd.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c toPOSIXct.cpp -o toPOSIXct.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppBDTdu.cpp -o RcppBDTdu.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppBDTdt.cpp -o RcppBDTdt.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppBDTpt.cpp -o RcppBDTpt.o
+ccache g++ -std=c++11 -I/usr/share/R/include -DNDEBUG -I../inst/include/  -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/usr/local/lib/R/site-library/BH/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppBDTtz.cpp -o RcppBDTtz.o
+ccache g++ -std=c++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o RcppBDT.so RcppBDTdd.o RcppBDTdt.o RcppBDTdu.o RcppBDTpt.o RcppBDTtz.o RcppExports.o toPOSIXct.o -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/RcppBDT/libs
+** R
+** demo
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (RcppBDT)
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+
+RESULT for RcppBDT_0.2.3.tar.gz : success (61 of 80, 61 good, 0 bad) -- Now 06:54:46 This 38.8 sec, Avg 42.4 sec, exp. finish in 13.4 min at 07:08:12 on 16-Nov-2016
+
+RESULT for RcppMLPACK_1.0.10-4.tar.gz : success (62 of 80, 62 good, 0 bad) -- Now 06:55:23 This 36.6 sec, Avg 42.3 sec, exp. finish in 12.7 min at 07:08:05 on 16-Nov-2016
+
+RESULT for RcppParallel_4.3.20.tar.gz : success (63 of 80, 63 good, 0 bad) -- Now 06:55:48 This 24.9 sec, Avg 42.1 sec, exp. finish in 11.9 min at 07:07:42 on 16-Nov-2016
+
+RESULT for RcppRedis_0.1.7.tar.gz : success (64 of 80, 64 good, 0 bad) -- Now 06:56:12 This 24.8 sec, Avg 41.8 sec, exp. finish in 11.1 min at 07:07:21 on 16-Nov-2016
+
+RESULT for RcppShark_3.1.0.tar.gz : success (65 of 80, 65 good, 0 bad) -- Now 06:57:00 This 48.1 sec, Avg 41.9 sec, exp. finish in 10.5 min at 07:07:29 on 16-Nov-2016
+
+RESULT for RcppStreams_0.1.1.tar.gz : success (66 of 80, 66 good, 0 bad) -- Now 06:57:18 This 17.9 sec, Avg 41.5 sec, exp. finish in 9.7 min at 07:07:00 on 16-Nov-2016
+
+RESULT for readr_1.0.0.tar.gz : success (67 of 80, 67 good, 0 bad) -- Now 06:57:49 This 31 sec, Avg 41.4 sec, exp. finish in 9 min at 07:06:47 on 16-Nov-2016
+
+RESULT for rootWishart_0.3.0.tar.gz : success (68 of 80, 68 good, 0 bad) -- Now 06:58:20 This 30.7 sec, Avg 41.2 sec, exp. finish in 8.2 min at 07:06:35 on 16-Nov-2016
+
+RESULT for rstan_2.12.1.tar.gz : failure (69 of 80, 68 good, 1 bad) -- Now 06:59:24 This 64 sec, Avg 41.5 sec, exp. finish in 7.6 min at 07:07:01 on 16-Nov-2016
+
+RESULT for rstanarm_2.12.1.tar.gz : failure (70 of 80, 68 good, 2 bad) -- Now 07:04:26 This 302.2 sec, Avg 45.3 sec, exp. finish in 7.5 min at 07:11:59 on 16-Nov-2016
+
+RESULT for sgd_1.1.tar.gz : success (71 of 80, 69 good, 2 bad) -- Now 07:04:51 This 25 sec, Avg 45 sec, exp. finish in 6.7 min at 07:11:36 on 16-Nov-2016
+
+RESULT for sglOptim_1.3.0.tar.gz : success (72 of 80, 70 good, 2 bad) -- Now 07:06:02 This 70.7 sec, Avg 45.3 sec, exp. finish in 6 min at 07:12:05 on 16-Nov-2016
+
+RESULT for simmer_3.5.0.tar.gz : success (73 of 80, 71 good, 2 bad) -- Now 07:06:32 This 29.5 sec, Avg 45.1 sec, exp. finish in 5.3 min at 07:11:47 on 16-Nov-2016
+
+RESULT for SSN_1.1.8.tar.gz : success (74 of 80, 72 good, 2 bad) -- Now 07:07:26 This 54.9 sec, Avg 45.2 sec, exp. finish in 4.5 min at 07:11:58 on 16-Nov-2016
+
+RESULT for svglite_1.2.0.tar.gz : success (75 of 80, 73 good, 2 bad) -- Now 07:07:42 This 15.6 sec, Avg 44.8 sec, exp. finish in 3.7 min at 07:11:26 on 16-Nov-2016
+
+RESULT for synchronicity_1.1.9.1.tar.gz : success (76 of 80, 74 good, 2 bad) -- Now 07:07:56 This 13.6 sec, Avg 44.4 sec, exp. finish in 3 min at 07:10:54 on 16-Nov-2016
+
+RESULT for TDA_1.5.tar.gz : success (77 of 80, 75 good, 2 bad) -- Now 07:08:59 This 63.7 sec, Avg 44.7 sec, exp. finish in 2.2 min at 07:11:14 on 16-Nov-2016
+
+RESULT for textreuse_0.1.3.tar.gz : failure (78 of 80, 75 good, 3 bad) -- Now 07:09:15 This 15.9 sec, Avg 44.3 sec, exp. finish in 1.5 min at 07:10:44 on 16-Nov-2016
+
+RESULT for TransferEntropy_1.4.tar.gz : success (79 of 80, 76 good, 3 bad) -- Now 07:09:28 This 13 sec, Avg 43.9 sec, exp. finish in 0.7 min at 07:10:12 on 16-Nov-2016
+
+RESULT for xml2_1.0.0.tar.gz : success (80 of 80, 77 good, 3 bad) -- Now 07:09:46 This 18.1 sec, Avg 43.6 sec, exp. finish in 0 min at 07:09:46 on 16-Nov-2016
+               pkg res
+1             ACEt   0
+2          anytime   0
+3            beanz   0
+4        BEDMatrix   0
+5       bigalgebra   0
+6     biganalytics   0
+7        bigFastlm   0
+8         biglasso   0
+9        bigmemory   0
+10     bigtabulate   0
+11            bmlm   0
+12            BMRV   0
+13            Boom   0
+14   BoomSpikeSlab   0
+15            bsts   0
+16         Cyclops   0
+17         ddalpha   0
+18         DDRTree   0
+19       DescTools   0
+20          dfcomb   0
+21           dfmta   0
+22            dfpk   0
+23           dplyr   0
+24         dynsurv   0
+25       eggCounts   0
+26           EPGLM   0
+27  FeatureHashing   0
+28             fts   0
+29        FunChisq   0
+30           GERGM   0
+31           GiRaF   0
+32          glmmsr   0
+33          gmum.r   0
+34         hashmap   0
+35           haven   0
+36         iptools   0
+37             jqr   0
+38     LatentREGpp   0
+39         lclGWAS   0
+40            lsgl   0
+41             MBA   0
+42          MEGENA   0
+43 MixedDataImpute   0
+44        mixedMem   0
+45            msgl   0
+46         MultiBD   0
+47         mvnfast   0
+48           nabor   0
+49          NetRep   0
+50         odeintr   0
+51             oem   0
+52          OpenMx   0
+53            orsk   0
+54           PACVB   0
+55           pcalg   0
+56         phonics   0
+57         PReMiuM   0
+58           purrr   0
+59           raptr   0
+60         Rblpapi   0
+61         RcppBDT   0
+62      RcppMLPACK   0
+63    RcppParallel   0
+64       RcppRedis   0
+65       RcppShark   0
+66     RcppStreams   0
+67           readr   0
+68     rootWishart   0
+69           rstan   1
+70        rstanarm   1
+71             sgd   0
+72        sglOptim   0
+73          simmer   0
+74             SSN   0
+75         svglite   0
+76   synchronicity   0
+77             TDA   0
+78       textreuse   1
+79 TransferEntropy   0
+80            xml2   0
+
+ 0  1 
+77  3 
+[1] "rstan"     "rstanarm"  "textreuse"
+Ended at  2016-11-16 07:09:46.968966 
