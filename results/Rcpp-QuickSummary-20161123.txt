@@ -1,0 +1,54 @@
+
+OVERVIEW
+========
+
+Using Rcpp 0.12.8.1 
+
+  0   1 
+840  10 
+ [1] "contoureR" "datafsm"   "evolqg"    "forecast"  "gapfill"   "ggforce"   "humarray"  "quanteda"  "raptr"     "textreuse"
+Ended at  2016-11-23 16:45:45.358951 
+
+
+Of those ten
+
+  - nine we have seen before (incl one with BH)
+
+  - one that is spurious (raptr)
+
+DETAILS
+=======
+
+
+Previously Known Failures
+-------------------------
+
+"contoureR"             [again] _internal_ unit test error with qhull
+
+"datafsm"		[again] Error in fitness(Pop[i, ], ...) : unused argument (maxfitness = 1)
+
+"evolqg"                [CHECK AGAINST CRAN Rcpp] possible _internal_ unit test error between complex and numeric
+                        [Same failure with Rcpp 0.12.5]
+
+"forecast"              _internal_ unit test error also present with Rcpp 0.12.7
+
+"gapfill"               Test failure, plotting related, maybe ggplot2?
+
+"humarray"              _internal_ unit test error: 'couldn't reach t1dbase website at: http://www.immunobase.org/....'
+
+"quanteda"              Test failure, plotting related, maybe ggplot2?
+
+"textreuse"             Test fails, passes with previous BH release; maintainer contacted
+
+
+Other
+-----
+
+"raptr"                 spurious, fine on manual run
+
+
+SUMMARY
+=======
+
+No significant issues
+
