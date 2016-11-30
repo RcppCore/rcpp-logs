@@ -2,21 +2,22 @@
 OVERVIEW
 ========
 
-Using Rcpp 0.12.8.1 
+Using Rcpp 0.12.8.2
 
   0   1 
-840  10 
- [1] "contoureR" "datafsm"   "evolqg"    "forecast"  "gapfill"   "ggforce"   "humarray"  "quanteda"  "raptr"     "textreuse"
-Ended at  2016-11-23 16:45:45.358951 
+847   9 
+[1] "contoureR" "datafsm"   "evolqg"    "forecast"  "gapfill"   "humarray"  "quanteda"  "RSQLite"   "stremr"   
+Ended at  2016-11-29 21:16:33.070122 
 
 
-Of those ten
+Of those nine
 
-  - eight we have seen before (incl one with BH)
+  - seven we have seen before 
 
-  - one that is spurious (raptr)
+  - one that is new (stremr needed a GH/drat only package; still fails with)
 
-  - one that new (ggforce)
+  - one that is spurious (RSQLite passes once DBItest is installed)
+
 
 DETAILS
 =======
@@ -40,20 +41,19 @@ Previously Known Failures
 
 "quanteda"              Test failure, plotting related, maybe ggplot2?
 
-"textreuse"             Test fails, passes with previous BH release; maintainer contacted
-
 
 New
 ---
 
-"ggforce"               Package required but not available: ‘units’
+"stremr"                Test fails because _Suggested_ package h2oEnsemble (from a drat) missing
+                        Still fails when h2oEnsemble is installed
 
 
-Other
------
+Spurious
+--------
 
-"raptr"                 spurious, fine on manual run
-
+"RSQLite"               Error in loadNamespace(name) : there is no package called 'DBItest'
+                        --> passes once installed
 
 SUMMARY
 =======
