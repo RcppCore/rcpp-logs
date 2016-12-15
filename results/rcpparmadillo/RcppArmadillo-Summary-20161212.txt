@@ -1,0 +1,36 @@
+
+Summary from running  0.7.599.0.0
+=================================
+
+  0   1 
+286   7 
+[1] "evolqg"      "forecast"    "lsgl"        "markovchain" "msgl"        "quanteda"    "sglOptim"
+
+Detailed Discussion
+===================
+
+Previously Failed
+-----------------
+
+"evolqg"                [CHECK AGAINST CRAN Rcpp] possible _internal_ unit test error between complex and numeric
+                        [Same failure with Rcpp 0.12.5]
+
+"forecast"		[internal] testthat failure
+
+"quanteda"              [internal] test failure, plotting related, maybe ggplot2?
+
+
+New Issues
+----------
+
+"lsgl"                  problem with fn_sort.hpp and fn_sort_index.hpp
+
+"msgl"                  ditto
+
+"sglOptim"              ditto 
+
+
+Spurious Issues
+---------------
+
+"markovchains"          [Rcpp issue] The new sample.h in Rcpp conflicts with sample.h in RcppArmadillo _when both are loaded_
