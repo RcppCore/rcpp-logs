@@ -1,0 +1,37 @@
+
+Summary from running  0.7.600.1.0
+=================================
+
+  0   1 
+286   7 
+[1] "evolqg"   "FLightR"  "forecast" "lsgl"     "msgl"     "quanteda" "sglOptim"
+
+Detailed Discussion
+===================
+
+Previously Failed
+-----------------
+
+"evolqg"                [CHECK AGAINST CRAN Rcpp] possible _internal_ unit test error between complex and numeric
+                        [Same failure with Rcpp 0.12.5]
+
+"forecast"		[internal] testthat failure
+
+"quanteda"              [internal] test failure, plotting related, maybe ggplot2?
+
+
+Known But Sorted Out Upstream
+-----------------------------
+
+"lsgl"                  problem with fn_sort.hpp and fn_sort_index.hpp
+
+"msgl"                  ditto
+
+"sglOptim"              ditto 
+
+
+New Issue
+---------
+
+"FlightR"               [test failure] Error: GeomRasterAnn was built with an incompatible version of ggproto.
+                        Please reinstall the package that provides this extension.
