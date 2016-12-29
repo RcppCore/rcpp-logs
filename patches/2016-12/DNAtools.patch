@@ -1,0 +1,60 @@
+--- DNAtools.orig/src/mcompare.cpp      2016-12-05 08:30:19.000000000 -0600
++++ DNAtools/src/mcompare.cpp   2016-12-27 16:01:39.476929124 -0600
+@@ -45,17 +45,13 @@
+ #include <vector>
+ #include <queue>
+ 
+-#include <R.h>
+-#include <Rdefines.h>
+-#include <Rinternals.h>
+-#undef length
+-#include <Rcpp.h>
++// JMC: removed Profile class declaration and implementation to separate files for maintainability
++#include "profile.h"
+ 
+ // JMC: header for interrupts
+-#include <R_ext/Utils.h>
++//#include <R_ext/Utils.h>
+ 
+-// JMC: removed Profile class declaration and implementation to separate files for maintainability
+-#include "profile.h"
++#include <Rcpp.h>
+ 
+ // Mikkel:
+ #ifdef MACOS
+@@ -622,14 +618,14 @@
+   if (pthread_mutex_init(&change_lock, NULL)) {
+     // REprintf("Could not initialize change_lock mutex, aborting.\n");
+     // fprintf(stderr, "Could not initialize change_lock mutex, aborting.\n");
+-    error("Could not initialize change_lock mutex, aborting.\n"); 
++    Rf_error("Could not initialize change_lock mutex, aborting.\n"); 
+     // exit(1);
+   }
+   
+   if (pthread_mutex_init(&i_queue_lock, NULL)) {
+     // REprintf("Could not initialize i_queue_lock mutex, aborting.\n");
+     // fprintf(stderr, "Could not initialize i_queue_lock mutex, aborting.\n");
+-    error("Could not initialize i_queue_lock mutex, aborting.\n"); 
++    Rf_error("Could not initialize i_queue_lock mutex, aborting.\n"); 
+     // exit(1);
+   }
+   
+@@ -671,7 +667,7 @@
+     if (rc) {
+       // REprintf("Error in thread creation: %i.\n", rc);
+       // fprintf(stderr, "Error in thread creation: %i.\n", rc);
+-      error("Error in thread creation");
++      Rf_error("Error in thread creation");
+       // exit(-1);
+     }
+   }
+@@ -719,7 +715,7 @@
+     if (rc) {
+       // REprintf("Error in thread joining: %i.\n", rc); 
+       // fprintf(stderr, "Error in thread joining: %i.\n", rc);
+-      error("Error in thread joining"); 
++      Rf_error("Error in thread joining"); 
+       // exit(-1);
+     }
+   }
+

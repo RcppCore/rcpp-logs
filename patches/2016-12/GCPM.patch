@@ -1,0 +1,13 @@
+diff -ru GCPM.orig/src/cpploss.cpp GCPM/src/cpploss.cpp
+--- GCPM.orig/src/cpploss.cpp	2016-09-09 10:21:40.000000000 -0500
++++ GCPM/src/cpploss.cpp	2016-12-29 06:46:02.019695661 -0600
+@@ -8,6 +8,8 @@
+ #include <Rmath.h>
+ #include <iostream>  
+ 
++using namespace Rcpp;
++
+ // [[Rcpp::export]]
+ SEXP  GCPM_cpploss(SEXP default_distr_a,SEXP link_function_a, SEXP S_a,SEXP Sigma_a, SEXP W_a, SEXP PD_a, SEXP PL_a, SEXP calc_rc_a, SEXP loss_thr_a, SEXP max_entries_a){
+   
+Only in GCPM/src: symbols.rds

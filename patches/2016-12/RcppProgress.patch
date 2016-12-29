@@ -1,0 +1,14 @@
+Only in RcppProgress/src: symbols.rds
+diff -ru RcppProgress.orig/src/tests.cpp RcppProgress/src/tests.cpp
+--- RcppProgress.orig/src/tests.cpp	2015-01-08 18:02:49.000000000 -0600
++++ RcppProgress/src/tests.cpp	2016-12-29 10:43:41.228429512 -0600
+@@ -1,7 +1,7 @@
+-#include "progress.hpp"
+ #include <Rcpp.h>
+ using namespace Rcpp;
+-#include <Rmath.h>
++
++#include "progress.hpp"
+ 
+ // this an example of code for which to provide support for user interruption
+ void long_computation(int nb) {
