@@ -1,0 +1,77 @@
+
+OVERVIEW
+========
+
+Using Rcpp 0.12.8.3 (and RcppProgress from GH)
+
+
+  0   1
+877  15
+ [1]      "datafsm"      "DNAprofiles"  "DNAtools"     "evolqg"       "forecast"     "gapfill"
+ [7]         "GCPM"         "humarray"      "lsgl"       "msgl"        "mvabund"    "quanteda"
+[13] "RcppProgress"         "sglOptim"    "stremr"
+Ended at  2016-12-28 18:53:10.14827 
+
+
+Of those fifteen
+
+  - seven we have seen before 
+
+  - three that are already fixed in new sglOptim / lsglm / msgl
+
+  - five that are new and need changes in headers
+  
+
+DETAILS
+=======
+
+
+Previously Known Failures
+-------------------------
+
+"datafsm"		[again] Error in fitness(Pop[i, ], ...) : unused argument (maxfitness = 1)
+
+"evolqg"                [CHECK AGAINST CRAN Rcpp] possible _internal_ unit test error between complex and numeric
+                        [Same failure with Rcpp 0.12.5]
+
+"forecast"              _internal_ unit test error also present with Rcpp 0.12.7
+
+"gapfill"               Test failure, plotting related, maybe ggplot2?
+
+"humarray"              _internal_ unit test error: 'couldn't reach t1dbase website at: http://www.immunobase.org/....'
+
+"quanteda"              Test failure, plotting related, maybe ggplot2?
+
+"stremr"                Test fails because _Suggested_ package h2oEnsemble (from a drat) missing
+                        Still fails when h2oEnsemble is installed
+
+
+Already fixed client-side
+-------------------------
+
+"lsgl"                  requires updated sglOptim
+
+"msgl"                  requires updated sglOptim
+
+"sglOptim"              requires updated sglOptim
+
+
+New
+---
+
+"DNAprofiles"		"error: ‘NumericMatrix’ does not name a type" --> 'using namespace Rcpp;'
+
+"DNAtools"		"Rcpp::Nullable::Rf_isNull()" --> REMAP #define from wrong header order
+
+"GCPM"                  "error: ‘NumericMatrix’ was not declared in this scope" 
+
+"mvabund"		"Rcpp::Nullable: ...
+
+"RcppProgress"          fixed on GH, pending update
+
+
+SUMMARY
+=======
+
+No significant issues
+
