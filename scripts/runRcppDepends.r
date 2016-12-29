@@ -53,7 +53,11 @@ exclset <- c("cqrReg",          # requires Rmosek which require Mosek which is c
              "stplanr",		# requires rgdal
              "WideLM",          # CUDA (currently off CRAN anyway)
              "icenReg",         # RcppEigen, not Rcpp
-             "sf"               # requires (more recent) gdal
+             "sf",              # requires (more recent) gdal
+             "nanotime",	# RcppCCTZ
+             "BETS", 		# "Imports: Rcpp" but doesn't use it
+             "climwin", 	# RcppRoll
+             "flippant"		# RcppRoll
              )
 
 rcppset <- rcppset[ ! rcppset %in% exclset ]
