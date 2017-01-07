@@ -13,42 +13,50 @@ Ended at  2017-01-06 18:30:41.097377
 
 Of those nine
 
-  - seven we have seen before 
+  - five we have seen [many times] before and which do NOT appear to be related to recent changes
 
-  - three that are already fixed in new sglOptim / lsglm / msgl
+  - one new failure in testing which also occurs at CRAN
+  
+  - three that can be fixed easily for which maintainers have already been contacted
 
-  - five that are new and need changes in headers
   
 
 DETAILS
 =======
 
 
-Previously Known Failures
--------------------------
-
-"DNAprofiles"		"error: ‘NumericMatrix’ does not name a type" --> 'using namespace Rcpp;'
-
-"DNAtools"		"Rcpp::Nullable::Rf_isNull()" --> REMAP #define from wrong header order
+Previously Known Failures - Reoccurring - Testing Only
+------------------------------------------------------
 
 "evolqg"                [CHECK AGAINST CRAN Rcpp] possible _internal_ unit test error between complex and numeric
                         [Same failure with Rcpp 0.12.5]
 
 "forecast"              _internal_ unit test error also present with Rcpp 0.12.7
 
-"gapfill"               Test failure, plotting related, maybe ggplot2?
+"gapfill"               _internal_ test failure, plotting related, maybe ggplot2?
 
 "humarray"              _internal_ unit test error: 'couldn't reach t1dbase website at: http://www.immunobase.org/....'
 
+"quanteda"              _internal_ Test failure, plotting related, maybe ggplot2?
+
+
+New - But Also Fails at CRAN
+----------------------------
+
+"Wmisc"                _internal_ local client side
+                       [ also fails at CRAN ]
+
+
+Previously Known Failures - Easy Fixes - Maintaines Contacted
+-------------------------------------------------------------
+
+"DNAprofiles"		"error: ‘NumericMatrix’ does not name a type" --> 'using namespace Rcpp;'
+
+"DNAtools"		"Rcpp::Nullable::Rf_isNull()" --> REMAP #define from wrong header order
+
 "mvabund"		"Rcpp::Nullable: ...
 
-"quanteda"              Test failure, plotting related, maybe ggplot2?
 
-
-Spurious
---------
-
-"Wmisc"                 local client side
 
 
 SUMMARY
