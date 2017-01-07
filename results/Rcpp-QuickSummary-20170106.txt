@@ -1,0 +1,58 @@
+
+OVERVIEW
+========
+
+Using Rcpp 0.12.8.4
+
+
+  0   1 
+888   9 
+[1] "DNAprofiles" "DNAtools"    "evolqg"      "forecast"    "gapfill"     "humarray"    "mvabund"     "quanteda"    "Wmisc"      
+Ended at  2017-01-06 18:30:41.097377 
+
+
+Of those nine
+
+  - seven we have seen before 
+
+  - three that are already fixed in new sglOptim / lsglm / msgl
+
+  - five that are new and need changes in headers
+  
+
+DETAILS
+=======
+
+
+Previously Known Failures
+-------------------------
+
+"DNAprofiles"		"error: ‘NumericMatrix’ does not name a type" --> 'using namespace Rcpp;'
+
+"DNAtools"		"Rcpp::Nullable::Rf_isNull()" --> REMAP #define from wrong header order
+
+"evolqg"                [CHECK AGAINST CRAN Rcpp] possible _internal_ unit test error between complex and numeric
+                        [Same failure with Rcpp 0.12.5]
+
+"forecast"              _internal_ unit test error also present with Rcpp 0.12.7
+
+"gapfill"               Test failure, plotting related, maybe ggplot2?
+
+"humarray"              _internal_ unit test error: 'couldn't reach t1dbase website at: http://www.immunobase.org/....'
+
+"mvabund"		"Rcpp::Nullable: ...
+
+"quanteda"              Test failure, plotting related, maybe ggplot2?
+
+
+Spurious
+--------
+
+"Wmisc"                 local client side
+
+
+SUMMARY
+=======
+
+No significant issues
+
