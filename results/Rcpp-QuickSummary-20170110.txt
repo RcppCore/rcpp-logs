@@ -1,0 +1,63 @@
+
+OVERVIEW
+========
+
+Using Rcpp 0.12.8.4
+
+  0   1 
+892   8 
+[1] "DNAprofiles" "DNAtools"    "evolqg"      "forecast"    "gapfill"     "mvabund"     "Wmisc"       "xslt"       
+Ended at  2017-01-10 15:03:05.212476 
+
+Of those eight
+
+  - four we have seen [many times] before and which do NOT appear to be related to recent changes
+
+  - three that can be fixed easily for which maintainers have already been contacted
+
+  - one that was spurious for lack of a depends
+  
+  
+
+DETAILS
+=======
+
+
+Previously Known Failures - Reoccurring - Testing Only
+------------------------------------------------------
+
+"evolqg"                [CHECK AGAINST CRAN Rcpp] possible _internal_ unit test error between complex and numeric
+                        [Same failure with Rcpp 0.12.5]
+
+"forecast"              _internal_ unit test error also present with Rcpp 0.12.7
+
+"gapfill"               _internal_ test failure, plotting related, maybe ggplot2?
+
+"humarray"              _internal_ unit test error: 'couldn't reach t1dbase website at: http://www.immunobase.org/....'
+
+"Wmisc"                _internal_ local client side
+                       [ also fails at CRAN ]
+
+
+Previously Known Failures - Easy Fixes - Maintaines Contacted
+-------------------------------------------------------------
+
+"DNAprofiles"		"error: ‘NumericMatrix’ does not name a type" --> 'using namespace Rcpp;'
+
+"DNAtools"		"Rcpp::Nullable::Rf_isNull()" --> REMAP #define from wrong header order
+
+"mvabund"		"Rcpp::Nullable: ...
+
+
+Spurious
+--------
+
+"xslt"			required libxslt1-dev; passes once installed
+
+
+
+SUMMARY
+=======
+
+No significant issues
+
