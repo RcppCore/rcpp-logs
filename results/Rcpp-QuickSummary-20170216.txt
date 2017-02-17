@@ -1,0 +1,55 @@
+
+OVERVIEW
+========
+
+Using Rcpp 0.12.9.3
+
+  0   1 
+936   6 
+[1] "alphabetr"   "DNAprofiles" "forecast"    "largeVis"    "rplexos"     "rstanarm"   
+Ended at  2017-02-16 19:24:43.11817 
+
+Of those six
+
+  - two we have seen [many times] before and which do NOT appear to be related to recent changes
+
+  - three that are now us
+  
+  - one that was spurious for a zero-byte download
+  
+  
+
+DETAILS
+=======
+
+
+Previously Known Failures - Reoccurring - Testing Only
+------------------------------------------------------
+
+"DNAprofiles"		RcppProgress and OpenMP interaction
+
+"forecast"              _internal_ unit test error also present with Rcpp 0.12.7
+
+
+Not us
+------
+
+"largeVis"              installation: "Error : object ‘opticsXi’ is not exported by 'namespace:dbscan'"
+
+"rplexos"		check: "'folders' must be a vector of existing folders or the wildcard "*""
+
+"rtstanarm"             checl: "Error in library(betareg) : there is no package called 'betareg'"
+
+
+Spurious
+--------
+
+"alphabetr"		downloaded 0 byte file; works fine once re-downloaded
+
+
+
+SUMMARY
+=======
+
+No significant issues
+
