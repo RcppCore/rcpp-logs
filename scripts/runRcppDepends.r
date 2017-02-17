@@ -18,7 +18,7 @@ Sys.setenv("R_LIBS_USER"="/tmp/RcppDepends/lib")
 #Sys.setenv("CC"="gcc")   ## needed for a bad interaction between autoconf and llvm on Ubuntu 13.10
 #Sys.setenv("CXX"="g++")  ## idem
 ##if (Sys.getenv("MAKE") == "")
-Sys.setenv("MAKE"="make -j 2 -O")
+#Sys.setenv("MAKE"="make -j 2 -O")
 
 r <- getOption("repos")
 r["CRAN"] <- "http://cran.rstudio.com"
@@ -57,7 +57,8 @@ exclset <- c("cqrReg",          # requires Rmosek which require Mosek which is c
              "nanotime",	# RcppCCTZ
              "BETS", 		# "Imports: Rcpp" but doesn't use it
              "climwin", 	# RcppRoll
-             "flippant"		# RcppRoll
+             "flippant",	# RcppRoll
+              "configr"         # RcppTOML
              )
 
 rcppset <- rcppset[ ! rcppset %in% exclset ]
