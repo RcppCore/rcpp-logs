@@ -1,0 +1,61 @@
+
+OVERVIEW
+========
+
+Using Rcpp 0.12.9.4
+
+  0   1 
+948   9 
+[1] "DNAprofiles" "forecast"    "goldi"       "largeVis"    "officer"     "openxlsx"    "rstanarm"    "striprtf"    "textreg"    
+Ended at  2017-03-03 04:16:05.711077 
+
+Of those nine
+
+  - two we have seen [many times] before and which do NOT appear to be related to recent changes
+
+  - three that are now us
+  
+  - one that was spurious for a zero-byte download
+  
+  
+
+DETAILS
+=======
+
+
+Previously Known Failures - Reoccurring
+---------------------------------------
+
+"DNAprofiles"		RcppProgress and OpenMP interaction
+
+"forecast"              _internal_ unit test error also present with Rcpp 0.12.7
+
+"largeVis"              installation: "Error : object ‘opticsXi’ is not exported by 'namespace:dbscan'"
+
+
+Not us
+------
+
+"goldi"                 testthat failure, reason unclear
+
+"officer"		testthat failure, reason unclear
+
+"openxlsx"		testthat failure, reason unclear
+
+"striprtf"		testthat failure, reason unclear
+
+"textreg"		testthat failure, reason unclear
+
+
+Spurious
+--------
+
+"rtstanarm"             check: "Error in library(betareg) : there is no package called 'betareg'"
+                        -- passes once installed
+
+
+SUMMARY
+=======
+
+No significant issues
+
