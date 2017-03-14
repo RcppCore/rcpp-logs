@@ -1,0 +1,63 @@
+
+OVERVIEW
+========
+
+Using Rcpp 0.12.9.4
+
+  0   1 
+958  10 
+ [1] "DNAprofiles" "forecast"    "goldi"       "humarray"    "imager"      "officer"     "openxlsx"    "rdist"       "striprtf"    "textreg"    
+Ended at  2017-03-13 23:51:38.87578 
+
+Of those ten
+
+  - seven we have seen [many times] before and which do NOT appear to be related to recent changes
+
+  - two that are now us
+  
+  - one that was spurious for package change during test run
+  
+  
+
+DETAILS
+=======
+
+
+Previously Known Failures - Reoccurring
+---------------------------------------
+
+"DNAprofiles"		RcppProgress and OpenMP interaction
+
+"forecast"              _internal_ unit test error also present with Rcpp 0.12.7
+
+"goldi"                 testthat failure, reason unclear
+
+"officer"		testthat failure, reason unclear
+
+"openxlsx"		testthat failure, reason unclear
+
+"striprtf"		testthat failure, reason unclear
+
+"textreg"		testthat failure, reason unclear
+
+
+Not us
+------
+
+"rdist"			testthat failure, reason unclear
+
+"humarray"		test issue with GRanges
+
+
+Spurious
+--------
+
+"imager"                package updated while test ran preventing download,
+                        -- passes once downloaded manually
+
+
+SUMMARY
+=======
+
+No significant issues
+
