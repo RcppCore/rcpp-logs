@@ -1,0 +1,1344 @@
+Started at  2017-03-14 09:26:58.755553 
+Rcpp  version is  0.12.9.4 
+RcppEigen  version is  0.3.2.9.1 
+R version 3.3.3 (2017-03-06) -- "Another Canoe" 
+trying URL 'http://cran.rstudio.com/src/contrib/copCAR_2.0-2.tar.gz'
+Content type 'application/x-gzip' length 23675 bytes (23 KB)
+==================================================
+downloaded 23 KB
+
+trying URL 'http://cran.rstudio.com/src/contrib/easyVerification_0.4.1.tar.gz'
+Content type 'application/x-gzip' length 344492 bytes (336 KB)
+==================================================
+downloaded 336 KB
+
+trying URL 'http://cran.rstudio.com/src/contrib/imager_0.40.1.tar.gz'
+Content type 'application/x-gzip' length 5172191 bytes (4.9 MB)
+==================================================
+downloaded 4.9 MB
+
+trying URL 'http://cran.rstudio.com/src/contrib/rcdd_1.1-11.tar.gz'
+Content type 'application/x-gzip' length 596279 bytes (582 KB)
+==================================================
+downloaded 582 KB
+
+trying URL 'http://cran.rstudio.com/src/contrib/sdcMicro_5.0.1.tar.gz'
+Content type 'application/x-gzip' length 1329735 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'http://cran.rstudio.com/src/contrib/StereoMorph_1.6.1.tar.gz'
+Content type 'application/x-gzip' length 1029482 bytes (1005 KB)
+==================================================
+downloaded 1005 KB
+
+trying URL 'http://cran.rstudio.com/src/contrib/WhopGenome_0.9.7.tar.gz'
+Content type 'application/x-gzip' length 168556 bytes (164 KB)
+==================================================
+downloaded 164 KB
+
+trying URL 'http://cran.rstudio.com/src/contrib/Zelig_5.0-17.tar.gz'
+Content type 'application/x-gzip' length 566951 bytes (553 KB)
+==================================================
+downloaded 553 KB
+
+* installing *source* package ‘copCAR’ ...
+** package ‘copCAR’ successfully unpacked and MD5 sums checked
+** libs
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c init.c -o init.o
+ccache gfortran   -fpic  -O3 -g0 -Wall -pipe -c pbivnorm.f -o pbivnorm.o
+pbivnorm.f:381:11:
+
+       hs = sign( one, dh - r*dk )  
+           1
+Warning: Possible change of value in conversion from REAL(8) to INTEGER(4) at (1) [-Wconversion]
+pbivnorm.f:382:11:
+
+       ks = sign( one, dk - r*dh ) 
+           1
+Warning: Possible change of value in conversion from REAL(8) to INTEGER(4) at (1) [-Wconversion]
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include" -I"/tmp/RcppDepends/lib/RcppArmadillo/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c copCARmod.cpp -o copCARmod.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o copCAR.so RcppExports.o copCARmod.o init.o pbivnorm.o -llapack -lblas -lgfortran -lm -lquadmath -lgfortran -lm -lquadmath -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/copCAR/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (copCAR)
+* installing *source* package ‘easyVerification’ ...
+** package ‘easyVerification’ successfully unpacked and MD5 sums checked
+** libs
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c native_routine_registration.c -o native_routine_registration.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c EnsRocaCpp.cpp -o EnsRocaCpp.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c rankEnsCpp.cpp -o rankEnsCpp.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o easyVerification.so EnsRocaCpp.o RcppExports.o native_routine_registration.o rankEnsCpp.o -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/easyVerification/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (easyVerification)
+* installing *source* package ‘imager’ ...
+** package ‘imager’ successfully unpacked and MD5 sums checked
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for X... libraries , headers 
+configure: Checking if FFTW3 library is available using pkg-config
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for FFTW... yes
+FFTW3 found!
+checking for TIFFOpen in -ltiff... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+ccache g++ -I/usr/share/R/include -DNDEBUG -fopenmp  -Dcimg_use_fftw3  -Dcimg_use_tiff -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_use_r -Dcimg_use_fftw3_singlethread -Dcimg_verbosity=1 -Dcimg_date='""' -Dcimg_time='""'  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+In file included from ../inst/include/imager.h:32:0,
+                 from RcppExports.cpp:4:
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<double>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:66:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<bool>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:77:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+ccache g++ -I/usr/share/R/include -DNDEBUG -fopenmp  -Dcimg_use_fftw3  -Dcimg_use_tiff -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_use_r -Dcimg_use_fftw3_singlethread -Dcimg_verbosity=1 -Dcimg_date='""' -Dcimg_time='""'  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c colourspace.cpp -o colourspace.o
+In file included from ../inst/include/imager.h:32:0,
+                 from colourspace.cpp:1:
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<double>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:66:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<bool>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:77:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+ccache g++ -I/usr/share/R/include -DNDEBUG -fopenmp  -Dcimg_use_fftw3  -Dcimg_use_tiff -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_use_r -Dcimg_use_fftw3_singlethread -Dcimg_verbosity=1 -Dcimg_date='""' -Dcimg_time='""'  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c coordinates.cpp -o coordinates.o
+In file included from ../inst/include/imager.h:32:0,
+                 from coordinates.cpp:1:
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<double>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:66:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<bool>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:77:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+ccache g++ -I/usr/share/R/include -DNDEBUG -fopenmp  -Dcimg_use_fftw3  -Dcimg_use_tiff -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_use_r -Dcimg_use_fftw3_singlethread -Dcimg_verbosity=1 -Dcimg_date='""' -Dcimg_time='""'  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c drawing.cpp -o drawing.o
+In file included from ../inst/include/imager.h:32:0,
+                 from drawing.cpp:1:
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<double>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:66:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<bool>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:77:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+ccache g++ -I/usr/share/R/include -DNDEBUG -fopenmp  -Dcimg_use_fftw3  -Dcimg_use_tiff -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_use_r -Dcimg_use_fftw3_singlethread -Dcimg_verbosity=1 -Dcimg_date='""' -Dcimg_time='""'  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c display.cpp -o display.o
+In file included from ../inst/include/imager.h:32:0,
+                 from display.cpp:1:
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<double>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:66:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<bool>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:77:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+ccache g++ -I/usr/share/R/include -DNDEBUG -fopenmp  -Dcimg_use_fftw3  -Dcimg_use_tiff -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_use_r -Dcimg_use_fftw3_singlethread -Dcimg_verbosity=1 -Dcimg_date='""' -Dcimg_time='""'  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c filtering.cpp -o filtering.o
+In file included from ../inst/include/imager.h:32:0,
+                 from filtering.cpp:1:
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<double>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:66:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<bool>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:77:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+ccache g++ -I/usr/share/R/include -DNDEBUG -fopenmp  -Dcimg_use_fftw3  -Dcimg_use_tiff -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_use_r -Dcimg_use_fftw3_singlethread -Dcimg_verbosity=1 -Dcimg_date='""' -Dcimg_time='""'  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c interpolation.cpp -o interpolation.o
+In file included from ../inst/include/imager.h:32:0,
+                 from interpolation.cpp:1:
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<double>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:66:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<bool>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:77:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+ccache g++ -I/usr/share/R/include -DNDEBUG -fopenmp  -Dcimg_use_fftw3  -Dcimg_use_tiff -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_use_r -Dcimg_use_fftw3_singlethread -Dcimg_verbosity=1 -Dcimg_date='""' -Dcimg_time='""'  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c reductions.cpp -o reductions.o
+In file included from ../inst/include/imager.h:32:0,
+                 from reductions.cpp:1:
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<double>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:66:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<bool>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:77:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+ccache gcc -I/usr/share/R/include -DNDEBUG -fopenmp  -Dcimg_use_fftw3  -Dcimg_use_tiff -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_use_r -Dcimg_use_fftw3_singlethread -Dcimg_verbosity=1 -Dcimg_date='""' -Dcimg_time='""'  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c register.c -o register.o
+ccache g++ -I/usr/share/R/include -DNDEBUG -fopenmp  -Dcimg_use_fftw3  -Dcimg_use_tiff -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_use_r -Dcimg_use_fftw3_singlethread -Dcimg_verbosity=1 -Dcimg_date='""' -Dcimg_time='""'  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c morphology.cpp -o morphology.o
+In file included from ../inst/include/imager.h:32:0,
+                 from morphology.cpp:1:
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<double>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:66:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<bool>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:77:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+ccache g++ -I/usr/share/R/include -DNDEBUG -fopenmp  -Dcimg_use_fftw3  -Dcimg_use_tiff -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_use_r -Dcimg_use_fftw3_singlethread -Dcimg_verbosity=1 -Dcimg_date='""' -Dcimg_time='""'  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c transformations.cpp -o transformations.o
+In file included from ../inst/include/imager.h:32:0,
+                 from transformations.cpp:1:
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<double>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:66:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<bool>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:77:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+transformations.cpp: In function ‘Rcpp::NumericVector warp(Rcpp::NumericVector, Rcpp::NumericVector, unsigned int, unsigned int, unsigned int)’:
+transformations.cpp:274:15: warning: suggest parentheses around comparison in operand of ‘|’ [-Wparentheses]
+       if (mode==0 | mode == 2) //In R coordinates start at 1
+               ^
+ccache g++ -I/usr/share/R/include -DNDEBUG -fopenmp  -Dcimg_use_fftw3  -Dcimg_use_tiff -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_use_r -Dcimg_use_fftw3_singlethread -Dcimg_verbosity=1 -Dcimg_date='""' -Dcimg_time='""'  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c wrappers.cpp -o wrappers.o
+In file included from ../inst/include/imager.h:32:0,
+                 from wrappers.cpp:1:
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<double>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:66:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<bool>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:77:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+ccache g++ -I/usr/share/R/include -DNDEBUG -fopenmp  -Dcimg_use_fftw3  -Dcimg_use_tiff -I../inst/include -DCIMG_COMPILING -Dcimg_use_rng -Dcimg_use_r -Dcimg_use_fftw3_singlethread -Dcimg_verbosity=1 -Dcimg_date='""' -Dcimg_time='""'  -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c utils.cpp -o utils.o
+In file included from ../inst/include/imager.h:32:0,
+                 from utils.cpp:1:
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<double>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:66:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+../inst/include/wrappers.h: In function ‘SEXPREC* Rcpp::wrap(const T&) [with T = cimg_library::CImgList<bool>; SEXP = SEXPREC*]’:
+../inst/include/wrappers.h:77:22: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0;i < ilist.size(); i++)
+                      ^
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o imager.so RcppExports.o colourspace.o coordinates.o display.o drawing.o filtering.o interpolation.o morphology.o reductions.o register.o transformations.o utils.o wrappers.o -fopenmp -lX11 -Dcimg_use_fftw3 -lfftw3 -ltiff -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/imager/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (imager)
+* installing *source* package ‘rcdd’ ...
+** package ‘rcdd’ successfully unpacked and MD5 sums checked
+checking for gcc... ccache gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether ccache gcc accepts -g... yes
+checking for ccache gcc option to accept ISO C89... none needed
+checking for __gmpz_init in -lgmp... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c allfaces.c -o allfaces.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c allfaces_f.c -o allfaces_f.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c cddcore.c -o cddcore.o
+cddcore.c: In function ‘dd_CheckAdjacency’:
+cddcore.c:30:14: warning: variable ‘localdebug’ set but not used [-Wunused-but-set-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddcore.c: In function ‘dd_StoreRay1’:
+cddcore.c:133:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_debug;
+              ^
+cddcore.c: In function ‘dd_StoreRay2’:
+cddcore.c:191:14: warning: variable ‘localdebug’ set but not used [-Wunused-but-set-variable]
+   dd_boolean localdebug=dd_debug;
+              ^
+cddcore.c: In function ‘dd_ConditionalAddEdge’:
+cddcore.c:315:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddcore.c: In function ‘dd_CreateInitialEdges’:
+cddcore.c:454:18: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean adj,localdebug=dd_FALSE;
+                  ^
+cddcore.c: In function ‘dd_UpdateEdges’:
+cddcore.c:492:18: warning: unused variable ‘prevworkleft’ [-Wunused-variable]
+   float workleft,prevworkleft=110.0,totalpairs;
+                  ^
+cddcore.c:492:9: warning: variable ‘workleft’ set but not used [-Wunused-but-set-variable]
+   float workleft,prevworkleft=110.0,totalpairs;
+         ^
+cddcore.c:490:29: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean ptr2found,quit,localdebug=dd_FALSE;
+                             ^
+cddcore.c: In function ‘dd_FreeDDMemory0’:
+cddcore.c:544:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddcore.c: In function ‘dd_Normalize’:
+cddcore.c:632:10: warning: variable ‘jmin’ set but not used [-Wunused-but-set-variable]
+   long j,jmin=0;
+          ^
+cddcore.c: In function ‘dd_PermutePartialCopyAmatrix’:
+cddcore.c:732:17: warning: variable ‘k’ set but not used [-Wunused-but-set-variable]
+   dd_rowrange i,k;
+                 ^
+cddcore.c: In function ‘dd_ColumnReduce’:
+cddcore.c:930:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddcore.c: In function ‘dd_MatrixRank’:
+cddcore.c:964:28: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean stop, chosen, localdebug=dd_debug;
+                            ^
+cddcore.c: In function ‘dd_FindBasis’:
+cddcore.c:1021:28: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean stop, chosen, localdebug=dd_debug;
+                            ^
+cddcore.c: In function ‘dd_CreateNewRay’:
+cddcore.c:1144:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_debug;
+              ^
+cddcore.c: In function ‘dd_DeleteNegativeRays’:
+cddcore.c:1352:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddcore.c: In function ‘dd_AddNewHalfspace1’:
+cddcore.c:1550:24: warning: variable ‘progress’ set but not used [-Wunused-but-set-variable]
+   double prevprogress, progress;
+                        ^
+cddcore.c:1550:10: warning: variable ‘prevprogress’ set but not used [-Wunused-but-set-variable]
+   double prevprogress, progress;
+          ^
+cddcore.c: In function ‘dd_AddNewHalfspace2’:
+cddcore.c:1627:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddcore.c:1625:8: warning: unused variable ‘pos1’ [-Wunused-variable]
+   long pos1;
+        ^
+cddcore.c:1623:13: warning: unused variable ‘RayPtr0’ [-Wunused-variable]
+   dd_RayPtr RayPtr0,RayPtr1,RayPtr2;
+             ^
+cddcore.c: In function ‘dd_SelectNextHalfspace2’:
+cddcore.c:1734:29: warning: variable ‘fi’ set but not used [-Wunused-but-set-variable]
+   long i, fea, inf, infmin, fi=0;   /*feasibility and infeasibility numbers*/
+                             ^
+cddcore.c: In function ‘dd_SelectNextHalfspace3’:
+cddcore.c:1758:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_debug;
+              ^
+cddcore.c:1757:29: warning: variable ‘fi’ set but not used [-Wunused-but-set-variable]
+   long i, fea, inf, infmax, fi=0;   /*feasibility and infeasibility numbers*/
+                             ^
+cddcore.c: In function ‘dd_SelectNextHalfspace4’:
+cddcore.c:1781:38: warning: variable ‘infi’ set but not used [-Wunused-but-set-variable]
+   long i, fea, inf, max, tmax, fi=0, infi=0;
+                                      ^
+cddcore.c:1781:32: warning: variable ‘fi’ set but not used [-Wunused-but-set-variable]
+   long i, fea, inf, max, tmax, fi=0, infi=0;
+                                ^
+cddcore.c: In function ‘dd_UniqueRows’:
+cddcore.c:1870:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddcore.c: In function ‘dd_RandomPermutation’:
+cddcore.c:1958:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddcore.c:1957:17: warning: unused variable ‘rand_max’ [-Wunused-variable]
+   double u,xk,r,rand_max=(double) RAND_MAX;
+                 ^
+cddcore.c:1957:15: warning: unused variable ‘r’ [-Wunused-variable]
+   double u,xk,r,rand_max=(double) RAND_MAX;
+               ^
+cddcore.c: In function ‘dd_UpdateRowOrderVector’:
+cddcore.c:2030:21: warning: variable ‘localdebug’ set but not used [-Wunused-but-set-variable]
+   dd_boolean found, localdebug=dd_FALSE;
+                     ^
+cddcore.c: In function ‘dd_InnerProduct’:
+cddcore.c:2206:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c cddcore_f.c -o cddcore_f.o
+cddcore_f.c: In function ‘ddf_CheckAdjacency’:
+cddcore_f.c:30:15: warning: variable ‘localdebug’ set but not used [-Wunused-but-set-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddcore_f.c: In function ‘ddf_StoreRay1’:
+cddcore_f.c:133:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_debug;
+               ^
+cddcore_f.c: In function ‘ddf_StoreRay2’:
+cddcore_f.c:191:15: warning: variable ‘localdebug’ set but not used [-Wunused-but-set-variable]
+   ddf_boolean localdebug=ddf_debug;
+               ^
+cddcore_f.c: In function ‘ddf_ConditionalAddEdge’:
+cddcore_f.c:314:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddcore_f.c: In function ‘ddf_CreateInitialEdges’:
+cddcore_f.c:446:19: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean adj,localdebug=ddf_FALSE;
+                   ^
+cddcore_f.c: In function ‘ddf_UpdateEdges’:
+cddcore_f.c:484:18: warning: unused variable ‘prevworkleft’ [-Wunused-variable]
+   float workleft,prevworkleft=110.0,totalpairs;
+                  ^
+cddcore_f.c:484:9: warning: variable ‘workleft’ set but not used [-Wunused-but-set-variable]
+   float workleft,prevworkleft=110.0,totalpairs;
+         ^
+cddcore_f.c:482:30: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean ptr2found,quit,localdebug=ddf_FALSE;
+                              ^
+cddcore_f.c: In function ‘ddf_FreeDDMemory0’:
+cddcore_f.c:536:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddcore_f.c: In function ‘ddf_Normalize’:
+cddcore_f.c:624:10: warning: variable ‘jmin’ set but not used [-Wunused-but-set-variable]
+   long j,jmin=0;
+          ^
+cddcore_f.c: In function ‘ddf_PermutePartialCopyAmatrix’:
+cddcore_f.c:724:18: warning: variable ‘k’ set but not used [-Wunused-but-set-variable]
+   ddf_rowrange i,k;
+                  ^
+cddcore_f.c: In function ‘ddf_ColumnReduce’:
+cddcore_f.c:922:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddcore_f.c: In function ‘ddf_MatrixRank’:
+cddcore_f.c:956:29: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean stop, chosen, localdebug=ddf_debug;
+                             ^
+cddcore_f.c: In function ‘ddf_FindBasis’:
+cddcore_f.c:1013:29: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean stop, chosen, localdebug=ddf_debug;
+                             ^
+cddcore_f.c: In function ‘ddf_CreateNewRay’:
+cddcore_f.c:1136:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_debug;
+               ^
+cddcore_f.c: In function ‘ddf_DeleteNegativeRays’:
+cddcore_f.c:1344:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddcore_f.c: In function ‘ddf_AddNewHalfspace1’:
+cddcore_f.c:1542:24: warning: variable ‘progress’ set but not used [-Wunused-but-set-variable]
+   double prevprogress, progress;
+                        ^
+cddcore_f.c:1542:10: warning: variable ‘prevprogress’ set but not used [-Wunused-but-set-variable]
+   double prevprogress, progress;
+          ^
+cddcore_f.c: In function ‘ddf_AddNewHalfspace2’:
+cddcore_f.c:1619:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddcore_f.c:1617:8: warning: unused variable ‘pos1’ [-Wunused-variable]
+   long pos1;
+        ^
+cddcore_f.c:1615:14: warning: unused variable ‘RayPtr0’ [-Wunused-variable]
+   ddf_RayPtr RayPtr0,RayPtr1,RayPtr2;
+              ^
+cddcore_f.c: In function ‘ddf_SelectNextHalfspace2’:
+cddcore_f.c:1726:29: warning: variable ‘fi’ set but not used [-Wunused-but-set-variable]
+   long i, fea, inf, infmin, fi=0;   /*feasibility and infeasibility numbers*/
+                             ^
+cddcore_f.c: In function ‘ddf_SelectNextHalfspace3’:
+cddcore_f.c:1750:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_debug;
+               ^
+cddcore_f.c:1749:29: warning: variable ‘fi’ set but not used [-Wunused-but-set-variable]
+   long i, fea, inf, infmax, fi=0;   /*feasibility and infeasibility numbers*/
+                             ^
+cddcore_f.c: In function ‘ddf_SelectNextHalfspace4’:
+cddcore_f.c:1773:38: warning: variable ‘infi’ set but not used [-Wunused-but-set-variable]
+   long i, fea, inf, max, tmax, fi=0, infi=0;
+                                      ^
+cddcore_f.c:1773:32: warning: variable ‘fi’ set but not used [-Wunused-but-set-variable]
+   long i, fea, inf, max, tmax, fi=0, infi=0;
+                                ^
+cddcore_f.c: In function ‘ddf_UniqueRows’:
+cddcore_f.c:1862:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddcore_f.c: In function ‘ddf_RandomPermutation’:
+cddcore_f.c:1950:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddcore_f.c:1949:17: warning: unused variable ‘rand_max’ [-Wunused-variable]
+   double u,xk,r,rand_max=(double) RAND_MAX;
+                 ^
+cddcore_f.c:1949:15: warning: unused variable ‘r’ [-Wunused-variable]
+   double u,xk,r,rand_max=(double) RAND_MAX;
+               ^
+cddcore_f.c: In function ‘ddf_UpdateRowOrderVector’:
+cddcore_f.c:2022:22: warning: variable ‘localdebug’ set but not used [-Wunused-but-set-variable]
+   ddf_boolean found, localdebug=ddf_FALSE;
+                      ^
+cddcore_f.c: In function ‘ddf_InnerProduct’:
+cddcore_f.c:2198:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c cddio_f.c -o cddio_f.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c cddio.c -o cddio.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c cddlib_f.c -o cddlib_f.o
+cddlib_f.c: In function ‘ddf_DDMain’:
+cddlib_f.c:88:15: warning: unused variable ‘locallog’ [-Wunused-variable]
+   ddf_boolean locallog=ddf_log; /* if ddf_log=ddf_FALSE, no log will be written.  */
+               ^
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c cddlib.c -o cddlib.o
+cddlib.c: In function ‘dd_DDMain’:
+cddlib.c:87:14: warning: unused variable ‘locallog’ [-Wunused-variable]
+   dd_boolean locallog=dd_log; /* if dd_log=dd_FALSE, no log will be written.  */
+              ^
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c cddlp_f.c -o cddlp_f.o
+cddlp_f.c: In function ‘ddf_Matrix2LP’:
+cddlp_f.c:161:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddlp_f.c: In function ‘ddf_Matrix2Feasibility2’:
+cddlp_f.c:259:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddlp_f.c: In function ‘ddf_GetRedundancyInformation’:
+cddlp_f.c:522:21: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean red=ddf_FALSE,localdebug=ddf_FALSE;
+                     ^
+cddlp_f.c: In function ‘ddf_SelectDualSimplexPivot’:
+cddlp_f.c:560:20: warning: unused variable ‘localdebug’ [-Wunused-variable]
+     dualfeasible=ddf_TRUE,localdebug=ddf_FALSE;
+                    ^
+cddlp_f.c: In function ‘ddf_SelectPivot2’:
+cddlp_f.c:724:15: warning: variable ‘localdebug’ set but not used [-Wunused-but-set-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddlp_f.c: In function ‘ddf_GaussianColumnPivot2’:
+cddlp_f.c:823:7: warning: variable ‘localdebug’ set but not used [-Wunused-but-set-variable]
+   int localdebug=ddf_FALSE;
+       ^
+cddlp_f.c: In function ‘ddf_FindLPBasis2’:
+cddlp_f.c:1119:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddlp_f.c: In function ‘ddf_FindDualFeasibleBasis’:
+cddlp_f.c:1211:15: warning: variable ‘localdebug’ set but not used [-Wunused-but-set-variable]
+   ddf_boolean localdebug=ddf_FALSE,chosen,stop;
+               ^
+cddlp_f.c: In function ‘ddf_DualSimplexMaximize’:
+cddlp_f.c:1475:41: warning: variable ‘redgain’ set but not used [-Wunused-but-set-variable]
+   double redpercent=0,redpercent_prev=0,redgain=0;
+                                         ^
+cddlp_f.c:1459:28: warning: unused variable ‘localdebug1’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE,localdebug1=ddf_FALSE;
+                            ^
+cddlp_f.c:1459:15: warning: variable ‘localdebug’ set but not used [-Wunused-but-set-variable]
+   ddf_boolean localdebug=ddf_FALSE,localdebug1=ddf_FALSE;
+               ^
+cddlp_f.c: In function ‘ddf_SetSolutions’:
+cddlp_f.c:1752:7: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   int localdebug=ddf_FALSE;
+       ^
+cddlp_f.c: In function ‘ddf_RandomPermutation2’:
+cddlp_f.c:1841:7: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   int localdebug=ddf_FALSE;
+       ^
+cddlp_f.c:1840:17: warning: unused variable ‘rand_max’ [-Wunused-variable]
+   double u,xk,r,rand_max=(double) RAND_MAX;
+                 ^
+cddlp_f.c:1840:15: warning: unused variable ‘r’ [-Wunused-variable]
+   double u,xk,r,rand_max=(double) RAND_MAX;
+               ^
+cddlp_f.c: In function ‘ddf_MakeLPforInteriorFinding’:
+cddlp_f.c:2109:7: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   int localdebug=ddf_FALSE;
+       ^
+cddlp_f.c: In function ‘ddf_CreateLP_H_ImplicitLinearity’:
+cddlp_f.c:2270:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddlp_f.c: In function ‘ddf_CreateLP_V_ImplicitLinearity’:
+cddlp_f.c:2322:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddlp_f.c: In function ‘ddf_CreateLP_H_Redundancy’:
+cddlp_f.c:2380:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddlp_f.c: In function ‘ddf_CreateLP_V_Redundancy’:
+cddlp_f.c:2427:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddlp_f.c: In function ‘ddf_CreateLP_V_SRedundancy’:
+cddlp_f.c:2498:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddlp_f.c: In function ‘ddf_Redundant’:
+cddlp_f.c:2588:24: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean answer=ddf_FALSE,localdebug=ddf_FALSE;
+                        ^
+cddlp_f.c: In function ‘ddf_RedundantExtensive’:
+cddlp_f.c:2650:24: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean answer=ddf_FALSE,localdebug=ddf_FALSE;
+                        ^
+cddlp_f.c: In function ‘ddf_RedundantRows’:
+cddlp_f.c:2716:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddlp_f.c: In function ‘ddf_MatrixRedundancyRemove’:
+cddlp_f.c:2761:26: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean success=ddf_FALSE, localdebug=ddf_FALSE;
+                          ^
+cddlp_f.c:2755:22: warning: variable ‘m1’ set but not used [-Wunused-but-set-variable]
+   ddf_rowrange i,k,m,m1;
+                      ^
+cddlp_f.c: In function ‘ddf_SRedundant’:
+cddlp_f.c:2911:24: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean answer=ddf_FALSE,localdebug=ddf_FALSE;
+                        ^
+cddlp_f.c: In function ‘ddf_SRedundantRows’:
+cddlp_f.c:3003:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddlp_f.c: In function ‘ddf_RedundantRowsViaShooting’:
+cddlp_f.c:3056:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddlp_f.c: In function ‘ddf_ImplicitLinearity’:
+cddlp_f.c:3271:24: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean answer=ddf_FALSE,localdebug=ddf_FALSE;
+                        ^
+cddlp_f.c: In function ‘ddf_FreeOfImplicitLinearity’:
+cddlp_f.c:3355:16: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   int answer=0,localdebug=ddf_FALSE;
+                ^
+cddlp_f.c: In function ‘ddf_ImplicitLinearityRows’:
+cddlp_f.c:3456:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddlp_f.c:3455:7: warning: variable ‘foi’ set but not used [-Wunused-but-set-variable]
+   int foi;
+       ^
+cddlp_f.c: In function ‘ddf_MatrixCanonicalizeLinearity’:
+cddlp_f.c:3507:16: warning: variable ‘rank’ set but not used [-Wunused-but-set-variable]
+   ddf_rowrange rank;
+                ^
+cddlp_f.c: In function ‘ddf_FindRelativeInterior’:
+cddlp_f.c:3694:16: warning: variable ‘rank’ set but not used [-Wunused-but-set-variable]
+   ddf_colrange rank;
+                ^
+cddlp_f.c: In function ‘ddf_RayShooting’:
+cddlp_f.c:3732:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c cddmp.c -o cddmp.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c cddmp_f.c -o cddmp_f.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c cddlp.c -o cddlp.o
+cddlp.c: In function ‘dd_Matrix2LP’:
+cddlp.c:160:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddlp.c: In function ‘dd_Matrix2Feasibility2’:
+cddlp.c:258:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddlp.c: In function ‘dd_GetRedundancyInformation’:
+cddlp.c:520:20: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean red=dd_FALSE,localdebug=dd_FALSE;
+                    ^
+cddlp.c: In function ‘dd_SelectDualSimplexPivot’:
+cddlp.c:558:20: warning: unused variable ‘localdebug’ [-Wunused-variable]
+     dualfeasible=dd_TRUE,localdebug=dd_FALSE;
+                    ^
+cddlp.c: In function ‘dd_SelectPivot2’:
+cddlp.c:722:14: warning: variable ‘localdebug’ set but not used [-Wunused-but-set-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddlp.c: In function ‘dd_GaussianColumnPivot2’:
+cddlp.c:821:7: warning: variable ‘localdebug’ set but not used [-Wunused-but-set-variable]
+   int localdebug=dd_FALSE;
+       ^
+cddlp.c: In function ‘dd_FindLPBasis2’:
+cddlp.c:1117:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddlp.c: In function ‘dd_FindDualFeasibleBasis’:
+cddlp.c:1209:14: warning: variable ‘localdebug’ set but not used [-Wunused-but-set-variable]
+   dd_boolean localdebug=dd_FALSE,chosen,stop;
+              ^
+cddlp.c: In function ‘dd_DualSimplexMaximize’:
+cddlp.c:1473:41: warning: variable ‘redgain’ set but not used [-Wunused-but-set-variable]
+   double redpercent=0,redpercent_prev=0,redgain=0;
+                                         ^
+cddlp.c:1457:27: warning: unused variable ‘localdebug1’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE,localdebug1=dd_FALSE;
+                           ^
+cddlp.c:1457:14: warning: variable ‘localdebug’ set but not used [-Wunused-but-set-variable]
+   dd_boolean localdebug=dd_FALSE,localdebug1=dd_FALSE;
+              ^
+cddlp.c: In function ‘dd_SetSolutions’:
+cddlp.c:1748:7: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   int localdebug=dd_FALSE;
+       ^
+cddlp.c: In function ‘dd_RandomPermutation2’:
+cddlp.c:1837:7: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   int localdebug=dd_FALSE;
+       ^
+cddlp.c:1836:17: warning: unused variable ‘rand_max’ [-Wunused-variable]
+   double u,xk,r,rand_max=(double) RAND_MAX;
+                 ^
+cddlp.c:1836:15: warning: unused variable ‘r’ [-Wunused-variable]
+   double u,xk,r,rand_max=(double) RAND_MAX;
+               ^
+cddlp.c: In function ‘dd_LPgmp2LPf’:
+cddlp.c:1937:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddlp.c: In function ‘dd_LPSolve’:
+cddlp.c:1978:14: warning: variable ‘localdebug’ set but not used [-Wunused-but-set-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddlp.c: In function ‘dd_MakeLPforInteriorFinding’:
+cddlp.c:2105:7: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   int localdebug=dd_FALSE;
+       ^
+cddlp.c: In function ‘dd_CreateLP_H_ImplicitLinearity’:
+cddlp.c:2266:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddlp.c: In function ‘dd_CreateLP_V_ImplicitLinearity’:
+cddlp.c:2318:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddlp.c: In function ‘dd_CreateLP_H_Redundancy’:
+cddlp.c:2376:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddlp.c: In function ‘dd_CreateLP_V_Redundancy’:
+cddlp.c:2423:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddlp.c: In function ‘dd_CreateLP_V_SRedundancy’:
+cddlp.c:2494:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddlp.c: In function ‘dd_Redundant’:
+cddlp.c:2584:23: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean answer=dd_FALSE,localdebug=dd_FALSE;
+                       ^
+cddlp.c: In function ‘dd_RedundantExtensive’:
+cddlp.c:2646:23: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean answer=dd_FALSE,localdebug=dd_FALSE;
+                       ^
+cddlp.c: In function ‘dd_RedundantRows’:
+cddlp.c:2712:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddlp.c: In function ‘dd_MatrixRedundancyRemove’:
+cddlp.c:2757:25: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean success=dd_FALSE, localdebug=dd_FALSE;
+                         ^
+cddlp.c:2751:21: warning: variable ‘m1’ set but not used [-Wunused-but-set-variable]
+   dd_rowrange i,k,m,m1;
+                     ^
+cddlp.c: In function ‘dd_SRedundant’:
+cddlp.c:2907:23: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean answer=dd_FALSE,localdebug=dd_FALSE;
+                       ^
+cddlp.c: In function ‘dd_SRedundantRows’:
+cddlp.c:2999:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddlp.c: In function ‘dd_RedundantRowsViaShooting’:
+cddlp.c:3052:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddlp.c: In function ‘dd_ImplicitLinearity’:
+cddlp.c:3267:23: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean answer=dd_FALSE,localdebug=dd_FALSE;
+                       ^
+cddlp.c: In function ‘dd_FreeOfImplicitLinearity’:
+cddlp.c:3351:16: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   int answer=0,localdebug=dd_FALSE;
+                ^
+cddlp.c: In function ‘dd_ImplicitLinearityRows’:
+cddlp.c:3452:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddlp.c:3451:7: warning: variable ‘foi’ set but not used [-Wunused-but-set-variable]
+   int foi;
+       ^
+cddlp.c: In function ‘dd_MatrixCanonicalizeLinearity’:
+cddlp.c:3505:15: warning: variable ‘rank’ set but not used [-Wunused-but-set-variable]
+   dd_rowrange rank;
+               ^
+cddlp.c: In function ‘dd_FindRelativeInterior’:
+cddlp.c:3692:15: warning: variable ‘rank’ set but not used [-Wunused-but-set-variable]
+   dd_colrange rank;
+               ^
+cddlp.c: In function ‘dd_RayShooting’:
+cddlp.c:3730:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddlp.c: In function ‘dd_BasisStatusMaximize’:
+cddlp.c:3835:14: warning: variable ‘localdebug’ set but not used [-Wunused-but-set-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddlp.c:3825:16: warning: variable ‘pivots1’ set but not used [-Wunused-but-set-variable]
+   long pivots0,pivots1,fbasisrank;
+                ^
+cddlp.c: In function ‘dd_BasisStatusMinimize’:
+cddlp.c:4025:9: warning: comparison between ‘ddf_LPStatusType {aka enum <anonymous>}’ and ‘enum <anonymous>’ [-Wenum-compare]
+  if (LPS!=dd_Inconsistent) {
+         ^
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c cddproj_f.c -o cddproj_f.o
+cddproj_f.c: In function ‘ddf_BlockElimination’:
+cddproj_f.c:44:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+cddproj_f.c: In function ‘ddf_FourierElimination’:
+cddproj_f.c:137:15: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   ddf_boolean localdebug=ddf_FALSE;
+               ^
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c cddproj.c -o cddproj.o
+cddproj.c: In function ‘dd_BlockElimination’:
+cddproj.c:43:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+cddproj.c: In function ‘dd_FourierElimination’:
+cddproj.c:136:14: warning: unused variable ‘localdebug’ [-Wunused-variable]
+   dd_boolean localdebug=dd_FALSE;
+              ^
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c die.c -o die.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c d2q.c -o d2q.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c init.c -o init.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c linearity.c -o linearity.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c linearity_f.c -o linearity_f.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c lpcdd.c -o lpcdd.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c lpcdd_f.c -o lpcdd_f.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c my_unif_rand.c -o my_unif_rand.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c mycddio_f.c -o mycddio_f.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c mycddio.c -o mycddio.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c q2d.c -o q2d.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c q2q.c -o q2q.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c nonred.c -o nonred.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c qmin.c -o qmin.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c qmatmult.c -o qmatmult.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c qo.c -o qo.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c qoq.c -o qoq.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c qsign.c -o qsign.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c qsump.c -o qsump.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c redund.c -o redund.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c redund_f.c -o redund_f.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c scdd.c -o scdd.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c scdd_f.c -o scdd_f.o
+ccache gcc -I/usr/share/R/include -DNDEBUG -DGMPRATIONAL    -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c setoper.c -o setoper.o
+ccache gcc -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o rcdd.so allfaces.o allfaces_f.o cddcore.o cddcore_f.o cddio.o cddio_f.o cddlib.o cddlib_f.o cddlp.o cddlp_f.o cddmp.o cddmp_f.o cddproj.o cddproj_f.o d2q.o die.o init.o linearity.o linearity_f.o lpcdd.o lpcdd_f.o my_unif_rand.o mycddio.o mycddio_f.o nonred.o q2d.o q2q.o qmatmult.o qmin.o qo.o qoq.o qsign.o qsump.o redund.o redund_f.o scdd.o scdd_f.o setoper.o -lgmp -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/rcdd/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (rcdd)
+* installing *source* package ‘sdcMicro’ ...
+** package ‘sdcMicro’ successfully unpacked and MD5 sums checked
+** libs
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c 0Main.cpp -o 0Main.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c calcSuppInds.cpp -o calcSuppInds.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c init.c -o init.o
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c sdcMicro.c -o sdcMicro.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c gowerD.cpp -o gowerD.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o sdcMicro.so 0Main.o RcppExports.o calcSuppInds.o gowerD.o init.o sdcMicro.o -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/sdcMicro/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (sdcMicro)
+* installing *source* package ‘StereoMorph’ ...
+** package ‘StereoMorph’ successfully unpacked and MD5 sums checked
+** libs
+ccache gcc -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c StereoMorph_init.c -o StereoMorph_init.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c dilateImage.cpp -o dilateImage.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c RcppExports.cpp -o RcppExports.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c drawRectangle.cpp -o drawRectangle.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c equalizeImageHist.cpp -o equalizeImageHist.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c erodeImage.cpp -o erodeImage.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c findCornerSubPix.cpp -o findCornerSubPix.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c generateQuads.cpp -o generateQuads.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c meanBlurImage.cpp -o meanBlurImage.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c findBoundaryPoints.cpp -o findBoundaryPoints.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c rgbToGray.cpp -o rgbToGray.o
+ccache g++ -I/usr/share/R/include -DNDEBUG   -I"/usr/local/lib/R/site-library/Rcpp/include"   -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c thresholdImageMatrix.cpp -o thresholdImageMatrix.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o StereoMorph.so RcppExports.o StereoMorph_init.o dilateImage.o drawRectangle.o equalizeImageHist.o erodeImage.o findBoundaryPoints.o findCornerSubPix.o generateQuads.o meanBlurImage.o rgbToGray.o thresholdImageMatrix.o -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/StereoMorph/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (StereoMorph)
+* installing *source* package ‘WhopGenome’ ...
+** package ‘WhopGenome’ successfully unpacked and MD5 sums checked
+** libs
+ccache g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c w_vcf.cpp -o w_vcf.o
+ccache g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c t_main.cpp -o t_main.o
+ccache g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c faidx_ifc.cpp -o faidx_ifc.o
+ccache g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c w_snpmat_diplo.cpp -o w_snpmat_diplo.o
+ccache g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c w_snpmat_int.cpp -o w_snpmat_int.o
+ccache g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c w_snpmat_str.cpp -o w_snpmat_str.o
+ccache g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c w_snpmat_fnc.cpp -o w_snpmat_fnc.o
+ccache g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c w_filtering.cpp -o w_filtering.o
+ccache g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c w_read.cpp -o w_read.o
+ccache g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c w_rsupport.cpp -o w_rsupport.o
+ccache g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c w_tools.cpp -o w_tools.o
+ccache g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c w_dataframe.cpp -o w_dataframe.o
+ccache g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c w_main.cpp -o w_main.o
+ccache g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c w_codemat.cpp -o w_codemat.o
+ccache g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c w_samples.cpp -o w_samples.o
+ccache g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c w_region.cpp -o w_region.o
+ccache g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c t_region.cpp -o t_region.o
+ccache g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c t_info.cpp -o t_info.o
+ccache g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c t_read.cpp -o t_read.o
+ccache g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c t_Rifc.cpp -o t_Rifc.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c tabix/bedidx.c -o tabix/bedidx.o
+ccache g++ -I/usr/share/R/include -DNDEBUG      -fpic  -g -O3 -Wall -pipe -Wno-unused -pedantic -c readdnapp.cpp -o readdnapp.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c tabix/bgzf.c -o tabix/bgzf.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c tabix/knetfile.c -o tabix/knetfile.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c tabix/kstring.c -o tabix/kstring.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c tabix/razf.c -o tabix/razf.o
+tabix/razf.c: In function ‘razf_flush’:
+tabix/razf.c:233:3: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+   write(rz->filedes, rz->outbuf, RZ_BUFFER_SIZE - rz->stream->avail_out);
+   ^
+tabix/razf.c:246:4: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+    write(rz->filedes, rz->outbuf, RZ_BUFFER_SIZE - rz->stream->avail_out);
+    ^
+tabix/razf.c: In function ‘_razf_write’:
+tabix/razf.c:213:3: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+   write(rz->filedes, rz->outbuf, RZ_BUFFER_SIZE - rz->stream->avail_out);
+   ^
+tabix/razf.c: In function ‘razf_open_r’:
+tabix/razf.c:432:3: warning: ignoring return value of ‘read’, declared with attribute warn_unused_result [-Wunused-result]
+   read(fd, &end, sizeof(int64_t));
+   ^
+tabix/razf.c:440:3: warning: ignoring return value of ‘read’, declared with attribute warn_unused_result [-Wunused-result]
+   read(fd, &end, sizeof(int64_t));
+   ^
+tabix/razf.c: In function ‘load_zindex’:
+tabix/razf.c:134:2: warning: ignoring return value of ‘read’, declared with attribute warn_unused_result [-Wunused-result]
+  read(fd, &rz->index->size, sizeof(int));
+  ^
+tabix/razf.c:143:2: warning: ignoring return value of ‘read’, declared with attribute warn_unused_result [-Wunused-result]
+  read(fd, rz->index->bin_offsets, sizeof(int64_t) * v32);
+  ^
+tabix/razf.c:149:2: warning: ignoring return value of ‘read’, declared with attribute warn_unused_result [-Wunused-result]
+  read(fd, rz->index->cell_offsets, sizeof(int) * rz->index->size);
+  ^
+tabix/razf.c: In function ‘razf_close’:
+tabix/razf.c:825:4: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+    write(rz->filedes, &rz->in, sizeof(int64_t));
+    ^
+tabix/razf.c:826:4: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+    write(rz->filedes, &rz->out, sizeof(int64_t));
+    ^
+tabix/razf.c:829:4: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+    write(rz->filedes, &v64, sizeof(int64_t));
+    ^
+tabix/razf.c:831:4: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+    write(rz->filedes, &v64, sizeof(int64_t));
+    ^
+tabix/razf.c: In function ‘razf_end_flush’:
+tabix/razf.c:270:4: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+    write(rz->filedes, rz->outbuf, RZ_BUFFER_SIZE - rz->stream->avail_out);
+    ^
+tabix/razf.c: In function ‘save_zindex’:
+tabix/razf.c:106:12: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+  if(is_be) write(fd, &rz->index->size, sizeof(int));
+            ^
+tabix/razf.c:109:3: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+   write(fd, &v32, sizeof(uint32_t));
+   ^
+tabix/razf.c:116:2: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+  write(fd, rz->index->bin_offsets, sizeof(int64_t) * v32);
+  ^
+tabix/razf.c:117:2: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+  write(fd, rz->index->cell_offsets, sizeof(int32_t) * rz->index->size);
+  ^
+ccache gcc -I/usr/share/R/include -DNDEBUG     -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c tabix/index.c -o tabix/index.o
+ccache gcc -I/usr/share/R/include -DNDEBUG     -fvisibility=hidden -fpic  -O3 -g0 -Wall -pipe -pedantic -std=gnu99 -I/usr/local/cuda/include -I/usr/share/R/include -c tabix/faidx.c -o tabix/faidx.o
+g++ -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o WhopGenome.so w_vcf.o t_main.o faidx_ifc.o w_snpmat_diplo.o w_snpmat_int.o w_snpmat_str.o w_snpmat_fnc.o w_filtering.o w_read.o w_rsupport.o w_tools.o w_dataframe.o w_codemat.o w_main.o w_region.o w_samples.o t_region.o t_info.o t_read.o t_Rifc.o readdnapp.o tabix/bedidx.o tabix/bgzf.o tabix/index.o tabix/knetfile.o tabix/kstring.o tabix/razf.o tabix/faidx.o -lz -L/usr/lib/R/lib -lR
+installing to /tmp/RcppDepends/lib/WhopGenome/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (WhopGenome)
+* installing *source* package ‘Zelig’ ...
+** package ‘Zelig’ successfully unpacked and MD5 sums checked
+** R
+** data
+** demo
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (Zelig)
+
+The downloaded source packages are in
+	‘/tmp/downloaded_packages’
+ [1] "acrt"                "ADMMnet"             "BacArena"            "BayesFactor"         "beanz"               "bigFastlm"           "bigstep"             "BigVAR"             
+ [9] "blackbox"            "bmlm"                "brainGraph"          "btf"                 "clere"               "CorReg"              "covafillr"           "Coxnet"             
+[17] "cpgen"               "Cyclops"             "DDRTree"             "DetMCD"              "DetR"                "dfpk"                "DiffNet"             "diffusr"            
+[25] "discretecdAlgorithm" "eggCounts"           "FastGP"              "FastHCS"             "FastPCS"             "FastRCS"             "fdapace"             "fdaPDE"             
+[33] "FIT"                 "flars"               "Funclustering"       "gaston"              "glmmsr"              "glmmTMB"             "gRain"               "gRbase"             
+[41] "hBayesDM"            "hts"                 "ICAOD"               "icenReg"             "iprior"              "ISOpureR"            "JSM"                 "kernDeepStackNet"   
+[49] "lme4"                "MADPop"              "MAINT.Data"          "MediaK"              "microclass"          "MPTinR"              "mrfDepth"            "nabor"              
+[57] "oapackage"           "oem"                 "OpenMx"              "perccal"             "plac"                "PReMiuM"             "ProbitSpatial"       "Rankcluster"        
+[65] "raptr"               "Rclusterpp"          "RcppNumerical"       "rEDM"                "rIsing"              "RNiftyReg"           "RobustGaSP"          "robustlmm"          
+[73] "rootWishart"         "rpf"                 "RSNPset"             "RSpectra"            "rstan"               "rstanarm"            "Rvcg"                "saturnin"           
+[81] "scvxclustr"          "SmartSVA"            "spaMM"               "sparseHessianFD"     "sparseLTSEigen"      "TDA"                 "TMB"                 "tmg"                
+[89] "trustOptim"          "valuer"              "walkr"              
+
+RESULT for acrt_1.0.1.tar.gz : success (1 of 91, 1 good, 0 bad) -- Now 09:30:30 This 22.6 sec, Avg 22.6 sec, exp. finish in 34 min at 10:04:28 on 14-Mar-2017
+
+RESULT for ADMMnet_0.1.tar.gz : success (2 of 91, 2 good, 0 bad) -- Now 09:31:02 This 32.6 sec, Avg 27.6 sec, exp. finish in 41 min at 10:12:00 on 14-Mar-2017
+
+RESULT for BacArena_1.5.1.tar.gz : success (3 of 91, 3 good, 0 bad) -- Now 09:32:37 This 94.9 sec, Avg 50.1 sec, exp. finish in 73.4 min at 10:46:03 on 14-Mar-2017
+
+RESULT for BayesFactor_0.9.12-2.tar.gz : success (4 of 91, 4 good, 0 bad) -- Now 09:33:53 This 76 sec, Avg 56.6 sec, exp. finish in 82 min at 10:55:53 on 14-Mar-2017
+
+RESULT for beanz_1.7.1.tar.gz : success (5 of 91, 5 good, 0 bad) -- Now 09:35:56 This 123.3 sec, Avg 69.9 sec, exp. finish in 100.2 min at 11:16:08 on 14-Mar-2017
+
+RESULT for bigFastlm_0.0.2.tar.gz : success (6 of 91, 6 good, 0 bad) -- Now 09:36:30 This 33.1 sec, Avg 63.8 sec, exp. finish in 90.3 min at 11:06:50 on 14-Mar-2017
+
+RESULT for bigstep_0.7.1.tar.gz : success (7 of 91, 7 good, 0 bad) -- Now 09:36:58 This 28.5 sec, Avg 58.7 sec, exp. finish in 82.2 min at 10:59:11 on 14-Mar-2017
+
+RESULT for BigVAR_1.0.1.tar.gz : success (8 of 91, 8 good, 0 bad) -- Now 09:37:35 This 37 sec, Avg 56 sec, exp. finish in 77.5 min at 10:55:04 on 14-Mar-2017
+
+RESULT for blackbox_1.0.18.tar.gz : success (9 of 91, 9 good, 0 bad) -- Now 09:38:22 This 47 sec, Avg 55 sec, exp. finish in 75.2 min at 10:53:33 on 14-Mar-2017
+
+RESULT for bmlm_1.2.10.tar.gz : success (10 of 91, 10 good, 0 bad) -- Now 09:39:34 This 71.5 sec, Avg 56.7 sec, exp. finish in 76.5 min at 10:56:03 on 14-Mar-2017
+
+RESULT for brainGraph_0.72.0.tar.gz : success (11 of 91, 11 good, 0 bad) -- Now 09:40:27 This 53.3 sec, Avg 56.4 sec, exp. finish in 75.1 min at 10:55:35 on 14-Mar-2017
+
+RESULT for btf_1.1.tar.gz : success (12 of 91, 12 good, 0 bad) -- Now 09:41:10 This 42.9 sec, Avg 55.2 sec, exp. finish in 72.7 min at 10:53:53 on 14-Mar-2017
+
+RESULT for clere_1.1.4.tar.gz : success (13 of 91, 13 good, 0 bad) -- Now 09:41:45 This 35.2 sec, Avg 53.7 sec, exp. finish in 69.8 min at 10:51:33 on 14-Mar-2017
+
+RESULT for CorReg_1.1.9.tar.gz : success (14 of 91, 14 good, 0 bad) -- Now 09:43:08 This 83.6 sec, Avg 55.8 sec, exp. finish in 71.6 min at 10:54:47 on 14-Mar-2017
+
+RESULT for covafillr_0.4.0.tar.gz : success (15 of 91, 15 good, 0 bad) -- Now 09:43:30 This 21.7 sec, Avg 53.5 sec, exp. finish in 67.8 min at 10:51:20 on 14-Mar-2017
+
+RESULT for Coxnet_0.2.tar.gz : success (16 of 91, 16 good, 0 bad) -- Now 09:44:07 This 37.1 sec, Avg 52.5 sec, exp. finish in 65.7 min at 10:49:46 on 14-Mar-2017
+
+RESULT for cpgen_0.1.tar.gz : success (17 of 91, 17 good, 0 bad) -- Now 09:44:58 This 50.6 sec, Avg 52.4 sec, exp. finish in 64.6 min at 10:49:36 on 14-Mar-2017
+
+RESULT for Cyclops_1.2.2.tar.gz : success (18 of 91, 18 good, 0 bad) -- Now 09:46:08 This 70.4 sec, Avg 53.4 sec, exp. finish in 65 min at 10:51:07 on 14-Mar-2017
+
+RESULT for DDRTree_0.1.4.tar.gz : success (19 of 91, 19 good, 0 bad) -- Now 09:46:51 This 43.1 sec, Avg 52.9 sec, exp. finish in 63.4 min at 10:50:18 on 14-Mar-2017
+
+RESULT for DetMCD_0.0.4.tar.gz : success (20 of 91, 20 good, 0 bad) -- Now 09:47:13 This 21.1 sec, Avg 51.3 sec, exp. finish in 60.7 min at 10:47:53 on 14-Mar-2017
+
+RESULT for DetR_0.0.4.tar.gz : success (21 of 91, 21 good, 0 bad) -- Now 09:47:42 This 29.9 sec, Avg 50.3 sec, exp. finish in 58.6 min at 10:46:21 on 14-Mar-2017
+
+RESULT for dfpk_2.1.0.tar.gz : success (22 of 91, 22 good, 0 bad) -- Now 09:49:16 This 93.7 sec, Avg 52.2 sec, exp. finish in 60.1 min at 10:49:20 on 14-Mar-2017
+
+RESULT for DiffNet_1.0-0.tar.gz : success (23 of 91, 23 good, 0 bad) -- Now 09:49:49 This 33.1 sec, Avg 51.4 sec, exp. finish in 58.3 min at 10:48:05 on 14-Mar-2017
+
+RESULT for diffusr_0.1.0.tar.gz : success (24 of 91, 24 good, 0 bad) -- Now 09:50:14 This 25 sec, Avg 50.3 sec, exp. finish in 56.2 min at 10:46:24 on 14-Mar-2017
+
+RESULT for discretecdAlgorithm_0.0.3.tar.gz : success (25 of 91, 25 good, 0 bad) -- Now 09:50:40 This 26 sec, Avg 49.3 sec, exp. finish in 54.3 min at 10:44:56 on 14-Mar-2017
+
+RESULT for eggCounts_1.3.tar.gz : success (26 of 91, 26 good, 0 bad) -- Now 09:52:23 This 102.7 sec, Avg 51.4 sec, exp. finish in 55.7 min at 10:48:02 on 14-Mar-2017
+
+RESULT for FastGP_1.2.tar.gz : success (27 of 91, 27 good, 0 bad) -- Now 09:52:44 This 21.2 sec, Avg 50.3 sec, exp. finish in 53.6 min at 10:46:21 on 14-Mar-2017
+
+RESULT for FastHCS_0.0.5.tar.gz : success (28 of 91, 28 good, 0 bad) -- Now 09:53:05 This 21.1 sec, Avg 49.2 sec, exp. finish in 51.7 min at 10:44:46 on 14-Mar-2017
+
+RESULT for FastPCS_0.1.2.tar.gz : success (29 of 91, 29 good, 0 bad) -- Now 09:53:22 This 16.7 sec, Avg 48.1 sec, exp. finish in 49.7 min at 10:43:04 on 14-Mar-2017
+
+RESULT for FastRCS_0.0.7.tar.gz : success (30 of 91, 30 good, 0 bad) -- Now 09:53:43 This 21.6 sec, Avg 47.2 sec, exp. finish in 48 min at 10:41:43 on 14-Mar-2017
+
+RESULT for fdapace_0.3.0.tar.gz : success (31 of 91, 31 good, 0 bad) -- Now 09:55:21 This 97.6 sec, Avg 48.8 sec, exp. finish in 48.8 min at 10:44:11 on 14-Mar-2017
+
+RESULT for fdaPDE_0.1-4.tar.gz : success (32 of 91, 32 good, 0 bad) -- Now 09:56:10 This 48.8 sec, Avg 48.8 sec, exp. finish in 48 min at 10:44:11 on 14-Mar-2017
+
+RESULT for FIT_0.0.4.tar.gz : success (33 of 91, 33 good, 0 bad) -- Now 09:56:38 This 28 sec, Avg 48.2 sec, exp. finish in 46.6 min at 10:43:14 on 14-Mar-2017
+
+RESULT for flars_1.0.tar.gz : success (34 of 91, 34 good, 0 bad) -- Now 09:57:22 This 44.7 sec, Avg 48.1 sec, exp. finish in 45.7 min at 10:43:04 on 14-Mar-2017
+
+RESULT for Funclustering_1.0.1.tar.gz : success (35 of 91, 35 good, 0 bad) -- Now 09:58:13 This 51 sec, Avg 48.2 sec, exp. finish in 45 min at 10:43:12 on 14-Mar-2017
+
+RESULT for gaston_1.4.9.tar.gz : success (36 of 91, 36 good, 0 bad) -- Now 10:01:04 This 170.2 sec, Avg 51.6 sec, exp. finish in 47.3 min at 10:48:20 on 14-Mar-2017
+
+RESULT for glmmsr_0.1.1.tar.gz : success (37 of 91, 37 good, 0 bad) -- Now 10:03:30 This 146.1 sec, Avg 54.1 sec, exp. finish in 48.7 min at 10:52:13 on 14-Mar-2017
+
+RESULT for glmmTMB_0.1.1.tar.gz : success (38 of 91, 38 good, 0 bad) -- Now 10:05:25 This 114.9 sec, Avg 55.7 sec, exp. finish in 49.2 min at 10:54:38 on 14-Mar-2017
+
+RESULT for gRain_1.3-0.tar.gz : success (39 of 91, 39 good, 0 bad) -- Now 10:06:12 This 47.5 sec, Avg 55.5 sec, exp. finish in 48.1 min at 10:54:19 on 14-Mar-2017
+
+RESULT for gRbase_1.8-1.tar.gz : success (40 of 91, 40 good, 0 bad) -- Now 10:07:32 This 79.7 sec, Avg 56.1 sec, exp. finish in 47.7 min at 10:55:14 on 14-Mar-2017
+
+RESULT for hBayesDM_0.3.0.tar.gz : success (41 of 91, 41 good, 0 bad) -- Now 10:13:10 This 338.4 sec, Avg 63 sec, exp. finish in 52.5 min at 11:05:41 on 14-Mar-2017
+
+RESULT for hts_5.0.tar.gz : success (42 of 91, 42 good, 0 bad) -- Now 10:13:51 This 40.3 sec, Avg 62.5 sec, exp. finish in 51 min at 11:04:51 on 14-Mar-2017
+
+RESULT for ICAOD_0.9.2.tar.gz : success (43 of 91, 43 good, 0 bad) -- Now 10:14:35 This 44.1 sec, Avg 62 sec, exp. finish in 49.6 min at 11:04:13 on 14-Mar-2017
+trying URL 'http://cran.rstudio.com/src/contrib/icenReg_1.3.6.tar.gz'
+Content type 'application/x-gzip' length 321298 bytes (313 KB)
+==================================================
+downloaded 313 KB
+
+Downloaded  icenReg_1.3.6.tar.gz 
+
+RESULT for icenReg_1.3.6.tar.gz : success (44 of 91, 44 good, 0 bad) -- Now 10:41:21 This 1606 sec, Avg 97.1 sec, exp. finish in 76.1 min at 11:57:26 on 14-Mar-2017
+
+RESULT for iprior_0.6.4.tar.gz : success (45 of 91, 45 good, 0 bad) -- Now 10:42:01 This 40 sec, Avg 95.9 sec, exp. finish in 73.5 min at 11:55:30 on 14-Mar-2017
+
+RESULT for ISOpureR_1.0.21.tar.gz : success (46 of 91, 46 good, 0 bad) -- Now 10:42:20 This 19.5 sec, Avg 94.2 sec, exp. finish in 70.7 min at 11:52:59 on 14-Mar-2017
+
+RESULT for JSM_0.1.0.tar.gz : success (47 of 91, 47 good, 0 bad) -- Now 10:44:30 This 129.5 sec, Avg 95 sec, exp. finish in 69.6 min at 11:54:08 on 14-Mar-2017
+
+RESULT for kernDeepStackNet_2.0.1.tar.gz : success (48 of 91, 48 good, 0 bad) -- Now 10:45:36 This 66.4 sec, Avg 94.4 sec, exp. finish in 67.6 min at 11:53:13 on 14-Mar-2017
+
+RESULT for lme4_1.1-12.tar.gz : success (49 of 91, 49 good, 0 bad) -- Now 10:50:05 This 268.9 sec, Avg 97.9 sec, exp. finish in 68.5 min at 11:58:38 on 14-Mar-2017
+
+RESULT for MADPop_1.1.tar.gz : success (50 of 91, 50 good, 0 bad) -- Now 10:51:04 This 58.7 sec, Avg 97.1 sec, exp. finish in 66.4 min at 11:57:26 on 14-Mar-2017
+
+RESULT for MAINT.Data_1.0.1.tar.gz : success (51 of 91, 51 good, 0 bad) -- Now 10:51:53 This 49.7 sec, Avg 96.2 sec, exp. finish in 64.1 min at 11:56:02 on 14-Mar-2017
+
+RESULT for MediaK_1.0.tar.gz : success (52 of 91, 52 good, 0 bad) -- Now 10:52:08 This 14.6 sec, Avg 94.6 sec, exp. finish in 61.5 min at 11:53:39 on 14-Mar-2017
+
+RESULT for microclass_1.1.tar.gz : success (53 of 91, 53 good, 0 bad) -- Now 10:52:35 This 26.7 sec, Avg 93.4 sec, exp. finish in 59.1 min at 11:51:42 on 14-Mar-2017
+
+RESULT for MPTinR_1.10.3.tar.gz : success (54 of 91, 54 good, 0 bad) -- Now 10:53:11 This 36.1 sec, Avg 92.3 sec, exp. finish in 56.9 min at 11:50:06 on 14-Mar-2017
+
+RESULT for mrfDepth_1.0.2.tar.gz : success (55 of 91, 55 good, 0 bad) -- Now 10:53:53 This 42.1 sec, Avg 91.4 sec, exp. finish in 54.8 min at 11:48:43 on 14-Mar-2017
+
+RESULT for nabor_0.4.6.tar.gz : success (56 of 91, 56 good, 0 bad) -- Now 10:54:17 This 24.4 sec, Avg 90.2 sec, exp. finish in 52.6 min at 11:46:54 on 14-Mar-2017
+
+RESULT for oapackage_2.0.23.tar.gz : success (57 of 91, 57 good, 0 bad) -- Now 10:54:44 This 26.3 sec, Avg 89.1 sec, exp. finish in 50.5 min at 11:45:12 on 14-Mar-2017
+
+RESULT for oem_2.0.4.tar.gz : success (58 of 91, 58 good, 0 bad) -- Now 10:56:14 This 90.7 sec, Avg 89.1 sec, exp. finish in 49 min at 11:45:14 on 14-Mar-2017
+
+RESULT for OpenMx_2.7.4.tar.gz : success (59 of 91, 59 good, 0 bad) -- Now 11:00:04 This 229.8 sec, Avg 91.5 sec, exp. finish in 48.8 min at 11:48:51 on 14-Mar-2017
+
+RESULT for perccal_1.0.tar.gz : success (60 of 91, 60 good, 0 bad) -- Now 11:00:23 This 18.7 sec, Avg 90.3 sec, exp. finish in 46.6 min at 11:47:01 on 14-Mar-2017
+
+RESULT for plac_0.1.1.tar.gz : success (61 of 91, 61 good, 0 bad) -- Now 11:01:09 This 46.6 sec, Avg 89.5 sec, exp. finish in 44.8 min at 11:45:56 on 14-Mar-2017
+
+RESULT for PReMiuM_3.1.4.tar.gz : success (62 of 91, 62 good, 0 bad) -- Now 11:01:51 This 41.2 sec, Avg 88.8 sec, exp. finish in 42.9 min at 11:44:45 on 14-Mar-2017
+
+RESULT for ProbitSpatial_1.0.tar.gz : success (63 of 91, 63 good, 0 bad) -- Now 11:02:43 This 52.8 sec, Avg 88.2 sec, exp. finish in 41.2 min at 11:43:53 on 14-Mar-2017
+
+RESULT for Rankcluster_0.94.tar.gz : success (64 of 91, 64 good, 0 bad) -- Now 11:03:09 This 25.4 sec, Avg 87.2 sec, exp. finish in 39.2 min at 11:42:24 on 14-Mar-2017
+
+RESULT for raptr_0.0.3.tar.gz : success (65 of 91, 65 good, 0 bad) -- Now 11:05:38 This 149.1 sec, Avg 88.2 sec, exp. finish in 38.2 min at 11:43:50 on 14-Mar-2017
+
+RESULT for Rclusterpp_0.2.3.tar.gz : success (66 of 91, 66 good, 0 bad) -- Now 11:06:11 This 32.7 sec, Avg 87.3 sec, exp. finish in 36.4 min at 11:42:34 on 14-Mar-2017
+
+RESULT for RcppNumerical_0.3-1.tar.gz : success (67 of 91, 67 good, 0 bad) -- Now 11:06:30 This 19.6 sec, Avg 86.3 sec, exp. finish in 34.5 min at 11:41:02 on 14-Mar-2017
+
+RESULT for rEDM_0.5.4.tar.gz : success (68 of 91, 68 good, 0 bad) -- Now 11:07:10 This 39.4 sec, Avg 85.6 sec, exp. finish in 32.8 min at 11:39:59 on 14-Mar-2017
+
+RESULT for rIsing_0.1.0.tar.gz : success (69 of 91, 69 good, 0 bad) -- Now 11:07:29 This 19.6 sec, Avg 84.7 sec, exp. finish in 31 min at 11:38:32 on 14-Mar-2017
+
+RESULT for RNiftyReg_2.5.0.tar.gz : success (70 of 91, 70 good, 0 bad) -- Now 11:09:15 This 106.3 sec, Avg 85 sec, exp. finish in 29.7 min at 11:39:00 on 14-Mar-2017
+
+RESULT for RobustGaSP_0.5.3.tar.gz : success (71 of 91, 71 good, 0 bad) -- Now 11:09:40 This 24.4 sec, Avg 84.1 sec, exp. finish in 28 min at 11:37:42 on 14-Mar-2017
+
+RESULT for robustlmm_2.1-2.tar.gz : success (72 of 91, 72 good, 0 bad) -- Now 11:10:51 This 71 sec, Avg 83.9 sec, exp. finish in 26.6 min at 11:37:26 on 14-Mar-2017
+
+RESULT for rootWishart_0.3.0.tar.gz : success (73 of 91, 73 good, 0 bad) -- Now 11:11:25 This 34.3 sec, Avg 83.3 sec, exp. finish in 25 min at 11:36:24 on 14-Mar-2017
+
+RESULT for rpf_0.53.tar.gz : success (74 of 91, 74 good, 0 bad) -- Now 11:11:51 This 25.6 sec, Avg 82.5 sec, exp. finish in 23.4 min at 11:35:13 on 14-Mar-2017
+
+RESULT for RSNPset_0.5.2.tar.gz : success (75 of 91, 75 good, 0 bad) -- Now 11:12:20 This 29.5 sec, Avg 81.8 sec, exp. finish in 21.8 min at 11:34:08 on 14-Mar-2017
+
+RESULT for RSpectra_0.12-0.tar.gz : success (76 of 91, 76 good, 0 bad) -- Now 11:13:19 This 59.4 sec, Avg 81.5 sec, exp. finish in 20.4 min at 11:33:42 on 14-Mar-2017
+
+RESULT for rstan_2.14.1.tar.gz : success (77 of 91, 77 good, 0 bad) -- Now 11:16:40 This 200.3 sec, Avg 83 sec, exp. finish in 19.4 min at 11:36:02 on 14-Mar-2017
+
+RESULT for rstanarm_2.14.1.tar.gz : success (78 of 91, 78 good, 0 bad) -- Now 11:23:31 This 411.4 sec, Avg 87.2 sec, exp. finish in 18.9 min at 11:42:25 on 14-Mar-2017
+
+RESULT for Rvcg_0.15.tar.gz : success (79 of 91, 79 good, 0 bad) -- Now 11:25:39 This 128.1 sec, Avg 87.8 sec, exp. finish in 17.6 min at 11:43:12 on 14-Mar-2017
+
+RESULT for saturnin_1.1.1.tar.gz : success (80 of 91, 80 good, 0 bad) -- Now 11:26:00 This 20.9 sec, Avg 86.9 sec, exp. finish in 15.9 min at 11:41:56 on 14-Mar-2017
+
+RESULT for scvxclustr_0.1.tar.gz : success (81 of 91, 81 good, 0 bad) -- Now 11:26:32 This 32.1 sec, Avg 86.2 sec, exp. finish in 14.4 min at 11:40:55 on 14-Mar-2017
+
+RESULT for SmartSVA_0.1.1.tar.gz : success (82 of 91, 82 good, 0 bad) -- Now 11:27:36 This 63.6 sec, Avg 86 sec, exp. finish in 12.9 min at 11:40:30 on 14-Mar-2017
+
+RESULT for spaMM_1.10.0.tar.gz : success (83 of 91, 83 good, 0 bad) -- Now 11:28:54 This 77.6 sec, Avg 85.9 sec, exp. finish in 11.4 min at 11:40:21 on 14-Mar-2017
+
+RESULT for sparseHessianFD_0.3.2.tar.gz : success (84 of 91, 84 good, 0 bad) -- Now 11:29:29 This 35.8 sec, Avg 85.3 sec, exp. finish in 9.9 min at 11:39:26 on 14-Mar-2017
+
+RESULT for sparseLTSEigen_0.2.0.tar.gz : success (85 of 91, 85 good, 0 bad) -- Now 11:30:08 This 38.3 sec, Avg 84.7 sec, exp. finish in 8.5 min at 11:38:36 on 14-Mar-2017
+
+RESULT for TDA_1.5.tar.gz : success (86 of 91, 86 good, 0 bad) -- Now 11:31:16 This 68.5 sec, Avg 84.5 sec, exp. finish in 7 min at 11:38:19 on 14-Mar-2017
+
+RESULT for TMB_1.7.8.tar.gz : success (87 of 91, 87 good, 0 bad) -- Now 11:32:06 This 49.9 sec, Avg 84.1 sec, exp. finish in 5.6 min at 11:37:43 on 14-Mar-2017
+
+RESULT for tmg_0.3.tar.gz : success (88 of 91, 88 good, 0 bad) -- Now 11:32:23 This 16.6 sec, Avg 83.4 sec, exp. finish in 4.2 min at 11:36:33 on 14-Mar-2017
+
+RESULT for trustOptim_0.8.5.tar.gz : success (89 of 91, 89 good, 0 bad) -- Now 11:32:59 This 36.1 sec, Avg 82.8 sec, exp. finish in 2.8 min at 11:35:44 on 14-Mar-2017
+
+RESULT for valuer_1.1.1.tar.gz : success (90 of 91, 90 good, 0 bad) -- Now 11:34:02 This 63.6 sec, Avg 82.6 sec, exp. finish in 1.4 min at 11:35:25 on 14-Mar-2017
+
+RESULT for walkr_0.3.4.tar.gz : success (91 of 91, 91 good, 0 bad) -- Now 11:34:46 This 44 sec, Avg 82.2 sec, exp. finish in 0 min at 11:34:46 on 14-Mar-2017
+                   pkg res
+1                 acrt   0
+2              ADMMnet   0
+3             BacArena   0
+4          BayesFactor   0
+5                beanz   0
+6            bigFastlm   0
+7              bigstep   0
+8               BigVAR   0
+9             blackbox   0
+10                bmlm   0
+11          brainGraph   0
+12                 btf   0
+13               clere   0
+14              CorReg   0
+15           covafillr   0
+16              Coxnet   0
+17               cpgen   0
+18             Cyclops   0
+19             DDRTree   0
+20              DetMCD   0
+21                DetR   0
+22                dfpk   0
+23             DiffNet   0
+24             diffusr   0
+25 discretecdAlgorithm   0
+26           eggCounts   0
+27              FastGP   0
+28             FastHCS   0
+29             FastPCS   0
+30             FastRCS   0
+31             fdapace   0
+32              fdaPDE   0
+33                 FIT   0
+34               flars   0
+35       Funclustering   0
+36              gaston   0
+37              glmmsr   0
+38             glmmTMB   0
+39               gRain   0
+40              gRbase   0
+41            hBayesDM   0
+42                 hts   0
+43               ICAOD   0
+44             icenReg   0
+45              iprior   0
+46            ISOpureR   0
+47                 JSM   0
+48    kernDeepStackNet   0
+49                lme4   0
+50              MADPop   0
+51          MAINT.Data   0
+52              MediaK   0
+53          microclass   0
+54              MPTinR   0
+55            mrfDepth   0
+56               nabor   0
+57           oapackage   0
+58                 oem   0
+59              OpenMx   0
+60             perccal   0
+61                plac   0
+62             PReMiuM   0
+63       ProbitSpatial   0
+64         Rankcluster   0
+65               raptr   0
+66          Rclusterpp   0
+67       RcppNumerical   0
+68                rEDM   0
+69              rIsing   0
+70           RNiftyReg   0
+71          RobustGaSP   0
+72           robustlmm   0
+73         rootWishart   0
+74                 rpf   0
+75             RSNPset   0
+76            RSpectra   0
+77               rstan   0
+78            rstanarm   0
+79                Rvcg   0
+80            saturnin   0
+81          scvxclustr   0
+82            SmartSVA   0
+83               spaMM   0
+84     sparseHessianFD   0
+85      sparseLTSEigen   0
+86                 TDA   0
+87                 TMB   0
+88                 tmg   0
+89          trustOptim   0
+90              valuer   0
+91               walkr   0
+
+ 0 
+91 
+character(0)
+Ended at  2017-03-14 11:34:46.948824 
+Warning message:
+In install.packages(p, lib = loclib, quiet = TRUE, verbose = FALSE,  :
+  installation of package ‘icenReg’ had non-zero exit status
