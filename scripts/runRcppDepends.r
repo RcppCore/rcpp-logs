@@ -38,37 +38,40 @@ update.packages(lib.loc="lib/", ask=FALSE)
 
 IP <- installed.packages(lib.loc=loclib)
 AP <- available.packages(contrib.url(r["CRAN"]),filter=list())	# available package at CRAN
-rcppset <- sort(unname(AP[unique(c(grep("Rcpp", as.character(AP[,"Depends"])),
-                                   grep("Rcpp", as.character(AP[,"LinkingTo"])),
-                                   grep("Rcpp", as.character(AP[,"Imports"])))),"Package"]))
+rcppsetOrig <- sort(unname(AP[unique(c(grep("Rcpp", as.character(AP[,"Depends"])),
+                                       grep("Rcpp", as.character(AP[,"LinkingTo"])),
+                                       grep("Rcpp", as.character(AP[,"Imports"])))),"Package"]))
+rcppset <- tools::dependsOnPkgs(pkg, recursive=FALSE, installed=AP)
 
-exclset <- c("cqrReg",          # requires Rmosek which require Mosek which is commercial
-             "LANDD",		# requires GOstats GOSemSim
-             "mapview",		# requires rgdal
-             "miceadds",        # requires jomo which requires Rmosek
-             "gpuR",            # CUDA
-             #"rags2ridges",     # sometimes takes very long
-             "RStoolbox",	# requires rgdal
-             "satellite", 	# requires rgdal
-             "stplanr",		# requires rgdal
-             "WideLM",          # CUDA (currently off CRAN anyway)
-             "icenReg",         # RcppEigen, not Rcpp
-             "sf",              # requires (more recent) gdal
-             "nanotime",	# RcppCCTZ
-             "BETS", 		# "Imports: Rcpp" but doesn't use it
-             "climwin", 	# RcppRoll
-             "flippant",	# RcppRoll
-              "configr"         # RcppTOML
-             )
+## exclset <- c("cqrReg",          # requires Rmosek which require Mosek which is commercial
+##              "LANDD",		# requires GOstats GOSemSim
+##              "mapview",		# requires rgdal
+##              "miceadds",        # requires jomo which requires Rmosek
+##              "gpuR",            # CUDA
+##              #"rags2ridges",     # sometimes takes very long
+##              "RStoolbox",	# requires rgdal
+##              "satellite", 	# requires rgdal
+##              "stplanr",		# requires rgdal
+##              "WideLM",          # CUDA (currently off CRAN anyway)
+##              "icenReg",         # RcppEigen, not Rcpp
+##              "sf",              # requires (more recent) gdal
+##              "nanotime",	# RcppCCTZ
+##              "BETS", 		# "Imports: Rcpp" but doesn't use it
+##              "climwin", 	# RcppRoll
+##              "flippant",	# RcppRoll
+##               "configr"         # RcppTOML
+##              )
 
-rcppset <- rcppset[ ! rcppset %in% exclset ]
+exclfile <- "data/blacklist.csv"
+exclset <- if (file.exists(exclfile) read.csv(exclfile, stringsAsFactors=FALSE)[,1] else character(0)
 
+#rcppset <- rcppset[ ! rcppset %in% exclset ]
 #if (grep("transnet", rcppset)) {        ## not really an Rcpp user
 #    rcppset <- rcppset[ ! grepl("transnet", rcppset) ]
 #}
-if (grep("BioGeoBEARS", rcppset)) {     ## indirect match, no need to test
-    rcppset <- rcppset[ ! grepl("BioGeoBEARS", rcppset) ]
-}
+#if (grep("BioGeoBEARS", rcppset)) {     ## indirect match, no need to test
+#    rcppset <- rcppset[ ! grepl("BioGeoBEARS", rcppset) ]
+#}
 #if (grep("quadrupen", rcppset)) {       ## takes hours, skipping
 #    rcppset <- rcppset[ ! grepl("quadrupen", rcppset) ]
 #}
@@ -86,7 +89,7 @@ if (grep("BioGeoBEARS", rcppset)) {     ## indirect match, no need to test
 print(rcppset)
 
 res <- data.frame(pkg=rcppset, res=NA, stringsAsFactors=FALSE)
-good <- bad <- 0
+good <- bad <- skipped <- 0
 n <- nrow(res)
 starttime <- Sys.time()
 
@@ -112,10 +115,21 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     p <- rcppset[pi]
     i <- which(AP[,"Package"]==p)
     pkg <- paste(AP[i,"Package"], "_", AP[i,"Version"], ".tar.gz", sep="")
+
+    thisstart <- Sys.time()
+
+    if (p %in% exclset) {
+        skipped <<- skipped + 1
+        cat(sprintf("RESULT for %s : %s (%d of %d, %d good, %d bad, %d skipped) -- %s\n",
+                    pkg, "skipped", pi, n, good, bad, skipped,
+                    remtime(good+bad, n, starttime, thisstart)))
+        res[pi, "res"] <- 2
+        return(res[pi, ])
+    }
+
     #print(pkg)
     pathpkg <- paste(AP[i,"Repository"], "/", pkg, sep="")
 
-    thisstart <- Sys.time()
     ipidx <- which(IP[,"Package"] == p)
     if ((length(ipidx) == 0) || (IP[ipidx,"Version"] != AP[i,"Version"])) {
         #cat("Installing Dependencies\n")
@@ -147,8 +161,8 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     } else {
         bad <<- bad + 1
     }
-    cat(sprintf("\nRESULT for %s : %s (%d of %d, %d good, %d bad) -- %s\n",
-                pkg, if (rc==0) "success" else "failure", pi, n, good, bad,
+    cat(sprintf("RESULT for %s : %s (%d of %d, %d good, %d bad, %d skipped) -- %s\n",
+                pkg, if (rc==0) "success" else "failure", pi, n, good, bad, skipped,
                 remtime(good+bad, n, starttime, thisstart)))
     res[pi, ]
 })
@@ -158,5 +172,8 @@ write.table(res, file=paste("result-", strftime(Sys.time(), "%Y%m%d-%H%M%S"), ".
 save(res, file=paste("result-", strftime(Sys.time(), "%Y%m%d-%H%M%S"), ".RData", sep=""))
 print(res)
 print(table(res[,"res"]))
+cat("FAILED:\n")
 print(as.character(res[ res[,"res"] == 1, "pkg"]))
+cat("SKIPPED:\n")
+print(as.character(res[ res[,"res"] == 2, "pkg"]))
 cat("Ended at ", format(Sys.time()), "\n")
