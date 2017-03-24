@@ -82,8 +82,8 @@ print(rcppset)
 #}
 
 exclfile <- "data/blacklist.csv"
-exclset <- if (file.exists(exclfile)) read.csv(exclfile, stringsAsFactors=FALSE)[,1] else character(0)
-cat("Excluded: ")
+exclset <- if (file.exists(exclfile)) read.csv(exclfile, stringsAsFactors=FALSE, comment.char="#")[,1] else character(0)
+cat("Excluded: \n")
 print(exclset)
 
 
