@@ -28,8 +28,6 @@ options(repos = r)
 Sys.setenv("BOOSTLIB"="/usr/include")   # for the borked src/Makevars of ExactNumCI
 Sys.setenv("RGL_USE_NULL"="TRUE")       # Duncan Murdoch on r-package-devel on 12 Aug 2015
 
-setwd("/tmp/RcppDepends")
-
 ## clean old lib or repo files in /tmp
 invisible(sapply(list.files("/tmp", "(repos|lib).*rds$", full.names=TRUE), unlink))
 
@@ -42,6 +40,7 @@ rcppsetOrig <- sort(unname(AP[unique(c(grep("Rcpp", as.character(AP[,"Depends"])
                                        grep("Rcpp", as.character(AP[,"LinkingTo"])),
                                        grep("Rcpp", as.character(AP[,"Imports"])))),"Package"]))
 rcppset <- tools::dependsOnPkgs(pkg, recursive=FALSE, installed=AP)
+print(rcppset)
 
 ## exclset <- c("cqrReg",          # requires Rmosek which require Mosek which is commercial
 ##              "LANDD",		# requires GOstats GOSemSim
@@ -61,9 +60,6 @@ rcppset <- tools::dependsOnPkgs(pkg, recursive=FALSE, installed=AP)
 ##              "flippant",	# RcppRoll
 ##               "configr"         # RcppTOML
 ##              )
-
-exclfile <- "data/blacklist.csv"
-exclset <- if (file.exists(exclfile)) read.csv(exclfile, stringsAsFactors=FALSE)[,1] else character(0)
 
 #rcppset <- rcppset[ ! rcppset %in% exclset ]
 #if (grep("transnet", rcppset)) {        ## not really an Rcpp user
@@ -85,9 +81,13 @@ exclset <- if (file.exists(exclfile)) read.csv(exclfile, stringsAsFactors=FALSE)
 #    rcppset <- rcppset[ ! grepl("WideLM", rcppset) ]
 #}
 
-#rcppset <- c("apcluster", "autovarCore")
-print(rcppset)
+exclfile <- "data/blacklist.csv"
+exclset <- if (file.exists(exclfile)) read.csv(exclfile, stringsAsFactors=FALSE)[,1] else character(0)
+cat("Excluded: ")
+print(exclset)
 
+
+setwd("/tmp/RcppDepends")
 res <- data.frame(pkg=rcppset, res=NA, stringsAsFactors=FALSE)
 good <- bad <- skipped <- 0
 n <- nrow(res)
