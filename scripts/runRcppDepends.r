@@ -63,7 +63,7 @@ rcppset <- tools::dependsOnPkgs(pkg, recursive=FALSE, installed=AP)
 ##              )
 
 exclfile <- "data/blacklist.csv"
-exclset <- if (file.exists(exclfile) read.csv(exclfile, stringsAsFactors=FALSE)[,1] else character(0)
+exclset <- if (file.exists(exclfile)) read.csv(exclfile, stringsAsFactors=FALSE)[,1] else character(0)
 
 #rcppset <- rcppset[ ! rcppset %in% exclset ]
 #if (grep("transnet", rcppset)) {        ## not really an Rcpp user
