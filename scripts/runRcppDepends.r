@@ -1,5 +1,7 @@
 #!/usr/bin/r
 
+#library(crayon)
+
 cat("Started at ", format(Sys.time()), "\n")
 pkg <- "Rcpp"
 cat(pkg, "version is", packageDescription(pkg)$Version, "on", Sys.info()[["nodename"]], "\n")
@@ -120,7 +122,7 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
 
     if (p %in% exclset) {
         skipped <<- skipped + 1
-        cat(sprintf("RESULT for %s : %s (%d of %d, %d good, %d bad, %d skipped) -- %s\n",
+        cat(sprintf("%s : %s (%d of %d, %d good, %d bad, %d skipped) -- %s\n",
                     pkg, "skipped", pi, n, good, bad, skipped,
                     remtime(good+bad, n, starttime, thisstart)))
         res[pi, "res"] <- 2
@@ -161,19 +163,20 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     } else {
         bad <<- bad + 1
     }
-    cat(sprintf("RESULT for %s : %s (%d of %d, %d good, %d bad, %d skipped) -- %s\n",
+    cat(sprintf("%s : %s (%d of %d, %d good, %d bad, %d skipped) -- %s\n",
                 pkg, if (rc==0) "success" else "failure", pi, n, good, bad, skipped,
                 remtime(good+bad, n, starttime, thisstart)))
     res[pi, ]
 })
 
 res <- do.call(rbind, lres)
+res[, "res"] <- factor(res[, "res"], levels=0:2, labels=c("ok", "failed", "skipped"))
 write.table(res, file=paste("result-", strftime(Sys.time(), "%Y%m%d-%H%M%S"), ".txt", sep=""), sep=",")
 save(res, file=paste("result-", strftime(Sys.time(), "%Y%m%d-%H%M%S"), ".RData", sep=""))
 print(res)
 print(table(res[,"res"]))
 cat("FAILED:\n")
-print(as.character(res[ res[,"res"] == 1, "pkg"]))
+print(as.character(res[ res[,"res"] == "failed", "pkg"])) # factor makes it 1:3, not 0:2
 cat("SKIPPED:\n")
-print(as.character(res[ res[,"res"] == 2, "pkg"]))
+print(as.character(res[ res[,"res"] == "skipped", "pkg"]))
 cat("Ended at ", format(Sys.time()), "\n")

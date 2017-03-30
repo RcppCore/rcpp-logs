@@ -1,0 +1,43 @@
+
+OVERVIEW
+========
+
+Using Rcpp 0.12.1-
+
+     ok  failed skipped 
+    963       5      14 
+FAILED:
+[1] "forecast" "mets"     "officer"  "rdist"    "Rsomoclu"
+SKIPPED:
+ [1] "gpuR"         "hmi"          "joinXL"       "LANDD"        "mafs"         "mice"         "miceadds"     "Morpho"       "PLMIX"        "RmixmodCombi" "RSQLite"      "supc"         "svglite"     
+[14] "treescape"   
+Ended at  2017-03-30 11:42:05.583683 
+
+Of those five
+
+  - five we have seen [in some cases many times] before and which do NOT appear to be related to recent changes
+
+
+DETAILS
+=======
+
+
+Previously Known Failures - Reoccurring
+---------------------------------------
+
+"forecast"              _internal_ unit test error also present with Rcpp 0.12.7
+
+"mets"			_internal_ unit test error: "argument 2 matches multiple formal arguments"
+
+"officer"		testthat failure, reason unclear
+
+"rdist"			testthat failure, reason unclear
+
+"Rsomoclu"              test issue with Rsomoclu.kohonen
+
+
+SUMMARY
+=======
+
+No significant issues
+
