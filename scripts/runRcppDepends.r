@@ -1,12 +1,11 @@
 #!/usr/bin/r
 
-#library(crayon)
-
 cat("Started at ", format(Sys.time()), "\n")
 pkg <- "Rcpp"
 cat(pkg, "version is", packageDescription(pkg)$Version, "on", Sys.info()[["nodename"]], "\n")
 
-rbinary <- "RD"
+#rbinary <- "RD"
+rbinary <- "R"
 rversion <- system(paste(rbinary, "--version | head -1"), intern=TRUE)
 cat(rversion, "\n")
 
@@ -38,9 +37,9 @@ update.packages(lib.loc="lib/", ask=FALSE)
 
 IP <- installed.packages(lib.loc=loclib)
 AP <- available.packages(contrib.url(r["CRAN"]),filter=list())	# available package at CRAN
-rcppsetOrig <- sort(unname(AP[unique(c(grep("Rcpp", as.character(AP[,"Depends"])),
-                                       grep("Rcpp", as.character(AP[,"LinkingTo"])),
-                                       grep("Rcpp", as.character(AP[,"Imports"])))),"Package"]))
+#rcppsetOrig <- sort(unname(AP[unique(c(grep("Rcpp", as.character(AP[,"Depends"])),
+#                                       grep("Rcpp", as.character(AP[,"LinkingTo"])),
+#                                       grep("Rcpp", as.character(AP[,"Imports"])))),"Package"]))
 rcppset <- tools::dependsOnPkgs(pkg, recursive=FALSE, installed=AP)
 print(rcppset)
 

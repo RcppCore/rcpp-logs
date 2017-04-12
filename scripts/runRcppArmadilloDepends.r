@@ -19,7 +19,7 @@ loclib <- "/tmp/RcppDepends/lib"
 Sys.setenv("R_LIBS_USER"="/tmp/RcppDepends/lib")
 #Sys.setenv("CC"="gcc")   ## needed for a bad interaction between autoconf and llvm on Ubuntu 13.10
 #Sys.setenv("CXX"="g++")  ## idem
-Sys.setenv("MAKE"="make -j 2 -O")
+#Sys.setenv("MAKE"="make -j 2 -O")
 
 r <- getOption("repos")
 r["CRAN"] <- "http://cran.rstudio.com"
@@ -29,33 +29,39 @@ options(repos = r)
 Sys.setenv("BOOSTLIB"="/usr/include")   # for the borked src/Makevars of ExactNumCI
 Sys.setenv("RGL_USE_NULL"="TRUE")       # Duncan Murdoch on r-package-devel on 12 Aug 2015
 
-setwd("/tmp/RcppDepends")
-
 ## clean old lib or repo files in /tmp
 invisible(sapply(list.files("/tmp", "(repos|lib).*rds$", full.names=TRUE), unlink))
 
 ## update local lib/
 update.packages(lib.loc="lib/", ask=FALSE)
 
-IP <- installed.packages(lib.loc=loclib) 
+IP <- installed.packages(lib.loc=loclib)
 AP <- available.packages(contrib.url("http://cran.r-project.org"), filter=list())	# available package at CRAN
 rcpparmaset <- sort(unname(AP[unique(c(grep(pkg, as.character(AP[,"Depends"])),
                                        grep(pkg, as.character(AP[,"LinkingTo"])),
                                        grep(pkg, as.character(AP[,"Imports"])))),"Package"]))
 
-exclset <- c("cqrReg",          # requires Rmosek which require Mosek which is commercial
-             "miceadds",        # requires jomo which requires Rmosek
-             "RStoolbox",	# requires rgdal
-             "stplanr"		# requires rgdal
-             )
+rcpparmasetAlt <- tools::dependsOnPkgs(pkg, recursive=FALSE, installed=AP)
+
+## exclset <- c("cqrReg",          # requires Rmosek which require Mosek which is commercial
+##              "miceadds",        # requires jomo which requires Rmosek
+##              "RStoolbox",	# requires rgdal
+##              "stplanr"		# requires rgdal
+##              )
 
 
-rcpparmaset <- rcpparmaset[ ! rcpparmaset %in% exclset ]
+exclfile <- "data/blacklist.csv"
+exclset <- if (file.exists(exclfile)) read.csv(exclfile, stringsAsFactors=FALSE, comment.char="#")[,1] else character(0)
+cat("Excluded: \n")
+print(exclset)
 
+cat("Reverse Depends: \n")
 print(rcpparmaset)
 
+setwd("/tmp/RcppDepends")
+
 res <- data.frame(pkg=rcpparmaset, res=NA)
-good <- bad <- 0
+good <- bad <- skipped <- 0
 n <- nrow(res)
 starttime <- Sys.time()
 
@@ -68,8 +74,8 @@ remtime <- function(ndone, ntotal, starttime, thisstart) {
     remaining <- (ntotal-ndone)*avgtime
     #print(remaining)
     #cat(format(now),"--",format(starttime), "--", running, "--", avgtime, "--", remaining,"\n")
-    paste("Now", strftime(now, "%H:%M:%S"),  
-          "This", round(difftime(now, thisstart, unit="sec"), digits=1), "sec,", 
+    paste("Now", strftime(now, "%H:%M:%S"),
+          "This", round(difftime(now, thisstart, unit="sec"), digits=1), "sec,",
 	  "Avg", round(avgtime, digits=1), "sec,",
           "exp. finish in", round(remaining/60, digits=1),
           "min at", strftime(now+remaining, "%H:%M:%S on %d-%b-%Y"))
@@ -85,6 +91,16 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     #print(pathpkg)
 
     thisstart <- Sys.time()
+
+    if (p %in% exclset) {
+        skipped <<- skipped + 1
+        cat(sprintf("%s : %s (%d of %d, %d good, %d bad, %d skipped) -- %s\n",
+                    pkg, "skipped", pi, n, good, bad, skipped,
+                    remtime(good+bad, n, starttime, thisstart)))
+        res[pi, "res"] <- 2
+        return(res[pi, ])
+    }
+
     ipidx <- which(IP[,"Package"] == p)
     if ((length(ipidx) == 0) || (IP[ipidx,"Version"] != AP[i,"Version"])) {
         install.packages(p, lib=loclib, quiet=TRUE, verbose=FALSE, dependencies=TRUE)
@@ -99,7 +115,7 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
             download.file(pathpkg, pkg, quiet=TRUE)
         }
     }
-    
+
     #if (!file.exists(pkg)) download.file(pathpkg, pkg, quiet=TRUE)
     rc <- system(paste("xvfb-run-safe --server-args=\"-screen 0 1024x768x24\" ",
                        rbinary,         # R or RD
@@ -110,16 +126,20 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     } else {
         bad <<- bad + 1
     }
-    cat(sprintf("\nRESULT for %s : %s (%d of %d, %d good, %d bad) -- %s\n",
-                pkg, if (rc==0) "success" else "failure", pi, n, good, bad,
+    cat(sprintf("%s : %s (%d of %d, %d good, %d bad, %d skipped) -- %s\n",
+                pkg, if (rc==0) "success" else "failure", pi, n, good, bad, skipped,
                 remtime(good+bad, n, starttime, thisstart)))
     res[pi, ]
 })
 
 res <- do.call(rbind, lres)
+res[, "res"] <- factor(res[, "res"], levels=0:2, labels=c("ok", "failed", "skipped"))
 write.table(res, file=paste("result-", strftime(Sys.time(), "%Y%m%d-%H%M%S"), ".txt", sep=""), sep=",")
 save(res, file=paste("result-", strftime(Sys.time(), "%Y%m%d-%H%M%S"), ".RData", sep=""))
 print(res)
 print(table(res[,"res"]))
-print(as.character(res[ res[,"res"] == 1, "pkg"]))
+cat("FAILED:\n")
+print(as.character(res[ res[,"res"] == "failed", "pkg"])) # factor makes it 1:3, not 0:2
+cat("SKIPPED:\n")
+print(as.character(res[ res[,"res"] == "skipped", "pkg"]))
 cat("Ended at ", format(Sys.time()), "\n")
