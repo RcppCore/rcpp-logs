@@ -1,0 +1,49 @@
+
+OVERVIEW
+========
+
+Using Rcpp 0.12.10.2
+
+     ok  failed skipped 
+    979       6      14 
+FAILED:
+[1] "forecast"  "officer"   "Rblpapi"   "rdist"     "Rsomoclu"  "treatSens"
+SKIPPED:
+ [1] "gpuR"         "hmi"          "joinXL"       "LANDD"        "mafs"         "mice"         "miceadds"     "Morpho"       "PLMIX"        "RmixmodCombi" "RSQLite"      "supc"         "svglite"     
+[14] "treescape"   
+Ended at  2017-04-15 22:41:20.549016 
+
+Of those six
+
+  - five we have seen [in some cases many times] before and which do NOT appear to be related to recent changes
+  - one that is spurious (Rblpapi) and requires and open market
+  
+DETAILS
+=======
+
+
+Previously Known Failures - Reoccurring
+---------------------------------------
+
+"forecast"              _internal_ unit test error also present with Rcpp 0.12.7
+
+"officer"		testthat failure, reason unclear
+
+"rdist"			testthat failure, reason unclear
+
+"Rsomoclu"              test issue with Rsomoclu.kohonen
+
+"treatSens"		borked configure, fails to build at CRAN
+
+New (spurious?) failures
+------------------------
+
+"Rblpapi"               requires market data to run
+
+
+
+SUMMARY
+=======
+
+No new issues
+
