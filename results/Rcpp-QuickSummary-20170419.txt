@@ -1,0 +1,54 @@
+
+OVERVIEW
+========
+
+Using Rcpp 0.12.10.2 with #677
+
+     ok  failed skipped 
+    978       8      14 
+FAILED:
+[1] "dplyr"     "forecast"  "gapfill"   "officer"   "rdist"     "Rsomoclu"  "rstanarm"  "treatSens"
+SKIPPED:
+ [1] "gpuR"         "hmi"          "joinXL"       "LANDD"        "mafs"         "mice"         "miceadds"     "Morpho"       "PLMIX"        "RmixmodCombi" "RSQLite"      "supc"         "svglite"     
+[14] "treescape"   
+Ended at  2017-04-19 21:16:55.333036
+
+Of those eight
+
+  - six we have seen [in some cases many times] before and which do NOT appear to be related to recent changes
+  - two new ones
+  
+DETAILS
+=======
+
+
+Previously Known Failures - Reoccurring
+---------------------------------------
+
+"forecast"              _internal_ unit test error also present with Rcpp 0.12.7
+
+"gapfill"               possibly internal testing error
+
+"officer"		testthat failure, reason unclear
+
+"rdist"			testthat failure, reason unclear
+
+"Rsomoclu"              test issue with Rsomoclu.kohonen
+
+"treatSens"		borked configure, fails to build at CRAN
+
+New failures
+------------
+
+"dplyr"			change on our end:
+                           error$message does not match "expecting a single value", 
+                           Actual value: "Expecting a single value: [extent=2]."
+                        fixable
+                        
+"rstanarm"              testthat error, may need to investigate
+
+SUMMARY
+=======
+
+No new issues
+
