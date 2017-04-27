@@ -18,7 +18,7 @@ loclib <- "/tmp/RcppDepends/lib"
 Sys.setenv("R_LIBS_USER"="/tmp/RcppDepends/lib")
 #Sys.setenv("CC"="gcc")   ## needed for a bad interaction between autoconf and llvm on Ubuntu 13.10
 #Sys.setenv("CXX"="g++")  ## idem
-if (Sys.getenv("MAKE") == "") Sys.setenv("MAKE"="make -j 4 -O")
+#if (Sys.getenv("MAKE") == "") Sys.setenv("MAKE"="make -j 4 -O")
 
 r <- getOption("repos")
 r["CRAN"] <- "http://cran.rstudio.com"

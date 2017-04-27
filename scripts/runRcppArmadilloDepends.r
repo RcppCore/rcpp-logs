@@ -37,11 +37,11 @@ update.packages(lib.loc="lib/", ask=FALSE)
 
 IP <- installed.packages(lib.loc=loclib)
 AP <- available.packages(contrib.url("http://cran.r-project.org"), filter=list())	# available package at CRAN
-rcpparmaset <- sort(unname(AP[unique(c(grep(pkg, as.character(AP[,"Depends"])),
-                                       grep(pkg, as.character(AP[,"LinkingTo"])),
-                                       grep(pkg, as.character(AP[,"Imports"])))),"Package"]))
+#rcpparmaset <- sort(unname(AP[unique(c(grep(pkg, as.character(AP[,"Depends"])),
+#                                       grep(pkg, as.character(AP[,"LinkingTo"])),
+#                                       grep(pkg, as.character(AP[,"Imports"])))),"Package"]))
 
-rcpparmasetAlt <- tools::dependsOnPkgs(pkg, recursive=FALSE, installed=AP)
+rcpparmaset <- tools::dependsOnPkgs(pkg, recursive=FALSE, installed=AP)
 
 ## exclset <- c("cqrReg",          # requires Rmosek which require Mosek which is commercial
 ##              "miceadds",        # requires jomo which requires Rmosek
@@ -68,12 +68,8 @@ starttime <- Sys.time()
 remtime <- function(ndone, ntotal, starttime, thisstart) {
     now <- Sys.time()
     running <- as.numeric(difftime(now, starttime, unit="secs"))
-    #print(running)
     avgtime <- running/ndone
-    #print(avgtime)
     remaining <- (ntotal-ndone)*avgtime
-    #print(remaining)
-    #cat(format(now),"--",format(starttime), "--", running, "--", avgtime, "--", remaining,"\n")
     paste("Now", strftime(now, "%H:%M:%S"),
           "This", round(difftime(now, thisstart, unit="sec"), digits=1), "sec,",
 	  "Avg", round(avgtime, digits=1), "sec,",
