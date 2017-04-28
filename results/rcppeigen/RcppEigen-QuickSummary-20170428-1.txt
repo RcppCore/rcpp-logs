@@ -1,0 +1,94 @@
+
+OVERVIEW
+========
+
+Using
+  Started at  2017-04-28 06:18:05.149298 
+  Rcpp  version is  0.12.10.2 
+  RcppEigen  version is  0.3.3.3.0 
+  R version 3.4.0 (2017-04-21) -- "You Stupid Darkness" 
+
+     ok  failed skipped 
+     88       8       1 
+FAILED:
+[1] "CorReg"   "JSM"      "lme4"     "OpenMx"   "raptr"    "rstan"    "rstanarm" "spaMM"   
+SKIPPED:
+[1] "gpuR"
+Ended at  2017-04-28 08:35:54.277101 
+
+NOTES
+=====
+
+CorReg                  does not install:
+                        /tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/PlainObjectBase.h:774:7: error: static assertion failed: FLOATING_POINT_ARGUMENT_PASSED__INTEGER_WAS_EXPECTED
+                               EIGEN_STATIC_ASSERT(is_integer,
+                               ^~~~~~~~~~~~~
+
+JSM                     fails test       
+                        > fitLME <- lme(log(serBilir) ~ bs(obstime, df = 2, degree = 2), random = ~ 1 | ID, data = pbc)
+                        Error in array(c(rep(1, p), .C(inner_perc_table, as.double(X), as.integer(unlist(grps)),  : 
+                          object 'inner_perc_table' not found
+                        Calls: lme -> lme.formula -> getFixDF -> array
+                        Execution halted
+
+lme4                    fails test
+                        SUMMARY  Running ‘fewlevels.R’
+                        Running the tests in ‘tests/fewlevels.R’ failed.
+                        Complete output:
+                          > #### example originally from Gabor Grothendieck
+                          > 
+                          > source(system.file("testdata/lme-tst-funs.R", package="lme4", mustWork=TRUE))
+                          > ##--> rSim.11()
+                          > 
+                          > set.seed(1)
+                          > d1 <- rSim.11(10000, k=4)
+                          > library(nlme)
+                          > m.lme <- lme(y ~ x, random=~ 1|fac , data=d1)
+                          Error in array(c(rep(1, p), .C(inner_perc_table, as.double(X), as.integer(unlist(grps)),  : 
+                            object 'inner_perc_table' not found
+                          Calls: lme -> lme.formula -> getFixDF -> array
+                          Execution halted
+                        * checking for unstated dependencies in vignettes ... OK
+
+OpenMx                  fails test
+                        > tmpModelOut <- mxRun(tmpModel)
+                        Running exampleModel with 3 parameters
+                        Error: The following error occurred while evaluating the subexpression
+                        'solve(exampleModel.I - exampleModel.A)' during the evaluation of 'expCov' in model
+                        'exampleModel' : system is computationally singular: reciprocal condition number = 4.10052e-32
+                        Execution halted
+
+raptr                   Fails test
+                        Error in linbin(x, gpoints, truncate) : object 'F_linbin' not found
+                        Calls: make.DemandPoints ... demand.points.density1d -> kde -> hpi -> dpik -> linbin
+
+rstan                   test fail
+                        > pairs(fit, pars = c("mu", "sigma", "alpha", "lp__"), log = TRUE, las = 1)
+                        Error in linbin2D(x, gpoints1, gpoints2) : object 'F_lbtwod' not found
+                        Calls: pairs ... <Anonymous> -> <Anonymous> -> <Anonymous> -> linbin2D
+                        Execution halted
+
+rstanarm                test fail
+                          Error in array(c(rep(1, p), .C(inner_perc_table, as.double(X), as.integer(unlist(grps)),  : 
+                            object 'inner_perc_table' not found
+                          Calls: test_check ... eval -> eval -> SW -> withCallingHandlers -> stan_gamm4
+
+spaMM                   test fail
+                        > ##  as a correlated residual error and no extra residual variance is fitted:
+                        > nlme::lme(fixed = migStatus ~ means, data = blackcapD, random = ~ 1 | dummy, 
+                        +     correlation = corMatern(form = ~ longitude+latitude  | dummy), 
+                        +     method = "ML")
+                        Error in array(c(rep(1, p), .C(inner_perc_table, as.double(X), as.integer(unlist(grps)),  : 
+                          object 'inner_perc_table' not found
+                        Calls: <Anonymous> -> lme.formula -> getFixDF -> array
+                        Execution halted
+
+SUMMARY
+=======
+
+- One build failure, probably need to talk to upstream
+
+- Seven test failures likely related to R 3.4.0 and so-far not-rebuild recommended packages like nlme
+
+
+

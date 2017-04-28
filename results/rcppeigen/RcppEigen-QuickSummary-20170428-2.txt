@@ -1,0 +1,44 @@
+
+OVERVIEW
+========
+
+Using
+  Started at  2017-04-28 09:42:14.106407 
+  Rcpp  version is  0.12.10.2 
+  RcppEigen  version is  0.3.3.3.0 
+  R version 3.4.0 (2017-04-21) -- "You Stupid Darkness" 
+
+     ok  failed skipped 
+     94       2       1 
+FAILED:
+[1] "CorReg" "OpenMx"
+SKIPPED:
+[1] "gpuR"
+Ended at  2017-04-28 12:07:33.69231 
+
+NOTES
+=====
+
+CorReg                  does not install:
+                        /tmp/RcppDepends/lib/RcppEigen/include/Eigen/src/Core/PlainObjectBase.h:774:7: error: static assertion failed: FLOATING_POINT_ARGUMENT_PASSED__INTEGER_WAS_EXPECTED
+                               EIGEN_STATIC_ASSERT(is_integer,
+                               ^~~~~~~~~~~~~
+
+OpenMx                  fails test
+                        > tmpModelOut <- mxRun(tmpModel)
+                        Running exampleModel with 3 parameters
+                        Error: The following error occurred while evaluating the subexpression
+                        'solve(exampleModel.I - exampleModel.A)' during the evaluation of 'expCov' in model
+                        'exampleModel' : system is computationally singular: reciprocal condition number = 4.10052e-32
+                        Execution halted
+
+
+SUMMARY
+=======
+
+- One build failure, probably need to talk to upstream
+
+- One test failure, likely also local to package
+
+
+
