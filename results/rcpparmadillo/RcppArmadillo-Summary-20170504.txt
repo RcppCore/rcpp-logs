@@ -1,0 +1,52 @@
+
+Summary from running  0.7.899.0.0
+=================================
+
+Started at  2017-05-04 06:09:48.169624 
+Rcpp  version is  0.12.10.2 
+RcppArmadillo  version is  0.7.899.0.0 
+R version 3.4.0 (2017-04-21) -- "You Stupid Darkness" 
+
+     ok  failed skipped 
+    339       6       2 
+FAILED:
+[1] "dfcomb"        "dfmta"         "forecast"      "FSelectorRcpp" "rdist"         "stm"          
+SKIPPED:
+[1] "miceadds" "Morpho"  
+Ended at  2017-05-04 12:58:02.210868 
+
+
+Detailed Discussion
+===================
+
+
+Previously Failed
+-----------------
+
+"forecast"		[internal] testthat failure
+
+
+Upstream
+-----
+
+"dfcomb"                [internal] outdated cppbugs messing with Armadillo internals
+
+"dfmts"                 [internal] outdated cppbugs messing with Armadillo internals
+
+
+Spurious
+--------
+
+"FSelectorRcpp"         segfaults
+
+"rdist"			two tests fail
+                        2. Failure: euclidean metric works as expected (@test-euclidean.R#13) 
+                        `dist_mat` not equivalent to cdist(x, x).
+                        Attributes: < Length mismatch: comparison on first 1 components >
+
+"stm"                   OK: 8 SKIPPED: 0 FAILED: 1
+                        1. Error: Test that Content works (@test-stm-options.R#22) 
+
+
+
+
