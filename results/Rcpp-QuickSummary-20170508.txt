@@ -1,0 +1,75 @@
+
+OVERVIEW
+========
+
+Started at  2017-05-07 07:48:26.982697 
+Rcpp version is 0.12.10.4 on dirk5930ub 
+R version 3.4.0 (2017-04-21) -- "You Stupid Darkness" 
+
+     ok  failed skipped 
+    989      11      14 
+FAILED:
+ [1] "dplyr"         "forecast"      "FSelectorRcpp" "gapfill"       "kergp"         "mcPAFit"       "netdiffuseR"   "officer"       "Rblpapi"       "rdist"         "stm"          
+SKIPPED:
+ [1] "gpuR"         "joinXL"       "kmcudaR"      "LANDD"        "mafs"         "mice"         "miceadds"     "Morpho"       "PLMIX"        "RmixmodCombi" "RSQLite"      "supc"         "svglite"     
+[14] "treescape"   
+Ended at  2017-05-08 00:09:18.218526 
+
+
+Of those eleven
+
+  - nine we have seen [in some cases many times] before and which do NOT appear to be related to recent changes
+  - two new ones of which one is known and spurious (weekend effect)
+  
+DETAILS
+=======
+
+
+Previously Known Failures - Reoccurring
+---------------------------------------
+
+"dplyr"			change on our end, requiring updated test
+
+"forecast"              _internal_ unit test error also present with Rcpp 0.12.7
+
+"gapfill"               possibly internal testing error
+
+"officer"		testthat failure, reason unclear
+
+"rdist"			testthat failure, reason unclear
+
+
+
+New failures
+------------
+
+"FSelectorRcpp"		test failure:
+                           > test_check("FSelectorRcpp")
+                           Segmentation fault (core dumped)
+
+"kerpg"			test failure
+                           Error in optim(par = parIni, fn = thisLogLikFun, gr = thisLogLikGrad,  : 
+                             L-BFGS-B needs finite values of 'fn'
+                           Error in .local(object, ...) : error in 'optim'
+
+
+"mcPAFit"		internal build failure, importing unexported PAFit functions
+
+"officer"		internal test failure
+
+"stm"			internal test failure
+
+
+New
+---
+
+netdifuseR              segfault in test on random graph
+
+Rblpapi                 spurious, no market data on weekend
+
+
+SUMMARY
+=======
+
+No new issues
+
