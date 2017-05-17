@@ -1,0 +1,55 @@
+
+Summary from running  0.7.900.1.0
+=================================
+
+Started at  2017-05-16 10:41:57.501873 
+Rcpp  version is  0.12.10.4 
+RcppArmadillo  version is  0.7.900.1.0 
+R version 3.4.0 (2017-04-21) -- "You Stupid Darkness" 
+
+     ok  failed skipped 
+    341       6       2 
+FAILED:
+[1] "dfcomb"        "dfmta"         "forecast"      "FSelectorRcpp" "netdiffuseR"   "rdist"        
+SKIPPED:
+[1] "miceadds" "Morpho"  
+Ended at  2017-05-16 17:30:35.436453 
+
+
+
+Detailed Discussion
+===================
+
+
+Previously Failed
+-----------------
+
+"forecast"		[internal] testthat failure
+
+
+Upstream
+-----
+
+"dfcomb"                [internal] outdated cppbugs messing with Armadillo internals
+
+"dfmts"                 [internal] outdated cppbugs messing with Armadillo internals
+
+
+Spurious
+--------
+
+"FSelectorRcpp"         segfaults
+                        --> also fails on CRAN RcppArmadillo
+
+"rdist"			two tests fail
+                        2. Failure: euclidean metric works as expected (@test-euclidean.R#13) 
+                        `dist_mat` not equivalent to cdist(x, x).
+                        Attributes: < Length mismatch: comparison on first 1 components >
+                        --> also fails on CRAN RcppArmadillo
+
+"netdiffuseR"           segfault, related to Matrix and sparse matrices
+                        --> also fails on CRAN RcppArmadillo
+
+
+
+
