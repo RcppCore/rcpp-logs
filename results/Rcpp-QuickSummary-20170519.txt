@@ -1,0 +1,65 @@
+
+OVERVIEW
+========
+
+Started at  2017-05-18 10:44:09.535935 
+Rcpp version is 0.12.10.6 on dirk5930ub 
+R version 3.4.0 (2017-04-21) -- "You Stupid Darkness" 
+
+     ok  failed skipped 
+    998      10      15 
+FAILED:
+ [1] "dfcomb"        "dfmta"         "dplyr"         "forecast"      "FSelectorRcpp" "gapfill"       "kergp"         "mcPAFit"       "officer"       "rdist"        
+SKIPPED:
+ [1] "gpuR"         "hBayesDM"     "joinXL"       "kmcudaR"      "LANDD"        "mafs"         "mice"         "miceadds"     "Morpho"       "PLMIX"        "RmixmodCombi" "RSQLite"      "supc"        
+[14] "svglite"      "treescape"   
+Ended at  2017-05-19 03:11:06.341281 
+
+Of those ten
+
+  - eight we have seen [in some cases many times] before and which do NOT appear to be related to recent changes
+  - two that are RcppArmadillo related
+
+  
+DETAILS
+=======
+
+
+Previously Known Failures - Reoccurring
+---------------------------------------
+
+"dplyr"			change on our end, requiring updated test
+
+"forecast"              _internal_ unit test error also present with Rcpp 0.12.7
+
+"FSelectorRcpp"		test failure:
+                           > test_check("FSelectorRcpp")
+                           Segmentation fault (core dumped)
+
+"gapfill"               possibly internal testing error
+
+"kerpg"			test failure
+                           Error in optim(par = parIni, fn = thisLogLikFun, gr = thisLogLikGrad,  : 
+                             L-BFGS-B needs finite values of 'fn'
+                           Error in .local(object, ...) : error in 'optim'
+
+"mcPAFit"		internal build failure, importing unexported PAFit functions
+
+"officer"		testthat failure, reason unclear
+
+"rdist"			testthat failure, reason unclear
+
+
+New
+---
+
+"dfcomb"                needs to adjust to updates (pre-release of) RcppArmadillo
+
+"dfmta"                 needs to adjust to updates (pre-release of) RcppArmadillo
+
+
+SUMMARY
+=======
+
+Maybe one new issue
+
