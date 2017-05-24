@@ -1,19 +1,19 @@
 
-Summary from running  0.7.900.1.0
+Summary from running  0.7.900.1.1
 =================================
 
-Started at  2017-05-16 10:41:57.501873 
-Rcpp  version is  0.12.10.4 
-RcppArmadillo  version is  0.7.900.1.0 
+Started at  2017-05-23 11:47:27.849961 
+Rcpp  version is  0.12.11 
+RcppArmadillo  version is  0.7.900.1.1 
 R version 3.4.0 (2017-04-21) -- "You Stupid Darkness" 
 
      ok  failed skipped 
-    341       6       2 
+    343       4       2 
 FAILED:
-[1] "dfcomb"        "dfmta"         "forecast"      "FSelectorRcpp" "netdiffuseR"   "rdist"        
+[1] "forecast"      "FSelectorRcpp" "quanteda"      "rdist"        
 SKIPPED:
 [1] "miceadds" "Morpho"  
-Ended at  2017-05-16 17:30:35.436453 
+Ended at  2017-05-23 18:29:11.950353 
 
 
 
@@ -26,18 +26,6 @@ Previously Failed
 
 "forecast"		[internal] testthat failure
 
-
-Upstream
------
-
-"dfcomb"                [internal] outdated cppbugs messing with Armadillo internals
-
-"dfmta"                 [internal] outdated cppbugs messing with Armadillo internals
-
-
-Spurious
---------
-
 "FSelectorRcpp"         segfaults
                         --> also fails on CRAN RcppArmadillo
 
@@ -47,8 +35,10 @@ Spurious
                         Attributes: < Length mismatch: comparison on first 1 components >
                         --> also fails on CRAN RcppArmadillo
 
-"netdiffuseR"           segfault, related to Matrix and sparse matrices
-                        --> also fails on CRAN RcppArmadillo
+New
+---
+
+"quanteda"              many tests fail. spurious?
 
 
 
