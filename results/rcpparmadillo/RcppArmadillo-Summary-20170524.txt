@@ -1,0 +1,46 @@
+
+Summary from running  0.7.900.2.1
+=================================
+
+Started at  2017-05-24 19:40:02.934454 
+Rcpp  version is  0.12.11 
+RcppArmadillo  version is  0.7.900.1.2 
+R version 3.4.0 (2017-04-21) -- "You Stupid Darkness" 
+
+     ok  failed skipped 
+    342       5       2 
+FAILED:
+[1] "forecast"      "FSelectorRcpp" "optiSel"       "quanteda"      "rdist"        
+SKIPPED:
+[1] "miceadds" "Morpho"  
+Ended at  2017-05-25 02:24:47.942228 
+
+
+
+Detailed Discussion
+===================
+
+
+Previously Failed
+-----------------
+
+"forecast"		[internal] testthat failure
+
+"FSelectorRcpp"         segfaults
+                        --> also fails on CRAN RcppArmadillo
+
+"quanteda"              many tests fail. spurious?
+
+"rdist"			two tests fail
+                        2. Failure: euclidean metric works as expected (@test-euclidean.R#13) 
+                        `dist_mat` not equivalent to cdist(x, x).
+                        Attributes: < Length mismatch: comparison on first 1 components >
+                        --> also fails on CRAN RcppArmadillo
+
+New
+---
+
+"optiSel"               spurious, needs RSymphony; passes once installed
+
+
+
