@@ -1,0 +1,87 @@
+
+OVERVIEW
+========
+
+Started at  2017-06-14 14:20:45.908548 
+Rcpp version is 0.12.11.3 on dirk5930ub 
+R version 3.4.0 (2017-04-21) -- "You Stupid Darkness" 
+
+     ok  failed skipped 
+   1018      16      14 
+FAILED:
+ [1] "emil"          "forecast"      "FSelectorRcpp" "kergp"         "lidR"          "mcPAFit"       "mnis"          "myTAI"         "nandb"         "officer"       "rdist"         "sf"           
+[13] "stplanr"       "surveillance"  "treeplyr"      "valr"         
+SKIPPED:
+ [1] "gpuR"         "hBayesDM"     "joinXL"       "kmcudaR"      "LANDD"        "mafs"         "mice"         "miceadds"     "Morpho"       "PLMIX"        "RmixmodCombi" "RSQLite"      "supc"        
+[14] "svglite"     
+Ended at  2017-06-15 07:24:13.489416 
+
+Of those sixteen
+
+  - seven we have seen [in some cases many times] before and which do NOT appear to be related to recent changes
+  - one that is spurious and fixed in a new version
+  - eight that seem unrelated to us and have errors at CRAN too
+
+  
+DETAILS
+=======
+
+
+Previously Known Failures - Reoccurring
+---------------------------------------
+
+"forecast"              _internal_ unit test error also present with Rcpp 0.12.7, fix forthcoming in 8.1
+
+"FSelectorRcpp"		test failure:
+                           > test_check("FSelectorRcpp")
+                           Segmentation fault (core dumped)
+
+"gapfill"               possibly internal testing error
+
+"kerpg"			test failure
+                           Error in optim(par = parIni, fn = thisLogLikFun, gr = thisLogLikGrad,  : 
+                             L-BFGS-B needs finite values of 'fn'
+                           Error in .local(object, ...) : error in 'optim'
+
+"mcPAFit"		internal build failure, importing unexported PAFit functions
+
+"officer"		testthat failure, reason unclear
+
+"rdist"			testthat failure, reason unclear
+
+
+New
+---
+
+"emil"			Possible internal test errror, also all ERROR on CRAN
+
+"lidR"                  Possible internal test error
+
+"mnis"                  Possible internal test errror, also all ERROR on CRAN
+
+"myTAI"                 Possible internal test error and dplyr deprecation?
+
+"nandb"                 Possible internal test error, also ERROR on some CRAN systems
+
+"stplanr"               Possible internal erorr: Error in summarise_impl(.data, dots) : Evaluation error: could not find function "nth".
+                        also all ERROR on CRAN
+
+"surveillance"          Possible internal error, also all ERROR on CRAN
+
+"treeplyr"              Possible internal error, also mostly ERROR on CRAN
+
+"valr"                  Possible internal error, also mostly ERROR on CRAN
+
+
+Spurious
+--------
+
+"sf"                    Missing dbplyr; new version 0.5 just released passes
+
+
+
+SUMMARY
+=======
+
+Maybe one new issue
+
