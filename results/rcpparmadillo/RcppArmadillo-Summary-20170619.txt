@@ -1,0 +1,51 @@
+
+Summary from running  0.7.900.2.1
+=================================
+
+Started at  2017-06-19 09:18:17.659886 
+Rcpp  version is  0.12.11.3 
+RcppArmadillo  version is  0.7.900.2.1 
+R version 3.4.0 (2017-04-21) -- "You Stupid Darkness" 
+
+     ok  failed skipped 
+    351       4       2 
+FAILED:
+[1] "FSelectorRcpp" "quanteda"      "rdist"         "stplanr"      
+SKIPPED:
+[1] "miceadds" "Morpho"  
+Ended at  2017-06-19 16:18:22.011544 
+
+
+Detailed Discussion
+===================
+
+
+Previously Failed
+-----------------
+
+"FSelectorRcpp"         segfaults
+                        --> also fails on CRAN RcppArmadillo
+
+"rdist"			two tests fail
+                        2. Failure: euclidean metric works as expected (@test-euclidean.R#13) 
+                        `dist_mat` not equivalent to cdist(x, x).
+                        Attributes: < Length mismatch: comparison on first 1 components >
+                        --> also fails on CRAN RcppArmadillo
+
+
+New
+---
+
+"quanteda"              several tests failed, new?
+
+
+"stplanr"               possibly internal?
+
+                        > data(flow)
+                        > flow_oneway = onewayid(flow, attrib = 3)
+                        `.cols` has been renamed and is deprecated, please use `.vars`
+                        Error in summarise_impl(.data, dots) : 
+                          Evaluation error: could not find function "nth".
+                        Calls: onewayid ... summarise -> summarise.tbl_df -> summarise_impl -> .Call
+                        Execution halted
+
