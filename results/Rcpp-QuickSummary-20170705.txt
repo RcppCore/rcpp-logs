@@ -1,0 +1,64 @@
+
+OVERVIEW
+========
+
+Started at  2017-07-05 10:29:41.214805 
+Rcpp version is 0.12.11.4 on dirk5930ub 
+R version 3.4.0 (2017-04-21) -- "You Stupid Darkness" 
+
+     ok  failed skipped 
+   1055       9      14 
+FAILED:
+[1] "emil"     "hyper2"   "kergp"    "nandb"    "officer"  "rdist"    "stplanr"  "treeplyr" "walker"  
+SKIPPED:
+ [1] "gpuR"         "hBayesDM"     "joinXL"       "kmcudaR"      "LANDD"        "mafs"         "mice"         "miceadds"     "Morpho"       "PLMIX"        "RmixmodCombi" "RSQLite"      "supc"        
+[14] "svglite"     
+Ended at  2017-07-06 04:29:37.413645 
+
+Of those nine
+
+  - five we have seen [in some cases many times] before and which do NOT appear to be related to recent changes
+  - seven which are still new-ish and have errors at CRAN too
+  - one that is spurious and due to weekend testing
+  - one that is new (and due to missing Depends)
+  
+  
+DETAILS
+=======
+
+New
+---
+
+"walker"		Possibly internal test error
+
+
+Previously Known Failures - Reoccurring
+---------------------------------------
+
+"emil"			Possible internal test errror, also all ERROR on CRAN
+
+"hyper2"                possibly internal: optim() issue
+
+"kerpg"			test failure
+                           Error in optim(par = parIni, fn = thisLogLikFun, gr = thisLogLikGrad,  : 
+                             L-BFGS-B needs finite values of 'fn'
+                           Error in .local(object, ...) : error in 'optim'
+
+"nandb"                 Possible internal test error, also ERROR on some CRAN systems
+
+"officer"		testthat failure, reason unclear
+
+"rdist"			testthat failure, reason unclear
+   
+"stplanr"               Possible internal erorr: Error in summarise_impl(.data, dots) : Evaluation error: could not find function "nth".
+                        also all ERROR on CRAN
+
+"treeplyr"              Possible internal error, also mostly ERROR on CRAN
+
+
+
+SUMMARY
+=======
+
+Should be fine
+
