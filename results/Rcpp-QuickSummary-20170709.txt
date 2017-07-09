@@ -1,0 +1,56 @@
+
+OVERVIEW
+========
+
+Started at  2017-07-08 19:33:51.109172 
+Rcpp version is 0.12.11.5 on dirk5930ub 
+R version 3.4.0 (2017-04-21) -- "You Stupid Darkness" 
+
+     ok  failed skipped 
+   1065       6      14 
+FAILED:
+[1] "kergp"   "nandb"   "officer" "rdist"   "stplanr" "walker" 
+SKIPPED:
+ [1] "gpuR"         "hBayesDM"     "joinXL"       "kmcudaR"      "LANDD"        "mafs"         "mice"         "miceadds"     "Morpho"       "PLMIX"        "RmixmodCombi" "RSQLite"      "supc"        
+[14] "svglite"     
+Ended at  2017-07-09 13:27:57.449621 
+
+Of those six
+
+  - five we have seen [in some cases many times] before and which do NOT appear to be related to recent changes
+  - one that is spurious and due to dplyr
+  
+  
+DETAILS
+=======
+
+
+Previously Known Failures - Reoccurring
+---------------------------------------
+
+"kerpg"			test failure
+                           Error in optim(par = parIni, fn = thisLogLikFun, gr = thisLogLikGrad,  : 
+                             L-BFGS-B needs finite values of 'fn'
+                           Error in .local(object, ...) : error in 'optim'
+
+"nandb"                 Possible internal test error, also ERROR on some CRAN systems
+
+"officer"		testthat failure, reason unclear
+
+"rdist"			testthat failure, reason unclear
+   
+"stplanr"               Possible internal erorr: Error in summarise_impl(.data, dots) : Evaluation error: could not find function "nth".
+                        also all ERROR on CRAN
+
+
+Spurious error
+--------------
+
+"walker"		Spurious due to dplyr version check, goes away with forced dplyr reinstall
+
+
+SUMMARY
+=======
+
+Should be fine
+
