@@ -1,0 +1,60 @@
+
+OVERVIEW
+========
+
+Started at  2017-07-10 14:53:37.52696 
+Rcpp version is 0.12.11.5 on dirk5930ub 
+R version 3.4.1 (2017-06-30) -- "Single Candle" 
+
+     ok  failed skipped 
+   1067       8      14 
+FAILED:
+[1] "bikedata" "kergp"    "nandb"    "officer"  "rdist"    "stplanr"  "walker"   "WGCNA"   
+SKIPPED:
+ [1] "gpuR"         "hBayesDM"     "joinXL"       "kmcudaR"      "LANDD"        "mafs"         "mice"         "miceadds"     "Morpho"       "PLMIX"        "RmixmodCombi" "RSQLite"      "supc"        
+[14] "svglite"     
+Ended at  2017-07-11 08:53:11.071871 
+
+Of those eight
+
+  - seven we have seen [in some cases many times] before and which do NOT appear to be related to recent changes
+  - one that will be blacklisted for Suggests != Depends
+  
+  
+DETAILS
+=======
+
+
+Previously Known Failures - Reoccurring
+---------------------------------------
+
+"bikedata"              internal test failure
+
+"kerpg"			test failure
+                           Error in optim(par = parIni, fn = thisLogLikFun, gr = thisLogLikGrad,  : 
+                             L-BFGS-B needs finite values of 'fn'
+                           Error in .local(object, ...) : error in 'optim'
+
+"nandb"                 Possible internal test error, also ERROR on some CRAN systems
+
+"officer"		testthat failure, reason unclear
+
+"rdist"			testthat failure, reason unclear
+   
+"stplanr"               Possible internal erorr: Error in summarise_impl(.data, dots) : Evaluation error: could not find function "nth".
+                        also all ERROR on CRAN
+
+"walker"                internal test failure
+
+To be skipped
+-------------
+
+"WGCNA" 		Package required but not available: ‘GO.db’
+                        Packages suggested but not available for checking:
+                          ‘org.Hs.eg.db’ ‘org.Mm.eg.db’
+
+SUMMARY
+=======
+
+Should be fine
+
