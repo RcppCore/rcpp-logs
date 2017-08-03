@@ -1,0 +1,46 @@
+
+Summary from running  0.7.900.2.1
+=================================
+
+Started at  2017-08-01 14:31:05.194912 
+Rcpp  version is  0.12.12 
+RcppArmadillo  version is  0.7.900.2.0 
+R version 3.4.1 (2017-06-30) -- "Single Candle" 
+
+     ok  failed skipped 
+    367       6       2 
+FAILED:
+[1] "bcROCsurface" "fdasrvf"      "FisHiCal"     "KODAMA"       "quanteda"     "rdist"       
+SKIPPED:
+[1] "miceadds" "Morpho"  
+Ended at  2017-08-01 23:54:21.69655 
+
+
+Detailed Discussion
+===================
+
+Two prior failures, and four spurious failures due to setup issues
+
+
+Previously Failed
+-----------------
+
+"quanteda"              internal tests failed,
+
+"rdist"			two tests fail
+                        2. Failure: euclidean metric works as expected (@test-euclidean.R#13) 
+                        `dist_mat` not equivalent to cdist(x, x).
+                        Attributes: < Length mismatch: comparison on first 1 components >
+                        --> also fails on CRAN RcppArmadillo
+
+
+Spurious due to old rgl install
+-------------------------------
+
+"bcROCsurface"          rgl borked due to R 3.3.* build and R 3.4.* use; fine after re-install
+
+"fdasrvf"		rgl borked due to R 3.3.* build and R 3.4.* use; fine after re-install
+
+"FisHiCal"		rgl borked due to R 3.3.* build and R 3.4.* use; fine after re-install
+
+"KODAMA"		rgl borked due to R 3.3.* build and R 3.4.* use; fine after re-install
