@@ -1,0 +1,39 @@
+
+Summary from running  0.7.900.2.0
+=================================
+
+Started at  2017-08-03 11:02:14.264765 
+Rcpp  version is  0.12.12 
+RcppArmadillo  version is  0.7.960.0.0 
+R version 3.4.1 (2017-06-30) -- "Single Candle" 
+Excluded: 
+ [1] "gpuR"         "hBayesDM"     "hmi"          "joinXL"       "kmcudaR"      "LANDD"        "mafs"         "mice"         "miceadds"     "Morpho"       "PLMIX"        "RmixmodCombi" "RSQLite"     
+[14] "supc"         "svglite"      "treescape"    "WGCNA"       
+
+
+     ok  failed skipped 
+    372       2       2 
+FAILED:
+[1] "quanteda" "rdist"   
+SKIPPED:
+[1] "miceadds" "Morpho"  
+Ended at  2017-08-03 18:31:32.432904 
+
+
+Detailed Discussion
+===================
+
+Two prior failures, no issues.
+
+
+Previously Failed
+-----------------
+
+"quanteda"              internal tests failed,
+
+"rdist"			two tests fail
+                        2. Failure: euclidean metric works as expected (@test-euclidean.R#13) 
+                        `dist_mat` not equivalent to cdist(x, x).
+                        Attributes: < Length mismatch: comparison on first 1 components >
+                        --> also fails on CRAN RcppArmadillo
+
