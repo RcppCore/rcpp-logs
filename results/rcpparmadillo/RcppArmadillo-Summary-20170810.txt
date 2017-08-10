@@ -1,0 +1,41 @@
+
+Summary from running  0.7.959.0.3
+=================================
+
+Started at  2017-08-10 09:08:02.556527 
+Rcpp  version is  0.12.12 
+RcppArmadillo  version is  0.7.959.0.3 
+R version 3.4.1 (2017-06-30) -- "Single Candle" 
+
+
+     ok  failed skipped 
+    372       3       2 
+FAILED:
+[1] "quanteda" "rdist"    "TAM"     
+SKIPPED:
+[1] "miceadds" "Morpho"  
+Ended at  2017-08-10 16:41:34.47069 
+
+
+Detailed Discussion
+===================
+
+Two prior failures, one spurious, no issues.
+
+
+Previously Failed
+-----------------
+
+"quanteda"              internal tests failed,
+
+"rdist"			two tests fail
+                        2. Failure: euclidean metric works as expected (@test-euclidean.R#13) 
+                        `dist_mat` not equivalent to cdist(x, x).
+                        Attributes: < Length mismatch: comparison on first 1 components >
+                        --> also fails on CRAN RcppArmadillo
+
+
+Spurious
+--------
+
+"TAM"                   wants 'sirt' running example using 'gtools' and fails regardless
