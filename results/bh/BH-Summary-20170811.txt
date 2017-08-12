@@ -1,0 +1,61 @@
+
+Summary from running BH 1.64.0-0 (twice)
+========================================
+
+First
+-----
+
+Started at  2017-08-11 16:36:37.485045 
+Rcpp  version is  0.12.12 
+BH  version is  1.64.0-1 
+R version 3.4.1 (2017-06-30) -- "Single Candle" 
+
+     ok  failed skipped 
+     81      21       5 
+FAILED:
+ [1] "beanz"          "bmlm"           "breathteststan" "ddalpha"        "dfpk"           "dynsurv"        "eggCounts"      "gastempt"       "idem"           "MADPop"         "mvnfast"       
+[12] "odeintr"        "OpenMx"         "RBesT"          "Rblpapi"        "RcppQuantuccia" "rstan"          "rstanarm"       "survHE"         "treatSens"      "walker"        
+SKIPPED:
+[1] "gpuR"    "LANDD"   "RSQLite" "supc"    "svglite"
+Ended at  2017-08-11 19:15:11.43781 
+There were 20 warnings (use warnings() to see them)
+
+---> required change in BH to add additional header for serialization to ublas
+
+
+Second
+------
+
+Started at  2017-08-11 19:28:29.61512 
+Rcpp  version is  0.12.12 
+BH  version is  1.64.0-1 
+R version 3.4.1 (2017-06-30) -- "Single Candle" 
+
+     ok  failed skipped 
+     99       3       5 
+FAILED:
+[1] "mvnfast" "Rblpapi" "rstan"  
+SKIPPED:
+[1] "gpuR"    "LANDD"   "RSQLite" "supc"    "svglite"
+Ended at  2017-08-11 22:38:37.053586 
+
+
+Brief Discussion
+===================
+
+
+Possibly issues
+---------------
+
+  mvnfast               Test fails, will talk to upstream
+
+
+  rstan                 Compilation issue, reported upstream, will be fixed upstream
+
+
+Non-issues
+----------
+
+  Rblpapi               Extended tests require Bbg access, can fail during off-hours
+
+
