@@ -119,8 +119,8 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     } else {
         bad <<- bad + 1
     }
-    cat(sprintf("RESULT for %s : %s (%d of %d, %d good, %d bad) -- %s\n",
-                pkg, if (rc==0) "success" else "failure", pi, n, good, bad,
+    cat(sprintf("%s : %s (%d of %d, %d good, %d bad, %d skipped) -- %s\n",
+                pkg, if (rc==0) "success" else "failure", pi, n, good, bad, skipped,
                 remtime(good+bad, n, starttime, thisstart)))
     res[pi, ]
 
