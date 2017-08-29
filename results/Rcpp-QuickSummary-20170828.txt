@@ -1,0 +1,100 @@
+
+OVERVIEW
+========
+
+First Run -- New Iterator test
+------------------------------
+
+Started at  2017-08-26 13:07:09.691926 
+Rcpp version is 0.12.12.2 on dirk5930ub 
+R version 3.4.1 (2017-06-30) -- "Single Candle" 
+
+     ok  failed skipped 
+   1101      14      15 
+FAILED:
+ [1] "accelerometry" "climdex.pcic"  "ConConPiWiFun" "gkmSVM"        "grattan"       "humarray"      "icosa"         "kergp"         "multinet"      "officer"       "rstan"         "sf"           
+[13] "Wmisc"         "yCrypticRNAs" 
+SKIPPED:
+ [1] "gpuR"         "hBayesDM"     "joinXL"       "kmcudaR"      "LANDD"        "mafs"         "mice"         "miceadds"     "Morpho"       "PLMIX"        "RmixmodCombi" "RSQLite"      "supc"        
+[14] "svglite"      "WGCNA"       
+
+
+Second Run -- Current Rcpp Master
+---------------------------------
+
+Started at  2017-08-27 10:26:46.659138 
+Rcpp version is 0.12.12.1 on dirk5930ub 
+R version 3.4.1 (2017-06-30) -- "Single Candle" 
+
+     ok  failed skipped 
+   1099      16      15 
+FAILED:
+ [1] "accelerometry" "climdex.pcic"  "ConConPiWiFun" "gkmSVM"        "grattan"       "humarray"      "icosa"         "kergp"         "multinet"      "officer"       "Rblpapi"       "rstan"        
+[13] "sbrl"          "sf"            "Wmisc"         "yCrypticRNAs" 
+SKIPPED:
+ [1] "gpuR"         "hBayesDM"     "joinXL"       "kmcudaR"      "LANDD"        "mafs"         "mice"         "miceadds"     "Morpho"       "PLMIX"        "RmixmodCombi" "RSQLite"      "supc"        
+[14] "svglite"      "WGCNA"       
+
+
+
+Of these sixteen, fourteen are present in both -- likely not caused by new code
+  
+  
+DETAILS 
+=======
+
+
+"climdex.pcic"		possible internal test failure
+
+"ConConPiWiFun"         test failure, segfault, unclear
+
+"gkmSVM"                required packages not available --> should skip
+
+"grattan"               test failure, segfault
+
+"humarray"              test failure, segfault
+
+"icosa"                 test failure
+
+"multinet"              test failure, segfault
+
+"Wmisc"                 possibly internal test failure
+
+"yCrypticRNAs"          required packages not available --> should skip
+
+
+Previously Known Failures - Reoccurring
+---------------------------------------
+
+"kerpg"			test failure
+                           Error in optim(par = parIni, fn = thisLogLikFun, gr = thisLogLikGrad,  : 
+                             L-BFGS-B needs finite values of 'fn'
+                           Error in .local(object, ...) : error in 'optim'
+
+"officer"		testthat failure, reason unclear
+
+"rdist"			testthat failure, reason unclear
+   
+
+Spurious Failures
+-----------------
+
+"accelerometry"		zero byte download, passes fine once proper tar.gz provided
+
+"Rblpapi" 		Rblpapi weekend testing harder -- goes away when testing on weekday with backend data
+
+"sbrl"			sbrl has segfault -- goes away when trying again
+
+"sf"                    test failure, by now replaced by new version, passes with that
+
+
+
+SUMMARY
+=======
+
+Should be fine
+
+
+
+
+
