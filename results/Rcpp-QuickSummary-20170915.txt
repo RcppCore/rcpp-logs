@@ -1,0 +1,71 @@
+
+OVERVIEW: Using current Rcpp
+============================
+
+Started at  2017-09-14 15:06:30.670285 
+Rcpp version is 0.12.12.2.2 on dirk5930ub 
+R version 3.4.1 (2017-06-30) -- "Single Candle" 
+
+     ok  failed skipped 
+   1118      12      19 
+FAILED:
+ [1] "brms"              "climdex.pcic"      "ConConPiWiFun"     "icosa"             "kergp"             "officer"           "rstan"             "rstanarm"          "sbrl"             
+[10] "vdiffr"            "VeryLargeIntegers" "Wmisc"            
+SKIPPED:
+ [1] "gkmSVM"       "gpuR"         "hBayesDM"     "humarray"     "joinXL"       "kmcudaR"      "LANDD"        "mafs"         "mice"         "miceadds"     "Morpho"       "PLMIX"        "rDotNet"     
+[14] "RmixmodCombi" "RSQLite"      "supc"         "svglite"      "WGCNA"        "yCrypticRNAs"
+
+
+Of these twelve, eight are recurrent known issues -- and also failed with the preceding run with
+Rcpp 0.12.12.  The four new ones are all somewhat spurious.
+  
+  
+DETAILS 
+=======
+
+New but spurious
+----------------
+
+"brms"			likely internal: "Failure: plotting functions don't throw unexpected errors" [also with CRAN Rcpp]
+
+"rstanarm"              possibly internal:  Error in new_CppObject_xp(fields$.module, fields$.pointer, ...) : no valid constructor available for the argument list [also with CRAN Rcpp]
+
+"sbrl"                  possibly internal and/or spurious: segfault [but passes on re-test]
+
+"VeryLargeIntegers"     possibly internal: segfault [also with CRAN Rcpp]
+
+
+Failed Before
+-------------
+
+"climdex.pcic"		possible internal test failure [also with CRAN Rcpp]
+
+"ConConPiWiFun"         test failure, segfault, unclear [also with CRAN Rcpp]
+
+"icosa"                 test failure [also with CRAN Rcpp]
+
+"kerpg"			test failure
+                           Error in optim(par = parIni, fn = thisLogLikFun, gr = thisLogLikGrad,  : 
+                             L-BFGS-B needs finite values of 'fn'
+                           Error in .local(object, ...) : error in 'optim'
+
+"officer"		testthat failure, reason unclear
+
+"rstan"                 known BH issue
+
+"vdiffr"                Error in svglite_(file, bg, width, height, pointsize, standalone, aliases) : 
+                          function 'gdtools_RcppExport_validate' not provided by package 'gdtools'
+
+"Wmisc"                 possibly internal test failure [also with CRAN Rcpp]
+
+
+
+SUMMARY
+=======
+
+Rcpp should be fine
+
+
+
+
+
