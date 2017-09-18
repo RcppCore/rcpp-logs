@@ -1,0 +1,78 @@
+
+OVERVIEW: Using current Rcpp
+============================
+
+Started at  2017-09-17 08:42:56.066983 
+Rcpp version is 0.12.12.3 on dirk5930ub 
+R version 3.4.1 (2017-06-30) -- "Single Candle" 
+
+     ok  failed skipped 
+   1120      14      19 
+FAILED:
+ [1] "brms"              "climdex.pcic"      "ConConPiWiFun"     "EWGoF"             "icosa"             "kergp"             "netdiffuseR"       "officer"           "Rblpapi"          
+[10] "rstan"             "rstanarm"          "vdiffr"            "VeryLargeIntegers" "Wmisc"            
+SKIPPED:
+ [1] "gkmSVM"       "gpuR"         "hBayesDM"     "humarray"     "joinXL"       "kmcudaR"      "LANDD"        "mafs"         "mice"         "miceadds"     "Morpho"       "PLMIX"        "rDotNet"     
+[14] "RmixmodCombi" "RSQLite"      "supc"         "svglite"      "WGCNA"        "yCrypticRNAs"
+Ended at  2017-09-18 04:08:44.204941 
+
+
+Of these fourteen, twelve are recurrent known issues -- and also failed with the preceding run with
+Rcpp 0.12.12.  Two are new but fail with CRAN's Rcpp as well.
+  
+  
+DETAILS 
+=======
+
+New but spurious
+----------------
+
+"EWGoF"                 core dumps, also reported some issue in CRAN checks; just idles with CRAN Rcpp
+
+"netdiffuseR"           also core dumps; but passed when re-running (against either Rcpp)
+
+
+Failed Before
+-------------
+
+"brms"			likely internal: "Failure: plotting functions don't throw unexpected errors" [also with CRAN Rcpp]
+
+"climdex.pcic"		possible internal test failure [also with CRAN Rcpp]
+
+"ConConPiWiFun"         test failure, segfault, unclear [also with CRAN Rcpp]
+
+"icosa"                 test failure [also with CRAN Rcpp]
+
+"kerpg"			test failure
+                           Error in optim(par = parIni, fn = thisLogLikFun, gr = thisLogLikGrad,  : 
+                             L-BFGS-B needs finite values of 'fn'
+                           Error in .local(object, ...) : error in 'optim'
+
+"officer"		testthat failure, reason unclear
+
+"Rblpapi"               fails on the weekend, runs fine on Monday (== market data)
+
+"rstan"                 known BH issue
+
+"rstanarm"              possibly internal:  Error in new_CppObject_xp(fields$.module, fields$.pointer, ...) : no valid constructor available for the argument list [also with CRAN Rcpp]
+
+
+"vdiffr"                Error in svglite_(file, bg, width, height, pointsize, standalone, aliases) : 
+                          function 'gdtools_RcppExport_validate' not provided by package 'gdtools'
+
+"VeryLargeIntegers"     possibly internal: segfault [also with CRAN Rcpp]
+
+
+"Wmisc"                 possibly internal test failure [also with CRAN Rcpp]
+
+
+
+SUMMARY
+=======
+
+Rcpp should be fine
+
+
+
+
+
