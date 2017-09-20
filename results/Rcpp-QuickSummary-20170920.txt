@@ -1,0 +1,76 @@
+
+OVERVIEW: Using current Rcpp pr#750
+===================================
+
+Started at  2017-09-18 14:41:31.226891 
+Rcpp version is 0.12.12.4 on dirk5930ub 
+R version 3.4.1 (2017-06-30) -- "Single Candle" 
+
+     ok  failed skipped 
+   1123      12      19 
+FAILED:
+ [1] "brms"              "climdex.pcic"      "ConConPiWiFun"     NA                  "icosa"             "kergp"             "markovchain"       "officer"           "rstan"            
+[10] "rstanarm"          "vdiffr"            "VeryLargeIntegers" "Wmisc"            
+SKIPPED:
+ [1] NA             "gkmSVM"       "gpuR"         "hBayesDM"     "humarray"     "joinXL"       "kmcudaR"      "LANDD"        "mafs"         "mice"         "miceadds"     "Morpho"       "PLMIX"       
+[14] "rDotNet"      "RmixmodCombi" "RSQLite"      "supc"         "svglite"      "WGCNA"        "yCrypticRNAs"
+Ended at  2017-09-20 00:26:15.112478 
+
+Of these twelve, ten are recurrent known issues -- and also failed with the preceding run with Rcpp
+0.12.12.  One is a potential issue (markovchain). The final one (EWGoF) is a runaway test which will
+a new skip.
+  
+  
+DETAILS 
+=======
+
+New potential issue
+-------------------
+
+"markovchain"           compile error
+
+
+Failed Before
+-------------
+
+"brms"			likely internal: "Failure: plotting functions don't throw unexpected errors" [also with CRAN Rcpp]
+
+"climdex.pcic"		possible internal test failure [also with CRAN Rcpp]
+
+"ConConPiWiFun"         test failure, segfault, unclear [also with CRAN Rcpp]
+
+"EWGoF"                 kill after MANY hours of idle; skip from now on
+
+"icosa"                 test failure [also with CRAN Rcpp]
+
+"kerpg"			test failure
+                           Error in optim(par = parIni, fn = thisLogLikFun, gr = thisLogLikGrad,  : 
+                             L-BFGS-B needs finite values of 'fn'
+                           Error in .local(object, ...) : error in 'optim'
+
+"officer"		testthat failure, reason unclear
+
+"rstan"                 known BH issue
+
+"rstanarm"              possibly internal:  Error in new_CppObject_xp(fields$.module, fields$.pointer, ...) : no valid constructor available for the argument list [also with CRAN Rcpp]
+
+
+"vdiffr"                Error in svglite_(file, bg, width, height, pointsize, standalone, aliases) : 
+                          function 'gdtools_RcppExport_validate' not provided by package 'gdtools'
+
+"VeryLargeIntegers"     possibly internal: segfault [also with CRAN Rcpp]
+
+
+"Wmisc"                 possibly internal test failure [also with CRAN Rcpp]
+
+
+
+SUMMARY
+=======
+
+Rcpp should be fine
+
+
+
+
+
