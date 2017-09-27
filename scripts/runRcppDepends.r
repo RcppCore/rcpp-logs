@@ -8,6 +8,8 @@ cat(pkg, "version is", packageDescription(pkg)$Version, "on", Sys.info()[["noden
 rbinary <- "R"
 rversion <- system(paste(rbinary, "--version | head -1"), intern=TRUE)
 cat(rversion, "\n")
+gppversion <- system("g++ --version | head -1", intern=TRUE)
+cat("g++ version", gppversion, "\n")
 
 
 ## use a test-local directory, install Rcpp, RcppArmadillo, ... there

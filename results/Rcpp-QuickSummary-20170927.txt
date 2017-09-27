@@ -1,0 +1,78 @@
+
+OVERVIEW: Using current Rcpp
+============================
+
+Started at  2017-09-26 17:28:06.046654 
+Rcpp version is 0.12.13.1 on dirk5930ub 
+R version 3.4.1 (2017-06-30) -- "Single Candle" 
+g++ version g++-6.real (Ubuntu 6.3.0-12ubuntu2) 6.3.0 20170406 
+
+[TODO]
+
+     ok  failed skipped
+   1130      14      20
+FAILED:
+ [1] "brms"              "castor"            "climdex.pcic"      "ConConPiWiFun"     "contoureR"         "icosa"             "kergp"             "officer"           "rstan"
+[10] "rstanarm"          "rstansim"          "spiderbar"         "VeryLargeIntegers" "Wmisc"
+SKIPPED:
+ [1] "EWGoF"        "gkmSVM"       "gpuR"         "hBayesDM"     "humarray"     "joinXL"       "kmcudaR"      "LANDD"        "mafs"         "mice"         "miceadds"     "Morpho"       "PLMIX"
+[14] "rDotNet"      "RmixmodCombi" "RSQLite"      "supc"         "svglite"      "WGCNA"        "yCrypticRNAs"
+Ended at  2017-09-27 13:15:06.174934
+
+
+Of these fourteen, several are recurrent known issues -- and also failed with the preceding run with Rcpp
+0.12.12.  Three are new but none points to Rcpp itself.
+  
+  
+DETAILS 
+=======
+
+New spurious issue
+-------------------
+
+"castor"           	permissions issues; version 1.2.1 passes 
+
+"rstansim"              segfault
+
+"spiderbar"             internal unit tests issue?
+
+
+Failed Before
+-------------
+
+"brms"			likely internal: "Failure: plotting functions don't throw unexpected errors" [also with CRAN Rcpp]
+
+"climdex.pcic"		possible internal test failure [also with CRAN Rcpp]
+
+"ConConPiWiFun"         test failure, segfault, unclear [also with CRAN Rcpp]
+
+"countoureR"            qhull internal error 
+
+"icosa"                 test failure [also with CRAN Rcpp]
+
+"kerpg"			test failure
+                           Error in optim(par = parIni, fn = thisLogLikFun, gr = thisLogLikGrad,  : 
+                             L-BFGS-B needs finite values of 'fn'
+                           Error in .local(object, ...) : error in 'optim'
+
+"officer"		testthat failure, reason unclear
+
+"rstan"                 known BH issue
+
+"rstanarm"              possibly internal:  Error in new_CppObject_xp(fields$.module, fields$.pointer, ...) : no valid constructor available for the argument list [also with CRAN Rcpp]
+
+"VeryLargeIntegers"     possibly internal: segfault [also with CRAN Rcpp]
+
+
+"Wmisc"                 possibly internal test failure [also with CRAN Rcpp]
+
+
+SUMMARY
+=======
+
+Rcpp should be fine
+
+
+
+
+
