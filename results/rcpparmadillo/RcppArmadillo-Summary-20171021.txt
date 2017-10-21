@@ -1,0 +1,29 @@
+
+Summary from running  0.8.100.2.0
+=================================
+
+Started at  2017-10-21 07:34:52.28341 
+Rcpp  version is  0.12.13 
+RcppArmadillo  version is  0.8.200.0.1 
+R version 3.4.2 (2017-09-28) -- "Short Summer" 
+g++ version g++-6.real (Ubuntu 6.3.0-12ubuntu2) 6.3.0 20170406 
+Excluded: 
+ [1] "EWGoF"        "gkmSVM"       "gpuR"         "hBayesDM"     "hmi"          "humarray"     "joinXL"       "kmcudaR"      "LANDD"        "mafs"         "mice"         "miceadds"     "Morpho"      
+[14] "PLMIX"        "rDotNet"      "RmixmodCombi" "RSQLite"      "supc"         "svglite"      "treescape"    "WGCNA"        "yCrypticRNAs"
+
+
+     ok  failed skipped 
+    407       2       2 
+FAILED:
+[1] "mrgsolve" "RxODE"   
+SKIPPED:
+[1] "miceadds" "Morpho"  
+Ended at  2017-10-21 16:13:01.627067 
+
+
+Detailed Discussion
+===================
+
+The two failures look spurious, both were "kills" from runaway testing.
+
+
