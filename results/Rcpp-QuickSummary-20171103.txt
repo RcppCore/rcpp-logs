@@ -1,0 +1,62 @@
+
+OVERVIEW: Using current Rcpp
+============================
+
+Started at  2017-11-03 10:02:22.664913 
+Rcpp version is 0.12.13.1 on dirk5930ub 
+R version 3.4.2 (2017-09-28) -- "Short Summer" 
+g++ version g++-6.real (Ubuntu 6.3.0-12ubuntu2) 6.3.0 20170406 
+
+
+     ok  failed skipped
+   1166      30      26
+FAILED:
+ [1] "bssm"              "climdex.pcic"      "ConConPiWiFun"     "contoureR"         "ddalpha"           "dfpk"              "eggCounts"         "FunChisq"          "GBJ"
+[10] "glmmsr"            "icosa"             "idem"              "kergp"             "mlmm"              "odeintr"           "officer"           "OpenMx"            "prophet"
+[19] "RBesT"             "Rblpapi"           "RcppMLPACK"        "RcppQuantuccia"    "RcppShark"         "rootWishart"       "rstan"             "rstanarm"          "rvinecopulib"
+[28] "spiderbar"         "VeryLargeIntegers" "walker"
+SKIPPED:
+ [1] "EWGoF"        "gkmSVM"       "gpuR"         "hBayesDM"     "humarray"     "joinXL"       "kmcudaR"      "LANDD"        "mafs"         "Mega2R"       "mice"         "miceadds"     "Morpho"
+[14] "mrgsolve"     "PLMIX"        "PReMiuM"      "rDotNet"      "RmixmodCombi" "RSQLite"      "RxODE"        "sdcTable"     "supc"         "svglite"      "WGCNA"        "yCrypticRNAs" "zstdr"
+Ended at  2017-11-03 23:45:14.10449
+
+bssm            build error:  error: unable to find numeric literal operator ‘operator""Q’ -- try '-fext-numeric-literals'
+climdex.pcic    internal test error
+ConConPiWiFun   internal test error
+contoureR       internal qhull
+ddalpha         build error:  error: unable to find numeric literal operator ‘operator""Q’
+dfpk            build error:  error: unable to find numeric literal operator ‘operator""Q’
+eggCounts       build error:  error: unable to find numeric literal operator ‘operator""Q’
+FunChisq        build error:  error: unable to find numeric literal operator ‘operator""Q’
+glmmsr          build error:  error: unable to find numeric literal operator ‘operator""Q’
+icosa           internal test error
+idem            build error:  error: unable to find numeric literal operator ‘operator""Q’
+kergp           internal test error
+mlmm            internal test error
+odeintr         build error:  error: unable to find numeric literal operator ‘operator""Q’
+officer         internal test error
+OpenMx          build error:  error: unable to find numeric literal operator ‘operator""Q’
+prophet         build error:  error: unable to find numeric literal operator ‘operator""Q’
+RBesT           build error:  error: unable to find numeric literal operator ‘operator""Q’
+RBlpApi         spurious test error on weekend
+RcppMLPACK      build error:  error: unable to find numeric literal operator ‘operator""Q’
+RcppShark       build error:  error: unable to find numeric literal operator ‘operator""Q’
+rootWishart     build error:  error: unable to find numeric literal operator ‘operator""Q’
+rstan           BOOST_PHOENIX
+rstanarm        test error
+rvinecopulib    build error:  error: unable to find numeric literal operator ‘operator""Q’
+spiderbar       test error
+VeryLargeIntegers test error
+walker          build error:  error: unable to find numeric literal operator ‘operator""Q’  
+
+ 
+  
+DETAILS 
+=======
+
+About half failed with a Boost interaction addressable with new compiler flag '-fext-numeric-literals'
+
+
+
+
+

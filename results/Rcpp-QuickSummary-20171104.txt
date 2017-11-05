@@ -1,0 +1,56 @@
+
+OVERVIEW: Using current Rcpp (with PR #767)
+===========================================
+
+Started at  2017-11-04 07:05:29.199844 
+Rcpp version is 0.12.13.2 on dirk5930ub 
+R version 3.4.2 (2017-09-28) -- "Short Summer" 
+g++ version g++-6.real (Ubuntu 6.3.0-12ubuntu2) 6.3.0 20170406 
+
+
+     ok  failed skipped 
+   1184      14      26 
+FAILED:
+ [1] "climdex.pcic"      "ConConPiWiFun"     "contoureR"         "glmmsr"            "icosa"             "kergp"             "mlmm"              "officer"           "RcppQuantuccia"   
+[10] "RQuantLib"         "rstan"             "rstanarm"          "spiderbar"         "VeryLargeIntegers"
+SKIPPED:
+ [1] "EWGoF"        "gkmSVM"       "gpuR"         "hBayesDM"     "humarray"     "joinXL"       "kmcudaR"      "LANDD"        "mafs"         "Mega2R"       "mice"         "miceadds"     "Morpho"      
+[14] "mrgsolve"     "PLMIX"        "PReMiuM"      "rDotNet"      "RmixmodCombi" "RSQLite"      "RxODE"        "sdcTable"     "supc"         "svglite"      "WGCNA"        "yCrypticRNAs" "zstdr"       
+Ended at  2017-11-05 01:42:21.843451 
+
+Note
+----
+
+The compiler flag '-fext-numeric-literals' was added as several packages need it.
+
+
+Details
+-------
+
+climdex.pcic    internal test error
+ConConPiWiFun   internal test error
+contoureR       internal qhull
+glmmsr          internal test error
+icosa           internal test error
+kergp           internal test error
+mlmm            internal test error
+officer         internal test error
+RcppQuantuccia  needs Date and Datetime adjustment
+RQuantLib       needs Date and Datetime adjustment
+rstan           BOOST_PHOENIX
+rstanarm        test error
+spiderbar       test error
+VeryLargeIntegers test error
+
+ 
+ 
+SUMMARY
+=======
+
+Two packages (of mine) need adjustments. Twelve others have what appear to be internal failings
+
+
+
+
+
+
