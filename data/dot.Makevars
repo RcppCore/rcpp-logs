@@ -1,0 +1,30 @@
+
+#VER=-4.9
+VER=
+CCACHE=                 ccache
+#CCACHE=
+CC=			$(CCACHE) gcc$(VER)
+CXX=			$(CCACHE) g++$(VER)
+CXX11=			$(CCACHE) g++$(VER) -std=c++11
+CXX14=			$(CCACHE) g++$(VER) -std=c++14
+
+EXTRAFLAGS=             -DBOOST_PHOENIX_NO_VARIADIC_EXPRESSION
+EXTRAFLAGS=             -fext-numeric-literals
+PEDANTIC=
+
+CFLAGS=               	-g0 -O3 -Wall -pipe $(PEDANTIC) -Wno-unused -std=gnu99 -march=native
+CXXFLAGS=		-g0 -O3 -Wall -pipe -Wno-unused $(PEDANTIC) $(EXTRAFLAGS) -march=native
+CXX1XFLAGS=		-g0 -O3 -Wall -pipe -Wno-unused $(PEDANTIC) $(EXTRAFLAGS) -march=native
+CXX11FLAGS=		-g0 -O3 -Wall -pipe -Wno-unused $(PEDANTIC) $(EXTRAFLAGS) -march=native
+CXX14FLAGS=		-g0 -O3 -Wall -pipe -Wno-unused $(PEDANTIC) $(EXTRAFLAGS) -march=native
+
+SHLIB_CXXLD=            $(CCACHE) g++$(VER) 
+
+SHLIB_CXXLDFLAGS =      -Wl,-S -shared
+SHLIB_CXX11LDFLAGS =    -Wl,-S -shared
+SHLIB_CXX14LDFLAGS = 	-Wl,-S -shared
+SHLIB_FCLDFLAGS = 	-Wl,-S -shared
+SHLIB_LDFLAGS = 	-Wl,-S -shared
+
+FC=			ccache gfortran
+F77=			ccache gfortran
