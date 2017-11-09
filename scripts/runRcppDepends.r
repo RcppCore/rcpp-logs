@@ -1,5 +1,21 @@
 #!/usr/bin/r
 
+suppressMessages({
+    library(docopt)        # no not see methods loads
+    #library(crayon)
+})
+
+doc <- paste0("
+
+Usage: runRcppDepends.r [-n] [-h]
+
+-n --dryrun        dryrun, downloads packages but does not test
+-h --help          show this help text
+
+")
+
+opt <- docopt(doc)
+
 cat("Started at ", format(Sys.time()), "\n")
 pkg <- "Rcpp"
 cat(pkg, "version is", packageDescription(pkg)$Version, "on", Sys.info()[["nodename"]], "\n")
@@ -23,13 +39,14 @@ Sys.setenv("R_LIBS_USER"="/tmp/RcppDepends/lib")
 ##if (Sys.getenv("MAKE") == "")
 #Sys.setenv("MAKE"="make -j 2 -O")
 
-r <- getOption("repos")
+##r <- getOption("repos")
+r <- character()
 r["CRAN"] <- "http://cran.rstudio.com"
 r["BioCsoft"] <- "http://www.bioconductor.org/packages/release/bioc"
 options(repos = r)
 
 Sys.setenv("BOOSTLIB"="/usr/include")   # for the borked src/Makevars of ExactNumCI
-Sys.setenv("RGL_USE_NULL"="TRUE")       # Duncan Murdoch on r-package-devel on 12 Aug 2015
+Sys.setenv("RGL_USE_NULL"="TRUE")       # Duncan Murdoch on r-package-devel on 12 Aug 2015#
 
 Sys.setenv("R_MAKEVARS_USER"="~/git/rcpp-logs/data/dot.Makevars")
 
@@ -37,7 +54,7 @@ Sys.setenv("R_MAKEVARS_USER"="~/git/rcpp-logs/data/dot.Makevars")
 invisible(sapply(list.files("/tmp", "(repos|lib).*rds$", full.names=TRUE), unlink))
 
 ## update local lib/
-update.packages(lib.loc="lib/", ask=FALSE)
+#update.packages(lib.loc="lib/", ask=FALSE)
 
 IP <- installed.packages(lib.loc=loclib)
 AP <- available.packages(contrib.url(r["CRAN"]),filter=list())	# available package at CRAN
@@ -126,6 +143,7 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     if (p %in% exclset) {
         skipped <<- skipped + 1
         cat(sprintf("%s : %s (%d of %d, %d good, %d bad, %d skipped) -- %s\n",
+                    #pkg, blue("skipped"), pi, n, good, bad, skipped,
                     pkg, "skipped", pi, n, good, bad, skipped,
                     remtime(good+bad, n, starttime, thisstart)))
         res[pi, "res"] <- 2
@@ -135,14 +153,14 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     #print(pkg)
     pathpkg <- paste(AP[i,"Repository"], "/", pkg, sep="")
 
-    ipidx <- which(IP[,"Package"] == p)
-    if ((length(ipidx) == 0) || (IP[ipidx,"Version"] != AP[i,"Version"])) {
-        #cat("Installing Dependencies\n")
-        install.packages(p, lib=loclib, quiet=TRUE, verbose=FALSE, dependencies=TRUE)
+#    ipidx <- which(IP[,"Package"] == p)
+#    if ((length(ipidx) == 0) || (IP[ipidx,"Version"] != AP[i,"Version"])) {
+#        #cat("Installing Dependencies\n")
+#        install.packages(p, lib=loclib, quiet=TRUE, verbose=FALSE, dependencies=TRUE)
     #} else {
         #cat("NOT Installing Dependencies\n")
         #print(ipidx)
-    }
+#    }
 
     if (!file.exists(pkg)) {
         ## we got random download failures once in a while, so if running locally, use CRANberries-created mirror
@@ -157,9 +175,14 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
         }
     }
 
-    rc <- system(paste("xvfb-run-safe --server-args=\"-screen 0 1024x768x24\" ",
-                       rbinary,         # R or RD
-                       " CMD check --no-manual --no-vignettes ", pkg, " 2>&1 > ", pkg, ".log", sep=""))
+    if (opt$dryrun) {
+        rc <- 0
+    } else {
+        rc <- system(paste("xvfb-run-safe --server-args=\"-screen 0 1024x768x24\" ",
+                           rbinary,         # R or RD
+                           " CMD check --no-manual --no-vignettes ", pkg, " 2>&1 > ",
+                           pkg, ".log", sep=""))
+    }
     res[pi, "res"] <- rc
     if (rc == 0) {
         good <<- good + 1
@@ -167,6 +190,7 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
         bad <<- bad + 1
     }
     cat(sprintf("%s : %s (%d of %d, %d good, %d bad, %d skipped) -- %s\n",
+                #pkg, if (rc==0) green("success") else red("failure"), pi, n, good, bad, skipped,
                 pkg, if (rc==0) "success" else "failure", pi, n, good, bad, skipped,
                 remtime(good+bad, n, starttime, thisstart)))
     res[pi, ]
