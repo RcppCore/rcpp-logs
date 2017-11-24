@@ -1,5 +1,21 @@
 #!/usr/bin/r
 
+suppressMessages({
+    library(docopt)        # no not see methods loads
+    #library(crayon)
+})
+
+doc <- paste0("
+
+Usage: runRcppArmadilloDepends.r [-n] [-h]
+
+-n --dryrun        dryrun, downloads packages but does not test
+-h --help          show this help text
+
+")
+
+opt <- docopt(doc)
+
 cat("Started at ", format(Sys.time()), "\n")
 pkg <- "Rcpp"
 cat(pkg, " version is ", packageDescription(pkg)$Version, "\n")
@@ -101,7 +117,8 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
 
     ipidx <- which(IP[,"Package"] == p)
     if ((length(ipidx) == 0) || (IP[ipidx,"Version"] != AP[i,"Version"])) {
-        install.packages(p, lib=loclib, quiet=TRUE, verbose=FALSE, dependencies=TRUE)
+        ##install.packages(p, lib=loclib, quiet=TRUE, verbose=FALSE, dependencies=TRUE)
+        cat("*** need to install ", p, "\n")
     }
 
     if (!file.exists(pkg)) {
@@ -114,10 +131,13 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
         }
     }
 
-    #if (!file.exists(pkg)) download.file(pathpkg, pkg, quiet=TRUE)
-    rc <- system(paste("xvfb-run-safe --server-args=\"-screen 0 1024x768x24\" ",
-                       rbinary,         # R or RD
-                       " CMD check --no-manual --no-vignettes ", pkg, " 2>&1 > ", pkg, ".log", sep=""))
+    if (opt$dryrun) {
+        rc <- 0
+    } else {
+        rc <- system(paste("xvfb-run-safe --server-args=\"-screen 0 1024x768x24\" ",
+                           rbinary,         # R or RD
+                           " CMD check --no-manual --no-vignettes ", pkg, " 2>&1 > ", pkg, ".log", sep=""))
+    }
     res[pi, "res"] <- rc
     if (rc == 0) {
         good <<- good + 1
