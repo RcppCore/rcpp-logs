@@ -1,0 +1,34 @@
+
+Summary from running  0.8.300.0.0
+=================================
+
+Started at  2017-11-23 15:39:05.525245 
+Rcpp  version is  0.12.14.1 
+RcppArmadillo  version is  0.8.300.0.0 
+R version 3.4.2 (2017-09-28) -- "Short Summer" 
+g++ version g++-6.real (Ubuntu 6.3.0-12ubuntu2) 6.3.0 20170406 
+Excluded: 
+ [1] "EWGoF"        "gkmSVM"       "gpuR"         "hBayesDM"     "hmi"          "humarray"     "joinXL"       "kmcudaR"      "LANDD"        "mafs"         "Mega2R"       "mice"         "miceadds"    
+[14] "Morpho"       "mrgsolve"     "PLMIX"        "PReMiuM"      "rDotNet"      "RmixmodCombi" "RSQLite"      "RxODE"        "sdcTable"     "supc"         "svglite"      "treescape"    "WGCNA"       
+[27] "yCrypticRNAs" "zstdr"       
+
+
+
+     ok  failed skipped 
+    428       1       4 
+FAILED:
+[1] "imbalance" NA         
+SKIPPED:
+[1] "miceadds" "Morpho"   "mrgsolve" NA         "RxODE"   
+Ended at  2017-11-24 01:08:31.612566 
+
+
+Detailed Discussion
+===================
+
+- imbalance             undeclared test dependency on smotefamily
+- nlmixr                stalled, killed, now blacklisted -- infinite example time
+
+Overal 428:2 with four skipped is pretty good.
+
+
