@@ -1,0 +1,65 @@
+
+OVERVIEW: Using current Rcpp (with PR #776)
+===========================================
+
+Started at  2017-11-25 21:33:04.600257 
+Rcpp version is 0.12.14.2 on dirk5930ub 
+R version 3.4.2 (2017-09-28) -- "Short Summer" 
+g++ version g++-6.real (Ubuntu 6.3.0-12ubuntu2) 6.3.0 20170406 
+
+
+     ok  failed skipped 
+   1199      19      27 
+FAILED:
+ [1] "biofiles"          "cld2"              "climdex.pcic"      "ConConPiWiFun"     "contoureR"         "glmmsr"            "icosa"             "JMcmprsk"          "kergp"            
+[10] "mlmm"              "moveWindSpeed"     "officer"           "raptr"             "rEDM"              "rstan"             "rstanarm"          NA                  "SELF"             
+[19] "tm"                "VeryLargeIntegers"
+SKIPPED:
+ [1] "EWGoF"        "gkmSVM"       "gpuR"         "hBayesDM"     "humarray"     "joinXL"       "kmcudaR"      "LANDD"        "mafs"         "Mega2R"       "mice"         "miceadds"     "Morpho"      
+[14] "mrgsolve"     "nlmixr"       "PLMIX"        "PReMiuM"      "rDotNet"      "RmixmodCombi" "RSQLite"      "RxODE"        NA             "sdcTable"     "supc"         "svglite"      "WGCNA"       
+[27] "yCrypticRNAs" "zstdr"       
+Ended at  2017-11-26 14:00:58.414723 
+
+
+Note
+----
+
+The compiler flag '-fext-numeric-literals' was added as several packages need it.
+
+
+Details
+-------
+
+biofiles        needs several BioC package --> to be blacklisted
+cld2            internal test error, possibly pfdtools-related
+climdex.pcic    internal test error
+ConConPiWiFun   internal test error
+contoureR       internal qhull
+glmmsr          internal test error
+icosa           internal test error
+JMcmprsk        unclear, gsl_rng linker error, also failing on CRAN
+kergp           internal test error
+mlmm            internal test error
+moveWindSpeed   unclear, cannot load package move
+officer         internal test error
+raptr           unclear, hypervolume not found
+rEDM            unclear, incomplete download?
+rstan           BOOST_PHOENIX
+rstanarm        test error
+SCORPIUS        unclear, killed during test
+SELF            package 'CompareCausalNetworks' unavailable
+tm              pdftools not found
+VeryLargeIntegers test error
+
+ 
+ 
+SUMMARY
+=======
+
+A few more than usual failure with packages from a local library.
+
+
+
+
+
+
