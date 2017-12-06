@@ -1,0 +1,68 @@
+
+OVERVIEW: Using current Rcpp
+============================
+
+Started at  2017-12-05 08:09:54.564147 
+Rcpp version is 0.12.14.4 on dirk5930ub 
+R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree" 
+g++ version g++-6.real (Ubuntu 6.3.0-12ubuntu2) 6.3.0 20170406 
+
+     ok  failed skipped 
+   1203      16      29 
+FAILED:
+ [1] "climdex.pcic"      "ConConPiWiFun"     "contoureR"         "glmmsr"            "icosa"             "JMcmprsk"          "kergp"             "mlmm"              "moveWindSpeed"    
+[10] "raptr"             "RClickhouse"       "rstan"             "rstanarm"          "rvg"               "SELF"              "VeryLargeIntegers"
+SKIPPED:
+ [1] "biofiles"     "EWGoF"        "gkmSVM"       "gpuR"         "hBayesDM"     "humarray"     "joinXL"       "kmcudaR"      "LANDD"        "mafs"         "Mega2R"       "mice"         "miceadds"    
+[14] "Morpho"       "mrgsolve"     "nlmixr"       "PLMIX"        "PReMiuM"      "rDotNet"      "RmixmodCombi" "RSQLite"      "RxODE"        "SCORPIUS"     "sdcTable"     "supc"         "svglite"     
+[27] "WGCNA"        "yCrypticRNAs" "zstdr"       
+Ended at  2017-12-05 23:27:35.105516 
+
+
+Normal Errors
+-------------
+
+climdex.pcic    	internal test error
+ConConPiWiFun           internal test error
+contoureR               internal qhull
+glmmsr          	internal test error
+icosa                   internal test error
+JMcmprsk                unclear, gsl_rng linker error, also failing on CRAN
+kergp                   internal test error
+mlmm                    internal test, unclear
+moveWindSpeed           unclear, cannot load package move
+raptr                   unclear, hypervolume not found
+RClickhouse             compile error, citycrc.h not found; builds on CRAN               
+rstan                   BOOST_PHOENIX
+rstanarm                test error
+VeryLargeIntegers       test error
+
+
+Spurious Errors
+---------------
+
+rvg                     Package required and available but unsuitable version: ‘officer’
+SELF                    Package required but not available: ‘CompareCausalNetworks’
+
+
+Note
+----
+
+The compiler flag '-fext-numeric-literals' was added as several packages need it.
+
+
+Details
+-------
+
+No new errors from PR #784 under investigation here
+ 
+SUMMARY
+=======
+
+A few more than usual failure with packages from a local library.
+
+
+
+
+
+
