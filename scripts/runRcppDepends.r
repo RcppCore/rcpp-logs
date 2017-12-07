@@ -2,7 +2,8 @@
 
 suppressMessages({
     library(docopt)        # no not see methods loads
-    #library(crayon)
+    library(crayon)
+    options(crayon.enabled = TRUE, crayon.colors = 256)
 })
 
 doc <- paste0("
@@ -143,8 +144,7 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
     if (p %in% exclset) {
         skipped <<- skipped + 1
         cat(sprintf("%s : %s (%d of %d, %d good, %d bad, %d skipped) -- %s\n",
-                    #pkg, blue("skipped"), pi, n, good, bad, skipped,
-                    pkg, "skipped", pi, n, good, bad, skipped,
+                    pkg, blue("skipped"), pi, n, good, bad, skipped,
                     remtime(good+bad, n, starttime, thisstart)))
         res[pi, "res"] <- 2
         return(res[pi, ])
@@ -190,8 +190,7 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
         bad <<- bad + 1
     }
     cat(sprintf("%s : %s (%d of %d, %d good, %d bad, %d skipped) -- %s\n",
-                #pkg, if (rc==0) green("success") else red("failure"), pi, n, good, bad, skipped,
-                pkg, if (rc==0) "success" else "failure", pi, n, good, bad, skipped,
+                pkg, if (rc==0) green("success") else red("failure"), pi, n, good, bad, skipped,
                 remtime(good+bad+skipped, n, starttime, thisstart)))
     res[pi, ]
 })
