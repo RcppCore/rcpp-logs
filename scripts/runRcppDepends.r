@@ -19,7 +19,9 @@ opt <- docopt(doc)
 
 cat("Started at ", format(Sys.time()), "\n")
 pkg <- "Rcpp"
-cat(pkg, "version is", packageDescription(pkg)$Version, "on", Sys.info()[["nodename"]], "\n")
+cat(pkg, "version is", packageDescription(pkg)$Version,
+    "dated", packageDescription(pkg)$Date,
+    "on", Sys.info()[["nodename"]], "\n")
 
 #rbinary <- "RD"
 rbinary <- "R"
