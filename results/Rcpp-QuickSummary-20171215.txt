@@ -1,0 +1,78 @@
+
+OVERVIEW: Using current Rcpp PR#789
+===================================
+
+Started at  2017-12-14 10:16:28.461361 
+Rcpp version is 0.12.14.6 dated 2017-12-14 on dirk5930ub 
+R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree" 
+g++ version g++-6.real (Ubuntu 6.3.0-12ubuntu2) 6.3.0 20170406 
+
+     ok  failed skipped
+   1209      24      29
+FAILED:
+ [1] "autovarCore"       "climdex.pcic"      "ConConPiWiFun"     "contoureR"         "dtwclust"          "filling"           "glmmsr"            "icosa"             "JMcmprsk"
+[10] "kergp"             "kernelboot"        "lme4"              "mlmm"              "moveWindSpeed"     "msde"              "raptr"             "RClickhouse"       "recurse"
+[19] "rrecsys"           "rstan"             "rstanarm"          "support"           "VeryLargeIntegers" "xml2"
+SKIPPED:
+ [1] "biofiles"     "EWGoF"        "gkmSVM"       "gpuR"         "hBayesDM"     "humarray"     "joinXL"       "kmcudaR"      "LANDD"        "mafs"         "Mega2R"       "mice"         "miceadds"
+[14] "Morpho"       "mrgsolve"     "nlmixr"       "PLMIX"        "PReMiuM"      "rDotNet"      "RmixmodCombi" "RSQLite"      "RxODE"        "SCORPIUS"     "sdcTable"     "supc"         "svglite"
+[27] "WGCNA"        "yCrypticRNAs" "zstdr"
+Ended at  2017-12-15 00:57:28.695246
+deddelbuettel@dirk5930ub:~/git/rcpp-logs(master)$
+
+
+New Errors
+----------
+
+autovarCore             test error in testthat
+dtwclust                test error in testthat
+filling                 Package required but not available: ‘ROptSpace’
+kernelboot              test error in testthat
+lme4                    test error in testthat
+msde                    test error in testthat
+recurse                 test error in testthat
+rrecsys                 examples error, segfault
+support                 Package required but not available: ‘MHadaptive’
+xml2                    error in tests / examples
+
+
+Normal Errors
+-------------
+
+climdex.pcic    	internal test error
+ConConPiWiFun           internal test error
+contoureR               internal qhull
+glmmsr          	internal test error
+icosa                   internal test error
+JMcmprsk                unclear, gsl_rng linker error, also failing on CRAN
+kergp                   internal test error
+mlmm                    internal test, unclear
+moveWindSpeed           unclear, cannot load package move
+raptr                   unclear, hypervolume not found
+RClickhouse             compile error, citycrc.h not found; builds on CRAN               
+rstan                   BOOST_PHOENIX
+rstanarm                test error
+VeryLargeIntegers       test error
+
+Note
+----
+
+The compiler flag '-fext-numeric-literals' was added as several packages need it.
+
+
+Details
+-------
+
+We will look more closely at some of the new errors. The could stem
+from changes in other packages.
+ 
+SUMMARY
+=======
+
+Nothing new, all good.
+
+
+
+
+
+
