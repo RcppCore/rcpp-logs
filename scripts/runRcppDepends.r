@@ -147,7 +147,7 @@ lres <- lapply(1:nrow(res), FUN=function(pi) {
         skipped <<- skipped + 1
         cat(sprintf("%s : %s (%d of %d, %d good, %d bad, %d skipped) -- %s\n",
                     pkg, blue("skipped"), pi, n, good, bad, skipped,
-                    remtime(good+bad, n, starttime, thisstart)))
+                    remtime(good+bad+skipped, n, starttime, thisstart)))
         res[pi, "res"] <- 2
         return(res[pi, ])
     }
