@@ -1,0 +1,60 @@
+
+OVERVIEW: Using current Rcpp for PR#791
+=======================================
+
+Started at  2017-12-20 11:39:23.448131 
+Rcpp version is 0.12.14.4.2 dated 2017-12-20 on dirk5930ub 
+R version 3.4.3 (2017-11-30) -- "Kite-Eating Tree" 
+g++ version g++-6.real (Ubuntu 6.3.0-12ubuntu2) 6.3.0 20170406 
+
+     ok  failed skipped 
+   1224      18      29 
+FAILED:
+ [1] "autovarCore"   "climdex.pcic"  "ConConPiWiFun" "contoureR"     "gllvm"         "glmmsr"        "icosa"         "JMcmprsk"      "kergp"         "lme4"          "mlmm"          "moveWindSpeed"
+[13] "raptr"         "RClickhouse"   "recurse"       "rstan"         "rstanarm"      "xml2"         
+SKIPPED:
+ [1] "biofiles"     "EWGoF"        "gkmSVM"       "gpuR"         "hBayesDM"     "humarray"     "joinXL"       "kmcudaR"      "LANDD"        "mafs"         "Mega2R"       "mice"         "miceadds"    
+[14] "Morpho"       "mrgsolve"     "nlmixr"       "PLMIX"        "PReMiuM"      "rDotNet"      "RmixmodCombi" "RSQLite"      "RxODE"        "SCORPIUS"     "sdcTable"     "supc"         "svglite"     
+[27] "WGCNA"        "yCrypticRNAs" "zstdr"       
+Ended at  2017-12-21 02:34:05.050727 
+
+
+Normal / Previously Seen Errors
+-------------------------------
+
+autovarCore             test error in testthat     [also fails with 0.12.14.5]
+climdex.pcic    	internal test error
+ConConPiWiFun           internal test error
+contoureR               internal qhull
+glmmsr          	internal test error
+icosa                   internal test error
+JMcmprsk                unclear, gsl_rng linker error, also failing on CRAN
+kergp                   internal test error
+lme4                    test error in testthat     [also fails with 0.12.14.5]
+mlmm                    internal test, unclear
+moveWindSpeed           unclear, cannot load package move
+msde                    test error in testthat     [also fails with 0.12.14.5]
+raptr                   unclear, hypervolume not found
+RClickhouse             compile error, citycrc.h not found; builds on CRAN               
+recurse                 test error in testthat     [also fails with 0.12.14.5]
+rstan                   BOOST_PHOENIX
+rstanarm                test error
+xml2                    error in tests / examples  [also fails with 0.12.14.5] 
+
+
+Note
+----
+
+The compiler flag '-fext-numeric-literals' was added as several packages need it.
+
+
+SUMMARY
+=======
+
+Nothing new, all good.
+
+
+
+
+
+
