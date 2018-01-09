@@ -1,0 +1,77 @@
+
+OVERVIEW: Using current Rcpp
+============================
+
+Test of Rcpp had 1221 successes, 24 failures, and 32 skipped packages.
+Ran from 2018-01-09 10:45:08.72 to 2018-01-09 13:59:18.77 for 3.236 hours
+Average of 9.123 secs relative to 54.376 secs using 6 runners
+
+Failed packages: autovarCore, climdex.pcic, ConConPiWiFun, contoureR,
+detrendr, FRK, gllvm, ICcalib, icosa, JMcmprsk, JuniperKernel, kergp,
+KSgeneral, metacoder, mlmm, moveWindSpeed, openxlsx, RClickhouse,
+raptr, recurse, sf, tibbletime, tsibble, xml2
+
+Skipped packages: biofiles, EWGoF, gpuR, growcurves, growfunctions,
+hBayesDM, humarray, joineRML, joinXL, kmcudaR, LANDD, mafs, Mega2R,
+mice, miceadds, Morpho, mrgsolve, nlmixr, PLMIX, PReMiuM, rDotNet,
+RmixmodCombi, RSQLite, RStoolbox, RxODE, SCORPIUS, sdcTable, supc,
+svglite, WGCNA, yCrypticRNAs, zstdr
+
+
+Normal / Previously Seen Errors
+-------------------------------
+
+autovarCore             test error in testthat     [also fails with 0.12.14.5]
+climdex.pcic    	internal test error
+ConConPiWiFun           internal test error
+contoureR               internal qhull
+glmmsr          	internal test error
+icosa                   internal test error
+JMcmprsk                unclear, gsl_rng linker error, also failing on CRAN
+kergp                   internal test error
+lme4                    test error in testthat     [also fails with 0.12.14.5]
+mlmm                    internal test, unclear
+moveWindSpeed           unclear, cannot load package move
+msde                    test error in testthat     [also fails with 0.12.14.5]
+raptr                   unclear, hypervolume not found
+RClickhouse             compile error, citycrc.h not found; builds on CRAN               
+recurse                 test error in testthat     [also fails with 0.12.14.5]
+xml2                    error in tests / examples  [also fails with 0.12.14.5] 
+
+
+New but Spurious Errors
+-----------------------
+
+detrendr                [Passes once installed] PPackage required but not available: ‘ijtiff’
+FRK                     [Passes once installed] Package required and available but unsuitable version: ‘Hmisc’
+ICcalib                 [Passes once installed] Package required but not available: ‘ICsurv’
+JuniperKernel           [Passes once installed] Package required but not available: ‘pbdZMQ’
+KSgeneral               [Passes once installed] Package required but not available: ‘dgof’
+sf                      [Passes once installed] Package suggested but not available for checking: ‘lwgeom’
+tibbletime              [Passes once installed] Package required and available but unsuitable version: ‘tibble’
+tsibble                 [Passes once installed] Package required and available but unsuitable version: ‘tibble’
+
+
+New Errors
+----------
+
+metacoder               Packages required but not available: ‘taxa’ ‘traits’ ‘biomformat’ ‘phylotate’
+openxlsx                test error [ also shows errors at CRAN ]
+
+
+Note
+----
+
+The compiler flag '-fext-numeric-literals' was added as several packages need it.
+
+
+SUMMARY
+=======
+
+Looks good
+
+
+
+
+
+
