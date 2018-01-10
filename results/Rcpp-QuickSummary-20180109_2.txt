@@ -1,0 +1,62 @@
+
+OVERVIEW: Using Rcpp with PR #798
+=================================
+
+Test of Rcpp had 1229 successes, 16 failures, and 33 skipped packages.
+Ran from 2018-01-09 17:03:20.31 to 2018-01-09 21:50:22.01 for 4.784 hours
+Average of 13.476 secs relative to 80.461 secs using 6 runners
+
+Failed packages: autovarCore, climdex.pcic, ConConPiWiFun, contoureR,
+gllvm, icosa, JMcmprsk, kergp, moveWindSpeed, mlmm, openxlsx, ProFit,
+RClickhouse, raptr, recurse, xml2
+
+Skipped packages: biofiles, EWGoF, gpuR, growcurves, growfunctions,
+hBayesDM, humarray, joineRML, joinXL, kmcudaR, LANDD, mafs, Mega2R,
+metacoder, mice, miceadds, Morpho, mrgsolve, nlmixr, PLMIX, PReMiuM,
+rDotNet, RmixmodCombi, RSQLite, RStoolbox, RxODE, SCORPIUS, sdcTable,
+supc, svglite, WGCNA, yCrypticRNAs, zstdr
+
+
+Normal / Previously Seen Errors
+-------------------------------
+
+autovarCore             test error in testthat     [also fails with 0.12.14.5]
+climdex.pcic    	internal test error
+ConConPiWiFun           internal test error
+contoureR               internal qhull
+glmmsr          	internal test error
+icosa                   internal test error
+JMcmprsk                unclear, gsl_rng linker error, also failing on CRAN
+kergp                   internal test error
+lme4                    test error in testthat     [also fails with 0.12.14.5]
+mlmm                    internal test, unclear
+openxlsx                test error [ also shows errors at CRAN ]
+moveWindSpeed           unclear, cannot load package move
+RClickhouse             compile error, citycrc.h not found; builds on CRAN               
+raptr                   unclear, hypervolume not found
+recurse                 test error in testthat     [also fails with 0.12.14.5]
+xml2                    error in tests / examples  [also fails with 0.12.14.5] 
+
+
+New Errors
+----------
+
+ProFit                  Package suggested but not available for checking: ‘ProFound’  
+                        [ also fails with master, no NEW issue from this PR ]
+
+Note
+----
+
+The compiler flag '-fext-numeric-literals' was added as several packages need it.
+
+
+SUMMARY
+=======
+
+Looks good
+
+
+
+
+
+
