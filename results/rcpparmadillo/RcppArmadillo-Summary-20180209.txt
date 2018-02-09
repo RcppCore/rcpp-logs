@@ -1,0 +1,39 @@
+Test of RcppArmadillo had 420 successes, 11 failures, and 10 skipped packages. 
+Ran from 2018-02-09 13:42:16.53 to 2018-02-09 15:45:29.64 for 2.054 hours 
+Average of 16.764 secs relative to 99.784 secs using 6 runners
+
+Failed packages:  catSurv, flan, FLightR, HistDAWass, quanteda, Rdimtools, prioritizr, rerf, sirt, stplanr, Rfast 
+
+Skipped packages:  growcurves, growfunctions, joineRML, miceadds, Morpho, mrgsolve, nlmixr, RStoolbox, Rvcg, RxODE 
+
+None still working
+
+None still scheduled
+
+
+catSurv                 libgsl.so.19: cannot open shared object file: No such file or director
+                        PASSES with with working libgsl.so
+
+flan                    libgsl.so.19: cannot open shared object file: No such file or director
+                        PASSES with with working libgsl.so
+                        
+FLightR                 package rgdal is required for spTransform methods
+
+HistDAWass              isNANError in if (abs(GenCrit - OldCrit) < treshold) { 
+                        does NOT report error at CRAN --> investigate
+                        
+quanteda                Package required but not available: ‘stopwords
+
+Rdimtools               Error : object ‘admm.rpca’ is not exported by 'namespace:ADMM'
+
+prioritizr              stop("the velox R package needs to be installed to use velox")
+
+rerf                    libgsl.so.19: cannot open shared object file: No such file or director
+                        PASSES with with working libgsl.so
+
+sirt                    no applicable method for 'orlm' applied to an object of class "lm"
+
+stplanr                 unable to load shared object '/usr/local/lib/R/site-library/rgdal/libs/rgdal.so'
+
+Rfast                   libgsl.so.19: cannot open shared object file: No such file or director
+                        PASSES with with working libgsl.so
