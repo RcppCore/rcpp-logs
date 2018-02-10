@@ -1,0 +1,32 @@
+Test of RcppArmadillo had 428 successes, 3 failures, and 10 skipped packages. 
+Ran from 2018-02-10 14:22:09.34 to 2018-02-10 15:38:23.32 for 1.271 hours 
+Average of 10.372 secs relative to 61.355 secs using 6 runners
+
+Failed packages:  ensembleEN, HistDAWass, Rdimtools 
+
+Skipped packages:  growcurves, growfunctions, joineRML, miceadds, Morpho, mrgsolve, nlmixr, RStoolbox, Rvcg, RxODE 
+
+None still working
+
+None still scheduled
+
+
+ensembleEN
+    > test_check("ensembleEN")
+    ── 1. Failure: Equality over diversity for p>n (@test_CV.R#101)  ───────────────
+    max(difs) is not less than 0.02. Difference: 0.00496
+PASS as it also fails with released version of RcppArmadillo
+  
+HistDAWass
+  > results=WH_adaptive.kmeans(x = BLOOD,k = 2, rep = 10,simplify = TRUE,qua = 10,standardize = TRUE)
+  isNANError in if (abs(GenCrit - OldCrit) < treshold) { : 
+    missing value where TRUE/FALSE needed
+  Calls: WH_adaptive.kmeans
+PASS as it also fails with released version of RcppArmadillo
+
+Rdimtools
+  > plot(out5$Y[,1], out5$Y[,2], main="RSIR::PCA+Tikhonov")
+  Error in out5$Y[, 2] : subscript out of bounds
+  Calls: plot -> plot.default -> xy.coords
+  Execution halted
+PASS as it also fails with released version of RcppArmadillo
