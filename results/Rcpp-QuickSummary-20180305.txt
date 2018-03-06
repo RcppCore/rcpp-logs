@@ -1,0 +1,41 @@
+
+
+Test of Rcpp had 1230 successes, 23 failures, and 52 skipped packages. 
+Ran from 2018-03-05 18:32:22.18 to 2018-03-05 22:36:23.98 for 4.067 hours 
+Average of 11.22 secs relative to 44.487 secs using 4 runners
+
+Failed packages:  bikedata, catSurv, cleanEHR, climdex.pcic, ConConPiWiFun, contoureR, Cyclops, dplyr, ECctmc, grf, icosa, iprior, JMcmprsk, lme4, multinets, openxlsx, pedometrics, RClickhouse, rdist, saeRobust, stremr, tesseract, wand 
+
+Skipped packages:  amt, biofiles, brms, cld2, dynamichazard, estimatr, EWGoF, gkmSVM, glmmsr, gpuR, growcurves, growfunctions, hBayesDM, joineRML, joinXL, kmcudaR, LANDD, lime, mafs, Mega2R, metacoder, mice, miceadds, Morpho, mrgsolve, nlmixr, pccc, PLMIX, PReMiuM, raptr, RcppRedis, rDotNet, rFTRLProximal, riskRegression, RmixmodCombi, RSQLite, rstanarm, RStoolbox, Rvcg, rvinecopulib, RxODE, SCORPIUS, sdcTable, sf, SmartSVA, sptemExp, supc, svglite, transport, WGCNA, yCrypticRNAs, zstdr 
+
+None still working
+
+None still scheduled
+
+          package missingPkg badInstall
+ 1:      bikedata                 FALSE    some download data failed (OK: 133 SKIPPED: 1 FAILED: 10)
+ 2:       catSurv                 FALSE    internal ? (OK: 135 SKIPPED: 0 FAILED: 21)
+ 3:      cleanEHR                  TRUE    R issue on $ vector
+ 4:  climdex.pcic                 FALSE    internal test issue
+ 5: ConConPiWiFun                 FALSE    internal error, exception thrown?
+ 6:     contoureR                 FALSE    internal qhull issue
+ 7:       Cyclops                  TRUE    complex.h issue
+ 8:         dplyr                 FALSE    internal? "supports unquoted values" x 3  (OK: 2883 SKIPPED: 3 FAILED: 3)
+ 9:        ECctmc                 FALSE    internal? (OK: 5 SKIPPED: 0 FAILED: 2)
+10:           grf                 FALSE    internal? (OK: 54 SKIPPED: 3 FAILED: 1)
+11:         icosa                 FALSE    internal? index out of bounds
+12:        iprior                 FALSE    internal? (OK: 192 SKIPPED: 0 FAILED: 1)
+13:      JMcmprsk                 FALSE    internal? GSL cholesky error
+14:          lme4                 FALSE    internal? (OK: 725 SKIPPED: 0 FAILED: 1)
+15:     multinets                 FALSE    internal? (OK: 0 SKIPPED: 0 FAILED: 5)
+16:      openxlsx                 FALSE    internal? (OK: 505 SKIPPED: 2 FAILED: 1)
+17:   pedometrics                 FALSE    passes once 'georob' package installed
+18:   RClickhouse                  TRUE	   citycrc.h missing
+19:         rdist                 FALSE    internal? (OK: 63 SKIPPED: 0 FAILED: 2)
+20:     saeRobust                 FALSE    internal? (OK: 54 SKIPPED: 0 FAILED: 16)
+21:        stremr                 FALSE    internal? (18/1/0)
+22:     tesseract                  TRUE    passes once tesseract-ocr-eng and 2 -dev pkgs inst
+23:          wand                  TRUE    passes once libmagic-dev installed
+          package missingPkg badInstall
+
+Rechecked (most) with Rcpp 0.12.15 (as on CRAN) and all tested fail as well
