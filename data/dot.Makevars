@@ -9,7 +9,7 @@ CXX11=			$(CCACHE) g++$(VER) -std=c++11
 CXX14=			$(CCACHE) g++$(VER) -std=c++14
 
 EXTRAFLAGS=             -DBOOST_PHOENIX_NO_VARIADIC_EXPRESSION
-EXTRAFLAGS=             -fext-numeric-literals
+EXTRAFLAGS=             -fext-numeric-literals -DBOOST_NO_AUTO_PTR
 PEDANTIC=
 
 CFLAGS=               	-g0 -O3 -Wall -pipe $(PEDANTIC) -Wno-unused -std=gnu99 -march=native
