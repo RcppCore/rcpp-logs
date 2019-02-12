@@ -1,0 +1,134 @@
+Test of Rcpp had 1391 successes, 119 failures, and 52 skipped packages. 
+Ran from 2019-02-07 02:28:03.73 to 2019-02-07 19:47:36.31 for 17.326 hours 
+Average of 39.931 secs relative to 119.398 secs using 3 runners
+
+Failed packages:  AbsFilterGSEA, AhoCorasickTrie, bayesdfa, bigreadr, bigstatsr, catSurv, climdex.pcic, CNull, colourvalues, compas, ConConPiWiFun, contoureR, CPAT, ctsem, cutpointr, CVR, Cyclops, DatabionicSwarm, DataVisualizations, dbmss, dina, dplyr, DStree, dynamo, EAinference, Emcdf, etm, factorstochvol, forecast, FRegSigCom, fst, GCPM, GenomicTools, glmmsr, GMMAT, gRain, gRim, groupedSurv, gscounts, HLMdiag, HRM, icosa, idealstan, immer, iprior, jaccard, JMcmprsk, LAM, markovchain, mcmcse, mcPAFit, mev, mmand, momentuHMM, multinets, mvp, myTAI, nandb, netdiffuseR, NetRep, olsrr, orQA, pdftools, pedometrics, phantom, PhenotypeSimulator, PhylogeneticEM, phylosignal, polyRAD, PP, prioritizr, pROC, projpred, propr, rags2ridges, ragt2ridges, raptr, RBesT, RClickhouse, reclin, rENA, resemble, RQuantLib, RSNPset, RSSL, rstanarm, saeRobust, SAR, scales, SEERaBomb, SimReg, smooth, snplist, SpaDES.tools, spatialwarnings, spiderbar, spp, SSL, STARTS, steadyICA, strataG, supc, surveysd, tbart, TDA, tensorBSS, textmineR, themetagenomics, tibbletime, tidygenomics, treespace, tsibble, uavRst, udpipe, Umatrix, ungroup, vapour, vita, wsrf 
+
+Skipped packages:  amt, BayesianTools, bgsmtr, biofiles, brms, cld2, cliqueMS, dynamichazard, estimatr, EstMix, EWGoF, gkmSVM, gpuR, growcurves, growfunctions, hBayesDM, joineRML, joinXL, KeyboardSimulator, kmcudaR, LANDD, lime, lme4, mafs, Mega2R, metacoder, mice, miceadds, Morpho, mrgsolve, nlmixr, partialAR, pccc, PLMIX, PReMiuM, RcppRedis, rDotNet, rFTRLProximal, riskRegression, RmixmodCombi, rmumps, Rnmr1D, RStoolbox, Rvcg, RxODE, sdcTable, sf, SmartSVA, sptemExp, transport, WeMix, WGCNA 
+
+None still working
+
+None still scheduled
+
+Error summary:
+                package                                     missingPkg badInstall error fail warn note ok hasOtherIssue
+  1:      AbsFilterGSEA                      ‘Biobase’ ‘DESeq’ ‘limma’         NA    NA   NA   NA   NA NA            NA
+  2:    AhoCorasickTrie                                                        NA    NA   NA   NA   NA NA            NA
+  3:           bayesdfa                                                     FALSE     3    0    0    9  0         FALSE
+  4:           bigreadr                                                     FALSE     0    0    0    0 12         FALSE
+  5:          bigstatsr                                                     FALSE     0    0    1    5  6          TRUE
+  6:            catSurv                                                     FALSE     0    0    2   10  0         FALSE
+  7:       climdex.pcic                                                     FALSE     0    0    0    0 12         FALSE
+  8:              CNull                                ‘PhyloMeasures’         NA    NA   NA   NA   NA NA            NA
+  9:       colourvalues                                                     FALSE     0    0    0    3  9         FALSE
+ 10:             compas                                        ‘bio3d’         NA    NA   NA   NA   NA NA            NA
+ 11:      ConConPiWiFun                                                     FALSE     0    0    0    6  6         FALSE
+ 12:          contoureR                                                     FALSE     0    0    0    2 10         FALSE
+ 13:               CPAT                                                     FALSE     0    0    0    5  7         FALSE
+ 14:              ctsem                                       ‘OpenMx’         NA    NA   NA   NA   NA NA            NA
+ 15:          cutpointr                                                     FALSE     0    0    0    0 12         FALSE
+ 16:                CVR                                          ‘PMA’         NA    NA   NA   NA   NA NA            NA
+ 17:            Cyclops                                                     FALSE     0    0    0    4  8         FALSE
+ 18:    DatabionicSwarm                                ‘parallelDist’’         NA    NA   NA   NA   NA NA            NA
+ 19: DataVisualizations                                   ‘AdaptGauss’         NA    NA   NA   NA   NA NA            NA
+ 20:              dbmss                                                        NA    NA   NA   NA   NA NA            NA
+ 21:               dina                                ‘simcdm’ ‘rgen’         NA    NA   NA   NA   NA NA            NA
+ 22:              dplyr                                       ‘Lahman’         NA    NA   NA   NA   NA NA            NA
+ 23:             DStree                                        ‘Ecdat’         NA    NA   NA   NA   NA NA            NA
+ 24:             dynamo                              ‘MortalitySmooth’         NA    NA   NA   NA   NA NA            NA
+ 25:        EAinference                                                     FALSE     0    0    0    0 12         FALSE
+ 26:              Emcdf                                                     FALSE     0    0    0    0 12         FALSE
+ 27:                etm                                          ‘kmi’         NA    NA   NA   NA   NA NA            NA
+ 28:     factorstochvol                                                        NA    NA   NA   NA   NA NA            NA
+ 29:           forecast                                                     FALSE     0    0    0    0 12         FALSE
+ 30:         FRegSigCom                                       ‘refund’         NA    NA   NA   NA   NA NA            NA
+ 31:                fst                                                     FALSE     1    0    0    2  9          TRUE
+ 32:               GCPM                                                     FALSE     0    0    0    2 10         FALSE
+ 33:       GenomicTools   ‘gMWT’ ‘GenomicTools.fileHandler’ ‘snpStats’         NA    NA   NA   NA   NA NA            NA
+ 34:             glmmsr                                'BradleyTerry2'         NA    NA   NA   NA   NA NA            NA
+ 35:              GMMAT                       ‘SeqArray’ ‘SeqVarTools’         NA    NA   NA   NA   NA NA            NA
+ 36:              gRain                                       ‘gRbase’         NA    NA   NA   NA   NA NA            NA
+ 37:               gRim                               ‘gRbase’ ‘gRain’         NA    NA   NA   NA   NA NA            NA
+ 38:        groupedSurv                                       ‘qvalue’         NA    NA   NA   NA   NA NA            NA
+ 39:           gscounts                                                     FALSE     0    0    0    0 12         FALSE
+ 40:            HLMdiag                                       ‘mlmRev’         NA    NA   NA   NA   NA NA            NA
+ 41:                HRM                                   ‘pseudorank’         NA    NA   NA   NA   NA NA            NA
+ 42:              icosa                                                     FALSE     0    0    2    7  3         FALSE
+ 43:          idealstan                                    ‘shinystan’         NA    NA   NA   NA   NA NA            NA
+ 44:              immer                                          ‘eRm’         NA    NA   NA   NA   NA NA            NA
+ 45:             iprior                                                     FALSE     0    0    1    3  8         FALSE
+ 46:            jaccard                                       ‘qvalue’         NA    NA   NA   NA   NA NA            NA
+ 47:           JMcmprsk                                                     FALSE     0    0    0    0 12          TRUE
+ 48:                LAM                                       ‘STARTS’         NA    NA   NA   NA   NA NA            NA
+ 49:        markovchain                                        ‘ctmcd’         NA    NA   NA   NA   NA NA            NA
+ 50:             mcmcse                                          ‘mAr’         NA    NA   NA   NA   NA NA            NA
+ 51:            mcPAFit                                        ‘PAFit’         NA    NA   NA   NA   NA NA            NA
+ 52:                mev                                    ‘revdbayes’         NA    NA   NA   NA   NA NA            NA
+ 53:              mmand                                        'loder'         NA    NA   NA   NA   NA NA            NA
+ 54:         momentuHMM                                        ‘crawl’         NA    NA   NA   NA   NA NA            NA
+ 55:          multinets                                                     FALSE     0    0    0    5  7         FALSE
+ 56:                mvp                                        ‘spray’         NA    NA   NA   NA   NA NA            NA
+ 57:              myTAI                             ‘biomartr’ ‘edgeR’         NA    NA   NA   NA   NA NA            NA
+ 58:              nandb                                     ‘detrendr’         NA    NA   NA   NA   NA NA            NA
+ 59:        netdiffuseR                                      ‘MatchIt’         NA    NA   NA   NA   NA NA            NA
+ 60:             NetRep                                                     FALSE     0    0    0    3  9         FALSE
+ 61:              olsrr                                    ‘descriptr’         NA    NA   NA   NA   NA NA            NA
+ 62:               orQA                                   ‘genefilter’         NA    NA   NA   NA   NA NA            NA
+ 63:           pdftools                                         ‘webp’         NA    NA   NA   NA   NA NA            NA
+ 64:        pedometrics                                                     FALSE     1    0    0    2  9         FALSE
+ 65:            phantom                                       ‘qusage’         NA    NA   NA   NA   NA NA            NA
+ 66: PhenotypeSimulator                                     ‘snpStats’         NA    NA   NA   NA   NA NA            NA
+ 67:     PhylogeneticEM                                      ‘TreeSim’         NA    NA   NA   NA   NA NA            NA
+ 68:        phylosignal                         ‘adephylo’ ‘phylobase’         NA    NA   NA   NA   NA NA            NA
+ 69:            polyRAD                                   ‘pcaMethods’         NA    NA   NA   NA   NA NA            NA
+ 70:                 PP                                          ‘eRm’         NA    NA   NA   NA   NA NA            NA
+ 71:         prioritizr                                                     FALSE     0    0    0   12  0         FALSE
+ 72:               pROC                                  ‘logcondens’’         NA    NA   NA   NA   NA NA            NA
+ 73:           projpred                                     'rstanarm'         NA    NA   NA   NA   NA NA            NA
+ 74:              propr                                        'cccrm'         NA    NA   NA   NA   NA NA            NA
+ 75:        rags2ridges                                       ‘gRbase’         NA    NA   NA   NA   NA NA            NA
+ 76:        ragt2ridges                                  ‘rags2ridges’         NA    NA   NA   NA   NA NA            NA
+ 77:              raptr                                                     FALSE     0    0    0   12  0         FALSE
+ 78:              RBesT                                     'rstanarm'         NA    NA   NA   NA   NA NA            NA
+ 79:        RClickhouse                                                      TRUE    NA   NA   NA   NA NA            NA
+ 80:             reclin                                         ‘ldat’         NA    NA   NA   NA   NA NA            NA
+ 81:               rENA                                                     FALSE     0    0    0    3  9         FALSE
+ 82:           resemble                                    ‘prospectr’         NA    NA   NA   NA   NA NA            NA
+ 83:          RQuantLib                                                      TRUE    NA   NA   NA   NA NA            NA
+ 84:            RSNPset                                       ‘qvalue’         NA    NA   NA   NA   NA NA            NA
+ 85:               RSSL                                    'LiblineaR'         NA    NA   NA   NA   NA NA            NA
+ 86:           rstanarm                                    ‘shinystan’         NA    NA   NA   NA   NA NA            NA
+ 87:          saeRobust                                          ‘sae’         NA    NA   NA   NA   NA NA            NA
+ 88:                SAR                         ‘AzureRMR’ ‘AzureStor’         NA    NA   NA   NA   NA NA            NA
+ 89:             scales                                                     FALSE     0    0    0    5  7         FALSE
+ 90:          SEERaBomb                                   ‘demography’         NA    NA   NA   NA   NA NA            NA
+ 91:             SimReg                                 ‘ontologyPlot’         NA    NA   NA   NA   NA NA            NA
+ 92:             smooth                                        ‘Mcomp’         NA    NA   NA   NA   NA NA            NA
+ 93:            snplist                                      ‘biomaRt’         NA    NA   NA   NA   NA NA            NA
+ 94:       SpaDES.tools                                 ‘reproducible’         NA    NA   NA   NA   NA NA            NA
+ 95:    spatialwarnings                                                     FALSE     0    0    0    0 12         FALSE
+ 96:          spiderbar                                    'robotstxt'         NA    NA   NA   NA   NA NA            NA
+ 97:                spp                                    ‘Rsamtools’         NA    NA   NA   NA   NA NA            NA
+ 98:                SSL                                   ‘NetPreProc’         NA    NA   NA   NA   NA NA            NA
+ 99:             STARTS                                          ‘LAM’         NA    NA   NA   NA   NA NA            NA
+100:          steadyICA                                    ‘ProDenICA’         NA    NA   NA   NA   NA NA            NA
+101:            strataG                                         ‘apex’         NA    NA   NA   NA   NA NA            NA
+102:               supc                                         'amap'         NA    NA   NA   NA   NA NA            NA
+103:           surveysd                                       'simPop'         NA    NA   NA   NA   NA NA            NA
+104:              tbart                                     ‘GISTools’         NA    NA   NA   NA   NA NA            NA
+105:                TDA                                                      TRUE    NA   NA   NA   NA NA            NA
+106:          tensorBSS                                ‘ElemStatLearn’         NA    NA   NA   NA   NA NA            NA
+107:          textmineR                                  ‘topicmodels’         NA    NA   NA   NA   NA NA            NA
+108:    themetagenomics                                          ‘stm’         NA    NA   NA   NA   NA NA            NA
+109:         tibbletime                                    ‘gapminder’         NA    NA   NA   NA   NA NA            NA
+110:       tidygenomics                                      ‘IRanges’         NA    NA   NA   NA   NA NA            NA
+111:          treespace                                     ‘adephylo’         NA    NA   NA   NA   NA NA            NA
+112:            tsibble                                     'nanotime'         NA    NA   NA   NA   NA NA            NA
+113:             uavRst                                  ‘ForestTools’         NA    NA   NA   NA   NA NA            NA
+114:             udpipe                                  ‘topicmodels’         NA    NA   NA   NA   NA NA            NA
+115:            Umatrix                                   ‘AdaptGauss’         NA    NA   NA   NA   NA NA            NA
+116:            ungroup                              ‘MortalitySmooth’         NA    NA   NA   NA   NA NA            NA
+117:             vapour                                                     FALSE     2    0    0    3  7         FALSE
+118:               vita                                                     FALSE     0    0    0    2 10         FALSE
+119:               wsrf                                  ‘rattle.data’         NA    NA   NA   NA   NA NA            NA
+                package                                     missingPkg badInstall error fail warn note ok hasOtherIssue
