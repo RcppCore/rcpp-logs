@@ -47,14 +47,6 @@ getMaintainerAndPackages <- function(maints) {
     mm
 }
 
-#fails <- getFails()
-#maints <- getMaintainers(fails)
-
-##print(maints[])
-##save(fails, maints, file="/tmp/maint.Rdata")
-
-load("/tmp/maint.Rdata")
-
 getCompilationsFailures <- function() {
     fails <- getFails()
     maints <- getMaintainers(fails)
@@ -69,4 +61,26 @@ getCompilationsFailures <- function() {
     NULL
 }
 
-print(getMaintainerAndPackages(maints))
+emailMaintainers <- function(maints) {
+    for (i in seq_len(nrow(maints))) {
+        pkgs <- maints[i, .(pkgs)][[1]]
+        maint <- maints[i, .(Maintainer)][[1]]
+        cmd <- sprintf(paste0("cat ~/git/rcpp/local/mail_strict_headers_2018-09.txt | ",
+                              "mailx -s \"%s and STRICT_R_HEADERS via Rcpp\" ",
+                              "-r \"Dirk Eddelbuettel <edd@debian.org>\" -- \"%s\""),
+                       pkgs, maint)
+        cat(cmd, "\n")
+        system(cmd)
+        Sys.sleep(2)
+    }
+}
+
+#fails <- getFails()
+#maints <- getMaintainers(fails)
+
+## print(maints[])
+## save(fails, maints, file="/tmp/maint.Rdata")
+load("/tmp/maint.Rdata")
+maints[ Maintainer=="ORPHANED", Maintainer:="Dirk Eddelbuettel <edd@debian.org>"]
+mp <- getMaintainerAndPackages(maints)
+emailMaintainers(mp)
