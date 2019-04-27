@@ -1,0 +1,92 @@
+Test of RcppArmadillo had 496 successes, 77 failures, and 14 skipped packages. 
+Ran from 2019-04-20 17:38:56.95 to 2019-04-20 23:44:23.98 for 6.091 hours 
+Average of 37.354 secs relative to 141.358 secs using 4 runners
+
+Failed packages:  abn, AbsFilterGSEA, acebayes, BaBooN, BayesMallows, biglasso, bigstatsr, BiProbitPartial, BradleyTerryScalable, BuyseTest, catSurv, chngpt, compboost, CPAT, crawl, Crossover, ctmcd, CVR, DatabionicSwarm, DataVisualizations, DiffusionRgqd, DiffusionRimp, DiffusionRjgqd, EMMIXgene, etm, fDMA, FLightR, forecast, FSelectorRcpp, GenomicTools, geogrid, GMMAT, gRain, gRbase, gRim, HLMdiag, HSAR, hypervolume, icamix, IMaGES, immer, IncDTW, jmcm, kdecopula, LAM, lavaSearch2, Luminescence, markovchain, matchingMarkets, MCMCprecision, mcmcse, mDAG, mets, momentuHMM, myTAI, parglm, pcalg, phantom, PhylogeneticEM, prioritizr, projpred, qwraps2, rags2ridges, ragt2ridges, resemble, roptim, RSSL, saeRobust, SFS, smooth, spatialwarnings, stplanr, strum, tensorBSS, textmineR, timma, TreeBUGS 
+
+Skipped packages:  cliqueMS, dynamichazard, EstMix, growcurves, growfunctions, joineRML, miceadds, Morpho, mrgsolve, nlmixr, riskRegression, RStoolbox, Rvcg, RxODE 
+
+None still working
+
+None still scheduled
+
+Error summary:
+                 package                                                                              missingPkg badInstall
+ 1:                  abn                                                                                                 NA
+ 2:        AbsFilterGSEA                                                               ‘Biobase’ ‘DESeq’ ‘limma’         NA  passes once installed
+ 3:             acebayes                                                                                                 NA
+ 4:               BaBooN                                                                                  ‘norm’         NA  passes once installed
+ 5:         BayesMallows                                                                                              FALSE
+ 6:             biglasso                                                                                                 NA
+ 7:            bigstatsr                                                                        ‘microbenchmark’         NA  passes once installed
+ 8:      BiProbitPartial                                                                       ‘sampleSelection’         NA  passes once installed
+ 9: BradleyTerryScalable Error: The package Matrix.utils is needed for this function to work. Please install it.         NA  passes once installed
+10:            BuyseTest                                                                                                 NA
+11:              catSurv                                                                                              FALSE
+12:               chngpt                                                                                                 NA
+13:            compboost                                                                                              FALSE
+14:                 CPAT                                                                                              FALSE
+15:                crawl                                                                            ‘rmapshaper’         NA  skip: rgeos dependency
+16:            Crossover                                                                        ‘rJava’ ‘JavaGD’         NA  skip: JavaGD fails to install 
+17:                ctmcd                                                                                                 NA
+18:                  CVR                                                                                   ‘PMA’         NA  passes once installed
+19:      DatabionicSwarm                                                                         ‘parallelDist’’         NA  passes once installed
+20:   DataVisualizations                                                                               ‘diptest’         NA  maybe skip, lots of undeclared Depends
+21:        DiffusionRgqd                                                                                                 NA
+22:        DiffusionRimp                                                                                                 NA
+23:       DiffusionRjgqd                                                                                                 NA
+24:            EMMIXgene                                                                                                 NA
+25:                  etm                                                                                   ‘kmi’         NA  passes once installed
+26:                 fDMA                                                                                                 NA
+27:              FLightR                                                                                 ‘rgeos’         NA  skip: rgeos dependency
+28:             forecast                                                                                              FALSE
+29:        FSelectorRcpp                                                                               'entropy'         NA
+30:         GenomicTools                                                   ‘GenomicTools.fileHandler’ ‘snpStats’         NA  passes once installed
+31:              geogrid                                                                                 ‘rgeos’         NA  skip: rgeos dependency
+32:                GMMAT                                                                ‘SeqArray’ ‘SeqVarTools’         NA  *still fails*
+33:                gRain                                                                        ‘gRbase’ ‘graph’         NA  passes once installed
+34:               gRbase                                                                          ‘graph’ ‘RBGL’         NA  passes once installed
+35:                 gRim                                                                ‘gRbase’ ‘graph’ ‘gRain’         NA  passes once installed
+36:              HLMdiag                                                                                ‘mlmRev’         NA  passes once installed
+37:                 HSAR                                                                                 ‘rgeos’         NA  skip: rgeos dependency
+38:          hypervolume                                                                                 ‘rgeos’         NA  skip: rgeos dependency
+39:               icamix                                                                              ‘mixtools’         NA  passes once installed
+40:               IMaGES                                                                     ‘graph’ ‘Rgraphviz’         NA  skip: Rgraphiz dependency
+41:                immer                                                                                   ‘eRm’         NA  passes once installed
+42:               IncDTW                                                                                                 NA
+43:                 jmcm                                                                                                 NA
+44:            kdecopula                                                                                                 NA
+45:                  LAM                                                                                ‘STARTS’         NA  passes once installed
+46:          lavaSearch2                                                                                                 NA
+47:         Luminescence                                                                                                 NA
+48:          markovchain                                                                                 ‘ctmcd’         NA  passes once installed
+49:      matchingMarkets                                                                                 ‘rJava’         NA  passes once installed
+50:        MCMCprecision                                                                                                 NA
+51:               mcmcse                                                                                   ‘mAr’         NA  passes once installed
+52:                 mDAG                                                                                 ‘pcalg’         NA  passes once installed
+53:                 mets                                                                                                 NA
+54:           momentuHMM                                                                                 ‘crawl’         NA  skip: rgeos dependency
+55:                myTAI                                                                                 ‘edgeR’         NA  passes once installed
+56:               parglm                                                                                                 NA
+57:                pcalg                                                                          ‘graph’ ‘RBGL’         NA  skip: Rgraphviz dependency
+58:              phantom                                                                                ‘qusage’         NA  passes once installed
+59:       PhylogeneticEM                                                                               ‘TreeSim’         NA  passes once installed
+60:           prioritizr                                                                                 ‘rgeos’         NA  skip: rgeos dependency
+61:             projpred                                                                              'rstanarm'         NA  passes once installed
+62:              qwraps2                                                                            ‘rbenchmark’         NA  passes once installed
+63:          rags2ridges                                                                 ‘gRbase’ ‘RBGL’ ‘graph’         NA  passes once installed
+64:          ragt2ridges                                                                           ‘rags2ridges’         NA  passes once installed
+65:             resemble                                                                             ‘prospectr’         NA  passes once installed
+66:               roptim                                                                                                 NA
+67:                 RSSL                                                                             'LiblineaR'         NA  passes once installed
+68:            saeRobust                                                                                   ‘sae’         NA  *still fails*
+69:                  SFS                                                                             ‘seriation’         NA  passes once installed
+70:               smooth                                                                                 ‘Mcomp’         NA  passes once installed
+71:      spatialwarnings                                                                                              FALSE
+72:              stplanr                                                                                 ‘rgeos’         NA  skip: rgeos dependency
+73:                strum                                                                     ‘Rgraphviz’ ‘graph’         NA  skip: Rgraphiz dependency
+74:            tensorBSS                                                                         ‘ElemStatLearn’         NA  passes once installed
+75:            textmineR                                                                           ‘topicmodels’         NA  passes once installed
+76:                timma                                                                                                 NA
+77:             TreeBUGS                                                                                                 NA
+                 package                                                                              missingPkg badInstall
