@@ -1,0 +1,26 @@
+Test of Rcpp had 1777 successes, 12 failures, and 55 skipped packages. 
+Ran from 2019-12-29 14:30:09.52 to 2019-12-30 09:21:11.68 for 18.851 hours 
+Average of 36.802 secs relative to 219.262 secs using 6 runners
+
+Failed packages:  AbsFilterGSEA, AhoCorasickTrie, bayesDP, coxrt, orQA, rtweet, sbrl, smog, tidygenomics, umap, valr, vdiffr 
+
+Skipped packages:  amt, BayesianTools, bgsmtr, brms, cld2, DataVisualizations, dipsaus, dynamichazard, estimatr, EstMix, EWGoF, gkmSVM, gpuR, growfunctions, hBayesDM, IMaGES, joineRML, joinXL, KeyboardSimulator, kmcudaR, LANDD, lime, lme4, mafs, Mega2R, metacoder, mice, miceadds, Morpho, mrgsolve, nlmixr, NLMR, odpc, partialAR, pcalg, pccc, PLMIX, PReMiuM, RcppRedis, rDotNet, Rfast, riskRegression, RmixmodCombi, rmumps, Rnmr1D, RStoolbox, Rvcg, RxODE, sdcTable, sf, SmartSVA, sptemExp, strum, transport, WGCNA 
+
+None still working
+
+None still scheduled
+
+Error summary:
+            package missingPkg badInstall
+ 1:   AbsFilterGSEA                  TRUE  lack of exports from S4Vectors
+ 2: AhoCorasickTrie                 FALSE  likely internal
+ 3:         bayesDP                 FALSE  fails to importFrom(Rcpp,...)
+ 4:           coxrt                 FALSE  fails to importFrom(Rcpp,...)
+ 5:            orQA                  TRUE  lack of exports from S4Vectors
+ 6:          rtweet                 FALSE  fails with testthat, internal?
+ 7:            sbrl                 FALSE  spurious, passes on re-run
+ 8:            smog    ‘coxed’         NA  passes once installed
+ 9:    tidygenomics                 FALSE  likely internal
+10:            umap                 FALSE  fails with internal embedding (also at CRAN)
+11:            valr                 FALSE  issue with IRanages likely from S4Vectors
+12:          vdiffr                 FALSE  fails with testthat internal? 
