@@ -1,0 +1,21 @@
+Test of RcppArmadillo had 657 successes, 7 failures, and 17 skipped packages. 
+Ran from 2020-01-23 21:04:56.52 to 2020-01-24 01:32:55.39 for 4.466 hours 
+Average of 23.611 secs relative to 139.373 secs using 6 runners
+
+Failed packages:  AbsFilterGSEA, bayesDP, lidR, MomTrunc, NetMix, statgenGWAS, tree.interpreter 
+
+Skipped packages:  DataVisualizations, dynamichazard, EstMix, growfunctions, IMaGES, miceadds, Morpho, mrgsolve, nlmixr, odpc, pcalg, Rfast, riskRegression, RStoolbox, Rvcg, RxODE, strum 
+
+None still working
+
+None still scheduled
+
+Error summary:
+            package                             missingPkg badInstall
+1:    AbsFilterGSEA                                              TRUE  S4Vectors export issue
+2:          bayesDP                                             FALSE  'enterRNGScope' not provided by package 'Rcpp', now off CRAN
+3:             lidR Error: 'EBImage' package is needed....         NA  passes once installed
+4:         MomTrunc                            ‘tlrmvnmvt’         NA  passes once installed
+5:           NetMix                            ‘poisbinom’         NA  passes once installed
+6:      statgenGWAS                               ‘sommer’         NA  passes once installed
+7: tree.interpreter                                             FALSE  segfault in tidyRF, also at CRAN
