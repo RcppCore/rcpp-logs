@@ -1,0 +1,25 @@
+Test of Rcpp 1.0.5.2 had 1953 successes, 9 failures, and 46 skipped packages. 
+Ran from 2020-07-07 15:11:38.03 to 2020-07-08 14:05:28.26 for 22.897 hours 
+Average of 41.051 secs relative to 211.668 secs using 6 runners
+
+Failed packages:  bigutilsr, fcaR, grattan, Keyboard, lidR, metacart, TBRDist, vdiffr 
+
+Skipped packages:  amt, arrow, BayesianTools, brms, cld2, DataVisualizations, dipsaus, dynamichazard, estimatr, growfunctions, hBayesDM, IMaGES, joineRML, joinXL, KeyboardSimulator, kmcudaR, lime, lme4, mafs, Mega2R, mice, miceadds, Morpho, mrgsolve, nlmixr, NLMR, odpc, partialAR, pcalg, pccc, PLMIX, PReMiuM, RcppRedis, rDotNet, Rfast, riskRegression, RmixmodCombi, rmumps, RStoolbox, Rvcg, RxODE, sdcTable, sf, SmartSVA, transport, WGCNA 
+
+None still working
+
+None still scheduled
+
+Error summary:
+     package   missingPkg badInstall
+1: bigutilsr                   FALSE  unclear: [ OK: 250 | SKIPPED: 0 | WARNINGS: 0 | FAILED: 2 ]
+2:      fcaR ‘fractional’         NA  passes once installed
+3:   grattan                   FALSE  unclear, failed before
+4:  Keyboard                   FALSE  passes once epade installed
+5:      lidR                   FALSE  suspicious: 'Could not convert using R function: as.data.frame.'
+6:  metacart                   FALSE  suspicious: 'Could not convert using R function: as.data.frame.'
+7:   TBRDist                      NA  passes once TreeDist updated
+8:    vdiffr                   FALSE  unclear 11 failures, failed before
+
+metacart works with 1.0.5.1, fails with 1.0.5.2 -- regression
+lindR works with 1.0.5.1, fails with 1.0.5.2 -- regression
