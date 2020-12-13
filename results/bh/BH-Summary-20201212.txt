@@ -1,0 +1,23 @@
+Test of BH 1.75.0.0 had 217 successes, 9 failures, and 8 skipped packages. 
+Ran from 2020-12-12 09:54:28.24 to 2020-12-12 15:04:59.35 for 5.175 hours 
+Average of 79.62 secs relative to 470.333 secs using 6 runners
+
+Failed packages:  bpcs, googlePolylines, lidR, mlpack, rlas, RoBMA, svglite, TDA, wellknown 
+
+Skipped packages:  hBayesDM, IMaGES, mrgsolve, pcalg, PReMiuM, RcppRedis, vdiffr, vdiffr 
+
+None still working
+
+None still scheduled
+
+Error summary:
+           package missingPkg badInstall
+1:            bpcs   ‘badger’         NA  passes once installed
+2: googlePolylines                  TRUE  passes under C++14
+3:            lidR                  TRUE  passes under C++14
+4:          mlpack                  TRUE  needs on updated #define
+5:            rlas                  TRUE  passes under C++14
+6:           RoBMA      ‘DPQ’         NA  passes once installed
+7:         svglite                 FALSE  spurious, bad exit code somewhere
+8:             TDA                  TRUE  possible Boost interaction with local headers
+9:       wellknown                  TRUE  possible change needed w.r.t. Boost geometry point
