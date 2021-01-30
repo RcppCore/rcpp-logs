@@ -1,0 +1,28 @@
+Test of Rcpp 1.0.6.5 had 2135 successes, 14 failures, and 49 skipped packages. 
+Ran from 2021-01-28 13:48:17.55 to 2021-01-29 16:34:24.74 for 1.115 days 
+Average of 43.843 secs relative to 261.699 secs using 6 runners
+
+Failed packages:  bayesforecast, dbmss, diceR, EAinference, gppm, kernelTDA, pagoda2, projpred, rgeoda, stplanr, surveillance, svglite, TDA, warbleR 
+
+Skipped packages:  amt, BayesianTools, BMTME, brms, cld2, Crossover, DataVisualizations, dipsaus, estimatr, growfunctions, hBayesDM, IMaGES, joineRML, joinXL, KeyboardSimulator, kmcudaR, lime, lme4, Mega2R, mice, miceadds, mlr3proba, Morpho, mrgsolve, NLMR, NPMLEmix, odpc, partialAR, pcalg, pccc, PLMIX, PReMiuM, RcppRedis, rDotNet, Rfast, riskRegression, RmixmodCombi, rmumps, RStoolbox, Rvcg, sdcTable, sf, Signac, SmartSVA, sparkwarc, transport, vdiffr, vdiffr, WGCNA 
+
+None still working
+
+None still scheduled
+
+Error summary:
+          package                                              missingPkg badInstall error fail warn note ok hasOtherIssue
+ 1: bayesforecast                                                 ‘astsa’         NA     2    0    0    9  0         FALSE  passes once installed
+ 2:         dbmss                        'spatstat.core', 'spatstat.geom'         NA     0    0    0    0 12         FALSE  passes once installed
+ 3:         diceR                                                              FALSE    10    0    0    0  2         FALSE  not us: 10 CRAN errors
+ 4:   EAinference                                                              FALSE     0    0    0    0 12         FALSE  not us: 1 FAL "cannot coerce integer"
+ 5:          gppm                                                              FALSE     3    0    0    0  9          TRUE  unclear, but not new
+ 6:     kernelTDA                                                              FALSE     7    0    0    2  3         FALSE  not us: 7 CRAN errors
+ 7:       pagoda2                    'dendsort', 'drat', 'N2R', 'RMTstat'         NA     1    0    1    2  0         FALSE  passes once installed
+ 8:      projpred                                                              FALSE     0    0    0    6  6         FALSE  unclear, possibly stan related
+ 9:        rgeoda                                                   ‘wkb’         NA     1    0    0    2  4          TRUE  passes once installed
+10:       stplanr                                                              FALSE     0    0    2    5  5         FALSE  not us: remote file access
+11:  surveillance                                         ‘spatstat.geom’         NA     7    0    0    4  1         FALSE  not us: unclear test error
+12:       svglite                                                              FALSE     0    0    0    0 12         FALSE  unclear, spurious
+13:           TDA                                                               TRUE    10    0    0    2  0         FALSE  not us: 10 CRAN errors
+14:       warbleR   'NatureSounds', 'monitoR', 'huxtable', 'bioacoustics'         NA     2    0    0    4  5         FALSE  still fails after installing all these and more -> skiplist
