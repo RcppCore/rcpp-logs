@@ -1,0 +1,25 @@
+Test of Rcpp 1.0.6.5 had 2167 successes, 11 failures, and 51 skipped packages. 
+Ran from 2021-03-03 08:42:17.90 to 2021-03-03 23:59:31.33 for 15.287 hours 
+Average of 24.69 secs relative to 139.322 secs using 7 runners
+
+Failed packages:  FORTLS, fwildclusterboot, ggforce, gppm, KernelICA, knor, PosteriorBootstrap, projpred, qad, svglite, telemac 
+
+Skipped packages:  amt, BayesianTools, BMTME, brms, cld2, Crossover, DataVisualizations, dipsaus, dynamichazard, estimatr, growfunctions, hBayesDM, IMaGES, joineRML, joinXL, KeyboardSimulator, kmcudaR, lime, lme4, Mega2R, mice, miceadds, mlr3proba, Morpho, mrgsolve, NLMR, NPMLEmix, odpc, partialAR, pcalg, pccc, PLMIX, PReMiuM, RcppRedis, rDotNet, Rfast, riskRegression, RmixmodCombi, rmumps, RStoolbox, Rvcg, RxODE, sdcTable, sf, Signac, SmartSVA, sparkwarc, transport, vdiffr, vdiffr, WGCNA 
+
+None still working
+
+None still scheduled
+
+Error summary:
+               package              missingPkg badInstall error fail warn note ok hasOtherIssue
+ 1:             FORTLS 'Distance', 'ggvoronoi'         NA     0    0    0    2  7         FALSE  passes once installed
+ 2:   fwildclusterboot              ‘collapse’         NA     0    0    0    0 12         FALSE  also needs fixest, fabricatr, then passes
+ 3:            ggforce                              FALSE     9    0    0    2  1         FALSE  not us, internal issue with units package
+ 4:               gppm                              FALSE     3    0    0    0  9         FALSE  possibly spurious segfault
+ 5:          KernelICA         ‘ManifoldOptim’         NA     1    0    1    2  5         FALSE  passes once installed
+ 6:               knor                              FALSE     0    0    0   12  0         FALSE  possible spurious, "missing print method"
+ 7: PosteriorBootstrap                              FALSE     0    0    0    5  7         FALSE  possibly spurious segfault in test
+ 8:           projpred                              FALSE     0    0    0    5  7         FALSE  possibly spurious segfault in test
+ 9:                qad               ‘ggExtra’         NA     0    0    0    0 12         FALSE  passes once installed
+10:            svglite                              FALSE     0    0    0    0 12         FALSE  spurious, completed
+11:            telemac                              FALSE     2    0    0    5  5         FALSE  passes once RTriangle installed
