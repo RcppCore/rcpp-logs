@@ -75,7 +75,73 @@ emailMaintainers <- function(maints) {
     }
 }
 
+checkPackage <- function(pkg, clear=TRUE) {
+    pkg_dir <- file.path(tempdir(), pkg)
+
+    if (!dir.exists(pkg_dir)) {
+        tarball <- remotes::download_version(pkg)
+        untar(tarball, exdir=tempdir())
+        unlink(tarball)
+    }
+
+    if (clear)
+        on.exit(unlink(pkg_dir, recursive=TRUE), add=TRUE)
+
+    cppFiles <- list.files(
+        file.path(pkg_dir, "src"),
+        pattern = "\\.((c(c|pp)?)|(h(pp)?))$",
+        ignore.case = TRUE,
+        full.names = TRUE
+    )
+
+    patterns <- c(
+        # src/include/R_ext/RS.h
+        R_PROBLEM_BUFSIZE = "R_PROBLEM_BUFSIZE",
+        PROBLEM = "PROBLEM[[:space:]]*\"",
+        MESSAGE = "MESSAGE[[:space:]]*\"",
+        ERROR = "[[:space:]]+ERROR[$|;|[:space:]]*",
+        RECOVER = "[[:space:]]+RECOVER[[:space:]]*\\(",
+        WARNING = "[[:space:]]+WARNING[[:space:]]*\\(",
+        LOCAL_EVALUATOR = "LOCAL_EVALUATOR",
+        NULL_ENTRY = "NULL_ENTRY",
+        WARN = "[[:space:]]+WARN[$|;|[:space:]]*",
+        Calloc = "[^_]Calloc[[:space:]]*\\(",
+        Realloc = "[^_]Realloc[[:space:]]*\\(",
+        Free = "[^_]Free[[:space:]]*\\(",
+        # src/include/R_ext/Constants.h
+        PI = "[^_]PI",
+        SINGLE_EPS = "SINGLE_EPS",
+        SINGLE_BASE = "SINGLE_BASE",
+        SINGLE_BASE = "SINGLE_BASE",
+        SINGLE_XMAX = "SINGLE_XMAX",
+        DOUBLE_DIGITS = "DOUBLE_DIGITS",
+        DOUBLE_EPS = "DOUBLE_EPS",
+        DOUBLE_XMAX = "DOUBLE_XMAX",
+        DOUBLE_XMIN = "DOUBLE_XMIN"
+    )
+
+    for (file in cppFiles) {
+        lines <- readLines(file)
+        results <- vector("list", length(lines))
+
+        for (i in seq_along(patterns)) {
+            idx <- grep(patterns[i], lines)
+            for (j in idx)
+            results[[j]] <- c(results[[j]], names(patterns)[i])
+        }
+
+        if (any(has_issues <- sapply(results, Negate(is.null)))) {
+            pkg <- basename(dirname(dirname(file)))
+            cat(" - File ", pkg, "/src/", basename(file), ":", sep="", fill=TRUE)
+            for (idx in which(has_issues))
+            cat("   - Line ", idx, ": ", toString(results[[idx]]), sep="", fill=TRUE)
+        }
+    }
+}
+
 #fails <- getFails()
+#for (pkg in fails$package)
+#    checkPackage(pkg)
 #maints <- getMaintainers(fails)
 
 ## print(maints[])
