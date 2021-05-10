@@ -1,0 +1,73 @@
+Test of Rcpp 1.0.6.7 had 2164 successes, 58 failures, and 50 skipped packages. 
+Ran from 2021-05-08 11:41:49.08 to 2021-05-09 15:00:54.35 for 1.138 days 
+Average of 43.286 secs relative to 258.266 secs using 6 runners
+
+Failed packages:  activegp, basad, Benchmarking, bfast, bigmemory, binnednp, biwavelet, blatent, bmggum, CDSeq, circumplex, ClustAssess, collapse, compas, dfphase1, emIRT, facilitation, fad, fasteraster, fixest, FORTLS, fracture, frailtySurv, gppm, huge, IFC, lavacreg, matrixprofiler, mcmcsae, medfate, multivariance, mwaved, npsf, oce, OpenMx, oppr, PAFit, PAMA, partialCI, PoissonBinomial, PosteriorBootstrap, precrec, rayrender, rcosmo, read.gt3x, recmap, Riemann, robustlmm, rpf, rplum, rstpm2, rtdists, Seurat, shrinkTVP, smam, supc, torchaudio, windfarmGA 
+
+Skipped packages:  amt, BayesianTools, BMTME, brms, cld2, Crossover, DataVisualizations, dipsaus, dynamichazard, estimatr, growfunctions, hBayesDM, IMaGES, joineRML, joinXL, KeyboardSimulator, kmcudaR, lime, lme4, mice, miceadds, mlr3proba, Morpho, mrgsolve, nlmixr, NPMLEmix, odpc, partialAR, pcalg, pccc, PLMIX, PReMiuM, RcppRedis, rDotNet, Rfast, riskRegression, RmixmodCombi, rmumps, RStoolbox, Rvcg, RxODE, sdcTable, sf, Signac, SmartSVA, sparkwarc, transport, vdiffr, warbleR, WGCNA 
+
+None still working
+
+None still scheduled
+
+Error summary:
+               package        missingPkg badInstall error fail warn note ok hasOtherIssue
+ 1:           activegp                         TRUE     0    0    0    0 13         FALSE  known STRICT_R_HEADERS issue
+ 2:              basad                         TRUE     0    0    0    3  9         FALSE  known STRICT_R_HEADERS issue
+ 3:       Benchmarking                         TRUE     1    0    0    0 12         FALSE  known STRICT_R_HEADERS issue
+ 4:              bfast ‘strucchangeRcpp’         NA     1    0    0    0 11          TRUE  passes once installed
+ 5:          bigmemory                         TRUE     0    0    0    4  9          TRUE  known STRICT_R_HEADERS issue
+ 6:           binnednp                         TRUE     0    0    0   10  3         FALSE  known STRICT_R_HEADERS issue
+ 7:          biwavelet                         TRUE     0    0    0    1 12         FALSE  known STRICT_R_HEADERS issue
+ 8:            blatent                         TRUE     0    0    0    8  4         FALSE  known STRICT_R_HEADERS issue
+ 9:             bmggum  'edstan', 'GGUM'         NA     0    0    0   13  0         FALSE  passes once installed
+10:              CDSeq                         TRUE     1    0    0    8  4         FALSE  needs Matrix >= 1.3.3
+11:         circumplex                         TRUE     0    0    0    0 13         FALSE  known STRICT_R_HEADERS issue
+12:        ClustAssess                        FALSE     2    0    0    0 11         FALSE  needs Matrix >= 1.3.3
+13:           collapse                         TRUE     0    0    0    5  8         FALSE  known STRICT_R_HEADERS issue
+14:             compas                         TRUE     0    0    0    3  9         FALSE  known STRICT_R_HEADERS issue
+15:           dfphase1                         TRUE     1    0    0    0 12         FALSE  known STRICT_R_HEADERS issue
+16:              emIRT                         TRUE     0    0    0    6  7          TRUE  known STRICT_R_HEADERS issue
+17:       facilitation                         TRUE     0    0    0    7  6         FALSE  known STRICT_R_HEADERS issue
+18:                fad                         TRUE     0    0    0   10  2         FALSE  known STRICT_R_HEADERS issue
+19:        fasteraster                         TRUE     1    0    0    0 12         FALSE  known STRICT_R_HEADERS issue
+20:             fixest                         TRUE     0    0    0    7  6         FALSE  known STRICT_R_HEADERS issue
+21:             FORTLS                         TRUE     0    0    0    4  9         FALSE  known STRICT_R_HEADERS issue
+22:           fracture                         TRUE     0    0    0    8  5         FALSE  known STRICT_R_HEADERS issue
+23:        frailtySurv                         TRUE     0    0    0    0 13         FALSE  known STRICT_R_HEADERS issue
+24:               gppm                        FALSE     4    0    0    0  9         FALSE  unsure, floating point expection in test
+25:               huge                         TRUE     1    0    0    3  9         FALSE  known STRICT_R_HEADERS issue
+26:                IFC                         TRUE     0    0    0   13  0         FALSE  known STRICT_R_HEADERS issue
+27:           lavacreg                         TRUE     0    0    0    0 13         FALSE  known STRICT_R_HEADERS issue
+28:     matrixprofiler                         TRUE     0    0    0   13  0         FALSE  known STRICT_R_HEADERS issue
+29:            mcmcsae                         TRUE     0    0    0    3 10         FALSE  known STRICT_R_HEADERS issue
+30:            medfate                         TRUE     0    0    0    6  7         FALSE  known STRICT_R_HEADERS issue
+31:      multivariance                         TRUE     0    0    0    0 13         FALSE  known STRICT_R_HEADERS issue
+32:             mwaved                         TRUE     0    0    0    0 13         FALSE  known STRICT_R_HEADERS issue
+33:               npsf                         TRUE     0    0    0    2 10         FALSE  DBL_MAX, need to revisit STRICT_R_HEADERS
+34:                oce                         TRUE     0    0    0    7  6         FALSE  known STRICT_R_HEADERS issue
+35:             OpenMx                         TRUE     1    0    0    6  6          TRUE  known STRICT_R_HEADERS issue
+36:               oppr                        FALSE     0    0    0   13  0         FALSE  unsure, likely internal
+37:              PAFit                         TRUE     1    0    1    0 11         FALSE  known STRICT_R_HEADERS issue
+38:               PAMA      ‘ExtMallows’         NA     0    0    0    6  7         FALSE  passes once installed
+39:          partialCI                         TRUE     0    0    0    0 13         FALSE  known STRICT_R_HEADERS issue
+40:    PoissonBinomial                         TRUE     0    0    0    0 13         FALSE  known STRICT_R_HEADERS issue
+41: PosteriorBootstrap                        FALSE     3    0    0    7  3          TRUE  unclear, possibly internal
+42:            precrec                         TRUE     0    0    0    0 13         FALSE  known STRICT_R_HEADERS issue
+43:          rayrender                         TRUE     0    0    0    6  7         FALSE  known STRICT_R_HEADERS issue
+44:             rcosmo                         TRUE     0    0    1    8  4         FALSE  known STRICT_R_HEADERS issue
+45:          read.gt3x                         TRUE     0    0    0    8  5         FALSE  known STRICT_R_HEADERS issue
+46:             recmap                         TRUE     0    0    0    6  7          TRUE  known STRICT_R_HEADERS issue
+47:            Riemann       ‘T4cluster’         NA     3    0    1    5  4         FALSE  passes once installed
+48:          robustlmm                         TRUE     0    0    0    5  8          TRUE  known STRICT_R_HEADERS issue
+49:                rpf                         TRUE     0    0    0    3 10         FALSE  known STRICT_R_HEADERS issue
+50:              rplum          ‘rbacon’         NA     1    0    0    0 12         FALSE  passes once installed
+51:             rstpm2                         TRUE     0    0    0    6  7         FALSE  known STRICT_R_HEADERS issue
+52:            rtdists                         TRUE     0    0    0    0 13         FALSE  known STRICT_R_HEADERS issue
+53:             Seurat                         TRUE     2    0    0    4  7         FALSE  needs Matrix >= 1.3.3
+54:          shrinkTVP                         TRUE     0    0    0   10  3         FALSE  known STRICT_R_HEADERS issue
+55:               smam                         TRUE     1    0    0   12  0         FALSE  known STRICT_R_HEADERS issue
+56:               supc                         TRUE     2    0    0    2  9         FALSE  known STRICT_R_HEADERS issue
+57:         torchaudio           ‘torch’         NA     0    0    0    8  5         FALSE  passes once installed
+58:         windfarmGA         ‘elevatr’         NA     0    0    0    0 11         FALSE  passes once installed
+               package        missingPkg badInstall error fail warn note ok hasOtherIssue
