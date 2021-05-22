@@ -1,0 +1,17 @@
+Test of RcppArmadillo 0.10.5.0.0 had 844 successes, 3 failures, and 18 skipped packages. 
+Ran from 2021-05-21 06:55:49.77 to 2021-05-21 18:33:44.42 for 11.632 hours 
+Average of 48.41 secs relative to 288.543 secs using 6 runners
+
+Failed packages:  FLightR, HDSpatialScan, MTLR 
+
+Skipped packages:  BMTME, Crossover, DataVisualizations, dynamichazard, growfunctions, IMaGES, joineRML, miceadds, Morpho, mrgsolve, nlmixr, odpc, pcalg, Rfast, riskRegression, RStoolbox, Rvcg, RxODE 
+
+None still working
+
+None still scheduled
+
+Error summary:
+         package  missingPkg badInstall error fail warn note ok hasOtherIssue
+1:       FLightR                  FALSE     1    0    0    4  7         FALSE  one test failure, also fails under CRAN RcppArmadillo so not a change to worse
+2: HDSpatialScan ‘SpatialNP’         NA     0    0    0    3  1         FALSE  passes once installed
+3:          MTLR                  FALSE     0    0    0   10  2         FALSE  vdiffr needs reinstall w/ R 4.1.0, passed once updated
