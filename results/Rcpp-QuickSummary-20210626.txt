@@ -1,0 +1,26 @@
+Test of Rcpp 1.0.6.7 had 2291 successes, 12 failures, and 19 skipped packages. 
+Ran from 2021-06-26 09:10:12.08 to 2021-06-27 01:57:33.12 for 16.789 hours 
+Average of 26.03 secs relative to 154.568 secs using 6 runners
+
+Failed packages:  ahMLE, CKMRpop, ClusPred, expectreg, geomander, gppm, ipaddress, PosteriorBootstrap, prioritizr, QFASA, TensorClustering, windfarmGA 
+
+Skipped packages:  BMTME, Crossover, DataVisualizations, dipsaus, dynamichazard, growfunctions, hBayesDM, joineRML, joinXL, KeyboardSimulator, kmcudaR, mlr3proba, nlmixr, NPMLEmix, RcppRedis, rDotNet, Rfast, sparkwarc, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+               package                                                                      missingPkg badInstall error fail warn note ok hasOtherIssue
+ 1:              ahMLE                                                                      ‘invGauss’         NA     0    0    0    0 11         FALSE  passes once installed
+ 2:            CKMRpop                                                                                      FALSE     1    0    0    5  5          TRUE  internal segfault, unclear
+ 3:           ClusPred                                                                  'ALDqr', 'ald'         NA     0    0    0    0 13         FALSE  passes once installed
+ 4:          expectreg                                                                        ‘BayesX’         NA     0    0    0    4 10         FALSE  passes once installed
+ 5:          geomander                                                          'tidycensus', 'tigris'         NA     0    0    0    0 14         FALSE  passes once installed
+ 6:               gppm                                                                                      FALSE     4    0    0    0 10         FALSE  internal, unclear, floating point exception
+ 7:          ipaddress                                                                                      FALSE     0    0    0    4 10         FALSE  passes once bignum installed
+ 8: PosteriorBootstrap                                                                                      FALSE     0    0    0    7  7         FALSE  internal, unclear, floating point exception
+ 9:         prioritizr cannot use with duplicate class names (the package may need to be re-installed)         NA     0    0    0   14  0          TRUE  internal, unclear
+10:              QFASA                                                 'Compositional', 'compositions'         NA     0    0    0    8  6         FALSE  passes once installed
+11:   TensorClustering                                                                          ‘TRES’         NA     0    0    0    6  2         FALSE  passes once installed
+12:         windfarmGA                                                                                      FALSE    11    0    0    0  3          TRUE  internal, also 11 times at CRAN
