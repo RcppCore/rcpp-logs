@@ -1,0 +1,70 @@
+Test of Rcpp 1.0.7.1.1 had 2270 successes, 55 failures, and 19 skipped packages. 
+Ran from 2021-07-22 20:59:49.56 to 2021-07-23 12:50:10.45 for 15.839 hours 
+Average of 24.326 secs relative to 129.236 secs using 6 runners
+
+Failed packages:  activegp, afCEC, AovBay, basad, bcf, biglasso, binnednp, blockmodels, CARlasso, ClusPred, compas, dfphase1, DGM, emIRT, EMVS, eulerr, facilitation, fasteraster, fctbases, FORTLS, frailtySurv, GAS, GeoFIS, goffda, gppm, GWmodel, HDTSA, ichimoku, ideq, IFC, lavacreg, ldsep, MAINT.Data, mcmcsae, mcmcse, meshed, MixMatrix, MNARclust, MSGARCH, multdyn, MultiFit, oce, optmatch, parglm, partialAR, partialCI, PoissonBinomial, PosteriorBootstrap, rcosmo, RobustGaSP, rpf, RxODE, sdetorus, spamtree, supc 
+
+Skipped packages:  BMTME, Crossover, DataVisualizations, dipsaus, dynamichazard, growfunctions, hBayesDM, joineRML, joinXL, KeyboardSimulator, kmcudaR, mlr3proba, nlmixr, NPMLEmix, RcppRedis, rDotNet, Rfast, sparkwarc, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+               package                                                     missingPkg badInstall error fail warn note ok hasOtherIssue
+ 1:           activegp                                                                      TRUE     0    0    0    0 14         FALSE  known
+ 2:              afCEC                                                                     FALSE     2    0    0    1 11         FALSE  should import Rcpp
+ 3:             AovBay   'shinydashboardPlus', 'BayesFactor', 'highcharter', 'waiter'         NA     0    0    0    5  0         FALSE  passes once installed
+ 4:              basad                                                                      TRUE     0    0    0    4 10         FALSE  known
+ 5:                bcf                                                                      TRUE     0    0    0    0 14         FALSE  known
+ 6:           biglasso                                                                      TRUE     1    0    0    1 12          TRUE  known
+ 7:           binnednp                                                                      TRUE     0    0    0   13  1         FALSE  known
+ 8:        blockmodels                                                                      TRUE     0    0    0    6  8         FALSE  known
+ 9:           CARlasso                                                                      TRUE     0    0    0    3  7         FALSE  ** new: DOUBLE_EPS
+10:           ClusPred                                                                      TRUE     0    0    0    0 14         FALSE  known
+11:             compas                                                                      TRUE     0    0    0    4 10         FALSE  known
+12:           dfphase1                                                                      TRUE     0    0    0    0 14         FALSE  known
+13:                DGM                                                                      TRUE     0    0    0    0 14         FALSE  known
+14:              emIRT                                                                      TRUE     0    0    0    6  8          TRUE  known
+15:               EMVS                                                                      TRUE     0    0    0    0 14         FALSE  known
+16:             eulerr                                                                      TRUE     0    0    0    3 11         FALSE  known
+17:       facilitation                                                                      TRUE     0    0    0    7  7         FALSE  known
+18:        fasteraster                                                                      TRUE     0    0    0    0 14         FALSE  known
+19:           fctbases                                                                      TRUE     0    0    0    0 14         FALSE  known
+20:             FORTLS                                                                      TRUE     0    0    0    4 10         FALSE  known
+21:        frailtySurv                                                                      TRUE     0    0    0    0 14         FALSE  known
+22:                GAS                                                                      TRUE     0    0    0    6  8         FALSE  known
+23:             GeoFIS                                                       ‘FisPro’         NA     0    0    0    4  0          TRUE  passes once installed
+24:             goffda                                                                      TRUE     0    0    0    7  7         FALSE  known
+25:               gppm                                                                     FALSE     4    0    0    0 10         FALSE  recurring
+26:            GWmodel                                                                      TRUE     0    0    0   12  2         FALSE  known
+27:              HDTSA                                                                      TRUE     0    0    0    4 10         FALSE  known
+28:           ichimoku                                                     'httptest'         NA     0    0    0    0 14         FALSE  passes once installed
+29:               ideq                                                                      TRUE     0    0    0    4 10         FALSE  known
+30:                IFC                                                                      TRUE     0    0    0   14  0         FALSE  known
+31:           lavacreg                                                                      TRUE     0    0    0    0 14         FALSE  known
+32:              ldsep                                                                      TRUE     0    0    0    4 10         FALSE  known
+33:         MAINT.Data                                                                      TRUE     0    0    0    8  6         FALSE  known
+34:            mcmcsae                                                                      TRUE     0    0    0    4 10         FALSE  known
+35:             mcmcse                                                                      TRUE     0    0    0    0 14         FALSE  known
+36:             meshed                                                                      TRUE     2    0    0    5  7          TRUE  known
+37:          MixMatrix                                                                      TRUE     0    0    0   12  2         FALSE  known
+38:          MNARclust                                                                      TRUE     0    0    0    0 12         FALSE  ** new: PI
+39:            MSGARCH                                                                      TRUE     0    0    0    7  7         FALSE  known
+40:            multdyn                                                                      TRUE     0    0    0    0 14         FALSE  known
+41:           MultiFit                                                                      TRUE     0    0    0    0 14         FALSE  known
+42:                oce                                                                      TRUE     0    0    0    8  6         FALSE  known
+43:           optmatch                                                                     FALSE     8    0    0    0  6         FALSE  recurring
+44:             parglm                                                                      TRUE     0    0    0   12  2         FALSE  known
+45:          partialAR                                                                      TRUE     0    0    0    0 14         FALSE  known
+46:          partialCI                                                                      TRUE     0    0    0    0 14         FALSE  known
+47:    PoissonBinomial                                                                      TRUE     0    0    0    0 14         FALSE  known
+48: PosteriorBootstrap                                                                     FALSE     0    0    0    7  7         FALSE  recurring
+49:             rcosmo                                                                      TRUE     0    0    0   12  2         FALSE  known
+50:         RobustGaSP                                                                      TRUE     0    0    0    4 10         FALSE  known
+51:                rpf                                                                      TRUE     0    0    0    4 10         FALSE  known
+52:              RxODE                                                                      TRUE     3    0    0    7  4         FALSE  known
+53:           sdetorus                                                                      TRUE     0    0    0    4 10         FALSE  known
+54:           spamtree                                                                      TRUE     1    0    0    4  9         FALSE  known
+55:               supc                                                                      TRUE     1    0    0    2 11         FALSE  known
+               package                                                     missingPkg badInstall error fail warn note ok hasOtherIssue
