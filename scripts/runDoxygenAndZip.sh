@@ -4,12 +4,12 @@ set -e
 
 if [ ! -d rcpp ]; then
     echo "Not above rcpp/"
-    exit -1
+    exit 1
 fi
 
 if [ ! -d ~/www/code/rcpp ]; then
     echo "No www directories for Rcpp"
-    exit -1
+    exit 2
 fi
 
 cwd=$(pwd)
