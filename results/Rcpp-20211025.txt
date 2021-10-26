@@ -1,0 +1,28 @@
+Test of Rcpp 1.0.7.4 had 2379 successes, 14 failures, and 20 skipped packages. 
+Ran from 2021-10-25 19:23:33.89 to 2021-10-26 13:12:06.78 for 17.809 hours 
+Average of 26.57 secs relative to 149.136 secs using 6 runners
+
+Failed packages:  Bayesrel, breathteststan, discretefit, epidemia, GCPBayes, grpSLOPE, hyper2, moveWindSpeed, mpcmp, RAINBOWR, Ravages, RavenR, rstpm2, tiledb 
+
+Skipped packages:  BMTME, Crossover, DataVisualizations, dipsaus, dynamichazard, growfunctions, hBayesDM, joineRML, joinXL, KeyboardSimulator, kmcudaR, mlr3proba, nlmixr, NLMR, NPMLEmix, RcppRedis, rDotNet, Rfast, sparkwarc, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+           package          missingPkg badInstall error fail warn note ok hasOtherIssue
+ 1:       Bayesrel                          FALSE     0    0    0    0 14         FALSE  ignore, one small numerical error
+ 2: breathteststan                          FALSE     0    0    0   14  0         FALSE  ignore, three small stan errors
+ 3:    discretefit           'cvmdisc'         NA     1    0    1    0 12         FALSE  passes once installed
+ 4:       epidemia        ‘hrbrthemes’         NA     0    0    0    4  0         FALSE  passes once installed
+ 5:       GCPBayes 'postpack', 'wiqid'         NA     0    0    0    7  6         FALSE  passes once installed
+ 6:       grpSLOPE                          FALSE     0    0    0   12  2         FALSE  ignore, two small numerical erros
+ 7:         hyper2           ‘disordR’         NA     0    0    0    0 14         FALSE  passes once installed  
+ 8:  moveWindSpeed                          FALSE     0    0    0    0 14         FALSE  ignore, local test woes
+ 9:          mpcmp                          FALSE     0    0    0    0 14         FALSE  ignore, one test fail
+10:       RAINBOWR                           TRUE     3    0    0    2  9         FALSE  recurrent, known, not us
+11:        Ravages              ‘bedr’         NA     1    0    0    7  6         FALSE  passes once installed  
+12:         RavenR                          FALSE     0    0    0    3 11         FALSE  recurrent, known, not us
+13:         rstpm2                          FALSE     0    0    0    6  8         FALSE  ignore, local test woes
+14:         tiledb                          FALSE     1    0    0    7  5         FALSE  recurrent test race cond.
