@@ -1,0 +1,27 @@
+Test of RcppEigen 0.3.3.99.0 had 316 successes, 13 failures, and 3 skipped packages. 
+Ran from 2021-10-26 15:15:22.92 to 2021-10-27 00:09:34.52 for 8.903 hours 
+Average of 96.541 secs relative to 575.519 secs using 6 runners
+
+Failed packages:  breathteststan, ctsem, Eagle, eimpute, fssemR, fwildclusterboot, gRbase, groupedSurv, OpenMx, RAINBOWR, RMixtCompIO, SEMgraph, skpr 
+
+Skipped packages:  hBayesDM, kmcudaR, nlmixr 
+
+None still working
+
+None still scheduled
+
+Error summary:
+             package                missingPkg badInstall error fail warn note ok hasOtherIssue
+ 1:   breathteststan                                FALSE     0    0    0   14  0         FALSE  possibly unrelated numeric errors
+ 2:            ctsem                                 TRUE     0    0    1   13  0         FALSE  error: no matching function for call to ‘isinf(const stan::math::var&)'
+ 3:            Eagle                                 TRUE     0    0    0    4 10         FALSE  error: no match for ‘operator=’
+ 4:          eimpute                                 TRUE     0    0    0   13  1         FALSE  error: no match for ‘operator/’
+ 5:           fssemR                                 TRUE     0    0    0   13  1         FALSE  error: no match for ‘operator=’
+ 6: fwildclusterboot                                FALSE     0    0    0    0 14         FALSE  possibly unrelated numeric errors
+ 7:           gRbase                                 TRUE     0    0    0    6  8         FALSE  error: static assertion failed: cannot convert type to SEXP
+ 8:      groupedSurv                                 TRUE     0    0    0    4 10         FALSE  error: cannot convert ‘Eigen::internal::enable_if<.....
+ 9:           OpenMx                                 TRUE     1    0    0   13  0          TRUE  error: no match for ‘operator-’
+10:         RAINBOWR                                 TRUE     3    0    0    2  9         FALSE  unrelated: "Error: object ‘get_aes_var’ is not exported by 'namespace:rvcheck'"
+11:      RMixtCompIO                                 TRUE     0    0    0    4 10         FALSE  error: static assertion failed:
+12:         SEMgraph 'cate', 'diffusr', 'flip'         NA     0    0    0    1 13         FALSE  passes once installed
+13:             skpr                                 TRUE     0    0    0    4 10         FALSE  error: cannot convert ‘Eigen::internal::enable_if<....
