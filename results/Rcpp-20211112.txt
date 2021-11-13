@@ -1,0 +1,26 @@
+Test of Rcpp 1.0.7.4 had 21 successes, 12 failures, and 19 skipped packages. 
+Ran from 2021-11-12 16:55:35.29 to 2021-11-12 17:19:21.57 for 23.771 mins 
+Average of 27.428 secs relative to 146.622 secs using 6 runners
+
+Failed packages:  Bayesrel, breathteststan, fastshap, grpSLOPE, ivdoctr, mpcmp, quanteda.textstats, RAINBOWR, RavenR, rstpm2, starvz, tiledb 
+
+Skipped packages:  BMTME, Crossover, DataVisualizations, dipsaus, dynamichazard, growfunctions, hBayesDM, joineRML, joinXL, KeyboardSimulator, mlr3proba, nlmixr, NLMR, NPMLEmix, RcppRedis, rDotNet, Rfast, sparkwarc, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+               package missingPkg badInstall error fail warn note ok hasOtherIssue
+ 1:           Bayesrel                 FALSE     0    0    0    0 14         FALSE  ignore, small numeric issue on one test
+ 2:     breathteststan                 FALSE     0    0    0   14  0         FALSE  ignore, internal?, three tests
+ 3:           fastshap                 FALSE     8    0    0    0  6          TRUE  ignore, as_tibble
+ 4:           grpSLOPE                 FALSE     0    0    0   12  2         FALSE  ignore, 2 test issues
+ 5:            ivdoctr                 FALSE     9    0    0    4  1         FALSE  ignore, Rcpp load, local issue, PR sent
+ 6:              mpcmp                 FALSE     0    0    0    0 14         FALSE  ignore, one fail
+ 7: quanteda.textstats                 FALSE    11    0    0    2  1         FALSE  internal, tests?
+ 8:           RAINBOWR                  TRUE     3    0    0    2  9         FALSE  ignore, known issue
+ 9:             RavenR                 FALSE     0    0    0    3 11         FALSE  ignore, internal?
+10:             rstpm2                 FALSE     0    0    0    6  8         FALSE  ignore, internal? three tests
+11:             starvz    ‘arrow’         NA     0    0    0    0 14         FALSE
+12:             tiledb                 FALSE     2    0    0    7  4         FALSE  ignore, fixed upstream
