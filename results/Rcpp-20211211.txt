@@ -1,0 +1,42 @@
+Test of Rcpp 1.0.7.5 had 2412 successes, 27 failures, and 21 skipped packages. 
+Ran from 2021-12-11 19:25:33.00 to 2021-12-13 06:17:00.87 for 1.452 days 
+Average of 51.011 secs relative to 304.61 secs using 6 runners
+
+Failed packages:  Bayesrel, BCT, breathteststan, ctsem, eimpute, fssemR, fwildclusterboot, geomander, gRbase, groupedSurv, grpSLOPE, httpuv, mixedCCA, mpcmp, nodeSub, OpenMx, PReMiuM, RAINBOWR, RavenR, RcppSMC, RMixtCompIO, RSSL, rstpm2, sbfc, skpr, stan4bart, textmineR 
+
+Skipped packages:  BMTME, Crossover, DataVisualizations, dipsaus, dynamichazard, growfunctions, hBayesDM, joineRML, joinXL, KeyboardSimulator, Mega2R, mlr3proba, nlmixr, NLMR, NPMLEmix, RcppRedis, rDotNet, Rfast, sparkwarc, starvz, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+             package              missingPkg badInstall error fail warn note ok hasOtherIssue
+ 1:         Bayesrel                              FALSE     0    0    0    0 13         FALSE  minor (?) numeric test error
+ 2:              BCT                               TRUE     0    0    0    0 13         FALSE  not us, passes with CXX_STD=CXX11
+ 3:   breathteststan                              FALSE     1    0    0   12  0         FALSE  minor (?) numeric test error
+ 4:            ctsem                               TRUE     0    0    1   12  0         FALSE  Eigen 3.4.0: error: no matching function for call to ‘isinf(const stan::math::var&)'
+ 5:          eimpute                               TRUE     0    0    0   12  1         FALSE  Eigen 3.4.0
+ 6:           fssemR                               TRUE     0    0    0   12  1         FALSE  Eigen 3.4.0
+ 7: fwildclusterboot                              FALSE     0    0    0    0 13         FALSE  minor (?) numeric test error
+ 8:        geomander 'dataverse', 'censable'         NA     0    0    0    6  7         FALSE  passes once installed
+ 9:           gRbase                               TRUE     0    0    1    6  6         FALSE  Eigen 3.4.0
+10:      groupedSurv                               TRUE     0    0    2    4  7         FALSE  Eigen 3.4.0
+11:         grpSLOPE                              FALSE     0    0    0   11  2         FALSE  minor (?) numeric test error
+12:           httpuv                              FALSE     0    0    0   13  0         FALSE  libcurl related
+13:         mixedCCA                               TRUE     0    0    0   13  0         FALSE  passes once curl package reinstalled
+14:            mpcmp                              FALSE     0    0    0    0 13         FALSE  minor (?) numeric test error
+15:          nodeSub                              FALSE     6    0    0    0  7         FALSE  not us? also errors at CRAN
+16:           OpenMx                               TRUE     1    0    0   12  0          TRUE  Eigen 3.4.0
+17:          PReMiuM                               TRUE     0    0    0    4  9         FALSE  known flaky
+18:         RAINBOWR                               TRUE     2    0    0    3  8         FALSE  Eigen 3.4.0
+19:           RavenR                              FALSE     0    0    0    2 11         FALSE  unclean not us, fails with CRAN R
+20:          RcppSMC                               TRUE     0    0    0    4  9         FALSE  not us, passes with CXX_STD=CXX11
+21:      RMixtCompIO                               TRUE     0    0    0    4  9         FALSE  Eigen 3.4.0
+22:             RSSL                               TRUE     0    0    0    1 12         FALSE  not us, passes with CXX_STD=CXX11
+23:           rstpm2                              FALSE     0    0    3    6  4         FALSE  minor (?) numeric test error
+24:             sbfc                               TRUE     0    0    0    1 12         FALSE  not us, passes with CXX_STD=CXX11
+25:             skpr                               TRUE     0    0    0    4  9         FALSE  Eigen 3.4.0
+26:        stan4bart                               TRUE     0    0    0    4  9         FALSE  Eigen 3.4.0
+27:        textmineR                              FALSE     0    0    0    4  9         FALSE  GSL via topicmodels, passes once reinstalled
+             package              missingPkg badInstall error fail warn note ok hasOtherIssue
