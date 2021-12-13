@@ -1,0 +1,28 @@
+Test of Rcpp 1.0.7.5 had 13 successes, 14 failures, and 21 skipped packages. 
+Ran from 2021-12-13 07:41:10.95 to 2021-12-13 08:20:35.17 for 39.404 mins 
+Average of 49.255 secs relative to 206.008 secs using 6 runners
+
+Failed packages:  Bayesrel, BCT, breathteststan, grpSLOPE, mixedCCA, mpcmp, nodeSub, PReMiuM, RAINBOWR, RavenR, RcppSMC, RSSL, rstpm2, sbfc 
+
+Skipped packages:  BMTME, Crossover, DataVisualizations, dipsaus, dynamichazard, growfunctions, hBayesDM, joineRML, joinXL, KeyboardSimulator, Mega2R, mlr3proba, nlmixr, NLMR, NPMLEmix, RcppRedis, rDotNet, Rfast, sparkwarc, starvz, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+           package missingPkg badInstall error fail warn note ok hasOtherIssue
+ 1:       Bayesrel                 FALSE     0    0    0    0 13         FALSE  minor (?) numeric test error
+ 2:            BCT                  TRUE     0    0    0    0 13         FALSE  not us, passes with CXX_STD=CXX11
+ 3: breathteststan                 FALSE     1    0    0   12  0         FALSE  minor (?) numeric test error
+ 4:       grpSLOPE                 FALSE     0    0    0   11  2         FALSE  minor (?) numeric test error
+ 5:       mixedCCA                  TRUE     0    0    0   13  0         FALSE  GSL related, chebpol reinstalled, passes once installed
+ 6:          mpcmp                 FALSE     0    0    0    0 13         FALSE  not us? also errors at CRAN
+ 7:        nodeSub                 FALSE     6    0    0    0  7         FALSE  not us? also errors at CRAN
+ 8:        PReMiuM                  TRUE     0    0    0    4  9         FALSE  known flaky
+ 9:       RAINBOWR                  TRUE     2    0    0    3  8         FALSE  known: object ‘get_aes_var’ is not exported by 'namespace:rvcheck'
+10:         RavenR                 FALSE     0    0    0    2 11         FALSE  unclean not us, fails with CRAN R
+11:        RcppSMC                  TRUE     0    0    0    4  9         FALSE  not us, passes with CXX_STD=CXX11
+12:           RSSL                  TRUE     0    0    0    1 12         FALSE  not us, passes with CXX_STD=CXX11
+13:         rstpm2                 FALSE     0    0    3    6  4         FALSE  minor (?) numeric test error
+14:           sbfc                  TRUE     0    0    0    1 12         FALSE  not us, passes with CXX_STD=CXX11
