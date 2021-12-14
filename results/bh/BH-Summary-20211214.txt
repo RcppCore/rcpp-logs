@@ -1,0 +1,21 @@
+Test of BH 1.77.99.3 had 259 successes, 7 failures, and 4 skipped packages. 
+Ran from 2021-12-14 12:42:09.16 to 2021-12-14 15:20:28.83 for 2.639 hours 
+Average of 35.184 secs relative to 206.975 secs using 6 runners
+
+Failed packages:  breathteststan, gfilogisreg, PReMiuM, rstpm2, secr, TDA, tmbstan 
+
+Skipped packages:  hBayesDM, nlmixr, RcppRedis, starvz 
+
+None still working
+
+None still scheduled
+
+Error summary:
+          package missingPkg badInstall error fail warn note ok hasOtherIssue
+1: breathteststan                 FALSE     1    0    0   12  0         FALSE  not BH, minor (?) recurring numeric test error
+2:    gfilogisreg                  TRUE     0    0    0   11  2         FALSE  identified, PR sent, merged
+3:        PReMiuM                  TRUE     0    0    0    4  9         FALSE  known flaky
+4:         rstpm2                 FALSE     0    0    3    6  3         FALSE  not BH, minor (?) recurring numeric test error
+5:           secr                  TRUE     0    0    0   12  0         FALSE  needs one std::isnan
+6:            TDA                  TRUE     0    0    3    8  2          TRUE  identified, upstream contacted
+7:        tmbstan                  TRUE     0    0    0    4  9         FALSE  identified, PR sent, merged
