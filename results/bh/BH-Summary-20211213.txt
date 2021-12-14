@@ -1,8 +1,8 @@
-Test of BH 1.78.0.0 had 249 successes, 17 failures, and 4 skipped packages. 
-Ran from 2021-12-13 08:26:59.97 to 2021-12-13 14:56:40.35 for 6.495 hours 
-Average of 86.594 secs relative to 513.32 secs using 6 runners
+Test of BH 1.77.99.1 had 11 successes, 7 failures, and 4 skipped packages. 
+Ran from 2021-12-13 17:45:46.04 to 2021-12-13 18:03:19.79 for 17.562 mins 
+Average of 47.898 secs relative to 201.386 secs using 6 runners
 
-Failed packages:  APAtree, breathteststan, gfilogisreg, googlePolylines, incgraph, lidR, lolog, policytree, PReMiuM, rgeoda, rlas, rstpm2, secr, spNetwork, TDA, tmbstan, wellknown 
+Failed packages:  breathteststan, gfilogisreg, PReMiuM, rstpm2, secr, TDA, tmbstan 
 
 Skipped packages:  hBayesDM, nlmixr, RcppRedis, starvz 
 
@@ -11,21 +11,11 @@ None still working
 None still scheduled
 
 Error summary:
-            package missingPkg badInstall error fail warn note ok hasOtherIssue
- 1:         APAtree                  TRUE     0    0    0    0 13         FALSE
- 2:  breathteststan                 FALSE     1    0    0   12  0         FALSE  no BH, minor (?) recurring numeric test error
- 3:     gfilogisreg                  TRUE     0    0    0   11  2         FALSE
- 4: googlePolylines                  TRUE     0    0    0    0 13         FALSE
- 5:        incgraph                  TRUE     0    0    0    6  7         FALSE
- 6:            lidR                  TRUE     0    1    0    7  5         FALSE
- 7:           lolog                  TRUE     0    0    8    4  1         FALSE
- 8:      policytree                  TRUE     0    0    0    0 13         FALSE
- 9:         PReMiuM                  TRUE     0    0    0    4  9         FALSE
-10:          rgeoda                  TRUE     0    0    0    6  7         FALSE
-11:            rlas                  TRUE     0    0    0    6  7         FALSE
-12:          rstpm2                 FALSE     0    0    3    6  4         FALSE  no BH, minor (?) recurring numeric test error
-13:            secr                  TRUE     0    0    0   13  0         FALSE
-14:       spNetwork                  TRUE     0    0    2    5  6         FALSE
-15:             TDA                  TRUE     0    0    3    8  2          TRUE
-16:         tmbstan                  TRUE     0    0    0    4  9         FALSE
-17:       wellknown                  TRUE     0    0    0    4  9         FALSE
+          package missingPkg badInstall error fail warn note ok hasOtherIssue
+1: breathteststan                 FALSE     1    0    0   12  0         FALSE  not BH, minor (?) recurring numeric test error
+2:    gfilogisreg                  TRUE     0    0    0   11  2         FALSE  error: ‘isnormal’ was not declared in this scop
+3:        PReMiuM                  TRUE     0    0    0    4  9         FALSE  known flaky
+4:         rstpm2                 FALSE     0    0    3    6  4         FALSE  not BH, minor (?) recurring numeric test error
+5:           secr                  TRUE     0    0    0   13  0         FALSE  not BH, possible Rcpp usaage issue
+6:            TDA                  TRUE     0    0    3    8  2          TRUE  error: wrong number of template arguments (2, should be 1)
+7:        tmbstan                  TRUE     0    0    0    4  9         FALSE  uses C++03, should try C++11 or later
