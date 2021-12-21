@@ -1,0 +1,22 @@
+Test of RcppArmadillo 0.10.7.99.0 had 922 successes, 8 failures, and 8 skipped packages. 
+Ran from 2021-12-20 23:00:38.01 to 2021-12-21 12:48:21.05 for 13.795 hours 
+Average of 52.946 secs relative to 315.697 secs using 6 runners
+
+Failed packages:  aRtsy, Bayesrel, gfilogisreg, MSEtool, PLNmodels, RSSL, rstpm2, sbfc 
+
+Skipped packages:  BMTME, Crossover, DataVisualizations, dynamichazard, growfunctions, joineRML, nlmixr, Rfast 
+
+None still working
+
+None still scheduled
+
+Error summary:
+       package missingPkg badInstall error fail warn note ok hasOtherIssue
+1:       aRtsy  ‘ambient’         NA     0    0    0    0 13         FALSE  passes once installed
+2:    Bayesrel                 FALSE     0    0    0    0 13         FALSE  minor (?) numeric test error
+3: gfilogisreg                  TRUE     6    0    0    3  4         FALSE  passes with just updated version 1.0.2
+4:     MSEtool                 FALSE    10    0    0    3  0         FALSE  not us, "Error: 'fishbase' is not an exported object from 'namespace:rfishbase'"
+5:   PLNmodels                 FALSE     0    0    0    6  7         FALSE  spurious, passes on re-run
+6:        RSSL                  TRUE     0    0    0    1 12         FALSE  not us, passes with CXX_STD=CXX11
+7:      rstpm2                 FALSE     0    0    1    6  6         FALSE  minor (?) numeric test error
+8:        sbfc                  TRUE     0    0    0    1 12         FALSE  not us, passes with CXX_STD=CXX11
