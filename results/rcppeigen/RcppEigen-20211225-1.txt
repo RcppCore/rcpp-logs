@@ -1,0 +1,22 @@
+Test of RcppEigen 0.3.3.9.1 had 332 successes, 8 failures, and 2 skipped packages. 
+Ran from 2021-12-25 08:50:26.10 to 2021-12-25 16:37:07.04 for 7.778 hours 
+Average of 81.874 secs relative to 487.525 secs using 6 runners
+
+Failed packages:  BigDataStatMeth, breathteststan, gllvm, PReMiuM, RAINBOWR, secr, SEMgraph, TDA 
+
+Skipped packages:  hBayesDM, nlmixr 
+
+None still working
+
+None still scheduled
+
+Error summary:
+           package missingPkg badInstall error fail warn note ok hasOtherIssue
+1: BigDataStatMeth                 FALSE     7    0    0    6  0          TRUE  not us, issues at CRAN
+2:  breathteststan                 FALSE     0    0    0   13  0         FALSE  not us, minor (?) recurring numeric test error
+3:           gllvm                  TRUE     0    0    0    7  6         FALSE  passes once mvabund reinstalled
+4:         PReMiuM                  TRUE     0    0    0    4  9         FALSE  known flaky
+5:        RAINBOWR                  TRUE     2    0    0    3  8         FALSE  not us, Error: object ‘get_aes_var’ is not exported by 'namespace:rvcheck'  
+6:            secr                  TRUE     9    0    0    4  0         FALSE  known BH issues, needs one std::isnan
+7:        SEMgraph                  TRUE    10    0    0    3  0         FALSE  not us, "Error: object ‘ggm_compare’ is not exported by 'namespace:GGMncv'"
+8:             TDA                  TRUE    10    0    0    3  0         FALSE  known BH issue, upstream contacted
