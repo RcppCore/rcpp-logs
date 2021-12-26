@@ -1,0 +1,31 @@
+Test of RcppEigen 0.3.3.99.0 had 323 successes, 17 failures, and 2 skipped packages. 
+Ran from 2021-12-25 23:35:31.69 to 2021-12-26 08:57:16.51 for 9.362 hours 
+Average of 98.552 secs relative to 588.151 secs using 6 runners
+
+Failed packages:  BigDataStatMeth, breathteststan, ctsem, eimpute, fssemR, fwildclusterboot, gRbase, groupedSurv, OpenMx, PReMiuM, RAINBOWR, RMixtCompIO, secr, SEMgraph, skpr, stan4bart, TDA 
+
+Skipped packages:  hBayesDM, nlmixr 
+
+None still working
+
+None still scheduled
+
+Error summary:
+             package missingPkg badInstall error fail warn note ok hasOtherIssue
+ 1:  BigDataStatMeth                 FALSE     7    0    0    6  0          TRUE  not us, issues at CRAN
+ 2:   breathteststan                 FALSE     0    0    0   13  0         FALSE  not us, minor (?) recurring numeric test error
+ 3:            ctsem                  TRUE     0    0    0   13  0         FALSE  help needed with known Eigen 3.4.0 issue
+ 4:          eimpute                  TRUE     0    0    0   12  1         FALSE  patch emailed 2021-11-23
+ 5:           fssemR                  TRUE     0    0    0   12  1         FALSE  pr filed, merged, but not at CRAN yet
+ 6: fwildclusterboot                 FALSE     0    0    0    0 13         FALSE  flaky, small numerical error
+ 7:           gRbase                  TRUE     0    0    0    6  7         FALSE  pr filed 2021-11-26
+ 8:      groupedSurv                  TRUE     0    0    0    4  9         FALSE  patch emailed 2021-11-26
+ 9:           OpenMx                  TRUE     0    0    0   13  0          TRUE  pr filed 2021-11-27, merged 2021-11-30, but not at CRAN yet
+10:          PReMiuM                  TRUE     0    0    0    4  9         FALSE  known flaky
+11:         RAINBOWR                  TRUE     2    0    0    3  8         FALSE  not us, Error: object ‘get_aes_var’ is not exported by 'namespace:rvcheck'  
+12:      RMixtCompIO                  TRUE     0    0    0    4  9         FALSE  maintainer emailed  
+13:             secr                  TRUE     9    0    0    4  0         FALSE  known BH issues, needs one std::isnan
+14:         SEMgraph                  TRUE    10    0    0    3  0         FALSE  not us, "Error: object ‘ggm_compare’ is not exported by 'namespace:GGMncv'"
+15:             skpr                  TRUE     0    0    0    4  9         FALSE  pr file 2021-12-05
+16:        stan4bart                  TRUE     0    0    0    4  9         FALSE  help needed
+17:              TDA                  TRUE    10    0    0    3  0         FALSE  known BH issue, upstream contacted
