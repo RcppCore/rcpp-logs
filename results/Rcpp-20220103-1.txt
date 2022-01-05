@@ -14,20 +14,20 @@ None still scheduled
 
 Error summary:
             package missingPkg badInstall error fail warn note ok hasOtherIssue
- 1:        Bayesrel                 FALSE     0    0    0    0 13         FALSE
- 2:             BCT                  TRUE     0    0    0    0 13         FALSE
- 3: BigDataStatMeth                 FALSE     7    0    0    6  0          TRUE
- 4:  breathteststan                 FALSE     2    0    0   11  0         FALSE
- 5:         grattan                 FALSE     6    0    0    7  0          TRUE
- 6:        grpSLOPE                 FALSE     0    0    0   11  2         FALSE
- 7:           mpcmp                 FALSE     0    0    0    0 13         FALSE
- 8:         MSEtool                 FALSE    10    0    0    3  0         FALSE
- 9:         nodeSub                 FALSE    10    0    0    0  3         FALSE
-10:         PReMiuM                  TRUE     0    0    0    4  9         FALSE
-11:        RAINBOWR                  TRUE     2    0    0    3  8          TRUE
-12:          RavenR                 FALSE     0    0    0    2 11         FALSE
-13:            RSSL                  TRUE     0    0    0    1 12         FALSE
-14:          rstpm2                 FALSE     0    0    0    6  7         FALSE
-15:            sbfc                  TRUE     0    0    0    1 12         FALSE
-16:            secr                  TRUE     9    0    0    4  0         FALSE
-17:             TDA                  TRUE    10    0    0    3  0         FALSE
+ 1:        Bayesrel                 FALSE     0    0    0    0 13         FALSE  minor (?) numeric test error
+ 2:             BCT                  TRUE     0    0    0    0 13         FALSE  not us, passes with CXX_STD=CXX11  
+ 3: BigDataStatMeth                 FALSE     7    0    0    6  0          TRUE  not us, issues at CRAN
+ 4:  breathteststan                 FALSE     2    0    0   11  0         FALSE  minor (?) numeric test error
+ 5:         grattan                 FALSE     6    0    0    7  0          TRUE  not us, fails with 2022 dateq
+ 6:        grpSLOPE                 FALSE     0    0    0   11  2         FALSE  unclear, two numerical fails
+ 7:           mpcmp                 FALSE     0    0    0    0 13         FALSE  unclear, one numerical fail
+ 8:         MSEtool                 FALSE    10    0    0    3  0         FALSE  not us, "Error: 'fishbase' is not an exported object from 'namespace:rfishbase'"
+ 9:         nodeSub                 FALSE    10    0    0    0  3         FALSE  unclear, one fail
+10:         PReMiuM                  TRUE     0    0    0    4  9         FALSE  known flaky
+11:        RAINBOWR                  TRUE     2    0    0    3  8          TRUE  not us, Error: object ‘get_aes_var’ is not exported by 'namespace:rvcheck'
+12:          RavenR                 FALSE     0    0    0    2 11         FALSE  unclear error
+13:            RSSL                  TRUE     0    0    0    1 12         FALSE  not us, passes with CXX_STD=CXX11  
+14:          rstpm2                 FALSE     0    0    0    6  7         FALSE  not us, minor (?) recurring numeric test error
+15:            sbfc                  TRUE     0    0    0    1 12         FALSE  not us, passes with CXX_STD=CXX11  
+16:            secr                  TRUE     9    0    0    4  0         FALSE  known BH issues, needs one std::isnan
+17:             TDA                  TRUE    10    0    0    3  0         FALSE  known BH issue, upstream contacted
