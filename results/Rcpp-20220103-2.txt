@@ -1,0 +1,48 @@
+Test of Rcpp 1.0.7.6.1 had 2415 successes, 33 failures, and 21 skipped packages. 
+Ran from 2022-01-03 09:11:08.23 to 2022-01-04 18:32:22.05 for 1.39 days 
+Average of 48.633 secs relative to 290.409 secs using 6 runners
+
+Failed packages:  Bayesrel, bcf, BCT, BigDataStatMeth, biglasso, binnednp, breathteststan, compas, emIRT, facilitation, fasteraster, fctbases, GAS, grattan, grpSLOPE, ideq, mpcmp, MSEtool, MSGARCH, MultiFit, nodeSub, oce, partialAR, partialCI, PReMiuM, RAINBOWR, RavenR, RSSL, rstpm2, sbfc, secr, survival.svb, TDA 
+
+Skipped packages:  BMTME, Crossover, DataVisualizations, dipsaus, dynamichazard, growfunctions, hBayesDM, joineRML, joinXL, KeyboardSimulator, Mega2R, mlr3proba, nlmixr, NLMR, NPMLEmix, RcppRedis, rDotNet, Rfast, sparkwarc, starvz, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+            package missingPkg badInstall error fail warn note ok hasOtherIssue
+ 1:        Bayesrel                 FALSE     0    0    0    0 13         FALSE  minor (?) numeric test error
+ 2:             bcf                  TRUE     0    0    0    0 13         FALSE  known, reported, patch or PR June 2021
+ 3:             BCT                  TRUE     0    0    0    0 13         FALSE  not us, passes with CXX_STD=CXX11  
+ 4: BigDataStatMeth                 FALSE     7    0    0    6  0          TRUE  not us, issues at CRAN
+ 5:        biglasso                  TRUE     0    0    0    1 12         FALSE  known, reported, patch or PR June 2021
+ 6:        binnednp                  TRUE     0    0    0   12  1         FALSE  known, reported, patch or PR April 2021
+ 7:  breathteststan                 FALSE     2    0    0   11  0         FALSE  minor (?) numeric test error
+ 8:          compas                  TRUE     0    0    0    4  9         FALSE  known, reported, patch or PR April 2021
+ 9:           emIRT                  TRUE     0    0    0    6  7         FALSE  known, reported, patch or PR April 2021, merged May
+10:    facilitation                  TRUE     0    0    0    6  7         FALSE  known, reported, fixed since 2018
+11:     fasteraster                  TRUE     0    0    0    0 13         FALSE  known, reported, patch or PR May 2021
+12:        fctbases                  TRUE     0    0    0    0 13         FALSE  known, reported, patch or PR Aug 2021
+13:             GAS                  TRUE     0    0    0    6  7         FALSE  known, reported, patch or PR June 2021
+14:         grattan                 FALSE     7    0    0    6  0         FALSE  not us, fails with 2022 date
+15:        grpSLOPE                 FALSE     0    0    0   11  2         FALSE  unclear, two numerical fails
+16:            ideq                  TRUE     0    0    0    4  9         FALSE  known, reported, patch or PR April 2021, merged Nov
+17:           mpcmp                 FALSE     0    0    0    0 13         FALSE  unclear, one numerical fail
+18:         MSEtool                 FALSE    10    0    0    3  0         FALSE  not us, "Error: 'fishbase' is not an exported object from 'namespace:rfishbase'"
+19:         MSGARCH                  TRUE     0    0    0    7  6         FALSE  known, reported, patch or PR April 2021, merged Aug
+20:        MultiFit                  TRUE     0    0    0    0 13         FALSE  known, reported, patch or PR June 2021
+21:         nodeSub                 FALSE    10    0    0    0  3         FALSE  unclear, one fail
+22:             oce                  TRUE     0    0    0    7  6         FALSE  known, reported, patch or PR April 2021, merged May
+23:       partialAR                  TRUE     0    0    0    0 13         FALSE  known, reported, patch or PR June 2021
+24:       partialCI                  TRUE     0    0    0    0 13         FALSE  known, reported, patch or PR May 2021
+25:         PReMiuM                  TRUE     0    0    0    4  9         FALSE  known flaky
+26:        RAINBOWR                  TRUE     2    0    0    3  8          TRUE  not us, Error: object ‘get_aes_var’ is not exported by 'namespace:rvcheck'
+27:          RavenR                 FALSE     0    0    0    2 11         FALSE  unclear error
+28:            RSSL                  TRUE     0    0    0    1 12         FALSE  not us, passes with CXX_STD=CXX11  
+29:          rstpm2                 FALSE     0    0    0    6  7         FALSE  not us, minor (?) recurring numeric test error
+30:            sbfc                  TRUE     0    0    0    1 12         FALSE  not us, passes with CXX_STD=CXX11  
+31:            secr                  TRUE     9    0    0    4  0         FALSE  known BH issues, needs one std::isnan
+32:    survival.svb                  TRUE     0    0    0    0 13         FALSE  new PI/M_PI issue, PR filed
+33:             TDA                  TRUE    10    0    0    3  0         FALSE  known BH issue, upstream contacted
+            package missingPkg badInstall error fail warn note ok hasOtherIssue
