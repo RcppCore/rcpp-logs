@@ -1,0 +1,40 @@
+Test of Rcpp 1.0.7.6.1 had 18 successes, 25 failures, and 21 skipped packages. 
+Ran from 2022-01-10 14:13:47.87 to 2022-01-10 14:34:03.14 for 20.255 mins 
+Average of 18.989 secs relative to 85.989 secs using 6 runners
+
+Failed packages:  approxOT, Bayesrel, bcf, BCT, biglasso, binnednp, breathteststan, emIRT, facilitation, fasteraster, fctbases, GAS, grpSLOPE, ideq, mpcmp, MSGARCH, MultiFit, partialAR, partialCI, PReMiuM, RavenR, RSSL, rstpm2, sbfc, survival.svb 
+
+Skipped packages:  BMTME, Crossover, DataVisualizations, dipsaus, dynamichazard, growfunctions, hBayesDM, joineRML, joinXL, KeyboardSimulator, Mega2R, mlr3proba, nlmixr, NLMR, NPMLEmix, RcppRedis, rDotNet, Rfast, sparkwarc, starvz, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+           package missingPkg badInstall error fail warn note ok hasOtherIssue
+ 1:       approxOT   RcppCGAL      FALSE     1    0    0    1  1         FALSE  passes once RcppCGAL installed
+ 2:       Bayesrel                 FALSE     0    0    0    0 13         FALSE  minor (?) numeric test error
+ 3:            bcf                  TRUE     0    0    0    0 13         FALSE  known, reported, patch or PR June 2021
+ 4:            BCT                  TRUE     0    0    0    0 13         FALSE  not us, passes with CXX_STD=CXX11
+ 5:       biglasso                  TRUE     0    0    0    1 12         FALSE  known, reported, patch or PR June 2021
+ 6:       binnednp                  TRUE     0    0    0   12  1         FALSE  known, reported, patch or PR April 2021
+ 7: breathteststan                 FALSE     0    0    0   13  0         FALSE  minor (?) numeric test error
+ 8:          emIRT                  TRUE     0    0    0    6  7         FALSE  known, reported, patch or PR April 2021, merged May 2021
+ 9:   facilitation                  TRUE     0    0    0    6  7         FALSE  known, reported, fixed since 2018
+10:    fasteraster                  TRUE     0    0    0    0 13         FALSE  known, reported, patch or PR May 2021 
+11:       fctbases                  TRUE     0    0    0    0 13         FALSE  known, reported, patch or PR Aug 2021 
+12:            GAS                  TRUE     0    0    0    6  7         FALSE  known, reported, patch or PR June 2021
+13:       grpSLOPE                 FALSE     0    0    0   11  2         FALSE  unclear, two numerical fails			   
+14:           ideq                  TRUE     0    0    0    4  9         FALSE  known, reported, patch or PR April 2021, merged Nov
+15:          mpcmp                 FALSE     0    0    0    0 13         FALSE  unclear, one numerical fail			   
+16:        MSGARCH                  TRUE     0    0    0    7  6         FALSE  known, reported, patch or PR April 2021, merged Aug
+17:       MultiFit                  TRUE     0    0    0    0 13         FALSE  known, reported, patch or PR June 2021             
+18:      partialAR                  TRUE     0    0    0    0 13         FALSE  known, reported, patch or PR June 2021
+19:      partialCI                  TRUE     0    0    0    0 13         FALSE  known, reported, patch or PR May 2021 
+20:        PReMiuM                  TRUE     0    0    0    4  9         FALSE  known flaky                           
+21:         RavenR                 FALSE     0    0    0    2 11         FALSE  unclear error					     
+22:           RSSL                  TRUE     0    0    0    1 12         FALSE  not us, passes with CXX_STD=CXX11  		     
+23:         rstpm2                 FALSE     0    0    0    6  7         FALSE  not us, minor (?) recurring numeric test error	     
+24:           sbfc                  TRUE     0    0    0    1 12         FALSE  not us, passes with CXX_STD=CXX11  		     
+25:   survival.svb                  TRUE     0    0    0    0 13         FALSE  new PI/M_PI issue, PR filed Jan 2022, merged Jan 2022
+           package missingPkg badInstall error fail warn note ok hasOtherIssue
