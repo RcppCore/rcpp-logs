@@ -1,11 +1,57 @@
-Test of Rcpp 1.0.8.0.1 had 2414 successes, 41 failures, and 22 skipped packages. 
+Test of Rcpp 1.0.8.0.1 had 2414 successes, 42 failures, and 21 skipped packages. 
 Ran from 2022-01-16 12:32:51.55 to 2022-01-17 22:55:02.49 for 1.432 days 
 Average of 49.952 secs relative to 298.232 secs using 6 runners
 
-Failed packages:  bcf, BCT, biglasso, binnednp, breathteststan, collapse, ctsem, eimpute, emIRT, facilitation, fasteraster, FastJM, fctbases, fssemR, fwildclusterboot, GAS, gRbase, groupedSurv, grpSLOPE, gwsem, hhsmm, ideq, mpcmp, MultiFit, partialAR, partialCI, polyqtlR, PReMiuM, RAINBOWR, RavenR, RMixtCompIO, RSSL, rstpm2, skpr, stan4bart, survival.svb, tidyxl, tiledb, tmvtnsim, TreeSearch, V8 
+Failed packages:  Bayesrel, bcf, BCT, biglasso, binnednp, breathteststan, collapse, ctsem, eimpute, emIRT, facilitation, fasteraster, FastJM, fctbases, fssemR, fwildclusterboot, GAS, gRbase, groupedSurv, grpSLOPE, gwsem, hhsmm, ideq, mpcmp, MultiFit, partialAR, partialCI, polyqtlR, PReMiuM, RAINBOWR, RavenR, RMixtCompIO, RSSL, rstpm2, skpr, stan4bart, survival.svb, tidyxl, tiledb, tmvtnsim, TreeSearch, V8 
 
-Skipped packages:  Bayesrel, BMTME, Crossover, DataVisualizations, dipsaus, dynamichazard, growfunctions, hBayesDM, joineRML, joinXL, KeyboardSimulator, Mega2R, mlr3proba, nlmixr, NLMR, NPMLEmix, RcppRedis, rDotNet, Rfast, sparkwarc, starvz, warbleR 
+Skipped packages:  BMTME, Crossover, DataVisualizations, dipsaus, dynamichazard, growfunctions, hBayesDM, joineRML, joinXL, KeyboardSimulator, Mega2R, mlr3proba, nlmixr, NLMR, NPMLEmix, RcppRedis, rDotNet, Rfast, sparkwarc, starvz, warbleR 
 
 None still working
 
 None still scheduled
+
+Error summary:
+             package   missingPkg badInstall error fail warn note ok hasOtherIssue
+ 1:         Bayesrel                   FALSE     0    0    0    0 13         FALSE  minor (?) numeric test error
+ 2:              bcf                    TRUE     9    0    0    0  4         FALSE  known, new version on CRAN
+ 3:              BCT                    TRUE     0    0    0    0 13         FALSE  not us, passes with CXX_STD=CXX11
+ 4:         biglasso                    TRUE     9    0    0    1  3         FALSE  known, reported, patch or PR June 2021
+ 5:         binnednp                    TRUE     9    0    0    4  0         FALSE  known, reported, patch or PR April 2021
+ 6:   breathteststan                   FALSE     0    0    0   13  0         FALSE  minor (?) numeric test error
+ 7:         collapse        'kit'         NA     1    0    2    4  6          TRUE  passes once installed
+ 8:            ctsem                    TRUE     2    0    0   11  0         FALSE  likely RcppEigen
+ 9:          eimpute                    TRUE     0    0    0   12  1         FALSE  likely RcppEigen
+10:            emIRT                    TRUE     9    0    0    3  1         FALSE  known, reported, patch or PR April 2021, merged May 2021
+11:     facilitation                    TRUE     9    0    0    0  4         FALSE  known, reported, fixed since 2018
+12:      fasteraster                    TRUE     9    0    0    0  4         FALSE  known, reported, patch or PR May 2021 
+13:           FastJM                    TRUE     0    0    0    3  9         FALSE  possibly RcppEigen
+14:         fctbases                    TRUE     9    0    0    0  4         FALSE  known, reported, patch or PR Aug 2021 
+15:           fssemR                    TRUE     0    0    0   12  1         FALSE  likely RcppEigen
+16: fwildclusterboot                   FALSE     0    0    0    0 13         FALSE  likely RcppEigen
+17:              GAS                    TRUE     9    0    0    3  1         FALSE  known, reported, patch or PR June 2021
+18:           gRbase                    TRUE     0    0    0    6  7         FALSE  likely RcppEigen
+19:      groupedSurv                    TRUE     0    0    0    4  9         FALSE  likely RcppEigen
+20:         grpSLOPE                   FALSE     0    0    0   11  2         FALSE  unclear, two numerical fails	
+21:            gwsem                   FALSE     2    0    0    6  5         FALSE  unclear, two numerical issues
+22:            hhsmm        ‘cpr’         NA     1    0    0    2 10         FALSE  passes once installed
+23:             ideq                    TRUE     9    0    0    3  1         FALSE  known, reported, patch or PR April 2021, merged Nov
+24:            mpcmp                   FALSE     1    0    0    0 12         FALSE  unclear, one numerical fail	
+25:         MultiFit                    TRUE     6    0    0    0  7         FALSE  known, reported, patch or PR June 2021
+26:        partialAR                    TRUE     9    0    0    0  4         FALSE  known, reported, patch or PR June 2021
+27:        partialCI                    TRUE     9    0    0    0  4         FALSE  known, reported, patch or PR May 2021 
+28:         polyqtlR                   FALSE    10    0    0    3  0         FALSE  not us: data set ‘maps.hexafake’ not found 
+29:          PReMiuM                    TRUE     0    0    0    4  9         FALSE  known flaky                
+30:         RAINBOWR                    TRUE     1    0    0    3  9         FALSE  unrelated: "Error: object ‘get_aes_var’ is not exported by 'namespace:rvcheck'"
+31:           RavenR                   FALSE     0    0    0    2 11         FALSE  unclear error		
+32:      RMixtCompIO                    TRUE     0    0    0    4  9         FALSE  known, new version at CRAN
+33:             RSSL                    TRUE     0    0    0    1 12         FALSE  not us, passes with CXX_STD=CXX11
+34:           rstpm2                   FALSE     0    0    0    6  7         FALSE  not us, minor (?) recurring numeric test error
+35:             skpr                    TRUE     1    0    0    4  8         FALSE  likely RcppEigen
+36:        stan4bart                    TRUE     1    0    0    4  8         FALSE  likely RcppEigen  
+37:     survival.svb                    TRUE     5    0    0    0  8         FALSE  new PI/M_PI issue, PR filed Jan 2022, merged Jan 2022
+38:           tidyxl                   FALSE     0    0    0    4  9         FALSE  not us
+39:           tiledb                   FALSE     0    0    1    6  6         FALSE  unclear
+40:         tmvtnsim 'tmvmixnorm'         NA     0    0    0    0 12         FALSE  passes once installed
+41:       TreeSearch                   FALSE     7    0    0    3  3         FALSE  unclear test result
+42:               V8                   FALSE     0    0    0    6  6         FALSE  terminate called after throwing an instance of 'Rcpp::LongjumpException'
+             package   missingPkg badInstall error fail warn note ok hasOtherIssue
