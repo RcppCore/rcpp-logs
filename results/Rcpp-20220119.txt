@@ -1,0 +1,37 @@
+Test of Rcpp 1.0.8.0.1 had 24 successes, 22 failures, and 21 skipped packages. 
+Ran from 2022-01-19 17:04:57.24 to 2022-01-19 17:40:55.91 for 35.978 mins 
+Average of 32.219 secs relative to 183.072 secs using 6 runners
+
+Failed packages:  Bayesrel, BCT, biglasso, binnednp, breathteststan, emIRT, facilitation, fasteraster, fctbases, GAS, grpSLOPE, ideq, mpcmp, partialAR, partialCI, polyqtlR, PReMiuM, RavenR, rstpm2, tidyxl, tiledb, V8 
+
+Skipped packages:  BMTME, Crossover, DataVisualizations, dipsaus, dynamichazard, growfunctions, hBayesDM, joineRML, joinXL, KeyboardSimulator, Mega2R, mlr3proba, nlmixr, NLMR, NPMLEmix, RcppRedis, rDotNet, Rfast, sparkwarc, starvz, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+           package missingPkg badInstall error fail warn note ok hasOtherIssue
+ 1:       Bayesrel                 FALSE     0    0    0    0 13         FALSE  minor (?) numeric test error
+ 2:            BCT                  TRUE     0    0    0    0 13         FALSE  not us, passes with CXX_STD=CXX11
+ 3:       biglasso                  TRUE    10    0    0    1  2         FALSE  known, reported, patch or PR June 2021
+ 4:       binnednp                  TRUE    10    0    0    3  0         FALSE  known, reported, patch or PR April 2021
+ 5: breathteststan                 FALSE     0    0    0   13  0         FALSE  minor (?) numeric test error
+ 6:          emIRT                  TRUE    10    0    0    3  0         FALSE  known, reported, patch or PR April 2021, merged May 2021
+ 7:   facilitation                  TRUE    10    0    0    0  3         FALSE  known, reported, fixed since 2018
+ 8:    fasteraster                  TRUE    10    0    0    0  3         FALSE  known, reported, patch or PR May 2021 
+ 9:       fctbases                  TRUE    10    0    0    0  3         FALSE  known, reported, patch or PR Aug 2021 
+10:            GAS                  TRUE    10    0    0    3  0         FALSE  known, reported, patch or PR June 2021
+11:       grpSLOPE                 FALSE     0    0    0   11  2         FALSE  unclear, two numerical fails	
+12:           ideq                  TRUE    10    0    0    3  0         FALSE  known, reported, patch or PR April 2021, merged Nov 2021
+13:          mpcmp                 FALSE     0    0    0    0 13         FALSE  unclear, one numerical fail	
+14:      partialAR                  TRUE    10    0    0    0  3         FALSE  known, reported, patch or PR June 2021					   
+15:      partialCI                  TRUE    10    0    0    0  3         FALSE  known, reported, patch or PR May 2021 					   
+16:       polyqtlR                 FALSE    10    0    0    3  0         FALSE  not us: data set ‘maps.hexafake’ not found 					   
+17:        PReMiuM                  TRUE     0    0    0    4  9         FALSE  known flaky                							   
+18:         RavenR                 FALSE     0    0    0    2 11         FALSE  unrelated: "Error: object ‘get_aes_var’ is not exported by 'namespace:rvcheck'"
+19:         rstpm2                 FALSE     0    0    0    6  7         FALSE  not us, minor (?) recurring numeric test error
+20:         tidyxl                 FALSE     0    0    0    4  9         FALSE  not us
+21:         tiledb                 FALSE     1    0    1    5  6         FALSE  unclear flakyness
+22:             V8                 FALSE     0    0    0    6  6         FALSE  terminate called after throwing an instance of 'Rcpp::LongjumpException'
+           package missingPkg badInstall error fail warn note ok hasOtherIssue
