@@ -1,0 +1,23 @@
+Test of RcppArmadillo 0.10.8.2.0.1 had 936 successes, 8 failures, and 8 skipped packages. 
+Ran from 2022-02-22 17:36:52.42 to 2022-02-23 08:08:59.96 for 14.535 hours 
+Average of 54.966 secs relative to 275.977 secs using 6 runners
+
+Failed packages:  Bayesrel, carat, fastadi, lidR, nbfar, odpc, perccal, rstpm2 
+
+Skipped packages:  BMTME, Crossover, DataVisualizations, dynamichazard, growfunctions, joineRML, nlmixr, Rfast 
+
+    id  title      message  status requeued
+1: 684 redist redist_3.1.5 WORKING        0                                     passes on re-run
+
+None still scheduled
+
+Error summary:
+    package        missingPkg badInstall error fail warn note ok hasOtherIssue
+1: Bayesrel                        FALSE     0    0    0    0 13         FALSE  not us, minor (?) numeric test error
+2:    carat                        FALSE     0    0    0    4  9         FALSE  known issue, happened previously
+3:  fastadi           ‘LRMF3’         NA     0    0    0    0 13         FALSE  passes once installed
+4:     lidR                        FALSE     1    0    0    7  5         FALSE  Error: Package 'RMCC' needed for this function to work. Please install it. -- passes once installed
+5:    nbfar 'rrpack', 'mpath'         NA     0    0    0    3  1         FALSE  passes once installed
+6:     odpc                        FALSE     0    0    0    0 13         FALSE  known issue, happened previously
+7:  perccal                        FALSE     0    0    0    2 11         FALSE  known issue, happened previously
+8:   rstpm2                        FALSE     0    0    0    6  7         FALSE  not us, minor (?) recurring numeric test error
