@@ -1,0 +1,25 @@
+Test of Rcpp 1.0.8.2 had 16 successes, 11 failures, and 20 skipped packages. 
+Ran from 2022-03-11 07:29:49.29 to 2022-03-11 07:47:55.97 for 18.111 mins 
+Average of 23.121 secs relative to 107.063 secs using 6 runners
+
+Failed packages:  basedosdados, Bayesrel, breathteststan, grpSLOPE, mpcmp, PReMiuM, RavenR, rbmi, RSQLite, rstpm2, vinereg 
+
+Skipped packages:  BMTME, Crossover, DataVisualizations, dipsaus, disk.frame, dynamichazard, growfunctions, hBayesDM, joineRML, joinXL, KeyboardSimulator, Mega2R, mlr3proba, nlmixr, NPMLEmix, RcppRedis, Rfast, sparkwarc, starvz, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+           package missingPkg badInstall error fail warn note ok hasOtherIssue
+ 1:   basedosdados                 FALSE     7    0    0    5  1          TRUE  likely internal tibble error, fails at CRAN too
+ 2:       Bayesrel                 FALSE     0    0    1    0 12         FALSE  recurrent '[ FAIL 1 | WARN 0 | SKIP 0 | PASS 42 ]'
+ 3: breathteststan                 FALSE     0    0    1   12  0         FALSE  recurrent '[ FAIL 3 | WARN 0 | SKIP 3 | PASS 24 ]'
+ 4:       grpSLOPE                 FALSE     0    0    1   10  2         FALSE  recurrent '[ FAIL 2 | WARN 0 | SKIP 0 | PASS 321 ]'
+ 5:          mpcmp                 FALSE     0    0    1    0 12         FALSE  recurrent '[ FAIL 1 | WARN 0 | SKIP 0 | PASS 102 ]'
+ 6:        PReMiuM                  TRUE     0    0    1    4  8         FALSE  ./include/PReMiuMProposals.h:1279:6: internal compiler error: in vectorizable_live_operation, at tree-vect-loop.c:8861
+ 7:         RavenR                 FALSE     0    0    1    2 10         FALSE  likely internal test error
+ 8:           rbmi                 FALSE     5    0    1    7  0          TRUE  unsure '[ FAIL 34 | WARN 0 | SKIP 11 | PASS 781 ] '
+ 9:        RSQLite                 FALSE     1    0    1    6  5          TRUE  unclear '[ FAIL 1 | WARN 3 | SKIP 6 | PASS 595 ]'
+10:         rstpm2                 FALSE     0    0    1    6  6         FALSE  recurrent '[ FAIL 3 | WARN 0 | SKIP 0 | PASS 91 ]'
+11:        vinereg                 FALSE     1    0    0    7  5         FALSE  recurrent '[ FAIL 1 | WARN 0 | SKIP 0 | PASS 47 ]'
