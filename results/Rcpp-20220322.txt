@@ -1,0 +1,30 @@
+Test of Rcpp 1.0.8.4.1 had 2485 successes, 16 failures, and 20 skipped packages. 
+Ran from 2022-03-22 15:27:37.19 to 2022-03-24 02:13:11.78 for 1.448 days 
+Average of 49.637 secs relative to 296.293 secs using 6 runners
+
+Failed packages:  Bayesrel, BayesRGMM, bootCT, breathteststan, grpSLOPE, image.textlinedetector, mpcmp, PPSFS, PReMiuM, RavenR, RSQLite, rstpm2, survivalmodels, textrecipes, tidyxl, TreeDist 
+
+Skipped packages:  BMTME, Crossover, DataVisualizations, dipsaus, disk.frame, dynamichazard, growfunctions, hBayesDM, joineRML, joinXL, KeyboardSimulator, Mega2R, mlr3proba, nlmixr, NPMLEmix, RcppRedis, Rfast, sparkwarc, starvz, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+                   package        missingPkg badInstall error fail warn note ok hasOtherIssue
+ 1:               Bayesrel                        FALSE     0    0    0    0 13         FALSE  recurrent: [ FAIL 1 | WARN 0 | SKIP 0 | PASS 42 ]
+ 2:              BayesRGMM                        FALSE     0    0    2    3  8         FALSE  RcppArmadillo issue: [ FAIL 1 | WARN 0 | SKIP 2 | PASS 0 ]
+ 3:                 bootCT 'ARDL', 'dynamac'         NA     1    0    0    5  6         FALSE  passes once installed
+ 4:         breathteststan                        FALSE     0    0    0   13  0         FALSE  recurrent: [ FAIL 3 | WARN 0 | SKIP 3 | PASS 24 ]
+ 5:               grpSLOPE                        FALSE     0    0    0   11  2         FALSE  recurrent: [ FAIL 2 | WARN 0 | SKIP 0 | PASS 321 ]
+ 6: image.textlinedetector                        FALSE     1    0    0    6  5         FALSE  recurrent 'cannot load libopencv_highgui'
+ 7:                  mpcmp                        FALSE     0    0    0    0 13         FALSE  recurrent: [ FAIL 1 | WARN 0 | SKIP 0 | PASS 102 ]
+ 8:                  PPSFS          ‘brglm2’         NA     1    0    0    0 10         FALSE  passes once installed
+ 9:                PReMiuM                         TRUE     1    0    0    4  8         FALSE  recurrent RcppEigen issue
+10:                 RavenR                        FALSE     0    0    0    2 11         FALSE  recurrent 'replacement has length zero'
+11:                RSQLite                        FALSE     1    0    2    5  5         FALSE  recurrent: [ FAIL 1 | WARN 3 | SKIP 6 | PASS 595 ]
+12:                 rstpm2                        FALSE     0    0    0    6  7         FALSE  recurrent: [ FAIL 3 | WARN 0 | SKIP 0 | PASS 91 ]
+13:         survivalmodels                        FALSE     4    0    0    0  9         FALSE  not us, internal
+14:            textrecipes   'sentencepiece'         NA     0    0    0    6  7         FALSE  unclear
+15:                 tidyxl                        FALSE     0    0    0    4  9         FALSE  not us, internal
+16:               TreeDist                        FALSE     3    0    0   10  0         FALSE  unclear: segfault
