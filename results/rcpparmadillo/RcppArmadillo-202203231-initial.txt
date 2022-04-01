@@ -1,0 +1,28 @@
+Test of RcppArmadillo 0.10.99.3.0 had 948 successes, 14 failures, and 8 skipped packages. 
+Ran from 2022-03-31 05:30:23.04 to 2022-03-31 20:09:13.51 for 14.647 hours 
+Average of 54.361 secs relative to 324.434 secs using 6 runners
+
+Failed packages:  adjclust, Bayesrel, BayesRGMM, briskaR, EMbC, FLightR, geogrid, HDSpatialScan, JFM, psgp, rstpm2, rTLS, saeMSPE, telemac 
+
+Skipped packages:  BMTME, Crossover, DataVisualizations, dynamichazard, growfunctions, joineRML, nlmixr, Rfast 
+
+None still working
+
+None still scheduled
+
+Error summary:
+          package  missingPkg badInstall error fail warn note ok hasOtherIssue
+ 1:      adjclust                  FALSE     7    0    0    3  2         FALSE  new: recurrent [ FAIL 3 | WARN 0 | SKIP 0 | PASS 91 ]
+ 2:      Bayesrel                  FALSE     0    0    0    0 12         FALSE  recurrent [ FAIL 1 | WARN 0 | SKIP 0 | PASS 42 ]
+ 3:     BayesRGMM                  FALSE     0    0    2    3  7          TRUE  known: 'inv(): matrix is singular'
+ 4:       briskaR                   TRUE     0    0    0    4  8         FALSE  likely spatial stack, segfault at init
+ 5:          EMbC                  FALSE     0    0    0    0 12         FALSE  unclear, 'free(): invalid pointer' at end
+ 6:       FLightR                  FALSE     0    0    0    5  7         FALSE  unclear, 'free(): invalid pointer' at end
+ 7:       geogrid                  FALSE     0    0    0   11  1         FALSE  likely spatial stack: Loading this package had a fatal error status code 13
+ 8: HDSpatialScan                   TRUE     0    0    0    0 12         FALSE  likely spatial stack, segfault at init
+ 9:           JFM   ‘RockFab’         NA     1    0    0    6  5         FALSE  passes once installed
+10:          psgp                   TRUE     0    0    0    4  8         FALSE  likely spatial stack, segfault at init
+11:        rstpm2                  FALSE     0    0    0    6  6         FALSE  recurrent [ FAIL 3 | WARN 0 | SKIP 0 | PASS 91 ]
+12:          rTLS                  FALSE     0    0    2    7  3          TRUE  likely spatial stack, segfault
+13:       saeMSPE ‘smallarea’         NA     1    0    0    3  7         FALSE  passes once installed
+14:       telemac                  FALSE     0    0    0    7  5          TRUE  unclear, 'free(): invalid pointer' at end
