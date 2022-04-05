@@ -1,0 +1,20 @@
+Test of RcppEigen 0.3.3.9.2 had 347 successes, 6 failures, and 2 skipped packages. 
+Ran from 2022-04-04 09:03:50.27 to 2022-04-04 18:09:50.04 for 9.1 hours 
+Average of 92.281 secs relative to 550.355 secs using 6 runners
+
+Failed packages:  breathteststan, conos, foieGras, leidenAlg, PReMiuM, svines 
+
+Skipped packages:  hBayesDM, nlmixr 
+
+None still working
+
+None still scheduled
+
+Error summary:
+          package     missingPkg badInstall error fail warn note ok hasOtherIssue
+1: breathteststan                     FALSE     2    0    0   10  0         FALSE  not us, minor (?) recurring numeric test error
+2:          conos                      TRUE     4    0    0    6  0         FALSE  build failed due to leidenAlg  
+3:       foieGras                      TRUE     0    0    0    7  5         FALSE  build failed over libproj.so.22 -> proj4 reinstall --> passes
+4:      leidenAlg                      TRUE     4    0    0    6  0         FALSE  build fails over igraph rng -> upstream issue
+5:        PReMiuM                      TRUE     1    0    0    4  7         FALSE  known flaky
+6:         svines ‘univariateML’         NA     0    0    0    7  5          TRUE  passes once installed
