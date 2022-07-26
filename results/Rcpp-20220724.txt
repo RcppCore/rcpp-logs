@@ -1,0 +1,24 @@
+Test of Rcpp 1.0.9.1 had 2534 successes, 10 failures, and 18 skipped packages. 
+Ran from 2022-07-24 07:39:01.02 to 2022-07-25 20:57:39.92 for 1.555 days 
+Average of 52.427 secs relative to 312.9 secs using 6 runners
+
+Failed packages:  bartcs, CausalQueries, forecast, gyro, outerbase, PReMiuM, RavenR, stepR, TestDesign, tidyxl 
+
+Skipped packages:  BMTME, Crossover, DataVisualizations, dipsaus, disk.frame, dynamichazard, growfunctions, hBayesDM, joineRML, joinXL, KeyboardSimulator, Mega2R, nlmixr, RcppRedis, Rfast, sparkwarc, starvz, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+          package missingPkg badInstall error fail warn note ok hasOtherIssue
+ 1:        bartcs ‘ggcharts’         NA     4    0    0    0  9          TRUE
+ 2: CausalQueries    ‘ggdag’         NA     0    0    0   13  0         FALSE
+ 3:      forecast                 FALSE     5    0    3    0  5         FALSE  (newer version on CRAN), [ FAIL 1 | WARN 0 | SKIP 1 | PASS 780 ]
+ 4:          gyro     ‘RCDT’         NA     0    0    0    0 13         FALSE
+ 5:     outerbase                 FALSE     1    0    0   12  0         FALSE  base mat agreement (`actual`) not equal to 0 (`expected`). [ FAIL 1 | WARN 8 | SKIP 0 | PASS 56 ]
+ 6:       PReMiuM                  TRUE     1    0    0    8  4         FALSE  recurrent internal compiler error
+ 7:        RavenR                 FALSE     0    0    0    1 12         FALSE  replacement has length zero
+ 8:         stepR                 FALSE     0    0    0    5  8         FALSE  Error: is.null(warnings()) is not TRUE
+ 9:    TestDesign                 FALSE     0    0    0   13  0         FALSE  missing Suggests? [ FAIL 6 | WARN 1 | SKIP 5 | PASS 165 ]
+10:        tidyxl                 FALSE     0    0    0    5  8         FALSE  Actual message: "Couldn't find 'xl/_rels/workbook.xml.rels' [ FAIL 1 | WARN 0 | SKIP 0 | PASS 349 ]
