@@ -1,0 +1,20 @@
+Test of BH 1.81.0.0 had 6 successes, 6 failures, and 2 skipped packages. 
+Ran from 2022-12-16 06:22:38.70 to 2022-12-16 06:32:02.36 for 9.394 mins 
+Average of 40.261 secs relative to 95.149 secs using 4 runners
+
+Failed packages:  colourvalues, httpgd, reservr, rgeoda, rlas, rstan, TDA 
+
+Skipped packages:  hBayesDM, starvz 
+
+None still working
+
+None still scheduled
+
+Error summary:
+        package missingPkg badInstall error fail warn note ok hasOtherIssue
+1: colourvalues                 FALSE     0    0    0   13  0         FALSE  2 out of 523 tests fail
+2:       httpgd                  TRUE     0    0    4    7  2         FALSE  compilation: string_view has no to_string()
+3:       rgeoda                  TRUE     0    0    1    5  7          TRUE  fixable? 'list' not a member of 'std'
+4:         rlas                  TRUE     1    0    4    4  4         FALSE  fixable g++-12 error ?
+5:        rstan                  TRUE     0    0    0   13  0         FALSE  Boost Phoenix issue
+6:          TDA                  TRUE     0    0    0   13  0         FALSE  boost/container/vector issue
