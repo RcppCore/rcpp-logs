@@ -1,0 +1,34 @@
+Test of Rcpp 1.0.9.5 had 2571 successes, 20 failures, and 17 skipped packages. 
+Ran from 2022-12-22 19:08:03.34 to 2022-12-24 16:26:23.41 for 1.888 days 
+Average of 62.538 secs relative to 362.885 secs using 7 runners
+
+Failed packages:  ast2ast, CausalGPS, colourvalues, fable, finalsize, GauPro, mapfit, mappoly, move, mvMAPIT, numbat, RavenR, rgeoda, rlas, rolog, rstan, RStoolbox, s2, sbm, TDA 
+
+Skipped packages:  BMTME, Crossover, DataVisualizations, dipsaus, disk.frame, dynamichazard, growfunctions, hBayesDM, joineRML, joinXL, KeyboardSimulator, Mega2R, RcppRedis, Rfast, sparkwarc, starvz, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+         package      missingPkg badInstall error fail warn note ok hasOtherIssue
+ 1:      ast2ast                      FALSE     1    0    0    0 12         FALSE  one test segfault?
+ 2:    CausalGPS         ‘Ecume’         NA     3    0    0    0 10         FALSE
+ 3: colourvalues                      FALSE     0    0    0   13  0         FALSE  new BH, known
+ 4:        fable                      FALSE     1    0    0    1 11         FALSE  tsibble internal?
+ 5:    finalsize    'socialmixr'         NA     0    0    0    4  9         FALSE
+ 6:       GauPro        'mixopt'         NA     2    0    0    4  7         FALSE
+ 7:       mapfit     ‘deformula’         NA     0    0    0    4  9         FALSE
+ 8:      mappoly                      FALSE     9    0    0    4  0         FALSE  one test 'file not found'
+ 9:         move                      FALSE     0    0    0    3 10         FALSE  one test fail
+10:      mvMAPIT ‘harmonicmeanp’         NA     1    0    0    4  8          TRUE
+11:       numbat     ‘scistreer’         NA     1    0    0   12  0         FALSE
+12:       RavenR                      FALSE     1    0    0    0 12         FALSE  unclear
+13:       rgeoda                       TRUE     0    0    1    5  7          TRUE  new BH, known
+14:         rlas                       TRUE     1    0    4    4  4          TRUE  g++-12 issue, known
+15:        rolog                       TRUE     0    0    0   10  0         FALSE  missing rswipl
+16:        rstan                       TRUE     0    0    0   13  0         FALSE  new BH, known
+17:    RStoolbox                      FALSE     9    0    0    4  0         FALSE  9 fail at CRAN
+18:           s2                      FALSE     9    0    0    4  0         FALSE  9 fail at CRAN
+19:          sbm                      FALSE     6    0    0    0  7         FALSE  6 fail at CRAN
+20:          TDA                       TRUE     0    0    0   13  0         FALSE  new BH, known
