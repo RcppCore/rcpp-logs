@@ -1,0 +1,67 @@
+Test of RcppArmadillo 0.12.6.4.0.1 had 2 successes, 52 failures, and 10 skipped packages. 
+Ran from 2023-09-17 09:16:04.49 to 2023-09-17 09:54:08.54 for 38.067 mins 
+Average of 35.688 secs relative to 195.011 secs using 6 runners
+
+Failed packages:  bayesm, BVSNLP, CausalQueries, cccp, densEstBayes, diagis, ergmito, finity, GenomeAdmixR, glmmPen, GPvecchia, gRbase, greed, gren, grove, HACSim, handwriter, HARModel, hesim, jmotif, meshed, MESS, microsimulation, minimaxdesign, missSBM, mixedClust, mixsqp, mrgsolve, MRS, ordinalClust, outerbase, pense, PLNmodels, psd, qgg, quadrupen, r2sundials, ramcmc, rENA, reReg, Rphylopars, rsparse, Rvcg, SFS, smog, SparseFactorAnalysis, specs, stm, synlik, ubms, VIC5, walker 
+
+Skipped packages:  abn, Crossover, DataVisualizations, growfunctions, joineRML, ProFAST, regmed, Rfast, rlibkriging, stpm 
+
+None still working
+
+None still scheduled
+
+Error summary:
+                 package missingPkg badInstall error fail warn note ok hasOtherIssue
+ 1:               bayesm                  TRUE     0    0    2    8  3          TRUE  arma operator << deprecated use braced initialiser list
+ 2:               BVSNLP                  TRUE     0    0    0   13  0         FALSE  [ not us ] Eigen deprecated
+ 3:        CausalQueries                  TRUE     0    0    0   13  0         FALSE  [ not us ] Eigen maybe uninitialized, also 'boost.*iterator.*deprecated-declarations'
+ 4:                 cccp                  TRUE     0    0    0    4  9         FALSE  arma operator << deprecated use braced initialiser list
+ 5:         densEstBayes                  TRUE     0    0    0   13  0         FALSE  [ not us ] Eigen maybe uninitialized, also 'boost.*iterator.*deprecated-declarations'
+ 6:               diagis                 FALSE     0    0    0    0 13         FALSE  [ not us ] spurious test error
+ 7:              ergmito                 FALSE     0    0    0    4  9         FALSE  [ not us ] spurious test error
+ 8:               finity                  TRUE     0    0    0    0 13         FALSE  arma operator << deprecated use braced initialiser list
+ 9:         GenomeAdmixR                  TRUE     0    0    0   12  1         FALSE  [ not us ] 'forming offset 8 is out of the bounds [0, 8] [-Werror=array-bounds=]'
+10:              glmmPen                  TRUE     0    0    0   13  0         FALSE  [ not us ] 'boost.*iterator.*deprecated-declarations'
+11:            GPvecchia                  TRUE     0    0    0   12  1         FALSE  [ now now ] '#pragma message: INFO: support for ARMA_DONT_PRINT_ERRORS option has been removed', 'error: "/*" within comment [-Werror=comment]'
+12:               gRbase                  TRUE     0    0    0    4  9         FALSE  [ not us ] 'error: multi-line comment [-Werror=comment]'
+13:                greed                 FALSE     0    0    0   12  1         FALSE  [ not us ] possibly spurious error in check
+14:                 gren                  TRUE     0    0    0   10  3         FALSE  [ now now ] error: ‘void arma::Col<eT>::insert_rows .. is deprecated'
+15:                grove                  TRUE     0    0    0    0 13         FALSE  arma operator << deprecated use braced initialiser list
+16:               HACSim                  TRUE     0    0    0   13  0         FALSE  [ now now ] error: "ARMA_DONT_PRINT_OPENMP_WARNING" redefined
+17:           handwriter                  TRUE     0    0    0   10  3         FALSE  arma operator << deprecated use braced initialiser list
+18:             HARModel                  TRUE     0    0    0   10  3         FALSE  arma operator << deprecated use braced initialiser list
+19:                hesim                  TRUE     0    0    0   13  0         FALSE  [ not us ] error:.*is used uninitialized [-Werror=uninitialized]
+20:               jmotif                 FALSE     0    0    0   12  1         FALSE  [ not us ] possibly spurious error in check  
+21:               meshed                  TRUE     0    0    0   12  1         FALSE  [ not us ] 'error: "/*" within comment [-Werror=comment]'
+22:                 MESS                  TRUE     0    0    0    4  9         FALSE  [ not us ] 'error: "/*" within comment [-Werror=comment]'
+23:      microsimulation                  TRUE     0    0    0    8  5         FALSE  [ not us ] 'error: moving a temporary object prevents copy elision [-Werror=pessimizing-move]'
+24:        minimaxdesign                  TRUE     0    0    0   12  1         FALSE  arma operator << deprecated use braced initialiser list
+25:              missSBM                  TRUE     0    0    0   12  1         FALSE  [ not us ] 'error: ‘void free(void*)’ called on pointer returned from a mismatched allocation function [-Werror=mismatched-new-delete]'
+26:           mixedClust                  TRUE     0    0    2   10  1         FALSE  arma operator << deprecated use braced initialiser list
+27:               mixsqp                  TRUE     0    0    0   10  3         FALSE  [ now now ] '#pragma message: INFO: support for ARMA_DONT_PRINT_ERRORS option has been removed'
+28:             mrgsolve                 FALSE     0    0    0    4  9         FALSE  [ not us ] possibly spurious check error
+29:                  MRS                  TRUE     0    0    0    0 13         FALSE  arma operator << deprecated use braced initialiser list
+30:         ordinalClust                  TRUE     0    0    2   10  1         FALSE  arma operator << deprecated use braced initialiser list
+31:            outerbase                 FALSE     0    0    0   13  0         FALSE  [ not us ] possibly spurious check error
+32:                pense                  TRUE     0    0    0    5  8         FALSE  [ not us ] error: inline function ... used but never defined [-Werror]
+33:            PLNmodels                  TRUE     0    0    0    4  9         FALSE  [ not us ] 'error: ‘void free(void*)’ called on pointer returned from a mismatched allocation function [-Werror=mismatched-new-delete]'
+34:                  psd                 FALSE     0    0    0    4  9         FALSE  [ not us ] possibly spurious check error
+35:                  qgg                  TRUE     0    0    0    4  9         FALSE  [ not us ] 'error: pointer ‘file_stream’ may be used after ‘int fclose(FILE*)’ [-Werror=use-after-free]'
+36:            quadrupen                  TRUE     0    0    0    4  9         FALSE  [ not now ] 'error: ‘std::ostream& arma::arma_cerr_stream(std::ostream*) [with T = char; std::ostream = std::basic_ostream<char>]’ is deprecated: this function does nothing; instead use ARMA_CERR_STREAM or ARMA_WARN_LEVEL; see documentation [-Werror=deprecated-declarations]'
+37:           r2sundials                  TRUE     0    0    0    4  9         FALSE  [ now now ] error: ‘void arma::Col<eT>::insert_rows .. is deprecated'
+38:               ramcmc                 FALSE     0    0    0    0 13         FALSE  [ not us ] possibly spurious check error
+39:                 rENA                  TRUE     0    0    0   10  3         FALSE  [ not us ] error: "RCPP_DEMANGLER_ENABLED" redefined [-Werror]
+40:                reReg                 FALSE     9    0    0    2  2         FALSE  [ not us ] possibly spurious check error
+41:           Rphylopars                  TRUE     0    0    0    9  4         FALSE  [ not now ] 'error: ‘std::ostream& arma::arma_cerr_stream(std::ostream*) [with T = char; std::ostream = std::basic_ostream<char>]’ is deprecated: this function does nothing; instead use ARMA_CERR_STREAM or ARMA_WARN_LEVEL; see documentation [-Werror=deprecated-declarations]'
+42:              rsparse                  TRUE     0    0    0   12  1         FALSE  [ not us ] 'error: multi-line comment [-Werror=comment]'
+43:                 Rvcg                  TRUE     0    0    0   12  1         FALSE  [ not us ] 'error: "RcppExport" redefined [-Werror]'
+44:                  SFS                  TRUE     0    0    0   10  3         FALSE  [ not us ] 'error: "assert" redefined [-Werror]'
+45:                 smog                  TRUE     0    0    0   13  0         FALSE  arma operator << deprecated use braced initialiser list
+46: SparseFactorAnalysis                  TRUE     0    0    0    2 11         FALSE  arma operator << deprecated use braced initialiser list
+47:                specs                  TRUE     0    0    0   10  3         FALSE  arma operator << deprecated use braced initialiser list
+48:                  stm                  TRUE     0    0    0    4  9         FALSE  [ not now ] 'error: ‘std::ostream& arma::arma_cerr_stream(std::ostream*) [with T = char; std::ostream = std::basic_ostream<char>]’ is deprecated: this function does nothing; instead use ARMA_CERR_STREAM or ARMA_WARN_LEVEL; see documentation [-Werror=deprecated-declarations]'
+49:               synlik                  TRUE     0    0    0    0 13         FALSE  [ not us ] 'error: "FCONE" redefined [-Werror]'
+50:                 ubms                  TRUE     0    0    0   13  0         FALSE  [ not us ] 'boost.*iterator.*deprecated-declarations'
+51:                 VIC5                  TRUE     0    0    0    0 13         FALSE  [ not us ] 'error: multi-line comment [-Werror=comment]'
+52:               walker                  TRUE     0    0    0    9  4         FALSE  [ not us ] 'boost.*iterator.*deprecated-declarations'
+                 package missingPkg badInstall error fail warn note ok hasOtherIssue
