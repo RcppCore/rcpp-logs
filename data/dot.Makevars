@@ -9,9 +9,10 @@ CXX11=			$(CCACHE) g++$(VER) -std=c++11
 CXX14=			$(CCACHE) g++$(VER) -std=c++14
 CXX17=			$(CCACHE) g++$(VER) -std=c++17
 
-EXTRAFLAGS=             -DBOOST_PHOENIX_NO_VARIADIC_EXPRESSION
+#EXTRAFLAGS=             -DBOOST_PHOENIX_NO_VARIADIC_EXPRESSION
 EXTRAFLAGS=             -fext-numeric-literals -DBOOST_NO_AUTO_PTR
-PEDANTIC=
+#PEDANTIC=		-DRCPPARMADILLO_FORCE_DEPRECATE=1 -Werror
+#PEDANTIC=		-UNDEBUG -DRCPPARMADILLO_FORCE_DEPRECATE=1 -Werror -Wno-error=sign-compare -Wno-error=misleading-indentation -Wno-error=maybe-uninitialized -Wno-error=ignored-attributes -Wno-error=unused-variable -Wno-error=parentheses -Wno-error=nonnull -Wno-error=unknown-pragmas -Wno-error=overloaded-virtual= -Wno-error=delete-non-virtual-dtor -Wno-error=free-nonheap-object -Wno-ignored-attributes -Wno-maybe-uninitialized
 #MARCH=			-march=native
 
 CFLAGS=               	-g0 -O3 -Wall -pipe $(PEDANTIC) -Wno-unused -std=gnu99 $(MARCH)
