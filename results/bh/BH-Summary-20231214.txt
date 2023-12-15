@@ -1,0 +1,19 @@
+Test of BH 1.84.0.0 had 2 successes, 5 failures, and 2 skipped packages. 
+Ran from 2023-12-14 14:28:19.88 to 2023-12-14 14:31:57.76 for 3.631 mins 
+Average of 24.209 secs relative to 65.915 secs using 4 runners
+
+Failed packages:  FeatureHashing, ldt, LOMAR, sgd, TDA 
+
+Skipped packages:  hBayesDM, starvz 
+
+None still working
+
+None still scheduled
+
+Error summary:
+          package missingPkg badInstall error fail warn note ok hasOtherIssue
+1: FeatureHashing                  TRUE     0    0    0   10  3         FALSE  uses deprecated header, should use timer.hpp
+2:            ldt                 FALSE     1    0    0    3  9         FALSE  possibly spurious numeric issue?	     
+3:          LOMAR                  TRUE     0    0    0   12  1         FALSE  needs change to Bind			     
+4:            sgd                  TRUE     0    0    0   10  3         FALSE  uses deprecated header, should use timer.hpp
+5:            TDA                  TRUE     0    0    0   13  0         FALSE  unrelated ? but had Eigen issues before
