@@ -1,0 +1,20 @@
+Test of BH 1.84.0.0 had 299 successes, 6 failures, and 2 skipped packages. 
+Ran from 2023-12-13 21:21:03.32 to 2023-12-14 08:24:16.66 for 11.054 hours 
+Average of 129.62 secs relative to 694.251 secs using 7 runners
+
+Failed packages:  Apollonius, FeatureHashing, ldt, LOMAR, sgd, TDA 
+
+Skipped packages:  hBayesDM, starvz 
+
+None still working
+
+None still scheduled
+
+Error summary:
+          package missingPkg badInstall
+1:     Apollonius     ‘gyro’         NA
+2: FeatureHashing                  TRUE  uses deprecated header, should use timer.hpp
+3:            ldt                 FALSE  possibly spurious numeric issue?
+4:          LOMAR                  TRUE  needs change to Bind
+5:            sgd                  TRUE  uses deprecated header, should use timer.hpp 
+6:            TDA                  TRUE  unrelated ? but had Eigen issues before
