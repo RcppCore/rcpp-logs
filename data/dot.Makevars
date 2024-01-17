@@ -8,6 +8,7 @@ CXX=			$(CCACHE) g++$(VER)
 CXX11=			$(CCACHE) g++$(VER) -std=c++11
 CXX14=			$(CCACHE) g++$(VER) -std=c++14
 CXX17=			$(CCACHE) g++$(VER) -std=c++17
+CXX20=			$(CCACHE) g++$(VER) -std=c++20
 
 #EXTRAFLAGS=             -DBOOST_PHOENIX_NO_VARIADIC_EXPRESSION
 EXTRAFLAGS=             -fext-numeric-literals -DBOOST_NO_AUTO_PTR
@@ -21,6 +22,7 @@ CXX1XFLAGS=		-g0 -O3 -Wall -pipe -Wno-unused $(PEDANTIC) $(EXTRAFLAGS) $(MARCH)
 CXX11FLAGS=		-g0 -O3 -Wall -pipe -Wno-unused $(PEDANTIC) $(EXTRAFLAGS) $(MARCH)
 CXX14FLAGS=		-g0 -O3 -Wall -pipe -Wno-unused $(PEDANTIC) $(EXTRAFLAGS) $(MARCH)
 CXX17FLAGS=		-g0 -O3 -Wall -pipe -Wno-unused $(PEDANTIC) $(EXTRAFLAGS) $(MARCH)
+CXX20FLAGS=		-g0 -O3 -Wall -pipe -Wno-unused $(PEDANTIC) $(EXTRAFLAGS) $(MARCH)
 
 SHLIB_CXXLD=            $(CCACHE) g++$(VER) 
 
