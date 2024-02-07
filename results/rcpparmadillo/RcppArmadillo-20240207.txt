@@ -1,0 +1,18 @@
+Test of RcppArmadillo 0.12.8.0.0 had 5 successes, 2 failures, and 8 skipped packages. 
+Ran from 2024-02-07 12:35:34.76 to 2024-02-07 12:43:38.63 for 8.065 mins 
+Average of 32.258 secs relative to 80.644 secs using 3 runners
+
+Failed packages:  inferCSN, PartialNetwork 
+
+Skipped packages:  Crossover, DataVisualizations, joineRML, ProFAST, regmed, Rfast, rlibkriging, stpm 
+
+None still working
+
+None still scheduled
+
+Error summary:
+          package version missingPkg badInstall error  fail  warn  note    ok hasOtherIssue
+           <char>  <char>     <char>     <lgcl> <int> <int> <int> <int> <int>        <lgcl>
+1:       inferCSN  0.99.9                 FALSE     9     0     0     3     0         FALSE  possible igraph issue? Also at CRAN
+2: PartialNetwork   1.0.2                  TRUE     0     0     0     7     5         FALSE  misses CDatanet, also knowm issue with new RcppEigen 'candidate', passes once installed and with CRAN RcppEigen
+
