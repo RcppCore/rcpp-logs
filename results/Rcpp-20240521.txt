@@ -1,0 +1,20 @@
+Test of Rcpp 1.0.12.1.1 had 53 successes, 5 failures, and 21 skipped packages. 
+Ran from 2024-05-21 07:09:00.62 to 2024-05-21 08:26:26.83 for 1.291 hours 
+Average of 58.813 secs relative to 308.101 secs using 6 runners
+
+Failed packages:  bigrquerystorage, chouca, fwildclusterboot, MatchIt, secsse 
+
+Skipped packages:  Crossover, DataVisualizations, dipsaus, disk.frame, highs, joineRML, joinXL, KeyboardSimulator, Mega2R, move, ProFAST, RavenR, RcppRedis, regmed, Rfast, rlibkriging, sparkwarc, starvz, stpm, tiledb, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+            package error  note    ok hasOtherIssues version hasCheckLog hasInstallLog     missingPkg badInstall
+             <char> <int> <int> <int>         <lgcl>  <char>      <lgcl>        <lgcl>         <char>     <lgcl>
+1: bigrquerystorage     0     7     5          FALSE   1.1.0        TRUE         FALSE        ‘arrow’         NA
+2:           chouca     0     0    13          FALSE  0.1.99        TRUE          TRUE                     FALSE  Weird (local) issue about RcppArmadillo missing for sourceCpp in tests
+3: fwildclusterboot     7     3     2           TRUE  0.13.0        TRUE          TRUE                     FALSE  Minor numeric issue in one test
+4:          MatchIt     0    12     0          FALSE   4.5.5        TRUE          TRUE                     FALSE  Illegal instruction
+5:           secsse     0     4     9          FALSE   3.1.0        TRUE          TRUE 'diversitree''         NA
