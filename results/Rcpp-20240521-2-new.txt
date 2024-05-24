@@ -1,0 +1,21 @@
+Test of Rcpp 1.0.12.1.2 had 2800 successes, 6 failures, and 23 skipped packages. 
+Ran from 2024-05-21 16:21:33.70 to 2024-05-23 21:28:38.06 for 2.213 days 
+Average of 67.594 secs relative to 403.7 secs using 6 runners
+
+Failed packages:  chouca, fwildclusterboot, PCMBaseCpp, POUMM, rstan, scorematchingad 
+
+Skipped packages:  bigrquerystorage, Crossover, DataVisualizations, dipsaus, disk.frame, highs, joineRML, joinXL, KeyboardSimulator, MatchIt, Mega2R, move, ProFAST, RavenR, RcppRedis, regmed, Rfast, rlibkriging, sparkwarc, starvz, stpm, tiledb, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+            package error  note    ok hasOtherIssues version hasCheckLog hasInstallLog   missingPkg badInstall
+             <char> <int> <int> <int>         <lgcl>  <char>      <lgcl>        <lgcl>       <char>     <lgcl>
+1:           chouca     0     0    13          FALSE  0.1.99        TRUE          TRUE                   FALSE  as before
+2: fwildclusterboot     7     3     2           TRUE  0.13.0        TRUE          TRUE                   FALSE  as before
+3:       PCMBaseCpp     0    12     0          FALSE   0.1.9        TRUE          TRUE                    TRUE  passes with updated PR
+4:            POUMM     0    12     0          FALSE   2.1.7        TRUE          TRUE                    TRUE  passes with updated PR
+5:            rstan     0    13     0          FALSE  2.32.6        TRUE          TRUE                    TRUE  passes with updated PR
+6:  scorematchingad    NA    NA    NA             NA  0.0.60        TRUE         FALSE ‘FixedPoint’         NA  passes once two pkgs installed and updated PR used
