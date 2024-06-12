@@ -1,0 +1,28 @@
+Test of RcppArmadillo 0.12.8.4.0.14.1 had 1134 successes, 13 failures, and 9 skipped packages. 
+Ran from 2024-06-11 11:50:24.17 to 2024-06-12 06:23:31.09 for 18.552 hours 
+Average of 57.774 secs relative to 344.513 secs using 6 runners
+
+Failed packages:  bespatial, bsvars, chouca, fastTopics, gmtFD, Langevin, PANPRSnext, pedmod, proxyC, quadrupen, quanteda.textstats, robustHD, seededlda 
+
+Skipped packages:  abn, Crossover, DataVisualizations, joineRML, ProFAST, regmed, Rfast, rlibkriging, stpm 
+
+None still working
+
+None still scheduled
+
+Error summary:
+               package error  note    ok hasOtherIssues version hasCheckLog hasInstallLog missingPkg badInstall
+                <char> <int> <int> <int>         <lgcl>  <char>      <lgcl>        <lgcl>     <char>     <lgcl>
+ 1:          bespatial     0     0    11          FALSE   0.1.2        TRUE         FALSE     ‘belg’         NA  passes once installed
+ 2:             bsvars     0     4     9          FALSE   2.1.0        TRUE          TRUE                 FALSE  "as_scalar(): expression must evaluate to exactly one element"
+ 3:             chouca     0     0    13          FALSE  0.1.99        TRUE          TRUE                 FALSE  possibly other, recurrent issue
+ 4:         fastTopics     1    12     0          FALSE 0.6-163        TRUE          TRUE                 FALSE  "Error: Mat::init(): requested size is not compatible with column vector layout"
+ 5:              gmtFD     0     0     9          FALSE   0.1.0        TRUE         FALSE   ‘GFDmcv’         NA  passes once installed
+ 6:           Langevin     0    13     0          FALSE   1.3.1        TRUE          TRUE                 FALSE  "what():  element-wise division: incompatible matrix dimensions: 1x5 and 5x1"
+ 7:         PANPRSnext     0     0    13          FALSE   1.2.0        TRUE          TRUE                 FALSE  "Error: element-wise multiplication: incompatible matrix dimensions: 1x3 and 3x1"
+ 8:             pedmod     0    13     0          FALSE   0.2.4        TRUE          TRUE                 FALSE  "Mat::init(): requested size is not compatible with column vector layout"
+ 9:             proxyC     0     0    13           TRUE   0.4.1        TRUE          TRUE                  TRUE  "error: call of overloaded ‘to_vector'"
+10:          quadrupen     0     4     9          FALSE  0.2-11        TRUE          TRUE                 FALSE  "what():  element-wise division: incompatible matrix dimensions: 1x100 and 100x1"
+11: quanteda.textstats     0     0    13          FALSE    0.97        TRUE          TRUE                  TRUE  "error: call of overloaded ‘to_vector'"
+12:           robustHD     0    12     1          FALSE   0.8.0        TRUE          TRUE                 FALSE  unclear: terminate called without an active exception
+13:          seededlda     0     6     7          FALSE   1.2.1        TRUE          TRUE                  TRUE  "error: call of overloaded ‘Array'... ambiguous"
