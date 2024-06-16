@@ -1,0 +1,56 @@
+Test of Rcpp 1.0.12.3.1.1 had 2787 successes, 40 failures, and 25 skipped packages. 
+Ran from 2024-06-12 08:35:10.73 to 2024-06-14 06:50:59.41 for 1.928 days 
+Average of 58.397 secs relative to 311.843 secs using 7 runners
+
+Failed packages:  aum, BART, bayesianVARs, birdie, chouca, cna, fixest, FLOPART, FLSSS, HistDAWass, kdevine, LOPART, magi, maxnodf, mined, mixvlmc, nanotime, netdiffuseR, nlmixr2est, o2geosocial, ondisc, onemap, openxlsx, pedmod, PKPDsim, Rborist, reservr, revdbayes, rsparse, rstpm2, rxode2, secr, supc, thunder, TreeDist, TSrepr, VAJointSurv, vapour, xrnet, ZIPBayes 
+
+Skipped packages:  abn, bigrquerystorage, Crossover, DataVisualizations, dipsaus, disk.frame, gpuR, highs, joineRML, joinXL, KeyboardSimulator, MatchIt, Mega2R, move, ProFAST, RavenR, RcppRedis, regmed, Rfast, rlibkriging, sparkwarc, starvz, stpm, tiledb, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+         package error  note    ok hasOtherIssues   version hasCheckLog hasInstallLog missingPkg badInstall
+          <char> <int> <int> <int>         <lgcl>    <char>      <lgcl>        <lgcl>     <char>     <lgcl>
+ 1:          aum     0     0    13           TRUE 2023.6.14        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 0 >= vector size 0)
+ 2:         BART     0     7     6           TRUE     2.9.7        TRUE          TRUE                 FALSE  what():  subscript out of bounds (index 0 >= vector size 0)
+ 3: bayesianVARs     0     4     9          FALSE     0.1.2        TRUE          TRUE                 FALSE  tiny numeric difference, also see in RcppArmadillo check
+ 4:       birdie     1    11     0          FALSE     0.6.1        TRUE          TRUE                 FALSE  needs package 'easycensus'
+ 5:       chouca     0     0    13          FALSE    0.1.99        TRUE          TRUE                 FALSE  recurrent issue seen in other RcppArmadillo runs
+ 6:          cna     0     0    13          FALSE     3.6.0        TRUE          TRUE  ‘frscore’         NA
+ 7:       fixest     3     5     5          FALSE    0.12.1        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 0 >= vector size 0)
+ 8:      FLOPART     0     0    13           TRUE 2023.8.31        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 0 >= vector size 0)
+ 9:        FLSSS     0    13     0           TRUE     9.1.3        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 0 >= vector size 0)
+10:   HistDAWass     0     4     9          FALSE     1.0.8        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 2 >= vector size 2)
+11:      kdevine     2     0    11          FALSE     0.4.5        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 0 >= vector size 0)
+12:       LOPART     0     0    13           TRUE 2020.6.29        TRUE          TRUE                 FALSE  Actual message: "subscript out of bounds (index 0 >= vector size 0)"
+13:         magi     0     4     9           TRUE     1.2.3        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 0 >= vector size 0)
+14:      maxnodf     5     8     0           TRUE     1.0.0        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 0 >= vector size 0)
+15:        mined     0    13     0          FALSE     1.0-3        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 2 >= vector size 2)
+16:      mixvlmc     0     4     9          FALSE     0.2.1        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 1000 >= vector size 1000)
+17:     nanotime     0    13     0           TRUE     0.3.7        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 0 >= vector size 0)
+18:  netdiffuseR     1     7     5          FALSE    1.22.6        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 1 >= vector size 1)
+19:   nlmixr2est     0     4     9          FALSE     2.2.2        TRUE          TRUE                 FALSE  subscript out of bounds (index 96 >= vector size 96)
+20:  o2geosocial     5     0     8           TRUE     1.1.2        TRUE          TRUE                 FALSE  subscript out of bounds (index 0 >= vector size 0)
+21:       ondisc     0    13     0           TRUE     1.0.0        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 0 >= vector size 0)
+22:       onemap     0     3    10          FALSE     3.0.0        TRUE          TRUE                 FALSE  what():  subscript out of bounds (index 3000 >= vector size 3000)
+23:     openxlsx     5     7     1           TRUE   4.2.5.2        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 0 >= vector size 0)
+24:       pedmod     0    13     0           TRUE     0.2.4        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 0 >= vector size 0)
+25:      PKPDsim     0     2    11          FALSE     1.3.0        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 4 >= vector size 4)
+26:      Rborist     0     4     9          FALSE     0.3-7        TRUE          TRUE                 FALSE  what():  subscript out of bounds (index 0 >= vector size 0)
+27:      reservr     5     8     0           TRUE     0.0.2        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 0 >= vector size 0)
+28:    revdbayes     0     3    10          FALSE     1.5.3        TRUE          TRUE                 FALSE  subscript out of bounds (index 1 >= vector size 0)
+29:      rsparse     0    13     0           TRUE     0.5.1        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 0 >= vector size 0)
+30:       rstpm2     0     8     5           TRUE     1.6.3        TRUE          TRUE                 FALSE  what():  subscript out of bounds (index 1 >= vector size 1)
+31:       rxode2     0     9     4          FALSE     2.1.3        TRUE          TRUE                 FALSE  subscript out of bounds (index 20 >= vector size 0)
+32:         secr     0    13     0          FALSE     4.6.7        TRUE          TRUE                 FALSE  package 'spcosa' is required for make.spcosa
+33:         supc     0    13     0           TRUE   0.2.6.2        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 0 >= vector size 0)
+34:      thunder     0     0    13          FALSE     1.1.3        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 2 >= vector size 2)
+35:     TreeDist     0    13     0          FALSE     2.7.0        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 35205 >= vector size 2)
+36:       TSrepr     0    10     3          FALSE     1.1.0        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 2 >= vector size 2)
+37:  VAJointSurv     5     4     4           TRUE     0.1.0        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 0 >= vector size 0)
+38:       vapour     5     5     3          FALSE    0.10.0        TRUE          TRUE                 FALSE  unclear, likely not use, new version at CRAN 
+39:        xrnet     0    13     0           TRUE     0.1.7        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 0 >= vector size 0)
+40:     ZIPBayes     0     0    13          FALSE     1.0.2        TRUE          TRUE                 FALSE  Error: subscript out of bounds (index 1 >= vector size 1)
+         package error  note    ok hasOtherIssues   version hasCheckLog hasInstallLog missingPkg badInstall
