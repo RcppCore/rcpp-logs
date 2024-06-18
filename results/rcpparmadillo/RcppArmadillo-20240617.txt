@@ -1,0 +1,25 @@
+Test of RcppArmadillo 0.12.8.4.0.14.2 had 1139 successes, 10 failures, and 9 skipped packages. 
+Ran from 2024-06-17 13:55:13.78 to 2024-06-18 10:58:53.48 for 21.061 hours 
+Average of 65.475 secs relative to 390.288 secs using 6 runners
+
+Failed packages:  bsvars, chouca, fastTopics, Langevin, PANPRSnext, pedmod, profoc, quadrupen, robustHD, seededlda 
+
+Skipped packages:  abn, Crossover, DataVisualizations, joineRML, ProFAST, regmed, Rfast, rlibkriging, stpm 
+
+None still working
+
+None still scheduled
+
+Error summary:
+       package error  note    ok hasOtherIssues version hasCheckLog hasInstallLog missingPkg badInstall
+        <char> <int> <int> <int>         <lgcl>  <char>      <lgcl>        <lgcl>     <char>     <lgcl>
+ 1:     bsvars     0     4     9          FALSE   2.1.0        TRUE          TRUE                 FALSE  as_scalar(): expected 1x1 matrix; got 3x3
+ 2:     chouca     0     0    13          FALSE  0.1.99        TRUE          TRUE                 FALSE  recurrent issue, local to package AFAICT
+ 3: fastTopics     1    12     0          FALSE 0.6-163        TRUE          TRUE                 FALSE  Error: Mat::init(): requested size is not compatible with column vector layout
+ 4:   Langevin     0    13     0          FALSE   1.3.1        TRUE          TRUE                 FALSE  what():  element-wise division: incompatible matrix dimensions: 1x5 and 5x1
+ 5: PANPRSnext     0     0    13          FALSE   1.2.0        TRUE          TRUE                 FALSE  Error: element-wise multiplication: incompatible matrix dimensions: 1x3 and 3x1
+ 6:     pedmod     0    13     0           TRUE   0.2.4        TRUE          TRUE                 FALSE  Mat::init(): requested size is not compatible with column vector layout
+ 7:     profoc     0     4     9          FALSE   1.3.2        TRUE          TRUE                 FALSE  Error: sort(): detected NaN -- unclear if us or package
+ 8:  quadrupen     0     4     9          FALSE  0.2-11        TRUE          TRUE                 FALSE  what():  element-wise division: incompatible matrix dimensions: 1x95 and 95x1
+ 9:   robustHD     0    12     1          FALSE   0.8.0        TRUE          TRUE                 FALSE  terminate called without an active exception:  Unclear
+10:  seededlda     0     6     7          FALSE   1.2.1        TRUE          TRUE                 FALSE  Error: Mat::init(): requested size is not compatible with column vector layout
