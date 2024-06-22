@@ -1,0 +1,20 @@
+Test of Rcpp 1.0.12.3.1.3 had 7 successes, 5 failures, and 25 skipped packages. 
+Ran from 2024-06-22 10:19:01.53 to 2024-06-22 10:34:07.55 for 15.1 mins 
+Average of 24.487 secs relative to 89.198 secs using 6 runners
+
+Failed packages:  bayesianVARs, chouca, PKPDsim, reservr, TreeDist 
+
+Skipped packages:  abn, bigrquerystorage, clrng, Crossover, DataVisualizations, disk.frame, gpuR, highs, joineRML, joinXL, KeyboardSimulator, MatchIt, Mega2R, move, ProFAST, RavenR, RcppRedis, regmed, Rfast, rlibkriging, sparkwarc, starvz, stpm, tiledb, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+        package error  note    ok hasOtherIssues version hasCheckLog hasInstallLog missingPkg badInstall
+         <char> <int> <int> <int>         <lgcl>  <char>      <lgcl>        <lgcl>     <char>     <lgcl>
+1: bayesianVARs     0     4     9          FALSE   0.1.2        TRUE          TRUE                 FALSE  Error in run 1: Couldn't Cholesky-decompose posterior loadings precision in row 2
+2:       chouca     0     0    13          FALSE  0.1.99        TRUE          TRUE                 FALSE  recurrent, possibly local to test setup, 
+3:      PKPDsim     0     2    11          FALSE   1.3.0        TRUE          TRUE                 FALSE  error is not invoked when using parameters_table
+4:      reservr     5     8     0           TRUE   0.0.2        TRUE          TRUE                 FALSE  `fit(dist, x, init = "shapes", shapes = as.numeric(params$shapes))` produced warnings.  
+5:     TreeDist     0    13     0          FALSE   2.7.0        TRUE          TRUE                 FALSE  address 0x55b19059fec8, cause 'memory not mapped'
