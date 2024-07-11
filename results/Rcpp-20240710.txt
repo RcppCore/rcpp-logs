@@ -1,0 +1,22 @@
+Test of Rcpp 1.0.12.4.2 had 2829 successes, 7 failures, and 25 skipped packages. 
+Ran from 2024-07-10 00:36:51.04 to 2024-07-11 07:01:42.29 for 1.267 days 
+Average of 38.27 secs relative to 221.34 secs using 8 runners
+
+Failed packages:  chouca, DiscreteFDR, GauPro, inferCSN, PANPRSnext, PKPDsim, rswipl 
+
+Skipped packages:  abn, bigrquerystorage, Crossover, DataVisualizations, dipsaus, disk.frame, gpuR, highs, joineRML, joinXL, KeyboardSimulator, MatchIt, Mega2R, move, ProFAST, RavenR, RcppRedis, regmed, Rfast, rlibkriging, sparkwarc, starvz, stpm, tiledb, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+       package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog                          missingPkg badInstall
+        <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>                              <char>     <lgcl>
+1:      chouca     0     0    13       <NA>          FALSE  0.1.99        TRUE          TRUE                                          FALSE  unrelated known recurrent issue
+2: DiscreteFDR     0     0    13       <NA>          FALSE   2.0.0        TRUE         FALSE 'DiscreteTests', 'DiscreteDatasets'         NA  passes once installed
+3:      GauPro     0     4     9       <NA>          FALSE  0.2.12        TRUE          TRUE                                          FALSE  unrelated (?) small numerical error
+4:    inferCSN     0     4     9       <NA>          FALSE   1.0.5        TRUE          TRUE                    ‘ggpointdensity’         NA  passes once installed
+5:  PANPRSnext     5     0     8 2024-07-22          FALSE   1.2.0        TRUE          TRUE                                          FALSE  unrelated known Armadill 14.0.0 issue
+6:     PKPDsim     0     2    11       <NA>          FALSE   1.3.0        TRUE          TRUE                                          FALSE  (likely) unrelated package internal
+7:      rswipl     0    13     0       <NA>           TRUE 9.3.7.2        TRUE          TRUE                                           TRUE  unrelated, stumbles over use of 'ccache'
