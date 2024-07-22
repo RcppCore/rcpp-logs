@@ -1,0 +1,24 @@
+Test of Rcpp 1.0.13.0.1 had 2835 successes, 9 failures, and 26 skipped packages. 
+Ran from 2024-07-20 14:21:46.82 to 2024-07-22 16:30:19.91 for 2.089 days 
+Average of 62.897 secs relative to 375.487 secs using 6 runners
+
+Failed packages:  chouca, funcharts, gfilmm, gfilogisreg, PANPRSnext, PKPDsim, recurse, rswipl, SCIntRuler 
+
+Skipped packages:  abn, bigrquerystorage, clrng, Crossover, DataVisualizations, dipsaus, disk.frame, gpuR, highs, joineRML, joinXL, KeyboardSimulator, MatchIt, Mega2R, move, ProFAST, RavenR, RcppRedis, regmed, Rfast, rlibkriging, sparkwarc, starvz, stpm, tiledb, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+       package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog  missingPkg badInstall
+        <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>      <char>     <lgcl>
+1:      chouca     0     0    13       <NA>          FALSE  0.1.99        TRUE          TRUE                  FALSE  known recurrent issue
+2:   funcharts     0     0    13       <NA>          FALSE   1.5.0        TRUE         FALSE  ‘rofanova’         NA  passes once installed 
+3:      gfilmm     9     4     0 2024-07-31          FALSE   2.0.5        TRUE          TRUE                   TRUE  object ‘ewcdf’ is not exported by 'namespace:spatstat.geom
+4: gfilogisreg     8     0     5 2024-07-31          FALSE   1.0.3        TRUE          TRUE                   TRUE  object ‘ewcdf’ is not exported by 'namespace:spatstat.geom
+5:  PANPRSnext     9     0     4 2024-08-18          FALSE   1.2.0        TRUE          TRUE                  FALSE  known RcppArmadillo 14.0.0-1 change request
+6:     PKPDsim     6     0     7 2024-08-18          FALSE   1.3.0        TRUE          TRUE                  FALSE  known Rcpp 1.0.13 change request
+7:     recurse     0     0    13       <NA>           TRUE   1.4.0        TRUE          TRUE                  FALSE  no applicable method for 'getRecursionsInPolygon'
+8:      rswipl     0    13     0       <NA>           TRUE 9.3.7.2        TRUE          TRUE                   TRUE  does not install with ccache set
+9:  SCIntRuler     3     0    10       <NA>          FALSE  0.99.6        TRUE         FALSE ‘batchelor’         NA  need BioC package batchelor
