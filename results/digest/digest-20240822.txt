@@ -1,0 +1,41 @@
+Test of digest 0.6.37.1 had 255 successes, 25 failures, and 8 skipped packages. 
+Ran from 2024-08-22 13:38:04.60 to 2024-08-22 16:22:14.65 for 2.736 hours 
+Average of 34.202 secs relative to 200.707 secs using 6 runners
+
+Failed packages:  amregtest, archivist.github, chouca, ctrdata, downlit, emayili, eurostat, fanyi, finnts, login, NGCHM, nhdplusTools, One4All, oolong, OpenSpecy, paws.common, R.rsp, rbedrock, repana, rms, ruminate, sharpshootR, sotkanet, UCSCXenaShiny, vegawidget 
+
+Skipped packages:  Crossover, DatabaseConnector, datapack, dipsaus, dittodb, gWidgets2tcltk, pointblank, receptiviti 
+
+None still working
+
+None still scheduled
+
+Error summary:
+             package error  note    ok deadline hasOtherIssues version hasCheckLog hasInstallLog                        missingPkg badInstall
+              <char> <int> <int> <int>   <char>         <lgcl>  <char>      <lgcl>        <lgcl>                            <char>     <lgcl>
+ 1:        amregtest     0     3    10     <NA>          FALSE   1.0.3        TRUE         FALSE                     ‘allelematch’         NA
+ 2: archivist.github     0    13     0     <NA>          FALSE   0.2.6        TRUE          TRUE                                         TRUE  old git2r version needing recompilation again libgit2
+ 3:           chouca     0     0    13     <NA>          FALSE  0.1.99        TRUE          TRUE                                        FALSE  known recurrent issue
+ 4:          ctrdata     0     0    13     <NA>          FALSE  1.19.1        TRUE         FALSE                           ‘nodbi’         NA
+ 5:          downlit     0     0    13     <NA>          FALSE   0.4.4        TRUE          TRUE                                        FALSE  one fail, possible issue in test-link.R:220
+ 6:          emayili     0     0    13     <NA>          FALSE   0.9.1        TRUE          TRUE                                        FALSE  several suggested packages missing: 'cld2', 'cld3', 'gpg', 'jinjar', 'Microsoft365R'
+ 7:         eurostat     0     2    11     <NA>          FALSE   4.0.0        TRUE         FALSE                         ‘regions’         NA
+ 8:            fanyi     0     0    13     <NA>          FALSE   0.0.7        TRUE         FALSE                       ‘SSEparser’         NA
+ 9:           finnts     0     1    12     <NA>          FALSE   0.4.0        TRUE         FALSE       'modeltime', 'hts', 'rules'         NA
+10:            login     0     0    13     <NA>          FALSE   0.9.3        TRUE         FALSE 'cookies', 'emayili', 'shinybusy'         NA
+11:            NGCHM     0    13     0     <NA>          FALSE   1.0.3        TRUE         FALSE                           ‘tsvio’         NA
+12:     nhdplusTools     2     6     5     <NA>          FALSE   1.2.1        TRUE         FALSE  'hydroloom', 'maptiles', 'arrow'         NA
+13:          One4All     0     2    11     <NA>          FALSE     0.5        TRUE         FALSE              'ckanr', 'mongolite'         NA
+14:           oolong     0     0    13     <NA>          FALSE   0.6.1        TRUE          TRUE                             'BTM'         NA
+15:        OpenSpecy     0     9     4     <NA>          FALSE   1.1.0        TRUE         FALSE                           ‘mmand’         NA
+16:      paws.common     0     0    13     <NA>          FALSE   0.7.4        TRUE          TRUE                                        FALSE  Failure ('test_net.R:29:3'): connect_timeout  
+17:            R.rsp     0     0    12     <NA>          FALSE  0.46.0        TRUE          TRUE                                        FALSE  [2024-08-22 15:28:28.986112] Exception: Failed to install package: R.devices
+18:         rbedrock     0     6     7     <NA>          FALSE   0.3.2        TRUE          TRUE                                        FALSE  Caused by error in `purrr::map()`:
+19:           repana     0     0    13     <NA>          FALSE   2.2.0        TRUE         FALSE                            ‘pool’         NA
+20:              rms     0     3    10     <NA>          FALSE   6.8-1        TRUE          TRUE                            ‘rmsb’         NA
+21:         ruminate     0     3    10     <NA>          FALSE   0.2.4        TRUE         FALSE                         ‘formods’         NA
+22:      sharpshootR     0    13     0     <NA>          FALSE   2.3.1        TRUE          TRUE                                        FALSE  Error: please install the `SoilTaxonomy` package
+23:         sotkanet     0     0    13     <NA>          FALSE  0.10.1        TRUE         FALSE                    ‘frictionless’         NA
+24:    UCSCXenaShiny     0     8     5     <NA>          FALSE   2.1.0        TRUE         FALSE          'ezcox', 'UCSCXenaTools'         NA
+25:       vegawidget     0     0    13     <NA>          FALSE   0.5.0        TRUE          TRUE                                        FALSE  Error: Package(s): "listviewer" needed for this function to work. Please install.
+             package error  note    ok deadline hasOtherIssues version hasCheckLog hasInstallLog                        missingPkg badInstall
