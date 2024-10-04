@@ -1,0 +1,22 @@
+Test of Rcpp 1.0.13.2.2 had 2881 successes, 7 failures, and 26 skipped packages. 
+Ran from 2024-10-01 22:34:15.66 to 2024-10-04 02:54:31.41 for 2.181 days 
+Average of 64.659 secs relative to 367.651 secs using 8 runners
+
+Failed packages:  CAESAR.Suite, chouca, gmvjoint, kmeRtone, recurse, SCIntRuler, secsse 
+
+Skipped packages:  abn, bigrquerystorage, clrng, Crossover, DataVisualizations, dipsaus, disk.frame, gpuR, highs, joineRML, joinXL, KeyboardSimulator, MatchIt, Mega2R, move, ProFAST, RavenR, RcppRedis, regmed, Rfast, rlibkriging, sparkwarc, starvz, stpm, tiledb, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+        package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog  missingPkg badInstall
+         <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>      <char>     <lgcl>
+1: CAESAR.Suite     2     2     9       <NA>          FALSE   0.1.0        TRUE         FALSE   ‘ProFAST’         NA  not us [needs ProFAST]
+2:       chouca     0     0    13       <NA>          FALSE  0.1.99        TRUE          TRUE                  FALSE  not us [known recurring issue that is not us]
+3:     gmvjoint     9     4     0 2024-10-12          FALSE   0.4.0        TRUE          TRUE                  FALSE  not us [Error: 'splitForm' is not an exported object from 'namespace:glmmTMB']
+4:     kmeRtone     2     9     2       <NA>          FALSE     1.0        TRUE         FALSE   ‘seqLogo’         NA  not us [needs seqLogo]
+5:      recurse     0     0    13       <NA>          FALSE   1.4.0        TRUE          TRUE                  FALSE  not us [Error in `UseMethod("getRecursionsInPolygon", trajectory)`: no applicable method for 'getRecursionsInPolygon' applied to an object of class "NULL"]
+6:   SCIntRuler     2     0    11       <NA>          FALSE  0.99.6        TRUE         FALSE ‘batchelor’         NA  not us [needs batchelor]
+7:       secsse     0     7     6       <NA>          FALSE   3.1.0        TRUE          TRUE                  FALSE  not us [diversitree needs recompilation under new GSL 2.8.*]
