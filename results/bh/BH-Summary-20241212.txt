@@ -1,0 +1,23 @@
+Test of BH 1.87.0.0 had 312 successes, 8 failures, and 2 skipped packages. 
+Ran from 2024-12-12 09:16:32.13 to 2024-12-13 02:13:08.29 for 16.943 hours 
+Average of 189.429 secs relative to 1081.39 secs using 6 runners
+
+Failed packages:  cbbinom, GeoFIS, OwenQ, RcppUUID, rxode2, rxode2ll, serosv, TDA 
+
+Skipped packages:  gpuR, starvz 
+
+None still working
+
+None still scheduled
+
+Error summary:
+    package error  note    ok deadline hasOtherIssues version hasCheckLog hasInstallLog  missingPkg badInstall
+     <char> <int> <int> <int>   <char>         <lgcl>  <char>      <lgcl>        <lgcl>      <char>     <lgcl>
+1:  cbbinom     0     0    13     <NA>          FALSE   0.2.0        TRUE         FALSE ‘hypergeo2’         NA  non-issue, passes once installed
+2:   GeoFIS     0     8     5     <NA>          FALSE   1.1.0        TRUE          TRUE                   TRUE  boost::bind compilation issue 
+3:    OwenQ     0     4     9     <NA>          FALSE   1.0.7        TRUE          TRUE                  FALSE  boost::math::erf test fail
+4: RcppUUID     0    13     0     <NA>          FALSE   1.1.1        TRUE          TRUE                   TRUE  no match ?
+5:   rxode2     0     6     7     <NA>          FALSE   3.0.2        TRUE          TRUE                   TRUE  stan instantiation ?
+6: rxode2ll     0     4     9     <NA>          FALSE  2.0.12        TRUE          TRUE                   TRUE  stan instantiation ?
+7:   serosv     0     8     5     <NA>          FALSE   1.0.1        TRUE         FALSE   ‘mixdist’         NA  non-issue, passes once installed
+8:      TDA     0    10     3     <NA>          FALSE   1.9.1        TRUE          TRUE                   TRUE  unclear
