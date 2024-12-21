@@ -1,0 +1,29 @@
+Test of Rcpp 1.0.13.6 had 2928 successes, 14 failures, and 27 skipped packages. 
+Ran from 2024-12-18 08:27:19.48 to 2024-12-20 15:18:38.75 for 2.286 days 
+Average of 66.514 secs relative to 396.93 secs using 6 runners
+
+Failed packages:  EMC2, extrememix, GeoFIS, iclogcondist, kmeRtone, libr, OwenQ, pprof, RcppUUID, recurse, sparsevb, symengine, TDA, tidysq 
+
+Skipped packages:  abn, bigrquerystorage, chouca, clrng, Crossover, DataVisualizations, dipsaus, disk.frame, gpuR, highs, joineRML, joinXL, KeyboardSimulator, MatchIt, Mega2R, move, ProFAST, RavenR, RcppRedis, regmed, Rfast, rlibkriging, sparkwarc, starvz, stpm, tiledb, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+         package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog    missingPkg badInstall
+          <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>        <char>     <lgcl>
+ 1:         EMC2     0     4     9       <NA>          FALSE   2.1.0        TRUE         FALSE       ‘WienR’         NA
+ 2:   extrememix     0     0    13       <NA>          FALSE   0.0.1        TRUE         FALSE     ‘threshr’         NA
+ 3:       GeoFIS     2     7     4       <NA>          FALSE   1.1.1        TRUE          TRUE                     TRUE  known Boost side-effect, we tested 1.1.0, fixed in 1.1.1
+ 4: iclogcondist     1     0    12       <NA>          FALSE   1.0.1        TRUE         FALSE    ‘monotone’         NA
+ 5:     kmeRtone     2     6     5       <NA>          FALSE     1.0        TRUE          TRUE                    FALSE  download error
+ 6:         libr     0     0    13       <NA>          FALSE   1.3.8        TRUE          TRUE 'nanoparquet'         NA
+ 7:        OwenQ     4     4     5       <NA>          FALSE   1.0.7        TRUE          TRUE                    FALSE  known Boost side-effect
+ 8:        pprof     1     7     4       <NA>          FALSE   1.0.1        TRUE         FALSE       ‘olsrr’         NA
+ 9:     RcppUUID     4     9     0       <NA>          FALSE   1.1.1        TRUE          TRUE                     TRUE  known Boost side-effect
+10:      recurse     0     0    13       <NA>          FALSE   1.4.0        TRUE          TRUE                    FALSE  --unclear
+11:     sparsevb     9     4     0 2025-01-10          FALSE   0.1.0        TRUE          TRUE                     TRUE  needs C++14 enabled for RcppEnsmallen
+12:    symengine     1     8     4       <NA>          FALSE   0.2.6        TRUE          TRUE                    FALSE  --unclear
+13:          TDA     4     9     0       <NA>          FALSE   1.9.1        TRUE          TRUE                     TRUE  known Boost side-effect
+14:       tidysq     8     4     1 2025-01-10          FALSE   1.2.2        TRUE          TRUE                    FALSE  also fails at CRAN
