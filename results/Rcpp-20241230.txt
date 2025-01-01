@@ -1,0 +1,23 @@
+Test of Rcpp 1.0.13.6 had 2941 successes, 8 failures, and 27 skipped packages. 
+Ran from 2024-12-30 14:20:25.68 to 2024-12-31 20:37:56.55 for 1.262 days 
+Average of 36.643 secs relative to 210.685 secs using 7 runners
+
+Failed packages:  DEploid, OwenQ, RcppUUID, recurse, sparsevb, symengine, TDA, tidysq 
+
+Skipped packages:  abn, bigrquerystorage, chouca, clrng, Crossover, DataVisualizations, dipsaus, disk.frame, gpuR, highs, joineRML, joinXL, KeyboardSimulator, MatchIt, Mega2R, move, ProFAST, RavenR, RcppRedis, regmed, Rfast, rlibkriging, sparkwarc, starvz, stpm, tiledb, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+     package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog      missingPkg badInstall
+      <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>          <char>     <lgcl>
+1:   DEploid     0     4     7 2025-01-16           TRUE   0.5.6        TRUE         FALSE ‘DEploid.utils’         NA  passes once installed
+2:     OwenQ     9     4     0 2025-01-13          FALSE   1.0.7        TRUE          TRUE                      FALSE  known BH 1.87.7 side-effect
+3:  RcppUUID     9     4     0 2025-01-13          FALSE   1.1.1        TRUE          TRUE                       TRUE  known BH 1.87.7 side-effect
+4:   recurse     0     0    13       <NA>          FALSE   1.4.0        TRUE          TRUE                      FALSE  --unclear, contacted maintainer
+5:  sparsevb     9     4     0 2025-01-10          FALSE   0.1.0        TRUE          TRUE                       TRUE  known RcppEnsmallen effect, needs C++17
+6: symengine     3     6     4       <NA>          FALSE   0.2.6        TRUE          TRUE                      FALSE  --unclear, contacted maintainer
+7:       TDA     9     4     0 2025-01-13          FALSE   1.9.1        TRUE          TRUE                       TRUE  known BH 1.87.7 side-effect
+8:    tidysq     9     4     0 2025-01-10          FALSE   1.2.2        TRUE          TRUE                      FALSE  also fails at CRAN
