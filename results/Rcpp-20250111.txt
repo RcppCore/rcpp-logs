@@ -1,0 +1,23 @@
+Test of Rcpp 1.0.13.6 had 9 successes, 8 failures, and 26 skipped packages. 
+Ran from 2025-01-11 09:03:22.67 to 2025-01-11 09:27:35.39 for 24.212 mins 
+Average of 33.784 secs relative to 110.897 secs using 6 runners
+
+Failed packages:  dRiftDM, goldilocks, OwenQ, RcppUUID, recurse, sparsevb, symengine, TDA 
+
+Skipped packages:  abn, bigrquerystorage, chouca, clrng, Crossover, DataVisualizations, dipsaus, disk.frame, gpuR, highs, joineRML, joinXL, KeyboardSimulator, MatchIt, Mega2R, move, ProFAST, RavenR, RcppRedis, regmed, Rfast, sparkwarc, starvz, stpm, tiledb, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+      package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog missingPkg badInstall
+       <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>     <char>     <lgcl>
+1:    dRiftDM     0     0    10       <NA>          FALSE   0.2.1        TRUE          TRUE   'DMCfun'         NA  passes once installed
+2: goldilocks     0     0    10       <NA>          FALSE   0.4.0        TRUE         FALSE   ‘PWEALL’         NA  passes once installed
+3:      OwenQ     9     4     0 2025-01-13          FALSE   1.0.7        TRUE          TRUE                 FALSE  known BH 1.87.7 side-effect
+4:   RcppUUID     9     4     0 2025-01-13          FALSE   1.1.1        TRUE          TRUE                  TRUE  known BH 1.87.7 side-effect
+5:    recurse     0     0    13       <NA>          FALSE   1.4.0        TRUE          TRUE                 FALSE  --unclear, contacted maintainer
+6:   sparsevb     9     4     0 2025-01-24          FALSE   0.1.0        TRUE          TRUE                  TRUE  known RcppEnsmallen update side-effect, needs C++17
+7:  symengine     3     6     4       <NA>          FALSE   0.2.6        TRUE          TRUE                 FALSE  --unclear, contacted maintainer
+8:        TDA     9     4     0 2025-01-13          FALSE   1.9.1        TRUE          TRUE                  TRUE  known BH 1.87.7 side-effect
