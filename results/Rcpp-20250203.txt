@@ -1,0 +1,21 @@
+Test of Rcpp 1.0.14.1.1 had 10 successes, 5 failures, and 27 skipped packages. 
+Ran from 2025-02-03 19:38:04.66 to 2025-02-03 19:57:53.26 for 19.81 mins 
+Average of 28.3 secs relative to 125.735 secs using 5 runners
+
+Failed packages:  EpiModel, OwenQ, spectralGraphTopology, squat, symengine 
+
+Skipped packages:  abn, bigrquerystorage, chouca, clrng, Crossover, DataVisualizations, dipsaus, disk.frame, gpuR, highs, joineRML, joinXL, KeyboardSimulator, MatchIt, Mega2R, move, ProFAST, RavenR, RcppRedis, regmed, Rfast, rlibkriging, sparkwarc, starvz, stpm, tiledb, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+Key: <package>
+                 package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog missingPkg badInstall
+                  <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>     <char>     <lgcl>
+1:              EpiModel     0     2    11       <NA>          FALSE   2.5.0        TRUE          TRUE                 FALSE  passes after ergm/tergm rebuild
+2:                 OwenQ     9     4     0 2025-02-17          FALSE   1.0.7        TRUE          TRUE                 FALSE  known BH 1.87.7 side-effect
+3: spectralGraphTopology     9     4     0 2025-02-11          FALSE   0.2.3        TRUE          TRUE                 FALSE  possible purrr side effect, failed at CRAN
+4:                 squat     9     4     0 2025-02-17          FALSE   0.3.0        TRUE          TRUE                 FALSE  unclear, fails at CRAN
+5:             symengine     4     5     4       <NA>          FALSE   0.2.6        TRUE          TRUE                 FALSE  unclear, recurrent
