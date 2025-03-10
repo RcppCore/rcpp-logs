@@ -1,0 +1,28 @@
+Test of Rcpp 1.0.14.4 had 2972 successes, 13 failures, and 27 skipped packages. 
+Ran from 2025-03-07 16:55:27.65 to 2025-03-10 02:09:26.94 for 2.343 days 
+Average of 67.211 secs relative to 398.406 secs using 7 runners
+
+Failed packages:  beastt, CSeQTL, divent, flexlsx, learner, mgwrsar, MIC, odbc, ROKET, SMASH, symengine, tall, TSLA 
+
+Skipped packages:  abn, bigrquerystorage, chouca, clrng, Crossover, DataVisualizations, dipsaus, disk.frame, gpuR, highs, joineRML, joinXL, KeyboardSimulator, MatchIt, Mega2R, move, ProFAST, RavenR, RcppRedis, regmed, Rfast, rlibkriging, sparkwarc, starvz, stpm, tiledb, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+      package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog                                         missingPkg badInstall
+       <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>                                             <char>     <lgcl>
+ 1:    beastt     0     8     7       <NA>          FALSE   0.0.2        TRUE         FALSE                                           ‘cobalt’         NA
+ 2:    CSeQTL     0     0     8       <NA>          FALSE   1.0.0        TRUE         FALSE               'smarter', 'MatrixEQTL', 'HelpersMG'         NA
+ 3:    divent     0     0    15       <NA>          FALSE   0.5-2        TRUE         FALSE                       'dbmss', 'EntropyEstimation'         NA
+ 4:   flexlsx     0     0    15       <NA>          FALSE   0.3.4        TRUE         FALSE                                        ‘openxlsx2’         NA
+ 5:   learner     0     4    11       <NA>          FALSE   1.0.0        TRUE         FALSE                                         ‘ScreeNOT’         NA
+ 6:   mgwrsar     0     6     9       <NA>          FALSE     1.1        TRUE         FALSE                                             ‘SMUT’         NA
+ 7:       MIC     1     0    14       <NA>          FALSE   1.0.2        TRUE         FALSE                                              ‘AMR’         NA
+ 8:      odbc     6     0     9 2025-03-14           TRUE   1.6.0        TRUE          TRUE                                                         FALSE  not us, fails tests over paws.common
+ 9:     ROKET     0     0    14       <NA>          FALSE   1.0.0        TRUE         FALSE                                'smarter', 'MiRKAT'         NA
+10:     SMASH     0     0    15       <NA>          FALSE   1.0.0        TRUE         FALSE                                          ‘smarter’         NA
+11: symengine     4     7     2 2025-03-20          FALSE   0.2.6        TRUE          TRUE                                                         FALSE  not us (?), boost, fails at CRAN too
+12:      tall     0     0    14       <NA>          FALSE   0.1.0        TRUE         FALSE   'textrank', 'sparkline', 'readtext', 'ldatuning'         NA
+13:      TSLA     0     0    15       <NA>          FALSE   0.1.1        TRUE          TRUE                                                         FALSE  not us, known RcppArmadillo issue
