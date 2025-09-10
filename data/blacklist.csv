@@ -12,7 +12,7 @@ gpuR,requires_cuda
 #hBayesDM,excessive_ram_requirements
 hmi,spurious_imports
 humarray,requires_unavailable_packages
-joineRML,runaway_test
+#joineRML,runaway_test (now about 9min)
 joinXL,spurious_imports
 kmcudaR,requires_cuda
 #now ok: LANDD,requires_GOstats
@@ -128,9 +128,9 @@ disk.frame,depends on arrow which is not installed
 # 2023-04-11
 move,fails recurrently
 RavenR,fails recurrently
-regmed,fails recurrently
+# regmed,fails recurrently -- now fine
 rlibkriging,fails to build under ccache
-stpm,fails recurrently
+# stpm,fails recurrently -- now file
 ProFAST,heavy depends incl BioC
 highs,fails when ccache is set fine otherwise
 # 2023-07-02 digest
@@ -175,7 +175,7 @@ bmggum,61.6499748587608
 pcFactorStan,61.2702071666718
 bmstdr,58.4675608476003
 # 2025-04-24
-prioriactions,wants gurobi
+#prioriactions,wants gurobi
 # 2025-05-26
 geocodebr,wants arrow
 HiCociety,wants large BioC data pkg
