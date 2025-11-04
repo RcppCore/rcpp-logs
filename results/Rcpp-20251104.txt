@@ -1,0 +1,52 @@
+Test of Rcpp 1.1.0.5 had 34 successes, 36 failures, and 47 skipped packages. 
+Ran from 2025-11-04 12:58:12.83 to 2025-11-04 14:13:44.64 for 1.259 hours 
+Average of 38.733 secs relative to 220.264 secs using 6 runners
+
+Failed packages:  bayesAB, BayesProject, benchr, BGVAR, coga, comat, cpr, dqrng, empichar, gapfill, GeneralizedWendland, ggiraph, gppm, infocausality, IOHanalyzer, itp, locStra, LOMAR, meteoland, mmrm, mwcsr, o2plsda, ravetools, RcppSimdJson, rrum, RTMB, rucrdtw, s2, SAM, sf, simcdm, TDA, tidynorm, updog, VIC5, windfarmGA 
+
+Skipped packages:  abn, bayeslist, bigrquerystorage, blavaan, bmggum, bmstdr, cbq, chouca, clrng, Crossover, DataVisualizations, dipsaus, disk.frame, EcoEnsemble, FlexReg, geocodebr, gpuR, HiCociety, highs, joinXL, KeyboardSimulator, MatchIt, mlpack, move, multinma, networkscaleup, OpenMx, pcFactorStan, pema, ProbBreed, ProFAST, profoc, psBayesborrow, RavenR, RcppPlanc, Rfast, Rlgt, rliger, rmBayes, rstanarm, rts2, SelfControlledCaseSeries, sparkwarc, spatialGE, starvz, tiledb, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+                package error  note    ok   deadline hasOtherIssues  version hasCheckLog hasInstallLog missingPkg badInstall
+                 <char> <int> <int> <int>     <char>         <lgcl>   <char>      <lgcl>        <lgcl>     <char>     <lgcl>
+ 1:             bayesAB     9     4     0 2025-10-31          FALSE    1.1.3        TRUE          TRUE                 FALSE
+ 2:        BayesProject     0     4     9       <NA>          FALSE      1.0        TRUE          TRUE                  TRUE  RcppEigen compilation issue?
+ 3:              benchr     9     4     0 2025-10-31          FALSE    0.2.5        TRUE          TRUE                 FALSE
+ 4:               BGVAR     0     3    10       <NA>          FALSE    2.5.9        TRUE          TRUE                 FALSE  Aborted, likely fixed by compileAttributes
+ 5:                coga     0     0    13       <NA>          FALSE    1.2.2        TRUE          TRUE                 FALSE  Aborted, likely fixed by compileAttributes
+ 6:               comat     0     0    13       <NA>          FALSE    0.9.6        TRUE          TRUE                 FALSE  Aborted, likely fixed by compileAttributes
+ 7:                 cpr     0     2    11       <NA>          FALSE    0.4.0        TRUE          TRUE                 FALSE  identical(class(x), c("simpleError", "error", "condition")) is not TRUE
+ 8:               dqrng     0     0    13       <NA>          FALSE    0.4.1        TRUE          TRUE                 FALSE  Aborted, likely fixed by compileAttributes
+ 9:            empichar     0     0    13       <NA>          FALSE    1.0.1        TRUE          TRUE                 FALSE  Aborted, likely fixed by compileAttributes
+10:             gapfill     9     4     0 2025-10-31          FALSE  0.9.6-1        TRUE          TRUE                 FALSE
+11: GeneralizedWendland     0     2    11       <NA>          FALSE    0.6.1        TRUE          TRUE                  TRUE  RcppEigen compilation issue?
+12:             ggiraph     0     2    11       <NA>          FALSE    0.9.2        TRUE          TRUE                 FALSE  Aborted, likely fixed by compileAttributes
+13:                gppm     9     4     0 2025-10-31          FALSE    0.3.0        TRUE          TRUE                 FALSE
+14:       infocausality    NA    NA    NA       <NA>             NA      1.0        TRUE          TRUE                 FALSE  sf related?
+15:         IOHanalyzer     9     2     2 2025-11-04          FALSE 0.1.8.10        TRUE          TRUE                 FALSE
+16:                 itp     0     0    13       <NA>          FALSE    1.2.1        TRUE          TRUE                 FALSE  Aborted, likely fixed by compileAttributes  
+17:             locStra     0     4     9       <NA>          FALSE      1.9        TRUE          TRUE                  TRUE  RcppEigen compilation issue?
+18:               LOMAR     0     2    11       <NA>          FALSE    0.5.0        TRUE          TRUE                  TRUE  compilation error from Pragma (?) or Boost interaction? header reorder? Rf remap?
+19:           meteoland     0     0    13       <NA>          FALSE    2.2.3        TRUE          TRUE                 FALSE  unclear, crashed in parallel test code?
+20:                mmrm     0     3    10       <NA>          FALSE   0.3.15        TRUE          TRUE                  TRUE  compilation error, header reorder? Rf remap?
+21:               mwcsr     9     2     2 2025-11-04          FALSE    0.1.9        TRUE          TRUE                 FALSE
+22:             o2plsda     8     0     5 2025-10-31          FALSE   0.0.25        TRUE          TRUE                 FALSE
+23:           ravetools     0     2    11       <NA>          FALSE    0.2.4        TRUE          TRUE                 FALSE  Aborted, likely fixed by compileAttributes
+24:        RcppSimdJson     0     3    10       <NA>          FALSE   0.1.14        TRUE          TRUE                 FALSE  Aborted, likely fixed by compileAttributes
+25:                rrum     0     0    13       <NA>          FALSE    0.2.2        TRUE          TRUE                 FALSE  Aborted, likely fixed by compileAttributes
+26:                RTMB     0     3    10       <NA>          FALSE      1.8        TRUE          TRUE                 FALSE  Aborted, likely fixed by compileAttributes
+27:             rucrdtw     0     0    12       <NA>          FALSE    0.1.6        TRUE          TRUE                 FALSE  Aborted, likely fixed by compileAttributes
+28:                  s2     0     3     8       <NA>          FALSE    1.1.9        TRUE          TRUE                 FALSE  Aborted, likely fixed by compileAttributes
+29:                 SAM     0    13     0       <NA>          FALSE    1.1.3        TRUE          TRUE                  TRUE  RcppEigen compilation issue?
+30:                  sf     0     5     8       <NA>          FALSE   1.0-21        TRUE          TRUE                 FALSE  Aborted, likely fixed by compileAttributes
+31:              simcdm     0     0    13       <NA>          FALSE    0.1.2        TRUE          TRUE                 FALSE  Aborted, likely fixed by compileAttributes
+32:                 TDA     0     5     8       <NA>          FALSE    1.9.4        TRUE          TRUE                  TRUE  RcppEigen compilation issue?
+33:            tidynorm     0     0    13       <NA>          FALSE    0.4.0        TRUE          TRUE                 FALSE  ggplot2 4.0.0 repurcussion?
+34:               updog     0     0    13       <NA>          FALSE    2.1.6        TRUE          TRUE                 FALSE  Aborted, likely fixed by compileAttributes
+35:                VIC5     0    13     0       <NA>          FALSE    0.2.6        TRUE          TRUE                  TRUE  Rf_error issue, header reorder or Rf remap?
+36:          windfarmGA     9     0     4 2025-10-31          FALSE    4.0.0        TRUE          TRUE                 FALSE
+                package error  note    ok   deadline hasOtherIssues  version hasCheckLog hasInstallLog missingPkg badInstall
