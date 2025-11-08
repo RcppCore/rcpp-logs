@@ -31,8 +31,8 @@ Error summary:
 16:                 itp     0     0    13       <NA>          FALSE    1.2.1        TRUE          TRUE                 FALSE  Aborted, likely fixed by compileAttributes  
 17:             locStra     0     4     9       <NA>          FALSE      1.9        TRUE          TRUE                  TRUE  [needs patch] RcppEigen compilation issue?
 18:               LOMAR     0     2    11       <NA>          FALSE    0.5.0        TRUE          TRUE                  TRUE  [small patch] compilation error from Pragma (?) or Boost interaction? header reorder? Rf remap?
-19:           meteoland     0     0    13       <NA>          FALSE    2.2.3        TRUE          TRUE                 FALSE  unclear, crashed in parallel test code?
-20:                mmrm     0     3    10       <NA>          FALSE   0.3.15        TRUE          TRUE                  TRUE  [still unclear, small patch, redefine error macro] compilation error, header reorder? Rf remap?
+19:           meteoland     0     0    13       <NA>          FALSE    2.2.3        TRUE          TRUE                 FALSE  [works with -DRCPP_NO_MASK_RF_ERROR] unclear, crashed in parallel test code?
+20:                mmrm     0     3    10       <NA>          FALSE   0.3.15        TRUE          TRUE                  TRUE  [works with -DRCPP_NO_MASK_RF_ERROR; still unclear, small patch, redefine error macro] compilation error, header reorder? Rf remap?
 21:               mwcsr     9     2     2 2025-11-04          FALSE    0.1.9        TRUE          TRUE                 FALSE
 22:             o2plsda     8     0     5 2025-10-31          FALSE   0.0.25        TRUE          TRUE                 FALSE
 23:           ravetools     0     2    11       <NA>          FALSE    0.2.4        TRUE          TRUE                 FALSE  Aborted, likely fixed by compileAttributes
@@ -47,6 +47,6 @@ Error summary:
 32:                 TDA     0     5     8       <NA>          FALSE    1.9.4        TRUE          TRUE                  TRUE  [needs patch] RcppEigen compilation issue?
 33:            tidynorm     0     0    13       <NA>          FALSE    0.4.0        TRUE          TRUE                 FALSE  ggplot2 4.0.0 repurcussion?
 34:               updog     0     0    13       <NA>          FALSE    2.1.6        TRUE          TRUE                 FALSE  Aborted, likely fixed by compileAttributes
-35:                VIC5     0    13     0       <NA>          FALSE    0.2.6        TRUE          TRUE                  TRUE  [needs work] Rf_error issue, header reorder or Rf remap?
+35:                VIC5     0    13     0       <NA>          FALSE    0.2.6        TRUE          TRUE                  TRUE  [works with -DRCPP_NO_MASK_RF_ERROR, else needs work] Rf_error issue, header reorder or Rf remap?
 36:          windfarmGA     9     0     4 2025-10-31          FALSE    4.0.0        TRUE          TRUE                 FALSE
                 package error  note    ok   deadline hasOtherIssues  version hasCheckLog hasInstallLog missingPkg badInstall
