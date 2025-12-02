@@ -1,0 +1,33 @@
+Test of Rcpp 1.1.0.6.1 had 3052 successes, 18 failures, and 44 skipped packages. 
+Ran from 2025-11-29 09:31:37.42 to 2025-12-01 13:23:06.71 for 2.161 days 
+Average of 59.952 secs relative to 355.127 secs using 7 runners
+
+Failed packages:  cgmguru, CPAT, dartR.sim, gapfill, geomander, mapdeck, PDEnaiveBayes, phenofit, prome, rags2ridges, riemtan, scorematchingad, SelectBoost.gamlss, simstudy, ssdtools, TestDesign, vws, XYomics 
+
+Skipped packages:  abn, bayeslist, bigrquerystorage, blavaan, bmggum, bmstdr, cbq, chouca, Crossover, DataVisualizations, dipsaus, disk.frame, EcoEnsemble, FlexReg, HiCociety, highs, joinXL, KeyboardSimulator, MatchIt, mlpack, move, multinma, networkscaleup, OpenMx, pcFactorStan, pema, ProbBreed, profoc, ProFAST, psBayesborrow, RavenR, RcppPlanc, Rfast, Rlgt, rliger, rmBayes, rstanarm, rts2, SelfControlledCaseSeries, sparkwarc, spatialGE, starvz, tiledb, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+               package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog                    missingPkg badInstall
+                <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>                        <char>     <lgcl>
+ 1:            cgmguru     0     2    11       <NA>           TRUE   0.1.0        TRUE          TRUE                        ‘iglu’         NA  passes once installed
+ 2:               CPAT     9     0     4 2025-12-11          FALSE   0.1.0        TRUE          TRUE                                    FALSE  fails at CRAN, has deadline
+ 3:          dartR.sim     2     1    10       <NA>          FALSE    0.71        TRUE         FALSE                ‘dartR.popgen’         NA  passes once installed
+ 4:            gapfill     9     4     0 2025-12-01          FALSE 0.9.6-1        TRUE          TRUE                                    FALSE  fails at CRAN, has deadline
+ 5:          geomander     5     0     8 2025-12-12           TRUE   2.5.0        TRUE          TRUE                                    FALSE  fails at CRAN, has deadline
+ 6:            mapdeck     1     8     4       <NA>          FALSE   0.3.6        TRUE         FALSE                                       NA  needs newer 'colourvalues', 'spatialwidget'
+ 7:      PDEnaiveBayes     0     0    11       <NA>          FALSE   0.2.8        TRUE         FALSE 'DatabionicSwarm', 'memshare'         NA  passes once installed
+ 8:           phenofit     9     0     4 2025-12-11          FALSE  0.3.10        TRUE          TRUE                                    FALSE  fails at CRAN, has deadline
+ 9:              prome     0     3    10       <NA>          FALSE 3.0.1.5        TRUE         FALSE                          ‘BI’         NA  passes once installed
+10:        rags2ridges     7     2     4       <NA>          FALSE   2.2.9        TRUE          TRUE                                    FALSE  spurious?
+11:            riemtan     0     2    11       <NA>          FALSE   0.2.5        TRUE         FALSE                       ‘arrow’         NA  will block as we cannot install arrow ...
+12:    scorematchingad     5     3     5       <NA>          FALSE   0.1.6        TRUE          TRUE                                    FALSE  spurious?
+13: SelectBoost.gamlss     0     0    11       <NA>          FALSE   0.2.2        TRUE         FALSE                 ‘SelectBoost’         NA  passes once installed
+14:           simstudy     0     0    13       <NA>          FALSE   0.9.0        TRUE          TRUE                                    FALSE  spurious?
+15:           ssdtools     5     3     5       <NA>          FALSE   2.5.0        TRUE          TRUE                                    FALSE  spurious?
+16:         TestDesign     0     3    10       <NA>          FALSE   1.7.0        TRUE          TRUE                                    FALSE  also fails with CRAN Rcpp, possible local issue with 'high'
+17:                vws     0     0    13       <NA>          FALSE   0.3.0        TRUE         FALSE                        ‘fntl’         NA  passes once installed
+18:            XYomics     4     0     8       <NA>          FALSE   0.1.1        TRUE         FALSE                  ‘ReactomePA’         NA  passes once installed
