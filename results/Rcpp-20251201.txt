@@ -1,0 +1,23 @@
+Test of Rcpp 1.1.0.6.1 had 17 successes, 8 failures, and 44 skipped packages. 
+Ran from 2025-12-01 17:26:41.41 to 2025-12-01 18:09:07.78 for 42.439 mins 
+Average of 36.904 secs relative to 123.498 secs using 6 runners
+
+Failed packages:  CPAT, gapfill, geomander, phenofit, PSPI, riemtan, TestDesign, XYomics 
+
+Skipped packages:  abn, bayeslist, bigrquerystorage, blavaan, bmggum, bmstdr, cbq, chouca, Crossover, DataVisualizations, dipsaus, disk.frame, EcoEnsemble, FlexReg, HiCociety, highs, joinXL, KeyboardSimulator, MatchIt, mlpack, move, multinma, networkscaleup, OpenMx, pcFactorStan, pema, ProbBreed, ProFAST, profoc, psBayesborrow, RavenR, RcppPlanc, Rfast, Rlgt, rliger, rmBayes, rstanarm, rts2, SelfControlledCaseSeries, sparkwarc, spatialGE, starvz, tiledb, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+      package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog   missingPkg badInstall
+       <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>       <char>     <lgcl>
+1:       CPAT     9     0     4 2025-12-11          FALSE   0.1.0        TRUE          TRUE                   FALSE  fails at CRAN, has deadline
+2:    gapfill     9     4     0 2025-12-01          FALSE 0.9.6-1        TRUE          TRUE                   FALSE  fails at CRAN, has deadline
+3:  geomander     5     0     8 2025-12-12           TRUE   2.5.0        TRUE          TRUE                   FALSE  fails at CRAN, has deadline
+4:   phenofit     9     0     4 2025-12-11          FALSE  0.3.10        TRUE          TRUE                   FALSE  fails at CRAN, has deadline
+5:       PSPI     0     2     2 2025-12-15           TRUE     1.1        TRUE         FALSE         ‘pg’         NA  passes once installed
+6:    riemtan     0     2    11       <NA>          FALSE   0.2.5        TRUE         FALSE      ‘arrow’         NA  will block as we cannot install arrow ...  
+7: TestDesign     0     3    10       <NA>          FALSE   1.7.0        TRUE          TRUE                   FALSE  also fails with CRAN Rcpp, possible local issue with 'high'
+8:    XYomics     4     0     8       <NA>          FALSE   0.1.1        TRUE         FALSE ‘ReactomePA’         NA  passes once installed
