@@ -1,0 +1,34 @@
+Test of Rcpp 1.1.0.9 had 3051 successes, 19 failures, and 45 skipped packages. 
+Ran from 2025-12-10 18:43:23.37 to 2025-12-12 22:40:50.44 for 2.165 days 
+Average of 60.047 secs relative to 358.191 secs using 6 runners
+
+Failed packages:  CausalGPS, cifmodeling, CPAT, Cyclops, exametrika, geomander, GPCERF, immunarch, ldmppr, lime, MSclassifR, personalized2part, phenofit, RTL, RWDataPlyr, Seurat, TestDesign, TrialEmulation, VIM 
+
+Skipped packages:  abn, bayeslist, bigrquerystorage, blavaan, bmggum, bmstdr, cbq, chouca, Crossover, DataVisualizations, dipsaus, disk.frame, EcoEnsemble, FlexReg, HiCociety, highs, joinXL, KeyboardSimulator, MatchIt, mlpack, move, multinma, networkscaleup, OpenMx, pcFactorStan, pema, ProbBreed, ProFAST, profoc, psBayesborrow, RavenR, RcppPlanc, Rfast, riemtan, Rlgt, rliger, rmBayes, rstanarm, rts2, SelfControlledCaseSeries, sparkwarc, spatialGE, starvz, tiledb, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+              package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog          missingPkg badInstall
+               <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>              <char>     <lgcl>
+ 1:         CausalGPS     8     0     5 2025-12-22           TRUE   0.5.0        TRUE          TRUE                          FALSE  fails at CRAN, has deadline
+ 2:       cifmodeling     0     2     9 2025-12-18           TRUE   0.9.4        TRUE         FALSE         ‘ggsurvfit’         NA  fails at CRAN, has deadline
+ 3:              CPAT     9     0     4 2025-12-11          FALSE   0.1.0        TRUE          TRUE                          FALSE  fails at CRAN, has deadline
+ 4:           Cyclops     0     2    11       <NA>          FALSE   3.6.0        TRUE          TRUE            'duckdb'         NA
+ 5:        exametrika     1     0    12       <NA>          FALSE   1.8.0        TRUE          TRUE                          FALSE  spurious, passes on re-run
+ 6:         geomander     4     0     9       <NA>          FALSE   2.5.2        TRUE          TRUE                          FALSE  local to package, download error
+ 7:            GPCERF     8     0     5 2025-12-22           TRUE   0.2.4        TRUE          TRUE                          FALSE  fails at CRAN, has deadline
+ 8:         immunarch     0     2    11       <NA>          FALSE  0.10.3        TRUE          TRUE                           TRUE  needs duckdb
+ 9:            ldmppr     8     0     5 2025-12-22          FALSE   1.0.4        TRUE          TRUE                          FALSE  fails at CRAN, has deadline
+10:              lime     3     0    10       <NA>          FALSE   0.5.4        TRUE          TRUE                          FALSE  fails similarly at CRAN
+11:        MSclassifR     1     1    11       <NA>          FALSE   0.5.0        TRUE         FALSE 'cp4p', 'MALDIrppa'         NA
+12: personalized2part     8     5     0 2025-12-18          FALSE   0.0.1        TRUE          TRUE                           TRUE  fails at CRAN, has deadline
+13:          phenofit     9     0     4 2025-12-11          FALSE  0.3.10        TRUE          TRUE                          FALSE  fails at CRAN, has deadline
+14:               RTL     0     0    13       <NA>          FALSE   1.3.7        TRUE          TRUE                           TRUE  needs arrow
+15:        RWDataPlyr     0     0    13       <NA>          FALSE   0.6.5        TRUE          TRUE                          FALSE  unclear, 'illegal instruction'
+16:            Seurat     3     3     7       <NA>          FALSE   5.3.1        TRUE          TRUE                          FALSE  fails similarly at CRAN, needs SeuratObject
+17:        TestDesign     1     3     9       <NA>          FALSE   1.7.0        TRUE          TRUE                          FALSE  also fails with CRAN Rcpp, possible local issue with 'highs'
+18:    TrialEmulation     0     0    13       <NA>          FALSE 0.0.4.8        TRUE         FALSE            ‘duckdb’         NA
+19:               VIM     8     2     3 2025-12-22          FALSE   6.2.6        TRUE          TRUE                          FALSE  fails at CRAN, has deadline
