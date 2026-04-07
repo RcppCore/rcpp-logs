@@ -1,0 +1,21 @@
+Test of Rcpp 1.1.1.6.1468 had 3032 successes, 6 failures, and 53 skipped packages. 
+Ran from 2026-04-05 08:23:01.89 to 2026-04-07 12:13:43.49 for 2.16 days 
+Average of 60.382 secs relative to 360.111 secs using 6 runners
+
+Failed packages:  inspectdf, lme4, robscale, TreeDist, TreeSearch, TreeTools 
+
+Skipped packages:  abn, agcounts, bayeslist, bigrquerystorage, blavaan, bmggum, bmstdr, cbq, chouca, CLVTools, Crossover, DataVisualizations, dipsaus, eam, EcoEnsemble, fEGarch, FlexReg, highs, joineRML, joinXL, KeyboardSimulator, MatchIt, mlpack, move, multinma, networkscaleup, OpenMx, pcFactorStan, pema, ProbBreed, ProFAST, profoc, psBayesborrow, RavenR, RcppPlanc, Rfast, riemtan, Rlgt, rlibkriging, rliger, rmBayes, rstanarm, RTL, rts2, RWDataPlyr, SelfControlledCaseSeries, Seurat, spatialGE, starvz, TestDesign, tidynorm, tiledb, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+      package error  note    ok   deadline hasOtherIssues  version hasCheckLog hasInstallLog missingPkg badInstall
+       <char> <int> <int> <int>     <char>         <lgcl>   <char>      <lgcl>        <lgcl>     <char>     <lgcl>
+1:  inspectdf    10     0     4 2026-04-08          FALSE 0.0.12.1        TRUE          TRUE                 FALSE  also fails at CRAN
+2:       lme4     2     8     4       <NA>          FALSE    2.0-1        TRUE          TRUE                 FALSE  likely upstream, failed before
+3:   robscale     0     2    12       <NA>          FALSE    0.5.4        TRUE          TRUE                 FALSE  single test failing, as before
+4:   TreeDist     0     3    11       <NA>          FALSE   2.12.0        TRUE          TRUE                 FALSE  failed before, also fails with CRAN Rcpp
+5: TreeSearch     0     3    11       <NA>          FALSE    1.7.0        TRUE          TRUE                 FALSE  failed before, also fails with CRAN Rcpp
+6:  TreeTools     0     1    11       <NA>          FALSE    2.2.0        TRUE          TRUE                 FALSE  failed before, also fails with CRAN Rcpp
