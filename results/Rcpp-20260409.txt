@@ -1,0 +1,27 @@
+Test of Rcpp 1.1.1.8.1471 had 3031 successes, 13 failures, and 53 skipped packages. 
+Ran from 2026-04-09 19:24:33.40 to 2026-04-11 23:21:05.82 for 2.164 days 
+Average of 60.379 secs relative to 360.174 secs using 6 runners
+
+Failed packages:  gdalraster, ieTest, inspectdf, lme4, localScore, midnight, robscale, scellpam, sorcering, statgenIBD, TreeDist, TreeSearch, TreeTools 
+
+Skipped packages:  abn, agcounts, bayeslist, bigrquerystorage, blavaan, bmggum, bmstdr, cbq, chouca, CLVTools, Crossover, DataVisualizations, dipsaus, eam, EcoEnsemble, fEGarch, FlexReg, highs, joineRML, joinXL, KeyboardSimulator, MatchIt, mlpack, move, multinma, networkscaleup, OpenMx, pcFactorStan, pema, ProbBreed, ProFAST, profoc, psBayesborrow, RavenR, RcppPlanc, Rfast, riemtan, Rlgt, rlibkriging, rliger, rmBayes, rstanarm, RTL, rts2, RWDataPlyr, SelfControlledCaseSeries, Seurat, spatialGE, starvz, TestDesign, tidynorm, tiledb, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+       package error  note    ok deadline hasOtherIssues version hasCheckLog hasInstallLog missingPkg badInstall
+        <char> <int> <int> <int>   <char>         <lgcl>  <char>      <lgcl>        <lgcl>     <char>     <lgcl>
+ 1: gdalraster     0     4    10     <NA>          FALSE   2.5.0        TRUE          TRUE                  TRUE  issue with Nullable::operatorT()
+ 2:     ieTest     0     0    14     <NA>          FALSE     2.0        TRUE          TRUE                  TRUE  issue with Nullable::operatorT()
+ 3:       lme4     2     5     7     <NA>          FALSE   2.0-1        TRUE          TRUE                 FALSE  likely upstream, failed before
+ 4: localScore     1     2    11     <NA>          FALSE   2.0.3        TRUE          TRUE                  TRUE  issue with Nullable::operatorT()
+ 5:   midnight     0     1     8     <NA>          FALSE   0.2.0        TRUE         FALSE     ‘midr’         NA  passes once installed
+ 6:   robscale     0     2    12     <NA>          FALSE   0.5.4        TRUE          TRUE                 FALSE  single test failing, as before 
+ 7:   scellpam     0     3    11     <NA>          FALSE 1.4.6.2        TRUE          TRUE                  TRUE  issue with Nullable::operatorT()
+ 8:  sorcering     0     3    11     <NA>          FALSE   1.2.2        TRUE          TRUE                  TRUE  issue with Nullable::operatorT()
+ 9: statgenIBD     0     4    10     <NA>          FALSE  1.0.10        TRUE          TRUE                  TRUE  issue with Nullable::operatorT()
+10:   TreeDist     0     3    11     <NA>          FALSE  2.12.0        TRUE          TRUE                 FALSE  failed before, also fails with CRAN Rcpp
+11: TreeSearch     0     3    11     <NA>          FALSE   1.7.0        TRUE          TRUE                 FALSE  failed before, also fails with CRAN Rcpp
+12:  TreeTools     0     1    11     <NA>          FALSE   2.2.0        TRUE          TRUE                 FALSE  failed before, also fails with CRAN Rcpp
