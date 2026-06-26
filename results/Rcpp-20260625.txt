@@ -1,0 +1,33 @@
+Test of Rcpp 1.1.1.12.1 had 18 successes, 18 failures, and 56 skipped packages. 
+Ran from 2026-06-25 23:46:00.27 to 2026-06-26 00:18:31.19 for 32.515 mins 
+Average of 21.206 secs relative to 107.189 secs using 6 runners
+
+Failed packages:  cgmguru, CVXR, EFAtools, ipaddress, lme4, mergeGridR, mums2, mvalpha, QuantileModels, RestRserve, robscale, SpaDES.tools, sport, strollur, TreeDist, TreeSearch, TreeTools, Waypoint 
+
+Skipped packages:  abn, agcounts, bayeslist, bigrquerystorage, blavaan, bmggum, bmstdr, cbq, chouca, CLVTools, Crossover, DataVisualizations, dbMatrix, dipsaus, eam, EcoEnsemble, fEGarch, FlexReg, greenR, highs, joineRML, joinXL, KeyboardSimulator, MatchIt, mlpack, move, multinma, networkscaleup, OpenMx, pcFactorStan, pema, ProbBreed, ProFAST, profoc, psBayesborrow, QsRutils, RavenR, RcppPlanc, Rfast, riemtan, Rlgt, rlibkriging, rliger, rmBayes, rstanarm, RTL, rts2, RWDataPlyr, SelfControlledCaseSeries, Seurat, spatialGE, starvz, TestDesign, tidynorm, tiledb, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+           package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog missingPkg badInstall oldRcppExports callsRfError
+            <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>     <char>     <lgcl>         <lgcl>       <lgcl>
+ 1:        cgmguru     2     0    11       <NA>          FALSE   1.1.0        TRUE          TRUE                 FALSE          FALSE        FALSE  frail tests? also 2 fails at 2 CRAN machines
+ 2:           CVXR     0     0    13       <NA>          FALSE   1.9.1        TRUE          TRUE                 FALSE          FALSE        FALSE  illegal operation, machine too old?
+ 3:       EFAtools     9     0     4 2026-07-10          FALSE   0.7.1        TRUE          TRUE                 FALSE          FALSE        FALSE  nine issues at CRAN, deadline
+ 4:      ipaddress     0     0    13       <NA>          FALSE   1.0.3        TRUE          TRUE                 FALSE          FALSE        FALSE  needs 'bignum', passes once installed
+ 5:           lme4     1     0    12       <NA>          FALSE   2.0-1        TRUE          TRUE                 FALSE          FALSE        FALSE  one (?) numeric issue, possibly spurious?
+ 6:     mergeGridR     1     0     8       <NA>          FALSE   0.2.0        TRUE         FALSE  ‘ggWebGL’         NA             NA           NA  passes once installed
+ 7:          mums2     0     0    13       <NA>           TRUE   0.1.1        TRUE         FALSE     ‘RaMS’         NA             NA           NA  passes once installed
+ 8:        mvalpha     0     0    13 2026-06-30           TRUE   0.6.0        TRUE          TRUE                  TRUE          FALSE        FALSE  known upstream issue we PR'ed
+ 9: QuantileModels     0     0     7       <NA>          FALSE   1.0.0        TRUE         FALSE   ‘ufRisk’         NA             NA           NA  passes once installed
+10:     RestRserve     0     2    11       <NA>          FALSE   1.2.4        TRUE          TRUE                  TRUE          FALSE        FALSE  AttributeProxy.get__() issues -- New
+11:       robscale     0     0    13       <NA>          FALSE   0.5.4        TRUE          TRUE                 FALSE          FALSE        FALSE  needs 'revss', still one (spurious?) fail
+12:   SpaDES.tools     0     0    13       <NA>          FALSE   2.1.1        TRUE          TRUE                  TRUE          FALSE        FALSE  needs 'lobstr' reinstalled, passes once done
+13:          sport     0     0    13       <NA>          FALSE   0.2.2        TRUE          TRUE                 FALSE          FALSE        FALSE  needs 'lobstr' reinstalled, passes once done
+14:       strollur     0     0     8       <NA>           TRUE   0.1.2        TRUE         FALSE    ‘rbiom’         NA             NA           NA  passes once installed
+15:       TreeDist     0     0    13       <NA>          FALSE  2.14.1        TRUE          TRUE                 FALSE          FALSE        FALSE  not new, failed previously
+16:     TreeSearch     1     0    12       <NA>          FALSE   1.7.0        TRUE          TRUE                 FALSE          FALSE        FALSE  not new, failed previously
+17:      TreeTools     0     0    12       <NA>          FALSE   2.4.0        TRUE          TRUE                 FALSE          FALSE        FALSE  not new, failed previously
+18:       Waypoint     4     0     9       <NA>          FALSE   1.3.1        TRUE          TRUE                  TRUE          FALSE        FALSE  CRAN issues, needs C++20 without declaring it?
