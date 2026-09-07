@@ -1,0 +1,27 @@
+Test of Rcpp 1.1.2.3 had 9 successes, 12 failures, and 56 skipped packages. 
+Ran from 2026-09-07 09:52:13.97 to 2026-09-07 10:22:42.55 for 30.476 mins 
+Average of 23.748 secs relative to 46.421 secs using 2 runners
+
+Failed packages:  artma, cgmguru, CVXR, netdiffuseR, postlink, RcppFastAD, robscale, TreeDist, TreeSearch, TreeTools, vol2birdR, zarr 
+
+Skipped packages:  abn, agcounts, bayeslist, bigrquerystorage, bmggum, blavaan, bmstdr, cbq, chouca, CLVTools, Crossover, DataVisualizations, dbMatrix, dipsaus, eam, EcoEnsemble, fEGarch, FlexReg, greenR, highs, joineRML, joinXL, KeyboardSimulator, MatchIt, mlpack, move, multinma, networkscaleup, OpenMx, pcFactorStan, pema, ProbBreed, ProFAST, profoc, psBayesborrow, QsRutils, RavenR, RcppPlanc, Rfast, riemtan, Rlgt, rlibkriging, rliger, rmBayes, rstanarm, RTL, rts2, SelfControlledCaseSeries, RWDataPlyr, Seurat, starvz, spatialGE, TestDesign, tiledb, tidynorm, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+        package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog missingPkg badInstall oldRcppExports callsRfError
+         <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>     <char>     <lgcl>         <lgcl>       <lgcl>
+ 1:       artma     1     0    12       <NA>          FALSE   0.4.1        TRUE         FALSE      ‘box’         NA             NA           NA  'box' gets in the way of testing, should skip
+ 2:     cgmguru     0     0    13       <NA>          FALSE   1.3.0        TRUE          TRUE                 FALSE          FALSE        FALSE  not a regression, failed before
+ 3:        CVXR     0     0    13       <NA>          FALSE   1.9.2        TRUE          TRUE                 FALSE          FALSE        FALSE  not a regression, failed before
+ 4: netdiffuseR     0     0    13       <NA>          FALSE  1.25.0        TRUE          TRUE                 FALSE          FALSE        FALSE  segfault, possible new issue
+ 5:    postlink     0     0    13 2026-09-27           TRUE   0.1.1        TRUE          TRUE                  TRUE          FALSE        FALSE  known upstream issue with rstan
+ 6:  RcppFastAD     0     0    13       <NA>          FALSE   0.0.4        TRUE          TRUE                 FALSE          FALSE        FALSE  segfault, possible new issue
+ 7:    robscale     0     0    13       <NA>          FALSE   0.5.4        TRUE          TRUE                 FALSE          FALSE        FALSE  not a regression, failed before
+ 8:    TreeDist     0     5     8       <NA>          FALSE  2.14.1        TRUE          TRUE                 FALSE          FALSE        FALSE  not a regression, failed before
+ 9:  TreeSearch     1     5     7       <NA>          FALSE   1.7.0        TRUE          TRUE                 FALSE          FALSE        FALSE  not a regression, failed before
+10:   TreeTools     0     5     7       <NA>          FALSE   2.4.0        TRUE          TRUE                 FALSE          FALSE        FALSE  not a regression, failed before
+11:   vol2birdR     4     0     8 2026-09-07           TRUE   1.3.1        TRUE          TRUE                  TRUE          FALSE        FALSE  possibly local with proj, also CRAN deadline
+12:        zarr     0     0    13 2026-09-27           TRUE   0.5.0        TRUE          TRUE                 FALSE          FALSE        FALSE  not us: needs paws.storage for test
