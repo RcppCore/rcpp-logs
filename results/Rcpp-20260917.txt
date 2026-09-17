@@ -1,0 +1,44 @@
+Test of Rcpp 1.1.2.3.2 had 65 successes, 27 failures, and 57 skipped packages. 
+Ran from 2026-09-17 09:02:15.74 to 2026-09-17 10:58:02.59 for 1.93 hours 
+Average of 46.623 secs relative to 209.18 secs using 5 runners
+
+Failed packages:  aRtsy, cgmguru, choicedata, ConsTree, CVXR, ergmito, fingerPro, genpca, geosmooth, GMTM, HistDAWass, ICESat2VegR, imply, lrstat, outliertree, postlink, PROsetta, RcppFastAD, Rfuzzycoco, robscale, sclValid, stpphawkes, TreeDist, TreeSearch, TreeTools, tulpa, xnicher 
+
+Skipped packages:  abn, agcounts, artma, bayeslist, bigrquerystorage, blavaan, bmggum, bmstdr, cbq, chouca, CLVTools, Crossover, DataVisualizations, dbMatrix, dipsaus, eam, EcoEnsemble, fEGarch, FlexReg, greenR, highs, joineRML, joinXL, KeyboardSimulator, MatchIt, mlpack, move, multinma, networkscaleup, OpenMx, pcFactorStan, pema, ProbBreed, ProFAST, profoc, psBayesborrow, QsRutils, RavenR, RcppPlanc, Rfast, riemtan, Rlgt, rlibkriging, rliger, rmBayes, rstanarm, RTL, rts2, RWDataPlyr, SelfControlledCaseSeries, Seurat, spatialGE, starvz, TestDesign, tidynorm, tiledb, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+        package error  note    ok   deadline hasOtherIssues  version hasCheckLog hasInstallLog                  missingPkg badInstall oldRcppExports callsRfError
+         <char> <int> <int> <int>     <char>         <lgcl>   <char>      <lgcl>        <lgcl>                      <char>     <lgcl>         <lgcl>       <lgcl>
+ 1:       aRtsy     0     0    13       <NA>          FALSE    1.0.1        TRUE          TRUE                                   TRUE          FALSE        FALSE  NEW ISSUE: arma::mat to List fails
+ 2:     cgmguru     0     0    13       <NA>          FALSE    1.3.0        TRUE          TRUE                                  FALSE          FALSE        FALSE  not a regression, failed before
+ 3:  choicedata     0     0    13       <NA>          FALSE    0.2.0        TRUE         FALSE                 ‘optimizeR’         NA             NA           NA  passes once installed
+ 4:    ConsTree     0     0    11       <NA>          FALSE    1.0.0        TRUE          TRUE                                  FALSE          FALSE        FALSE  UNCLEAR: 'caught illegal operation'
+ 5:        CVXR     0     0    13       <NA>          FALSE    1.9.2        TRUE          TRUE                                  FALSE          FALSE        FALSE  not a regression, failed before
+ 6:     ergmito     0     0    13       <NA>          FALSE    0.3-2        TRUE          TRUE                                   TRUE          FALSE        FALSE  NEW ISSUE: Rcpp::ListOf fails
+ 7:   fingerPro     0     0    13       <NA>          FALSE      2.1        TRUE          TRUE                                   TRUE          FALSE        FALSE  NEW ISSUE: Rcpp::DataFrame_impl (odd, stop() ?)
+ 8:      genpca     0     0    10       <NA>          FALSE    0.2.1        TRUE         FALSE 'eigencore', 'multivarious'         NA             NA           NA  passes once installed
+ 9:   geosmooth     0     0    11       <NA>          FALSE    0.1.0        TRUE         FALSE                   ‘dgraphs’         NA             NA           NA  passes once installed
+10:        GMTM     0     0    11       <NA>          FALSE    0.1.0        TRUE         FALSE                ‘wordvector’         NA             NA           NA  passes once installed
+11:  HistDAWass     0     0    13       <NA>          FALSE    1.0.8        TRUE          TRUE                                   TRUE          FALSE        FALSE  NEW ISSUE: Rcpp::ListOf fails
+12: ICESat2VegR    10     0     3 2026-10-02          FALSE    0.0.1        TRUE         FALSE       ‘googleCloudStorageR’         NA             NA           NA  not us, CRAN errrors too, deadline
+13:       imply     0     0     7       <NA>          FALSE    0.1.0        TRUE         FALSE                 ‘RcppArray’         NA             NA           NA  passes once installed 
+14:      lrstat     0     0    13       <NA>          FALSE    0.3.4        TRUE          TRUE                                   TRUE          FALSE        FALSE  NEW ISSUE: ‘DataFrameCpp’ to ‘Rcpp::DataFrame
+15: outliertree     0     0    13       <NA>          FALSE 1.10.0-2        TRUE          TRUE                                   TRUE          FALSE        FALSE  NEW ISSUE: Rcpp::ListOf fails
+16:    postlink    12     0     1 2026-09-27           TRUE    0.1.1        TRUE          TRUE                                   TRUE          FALSE        FALSE  not a regression and not us but upstream
+17:    PROsetta     0     0    13       <NA>          FALSE    0.4.2        TRUE         FALSE                ‘TestDesign’         NA             NA           NA  cannot install TestDesign here 'illegeal op'
+18:  RcppFastAD     0     0    13       <NA>          FALSE    0.0.4        TRUE          TRUE                                  FALSE          FALSE        FALSE  not a regression, known gcc-16 optim issue
+19:  Rfuzzycoco     0     0    13       <NA>          FALSE    0.1.0        TRUE          TRUE                                   TRUE          FALSE        FALSE  NEW ISSUE: another Rcpp::DataFrame conversion
+20:    robscale     0     0    13       <NA>          FALSE    0.5.4        TRUE          TRUE                                  FALSE          FALSE        FALSE  not a regression, failed before
+21:    sclValid     0     0    11       <NA>          FALSE    0.1.1        TRUE         FALSE                    ‘RaceID’         NA             NA           NA  passes once installed
+22:  stpphawkes     0     0    13       <NA>          FALSE    0.2.2        TRUE          TRUE                                   TRUE          FALSE        FALSE  NEW ISSUE: same as fingerPro above
+23:    TreeDist     0     0    13       <NA>          FALSE   2.15.0        TRUE          TRUE                                  FALSE          FALSE        FALSE  not a regression, failed before
+24:  TreeSearch     1     5     7       <NA>          FALSE    1.7.0        TRUE          TRUE                                  FALSE          FALSE        FALSE  not a regression, failed before
+25:   TreeTools     0     0    12       <NA>          FALSE    2.4.1        TRUE          TRUE                                  FALSE          FALSE        FALSE  not a regression, failed before
+26:       tulpa     0     0    12 2026-10-02           TRUE    0.2.0        TRUE         FALSE                 ‘tulpaMesh’         NA             NA           NA  passes once installed  
+27:     xnicher     0     0    10       <NA>          FALSE    1.0.0        TRUE          TRUE                                  FALSE          FALSE        FALSE  not us, likely upstream, wants 'pomp'
+        package error  note    ok   deadline hasOtherIssues  version hasCheckLog hasInstallLog                  missingPkg badInstall oldRcppExports callsRfError
+         <char> <int> <int> <int>     <char>         <lgcl>   <char>      <lgcl>        <lgcl>                      <char>     <lgcl>         <lgcl>       <lgcl>
