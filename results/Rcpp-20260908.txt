@@ -1,0 +1,77 @@
+Test of Rcpp 1.1.2.3.1 had 3211 successes, 61 failures, and 56 skipped packages. 
+Ran from 2026-09-08 19:42:40.83 to 2026-09-11 13:04:03.20 for 2.723 days 
+Average of 70.698 secs relative to 422.119 secs using 6 runners
+
+Failed packages:  actigraph.sleepr, adapt3, artma, aRtsy, bnclassify, cayleyR, cgmguru, CVXR, ergmito, estimatr, exif, fingerPro, gdalcubes, gdalraster, geojsonsf, geometries, GLMcat, hibayes, HistDAWass, jmvconnect, lefko3, lrstat, mapdeck, medfate, medfateland, odbc, opencv, openxlsx2, osmdata, outliertree, pathfindR, paws.common, PCMRS, pdglasso, pomdp, postlink, PROsetta, qtl2ggplot, R2sample, Rblpapi, Rborist, RcppArmadillo, RcppCGAL, RcppColMetric, RcppFarmHash, RcppFastAD, read.gt3x, Rfast2, Rfuzzycoco, RITCH, Rmalschains, robscale, rpql, sfheaders, spatialwidget, stpphawkes, TreeDist, TreeSearch, TreeTools, vol2birdR, XDNUTS 
+
+Skipped packages:  abn, agcounts, bayeslist, bigrquerystorage, blavaan, bmggum, bmstdr, cbq, chouca, CLVTools, Crossover, DataVisualizations, dbMatrix, dipsaus, eam, EcoEnsemble, fEGarch, FlexReg, greenR, highs, joineRML, joinXL, KeyboardSimulator, MatchIt, mlpack, move, multinma, networkscaleup, OpenMx, pcFactorStan, pema, ProbBreed, ProFAST, profoc, psBayesborrow, QsRutils, RavenR, RcppPlanc, Rfast, riemtan, Rlgt, rlibkriging, rliger, rmBayes, rstanarm, RTL, rts2, RWDataPlyr, SelfControlledCaseSeries, Seurat, spatialGE, starvz, TestDesign, tidynorm, tiledb, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+             package error  note    ok   deadline hasOtherIssues  version hasCheckLog hasInstallLog   missingPkg badInstall oldRcppExports callsRfError
+              <char> <int> <int> <int>     <char>         <lgcl>   <char>      <lgcl>        <lgcl>       <char>     <lgcl>         <lgcl>       <lgcl>
+ 1: actigraph.sleepr     1     0    12       <NA>          FALSE    0.4.0        TRUE          TRUE                   FALSE          FALSE        FALSE
+ 2:           adapt3     0     2    11       <NA>          FALSE    2.0.9        TRUE          TRUE                    TRUE          FALSE        FALSE
+ 3:            artma     1     0    12       <NA>          FALSE    0.4.1        TRUE         FALSE        ‘box’         NA             NA           NA  'box' gets in the way of testing, should skip
+ 4:            aRtsy     0     0    13       <NA>          FALSE    1.0.1        TRUE          TRUE                    TRUE          FALSE        FALSE
+ 5:       bnclassify     0     0    13       <NA>          FALSE    0.4.8        TRUE          TRUE                    TRUE          FALSE        FALSE
+ 6:          cayleyR     0     0    13       <NA>          FALSE    0.2.6        TRUE          TRUE                    TRUE          FALSE        FALSE
+ 7:          cgmguru     0     0    13       <NA>          FALSE    1.3.0        TRUE          TRUE                   FALSE          FALSE        FALSE  not a regression, failed before
+ 8:             CVXR     0     0    13       <NA>          FALSE    1.9.2        TRUE          TRUE                   FALSE          FALSE        FALSE  not a regression, failed before
+ 9:          ergmito     0     0    13       <NA>          FALSE    0.3-2        TRUE          TRUE                    TRUE          FALSE        FALSE
+10:         estimatr     0     0    13       <NA>          FALSE    2.0.0        TRUE          TRUE                    TRUE          FALSE        FALSE
+11:             exif     0     0    13       <NA>          FALSE    0.1.1        TRUE          TRUE                    TRUE          FALSE        FALSE
+12:        fingerPro     0     0    13       <NA>          FALSE      2.1        TRUE          TRUE                    TRUE          FALSE        FALSE
+13:       gdalraster     4     0     9 2026-09-29          FALSE    2.6.1        TRUE          TRUE                    TRUE          FALSE        FALSE
+14:        geojsonsf     0     0    13       <NA>          FALSE    2.0.5        TRUE          TRUE                    TRUE          FALSE        FALSE
+15:       geometries     0     0    13       <NA>          FALSE    0.2.5        TRUE          TRUE                    TRUE          FALSE        FALSE
+16:           GLMcat     0     0    13       <NA>          FALSE    1.0.0        TRUE          TRUE                    TRUE          FALSE        FALSE
+17:          hibayes     0     0    13       <NA>          FALSE    3.1.0        TRUE          TRUE                    TRUE          FALSE        FALSE
+18:       HistDAWass     0     0    13       <NA>          FALSE    1.0.8        TRUE          TRUE                    TRUE          FALSE        FALSE
+19:       jmvconnect     0     0    13       <NA>          FALSE    2.5.7        TRUE          TRUE                    TRUE          FALSE        FALSE
+20:           lefko3     0     0    13       <NA>          FALSE    6.7.3        TRUE          TRUE                    TRUE          FALSE        FALSE
+21:           lrstat     0     0    13       <NA>          FALSE    0.3.4        TRUE          TRUE                    TRUE          FALSE        FALSE
+22:          mapdeck     0     2    11       <NA>          FALSE    0.3.6        TRUE          TRUE                    TRUE          FALSE        FALSE
+23:          medfate     0     0    13       <NA>          FALSE    5.1.0        TRUE          TRUE                    TRUE          FALSE        FALSE
+24:      medfateland     0     0    13       <NA>          FALSE    3.0.0        TRUE          TRUE                    TRUE          FALSE        FALSE
+25:             odbc     0     0    13       <NA>          FALSE    1.7.1        TRUE          TRUE                    TRUE          FALSE        FALSE
+26:           opencv     0     0    12 2026-10-06           TRUE    0.6.0        TRUE          TRUE                   FALSE          FALSE        FALSE
+27:        openxlsx2     0     0    13       <NA>          FALSE     1.29        TRUE          TRUE                    TRUE          FALSE        FALSE
+28:          osmdata     0     0    13       <NA>          FALSE    0.4.1        TRUE          TRUE                   FALSE          FALSE        FALSE
+29:      outliertree     0     0    13       <NA>          FALSE 1.10.0-2        TRUE          TRUE                    TRUE          FALSE        FALSE
+30:        pathfindR     1     0    12       <NA>          FALSE    3.0.2        TRUE          TRUE                   FALSE          FALSE        FALSE
+31:      paws.common     0     0    13       <NA>          FALSE   0.8.10        TRUE          TRUE                   FALSE          FALSE        FALSE
+32:            PCMRS     0     0    13       <NA>          FALSE    0.1-6        TRUE          TRUE                   FALSE          FALSE        FALSE
+33:         pdglasso     0     0    12       <NA>          FALSE    2.0.1       FALSE         FALSE         <NA>         NA             NA           NA
+34:            pomdp     0     0    13       <NA>          FALSE    1.2.5        TRUE          TRUE                   FALSE          FALSE        FALSE
+35:         postlink    12     0     1 2026-09-27           TRUE    0.1.1        TRUE          TRUE                    TRUE          FALSE        FALSE
+36:         PROsetta     0     0    13       <NA>          FALSE    0.4.2        TRUE         FALSE ‘TestDesign’         NA             NA           NA
+37:       qtl2ggplot     0     0    13       <NA>          FALSE    1.2.6        TRUE          TRUE                   FALSE          FALSE        FALSE
+38:         R2sample     0     0    13       <NA>          FALSE    5.0.0        TRUE          TRUE                   FALSE          FALSE        FALSE
+39:          Rblpapi     0     0    13       <NA>          FALSE   0.3.16        TRUE          TRUE                    TRUE          FALSE        FALSE
+40:          Rborist     0     0    13       <NA>          FALSE   0.3-12        TRUE          TRUE                   FALSE          FALSE        FALSE
+41:    RcppArmadillo     0     0    13       <NA>          FALSE 15.6.0-1        TRUE          TRUE                   FALSE          FALSE        FALSE
+42:         RcppCGAL     0     0    13       <NA>          FALSE    6.2.1        TRUE          TRUE                   FALSE          FALSE        FALSE
+43:    RcppColMetric     0     0    13       <NA>          FALSE    0.1.0        TRUE          TRUE                    TRUE          FALSE        FALSE
+44:     RcppFarmHash     0     0    13       <NA>          FALSE    0.0.4        TRUE          TRUE                   FALSE          FALSE        FALSE
+45:       RcppFastAD     0     0    13       <NA>          FALSE    0.0.4        TRUE          TRUE                   FALSE          FALSE        FALSE
+46:        read.gt3x     0     0    13       <NA>          FALSE    1.2.0        TRUE          TRUE                   FALSE          FALSE        FALSE
+47:           Rfast2     0     0    13       <NA>          FALSE  0.1.5.6        TRUE          TRUE                    TRUE          FALSE        FALSE
+48:       Rfuzzycoco     0     0    13       <NA>          FALSE    0.1.0        TRUE          TRUE                    TRUE          FALSE        FALSE
+49:            RITCH     0     0    13       <NA>           TRUE   0.1.30        TRUE          TRUE                    TRUE          FALSE        FALSE
+50:      Rmalschains     0     0    13       <NA>          FALSE   0.2-12        TRUE          TRUE                   FALSE          FALSE        FALSE
+51:         robscale     0     0    13       <NA>          FALSE    0.5.4        TRUE          TRUE                   FALSE          FALSE        FALSE  not a regression, failed before
+52:             rpql     0     0    13       <NA>          FALSE    0.8.4        TRUE          TRUE                   FALSE          FALSE        FALSE
+53:        sfheaders     0     0    13       <NA>          FALSE    0.4.5        TRUE          TRUE                    TRUE          FALSE        FALSE
+54:    spatialwidget     0     5     8       <NA>          FALSE    0.2.6        TRUE          TRUE                    TRUE          FALSE        FALSE
+55:       stpphawkes     0     0    13       <NA>          FALSE    0.2.2        TRUE          TRUE                    TRUE          FALSE        FALSE
+56:         TreeDist     0     0    13       <NA>          FALSE   2.15.0        TRUE          TRUE                   FALSE          FALSE        FALSE  not a regression, failed before
+57:       TreeSearch     1     5     7       <NA>          FALSE    1.7.0        TRUE          TRUE                   FALSE          FALSE        FALSE  not a regression, failed before
+58:        TreeTools     0     0    12       <NA>          FALSE    2.4.1        TRUE          TRUE                   FALSE          FALSE        FALSE  not a regression, failed before
+59:        vol2birdR     3     0    10       <NA>          FALSE    1.3.2        TRUE          TRUE                    TRUE          FALSE        FALSE
+60:           XDNUTS     0     2    11       <NA>          FALSE    1.6.5        TRUE          TRUE                    TRUE          FALSE        FALSE
+             package error  note    ok   deadline hasOtherIssues  version hasCheckLog hasInstallLog   missingPkg badInstall oldRcppExports callsRfError
+              <char> <int> <int> <int>     <char>         <lgcl>   <char>      <lgcl>        <lgcl>       <char>     <lgcl>         <lgcl>       <lgcl>
