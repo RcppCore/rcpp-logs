@@ -1,0 +1,86 @@
+Test of RcppEigen 0.4.9.9.3 had 472 successes, 69 failures, and 24 skipped packages. 
+Ran from 2026-09-25 15:53:36.95 to 2026-09-26 13:10:41.87 for 21.285 hours 
+Average of 135.619 secs relative to 786.065 secs using 6 runners
+
+Failed packages:  admixr2, AsyPeer, baggr, birdie, bWGR, CDatanet, clustTMB, Colossus, conStruct, crctStepdown, CVXR, DAST, enrichit, FactorHet, fastglm, fastQR, fdaPDE, forestBalance, galamm, gastempt, gedi2, gKRLS, glmmrOptim, gRain, gRbase, gRim, GTEs, historicalborrowlong, hts, intervalpsych, lime, LMMELSM, mcmcsae, MetricGraph, MIRES, mmrm, nebula, ngme2, oem, OncoBayes2, OptimalBinningWoE, piqp, plantmix, postlink, ppforest2, QuantilePeer, Rcppautodiff, RcppFastAD, rmdcev, robCompositions, sanic, serrsBayes, spaMM, SpatialGEV, spGARCH, stan4bart, SteadyStateBVAR, stelfi, surveil, thurstonianIRT, tsgarch, tsissm, tsnet, TwoStepSDFM, ungroup, vglmer, WpProj, xnicher, xrnet 
+
+Skipped packages:  bayeslist, blavaan, bmggum, bmstdr, cbq, dbMatrix, EcoEnsemble, FlexReg, multinma, networkscaleup, OpenMx, pcFactorStan, pema, ProbBreed, psBayesborrow, riemtan, Rlgt, rmBayes, rstanarm, rts2, Seurat, spatialGE, tinyVAST, tulpa 
+
+None still working
+
+None still scheduled
+
+Error summary:
+                 package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog       missingPkg badInstall
+                  <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>           <char>     <lgcl>
+ 1:              admixr2     2     0    11       <NA>          FALSE   0.4.1        TRUE          TRUE                       FALSE  unclear, single test fails
+ 2:              AsyPeer     0     0    13       <NA>          FALSE   0.0.1        TRUE          TRUE                        TRUE  uses Eigen::all, upstream PR filed
+ 3:                baggr     0     5     8       <NA>           TRUE   0.8.2        TRUE          TRUE                       FALSE  unclear, segfault in test
+ 4:               birdie     0     0    13       <NA>          FALSE   0.8.0        TRUE          TRUE                       FALSE  unclear, segfault in test
+ 5:                 bWGR     0     0    13       <NA>          FALSE  2.2.18        TRUE          TRUE                        TRUE  uses Eigen::MappedSparseMatrix, Eigen::all
+ 6:             CDatanet     0     0    13       <NA>          FALSE   2.2.2        TRUE          TRUE                        TRUE
+ 7:             clustTMB     2     0    11       <NA>          FALSE   0.1.0        TRUE          TRUE                        TRUE
+ 8:             Colossus     0     0    13       <NA>          FALSE   1.6.2        TRUE          TRUE                        TRUE
+ 9:            conStruct     0     0    13       <NA>          FALSE   1.0.7        TRUE          TRUE                       FALSE
+10:         crctStepdown     0     0    13       <NA>          FALSE   0.5.2        TRUE          TRUE                        TRUE
+11:                 CVXR     0     0    13       <NA>          FALSE   1.9.2        TRUE          TRUE                       FALSE  not a regression, failed before for Rcpp
+12:                 DAST     0     0    13       <NA>          FALSE   0.1.0        TRUE         FALSE ‘disaggregation’         NA  passes once installed
+13:             enrichit     0     0    13       <NA>          FALSE   0.2.5        TRUE          TRUE                        TRUE
+14:            FactorHet     0     0    13       <NA>          FALSE   1.0.0        TRUE          TRUE                        TRUE
+15:              fastglm     0     0    13       <NA>          FALSE   0.1.2        TRUE          TRUE                        TRUE
+16:               fastQR     0     2    11       <NA>          FALSE   1.1.4        TRUE          TRUE                        TRUE
+17:               fdaPDE     0     0    13       <NA>          FALSE  1.1-24        TRUE          TRUE                        TRUE
+18:        forestBalance     0     0    13       <NA>          FALSE   0.1.0        TRUE          TRUE                        TRUE
+19:               galamm     0     0    13       <NA>          FALSE   0.4.1        TRUE          TRUE                        TRUE
+20:             gastempt     0     0    13       <NA>          FALSE   0.7.0        TRUE          TRUE                       FALSE
+21:                gedi2     0     0    13       <NA>          FALSE   2.3.4        TRUE          TRUE                        TRUE
+22:                gKRLS     0     0    13       <NA>          FALSE   1.0.4        TRUE          TRUE                        TRUE
+23:           glmmrOptim     0     0    13       <NA>          FALSE   0.5.1        TRUE          TRUE                        TRUE
+24:                gRain     0     0    13       <NA>          FALSE   1.4.6        TRUE          TRUE                        TRUE
+25:               gRbase     0     0    13       <NA>          FALSE   2.0.3        TRUE          TRUE                        TRUE
+26:                 gRim     0     0    13       <NA>          FALSE   0.3.4        TRUE          TRUE                        TRUE
+27:                 GTEs     0     0    13       <NA>          FALSE   1.0.0        TRUE          TRUE                        TRUE
+28: historicalborrowlong     0     0    13       <NA>          FALSE   0.1.1        TRUE          TRUE                       FALSE
+29:                  hts     0     0    13       <NA>          FALSE   6.0.3        TRUE          TRUE                        TRUE
+30:        intervalpsych     0     0    13       <NA>          FALSE   0.1.0        TRUE          TRUE                       FALSE
+31:                 lime     0     0    13       <NA>          FALSE   0.5.4        TRUE          TRUE                        TRUE
+32:              LMMELSM     0     2    11       <NA>          FALSE   0.2.1        TRUE          TRUE                       FALSE
+33:              mcmcsae     0     0    13       <NA>          FALSE   0.8.1        TRUE          TRUE                        TRUE
+34:          MetricGraph     0     0    13       <NA>          FALSE   1.6.0        TRUE          TRUE                        TRUE
+35:                MIRES     0     2    11       <NA>          FALSE   0.1.1        TRUE          TRUE                       FALSE
+36:                 mmrm     0     0    13       <NA>          FALSE  0.3.18        TRUE          TRUE                        TRUE
+37:               nebula     0     0    13       <NA>          FALSE   1.5.8        TRUE          TRUE                        TRUE
+38:                ngme2     2     0    11       <NA>           TRUE   0.9.8        TRUE          TRUE                        TRUE
+39:                  oem     0     0    13       <NA>          FALSE  2.0.12        TRUE          TRUE                        TRUE
+40:           OncoBayes2     0     0    13       <NA>          FALSE  0.10-0        TRUE          TRUE                       FALSE
+41:    OptimalBinningWoE     0     0    13       <NA>          FALSE  1.13.5        TRUE          TRUE                        TRUE
+42:                 piqp     0     0    13       <NA>          FALSE   0.6.2        TRUE          TRUE                        TRUE
+43:             plantmix     0     0    13       <NA>          FALSE   1.0.3        TRUE          TRUE                        TRUE
+44:             postlink    13     0     0 2026-09-27           TRUE   0.1.1        TRUE          TRUE                        TRUE  not a regression, failed before for Rcpp
+45:            ppforest2     0     0    13       <NA>          FALSE   0.1.2        TRUE          TRUE                        TRUE
+46:         QuantilePeer     0     0    13       <NA>          FALSE   0.0.1        TRUE          TRUE                        TRUE
+47:         Rcppautodiff     0     0    13       <NA>          FALSE   0.1.0        TRUE          TRUE                       FALSE
+48:           RcppFastAD     0     0    13       <NA>          FALSE   0.0.5        TRUE          TRUE                       FALSE  fixed in upcoming 0.0.6 release
+49:               rmdcev     0     0    13       <NA>          FALSE   1.3.4        TRUE          TRUE                       FALSE
+50:      robCompositions     0     0    13       <NA>          FALSE   2.6.0        TRUE          TRUE                        TRUE
+51:                sanic     0     0    13       <NA>          FALSE   0.0.2        TRUE          TRUE                        TRUE
+52:           serrsBayes     0     2    11       <NA>          FALSE   0.5-0        TRUE          TRUE                        TRUE
+53:                spaMM     0     0    13       <NA>          FALSE   4.7.0        TRUE          TRUE                        TRUE
+54:           SpatialGEV     0     0    13       <NA>          FALSE   1.0.1        TRUE          TRUE                        TRUE
+55:              spGARCH     0     0    13       <NA>          FALSE   0.2.3        TRUE          TRUE                        TRUE
+56:            stan4bart     0     0    13       <NA>          FALSE  0.0-13        TRUE          TRUE                       FALSE
+57:      SteadyStateBVAR     0     0    13       <NA>          FALSE   0.2.0        TRUE          TRUE                       FALSE
+58:               stelfi     0     0    13       <NA>           TRUE   1.0.2        TRUE          TRUE                        TRUE
+59:              surveil     0     2    11       <NA>          FALSE   0.3.0        TRUE          TRUE                       FALSE
+60:       thurstonianIRT     0     0    13       <NA>          FALSE  0.12.5        TRUE          TRUE                       FALSE
+61:              tsgarch     0     0    13       <NA>          FALSE   1.0.4        TRUE          TRUE                        TRUE
+62:               tsissm     0     0    13       <NA>          FALSE   1.0.3        TRUE          TRUE                        TRUE
+63:                tsnet     0     0    13       <NA>          FALSE   0.2.0        TRUE          TRUE                       FALSE
+64:          TwoStepSDFM     0     0    13       <NA>          FALSE   0.2.2        TRUE          TRUE                        TRUE
+65:              ungroup     0     0    13       <NA>          FALSE   1.4.4        TRUE          TRUE                        TRUE
+66:               vglmer     0     0    13       <NA>          FALSE   1.0.6        TRUE          TRUE                        TRUE
+67:               WpProj     0     0    13       <NA>          FALSE   0.2.3        TRUE          TRUE                        TRUE
+68:              xnicher     0     0    13       <NA>          FALSE   1.0.0        TRUE          TRUE                       FALSE
+69:                xrnet     0     0    13       <NA>          FALSE   1.0.1        TRUE          TRUE                        TRUE  not a regression, failed before for Rcpp
+                 package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog       missingPkg badInstall
+                  <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>           <char>     <lgcl>
