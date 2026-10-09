@@ -1,0 +1,46 @@
+Test of Rcpp 1.1.2.5 had 3302 successes, 29 failures, and 60 skipped packages. 
+Ran from 2026-10-06 12:47:20.91 to 2026-10-09 03:55:41.00 for 2.631 days 
+Average of 67.03 secs relative to 399.605 secs using 7 runners
+
+Failed packages:  binspp, CARBayesST, cgmguru, clustAnalytics, cmstatrExt, ConsTree, CVXR, dbscan, EpiLPS, FDX, FVDDPpkg, greeks, HistDAWass, mSigSpectra, panglm, plssem, PP, quanteda, revdbayes, robscale, scorecraft, tm, touch, TreeDist, TreeSearch, TreeTools, tsfgrnn, tsfknn, xnicher 
+
+Skipped packages:  abn, agcounts, artma, bayeslist, bigrquerystorage, blavaan, bmggum, bmstdr, cbq, chouca, CLVTools, Coreset, Crossover, DataVisualizations, dbMatrix, dipsaus, eam, EcoEnsemble, fEGarch, FlexReg, greenR, highs, joineRML, joinXL, KeyboardSimulator, MatchIt, mlpack, move, multinma, networkscaleup, OpenMx, pcFactorStan, pema, ProbBreed, ProFAST, profoc, PROsetta, psBayesborrow, QsRutils, RavenR, RcppPlanc, Rfast, riemtan, Rlgt, rlibkriging, rliger, rmBayes, rstanarm, RTL, rts2, RWDataPlyr, SelfControlledCaseSeries, Seurat, spatialGE, starvz, TestDesign, tidynorm, tiledb, tulpa, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+           package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog          missingPkg badInstall
+            <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>              <char>     <lgcl>
+ 1:         binspp     0     0    13       <NA>          FALSE   0.2.4        TRUE          TRUE                          FALSE  new issue? 'Error: sugar operands have different lengths (16384 and 77792)'
+ 2:     CARBayesST     0     2    11       <NA>          FALSE     4.0        TRUE          TRUE                          FALSE  new issue? 'Error: cannot assign a vector of length 1000 to a target of length 10'
+ 3:        cgmguru     0     0    13       <NA>          FALSE   1.3.0        TRUE          TRUE                          FALSE  not a regression, failed before
+ 4: clustAnalytics     0     2    11       <NA>          FALSE   0.5.5        TRUE          TRUE                          FALSE  new issue? 'Error: sugar operands have different lengths (2 and 34)'
+ 5:     cmstatrExt     0     0    13       <NA>          FALSE   0.5.0        TRUE          TRUE                          FALSE  new issue? spurious? 'no lines available in input'
+ 6:       ConsTree     0     0    13       <NA>          FALSE   1.0.0        TRUE          TRUE                          FALSE  new issue? not us? '*** caught illegal operation ***'
+ 7:           CVXR     0     0    13       <NA>          FALSE   1.9.2        TRUE          TRUE                          FALSE  not a regression, failed before
+ 8:         dbscan     0     0    13       <NA>          FALSE   1.2.7        TRUE          TRUE                          FALSE  new issue? 'Error: cannot assign a vector of length 3 to a target of length 2'
+ 9:         EpiLPS     0     0    13       <NA>          FALSE   1.3.0        TRUE          TRUE                          FALSE  new issue? 'Error: sugar operands have different lengths (24 and 25)'
+10:            FDX     0     0    13       <NA>          FALSE   2.0.2        TRUE          TRUE                          FALSE  new issue? 'Error: sugar operands have different lengths (7 and 8)'
+11:       FVDDPpkg     0     0    13       <NA>          FALSE   0.1.2        TRUE          TRUE                          FALSE  new issue? 'Error: cannot assign a vector of length 16 to a target of length 8'
+12:         greeks     0     0    13       <NA>          FALSE   1.5.6        TRUE          TRUE                          FALSE  new issue? 'Error: sugar operands have different lengths (1000001 and 1000000)'
+13:     HistDAWass     0     0    13       <NA>          FALSE   1.0.8        TRUE          TRUE                          FALSE  new issue? 'Error: cannot assign a vector of length 2 to a target of length 3'
+14:    mSigSpectra     1     0    12       <NA>          FALSE   0.1.3        TRUE         FALSE            ‘fastrc’         NA  passes once installed
+15:         panglm     0     0    13       <NA>          FALSE   1.1.4        TRUE          TRUE                          FALSE  needs 'pglm', passes once installed
+16:         plssem     0     0    13       <NA>          FALSE   0.1.5        TRUE         FALSE            ‘modsem’         NA  passes once installed
+17:             PP     0     0    13       <NA>          FALSE 0.6.4-1        TRUE          TRUE                          FALSE  new issue? 'Error: sugar operands have different lengths (13 and 11)'
+18:       quanteda     7     0     6 2026-10-22          FALSE   4.5.0        TRUE          TRUE                          FALSE  unclear but seven (7) CRAN issues and deadline
+19:      revdbayes     0     0    13       <NA>          FALSE   1.5.7        TRUE          TRUE                          FALSE  new issue? 'Error in objective(.par, ...) : Index out of bounds: [index='N0'].'
+20:       robscale     0     0    13       <NA>          FALSE   0.5.4        TRUE          TRUE                          FALSE  not a regression, failed before
+21:     scorecraft     0     0     9 2026-10-30           TRUE   0.3.0        TRUE         FALSE ‘OptimalBinningWoE’         NA  passes once installed
+22:             tm     2     0    11       <NA>          FALSE  0.7-20       FALSE         FALSE                <NA>         NA  spurious, passes on re-run
+23:          touch     0     0    13       <NA>          FALSE   0.1-7        TRUE          TRUE                           TRUE  new issues? fails to compile
+24:       TreeDist     0     0    13       <NA>          FALSE  2.15.0        TRUE          TRUE                          FALSE  not a regression, failed before
+25:     TreeSearch     1     5     7       <NA>          FALSE   1.7.0        TRUE          TRUE                          FALSE  not a regression, failed before
+26:      TreeTools     0     0    12       <NA>          FALSE   2.4.1        TRUE          TRUE                          FALSE  not a regression, failed before
+27:        tsfgrnn     0     2    11       <NA>          FALSE   1.0.5        TRUE          TRUE                          FALSE  new issue? 'Error: cannot assign a vector of length 3 to a target of length 2'
+28:         tsfknn     0     0    13       <NA>          FALSE   0.6.0        TRUE          TRUE                          FALSE  new issue? 'Error: cannot assign a vector of length 2 to a target of length 1'
+29:        xnicher     0     0    13       <NA>          FALSE   1.0.0        TRUE          TRUE                          FALSE  not a regression, failed before
+           package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog          missingPkg badInstall
+            <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>              <char>     <lgcl>
