@@ -1,0 +1,43 @@
+Test of Rcpp 1.1.2.6 had 3318 successes, 26 failures, and 61 skipped packages. 
+Ran from 2026-10-20 18:38:03.13 to 2026-10-21 07:29:49.46 for 12.863 hours 
+Average of 13.6 secs relative to 143.377 secs using 18 runners
+
+Failed packages:  cgmguru, choicedata, clustermq, cmstatrExt, dataprep, elcf4R, FlexRL, genpca, grip, learner, MultiscaleSCP, pdftools, quanteda, rladybugdb, RProtoBuf, shaman, specProc, srr, tall, tesseract, texanshootR, tm, VCFArrow, WebGestaltR, xnicher, xslt 
+
+Skipped packages:  abn, agcounts, artma, bayeslist, bigrquerystorage, blavaan, bmggum, bmstdr, cbq, chouca, CLVTools, Coreset, Crossover, DataVisualizations, dbMatrix, dipsaus, eam, EcoEnsemble, EDI, fEGarch, FlexReg, greenR, highs, joineRML, joinXL, KeyboardSimulator, MatchIt, mlpack, move, multinma, networkscaleup, OpenMx, pcFactorStan, pema, ProbBreed, ProFAST, profoc, PROsetta, psBayesborrow, QsRutils, RavenR, RcppPlanc, Rfast, riemtan, Rlgt, rlibkriging, rliger, rmBayes, rstanarm, RTL, rts2, RWDataPlyr, SelfControlledCaseSeries, Seurat, spatialGE, starvz, TestDesign, tidynorm, tiledb, tulpa, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+          package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog  missingPkg badInstall
+           <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>      <char>     <lgcl>
+ 1:       cgmguru     0     0    13       <NA>          FALSE   1.3.0        TRUE          TRUE                  FALSE  not a regression, failed before
+ 2:    choicedata     0     0    13       <NA>          FALSE   0.2.1        TRUE         FALSE                     NA  needs newer 'oeli' version
+ 3:     clustermq     0     5     8       <NA>          FALSE  0.10.1        TRUE          TRUE                  FALSE  libzmq interaction, passes once -dev installed
+ 4:    cmstatrExt     0     0    13       <NA>          FALSE   0.5.0        TRUE          TRUE                  FALSE  needs cmstatr, passes once installed
+ 5:      dataprep     0     0    13       <NA>          FALSE   0.1.8        TRUE          TRUE                  FALSE  issue? one test differs
+ 6:        elcf4R     0     0    13       <NA>          FALSE   0.4.2        TRUE          TRUE                  FALSE  error on reticulate interaction
+ 7:        FlexRL     0     0    13       <NA>          FALSE   1.0.0        TRUE         FALSE  'BRL', ...         NA  passes once installed   
+ 8:        genpca     9     0     4 2026-10-26          FALSE   0.2.1        TRUE          TRUE                  FALSE  issues at CRAN
+ 9:          grip     0     0    13       <NA>          FALSE   0.2.0        TRUE          TRUE                  FALSE  requires pandoc, passes once installed
+10:       learner     0     0    13       <NA>          FALSE   1.0.0        TRUE          TRUE                  FALSE  four hour runaway test (!!), blocked
+11: MultiscaleSCP     0     0    13       <NA>          FALSE   0.2.0        TRUE         FALSE     ‘h3jsr’         NA  passes once installed
+12:      pdftools     0     0    13       <NA>          FALSE   3.9.1        TRUE          TRUE                   TRUE  passes once libpoppler-cpp-dev installed
+13:      quanteda     9     0     4 2026-10-22          FALSE   4.5.0        TRUE          TRUE                  FALSE  CRAN issues
+14:    rladybugdb     4     0     8 2026-11-06           TRUE   0.4.4        TRUE          TRUE                   TRUE  CRAN issues
+15:     RProtoBuf     0     0    13       <NA>          FALSE  0.4.28        TRUE          TRUE                   TRUE  passes once dependencies installed
+16:        shaman     0     0     8       <NA>          FALSE   2.1.1        TRUE         FALSE     'misha’         NA  passes once installed
+17:      specProc     0     0    12       <NA>          FALSE   0.8.3        TRUE          TRUE                  FALSE  passes once depends installed
+18:           srr     1     0    12       <NA>          FALSE   1.0.0        TRUE          TRUE                  FALSE  issue? also fails once at CRAN
+19:          tall     0     0    13       <NA>          FALSE   1.0.1        TRUE          TRUE                   TRUE  needs libpoppler-cpp-dev, passes once installed
+20:     tesseract     0     0    12       <NA>          FALSE   5.3.1        TRUE          TRUE                   TRUE  needs two -dev and data package, passes once installed
+21:   texanshootR     0     0    13       <NA>          FALSE   0.1.1        TRUE          TRUE                  FALSE  unclear, one fail
+22:            tm     2     0    11       <NA>          FALSE  0.7-20        TRUE          TRUE                  FALSE  needs libpoppler-cpp-dev, passes once installed
+23:      VCFArrow     0     0    12       <NA>          FALSE   0.9.0        TRUE         FALSE      ‘arrow’        NA  passes once installed
+24:   WebGestaltR     0     0    13       <NA>          FALSE   1.0.1        TRUE          TRUE                   TRUE  needs cargo and rustc, passes once installed
+25:       xnicher     0     0    13       <NA>          FALSE   1.0.0        TRUE          TRUE                  FALSE  needs package pomp
+26:          xslt     0     0    13       <NA>          FALSE   1.5.1        TRUE          TRUE                   TRUE  needs libxslt1-dev, passes once installed
+          package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog  missingPkg badInstall
+           <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>      <char>     <lgcl>
