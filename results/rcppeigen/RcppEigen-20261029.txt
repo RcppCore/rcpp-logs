@@ -1,0 +1,71 @@
+Test of RcppEigen 0.4.9.9.5 had 508 successes, 48 failures, and 24 skipped packages. 
+Ran from 2026-10-29 13:17:36.55 to 2026-10-29 15:20:21.45 for 2.046 hours 
+Average of 12.698 secs relative to 218.981 secs using 18 runners
+
+Failed packages:  adlaplace, admixr2, AsyPeer, baggr, birdie, bWGR, CDatanet, clustTMB, conStruct, crctStepdown, dbMatrix, FactorHet, fastglm, fastQR, fdaPDE, forestBalance, galamm, gastempt, gKRLS, glmmrOptim, gRain, gRbase, gRim, GTEs, historicalborrowlong, hts, intervalpsych, LMMELSM, MetricGraph, MIRES, nebula, oem, OncoBayes2, QuantilePeer, Rcppautodiff, reconf, rmdcev, robCompositions, sommer, SpatialGEV, spGARCH, stan4bart, SteadyStateBVAR, surveil, thurstonianIRT, tsnet, vglmer, xrnet 
+
+Skipped packages:  bayeslist, blavaan, bmggum, bmstdr, cbq, EcoEnsemble, EDI, FlexReg, learner, multinma, networkscaleup, OpenMx, pcFactorStan, pema, ProbBreed, psBayesborrow, riemtan, Rlgt, rmBayes, rstanarm, rts2, spatialGE, tinyVAST, tulpa 
+
+None still working
+
+None still scheduled
+
+Error summary:
+                 package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog  missingPkg badInstall
+                  <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>      <char>     <lgcl>
+ 1:            adlaplace     0     0    13       <NA>          FALSE   0.7.5        TRUE         FALSE    ‘RCppAD’         NA  passes once installed
+ 2:              admixr2     0     0    13       <NA>          FALSE   0.4.1        TRUE          TRUE                  FALSE  in #151, PR sent
+ 3:              AsyPeer     0     0    13       <NA>          FALSE   0.0.1        TRUE          TRUE                   TRUE  in #151, PR sent
+ 4:                baggr     0     5     8 2026-11-01           TRUE   0.8.2        TRUE          TRUE                  FALSE  seen previously, unclear
+ 5:               birdie     0     0    13       <NA>          FALSE   0.8.0        TRUE          TRUE                  FALSE  seen previously, unclear
+ 6:                 bWGR     0     0    13       <NA>          FALSE  2.2.18        TRUE          TRUE                   TRUE  in #151, PR sent
+ 7:             CDatanet     0     0    13       <NA>          FALSE   2.2.2        TRUE          TRUE                   TRUE  in #151, PR sent
+ 8:             clustTMB     2     0    11       <NA>          FALSE   0.1.0        TRUE          TRUE                   TRUE  in #151, PR sent
+ 9:            conStruct     0     0    13       <NA>          FALSE   1.0.7        TRUE          TRUE                  FALSE  unclear, segfault
+10:         crctStepdown     0     0    13       <NA>          FALSE   0.5.2        TRUE          TRUE                   TRUE  in #151, PR merged, not on CRAN
+11:             dbMatrix     0     0    13       <NA>          FALSE   0.2.0        TRUE         FALSE ‘dbProject’         NA  passes once installed
+12:            FactorHet     0     0    13       <NA>          FALSE   1.0.0        TRUE          TRUE                   TRUE  in #151, PR sent
+13:              fastglm     0     0    13       <NA>          FALSE   0.1.2        TRUE          TRUE                   TRUE  in #151, PR sent
+14:               fastQR     0     2    11       <NA>          FALSE   1.1.4        TRUE          TRUE                   TRUE  in #151, patch emailed
+15:               fdaPDE     0     0    13       <NA>          FALSE  1.1-24        TRUE          TRUE                   TRUE  in #151, patch emailed
+16:        forestBalance     0     0    13       <NA>          FALSE   0.1.0        TRUE          TRUE                   TRUE  in #151, PR sent
+17:               galamm     0     0    13       <NA>          FALSE   0.4.1        TRUE          TRUE                   TRUE  in #151, PR merged, not on CRAN
+18:             gastempt     0     0    13       <NA>          FALSE   0.7.0        TRUE          TRUE                  FALSE  in #151, PR sent
+19:                gKRLS     0     0    13       <NA>          FALSE   1.0.4        TRUE          TRUE                   TRUE  in #151, PR sent
+20:           glmmrOptim     0     0    13       <NA>          FALSE   0.5.1        TRUE          TRUE                   TRUE  in #151, PR merged, not on CRAN
+21:                gRain     0     0    13       <NA>          FALSE   1.4.6        TRUE          TRUE                   TRUE  needs gRbase
+22:               gRbase     0     0    13       <NA>          FALSE   2.0.3        TRUE          TRUE                   TRUE  in #151, patch emailed
+23:                 gRim     0     0    13       <NA>          FALSE   0.3.4        TRUE          TRUE                   TRUE  needs gRbase
+24:                 GTEs     0     0    13       <NA>          FALSE   1.0.0        TRUE          TRUE                   TRUE  in #151, PR merged, not on CRAN
+25: historicalborrowlong     0     0    13       <NA>          FALSE   0.1.1        TRUE          TRUE                  FALSE  unclear, segfault
+26:                  hts     0     0    13       <NA>          FALSE   6.0.3        TRUE          TRUE                   TRUE  in #151, PR sent
+27:        intervalpsych     0     0    13       <NA>          FALSE   0.1.0        TRUE          TRUE                  FALSE  unclear, segfault
+28:              LMMELSM     0     2    11       <NA>          FALSE   0.2.1        TRUE          TRUE                  FALSE  unclear, segfault
+29:          MetricGraph     0     0    13       <NA>          FALSE   1.6.0        TRUE          TRUE                   TRUE  in #151, PR sent
+30:                MIRES     0     2    11       <NA>          FALSE   0.1.1        TRUE          TRUE                  FALSE  unclear, segfault
+31:               nebula     0     0    13       <NA>          FALSE   1.5.8        TRUE          TRUE                   TRUE  in #151, PR sent
+32:                  oem     0     0    13       <NA>          FALSE  2.0.12        TRUE          TRUE                   TRUE  in #151, PR sent
+33:           OncoBayes2     0     0    13       <NA>          FALSE  0.10-0        TRUE          TRUE                  FALSE  unclear, segfault
+34:         QuantilePeer     0     0    13       <NA>          FALSE   0.0.1        TRUE          TRUE                   TRUE  new "error: ‘all’ is not a member of ‘Eigen’"
+35:         Rcppautodiff     0     0    13       <NA>          FALSE   0.1.0        TRUE          TRUE                  FALSE  new, likely also Eigen5 related
+36:               reconf     0     0    13       <NA>          FALSE   0.2.0        TRUE          TRUE                   TRUE  new "error: ‘MappedSparseMatrix’ in namespace ‘Eigen’ ..."
+37:               rmdcev     0     0    13       <NA>          FALSE   1.3.4        TRUE          TRUE                  FALSE  unclear, segfault
+38:      robCompositions     0     0    13       <NA>          FALSE   2.6.0        TRUE          TRUE                   TRUE  in #151, PR sent
+39:               sommer     0     0    13       <NA>           TRUE  4.5.12        TRUE          TRUE                   TRUE  new "error: ‘MappedSparseMatrix’ in namespace ‘Eigen’ ..."
+40:           SpatialGEV     0     0    13       <NA>          FALSE   1.0.1        TRUE          TRUE                   TRUE  in #151, PR sent
+41:              spGARCH     0     0    13       <NA>          FALSE   0.2.3        TRUE          TRUE                   TRUE  in #151, patch emailed
+42:            stan4bart     0     0    13       <NA>          FALSE  0.0-13        TRUE          TRUE                  FALSE  unclear, segfault
+34:         QuantilePeer     0     0    13       <NA>          FALSE   0.0.1        TRUE          TRUE                   TRUE  new "error: ‘all’ is not a member of ‘Eigen’"
+35:         Rcppautodiff     0     0    13       <NA>          FALSE   0.1.0        TRUE          TRUE                  FALSE  new, likely also Eigen5 related
+36:               reconf     0     0    13       <NA>          FALSE   0.2.0        TRUE          TRUE                   TRUE  new "error: ‘MappedSparseMatrix’ in namespace ‘Eigen’ ..."
+37:               rmdcev     0     0    13       <NA>          FALSE   1.3.4        TRUE          TRUE                  FALSE  unclear, segfault
+38:      robCompositions     0     0    13       <NA>          FALSE   2.6.0        TRUE          TRUE                   TRUE  in #151, PR sent
+39:               sommer     0     0    13       <NA>           TRUE  4.5.12        TRUE          TRUE                   TRUE  unclear, segfault
+43:      SteadyStateBVAR     0     0    13       <NA>          FALSE   0.2.0        TRUE          TRUE                  FALSE  unclear, segfault
+44:              surveil     0     2    11       <NA>          FALSE   0.3.0        TRUE          TRUE                  FALSE  unclear, segfault
+45:       thurstonianIRT     0     0    13       <NA>          FALSE  0.12.5        TRUE          TRUE                  FALSE  unclear, segfault
+46:                tsnet     0     0    13       <NA>          FALSE   0.2.0        TRUE          TRUE                  FALSE  unclear, segfault
+47:               vglmer     0     0    13       <NA>          FALSE   1.0.6        TRUE          TRUE                   TRUE  new "error: ‘MappedSparseMatrix’ in namespace ‘Eigen’ ..."
+48:                xrnet     0     0    13       <NA>          FALSE   1.0.1        TRUE          TRUE                   TRUE  not a regression, failed before for Rcpp
+                 package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog  missingPkg badInstall
+                  <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>      <char>     <lgcl>
