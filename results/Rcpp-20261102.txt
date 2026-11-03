@@ -1,0 +1,28 @@
+Test of Rcpp 1.1.2.7.1524 had 3377 successes, 13 failures, and 55 skipped packages. 
+Ran from 2026-11-02 14:51:56.23 to 2026-11-02 22:03:23.90 for 7.191 hours 
+Average of 7.515 secs relative to 133.857 secs using 18 runners
+
+Failed packages:  cgmguru, dataprep, elcf4R, fido, flexsdm, glt, greenR, icmstate, kedd, MOFAT, RDelta, rladybugdb, srr 
+
+Skipped packages:  abn, agcounts, artma, bayeslist, bigrquerystorage, blavaan, bmggum, bmstdr, cbq, chouca, CLVTools, Crossover, DataVisualizations, dipsaus, eam, EcoEnsemble, EDI, fEGarch, FlexReg, highs, joineRML, joinXL, KeyboardSimulator, learner, MatchIt, mlpack, move, multinma, networkscaleup, OpenMx, pcFactorStan, pema, ProbBreed, ProFAST, profoc, PROsetta, psBayesborrow, QsRutils, RavenR, RcppPlanc, Rfast, riemtan, Rlgt, rlibkriging, rliger, rmBayes, rstanarm, rts2, SelfControlledCaseSeries, spatialGE, starvz, tidynorm, tiledb, tulpa, warbleR 
+
+None still working
+
+None still scheduled
+
+Error summary:
+       package error  note    ok   deadline hasOtherIssues version hasCheckLog hasInstallLog                            missingPkg badInstall
+        <char> <int> <int> <int>     <char>         <lgcl>  <char>      <lgcl>        <lgcl>                                <char>     <lgcl>
+ 1:    cgmguru     0     0    13       <NA>          FALSE   1.3.0        TRUE          TRUE                                            FALSE  not new, four test failures
+ 2:   dataprep     0     0    13       <NA>          FALSE   0.1.8        TRUE          TRUE                                            FALSE  not new, 'Error in as.character.factor(x) : malformed factor'
+ 3:     elcf4R     0     0    13       <NA>          FALSE   0.4.2        TRUE          TRUE                                            FALSE  not new, error on reticulate interaction
+ 4:       fido     4     0     9       <NA>          FALSE   1.1.5        TRUE          TRUE                                            FALSE  not us?, error in one test, four fails at CRAN
+ 5:    flexsdm     0     0    13       <NA>          FALSE   1.4.2        TRUE         FALSE                              ‘spThin’         NA  passes once installed
+ 6:        glt     0     0    11       <NA>          FALSE     1.0        TRUE         FALSE                          ‘sparvaride’         NA  passes once installed
+ 7:     greenR     0     0    13       <NA>          FALSE 0.0.1.8        TRUE         FALSE 'osrm', 'SuperpixelImageSegmentation'         NA  passes once installed
+ 8:   icmstate     5     0     8 2026-11-22          FALSE   0.2.0        TRUE          TRUE                                            FALSE  not us?, error in one test, four fails at CRAN, deadline
+ 9:       kedd     0     1    12       <NA>          FALSE   2.0.0        TRUE          TRUE                                            FALSE  not us?, one test fail, 'Objects equal but not identical'
+10:      MOFAT     0     0    13       <NA>          FALSE     2.0        TRUE         FALSE                    'SFDesign', 'SLHD'         NA  passes once installed
+11:     RDelta     0     0    12       <NA>          FALSE   0.1.0        TRUE          TRUE                                             TRUE  new regression? install error 'invalid static_cast'; passes at CRAN
+12: rladybugdb     4     0     9 2026-11-06           TRUE   0.4.4        TRUE          TRUE                                             TRUE  not us, installation error, four fails at CRAN, deadline
+13:        srr     7     0     6       <NA>          FALSE   1.1.0        TRUE          TRUE                                            FALSE  not new? also 7 fails at CRAN
