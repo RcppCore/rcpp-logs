@@ -108,7 +108,7 @@ NLMR,claims to not find igraph
 # 2019-11-07
 dipsaus,wants five packages incl RcppRedis
 # 2020-06-30
-arrow,fails consistently on internal
+# arrow,fails consistently on internal
 # 2020-08-18
 BMTME,times out or takes forever
 # 2020-08-19
@@ -122,9 +122,9 @@ sparkwarc,depends on sparklyr
 # 2021-01-29
 warbleR,excessive yet still incomplete depends list
 # 2021-12-04
-starvz,depends on arrow which does not install here (old cpu)
+# starvz,depends on arrow which does not install here (old cpu)
 # 2022-03-11
-disk.frame,depends on arrow which is not installed
+# disk.frame,depends on arrow which is not installed
 # 2023-04-11
 move,fails recurrently
 RavenR,fails recurrently
@@ -140,52 +140,52 @@ DatabaseConnector,several more depends
 datapack,redland (which has many build-depends)
 dittodb,several more depends
 pointblank,dittodb
-receptiviti,arrow
+# receptiviti,arrow
 # 2023-09-06
 abn, takes 1h 20m (!!)
 # 2023-10-27
 tiledb, bad instruction (avx2 ?)
 # 2024-05-21
-bigrquerystorage, requires arrow which has avx2 issue
+# bigrquerystorage, requires arrow which has avx2 issue
 MatchIt, tickles illegal instruction (old cpu here)
 # 2024-06-20
 clrng,needs gpuR
 # 2024-11-15
 chouca,been failing locally for too long
 # 2025-03-21   select package, runtime/60 as min from results where runtime/60/10 > (select avg(runtime)/60 from results) order by runtime desc;
-FlexReg,148.058190921942
-ProbBreed,114.448904526234
-bayeslist,110.313128689925
-networkscaleup,101.636202271779
-rstanarm,93.9551114082336
+#FlexReg,148.058190921942
+#ProbBreed,114.448904526234
+#bayeslist,110.313128689925
+#networkscaleup,101.636202271779
+#rstanarm,93.9551114082336
 profoc,86.7519683837891
 # EcoEnsemble,85.1176739970843
-mlpack,81.6935871044795
-cbq,81.6211641271909
-multinma,76.5966989000638
-psBayesborrow,72.0593761205673
-rts2,70.5099750161171
-Rlgt,66.9982773661613
+#mlpack,81.6935871044795
+#cbq,81.6211641271909
+#multinma,76.5966989000638
+#psBayesborrow,72.0593761205673
+#rts2,70.5099750161171
+#Rlgt,66.9982773661613
 # OpenMx,66.1328665614128
 # 2025-03-24  sqlite3 -csv Rcpp_2025-03-21/queuefile.sqlite 'select package, runtime/60 as min from results where runtime/60/10 > (select avg(runtime)/60 from results) order by runtime desc;'
 # blavaan,74.9409523765246
-pema,65.1542417168617
-rmBayes,62.8342786033948
-bmggum,61.6499748587608
-pcFactorStan,61.2702071666718
-bmstdr,58.4675608476003
+#pema,65.1542417168617
+#rmBayes,62.8342786033948
+#bmggum,61.6499748587608
+#pcFactorStan,61.2702071666718
+#bmstdr,58.4675608476003
 # 2025-04-24
 #prioriactions,wants gurobi
 # 2025-05-26
-geocodebr,wants arrow
+#geocodebr,wants arrow
 HiCociety,wants large BioC data pkg
 rliger,wants RcppPlanc and HDF5Array
-spatialGE,wants arrow
-RcppPlanc,bad compiler instruction like AVX2
+spatialGE,wants arrow and other BioC packages
+#RcppPlanc,bad compiler instruction like AVX2
 # 2025-06-25
-SelfControlledCaseSeries, dependency chain leads to arrow
+# SelfControlledCaseSeries, dependency chain leads to arrow
 # 2025-12-01
-riemtan,wants arrow
+#riemtan,wants arrow
 # 2025-12-30
 # arrow,no longer builds
 # 2025-01-04
@@ -195,7 +195,7 @@ agcounts,needs reticulate setup
 # Seurat,possible arrow opcode issue
 # TestDesign,possible highs opcode issue
 tidynorm,needs reticulate setup
-eam,needs arrow which we do not have here
+# eam,needs arrow which we do not have here
 # sqlite> select package, runtime/60 as mins from results order by runtime desc limit 10;
 fEGarch,63.0583693027496
 CLVTools,41.0527607639631
@@ -211,10 +211,10 @@ joineRML,32.4383889158567
 # dbMatrix,needs arrow which we do not have here
 QsRutils,needs 'dada2' 'insect' 'ShortRead' 'SRS
 # greenR,needs arrow which we do not have here
-tinyVAST,needs dsem + sdmTMB which do not build
+# tinyVAST,needs dsem + sdmTMB which do not build
 artma,wants box which gets in the way of testting
-tulpa,takes way too long
+# tulpa,takes way too long
 PROsetta,requires TestDesign which has illegal ops on install
 # Coreset,requires highs which has illegal ops
-EDI,takes a long time
-learner,runaway test takes hours
+# EDI,takes a long time
+# learner,runaway test takes hours
