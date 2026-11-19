@@ -1,0 +1,23 @@
+Test of RcppArmadillo 15.7.91.1 had 6 successes, 8 failures, and 14 skipped packages. 
+Ran from 2026-11-19 09:19:48.60 to 2026-11-19 09:29:00.71 for 9.202 mins 
+Average of 19.718 secs relative to 38.326 secs using 11 runners
+
+Failed packages:  hgwrr, multbxxc, quadrupen, r2sundials, RcppPlanc, Rfast2, sommer, TreeBUGS 
+
+Skipped packages:  abn, agcounts, CLVTools, Crossover, fEGarch, chouca, joineRML, ProFAST, profoc, PROsetta, Rfast, rlibkriging, rliger, tidynorm 
+
+None still working
+
+None still scheduled
+
+Error summary:
+      package error  note    ok deadline hasOtherIssues version hasCheckLog hasInstallLog missingPkg badInstall
+       <char> <int> <int> <int>   <char>         <lgcl>  <char>      <lgcl>        <lgcl>     <char>     <lgcl>
+1:      hgwrr     0     0    13     <NA>          FALSE   0.6-2        TRUE          TRUE                  TRUE  NEW ISSUE: compilation error with arma::span_base
+2:   multbxxc     0     2    11     <NA>          FALSE   1.0.3        TRUE          TRUE                  TRUE  passes once rmumps reinstalled (Rcpp Modules changes)
+3:  quadrupen     0     0    13     <NA>          FALSE   1.1-0        TRUE          TRUE                  TRUE  not us? Rcpp::wrap issue?
+4: r2sundials     0     0    13     <NA>          FALSE 7.2.1-4        TRUE          TRUE                  TRUE  passes once rmumps reinstalled (Rcpp Modules changes)
+5:  RcppPlanc     0     6     7     <NA>          FALSE  2.0.16        TRUE          TRUE                  TRUE  not us? falls over 'ccache gcc', then falls over illegal ops
+6:     Rfast2     0     0    13     <NA>          FALSE 0.1.5.6        TRUE          TRUE                  TRUE  NEW ISSUE: compilation error with arma::span_base
+7:     sommer     0     0    13     <NA>          FALSE  4.5.27        TRUE          TRUE                  TRUE  spurious? fails one out of 12700+ tests
+8:   TreeBUGS     0     0    13     <NA>          FALSE   1.5.3        TRUE         FALSE  ‘runjags’         NA  passes with jags and runjags pinned to jags 4.*
