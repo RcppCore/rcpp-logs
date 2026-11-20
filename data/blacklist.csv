@@ -102,7 +102,7 @@ DataVisualizations,loads of undeclared untested Depends
 # 2019-04-27
 Crossover,depends on JavaGD which fails to install
 #odpc,frequently runs away on tests
-Rfast,requires excessive test time
+# Rfast,requires excessive test time
 # 2019-10-11
 NLMR,claims to not find igraph
 # 2019-11-07
@@ -142,7 +142,7 @@ dittodb,several more depends
 pointblank,dittodb
 # receptiviti,arrow
 # 2023-09-06
-abn, takes 1h 20m (!!)
+# abn, takes 1h 20m (!!)
 # 2023-10-27
 tiledb, bad instruction (avx2 ?)
 # 2024-05-21
@@ -158,7 +158,7 @@ chouca,been failing locally for too long
 #bayeslist,110.313128689925
 #networkscaleup,101.636202271779
 #rstanarm,93.9551114082336
-profoc,86.7519683837891
+#profoc,86.7519683837891
 # EcoEnsemble,85.1176739970843
 #mlpack,81.6935871044795
 #cbq,81.6211641271909
@@ -181,7 +181,7 @@ profoc,86.7519683837891
 HiCociety,wants large BioC data pkg
 rliger,wants RcppPlanc and HDF5Array
 spatialGE,wants arrow and other BioC packages
-#RcppPlanc,bad compiler instruction like AVX2
+RcppPlanc,bad compiler instruction like AVX2
 # 2025-06-25
 # SelfControlledCaseSeries, dependency chain leads to arrow
 # 2025-12-01
@@ -197,9 +197,9 @@ agcounts,needs reticulate setup
 tidynorm,needs reticulate setup
 # eam,needs arrow which we do not have here
 # sqlite> select package, runtime/60 as mins from results order by runtime desc limit 10;
-fEGarch,63.0583693027496
-CLVTools,41.0527607639631
-joineRML,32.4383889158567
+# fEGarch,63.0583693027496
+# CLVTools,41.0527607639631
+# joineRML,32.4383889158567
 # BayesSurvive|29.2047046264013
 # forecast|24.893364572525
 # baskexact|24.5458614468575
@@ -218,3 +218,9 @@ PROsetta,requires TestDesign which has illegal ops on install
 # Coreset,requires highs which has illegal ops
 # EDI,takes a long time
 # learner,runaway test takes hours
+# Update run-times 2026-11-20
+#   sqlite3 -csv RcppArmadillo_2026-11-20/queuefile.sqlite 'select package, round(runtime/60,1) as min from results where runtime/60/4 > (select avg(runtime)/60 from results) order by runtime desc;'
+#profoc,112.4
+#simStateSpace,46.3
+#fEGarch,43.2
+#sommer,42.7
